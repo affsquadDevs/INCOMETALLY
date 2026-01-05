@@ -12,9 +12,13 @@ export default function Footer() {
         {/* Logo and Site Name */}
         <div className="mb-10">
           <div className="flex items-center gap-2 mb-6">
-            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white">
-              <path d="M6 2L2 6L6 10M10 2L14 6L10 10" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <Image 
+              src={logo.image} 
+              alt={logo.linkText}
+              width={36}
+              height={36}
+              className="h-9 w-auto"
+            />
             <span className="text-base font-normal text-white tracking-[-0.01em]">
               {logo.linkText.toUpperCase()}
             </span>

@@ -2,7 +2,7 @@ import { privacyPolicyConfig } from '@/config/privacy';
 import Link from 'next/link';
 
 export default function PrivacyPolicy() {
-  const { title, lastUpdated, sections } = privacyPolicyConfig;
+  const { title, lastUpdated, intro, sections } = privacyPolicyConfig;
 
   return (
     <div className="bg-[#F5F5F0] min-h-screen pt-16">
@@ -32,16 +32,69 @@ export default function PrivacyPolicy() {
           <div className="text-black text-base opacity-70">Last updated: {lastUpdated}</div>
         </header>
 
+        {intro && (
+          <div className="mb-10">
+            <p className="text-black opacity-80 text-lg leading-relaxed">
+              {intro.split(/(https?:\/\/[^\s]+)/g).map((part, index) => {
+                if (part.match(/^https?:\/\//)) {
+                  return (
+                    <a
+                      key={index}
+                      href={part}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#0066FF] hover:underline"
+                    >
+                      {part}
+                    </a>
+                  );
+                }
+                return <span key={index}>{part}</span>;
+              })}
+            </p>
+          </div>
+        )}
+
         <div className="prose prose-lg max-w-none prose-headings:text-black prose-p:text-black prose-p:opacity-80 prose-a:text-[#0066FF] prose-a:no-underline hover:prose-a:underline prose-strong:text-black prose-ul:text-black prose-ul:opacity-80">
           {sections.map((section, index) => (
             <div key={index} className="mb-10">
               <h2 className="text-2xl font-normal text-black mb-4">{section.title}</h2>
               
-              {section.paragraphs.map((paragraph, pIndex) => (
-                <p key={pIndex} className="text-black opacity-80 mb-4 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
+              {section.paragraphs.map((paragraph, pIndex) => {
+                // Check if paragraph contains a URL
+                const urlRegex = /(https?:\/\/[^\s]+)/g;
+                const hasUrl = urlRegex.test(paragraph);
+                
+                if (hasUrl) {
+                  const parts = paragraph.split(urlRegex);
+                  return (
+                    <p key={pIndex} className="text-black opacity-80 mb-4 leading-relaxed">
+                      {parts.map((part, partIndex) => {
+                        if (urlRegex.test(part)) {
+                          return (
+                            <a
+                              key={partIndex}
+                              href={part}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[#0066FF] hover:underline"
+                            >
+                              {part}
+                            </a>
+                          );
+                        }
+                        return <span key={partIndex}>{part}</span>;
+                      })}
+                    </p>
+                  );
+                }
+                
+                return (
+                  <p key={pIndex} className="text-black opacity-80 mb-4 leading-relaxed">
+                    {paragraph}
+                  </p>
+                );
+              })}
 
               {section.listItems && section.listItems.length > 0 && (
                 <ul className="list-disc list-inside space-y-2 text-black opacity-80 mb-4 ml-4">
@@ -51,11 +104,41 @@ export default function PrivacyPolicy() {
                 </ul>
               )}
 
-              {section.paragraphsAfterList && section.paragraphsAfterList.map((paragraph, pIndex) => (
-                <p key={`after-${pIndex}`} className="text-black opacity-80 mb-4 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
+              {section.paragraphsAfterList && section.paragraphsAfterList.map((paragraph, pIndex) => {
+                // Check if paragraph contains a URL
+                const urlRegex = /(https?:\/\/[^\s]+)/g;
+                const hasUrl = urlRegex.test(paragraph);
+                
+                if (hasUrl) {
+                  const parts = paragraph.split(urlRegex);
+                  return (
+                    <p key={`after-${pIndex}`} className="text-black opacity-80 mb-4 leading-relaxed">
+                      {parts.map((part, partIndex) => {
+                        if (urlRegex.test(part)) {
+                          return (
+                            <a
+                              key={partIndex}
+                              href={part}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[#0066FF] hover:underline"
+                            >
+                              {part}
+                            </a>
+                          );
+                        }
+                        return <span key={partIndex}>{part}</span>;
+                      })}
+                    </p>
+                  );
+                }
+                
+                return (
+                  <p key={`after-${pIndex}`} className="text-black opacity-80 mb-4 leading-relaxed">
+                    {paragraph}
+                  </p>
+                );
+              })}
             </div>
           ))}
         </div>

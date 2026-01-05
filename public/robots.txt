@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ttwrapper.com/sitemap.xml
+Sitemap: https://incometally.com/sitemap.xml

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
+import FAQAccordion from '@/components/FAQAccordion';
 
 interface BlogPostPageProps {
   params: {
@@ -68,23 +69,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
           <div className="mt-16 pt-16 border-t border-black border-opacity-10">
             <div className="bg-white rounded-lg border border-black border-opacity-10 p-8 lg:p-12">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-black mb-12 tracking-[-0.02em]">{siteConfig.aboutUs.faq.title}</h2>
-              <div className="space-y-8 lg:space-y-10">
-                {siteConfig.aboutUs.faq.items.map((item, index) => (
-                  <div key={index} className="pb-8 lg:pb-10 border-b border-black border-opacity-5 last:border-b-0 last:pb-0">
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 mt-1">
-                        <div className="w-6 h-6 rounded-full bg-[#0066FF] flex items-center justify-center">
-                          <span className="text-white text-xs font-medium">{index + 1}</span>
-                        </div>
-                      </div>
-                      <div className="flex-grow">
-                        <h3 className="text-xl md:text-2xl font-normal text-black mb-4 tracking-[-0.01em]">{item.question}</h3>
-                        <p className="text-base md:text-lg text-black opacity-70 leading-relaxed">{item.answer}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <FAQAccordion faqs={siteConfig.aboutUs.faq.items} />
             </div>
           </div>
         )}

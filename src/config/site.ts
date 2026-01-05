@@ -2,15 +2,15 @@ import { blogs } from '@/data/blogs';
 
 export const siteConfig = {
   // Site Information
-  domain: 'https://ttwrapper.com', // Site domain (used for robots.txt, sitemap, etc.)
-  name: 'Projekto',
-  tagline: 'Software project estimation and planning',
-  description: 'An independent online service focused on software project estimation and planning based on user-provided information.',
+  domain: 'https://incometally.com', // Site domain (used for robots.txt, sitemap, etc.)
+  name: 'Income Tally',
+  tagline: 'Net Salary Calculator Online',
+  description: 'Calculate your net salary after taxes with accurate, country-specific estimates.',
   
   // Logo and Branding
   logo: {
     image: '/images/Logo.png', // Path to logo image (used site-wide)
-    linkText: 'Projekto', // Site name as link text to home page
+    linkText: 'Income Tally', // Site name as link text to home page
   },
   
   // Blogs
@@ -28,7 +28,8 @@ export const siteConfig = {
     links: [
       // { label: 'Team', href: '/team' },
       // { label: 'Portfolio', href: '/portfolio' },
-      { label: 'Get Started', href: '/get-started' },
+      { label: 'Salary Calculator', href: '/salary-calculator' },
+      { label: 'Get Started', href: '/calculator' },
       { label: 'About Us', href: '/about-us' },
       // { label: 'Manifesto', href: '/manifesto' },
       { label: 'Blog', href: '/blog' },
@@ -55,10 +56,12 @@ export const siteConfig = {
     resources: {
       title: 'RESOURCES',
       links: [
+        { label: 'Salary Calculator Hub', href: '/salary-calculator' },
+        { label: 'Hourly to Salary', href: '/hourly-to-salary' },
         { label: 'Blog', href: '/blog' },
       ],
     },
-    disclaimer: 'Projekto provides high-level estimates for web and mobile application development based on typical industry practices, average market rates, and the inputs you provide. All calculations are indicative only and should not be interpreted as fixed quotes, contractual offers, or professional advice. Actual project cost and delivery time may vary depending on: scope changes; technical complexity; team structure and experience; third-party services and integrations; project management and execution approach. Projekto is designed to support early planning, budgeting, and decision-making, not to replace detailed technical scoping or formal proposals. Use of this calculator is at your own discretion.',
+    disclaimer: 'IncomeTally provides income and tax calculators for informational purposes only. Results are estimates and may not reflect actual tax obligations or financial outcomes. This website does not provide financial, tax, or legal advice. Always consult a qualified professional for personalized guidance.',
   },
 
   // Contact Page Content
@@ -96,28 +99,28 @@ export const siteConfig = {
   // Home Page Content
   home: {
     hero: {
-      title: 'Build Better SaaS Products',
-      subtitle: 'A modern, scalable platform designed to help you launch and grow your SaaS business with confidence.',
+      title: 'Net Salary Calculator Online',
+      subtitle: 'Calculate your net salary after taxes with accurate, country-specific estimates.',
       ctaPrimary: 'Get Started',
       ctaSecondary: 'Learn More',
     },
     features: {
-      title: 'Why Choose Us?',
-      subtitle: 'Everything you need to build, launch, and scale your SaaS product',
+      title: 'Why Use Our Salary Calculator?',
+      subtitle: 'Clear, fast, and country-specific net salary estimates you can trust.',
       items: [
         {
-          title: 'Lightning Fast',
-          description: 'Optimized for performance with cutting-edge technology and best practices',
+          title: 'Accurate Tax Estimates',
+          description: 'Up-to-date tax rules We calculate your net salary using country-specific tax brackets and social contributions, so you see realistic take-home pay - not rough guesses.',
           icon: 'M13 10V3L4 14h7v7l9-11h-7z',
         },
         {
-          title: 'Secure by Default',
-          description: 'Enterprise-grade security to protect your data and your customers',
+          title: 'No Signup Required',
+          description: 'Anonymous & private Use the calculator instantly without creating an account. Your inputs stay in your browser - simple, fast, and privacy-friendly.',
           icon: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z',
         },
         {
-          title: 'Scalable',
-          description: 'Built to grow with your business, from startup to enterprise',
+          title: 'Built for Multiple Countries',
+          description: 'Hourly, monthly, or yearly Convert income and estimate taxes for different countries and pay types - hourly rates, monthly salaries, or annual income.',
           icon: 'M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15',
         },
       ],
@@ -138,43 +141,43 @@ export const siteConfig = {
 
   // About Us Page Content
   aboutUs: {
-    lastUpdated: '29/12/2025',
+    lastUpdated: 'January 4, 2026',
     title: 'About Us',
-    content: `Projekto is an independent online service designed to help teams and businesses estimate software projects more clearly and efficiently.
+    content: `IncomeTally is an independent online tool created to help individuals and professionals calculate income, salary, and tax estimates in a clear, structured, and transparent way.
 
-Modern digital products require accurate planning, clear scope definition, and transparency around technology choices and team composition. While many estimates are created manually or scattered across documents, Projekto provides a structured way to define project scope, technology stack, team roles, timelines, and cost estimates in one place.
+Understanding your take-home pay and tax obligations requires accurate calculations based on current tax laws, brackets, and deductions. In practice, salary and tax calculations are often complex and vary by country, making it difficult to get accurate estimates. IncomeTally brings these calculations together in one place, making financial planning more consistent and easier to manage.
 
-The platform allows users to create and manage project estimates based on their own inputs. Projekto focuses on clarity, structure, and consistency — helping users turn ideas into well-defined project plans that are easy to review, share, and refine.
+The platform allows users to calculate net salary from gross income, convert between hourly and annual rates, and estimate taxes based on country-specific tax rules. IncomeTally is designed as a calculation and estimation tool - helping users understand their actual take-home pay and plan their finances accordingly.
 
-Projekto does not provide project management, hiring, or development services. The website exists solely as an estimation and planning tool that helps users organize project-related information at their request.
+IncomeTally does not provide financial, tax, or legal advice. All calculations are estimates based on publicly available tax data and are intended for informational and planning purposes only.
 
-We aim to deliver a simple, transparent, and practical experience for early-stage planning and decision-making. Projekto is an independent product and is not affiliated with any software vendors, development agencies, or third-party platforms.`,
+Our goal is to offer a simple and practical experience for financial planning and decision-making. IncomeTally is an independent product and is not affiliated with tax authorities, financial institutions, or third-party service providers.`,
     faq: {
       title: 'Frequently Asked Questions',
       items: [
         {
-          question: 'What is Projekto?',
-          answer: 'Projekto is an online tool that helps users create structured software project estimates, including scope, technology stack, team roles, timelines, and cost breakdowns.',
+          question: 'What is IncomeTally?',
+          answer: 'IncomeTally is an online income and tax calculator tool. It helps users calculate net salary, estimate taxes, and convert between different income formats (hourly, monthly, annual) based on country-specific tax rules.',
         },
         {
-          question: 'Who is Projekto for?',
-          answer: 'Projekto is designed for startups, product managers, founders, agencies, and development teams who need clear and well-organized project estimates.',
+          question: 'Who is IncomeTally for?',
+          answer: 'IncomeTally is designed for employees, freelancers, job seekers, and anyone who wants to understand their take-home pay and tax obligations during salary negotiations or financial planning.',
         },
         {
-          question: 'Do I need to create an account to use Projekto?',
-          answer: 'No. Projekto can be used without mandatory registration. Some features may be optional and available without creating an account.',
+          question: 'Do I need to create an account to use IncomeTally?',
+          answer: 'No. IncomeTally can be used without creating an account. All inputs are provided voluntarily by the user.',
         },
         {
-          question: 'Does Projekto build or manage projects?',
-          answer: 'No. Projekto does not provide development, hiring, or project management services. It is an estimation and planning tool only.',
+          question: 'Does IncomeTally provide financial or tax advice?',
+          answer: 'No. IncomeTally does not provide financial, tax, or legal advice. It is strictly a calculation and estimation tool for informational purposes only.',
         },
         {
-          question: 'Is Projekto affiliated with any development agencies or software vendors?',
-          answer: 'No. Projekto is an independent platform and is not affiliated with or endorsed by any agencies, vendors, or third-party services.',
+          question: 'Is IncomeTally affiliated with tax authorities or financial institutions?',
+          answer: 'No. IncomeTally operates independently and has no affiliation with tax authorities, financial institutions, or third-party platforms.',
         },
         {
-          question: 'Is Projekto free to use?',
-          answer: 'Core functionality is available for free. Some advanced features may be introduced in the future to support ongoing development and maintenance.',
+          question: 'Is IncomeTally free to use?',
+          answer: 'IncomeTally offers free access to its core calculation features. Additional features or changes may be introduced in the future.',
         },
       ],
     },

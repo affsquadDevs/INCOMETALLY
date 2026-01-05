@@ -1,0 +1,144 @@
+{
+  "taxClasses": [
+    {
+      "id": "1",
+      "name": "Not married, no children",
+      "description": "Single, divorced, or widowed without children"
+    },
+    {
+      "id": "2",
+      "name": "Single parent",
+      "description": "Single parent with child allowance (Entlastungsbetrag)"
+    },
+    {
+      "id": "3",
+      "name": "Married (higher income than partner)",
+      "description": "Married with significant income difference (favorable for higher earner)"
+    },
+    {
+      "id": "4",
+      "name": "Married (equal income earner)",
+      "description": "Married couple with similar incomes (standard class)"
+    },
+    {
+      "id": "5",
+      "name": "Married (lower income than partner)",
+      "description": "Married with significant income difference (less favorable)"
+    },
+    {
+      "id": "6",
+      "name": "Secondary and additional income",
+      "description": "Second or additional employment"
+    }
+  ],
+  "healthInsuranceTypes": [
+    {
+      "id": "public",
+      "name": "Public / Statutory",
+      "rate": 0.146,
+      "cap": 66150
+    },
+    {
+      "id": "private-without",
+      "name": "Private (without employer contribution)",
+      "rate": 0,
+      "cap": null,
+      "note": "Private insurance is not deducted from salary, but paid separately"
+    },
+    {
+      "id": "private-with",
+      "name": "Private (with employer contribution)",
+      "rate": 0,
+      "cap": null,
+      "note": "Private insurance is not deducted from salary, but paid separately (employer pays their share separately)"
+    }
+  ],
+  "states": [
+    {
+      "id": "BW",
+      "name": "Baden-Württemberg",
+      "churchTaxRate": 0.08
+    },
+    {
+      "id": "BY",
+      "name": "Bavaria",
+      "churchTaxRate": 0.08
+    },
+    {
+      "id": "BE",
+      "name": "Berlin",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "BB",
+      "name": "Brandenburg",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "HB",
+      "name": "Bremen",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "HH",
+      "name": "Hamburg",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "HE",
+      "name": "Hesse",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "MV",
+      "name": "Mecklenburg-Vorpommern",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "NI",
+      "name": "Lower Saxony",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "NW",
+      "name": "North Rhine-Westphalia",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "RP",
+      "name": "Rhineland-Palatinate",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "SL",
+      "name": "Saarland",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "SN",
+      "name": "Saxony",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "ST",
+      "name": "Saxony-Anhalt",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "SH",
+      "name": "Schleswig-Holstein",
+      "churchTaxRate": 0.09
+    },
+    {
+      "id": "TH",
+      "name": "Thuringia",
+      "churchTaxRate": 0.09
+    }
+  ],
+  "solidaritySurcharge": {
+    "rate": 0.055,
+    "threshold": 16956,
+    "note": "Applied to income tax amount. Most taxpayers don't pay (only high income earners)"
+  }
+}
+

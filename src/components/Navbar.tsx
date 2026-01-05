@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { siteConfig } from '@/config/site';
 import { useEffect, useState } from 'react';
 
@@ -44,12 +45,15 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
               <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-all duration-300 hover:scale-105" onClick={closeMobileMenu}>
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-black">
-                  <path d="M6 2L2 6L6 10M10 2L14 6L10 10" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <span className="text-base font-normal text-black tracking-[-0.01em]">
-                  {logo.linkText.toUpperCase()}
-                </span>
+                <Image 
+                  src={logo.image} 
+                  alt={logo.linkText}
+                  width={32}
+                  height={32}
+                  className="h-8 w-auto"
+                  priority
+                />
+              
               </Link>
             </div>
             <div className="hidden md:flex items-center gap-8">

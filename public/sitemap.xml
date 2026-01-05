@@ -2,47 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://ttwrapper.com/</loc>
+    <loc>https://incometally.com/</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/about-us</loc>
+    <loc>https://incometally.com/about-us</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/blog</loc>
+    <loc>https://incometally.com/blog</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/calculator</loc>
+    <loc>https://incometally.com/calculator</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/contact</loc>
+    <loc>https://incometally.com/contact</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/get-started</loc>
+    <loc>https://incometally.com/hourly-to-salary</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/manifesto</loc>
+    <loc>https://incometally.com/manifesto</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/portfolio</loc>
+    <loc>https://incometally.com/portfolio</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/privacy</loc>
+    <loc>https://incometally.com/privacy</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/team</loc>
+    <loc>https://incometally.com/salary-calculator</loc>
   </url>
 
   <url>
-    <loc>https://ttwrapper.com/terms</loc>
+    <loc>https://incometally.com/team</loc>
+  </url>
+
+  <url>
+    <loc>https://incometally.com/terms</loc>
   </url>
 
 </urlset>

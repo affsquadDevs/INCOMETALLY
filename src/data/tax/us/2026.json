@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "countryCode": "US",
+    "countryName": "United States",
+    "currency": "USD",
+    "year": 2026,
+    "disclaimerShort": "Estimates; federal taxes only (simplified). State and local taxes may apply."
+  },
+  "brackets": [
+    {
+      "from": 0,
+      "to": 11600,
+      "rate": 0.1
+    },
+    {
+      "from": 11601,
+      "to": 47150,
+      "rate": 0.12
+    },
+    {
+      "from": 47151,
+      "to": 100525,
+      "rate": 0.22
+    },
+    {
+      "from": 100526,
+      "to": 191950,
+      "rate": 0.24
+    },
+    {
+      "from": 191951,
+      "to": 243725,
+      "rate": 0.32
+    },
+    {
+      "from": 243726,
+      "to": 609350,
+      "rate": 0.35
+    },
+    {
+      "from": 609351,
+      "to": null,
+      "rate": 0.37
+    }
+  ],
+  "socialContrib": [
+    {
+      "name": "Social Security",
+      "rate": 0.062,
+      "cap": 176100
+    },
+    {
+      "name": "Medicare",
+      "rate": 0.0145
+    }
+  ],
+  "allowances": {
+    "standardDeduction": 15000
+  },
+  "roundingRules": {
+    "nearestCent": true
+  }
+}
+

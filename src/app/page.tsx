@@ -16,7 +16,7 @@ export default function Home() {
             <h1 className="text-[72px] lg:text-[96px] xl:text-[120px] font-normal text-black leading-[1.05] mb-6 lg:mb-10 tracking-[-0.03em]">
               <TypewriterText
                 text={home.hero.title}
-                highlightWords={['better', 'saas', 'largest']}
+                highlightWords={['Salary', 'Calculator']}
                 highlightColor="#0066FF"
                 speed={60}
               />
@@ -29,7 +29,7 @@ export default function Home() {
             <AnimatedBlock delay={2500} animationType="fade-slide">
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/calculator"
                   className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0]"
                 >
                   {home.hero.ctaPrimary}
@@ -38,7 +38,7 @@ export default function Home() {
                   </svg>
                 </Link>
                 <Link
-                  href="/blog"
+                  href="/salary-calculator"
                   className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0]"
                 >
                   {home.hero.ctaSecondary}
@@ -105,6 +105,64 @@ export default function Home() {
                   </div>
                 </AnimatedBlock>
               ))}
+            </div>
+          </div>
+        </AnimatedBlock>
+      </section>
+
+      {/* Salary Calculator Links Section */}
+      <section className="max-w-[1920px] mx-auto px-4 lg:px-12 py-12 lg:py-16">
+        <AnimatedBlock delay={0} animationType="fade-slide">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-normal text-black mb-4 tracking-[-0.02em] text-center">
+              Salary Tax Calculators
+            </h2>
+            <p className="text-lg text-black opacity-70 mb-8 text-center max-w-2xl mx-auto">
+              Calculate your net income after taxes and social contributions. Free calculators for multiple countries with detailed breakdowns.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <Link
+                href="/salary-calculator"
+                className="bg-white rounded-lg border border-black border-opacity-10 p-6 hover:border-opacity-30 transition-all hover:shadow-lg"
+              >
+                <h3 className="text-xl font-normal text-black mb-2">
+                  Calculator Hub
+                </h3>
+                <p className="text-sm text-black opacity-70 mb-4">
+                  Access salary calculators for US, Germany, UK, and more. Calculate net income with detailed tax breakdowns.
+                </p>
+                <span className="text-sm text-black opacity-70 underline">
+                  View All Calculators →
+                </span>
+              </Link>
+              <Link
+                href="/hourly-to-salary"
+                className="bg-white rounded-lg border border-black border-opacity-10 p-6 hover:border-opacity-30 transition-all hover:shadow-lg"
+              >
+                <h3 className="text-xl font-normal text-black mb-2">
+                  Hourly to Salary
+                </h3>
+                <p className="text-sm text-black opacity-70 mb-4">
+                  Convert hourly wage to annual, monthly, and weekly salary. Perfect for job negotiations and comparisons.
+                </p>
+                <span className="text-sm text-black opacity-70 underline">
+                  Convert Hourly Rate →
+                </span>
+              </Link>
+              <Link
+                href="/salary-calculator/us"
+                className="bg-white rounded-lg border border-black border-opacity-10 p-6 hover:border-opacity-30 transition-all hover:shadow-lg"
+              >
+                <h3 className="text-xl font-normal text-black mb-2">
+                  🇺🇸 US Calculator
+                </h3>
+                <p className="text-sm text-black opacity-70 mb-4">
+                  Calculate net income for United States. Includes federal taxes, Social Security, and Medicare.
+                </p>
+                <span className="text-sm text-black opacity-70 underline">
+                  Calculate US Salary →
+                </span>
+              </Link>
             </div>
           </div>
         </AnimatedBlock>

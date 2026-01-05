@@ -1,18 +1,16 @@
-# Next.js Blog Template
+# Salary Tax Calculator
 
-A clean, reusable single-page website template built with Next.js, TypeScript, and Tailwind CSS. Perfect for SaaS websites with a built-in blog system.
+A comprehensive salary tax calculator supporting multiple countries with detailed tax breakdowns, guides, and FAQs.
 
 ## Features
 
-- ✅ Fixed top navigation bar with logo and links
-- ✅ Footer with organized sections (Product, Legal, Resources)
-- ✅ Data-driven blog system
-- ✅ Blog list page with card layout
-- ✅ Dynamic blog post pages with Markdown rendering
-- ✅ Reusable components (Navbar, Footer, BlogCard)
-- ✅ Modern SaaS-style design
-- ✅ Fully responsive
-- ✅ TypeScript for type safety
+- **Multi-Country Support**: Calculate net income for US, Germany, UK, and more
+- **Multiple Income Modes**: Hourly, monthly, and yearly calculations
+- **Detailed Breakdowns**: See income tax, social contributions, and net income
+- **Country-Specific Pages**: Dedicated pages with tax explanations and FAQs
+- **Guides Section**: Educational articles on salary calculations and taxes
+- **SEO Optimized**: Complete metadata, sitemaps, and structured data
+- **Performance Optimized**: Dynamic imports, server components, and Core Web Vitals optimizations
 
 ## Getting Started
 
@@ -24,127 +22,92 @@ npm install
 
 ### Development
 
-Run the development server:
-
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
-### Building for Production
+### Building
 
 ```bash
 npm run build
 npm start
 ```
 
+## Adding a New Country
+
+Use the automated scaffold generator:
+
+```bash
+npm run add:country <code> <name> <currency> [flag]
+```
+
+**Example:**
+```bash
+npm run add:country FR France EUR 🇫🇷
+```
+
+Or use tsx directly:
+```bash
+npx tsx scripts/addCountry.ts FR France EUR 🇫🇷
+```
+
+See [docs/ADDING_COUNTRY.md](./docs/ADDING_COUNTRY.md) for detailed instructions.
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+- `npm run test` - Run tests
+- `npm run ci` - Run CI checks (lint + format + test)
+- `npm run add:country` - Add a new country (see docs)
+
 ## Project Structure
 
 ```
-template/
-├── src/
-│   ├── app/
-│   │   ├── blog/
-│   │   │   ├── [slug]/
-│   │   │   │   └── page.tsx      # Dynamic blog post page
-│   │   │   └── page.tsx          # Blog list page
-│   │   ├── contact/
-│   │   │   └── page.tsx          # Contact page
-│   │   ├── layout.tsx            # Root layout with Navbar & Footer
-│   │   ├── page.tsx              # Home page
-│   │   └── globals.css           # Global styles
-│   ├── components/
-│   │   ├── Navbar.tsx            # Navigation component
-│   │   ├── Footer.tsx            # Footer component
-│   │   └── BlogCard.tsx          # Blog card component
-│   └── data/
-│       └── blogs.ts              # Blog data array
-├── package.json
-├── tsconfig.json
-├── tailwind.config.ts
-└── next.config.js
+src/
+├── app/                    # Next.js app router pages
+│   ├── salary-calculator/  # Calculator pages
+│   ├── guides/             # Guide articles
+│   └── ...
+├── components/             # React components
+├── lib/                    # Utilities and helpers
+│   ├── tax/               # Tax calculation logic
+│   ├── countries.ts       # Country metadata
+│   └── seo/               # SEO helpers
+├── data/                   # Static data
+│   ├── tax/               # Tax data JSON files
+│   └── guides.ts          # Guide articles
+└── types/                  # TypeScript types
+
+scripts/
+└── addCountry.ts          # Country scaffold generator
+
+docs/
+└── ADDING_COUNTRY.md      # Guide for adding countries
 ```
 
-## Configuration
+## Tech Stack
 
-All site-wide data is centralized in `src/config/site.ts`. This includes:
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Vitest** - Testing
+- **ESLint + Prettier** - Code quality
 
-- Site name and branding
-- Navigation links
-- Footer sections
-- Contact information
-- Home page content
-- Contact page content
-- Blog data (imported from `src/data/blogs.ts`)
+## Performance
 
-To customize the site, simply edit the values in `src/config/site.ts`.
+The project is optimized for Core Web Vitals:
+- Dynamic imports for heavy components
+- Server components for content
+- Loading skeletons
+- Error boundaries
+- Minimal JavaScript bundles
 
-## Adding New Blog Posts
-
-To add a new blog post, simply add a new object to the `blogs` array in `src/data/blogs.ts`:
-
-```typescript
-{
-  slug: 'your-blog-slug',
-  title: 'Your Blog Title',
-  date: '2024-01-30',
-  excerpt: 'A short description of your blog post',
-  content: `# Your Blog Title
-
-Your markdown content here...
-
-## Section
-
-More content...
-`
-}
-```
-
-The blog post will automatically appear on the blog list page and be accessible at `/blog/your-blog-slug`.
-
-## Markdown Support
-
-Blog posts support full Markdown formatting including:
-
-- Headers (# ## ###)
-- **Bold** and *italic* text
-- Code blocks with syntax highlighting
-- Lists (ordered and unordered)
-- Links
-- Images
-- Tables (via GitHub Flavored Markdown)
-- And more!
-
-You can paste content from Google Docs and format it as Markdown. The content is rendered using `react-markdown` with GitHub Flavored Markdown support.
-
-## Customization
-
-### Styling
-
-The project uses Tailwind CSS. You can customize the design by:
-
-1. Modifying `tailwind.config.ts` for theme customization
-2. Updating component styles in the component files
-3. Adjusting global styles in `src/app/globals.css`
-
-### Components
-
-All components are reusable and can be easily modified:
-
-- **Navbar**: Update links, logo, or styling in `src/components/Navbar.tsx`
-- **Footer**: Modify sections and links in `src/components/Footer.tsx`
-- **BlogCard**: Customize the blog card appearance in `src/components/BlogCard.tsx`
-
-## Technologies Used
-
-- [Next.js 14](https://nextjs.org/) - React framework
-- [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [react-markdown](https://github.com/remarkjs/react-markdown) - Markdown rendering
-- [remark-gfm](https://github.com/remarkjs/remark-gfm) - GitHub Flavored Markdown support
+See [PERFORMANCE.md](./PERFORMANCE.md) for detailed optimization information.
 
 ## License
 
-This template is open source and available for use in your projects.
-
+[Your License Here]
