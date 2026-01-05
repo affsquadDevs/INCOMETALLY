@@ -35,6 +35,8 @@ export const SocialContributionSchema = z.object({
 export const AllowancesSchema = z.object({
   standardDeduction: z.number().min(0).optional(),
   personalAllowance: z.number().min(0).optional(),
+  employeeLumpSum: z.number().min(0).optional(),
+  singleParentRelief: z.number().min(0).optional(),
 });
 
 /**
@@ -51,8 +53,17 @@ export const TaxDataSchema = z.object({
   brackets: z.array(TaxBracketSchema).min(1),
   socialContrib: z.array(SocialContributionSchema).min(0),
   allowances: AllowancesSchema,
+  solidaritySurcharge: z
+    .object({
+      rate: z.number().min(0).max(1),
+      threshold: z.number().min(0).optional(),
+      exemptIncomeTax: z.number().min(0).optional(),
+      phaseInRate: z.number().min(0).max(1).optional(),
+    })
+    .optional(),
   roundingRules: z.object({
     nearestCent: z.boolean(),
+    incomeTaxRoundedDownToEuro: z.boolean().optional(),
   }),
 });
 

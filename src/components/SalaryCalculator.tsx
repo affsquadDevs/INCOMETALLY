@@ -110,7 +110,7 @@ export default function SalaryCalculator({
   const [germanyHealthInsurance, setGermanyHealthInsurance] = useState<'public' | 'private-without' | 'private-with'>('public');
   const [germanyState, setGermanyState] = useState<string>('BW');
   const [germanyInChurch, setGermanyInChurch] = useState<boolean>(false);
-  // Children is derived from tax class (class 2 = single parent = has children)
+  const [germanyHasChildren, setGermanyHasChildren] = useState<boolean>(false);
 
   // Mark as mounted on client side
   useEffect(() => {
@@ -163,9 +163,8 @@ export default function SalaryCalculator({
     }
   }, [countryCode, germanyOptions]);
 
-  // Derive children from tax class for Germany (field removed from UI)
-  // Tax class 2 = "Single parent" means children = true, otherwise false
-  const germanyChildrenDerived = countryCode === 'DE' ? germanyTaxClass === '2' : false;
+  // Tax class II implies children; keep the toggle but force it on for class II.
+  const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
 
   // Validate inputs based on annualGross (single source of truth)
   const validateInputs = useCallback(() => {
@@ -226,7 +225,7 @@ export default function SalaryCalculator({
           healthInsurance: germanyHealthInsurance,
           state: germanyState,
           inChurch: germanyInChurch,
-          children: germanyChildrenDerived,
+          children: germanyChildrenEffective,
         };
         calculationResult = computeNetGermany(annualGross, taxTable, germanyOptionsParams, germanyOptions, hours, weeks);
       } else {
@@ -242,7 +241,7 @@ export default function SalaryCalculator({
       setError(err instanceof Error ? err.message : 'Calculation error');
       setResult(null);
     }
-  }, [taxTable, annualGross, hoursPerWeek, weeksPerYear, isLoading, countryCode, incomeMode, germanyOptions, germanyTaxClass, germanyHealthInsurance, germanyState, germanyInChurch, germanyChildrenDerived]);
+  }, [taxTable, annualGross, hoursPerWeek, weeksPerYear, isLoading, countryCode, incomeMode, germanyOptions, germanyTaxClass, germanyHealthInsurance, germanyState, germanyInChurch, germanyChildrenEffective]);
 
   // Save to localStorage whenever state changes (but not on initial mount)
   useEffect(() => {
@@ -548,25 +547,13 @@ export default function SalaryCalculator({
               }))}
             />
 
-            {/* Total Contribution for Private Health Insurance (only for private) */}
+            {/* Private Health Insurance Note (only for private) */}
             {(germanyHealthInsurance === 'private-without' || germanyHealthInsurance === 'private-with') && (
-              <div>
-                <label 
-                  htmlFor="private-health-contribution"
-                  className="block text-sm font-medium text-black mb-2"
-                >
-                  Total Contribution for Private Health Insurance (€)
-                </label>
-                <input
-                  id="private-health-contribution"
-                  type="number"
-                  value={0}
-                  min="0"
-                  step="0.01"
-                  className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
-                  readOnly
-                  disabled
-                />
+              <div className="bg-blue-50 border border-blue-200 rounded-sm p-3">
+                <p className="text-sm text-gray-700">
+                  <strong>Note:</strong> Private health insurance is paid separately and is not deducted from your salary. 
+                  The net income shown above does not include private insurance costs, which you pay directly to your insurance provider.
+                </p>
               </div>
             )}
 
@@ -617,7 +604,47 @@ export default function SalaryCalculator({
               </div>
             </div>
 
-            {/* Children - REMOVED for simplified calculator */}
+            {/* Children (affects Pflegeversicherung childless surcharge) */}
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Have children?
+              </label>
+              <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="radiogroup" aria-label="Children selection">
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={germanyChildrenEffective === true}
+                  onClick={() => {
+                    if (germanyTaxClass !== '2') setGermanyHasChildren(true);
+                  }}
+                  disabled={germanyTaxClass === '2'}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    germanyChildrenEffective === true
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  } ${germanyTaxClass === '2' ? 'opacity-60 cursor-not-allowed' : ''}`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={germanyChildrenEffective === false}
+                  onClick={() => setGermanyHasChildren(false)}
+                  disabled={germanyTaxClass === '2'}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    germanyChildrenEffective === false
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  } ${germanyTaxClass === '2' ? 'opacity-60 cursor-not-allowed' : ''}`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                Used for long-term care insurance (Pflegeversicherung). For 2026 this means: with children ~1.80% employee share (most states), without children ~2.40% (includes the childless surcharge). Saxony uses a different split.
+              </p>
+            </div>
           </>
         )}
       </div>
@@ -721,11 +748,41 @@ export default function SalaryCalculator({
 
                 {/* Income Tax */}
                 <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                  <span className="text-black font-medium">Income Tax</span>
+                  <span className="text-black font-medium">
+                    {countryCode === 'DE' ? 'Total Income Tax (ESt + Soli + Church)' : 'Income Tax'}
+                  </span>
                   <span className="font-medium text-black">
                     -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTax)}
                   </span>
                 </div>
+
+                {/* Germany: show tax components for clarity */}
+                {countryCode === 'DE' && result.breakdown.incomeTaxComponents && (
+                  <>
+                    <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                      <span className="text-sm text-black opacity-80">Einkommensteuer (ESt)</span>
+                      <span className="text-sm text-black opacity-80">
+                        -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.baseIncomeTax)}
+                      </span>
+                    </div>
+                    {(result.breakdown.incomeTaxComponents.solidaritySurcharge ?? 0) > 0 && (
+                      <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                        <span className="text-sm text-black opacity-80">Solidarity Surcharge (Soli)</span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.solidaritySurcharge!)}
+                        </span>
+                      </div>
+                    )}
+                    {(result.breakdown.incomeTaxComponents.churchTax ?? 0) > 0 && (
+                      <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                        <span className="text-sm text-black opacity-80">Church Tax (Kirchensteuer)</span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.churchTax!)}
+                        </span>
+                      </div>
+                    )}
+                  </>
+                )}
 
                 {/* Social Contributions */}
                 {result.breakdown.socialContributions.breakdown.length > 0 && (
@@ -737,6 +794,14 @@ export default function SalaryCalculator({
                       >
                         <span className="text-sm text-black opacity-80">
                           {contrib.name}
+                          {typeof contrib.rate === 'number' && (
+                            <span className="text-xs opacity-60 ml-2">
+                              ({(contrib.rate * 100).toFixed(2)}%)
+                              {countryCode === 'DE' && contrib.name === 'Long-term Care Insurance' && germanyState === 'SN'
+                                ? ' (Saxony split)'
+                                : ''}
+                            </span>
+                          )}
                           {contrib.cappedAmount && (
                             <span className="text-xs opacity-60 ml-2">
                               (on {contrib.cappedAmount.toLocaleString('en-US')})

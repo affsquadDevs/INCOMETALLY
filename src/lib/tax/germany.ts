@@ -4,7 +4,7 @@
 
 import { TaxData } from '@/types/tax';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
-import { computeIncomeTax, computeSocialContrib, deannualizeIncome } from './calc';
+import { deannualizeIncome } from './calc';
 import { NetIncomeResult, TaxBreakdown, SocialContribResult, SocialContribBreakdown } from './types';
 
 /**
@@ -18,66 +18,93 @@ function round(value: number, nearestCent: boolean): number {
 }
 
 /**
- * Calculate German income tax using EStG progressive formula
- * Simplified approximation: use computeIncomeTax with adjusted brackets
- * For zone 2 (12,349 - 68,429), the actual EStG formula gives ~1.94x the simple bracket calculation
+ * Calculate German income tax using EStG §32a formulas (2026)
+ * Uses the exact progressive formulas from EStG §32a
+ * Grundfreibetrag is already built into the formulas, so we calculate directly on income
  */
 function calculateGermanyIncomeTax(taxableIncome: number, table: TaxData): number {
   if (taxableIncome <= 0) {
     return 0;
   }
 
-  // Use computeIncomeTax but with a multiplier for zone 2 to approximate EStG formula
-  // For taxable income 35652, correct tax is 6336, simple bracket gives 3262.56
-  // Multiplier is approximately 1.94 for this income level
-  const { brackets, roundingRules } = table;
-  let totalTax = 0;
-  let previousBracketEnd = -1;
+  const { roundingRules } = table;
+  const x = Math.floor(taxableIncome); // Round down to nearest euro
+  let tax = 0;
 
-  for (const bracket of brackets) {
-    const bracketStart = bracket.from;
-    const bracketEnd = bracket.to === null ? Infinity : bracket.to;
-
-    if (bracketStart > taxableIncome) {
-      continue;
-    }
-
-    const effectiveEnd = Math.min(taxableIncome, bracketEnd === Infinity ? taxableIncome : bracketEnd);
-    const incomeInBracket = Math.max(0, effectiveEnd - previousBracketEnd);
-
-    if (incomeInBracket > 0) {
-      let taxInBracket = incomeInBracket * bracket.rate;
-      
-      // Apply multiplier for zone 2 (12,349 - 68,429) to approximate EStG formula
-      // The multiplier varies but averages around 1.94 for typical incomes
-      if (bracketStart >= 12349 && bracketStart <= 68429 && bracket.rate > 0) {
-        // Progressive multiplier: higher for lower incomes in zone 2, lower for higher incomes
-        const zone2Progress = (effectiveEnd - 12349) / (68429 - 12349);
-        const multiplier = 1.94 - zone2Progress * 0.3; // 1.94 to 1.64
-        taxInBracket *= multiplier;
-      }
-      
-      totalTax += taxInBracket;
-    }
-
-    if (bracketEnd !== Infinity) {
-      previousBracketEnd = bracketEnd;
-    } else {
-      previousBracketEnd = taxableIncome;
-    }
-
-    if (bracketEnd === Infinity && taxableIncome > bracketStart) {
-      break;
-    }
+  // Zone 1: 0 - 12,348 € (tax-free, Grundfreibetrag already built into formulas)
+  if (x <= 12348) {
+    tax = 0;
+  }
+  // Zone 2: 12,349 - 17,799 €
+  else if (x <= 17799) {
+    const y = (x - 12348) / 10000;
+    tax = (914.51 * y + 1400) * y;
+  }
+  // Zone 3: 17,800 - 69,878 €
+  else if (x <= 69878) {
+    const z = (x - 17799) / 10000; // For 2026: z is 1/10000 of amount exceeding 17,799 €
+    tax = (173.10 * z + 2397) * z + 1034.87;
+  }
+  // Zone 4: 69,879 - 277,825 €
+  else if (x <= 277825) {
+    tax = 0.42 * x - 11135.63;
+  }
+  // Zone 5: 277,826 € and above
+  else {
+    tax = 0.45 * x - 19470.38;
   }
 
-  return round(totalTax, roundingRules.nearestCent);
+  // Round down to nearest euro (as per EStG)
+  if (roundingRules.incomeTaxRoundedDownToEuro ?? true) {
+    return Math.floor(tax);
+  }
+  return round(tax, roundingRules.nearestCent);
+}
+
+/**
+ * Solidarity surcharge (Solidaritätszuschlag, Soli)
+ *
+ * Post-2021 Soli has:
+ * - exemption (0) up to an income-tax (ESt) threshold
+ * - a phase-in zone
+ * - full rate (5.5% of ESt) above the phase-in
+ *
+ * We model this with two parameters:
+ * - exemptIncomeTax: ESt amount below which Soli = 0
+ * - phaseInRate: applied to (ESt - exemptIncomeTax), capped at rate * ESt
+ *
+ * This avoids the common bug of applying 5.5% to the full ESt immediately after the threshold.
+ */
+export function computeGermanySolidaritySurcharge(
+  incomeTax: number,
+  soli: {
+    rate: number;
+    threshold?: number;
+    exemptIncomeTax?: number;
+    phaseInRate?: number;
+  }
+): number {
+  if (incomeTax <= 0) return 0;
+  const rate = soli.rate;
+  const exemptIncomeTax = soli.exemptIncomeTax ?? soli.threshold ?? 0;
+  const phaseInRate = soli.phaseInRate ?? 0.119;
+
+  if (incomeTax <= exemptIncomeTax) return 0;
+
+  const phaseIn = phaseInRate * (incomeTax - exemptIncomeTax);
+  const full = rate * incomeTax;
+  return Math.min(full, phaseIn);
 }
 
 /**
  * Calculate Germany tax allowances based on tax class, children, and other factors
  * Based on arbeitnow.com/tools/salary-calculator/germany tax allowances table for 2026
  * Returns total allowance amount
+ * 
+ * NOTE: This function is NOT used for taxable income calculation.
+ * Grundfreibetrag is already built into EStG §32a formulas, so we only subtract
+ * Werbungskostenpauschale (employee lump sum) to get taxable income.
+ * This function is kept for reference/documentation purposes only.
  */
 function calculateGermanyAllowances(
   taxClass: '1' | '2' | '3' | '4' | '5' | '6',
@@ -97,10 +124,10 @@ function calculateGermanyAllowances(
   // Classes 5 and 6 have no basic allowance
 
   // Employee lump-sum (Werbungskostenpauschale)
-  // Class 1-5: 1.000 €
+  // Class 1-5: 1.230 €
   // Class 6: No (0)
   if (taxClass !== '6') {
-    totalAllowance += 1000;
+    totalAllowance += 1230;
   }
 
   // Standard special expenses lump-sum (Sonderausgabenpauschbetrag)
@@ -136,7 +163,8 @@ function computeGermanySocialContrib(
   table: TaxData,
   healthInsurance: 'public' | 'private-without' | 'private-with',
   children: boolean,
-  zusatzbeitragRate: number = 0.015 // Default Zusatzbeitrag 1.5%
+  state: string,
+  zusatzbeitragRate?: number // Employee share of Zusatzbeitrag (e.g. 0.0145 for 2.9% avg add-on)
 ): SocialContribResult {
   const { socialContrib, roundingRules } = table;
   const breakdown: SocialContribBreakdown[] = [];
@@ -144,6 +172,15 @@ function computeGermanySocialContrib(
 
   // Employee share is 50% of total contribution rates
   const employeeShareMultiplier = 0.5;
+
+  const healthContrib = socialContrib.find(c => c.name === 'Health Insurance');
+  const careContrib = socialContrib.find(c => c.name === 'Long-term Care Insurance');
+
+  // Gesetzlicher allgemeiner Beitragssatz (GKV): 14.6% total
+  const statutoryHealthBaseTotalRate = 0.146;
+  const derivedEmployeeZusatzbeitragRate =
+    zusatzbeitragRate ??
+    (healthContrib ? Math.max(0, (healthContrib.rate - statutoryHealthBaseTotalRate) * 0.5) : 0.0145);
 
   for (const contrib of socialContrib) {
     // Skip health insurance if private (both with and without employer contribution)
@@ -160,22 +197,16 @@ function computeGermanySocialContrib(
       cappedAmount = annualGross;
     }
 
-    // Calculate base contribution amount (employee share = 50% of total rate)
-    let rate = contrib.rate * employeeShareMultiplier;
-    let amount = cappedAmount * rate;
-
-    // Apply Zusatzbeitrag for public health insurance (employee share only)
-    // Note: On arbeitnow.com, Health Insurance is shown as a single line item
-    // that already includes Zusatzbeitrag, so we combine them
+    // Health Insurance (GKV): employee pays half of base + half of Zusatzbeitrag
     if (contrib.name === 'Health Insurance' && healthInsurance === 'public') {
-      const zusatzbeitragAmount = cappedAmount * zusatzbeitragRate * employeeShareMultiplier;
-      amount += zusatzbeitragAmount;
+      const baseRateEmployee = statutoryHealthBaseTotalRate * 0.5; // 7.3%
+      const totalRateEmployee = baseRateEmployee + derivedEmployeeZusatzbeitragRate;
+      const amount = cappedAmount * totalRateEmployee;
       
-      // Add health insurance as single line item (includes Zusatzbeitrag)
       breakdown.push({
         name: contrib.name,
         amount: round(amount, roundingRules.nearestCent),
-        rate: rate + (zusatzbeitragRate * employeeShareMultiplier),
+        rate: totalRateEmployee,
         cappedAmount: contrib.cap !== undefined ? cappedAmount : undefined,
       });
       
@@ -184,16 +215,30 @@ function computeGermanySocialContrib(
     }
 
     // Long-term Care Insurance (Pflegeversicherung)
-    // For private health insurance, Care Insurance is not paid (skip it)
-    // Note: The rate in JSON already includes the surcharge for no children
     if (contrib.name === 'Long-term Care Insurance') {
-      // Skip Care Insurance for private health insurance
-      if (healthInsurance === 'private-without' || healthInsurance === 'private-with') {
-        continue;
-      }
-      // Continue to add base contribution (fall through to default case)
-      // The rate already includes surcharge, so we don't add it separately
+      // 2025+: base rate 3.6% total.
+      // Childless surcharge: +0.6% (employee only).
+      // Saxony: different employer/employee split for the base rate (employee higher).
+      const baseTotalRate = careContrib?.rate ?? 0.036;
+      const baseRateEmployee = state === 'SN' ? 0.023 : baseTotalRate * 0.5; // Saxony vs other states
+      const childlessSurchargeEmployee = children ? 0 : 0.006;
+      const totalRateEmployee = baseRateEmployee + childlessSurchargeEmployee;
+      const amount = cappedAmount * totalRateEmployee;
+      
+      breakdown.push({
+        name: contrib.name,
+        amount: round(amount, roundingRules.nearestCent),
+        rate: totalRateEmployee,
+        cappedAmount: contrib.cap !== undefined ? cappedAmount : undefined,
+      });
+      
+      totalAnnual += amount;
+      continue;
     }
+
+    // Other contributions (Pension, Unemployment): employee share = 50% of total rate
+    const rate = contrib.rate * employeeShareMultiplier;
+    const amount = cappedAmount * rate;
 
     breakdown.push({
       name: contrib.name,
@@ -213,6 +258,15 @@ function computeGermanySocialContrib(
 
 /**
  * Compute net income for Germany with all specific parameters
+ * 
+ * Implements Ehegattensplitting (income splitting) for married couples:
+ * - Tax classes 3 and 4: Apply splitting (tax on half income × 2)
+ * - Tax class 5: No splitting (designed for higher withholding on lower earner)
+ * - Tax classes 1, 2, 6: No splitting (single, single parent, secondary employment)
+ * 
+ * Sanity check example (55k gross, class 3, BY, inChurch=true, public insurance):
+ * - Income tax with splitting: ~6,710 € (vs ~11,896 without splitting)
+ * - Net: ~35-36k, Effective rate: ~mid-30%
  * 
  * @param annualGross - Annual gross income
  * @param table - Tax data table
@@ -237,29 +291,53 @@ export function computeNetGermany(
   // Use provided Germany options data
   const germanyOptions = germanyOptionsData;
 
-  // Taxable income for display = Gross - Personal Allowance only
-  const { allowances, brackets, roundingRules } = table;
-  const personalAllowanceOnly = allowances.personalAllowance || 0;
-  const taxableIncome = Math.max(0, annualGross - personalAllowanceOnly);
+  // Taxable income approximation:
+  // - We subtract Werbungskostenpauschale (employee lump sum).
+  // - Grundfreibetrag is NOT deducted here - it's already built into EStG §32a formulas.
+  // - Steuerklasse II (single parent) includes an Entlastungsbetrag relief; we model it as an extra allowance.
+  const { allowances } = table;
+  const employeeLumpSum = options.taxClass === '6' ? 0 : (allowances.employeeLumpSum ?? 1230);
+  const personalAllowance = allowances.personalAllowance ?? 12348;
+  const singleParentRelief =
+    options.taxClass === '2'
+      ? (germanyOptions.singleParentRelief ?? allowances.singleParentRelief ?? 4260)
+      : 0;
+  const taxableIncome = Math.max(0, annualGross - employeeLumpSum - singleParentRelief);
+  // Wage tax classes V/VI effectively remove the basic allowance in withholding.
+  // We approximate this by shifting the taxable income into the tariff by +Grundfreibetrag.
+  // This keeps class IV identical to class I for annual calculations (no splitting benefit).
+  const effectiveTaxableIncome =
+    options.taxClass === '5' || options.taxClass === '6'
+      ? taxableIncome + personalAllowance
+      : taxableIncome;
 
-  // Calculate income tax directly on taxable income
-  // Note: In Germany, income tax uses EStG progressive formula, not simple brackets
-  // For simplicity, we use computeIncomeTax but need to calculate it on the correct taxable income base
-  // The brackets in JSON represent the tax-free threshold, not the actual tax calculation method
-  // We calculate income tax on taxable income (gross - personal allowance), which is the correct base
-  
-  // Use computeIncomeTax but pass taxable income + personal allowance as gross, with personal allowance as allowance
-  // This way computeIncomeTax will calculate on the correct taxable income base
-  // Calculate income tax using German EStG formula approximation
-  const incomeTax = calculateGermanyIncomeTax(taxableIncome, table);
-
-  // Calculate solidarity surcharge (5.5% of income tax, but only if income tax exceeds threshold)
-  // Most taxpayers don't pay Soli (threshold is quite high)
-  let solidaritySurcharge = 0;
-  const soliThreshold = germanyOptions.solidaritySurcharge.threshold || 0;
-  if (incomeTax > soliThreshold) {
-    solidaritySurcharge = incomeTax * germanyOptions.solidaritySurcharge.rate;
+  // Calculate income tax based on tax class
+  // For married couples (tax classes 3 and 4), apply Ehegattensplitting (income splitting):
+  // - Tax is calculated on half the taxable income, then multiplied by 2
+  // - This results in lower tax due to progressive tax brackets
+  // Tax class 5 (married lower earner) does NOT use splitting - it's designed for higher withholding
+  // Tax classes 1, 2, 6 do not use splitting (single, single parent, secondary employment)
+  let incomeTax: number;
+  if (options.taxClass === '3') {
+    // Ehegattensplitting: Calculate tax on half the income, then multiply by 2
+    // This benefits married couples by pushing each spouse's income into lower tax brackets
+    const halfTaxableIncome = Math.floor(effectiveTaxableIncome / 2);
+    const halfTax = calculateGermanyIncomeTax(halfTaxableIncome, table);
+    incomeTax = halfTax * 2;
+  } else {
+    // Tax classes 1, 2, 4, 5, 6: No splitting (IV must match I for annual income tax)
+    // Class 5 is intentionally harsher for the lower-earning spouse (part of III/V combination)
+    incomeTax = calculateGermanyIncomeTax(effectiveTaxableIncome, table);
   }
+
+  // Solidarity surcharge (Soli): exemption + phase-in based on income tax amount (ESt)
+  const baseSoliParams = table.solidaritySurcharge ?? germanyOptions.solidaritySurcharge;
+  const exempt = baseSoliParams.exemptIncomeTax ?? baseSoliParams.threshold ?? 0;
+  const soliParams =
+    options.taxClass === '3'
+      ? { ...baseSoliParams, exemptIncomeTax: exempt * 2 }
+      : baseSoliParams;
+  const solidaritySurcharge = computeGermanySolidaritySurcharge(incomeTax, soliParams);
   const solidarityRounded = round(solidaritySurcharge, table.roundingRules.nearestCent);
 
   // Calculate church tax (8-9% of income tax, depending on state, if in church)
@@ -276,13 +354,12 @@ export function computeNetGermany(
   const totalIncomeTax = incomeTax + solidarityRounded + churchTaxRounded;
 
   // Calculate social contributions (with health insurance, Zusatzbeitrag, and Pflegeversicherung consideration)
-  const zusatzbeitragRate = 0.015; // 1.5% average Zusatzbeitrag for public health insurance
   const socialContrib = computeGermanySocialContrib(
     annualGross,
     table,
     options.healthInsurance,
     options.children,
-    zusatzbeitragRate
+    options.state
   );
 
   // Calculate net income
@@ -298,15 +375,22 @@ export function computeNetGermany(
   // Use calculated allowances for breakdown (only personal allowance for taxable income display)
 
   // Build breakdown - include solidarity and church tax in incomeTax total
+  // Note: employeeLumpSum (Werbungskostenpauschale) is used for taxable income calculation
+  // Grundfreibetrag is NOT deducted - it's built into EStG formulas
   const breakdown: TaxBreakdown = {
     grossIncome: annualGross,
     allowances: {
       standardDeduction: allowances.standardDeduction,
-      personalAllowance: personalAllowanceOnly, // Only personal allowance for display
-      total: personalAllowanceOnly, // Only personal allowance for taxable income
+      personalAllowance: allowances.personalAllowance, // Grundfreibetrag (for display only, not deducted)
+      total: employeeLumpSum + singleParentRelief, // Deductions applied to reach taxableIncome (lump sum + class II relief)
     },
     taxableIncome,
     incomeTax: totalIncomeTax, // Total including solidarity and church tax
+    incomeTaxComponents: {
+      baseIncomeTax: incomeTax,
+      solidaritySurcharge: solidarityRounded,
+      churchTax: churchTaxRounded,
+    },
     socialContributions: socialContrib,
     netIncome: netAnnual,
     effectiveTaxRate,

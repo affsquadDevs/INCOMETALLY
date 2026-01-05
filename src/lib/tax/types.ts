@@ -38,7 +38,14 @@ export interface TaxBreakdown {
     total: number;
   };
   taxableIncome: number;
+  // "incomeTax" is the total income tax line shown in UI (may include country-specific surcharges).
   incomeTax: number;
+  // Optional breakdown for countries that have surcharges (e.g., DE: Soli, Kirchensteuer)
+  incomeTaxComponents?: {
+    baseIncomeTax: number;
+    solidaritySurcharge?: number;
+    churchTax?: number;
+  };
   socialContributions: SocialContribResult;
   netIncome: number;
   effectiveTaxRate: number; // (incomeTax + socialContributions) / grossIncome

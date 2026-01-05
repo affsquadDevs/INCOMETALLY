@@ -28,9 +28,16 @@ export interface GermanyOptionsData {
     name: string;
     churchTaxRate: number;
   }>;
+  // Steuerklasse II relief (Entlastungsbetrag für Alleinerziehende), annual amount
+  singleParentRelief?: number;
   solidaritySurcharge: {
     rate: number;
-    threshold: number;
+    // Legacy/simple threshold (kept for backward compatibility)
+    threshold?: number;
+    // Preferred: exemption/phase-in is based on income tax amount (ESt), not income.
+    exemptIncomeTax?: number;
+    // In the phase-in zone, Soli is computed as phaseInRate * (ESt - exemptIncomeTax), capped at (rate * ESt)
+    phaseInRate?: number;
     note: string;
   };
 }

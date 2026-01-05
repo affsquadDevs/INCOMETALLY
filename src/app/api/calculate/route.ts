@@ -20,9 +20,19 @@ export async function POST(request: NextRequest) {
     } = body;
 
     // Validate inputs
-    if (!countryCode || !year || !mode || value === undefined) {
+    const normalizedCountryCode = countryCode ? (countryCode as string).toUpperCase() : null;
+    if (!normalizedCountryCode || !year || !mode || value === undefined) {
       return NextResponse.json(
         { error: 'Missing required fields' },
+        { status: 400 }
+      );
+    }
+
+    // Germany needs extra parameters (tax class, state, church, insurance).
+    // If the request doesn't send them, we can't calculate correctly.
+    if (normalizedCountryCode === 'DE') {
+      return NextResponse.json(
+        { error: 'Germany calculator requires JavaScript (extra tax options needed).' },
         { status: 400 }
       );
     }
@@ -39,7 +49,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Get tax table
-    const taxTable = getTaxTable(countryCode, year);
+    const taxTable = getTaxTable(normalizedCountryCode, year);
 
     // Calculate annual gross
     const annualGross = annualizeIncome(mode as IncomeMode, income, hours, weeks);

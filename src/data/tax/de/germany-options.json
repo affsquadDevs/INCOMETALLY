@@ -3,27 +3,27 @@
     {
       "id": "1",
       "name": "Not married, no children",
-      "description": "Single, divorced, or widowed without children"
+      "description": "Single, divorced, widowed (standard class)"
     },
     {
       "id": "2",
       "name": "Single parent",
-      "description": "Single parent with child allowance (Entlastungsbetrag)"
+      "description": "Single parent with Entlastungsbetrag relief"
     },
     {
       "id": "3",
       "name": "Married (higher income than partner)",
-      "description": "Married with significant income difference (favorable for higher earner)"
+      "description": "Married; beneficial for higher earner (III/V combination)"
     },
     {
       "id": "4",
       "name": "Married (equal income earner)",
-      "description": "Married couple with similar incomes (standard class)"
+      "description": "Married; similar incomes (IV/IV)"
     },
     {
       "id": "5",
       "name": "Married (lower income than partner)",
-      "description": "Married with significant income difference (less favorable)"
+      "description": "Married; less favorable for lower earner (III/V combination)"
     },
     {
       "id": "6",
@@ -34,9 +34,9 @@
   "healthInsuranceTypes": [
     {
       "id": "public",
-      "name": "Public / Statutory",
+      "name": "Public / Statutory (GKV)",
       "rate": 0.146,
-      "cap": 66150
+      "cap": 69750
     },
     {
       "id": "private-without",
@@ -135,10 +135,13 @@
       "churchTaxRate": 0.09
     }
   ],
+  "singleParentRelief": 4260,
   "solidaritySurcharge": {
     "rate": 0.055,
-    "threshold": 16956,
-    "note": "Applied to income tax amount. Most taxpayers don't pay (only high income earners)"
+    "threshold": 20350,
+    "exemptIncomeTax": 20350,
+    "phaseInRate": 0.119,
+    "note": "Soli is 5.5% of income tax (ESt). Exemption + phase-in depends on the ESt amount (SolzG 1995 §3/§4): Freigrenze is 20,350 € (single) and 40,700 € (splitting). In the phase-in zone, Soli is 11.9% of (ESt - Freigrenze), capped at 5.5% of ESt."
   }
 }
 

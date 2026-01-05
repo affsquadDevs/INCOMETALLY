@@ -10,7 +10,7 @@
 
 import fs from 'fs';
 import path from 'path';
-import { validateTaxData } from '../src/lib/tax/schema';
+import { validateTaxData } from '../src/lib/tax/schema.ts';
 
 const taxDataDir = path.join(process.cwd(), 'src', 'data', 'tax');
 let hasErrors = false;

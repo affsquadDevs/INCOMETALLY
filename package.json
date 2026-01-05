@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run generate:all && npm run validate:tax && next build",
-    "validate:tax": "tsx scripts/validate-tax-data.ts",
+    "validate:tax": "node --experimental-strip-types scripts/validate-tax-data.ts",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",

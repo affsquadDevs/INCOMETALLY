@@ -4,7 +4,7 @@
     "countryName": "Germany",
     "currency": "EUR",
     "year": 2026,
-    "disclaimerShort": "Estimates; may not include local taxes."
+    "disclaimerShort": "Estimates based on statutory parameters (EStG §32a, social insurance ceilings, average add-on rate). Does not replace payroll tax tables for exact wage withholding."
   },
   "brackets": [
     {
@@ -32,34 +32,38 @@
     {
       "name": "Pension Insurance",
       "rate": 0.186,
-      "cap": 96600
+      "cap": 101400
     },
     {
       "name": "Unemployment Insurance",
       "rate": 0.026,
-      "cap": 96600
+      "cap": 101400
     },
     {
       "name": "Health Insurance",
-      "rate": 0.174,
-      "cap": 66150
+      "rate": 0.175,
+      "cap": 69750,
+      "note": "Total rate 17.5% (14.6% base + 2.9% average add-on), employee share 8.75%"
     },
     {
       "name": "Long-term Care Insurance",
-      "rate": 0.046,
-      "cap": 66150
+      "rate": 0.036,
+      "cap": 69750,
+      "note": "Base total rate 3.6% (2025+). Childless surcharge +0.6% applies to employee only; Saxony has a different employer/employee split. These are applied in the DE-specific calculator logic."
     }
   ],
   "allowances": {
     "personalAllowance": 12348,
-    "employeeLumpSum": 1000
+    "employeeLumpSum": 1230,
+    "singleParentRelief": 4260
   },
   "solidaritySurcharge": {
     "rate": 0.055,
-    "threshold": 16956
+    "threshold": 20350
   },
   "roundingRules": {
-    "nearestCent": true
+    "nearestCent": true,
+    "incomeTaxRoundedDownToEuro": true
   }
 }
 

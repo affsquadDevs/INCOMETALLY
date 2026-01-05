@@ -5,6 +5,8 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'node',
+    // Avoid fork() pool teardown issues in restricted/sandboxed environments.
+    pool: 'threads',
   },
   resolve: {
     alias: {

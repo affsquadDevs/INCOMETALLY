@@ -18,9 +18,18 @@ export async function calculateSalary(formData: FormData) {
     const weeksPerYear = parseFloat(formData.get('weeksPerYear') as string) || 52;
 
     // Validate
-    if (!countryCode || !year || !mode || !value) {
+    const normalizedCountryCode = (countryCode as string)?.toUpperCase();
+    if (!normalizedCountryCode || !year || !mode || !value) {
       return {
         error: 'Missing required fields',
+      };
+    }
+
+    // Germany needs extra parameters (tax class, state, church, insurance).
+    // If the no-JS form doesn't send them, we can't calculate correctly.
+    if (normalizedCountryCode === 'DE') {
+      return {
+        error: 'Germany calculator requires JavaScript (extra tax options needed).',
       };
     }
 
@@ -32,7 +41,7 @@ export async function calculateSalary(formData: FormData) {
     }
 
     // Get tax table
-    const taxTable = getTaxTable(countryCode, year);
+    const taxTable = getTaxTable(normalizedCountryCode, year);
 
     // Calculate
     const annualGross = annualizeIncome(mode, income, hoursPerWeek, weeksPerYear);
