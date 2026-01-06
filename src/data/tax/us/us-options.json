@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "countryCode": "US",
+    "year": 2026,
+    "notes": "Detailed US calculator parameters (federal income tax + payroll tax estimates). Income tax schedules and standard deduction are sourced from IRS IR-2025-103 and Rev. Proc. 2025-32. Payroll wage base may require SSA confirmation if changed after publication.",
+    "sources": {
+      "irsNewsReleaseUrl": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "revenueProcedurePdfUrl": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "extractedAt": "2026-01-06"
+    }
+  },
+  "filingStatuses": [
+    { "id": "single", "name": "Single" },
+    { "id": "mfj", "name": "Married Filing Jointly" },
+    { "id": "mfs", "name": "Married Filing Separately" },
+    { "id": "hoh", "name": "Head of Household" }
+  ],
+  "standardDeduction": {
+    "single": 15000,
+    "mfj": 30000,
+    "mfs": 15000,
+    "hoh": 22500
+  },
+  "additionalStandardDeduction": {
+    "singleOrHoh": 1500,
+    "marriedOrMfs": 1500
+  },
+  "federalBrackets": {
+    "single": [
+      { "from": 0, "to": 11800, "rate": 0.1 },
+      { "from": 11801, "to": 48500, "rate": 0.12 },
+      { "from": 48501, "to": 103500, "rate": 0.22 },
+      { "from": 103501, "to": 198000, "rate": 0.24 },
+      { "from": 198001, "to": 252000, "rate": 0.32 },
+      { "from": 252001, "to": 630000, "rate": 0.35 },
+      { "from": 630001, "to": null, "rate": 0.37 }
+    ],
+    "mfj": [
+      { "from": 0, "to": 24800, "rate": 0.1 },
+      { "from": 24801, "to": 100800, "rate": 0.12 },
+      { "from": 100801, "to": 211400, "rate": 0.22 },
+      { "from": 211401, "to": 403550, "rate": 0.24 },
+      { "from": 403551, "to": 512450, "rate": 0.32 },
+      { "from": 512451, "to": 768700, "rate": 0.35 },
+      { "from": 768701, "to": null, "rate": 0.37 }
+    ],
+    "mfs": [
+      { "from": 0, "to": 12400, "rate": 0.1 },
+      { "from": 12401, "to": 50400, "rate": 0.12 },
+      { "from": 50401, "to": 105700, "rate": 0.22 },
+      { "from": 105701, "to": 201775, "rate": 0.24 },
+      { "from": 201776, "to": 256225, "rate": 0.32 },
+      { "from": 256226, "to": 384350, "rate": 0.35 },
+      { "from": 384351, "to": null, "rate": 0.37 }
+    ],
+    "hoh": [
+      { "from": 0, "to": 17700, "rate": 0.1 },
+      { "from": 17701, "to": 67450, "rate": 0.12 },
+      { "from": 67451, "to": 105700, "rate": 0.22 },
+      { "from": 105701, "to": 201750, "rate": 0.24 },
+      { "from": 201751, "to": 256200, "rate": 0.32 },
+      { "from": 256201, "to": 640600, "rate": 0.35 },
+      { "from": 640601, "to": null, "rate": 0.37 }
+    ]
+  },
+  "payroll": {
+    "employee": {
+      "socialSecurityRate": 0.062,
+      "socialSecurityWageBase": 168600,
+      "medicareRate": 0.0145,
+      "additionalMedicareRate": 0.009,
+      "additionalMedicareThreshold": {
+        "single": 200000,
+        "mfj": 250000,
+        "mfs": 125000,
+        "hoh": 200000
+      }
+    },
+    "selfEmployed": {
+      "seEarningsMultiplier": 0.9235,
+      "socialSecurityRate": 0.124,
+      "socialSecurityWageBase": 168600,
+      "medicareRate": 0.029,
+      "additionalMedicareRate": 0.009,
+      "additionalMedicareThreshold": {
+        "single": 200000,
+        "mfj": 250000,
+        "mfs": 125000,
+        "hoh": 200000
+      }
+    }
+  },
+  "credits": {
+    "childTaxCredit": {
+      "amountPerChildUnder17": 2000,
+      "phaseoutStart": {
+        "single": 200000,
+        "mfj": 400000,
+        "mfs": 200000,
+        "hoh": 200000
+      },
+      "phaseoutReductionPer1000": 50
+    },
+    "otherDependentCredit": {
+      "amountPerDependent": 500,
+      "phaseoutStart": {
+        "single": 200000,
+        "mfj": 400000,
+        "mfs": 200000,
+        "hoh": 200000
+      },
+      "phaseoutReductionPer1000": 50
+    }
+  }
+}
+
+

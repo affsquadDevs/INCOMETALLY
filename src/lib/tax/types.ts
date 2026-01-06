@@ -37,7 +37,14 @@ export interface TaxBreakdown {
     personalAllowance?: number;
     total: number;
   };
+  // Optional intermediate values for countries that expose more detail (e.g., US AGI)
+  adjustedGrossIncome?: number; // AGI can be negative (before standard deduction)
   taxableIncome: number;
+  // Optional pre-tax deduction details (for US and UK)
+  preTaxDeductions?: {
+    entered: number; // Total pre-tax deductions entered by user
+    applied: number; // Pre-tax deductions actually applied (capped at gross income)
+  };
   // "incomeTax" is the total income tax line shown in UI (may include country-specific surcharges).
   incomeTax: number;
   // Optional breakdown for countries that have surcharges (e.g., DE: Soli, Kirchensteuer)
@@ -45,6 +52,14 @@ export interface TaxBreakdown {
     baseIncomeTax: number;
     solidaritySurcharge?: number;
     churchTax?: number;
+    // US-style breakdown (optional)
+    federalIncomeTaxBeforeCredits?: number;
+    taxCredits?: number;
+    federalIncomeTaxAfterCredits?: number;
+    stateIncomeTax?: number;
+    localIncomeTax?: number;
+    // UK-specific
+    studentLoan?: number;
   };
   socialContributions: SocialContribResult;
   netIncome: number;

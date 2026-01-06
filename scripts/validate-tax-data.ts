@@ -10,7 +10,8 @@
 
 import fs from 'fs';
 import path from 'path';
-import { validateTaxData } from '../src/lib/tax/schema.ts';
+import { validateTaxData } from '../src/lib/tax/schema.js';
+import { validateUsOptionsData } from '../src/lib/tax/us-schema.js';
 
 const taxDataDir = path.join(process.cwd(), 'src', 'data', 'tax');
 let hasErrors = false;
@@ -71,6 +72,32 @@ for (const country of countries) {
       errors.push(`${country.toUpperCase()}/${year}.json: ${message}`);
     }
   }
+}
+
+// Validate US options file (non-YYYY JSON)
+try {
+  const usOptionsPath = path.join(process.cwd(), 'src', 'data', 'tax', 'us', 'us-options.json');
+  if (fs.existsSync(usOptionsPath)) {
+    const content = fs.readFileSync(usOptionsPath, 'utf-8');
+    const data = JSON.parse(content);
+    const validation = validateUsOptionsData(data);
+    if (validation.valid) {
+      console.log('✅ US/us-options.json');
+    } else {
+      hasErrors = true;
+      console.error('❌ US/us-options.json');
+      validation.errors.forEach((error) => {
+        console.error(`   ${error}`);
+        errors.push(`US/us-options.json: ${error}`);
+      });
+    }
+  }
+} catch (error) {
+  hasErrors = true;
+  console.error('❌ US/us-options.json');
+  const message = error instanceof Error ? error.message : 'Unknown error';
+  console.error(`   ${message}`);
+  errors.push(`US/us-options.json: ${message}`);
 }
 
 console.log('');

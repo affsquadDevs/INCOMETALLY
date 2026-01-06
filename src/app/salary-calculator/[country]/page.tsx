@@ -169,6 +169,7 @@ export default async function CountryCalculatorPage({ params }: PageProps) {
               initialYear={2026}
               initialMode={country.exampleMode}
               initialValue={country.exampleGross}
+              hideCountrySelect={true}
             />
           </ErrorBoundary>
         </div>

@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "countryCode": "UK",
+    "year": 2026,
+    "notes": "UK tax calculator parameters for England, Wales, and Northern Ireland. Scotland has different rates and is not yet supported. Personal Allowance phase-out applies from £100,000 to £125,140."
+  },
+  "personalAllowance": {
+    "base": 12570,
+    "phaseOutStart": 100000,
+    "phaseOutEnd": 125140
+  },
+  "incomeTaxBands": [
+    {
+      "from": 0,
+      "to": 12570,
+      "rate": 0
+    },
+    {
+      "from": 12571,
+      "to": 50270,
+      "rate": 0.2
+    },
+    {
+      "from": 50271,
+      "to": 125140,
+      "rate": 0.4
+    },
+    {
+      "from": 125141,
+      "to": null,
+      "rate": 0.45
+    }
+  ],
+  "nationalInsurance": {
+    "primaryThreshold": 12570,
+    "upperEarningsLimit": 50270,
+    "rateBasic": 0.08,
+    "rateHigher": 0.02
+  },
+  "studentLoan": {
+    "plan2": {
+      "threshold": 27295,
+      "rate": 0.09,
+      "description": "England/Wales students who started after Sept 1, 2012"
+    },
+    "plan4": {
+      "threshold": 25000,
+      "rate": 0.09,
+      "description": "Scotland students (SAAS loans)"
+    },
+    "plan5": {
+      "threshold": 25000,
+      "rate": 0.09,
+      "description": "England/Wales students who started after Aug 1, 2023"
+    }
+  }
+}
+

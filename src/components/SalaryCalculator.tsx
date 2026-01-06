@@ -3,9 +3,13 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { computeNet, annualizeIncome, deannualizeIncome } from '@/lib/tax/calc';
 import { computeNetGermany } from '@/lib/tax/germany';
+import { computeNetUS } from '@/lib/tax/us';
+import { computeNetUK } from '@/lib/tax/uk';
 import { type IncomeMode } from '@/lib/tax/types';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
-import { inputToAnnualGross, getModeValue, formatPrecise } from '@/lib/calculator-state';
+import { type USOptionsData, type USTaxOptions, type USFilingStatus, type USEmploymentType, type USDeductionMethod } from '@/types/us';
+import { type UKOptionsData, type UKTaxOptions } from '@/types/uk';
+import { inputToAnnualGross, getModeValue, formatPrecise, normalizeToAnnual } from '@/lib/calculator-state';
 import { trackModeChange, trackCountryChange, trackCalculate, trackCopyLink, trackCalcStarted, trackCalcFinished } from '@/lib/analytics';
 import TaxDisclaimer from './TaxDisclaimer';
 import AdSlot from './AdSlot';
@@ -13,8 +17,7 @@ import CalculatorForm from './CalculatorForm';
 import CustomSelect from './CustomSelect';
 import { TaxData } from '@/types/tax';
 import {
-  hydrateState,
-  saveToLocalStorage,
+  parseQueryParams,
   serializeToQueryParams,
   type CalculatorState,
 } from '@/lib/urlState';
@@ -24,6 +27,7 @@ interface SalaryCalculatorProps {
   initialYear?: number;
   initialMode?: IncomeMode;
   initialValue?: number;
+  hideCountrySelect?: boolean;
 }
 
 // Validation bounds
@@ -40,10 +44,10 @@ export default function SalaryCalculator({
   initialYear = 2026,
   initialMode = 'yearly',
   initialValue = 50000,
+  hideCountrySelect = false,
 }: SalaryCalculatorProps) {
   // Track if component has mounted to avoid SSR issues
   const [isMounted, setIsMounted] = useState(false);
-  const isInitialMount = useRef(true);
   const calcStartedFired = useRef(false);
   
   // Default state values
@@ -56,19 +60,34 @@ export default function SalaryCalculator({
     year: initialYear,
   };
 
-  // Hydrate initial state from query params > localStorage > defaults
+  // Hydrate initial state from query params > defaults (no localStorage)
   const getInitialState = (): CalculatorState => {
-    if (typeof window === 'undefined') {
-      return {
-        country: defaults.country,
-        mode: defaults.mode,
-        gross: defaults.gross.toString(),
-        hoursPerWeek: defaults.hoursPerWeek.toString(),
-        weeksPerYear: defaults.weeksPerYear.toString(),
-        year: defaults.year,
-      };
+    // Start with defaults (from props)
+    const state: CalculatorState = {
+      country: defaults.country,
+      mode: defaults.mode,
+      gross: defaults.gross.toString(),
+      hoursPerWeek: defaults.hoursPerWeek.toString(),
+      weeksPerYear: defaults.weeksPerYear.toString(),
+      year: defaults.year,
+    };
+
+    // Apply query params if available (client-side only)
+    // But don't override country if hideCountrySelect is true (specific country page)
+    if (typeof window !== 'undefined') {
+      const query = parseQueryParams(window.location.search);
+      // Only apply country from query params if country selector is visible
+      if (query.country && !hideCountrySelect) {
+        state.country = query.country;
+      }
+      if (query.mode) state.mode = query.mode;
+      if (query.gross) state.gross = query.gross;
+      if (query.hoursPerWeek) state.hoursPerWeek = query.hoursPerWeek;
+      if (query.weeksPerYear) state.weeksPerYear = query.weeksPerYear;
+      if (query.year) state.year = query.year;
     }
-    return hydrateState(window.location.search, defaults);
+
+    return state;
   };
 
   const initialState = getInitialState();
@@ -111,6 +130,31 @@ export default function SalaryCalculator({
   const [germanyState, setGermanyState] = useState<string>('BW');
   const [germanyInChurch, setGermanyInChurch] = useState<boolean>(false);
   const [germanyHasChildren, setGermanyHasChildren] = useState<boolean>(false);
+
+  // US-specific state
+  const [usOptions, setUsOptions] = useState<USOptionsData | null>(null);
+  const [usFilingStatus, setUsFilingStatus] = useState<USFilingStatus>('single');
+  const [usEmploymentType, setUsEmploymentType] = useState<USEmploymentType>('employee');
+  const [usDeductionMethod, setUsDeductionMethod] = useState<USDeductionMethod>('auto');
+  const [usItemizedDeductions, setUsItemizedDeductions] = useState<string>('0');
+  const [usChildrenUnder17, setUsChildrenUnder17] = useState<string>('0');
+  const [usOtherDependents, setUsOtherDependents] = useState<string>('0');
+  const [usTaxpayerOver65, setUsTaxpayerOver65] = useState<boolean>(false);
+  const [usTaxpayerBlind, setUsTaxpayerBlind] = useState<boolean>(false);
+  const [usSpouseOver65, setUsSpouseOver65] = useState<boolean>(false);
+  const [usSpouseBlind, setUsSpouseBlind] = useState<boolean>(false);
+  const [usPreTax401k, setUsPreTax401k] = useState<string>('0');
+  const [usPreTaxHSA, setUsPreTaxHSA] = useState<string>('0');
+  const [usOtherPreTax, setUsOtherPreTax] = useState<string>('0');
+  const [usStateTaxRatePct, setUsStateTaxRatePct] = useState<string>('0');
+  const [usLocalTaxRatePct, setUsLocalTaxRatePct] = useState<string>('0');
+
+  // UK-specific state
+  const [ukOptions, setUkOptions] = useState<UKOptionsData | null>(null);
+  const [ukPreTaxPension, setUkPreTaxPension] = useState<string>('0');
+  const [ukPreTaxOther, setUkPreTaxOther] = useState<string>('0');
+  const [ukStudentLoanPlan, setUkStudentLoanPlan] = useState<'none' | 'plan2' | 'plan4' | 'plan5'>('none');
+  const [ukRegion, setUkRegion] = useState<'england' | 'wales' | 'scotland' | 'ni'>('england');
 
   // Mark as mounted on client side
   useEffect(() => {
@@ -162,6 +206,42 @@ export default function SalaryCalculator({
       loadGermanyOptions();
     }
   }, [countryCode, germanyOptions]);
+
+  // Load US options when country is US
+  useEffect(() => {
+    if (countryCode === 'US' && !usOptions) {
+      const loadUsOptions = async () => {
+        try {
+          const response = await fetch(`/api/us-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setUsOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load US options:', err);
+        }
+      };
+      loadUsOptions();
+    }
+  }, [countryCode, usOptions, year]);
+
+  // Load UK options when country is UK
+  useEffect(() => {
+    if (countryCode === 'UK' && !ukOptions) {
+      const loadUkOptions = async () => {
+        try {
+          const response = await fetch(`/api/uk-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setUkOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load UK options:', err);
+        }
+      };
+      loadUkOptions();
+    }
+  }, [countryCode, ukOptions, year]);
 
   // Tax class II implies children; keep the toggle but force it on for class II.
   const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
@@ -228,6 +308,53 @@ export default function SalaryCalculator({
           children: germanyChildrenEffective,
         };
         calculationResult = computeNetGermany(annualGross, taxTable, germanyOptionsParams, germanyOptions, hours, weeks);
+      } else if (countryCode === 'US' && usOptions) {
+        // Normalize all monetary inputs to annual based on income mode
+        // This ensures pre-tax deductions and itemized deductions are correctly converted
+        // from monthly/hourly to yearly if needed
+        const preTax401kInput = parseFloat(usPreTax401k) || 0;
+        const preTaxHSAInput = parseFloat(usPreTaxHSA) || 0;
+        const otherPreTaxInput = parseFloat(usOtherPreTax) || 0;
+        const itemizedInput = parseFloat(usItemizedDeductions) || 0;
+        
+        const preTax401kAnnual = normalizeToAnnual(preTax401kInput, incomeMode, hours, weeks);
+        const preTaxHSAAnnual = normalizeToAnnual(preTaxHSAInput, incomeMode, hours, weeks);
+        const otherPreTaxAnnual = normalizeToAnnual(otherPreTaxInput, incomeMode, hours, weeks);
+        const itemizedAnnual = normalizeToAnnual(itemizedInput, incomeMode, hours, weeks);
+        
+        const usParams: USTaxOptions = {
+          filingStatus: usFilingStatus,
+          employmentType: usEmploymentType,
+          deductionMethod: usDeductionMethod,
+          itemizedDeductions: itemizedAnnual,
+          childrenUnder17: parseInt(usChildrenUnder17, 10) || 0,
+          otherDependents: parseInt(usOtherDependents, 10) || 0,
+          taxpayerOver65: usTaxpayerOver65,
+          taxpayerBlind: usTaxpayerBlind,
+          spouseOver65: usSpouseOver65,
+          spouseBlind: usSpouseBlind,
+          preTax401k: preTax401kAnnual,
+          preTaxHSA: preTaxHSAAnnual,
+          otherPreTaxDeductions: otherPreTaxAnnual,
+          stateTaxRate: (parseFloat(usStateTaxRatePct) || 0) / 100,
+          localTaxRate: (parseFloat(usLocalTaxRatePct) || 0) / 100,
+        };
+        calculationResult = computeNetUS(annualGross, taxTable, usParams, usOptions, hours, weeks);
+      } else if (countryCode === 'UK' && ukOptions) {
+        // Normalize all monetary inputs to annual based on income mode
+        const preTaxPensionInput = parseFloat(ukPreTaxPension) || 0;
+        const preTaxOtherInput = parseFloat(ukPreTaxOther) || 0;
+        
+        const preTaxPensionAnnual = normalizeToAnnual(preTaxPensionInput, incomeMode, hours, weeks);
+        const preTaxOtherAnnual = normalizeToAnnual(preTaxOtherInput, incomeMode, hours, weeks);
+        
+        const ukParams: UKTaxOptions = {
+          preTaxPension: preTaxPensionAnnual,
+          preTaxOther: preTaxOtherAnnual,
+          studentLoanPlan: ukStudentLoanPlan,
+          region: ukRegion,
+        };
+        calculationResult = computeNetUK(annualGross, taxTable, ukParams, ukOptions, hours, weeks);
       } else {
         calculationResult = computeNet(annualGross, taxTable, hours, weeks);
       }
@@ -241,31 +368,43 @@ export default function SalaryCalculator({
       setError(err instanceof Error ? err.message : 'Calculation error');
       setResult(null);
     }
-  }, [taxTable, annualGross, hoursPerWeek, weeksPerYear, isLoading, countryCode, incomeMode, germanyOptions, germanyTaxClass, germanyHealthInsurance, germanyState, germanyInChurch, germanyChildrenEffective]);
+  }, [
+    taxTable,
+    annualGross,
+    hoursPerWeek,
+    weeksPerYear,
+    isLoading,
+    countryCode,
+    incomeMode,
+    germanyOptions,
+    germanyTaxClass,
+    germanyHealthInsurance,
+    germanyState,
+    germanyInChurch,
+    germanyChildrenEffective,
+    usOptions,
+    ukOptions,
+    ukPreTaxPension,
+    ukPreTaxOther,
+    ukStudentLoanPlan,
+    ukRegion,
+    usFilingStatus,
+    usEmploymentType,
+    usDeductionMethod,
+    usItemizedDeductions,
+    usChildrenUnder17,
+    usOtherDependents,
+    usTaxpayerOver65,
+    usTaxpayerBlind,
+    usSpouseOver65,
+    usSpouseBlind,
+    usPreTax401k,
+    usPreTaxHSA,
+    usOtherPreTax,
+    usStateTaxRatePct,
+    usLocalTaxRatePct,
+  ]);
 
-  // Save to localStorage whenever state changes (but not on initial mount)
-  useEffect(() => {
-    if (!isMounted || isInitialMount.current) {
-      isInitialMount.current = false;
-      return;
-    }
-
-    // Get current mode value from annualGross for storage
-    const hours = parseFloat(hoursPerWeek) || 40;
-    const weeks = parseFloat(weeksPerYear) || 52;
-    const currentGrossValue = getModeValue(annualGross, incomeMode, hours, weeks);
-
-    const state: CalculatorState = {
-      country: countryCode,
-      mode: incomeMode,
-      gross: currentGrossValue.toString(),
-      hoursPerWeek,
-      weeksPerYear,
-      year,
-    };
-
-    saveToLocalStorage(state);
-  }, [countryCode, year, incomeMode, annualGross, hoursPerWeek, weeksPerYear, isMounted]);
 
   // Copy share link
   const copyShareLink = useCallback(() => {
@@ -322,6 +461,9 @@ export default function SalaryCalculator({
     }
   };
 
+  const availableModes: IncomeMode[] =
+    countryCode === 'DE' ? (['monthly', 'yearly'] as IncomeMode[]) : (['hourly', 'monthly', 'yearly'] as IncomeMode[]);
+
   return (
     <div className="space-y-6">
       {/* Progressive Enhancement: No-JS Fallback Form */}
@@ -332,14 +474,59 @@ export default function SalaryCalculator({
         initialValue={initialValue}
       />
 
-      {/* Mode Toggle - Only Monthly/Yearly for Germany */}
-      {countryCode === 'DE' && (
-        <div>
+      {/* Country Selection - Prominent Display */}
+      {!hideCountrySelect && (
+        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-[#0066FF] border-opacity-30 rounded-lg p-6 mb-6 shadow-sm">
+          <div className="max-w-md">
+            <label 
+              htmlFor="country-select"
+              className="block text-base font-semibold text-black mb-3 flex items-center gap-2"
+            >
+              <svg 
+                className="w-5 h-5 text-[#0066FF]" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" 
+                />
+              </svg>
+              Select Country
+            </label>
+            <CustomSelect
+              id="country-select"
+              value={countryCode}
+              onChange={(value) => {
+                const newCountry = value.toString();
+                setCountryCode(newCountry);
+                trackCountryChange(newCountry);
+              }}
+              options={[
+                { value: 'US', label: '🇺🇸 United States (Federal Only)' },
+                { value: 'DE', label: '🇩🇪 Germany' },
+                { value: 'UK', label: '🇬🇧 United Kingdom' },
+              ]}
+              buttonClassName="text-base py-3 font-medium border-2 border-[#0066FF] border-opacity-40 bg-white hover:border-opacity-60 shadow-sm"
+            />
+            <p className="mt-2 text-sm text-gray-600">
+              Choose your country to calculate taxes accordingly
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Mode Toggle - Germany: Monthly/Yearly; others: Hourly/Monthly/Yearly */}
+      <div>
           <label className="block text-sm font-medium text-black mb-3">
             Salary Period
           </label>
           <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="tablist" aria-label="Salary period selection">
-            {(['monthly', 'yearly'] as IncomeMode[]).map((mode) => (
+            {availableModes.map((mode) => (
             <button
               key={mode}
               type="button"
@@ -364,7 +551,6 @@ export default function SalaryCalculator({
           ))}
           </div>
         </div>
-      )}
 
       {/* Inputs Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -374,7 +560,7 @@ export default function SalaryCalculator({
             htmlFor="income-input"
             className="block text-sm font-medium text-black mb-2"
           >
-            Gross Salary (€)
+            Gross Income ({taxTable?.metadata.currency ?? (countryCode === 'DE' ? 'EUR' : 'USD')})
           </label>
           <input
             id="income-input"
@@ -384,9 +570,8 @@ export default function SalaryCalculator({
               // Update annualGross based on new input value
               // This is the single source of truth - prevents circular updates
               const newValue = parseFloat(e.target.value) || 0;
-              // For Germany, only monthly/yearly modes are available
-              const hours = 40; // Default, not used for monthly/yearly
-              const weeks = 52; // Default, not used for monthly/yearly
+              const hours = parseFloat(hoursPerWeek) || 40;
+              const weeks = parseFloat(weeksPerYear) || 52;
               const newAnnualGross = annualizeIncome(incomeMode, newValue, hours, weeks);
               setAnnualGross(newAnnualGross);
             }}
@@ -415,25 +600,8 @@ export default function SalaryCalculator({
           )}
         </div>
 
-        {/* Country Selection */}
-        <CustomSelect
-          id="country-select"
-          label="Country"
-          value={countryCode}
-          onChange={(value) => {
-            const newCountry = value.toString();
-            setCountryCode(newCountry);
-            trackCountryChange(newCountry);
-          }}
-          options={[
-            { value: 'US', label: 'United States (Federal Only)' },
-            { value: 'DE', label: 'Germany' },
-            { value: 'UK', label: 'United Kingdom' },
-          ]}
-        />
-
-        {/* Hours per Week - REMOVED (only monthly/yearly for Germany) */}
-        {false && incomeMode === 'hourly' && (
+        {/* Hours per Week (hourly mode only; hidden for Germany) */}
+        {countryCode !== 'DE' && incomeMode === 'hourly' && (
           <div>
             <label 
               htmlFor="hours-input"
@@ -475,8 +643,8 @@ export default function SalaryCalculator({
           </div>
         )}
 
-        {/* Weeks per Year - REMOVED (only monthly/yearly for Germany) */}
-        {false && incomeMode === 'hourly' && (
+        {/* Weeks per Year (hourly mode only; hidden for Germany) */}
+        {countryCode !== 'DE' && incomeMode === 'hourly' && (
           <div>
             <label 
               htmlFor="weeks-input"
@@ -647,6 +815,274 @@ export default function SalaryCalculator({
             </div>
           </>
         )}
+
+        {/* US-specific fields */}
+        {countryCode === 'US' && usOptions && (
+          <>
+            <CustomSelect
+              id="us-filing-status"
+              label="Filing Status"
+              value={usFilingStatus}
+              onChange={(value) => setUsFilingStatus(value.toString() as USFilingStatus)}
+              options={usOptions.filingStatuses.map((s) => ({ value: s.id, label: s.name }))}
+            />
+
+            <CustomSelect
+              id="us-employment-type"
+              label="Employment Type"
+              value={usEmploymentType}
+              onChange={(value) => setUsEmploymentType(value.toString() as USEmploymentType)}
+              options={[
+                { value: 'employee', label: 'Employee (W-2)' },
+                { value: 'selfEmployed', label: 'Self-employed (SE tax estimate)' },
+              ]}
+            />
+
+            <CustomSelect
+              id="us-deduction-method"
+              label="Deduction Method"
+              value={usDeductionMethod}
+              onChange={(value) => setUsDeductionMethod(value.toString() as USDeductionMethod)}
+              options={[
+                { value: 'auto', label: 'Auto (max of standard vs itemized)' },
+                { value: 'standard', label: 'Standard deduction' },
+                { value: 'itemized', label: 'Itemized deductions' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Itemized Deductions ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+              </label>
+              <input
+                type="number"
+                value={usItemizedDeductions}
+                onChange={(e) => setUsItemizedDeductions(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Children (under 17)
+              </label>
+              <input
+                type="number"
+                value={usChildrenUnder17}
+                onChange={(e) => setUsChildrenUnder17(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Other Dependents
+              </label>
+              <input
+                type="number"
+                value={usOtherDependents}
+                onChange={(e) => setUsOtherDependents(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <label className="flex items-center gap-2 text-sm text-black">
+                <input
+                  type="checkbox"
+                  checked={usTaxpayerOver65}
+                  onChange={(e) => setUsTaxpayerOver65(e.target.checked)}
+                />
+                Taxpayer 65+
+              </label>
+              <label className="flex items-center gap-2 text-sm text-black">
+                <input
+                  type="checkbox"
+                  checked={usTaxpayerBlind}
+                  onChange={(e) => setUsTaxpayerBlind(e.target.checked)}
+                />
+                Taxpayer blind
+              </label>
+              {(usFilingStatus === 'mfj' || usFilingStatus === 'mfs') && (
+                <>
+                  <label className="flex items-center gap-2 text-sm text-black">
+                    <input
+                      type="checkbox"
+                      checked={usSpouseOver65}
+                      onChange={(e) => setUsSpouseOver65(e.target.checked)}
+                    />
+                    Spouse 65+
+                  </label>
+                  <label className="flex items-center gap-2 text-sm text-black">
+                    <input
+                      type="checkbox"
+                      checked={usSpouseBlind}
+                      onChange={(e) => setUsSpouseBlind(e.target.checked)}
+                    />
+                    Spouse blind
+                  </label>
+                </>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Pre-tax 401(k) / retirement ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+              </label>
+              <input
+                type="number"
+                value={usPreTax401k}
+                onChange={(e) => setUsPreTax401k(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Pre-tax HSA ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+              </label>
+              <input
+                type="number"
+                value={usPreTaxHSA}
+                onChange={(e) => setUsPreTaxHSA(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Other pre-tax deductions ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+              </label>
+              <input
+                type="number"
+                value={usOtherPreTax}
+                onChange={(e) => setUsOtherPreTax(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                State tax rate (estimate, %)
+              </label>
+              <input
+                type="number"
+                value={usStateTaxRatePct}
+                onChange={(e) => setUsStateTaxRatePct(e.target.value)}
+                min="0"
+                max="20"
+                step="0.01"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Local tax rate (estimate, %)
+              </label>
+              <input
+                type="number"
+                value={usLocalTaxRatePct}
+                onChange={(e) => setUsLocalTaxRatePct(e.target.value)}
+                min="0"
+                max="10"
+                step="0.01"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+          </>
+        )}
+
+        {/* UK-specific fields */}
+        {countryCode === 'UK' && ukOptions && (
+          <>
+            <CustomSelect
+              id="uk-region"
+              label="Region"
+              value={ukRegion}
+              onChange={(value) => setUkRegion(value.toString() as 'england' | 'wales' | 'scotland' | 'ni')}
+              options={[
+                { value: 'england', label: 'England' },
+                { value: 'wales', label: 'Wales' },
+                { value: 'ni', label: 'Northern Ireland' },
+                { value: 'scotland', label: 'Scotland (not yet supported)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Pre-tax Pension Contributions ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+              </label>
+              <input
+                type="number"
+                value={ukPreTaxPension}
+                onChange={(e) => setUkPreTaxPension(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Other Pre-tax Deductions ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+              </label>
+              <input
+                type="number"
+                value={ukPreTaxOther}
+                onChange={(e) => setUkPreTaxOther(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <CustomSelect
+              id="uk-student-loan"
+              label="Student Loan Plan"
+              value={ukStudentLoanPlan}
+              onChange={(value) => setUkStudentLoanPlan(value.toString() as 'none' | 'plan2' | 'plan4' | 'plan5')}
+              options={[
+                { value: 'none', label: 'None' },
+                ...(ukOptions ? [
+                  { 
+                    value: 'plan2', 
+                    label: `Plan 2 (9% over £${ukOptions.studentLoan.plan2.threshold.toLocaleString('en-GB')})` 
+                  },
+                  { 
+                    value: 'plan4', 
+                    label: `Plan 4 (9% over £${ukOptions.studentLoan.plan4.threshold.toLocaleString('en-GB')})` 
+                  },
+                  { 
+                    value: 'plan5', 
+                    label: `Plan 5 (9% over £${ukOptions.studentLoan.plan5.threshold.toLocaleString('en-GB')})` 
+                  },
+                ] : [
+                  { value: 'plan2', label: 'Plan 2 (9% over £27,295)' },
+                  { value: 'plan4', label: 'Plan 4 (9% over £25,000)' },
+                  { value: 'plan5', label: 'Plan 5 (9% over £25,000)' },
+                ])
+              ]}
+            />
+            {ukOptions && (
+              <p className="text-xs text-gray-600 mt-1">
+                Note: Plan depends on where/when you studied, not where you work.
+              </p>
+            )}
+          </>
+        )}
       </div>
 
       {/* Action Buttons */}
@@ -688,7 +1124,11 @@ export default function SalaryCalculator({
             <h2 className="text-2xl font-normal mb-6">Net Income</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
-                <p className="text-sm opacity-90 mb-1">Net Hourly</p>
+                <p className="text-sm opacity-90 mb-1">
+                  {countryCode === 'UK' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0
+                    ? 'Net Hourly (after salary sacrifice)'
+                    : 'Net Hourly'}
+                </p>
                 <p className="text-3xl font-normal">
                   {taxTable.metadata.currency} {formatCurrency(result.netHourly)}
                 </p>
@@ -707,10 +1147,38 @@ export default function SalaryCalculator({
               </div>
             </div>
             <div className="mt-6 pt-6 border-t border-white border-opacity-20">
-              <p className="text-sm opacity-90 mb-1">Effective Tax Rate</p>
-              <p className="text-2xl font-normal">
-                {(result.effectiveTaxRate * 100).toFixed(2)}%
-              </p>
+              {countryCode === 'UK' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0 ? (
+                <>
+                  {/* UK: Show 3 separate metrics when salary sacrifice exists */}
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm opacity-90 mb-1">Tax & NI Rate</p>
+                      <p className="text-2xl font-normal">
+                        {(result.effectiveTaxRate * 100).toFixed(2)}%
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-sm opacity-90 mb-1">Salary Sacrifice Rate</p>
+                      <p className="text-2xl font-normal">
+                        {((result.breakdown.preTaxDeductions.applied / result.breakdown.grossIncome) * 100).toFixed(2)}%
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-sm opacity-90 mb-1">Total Non-Cash Share</p>
+                      <p className="text-2xl font-normal">
+                        {((1 - (result.breakdown.netIncome / result.breakdown.grossIncome)) * 100).toFixed(2)}%
+                      </p>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <p className="text-sm opacity-90 mb-1">Effective Tax Rate</p>
+                  <p className="text-2xl font-normal">
+                    {(result.effectiveTaxRate * 100).toFixed(2)}%
+                  </p>
+                </>
+              )}
             </div>
           </div>
 
@@ -728,10 +1196,74 @@ export default function SalaryCalculator({
                   </span>
                 </div>
 
-                {/* Allowances */}
+                {/* US: Pre-tax Deductions (entered vs applied) */}
+                {countryCode === 'US' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.entered > 0 && (
+                  <>
+                    {result.breakdown.preTaxDeductions.entered !== result.breakdown.preTaxDeductions.applied ? (
+                      <>
+                        <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                          <span className="text-sm text-black opacity-80">Pre-tax Deductions (entered)</span>
+                          <span className="text-sm text-black opacity-80">
+                            -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.entered)}
+                          </span>
+                        </div>
+                        <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                          <span className="text-black">Pre-tax Deductions (applied, capped)</span>
+                          <span className="text-black">
+                            -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.applied)}
+                          </span>
+                        </div>
+                      </>
+                    ) : (
+                      <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                        <span className="text-black">Pre-tax Deductions</span>
+                        <span className="text-black">
+                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.applied)}
+                        </span>
+                      </div>
+                    )}
+                  </>
+                )}
+
+                {/* US: AGI (can be negative) */}
+                {countryCode === 'US' && result.breakdown.adjustedGrossIncome !== undefined && (
+                  <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                    <span className="text-black">Adjusted Gross Income (AGI)</span>
+                    <span className={`text-black ${result.breakdown.adjustedGrossIncome < 0 ? 'opacity-70' : ''}`}>
+                      {taxTable.metadata.currency} {formatCurrency(result.breakdown.adjustedGrossIncome)}
+                    </span>
+                  </div>
+                )}
+
+                {/* UK: Salary Sacrifice (Pre-tax Deductions) */}
+                {countryCode === 'UK' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0 && (
+                  <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                    <span className="text-black">Salary Sacrifice (Pension & Pre-tax)</span>
+                    <span className="text-black">
+                      -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.applied)}
+                    </span>
+                  </div>
+                )}
+
+                {/* UK: Adjusted Income (after pre-tax deductions) */}
+                {countryCode === 'UK' && result.breakdown.adjustedGrossIncome !== undefined && 
+                 result.breakdown.grossIncome > result.breakdown.adjustedGrossIncome && (
+                  <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                    <span className="text-black">Adjusted Income (after salary sacrifice)</span>
+                    <span className="text-black">
+                      {taxTable.metadata.currency} {formatCurrency(result.breakdown.adjustedGrossIncome)}
+                    </span>
+                  </div>
+                )}
+
+                {/* Standard/Itemized Deduction (US) or Allowances (other countries) */}
                 {result.breakdown.allowances.total > 0 && (
                   <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                    <span className="text-black">Allowances</span>
+                    <span className="text-black">
+                      {countryCode === 'US' 
+                        ? (result.breakdown.allowances.standardDeduction !== undefined ? 'Standard Deduction' : 'Itemized Deduction')
+                        : 'Allowances'}
+                    </span>
                     <span className="text-black">
                       -{taxTable.metadata.currency} {formatCurrency(result.breakdown.allowances.total)}
                     </span>
@@ -749,14 +1281,33 @@ export default function SalaryCalculator({
                 {/* Income Tax */}
                 <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
                   <span className="text-black font-medium">
-                    {countryCode === 'DE' ? 'Total Income Tax (ESt + Soli + Church)' : 'Income Tax'}
+                    {countryCode === 'DE'
+                      ? 'Total Income Tax (ESt + Soli + Church)'
+                      : countryCode === 'US'
+                        ? 'Income Tax (Federal + State + Local)'
+                        : countryCode === 'UK'
+                          ? 'Income Tax'
+                          : 'Income Tax'}
                   </span>
                   <span className="font-medium text-black">
                     -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTax)}
                   </span>
                 </div>
 
-                {/* Germany: show tax components for clarity */}
+                {/* UK: Student Loan */}
+                {countryCode === 'UK' && result.breakdown.incomeTaxComponents?.studentLoan !== undefined && 
+                 result.breakdown.incomeTaxComponents.studentLoan > 0 && (
+                  <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                    <span className="text-sm text-black opacity-80">
+                      Student Loan ({ukStudentLoanPlan === 'plan2' ? 'Plan 2' : ukStudentLoanPlan === 'plan4' ? 'Plan 4' : 'Plan 5'})
+                    </span>
+                    <span className="text-sm text-black opacity-80">
+                      -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.studentLoan)}
+                    </span>
+                  </div>
+                )}
+
+                {/* Country-specific income tax components */}
                 {countryCode === 'DE' && result.breakdown.incomeTaxComponents && (
                   <>
                     <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
@@ -778,6 +1329,51 @@ export default function SalaryCalculator({
                         <span className="text-sm text-black opacity-80">Church Tax (Kirchensteuer)</span>
                         <span className="text-sm text-black opacity-80">
                           -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.churchTax!)}
+                        </span>
+                      </div>
+                    )}
+                  </>
+                )}
+
+                {countryCode === 'US' && result.breakdown.incomeTaxComponents && (
+                  <>
+                    {typeof result.breakdown.incomeTaxComponents.federalIncomeTaxBeforeCredits === 'number' && (
+                      <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                        <span className="text-sm text-black opacity-80">Federal income tax (before credits)</span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.federalIncomeTaxBeforeCredits)}
+                        </span>
+                      </div>
+                    )}
+                    {(result.breakdown.incomeTaxComponents.taxCredits ?? 0) > 0 && (
+                      <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                        <span className="text-sm text-black opacity-80">Tax credits (applied)</span>
+                        <span className="text-sm text-black opacity-80">
+                          +{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.taxCredits!)}
+                        </span>
+                      </div>
+                    )}
+                    {typeof result.breakdown.incomeTaxComponents.federalIncomeTaxAfterCredits === 'number' && (
+                      <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                        <span className="text-sm text-black opacity-80">Federal income tax (after credits)</span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.federalIncomeTaxAfterCredits)}
+                        </span>
+                      </div>
+                    )}
+                    {(result.breakdown.incomeTaxComponents.stateIncomeTax ?? 0) > 0 && (
+                      <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                        <span className="text-sm text-black opacity-80">State income tax (estimate)</span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.stateIncomeTax!)}
+                        </span>
+                      </div>
+                    )}
+                    {(result.breakdown.incomeTaxComponents.localIncomeTax ?? 0) > 0 && (
+                      <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                        <span className="text-sm text-black opacity-80">Local income tax (estimate)</span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.localIncomeTax!)}
                         </span>
                       </div>
                     )}
@@ -822,15 +1418,27 @@ export default function SalaryCalculator({
                   </>
                 )}
 
-                {/* Total Deductions */}
+                {/* Taxes & NI */}
                 <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
-                  <span className="text-black">Total Deductions</span>
+                  <span className="text-black">Taxes & NI</span>
                   <span className="text-black">
                     -{taxTable.metadata.currency} {formatCurrency(
-                      result.breakdown.incomeTax + result.breakdown.socialContributions.totalAnnual
+                      countryCode === 'UK' && result.breakdown.incomeTaxComponents?.studentLoan
+                        ? result.breakdown.incomeTax + result.breakdown.socialContributions.totalAnnual + result.breakdown.incomeTaxComponents.studentLoan
+                        : result.breakdown.incomeTax + result.breakdown.socialContributions.totalAnnual
                     )}
                   </span>
                 </div>
+
+                {/* UK: Cash in Hand (separate from salary sacrifice) */}
+                {countryCode === 'UK' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0 && (
+                  <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
+                    <span className="text-black">Cash in Hand</span>
+                    <span className="text-black font-bold">
+                      {taxTable.metadata.currency} {formatCurrency(result.breakdown.netIncome)}
+                    </span>
+                  </div>
+                )}
 
                 {/* Net Income */}
                 <div className="flex justify-between items-center py-4 pt-6">

@@ -9,6 +9,7 @@ interface CustomSelectProps {
   label?: string;
   id?: string;
   className?: string;
+  buttonClassName?: string;
 }
 
 export default function CustomSelect({
@@ -18,6 +19,7 @@ export default function CustomSelect({
   label,
   id,
   className = '',
+  buttonClassName = '',
 }: CustomSelectProps) {
   const [isOpen, setIsOpen] = useState(false);
   const selectRef = useRef<HTMLDivElement>(null);
@@ -60,7 +62,7 @@ export default function CustomSelect({
         id={id}
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-4 py-2 border border-black border-opacity-20 rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent flex items-center justify-between transition-all hover:border-opacity-30"
+        className={`w-full px-4 py-2 border border-black border-opacity-20 rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent flex items-center justify-between transition-all hover:border-opacity-30 ${buttonClassName}`}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
       >

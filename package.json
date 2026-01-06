@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run generate:all && npm run validate:tax && next build",
-    "validate:tax": "node --experimental-strip-types scripts/validate-tax-data.ts",
+    "validate:tax": "tsx scripts/validate-tax-data.ts",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -37,12 +37,13 @@
     "autoprefixer": "^10.4.16",
     "eslint": "^8.0.0",
     "eslint-config-next": "^14.0.0",
+    "pdfjs-dist": "^4.10.38",
     "postcss": "^8.4.31",
     "prettier": "^3.0.0",
     "sharp": "^0.34.5",
-    "tsx": "^4.0.0",
     "tailwindcss": "^3.3.5",
     "to-ico": "^1.1.5",
+    "tsx": "^4.0.0",
     "typescript": "^5.2.2",
     "vitest": "^4.0.16"
   }

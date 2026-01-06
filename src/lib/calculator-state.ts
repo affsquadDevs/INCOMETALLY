@@ -84,3 +84,28 @@ export function formatPrecise(value: number, decimals: number = 2): string {
   return parseFloat(fixed).toString();
 }
 
+/**
+ * Normalize monetary input to annual amount based on income mode
+ * This ensures all monetary values (deductions, contributions, etc.) are in yearly terms
+ * regardless of how the user entered them
+ */
+export function normalizeToAnnual(
+  value: number,
+  mode: IncomeMode,
+  hoursPerWeek: number = 40,
+  weeksPerYear: number = 52
+): number {
+  if (value <= 0) return 0;
+  
+  switch (mode) {
+    case 'hourly':
+      return value * hoursPerWeek * weeksPerYear;
+    case 'monthly':
+      return value * 12;
+    case 'yearly':
+      return value;
+    default:
+      return value;
+  }
+}
+

@@ -9,36 +9,36 @@
   "brackets": [
     {
       "from": 0,
-      "to": 11600,
+      "to": 12400,
       "rate": 0.1
     },
     {
-      "from": 11601,
-      "to": 47150,
+      "from": 12401,
+      "to": 50400,
       "rate": 0.12
     },
     {
-      "from": 47151,
-      "to": 100525,
+      "from": 50401,
+      "to": 105700,
       "rate": 0.22
     },
     {
-      "from": 100526,
-      "to": 191950,
+      "from": 105701,
+      "to": 201775,
       "rate": 0.24
     },
     {
-      "from": 191951,
-      "to": 243725,
+      "from": 201776,
+      "to": 256225,
       "rate": 0.32
     },
     {
-      "from": 243726,
-      "to": 609350,
+      "from": 256226,
+      "to": 640600,
       "rate": 0.35
     },
     {
-      "from": 609351,
+      "from": 640601,
       "to": null,
       "rate": 0.37
     }
@@ -55,7 +55,7 @@
     }
   ],
   "allowances": {
-    "standardDeduction": 15000
+    "standardDeduction": 16100
   },
   "roundingRules": {
     "nearestCent": true
