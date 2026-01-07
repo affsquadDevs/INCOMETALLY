@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           
           {/* Metric Card - appears after all animations, positioned bottom right */}
-          <div className="mt-6 lg:mt-0 lg:absolute lg:bottom-0 lg:right-0">
+          {/* <div className="mt-6 lg:mt-0 lg:absolute lg:bottom-0 lg:right-0">
             <AnimatedBlock delay={3000} animationType="fade-slide">
               <MetricCard
                 // label={home.metric.label}
@@ -62,7 +62,7 @@ export default function Home() {
                 startAnimation={true}
               />
             </AnimatedBlock>
-          </div>
+          </div> */}
         </div>
       </section>
 

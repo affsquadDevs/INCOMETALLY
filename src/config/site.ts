@@ -4,7 +4,7 @@ export const siteConfig = {
   // Site Information
   domain: 'https://incometally.com', // Site domain (used for robots.txt, sitemap, etc.)
   name: 'Income Tally',
-  tagline: 'Net Salary Calculator Online',
+  tagline: 'Net Salary Calculator',
   description: 'Calculate your net salary after taxes with accurate, country-specific estimates.',
   
   // Logo and Branding
@@ -99,7 +99,7 @@ export const siteConfig = {
   // Home Page Content
   home: {
     hero: {
-      title: 'Net Salary Calculator Online',
+      title: 'Net Salary Calculator',
       subtitle: 'Calculate your net salary after taxes with accurate, country-specific estimates.',
       ctaPrimary: 'Get Started',
       ctaSecondary: 'Learn More',
