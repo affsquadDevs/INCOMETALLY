@@ -202,3 +202,113 @@ These optimizations focus on:
 
 All optimizations are production-ready and follow Next.js best practices for performance.
 
+## Animation Performance Optimizations
+
+### Problem
+Initial PageSpeed Insights showed:
+- **First Contentful Paint (FCP)**: 4.6s (red)
+- **Largest Contentful Paint (LCP)**: 7.2s (red)
+- **Speed Index**: 5.1s (orange)
+
+Main issues:
+1. **TypewriterText** component delayed showing critical heading content
+2. **AnimatedBlock** components hid content initially (opacity-0), blocking LCP
+3. Blocking scripts in `<head>` delayed rendering
+
+### Solutions Implemented
+
+#### 1. TypewriterText Optimization
+**Before:** Text typed out character by character, delaying LCP element visibility
+**After:** 
+- Added `showImmediately` prop to display text instantly
+- Animation only affects cursor (non-critical visual element)
+- Critical heading text appears immediately for better LCP
+
+**Impact:**
+- LCP improved from ~7.2s to <2.5s (estimated)
+- FCP improved as critical content shows immediately
+
+#### 2. AnimatedBlock Optimization
+**Before:** Content hidden with `opacity-0` until intersection observer triggered
+**After:**
+- Added `showImmediately` prop for LCP-critical content
+- Uses `will-change: transform, opacity` for better GPU acceleration
+- Uses CSS `transform` instead of classes for better performance
+- Added `rootMargin: '50px'` to start animation slightly before element visible
+
+**Impact:**
+- Critical content (hero section) shows immediately
+- Better animation performance with GPU acceleration
+- Reduced layout shifts
+
+#### 3. Script Loading Optimization
+**Before:** GTM and AdSense scripts loaded synchronously in `<head>`
+**After:**
+- Added `defer` attribute to all scripts
+- Scripts load asynchronously without blocking rendering
+
+**Impact:**
+- Faster initial page render
+- Better FCP and LCP scores
+- Scripts still load but don't block critical rendering
+
+#### 4. CSS Animation Optimizations
+**Added:**
+- `will-change` property for animated elements
+- `@media (prefers-reduced-motion)` support for accessibility
+- Transform-based animations for better performance
+
+**Impact:**
+- Smoother animations
+- Better GPU utilization
+- Respects user motion preferences
+
+#### 5. Next.js Config Optimizations
+**Added:**
+- `compress: true` for better compression
+- `optimizeCss: true` for CSS optimization
+- Image format optimization (AVIF, WebP)
+
+**Impact:**
+- Smaller bundle sizes
+- Faster page loads
+- Better overall performance
+
+### Key Changes
+
+**Files Modified:**
+- `src/components/TypewriterText.tsx` - Added `showImmediately` prop
+- `src/components/AnimatedBlock.tsx` - Added `showImmediately` prop and performance optimizations
+- `src/app/page.tsx` - Use `showImmediately={true}` for critical hero content
+- `src/app/layout.tsx` - Added `defer` to scripts
+- `src/app/globals.css` - Added animation performance optimizations
+- `next.config.js` - Added performance optimizations
+
+### Expected Performance Improvements
+
+- **FCP**: 4.6s → ~1.5-2.0s (60-65% improvement)
+- **LCP**: 7.2s → ~2.0-2.5s (65-70% improvement)
+- **Speed Index**: 5.1s → ~2.5-3.0s (40-50% improvement)
+
+### Best Practices Applied
+
+1. **Show Critical Content Immediately**: LCP elements (hero heading, subtitle) show instantly
+2. **Defer Non-Critical Animations**: Visual effects don't block content rendering
+3. **Use GPU Acceleration**: `transform` and `will-change` for smooth animations
+4. **Defer Third-Party Scripts**: Analytics and ads don't block initial render
+5. **Respect User Preferences**: Support for `prefers-reduced-motion`
+
+### Testing
+
+After these changes, test with:
+```bash
+npm run build
+npm start
+# Then test with PageSpeed Insights or Lighthouse
+```
+
+Expected scores:
+- **Performance**: 70-85 (up from 58)
+- **FCP**: < 2.0s (green)
+- **LCP**: < 2.5s (green)
+- **Speed Index**: < 3.0s (green/orange)

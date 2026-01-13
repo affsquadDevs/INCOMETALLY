@@ -4,6 +4,9 @@ import path from 'path';
 import type { USOptionsData } from '@/types/us';
 import { validateUsOptionsData } from '@/lib/tax/us-schema';
 
+// Force dynamic rendering since we use searchParams
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;

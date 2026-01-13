@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+// Force dynamic rendering since we use searchParams
+export const dynamic = 'force-dynamic';
+
 /**
  * API endpoint to fetch UK tax options data
  */

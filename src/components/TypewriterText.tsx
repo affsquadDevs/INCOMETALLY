@@ -8,6 +8,7 @@ interface TypewriterTextProps {
   highlightColor?: string;
   speed?: number;
   className?: string;
+  showImmediately?: boolean; // New prop to show text immediately for LCP
 }
 
 export default function TypewriterText({ 
@@ -15,14 +16,23 @@ export default function TypewriterText({
   highlightWords = [], 
   highlightColor = '#0066FF',
   speed = 60,
-  className = ''
+  className = '',
+  showImmediately = false // Default to false for backward compatibility
 }: TypewriterTextProps) {
-  const [displayedText, setDisplayedText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState(showImmediately ? text : '');
+  const [currentIndex, setCurrentIndex] = useState(showImmediately ? text.length : 0);
   const [showCursor, setShowCursor] = useState(true);
+  const [isAnimating, setIsAnimating] = useState(!showImmediately);
 
   useEffect(() => {
+    // If showImmediately is true, skip animation
+    if (showImmediately) {
+      setIsAnimating(false);
+      return;
+    }
+
     if (currentIndex < text.length) {
+      setIsAnimating(true);
       const timeout = setTimeout(() => {
         setDisplayedText(text.slice(0, currentIndex + 1));
         setCurrentIndex(currentIndex + 1);
@@ -30,11 +40,12 @@ export default function TypewriterText({
 
       return () => clearTimeout(timeout);
     } else {
+      setIsAnimating(false);
       // Hide cursor after typing is complete
       const timeout = setTimeout(() => setShowCursor(false), 500);
       return () => clearTimeout(timeout);
     }
-  }, [currentIndex, text, speed]);
+  }, [currentIndex, text, speed, showImmediately]);
 
   const shouldHighlight = (word: string) => {
     const cleanWord = word.replace(/[^\w]/g, '').toLowerCase();
@@ -65,8 +76,11 @@ export default function TypewriterText({
   return (
     <span className={className}>
       {renderText()}
-      {showCursor && currentIndex <= text.length && (
-        <span className="inline-block w-[2px] h-[0.9em] bg-black ml-1 align-middle animate-pulse" style={{ animation: 'blink 1s infinite' }}></span>
+      {showCursor && currentIndex <= text.length && isAnimating && (
+        <span 
+          className="inline-block w-[2px] h-[0.9em] bg-black ml-1 align-middle animate-pulse" 
+          style={{ animation: 'blink 1s infinite', willChange: 'opacity' }}
+        ></span>
       )}
     </span>
   );

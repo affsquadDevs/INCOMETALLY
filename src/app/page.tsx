@@ -19,14 +19,15 @@ export default function Home() {
                 highlightWords={['Salary', 'Calculator']}
                 highlightColor="#0066FF"
                 speed={60}
+                showImmediately={true}
               />
             </h1>
-            <AnimatedBlock delay={2000} animationType="fade-slide">
+            <AnimatedBlock delay={0} animationType="fade-slide" showImmediately={true}>
               <p className="text-lg lg:text-xl text-black mb-8 lg:mb-12 max-w-[600px] leading-relaxed opacity-90">
                 {home.hero.subtitle}
               </p>
             </AnimatedBlock>
-            <AnimatedBlock delay={2500} animationType="fade-slide">
+            <AnimatedBlock delay={0} animationType="fade-slide" showImmediately={true}>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/calculator"

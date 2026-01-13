@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 2px;
 }
 
-/* Smooth fade and slide animations */
+/* Smooth fade and slide animations - optimized for performance */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -71,6 +71,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+/* Optimize animations for better performance */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .transition-all {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 /* Stagger animation delays */
