@@ -4,10 +4,6 @@ import { computeNet, annualizeIncome } from '@/lib/tax/calc';
 import { getTaxTable } from '@/lib/tax';
 import { type IncomeMode } from '@/lib/tax/types';
 
-/**
- * Server Action for calculator (progressive enhancement)
- * This allows the calculator to work without JavaScript
- */
 export async function calculateSalary(formData: FormData) {
   try {
     const countryCode = formData.get('countryCode') as string;
@@ -17,7 +13,6 @@ export async function calculateSalary(formData: FormData) {
     const hoursPerWeek = parseFloat(formData.get('hoursPerWeek') as string) || 40;
     const weeksPerYear = parseFloat(formData.get('weeksPerYear') as string) || 52;
 
-    // Validate
     const normalizedCountryCode = (countryCode as string)?.toUpperCase();
     if (!normalizedCountryCode || !year || !mode || !value) {
       return {
@@ -25,8 +20,6 @@ export async function calculateSalary(formData: FormData) {
       };
     }
 
-    // Germany needs extra parameters (tax class, state, church, insurance).
-    // If the no-JS form doesn't send them, we can't calculate correctly.
     if (normalizedCountryCode === 'DE') {
       return {
         error: 'Germany calculator requires JavaScript (extra tax options needed).',
@@ -40,10 +33,7 @@ export async function calculateSalary(formData: FormData) {
       };
     }
 
-    // Get tax table
     const taxTable = getTaxTable(normalizedCountryCode, year);
-
-    // Calculate
     const annualGross = annualizeIncome(mode, income, hoursPerWeek, weeksPerYear);
     const result = computeNet(annualGross, taxTable, hoursPerWeek, weeksPerYear);
 

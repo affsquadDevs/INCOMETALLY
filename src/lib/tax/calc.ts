@@ -1,7 +1,3 @@
-/**
- * Core tax calculation engine - Pure functions
- */
-
 import { TaxData } from '@/types/tax';
 import {
   IncomeMode,
@@ -12,9 +8,6 @@ import {
   DeannualizedIncome,
 } from './types';
 
-/**
- * Round to nearest cent if needed
- */
 function round(value: number, nearestCent: boolean): number {
   if (nearestCent) {
     return Math.round(value * 100) / 100;
@@ -22,15 +15,6 @@ function round(value: number, nearestCent: boolean): number {
   return value;
 }
 
-/**
- * Annualize income based on mode
- * 
- * @param mode - Income calculation mode ('hourly', 'monthly', 'yearly')
- * @param value - Income value in the specified mode
- * @param hoursPerWeek - Hours worked per week (for hourly mode)
- * @param weeksPerYear - Weeks worked per year (default: 52)
- * @returns Annual gross income
- */
 export function annualizeIncome(
   mode: IncomeMode,
   value: number,
@@ -59,14 +43,6 @@ export function annualizeIncome(
   }
 }
 
-/**
- * Deannualize income into hourly, monthly, and yearly amounts
- * 
- * @param annualGross - Annual gross income
- * @param hoursPerWeek - Hours worked per week (default: 40)
- * @param weeksPerYear - Weeks worked per year (default: 52)
- * @returns Object with hourly, monthly, and yearly income
- */
 export function deannualizeIncome(
   annualGross: number,
   hoursPerWeek: number = 40,
@@ -91,14 +67,6 @@ export function deannualizeIncome(
   };
 }
 
-/**
- * Compute income tax based on progressive brackets
- * Applies allowances first to create taxable income floor at 0
- * 
- * @param annualGross - Annual gross income
- * @param table - Tax data table
- * @returns Annual income tax amount
- */
 export function computeIncomeTax(annualGross: number, table: TaxData): number {
   if (annualGross < 0) {
     throw new Error('Annual gross income cannot be negative');
@@ -106,8 +74,6 @@ export function computeIncomeTax(annualGross: number, table: TaxData): number {
 
   const { brackets, allowances, roundingRules } = table;
 
-  // Calculate total allowance (use the larger of standardDeduction or personalAllowance)
-  // In practice, some countries use one or the other, but we'll take the max if both exist
   let totalAllowance = 0;
   if (allowances.standardDeduction !== undefined) {
     totalAllowance = Math.max(totalAllowance, allowances.standardDeduction);
@@ -116,18 +82,12 @@ export function computeIncomeTax(annualGross: number, table: TaxData): number {
     totalAllowance = Math.max(totalAllowance, allowances.personalAllowance);
   }
 
-  // Taxable income = gross - allowance, floored at 0
   const taxableIncome = Math.max(0, annualGross - totalAllowance);
 
-  // If no taxable income, return 0
   if (taxableIncome <= 0) {
     return 0;
   }
 
-  // Apply progressive brackets
-  // In progressive tax systems, each bracket applies only to income in that range
-  // Brackets may have gaps in the JSON (e.g., first bracket ends at 10000, second starts at 10001)
-  // But for calculation, we treat them as continuous (bracket 2 starts where bracket 1 ends)
   let totalTax = 0;
   let previousBracketEnd = -1;
 
@@ -135,21 +95,12 @@ export function computeIncomeTax(annualGross: number, table: TaxData): number {
     const bracketStart = bracket.from;
     const bracketEnd = bracket.to === null ? Infinity : bracket.to;
 
-    // Skip brackets that start after taxable income
     if (bracketStart > taxableIncome) {
       continue;
     }
 
-    // Calculate the effective start: treat brackets as continuous (start after previous bracket)
     const effectiveStart = previousBracketEnd + 1;
-    
-    // Calculate how much of taxable income falls in this bracket
     const effectiveEnd = Math.min(taxableIncome, bracketEnd === Infinity ? taxableIncome : bracketEnd);
-    
-    // Calculate income in bracket: from effectiveStart to effectiveEnd (inclusive)
-    // So incomeInBracket = effectiveEnd - (effectiveStart - 1) = effectiveEnd - effectiveStart + 1
-    // But to match test expectations (which use effectiveEnd - previousBracketEnd),
-    // we calculate as: effectiveEnd - (effectiveStart - 1) = effectiveEnd - previousBracketEnd
     const incomeInBracket = Math.max(0, effectiveEnd - previousBracketEnd);
     
     if (incomeInBracket > 0) {
@@ -157,15 +108,12 @@ export function computeIncomeTax(annualGross: number, table: TaxData): number {
       totalTax += taxInBracket;
     }
 
-    // Update previous bracket end for next iteration
     if (bracketEnd !== Infinity) {
       previousBracketEnd = bracketEnd;
     } else {
-      // For infinite bracket, set previous end to taxable income
       previousBracketEnd = taxableIncome;
     }
 
-    // If we've reached the top bracket (no end limit), we're done
     if (bracketEnd === Infinity && taxableIncome > bracketStart) {
       break;
     }
@@ -174,15 +122,6 @@ export function computeIncomeTax(annualGross: number, table: TaxData): number {
   return round(totalTax, roundingRules.nearestCent);
 }
 
-/**
- * Compute social contributions
- * Social contributions apply to gross income
- * If cap exists, contributions only apply up to the cap
- * 
- * @param annualGross - Annual gross income
- * @param table - Tax data table
- * @returns Social contribution result with total and breakdown
- */
 export function computeSocialContrib(
   annualGross: number,
   table: TaxData
@@ -196,7 +135,6 @@ export function computeSocialContrib(
   let totalAnnual = 0;
 
   for (const contrib of socialContrib) {
-    // Determine the capped amount (the income amount used for calculation)
     let cappedAmount: number;
     if (contrib.cap !== undefined) {
       cappedAmount = Math.min(annualGross, contrib.cap);
@@ -204,7 +142,6 @@ export function computeSocialContrib(
       cappedAmount = annualGross;
     }
 
-    // Calculate contribution amount
     const amount = cappedAmount * contrib.rate;
 
     breakdown.push({
@@ -223,15 +160,6 @@ export function computeSocialContrib(
   };
 }
 
-/**
- * Compute net income after all taxes and contributions
- * 
- * @param annualGross - Annual gross income
- * @param table - Tax data table
- * @param hoursPerWeek - Hours worked per week (default: 40)
- * @param weeksPerYear - Weeks worked per year (default: 52)
- * @returns Net income result with breakdown
- */
 export function computeNet(
   annualGross: number,
   table: TaxData,
@@ -242,23 +170,13 @@ export function computeNet(
     throw new Error('Annual gross income cannot be negative');
   }
 
-  // Calculate income tax
   const incomeTax = computeIncomeTax(annualGross, table);
-
-  // Calculate social contributions
   const socialContrib = computeSocialContrib(annualGross, table);
-
-  // Calculate net income
   const netAnnual = annualGross - incomeTax - socialContrib.totalAnnual;
-
-  // Deannualize net income
   const deannualized = deannualizeIncome(netAnnual, hoursPerWeek, weeksPerYear);
-
-  // Calculate effective tax rate
   const totalTaxes = incomeTax + socialContrib.totalAnnual;
   const effectiveTaxRate = annualGross > 0 ? totalTaxes / annualGross : 0;
 
-  // Calculate allowances for breakdown
   const { allowances } = table;
   let totalAllowance = 0;
   if (allowances.standardDeduction !== undefined) {
@@ -270,7 +188,6 @@ export function computeNet(
 
   const taxableIncome = Math.max(0, annualGross - totalAllowance);
 
-  // Build detailed breakdown
   const breakdown: TaxBreakdown = {
     grossIncome: annualGross,
     allowances: {
@@ -289,8 +206,6 @@ export function computeNet(
     netAnnual: round(netAnnual, table.roundingRules.nearestCent),
     netMonthly: round(deannualized.monthly, table.roundingRules.nearestCent),
     netHourly: round(deannualized.hourly, table.roundingRules.nearestCent),
-    // Effective tax rate is a percentage/ratio, not currency, so preserve more precision
-    // Round to 6 decimal places for accuracy (equivalent to 0.0001% precision)
     effectiveTaxRate: Math.round(effectiveTaxRate * 1000000) / 1000000,
     breakdown,
   };

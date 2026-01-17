@@ -1,17 +1,9 @@
-/**
- * Calculator State Management
- * 
- * Single source of truth: annualGross
- * All mode values (hourly, monthly, yearly) are derived from annualGross
- * Prevents circular updates and precision loss
- */
-
 import { type IncomeMode } from './tax/types';
 import { annualizeIncome, deannualizeIncome } from './tax/calc';
 
 export interface CalculatorInputs {
   mode: IncomeMode;
-  value: number; // The input value in the current mode
+  value: number;
   hoursPerWeek: number;
   weeksPerYear: number;
 }
@@ -23,9 +15,6 @@ export interface CalculatorDisplay {
   yearly: number;
 }
 
-/**
- * Convert input mode value to annual gross (single source of truth)
- */
 export function inputToAnnualGross(inputs: CalculatorInputs): number {
   return annualizeIncome(
     inputs.mode,
@@ -35,9 +24,6 @@ export function inputToAnnualGross(inputs: CalculatorInputs): number {
   );
 }
 
-/**
- * Convert annual gross to display values for all modes
- */
 export function annualGrossToDisplay(
   annualGross: number,
   hoursPerWeek: number,
@@ -53,9 +39,6 @@ export function annualGrossToDisplay(
   };
 }
 
-/**
- * Get the value for a specific mode from annual gross
- */
 export function getModeValue(
   annualGross: number,
   mode: IncomeMode,
@@ -74,21 +57,11 @@ export function getModeValue(
   }
 }
 
-/**
- * Format number with precision (avoid floating point issues)
- */
 export function formatPrecise(value: number, decimals: number = 2): string {
-  // Use toFixed to avoid floating point precision issues
   const fixed = value.toFixed(decimals);
-  // Remove trailing zeros for cleaner display
   return parseFloat(fixed).toString();
 }
 
-/**
- * Normalize monetary input to annual amount based on income mode
- * This ensures all monetary values (deductions, contributions, etc.) are in yearly terms
- * regardless of how the user entered them
- */
 export function normalizeToAnnual(
   value: number,
   mode: IncomeMode,

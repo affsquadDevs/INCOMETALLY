@@ -1,16 +1,3 @@
-/**
- * US-specific tax calculation functions (detailed, parameterized)
- *
- * Scope:
- * - Federal income tax (progressive brackets by filing status)
- * - Standard vs itemized deduction (plus additional standard deduction for 65+/blind)
- * - Simplified common credits (CTC + other dependent credit; non-refundable only)
- * - Payroll taxes (FICA for employees; SE tax approximation for self-employed)
- * - Optional state/local flat-rate estimates (applied to taxable income)
- *
- * IMPORTANT: This is an estimate engine; it does not implement the full IRC.
- */
-
 import type { TaxData } from '@/types/tax';
 import type { TaxBracket } from '@/types/tax';
 import type { USOptionsData, USTaxOptions, USFilingStatus } from '@/types/us';
@@ -30,9 +17,6 @@ function clampNumber(value: number, min: number, max: number): number {
 function computeProgressiveTax(taxableIncome: number, brackets: TaxBracket[]): number {
   if (taxableIncome <= 0) return 0;
 
-  // Treat brackets as continuous ranges (no "+1" integer math).
-  // Example: [0..11600] at 10% means the first 11600 dollars are taxed at 10%.
-  // We use the bracket ordering and only rely on the "to" caps; "from" may contain off-by-one gaps in JSON.
   let totalTax = 0;
   let previousCap = 0;
 
@@ -204,18 +188,6 @@ function computePayrollTaxes(
   };
 }
 
-/**
- * US Tax Calculation Sequence (2026):
- * 1. Normalize income to yearly (done before calling this function)
- * 2. Pre-tax deductions → Adjusted Gross Income (AGI)
- * 3. Standard / Itemized deduction (max of the two)
- * 4. Taxable Income = max(0, AGI - deduction)
- * 5. Federal Income Tax (progressive brackets)
- * 6. Tax Credits (child tax credit, other dependents) - subtracted from federal tax
- * 7. Payroll taxes (FICA: Social Security 6.2% up to cap, Medicare 1.45%, Additional Medicare 0.9% over threshold)
- * 8. State & Local tax (flat percentages on taxable income)
- * 9. Net Income = Gross - Federal Tax - FICA - State Tax - Local Tax
- */
 export function computeNetUS(
   annualGross: number,
   table: TaxData,

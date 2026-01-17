@@ -1,16 +1,3 @@
-/**
- * UK-specific tax calculation functions (England/Wales/NI)
- *
- * Scope:
- * - Income tax (progressive bands with personal allowance phase-out)
- * - National Insurance (Class 1, employee)
- * - Student Loan (Plan 2, 4, 5)
- * - Pre-tax deductions (salary sacrifice)
- *
- * IMPORTANT: This is an estimate engine for England/Wales/NI only.
- * Scotland has different rates and is not yet supported.
- */
-
 import type { TaxData } from '@/types/tax';
 import type { TaxBracket } from '@/types/tax';
 import type { UKOptionsData, UKTaxOptions } from '@/types/uk';
@@ -49,11 +36,6 @@ function computeProgressiveTax(taxableIncome: number, brackets: TaxBracket[]): n
   return totalTax;
 }
 
-/**
- * Calculate Personal Allowance with phase-out
- * Phase-out: £1 reduction per £2 over £100,000
- * Full withdrawal at £125,140
- */
 function calculatePersonalAllowance(
   adjustedIncome: number,
   uk: UKOptionsData
@@ -68,18 +50,11 @@ function calculatePersonalAllowance(
     return 0;
   }
 
-  // Phase-out: reduce by £1 for every £2 over threshold
   const excess = adjustedIncome - phaseOutStart;
   const reduction = excess / 2;
   return Math.max(0, base - reduction);
 }
 
-/**
- * Calculate National Insurance (Class 1, Employee)
- * 0% up to Primary Threshold (£12,570)
- * 8% between Primary Threshold and Upper Earnings Limit (£50,270)
- * 2% above Upper Earnings Limit
- */
 function computeNationalInsurance(
   adjustedIncome: number,
   uk: UKOptionsData,
@@ -90,7 +65,6 @@ function computeNationalInsurance(
   const breakdown: SocialContribBreakdown[] = [];
   let totalAnnual = 0;
 
-  // Basic rate: 8% on income between Primary Threshold and Upper Earnings Limit
   const basicRateBase = Math.max(0, Math.min(adjustedIncome, upperEarningsLimit) - primaryThreshold);
   if (basicRateBase > 0) {
     const basicRateAmount = basicRateBase * rateBasic;
@@ -103,7 +77,6 @@ function computeNationalInsurance(
     totalAnnual += basicRateAmount;
   }
 
-  // Higher rate: 2% on income above Upper Earnings Limit
   const higherRateBase = Math.max(0, adjustedIncome - upperEarningsLimit);
   if (higherRateBase > 0) {
     const higherRateAmount = higherRateBase * rateHigher;
@@ -122,9 +95,6 @@ function computeNationalInsurance(
   };
 }
 
-/**
- * Calculate Student Loan repayment
- */
 function computeStudentLoan(
   adjustedIncome: number,
   options: UKTaxOptions,
@@ -148,17 +118,6 @@ function computeStudentLoan(
   return round(repayment, roundingRules.nearestCent);
 }
 
-/**
- * UK Tax Calculation Sequence (2026):
- * 1. Normalize income to yearly (done before calling this function)
- * 2. Pre-tax deductions (salary sacrifice) → Adjusted Income
- * 3. Personal Allowance (with phase-out from £100k to £125,140)
- * 4. Taxable Income = max(0, Adjusted Income - Personal Allowance)
- * 5. Income Tax (progressive bands: 20%, 40%, 45%)
- * 6. National Insurance (Class 1: 0%, 8%, 2%)
- * 7. Student Loan (Plan 2/4/5: 9% over threshold)
- * 8. Net Income = Adjusted Income - Income Tax - NI - Student Loan
- */
 export function computeNetUK(
   annualGross: number,
   table: TaxData,

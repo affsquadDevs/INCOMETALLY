@@ -84,9 +84,6 @@ Ensure content is unique and valuable, not thin or duplicate.]`,
   return pages;
 }
 
-/**
- * Get all long-tail page slugs
- */
 export function getAllLongTailSlugs(): string[] {
   return generateLongTailPages().map(page => `${page.intent}`);
 }

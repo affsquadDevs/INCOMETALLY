@@ -1,15 +1,8 @@
-/**
- * Germany-specific tax calculation functions
- */
-
 import { TaxData } from '@/types/tax';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
 import { deannualizeIncome } from './calc';
 import { NetIncomeResult, TaxBreakdown, SocialContribResult, SocialContribBreakdown } from './types';
 
-/**
- * Round to nearest cent if needed
- */
 function round(value: number, nearestCent: boolean): number {
   if (nearestCent) {
     return Math.round(value * 100) / 100;
@@ -17,64 +10,39 @@ function round(value: number, nearestCent: boolean): number {
   return value;
 }
 
-/**
- * Calculate German income tax using EStG §32a formulas (2026)
- * Uses the exact progressive formulas from EStG §32a
- * Grundfreibetrag is already built into the formulas, so we calculate directly on income
- */
 function calculateGermanyIncomeTax(taxableIncome: number, table: TaxData): number {
   if (taxableIncome <= 0) {
     return 0;
   }
 
   const { roundingRules } = table;
-  const x = Math.floor(taxableIncome); // Round down to nearest euro
+  const x = Math.floor(taxableIncome);
   let tax = 0;
 
-  // Zone 1: 0 - 12,348 € (tax-free, Grundfreibetrag already built into formulas)
   if (x <= 12348) {
     tax = 0;
   }
-  // Zone 2: 12,349 - 17,799 €
   else if (x <= 17799) {
     const y = (x - 12348) / 10000;
     tax = (914.51 * y + 1400) * y;
   }
-  // Zone 3: 17,800 - 69,878 €
   else if (x <= 69878) {
-    const z = (x - 17799) / 10000; // For 2026: z is 1/10000 of amount exceeding 17,799 €
+    const z = (x - 17799) / 10000;
     tax = (173.10 * z + 2397) * z + 1034.87;
   }
-  // Zone 4: 69,879 - 277,825 €
   else if (x <= 277825) {
     tax = 0.42 * x - 11135.63;
   }
-  // Zone 5: 277,826 € and above
   else {
     tax = 0.45 * x - 19470.38;
   }
 
-  // Round down to nearest euro (as per EStG)
   if (roundingRules.incomeTaxRoundedDownToEuro ?? true) {
     return Math.floor(tax);
   }
   return round(tax, roundingRules.nearestCent);
 }
 
-/**
- * Solidarity surcharge (Solidaritätszuschlag, Soli)
- *
- * Post-2021 Soli has:
- * - exemption (0) up to an income-tax (ESt) threshold
- * - a phase-in zone
- * - full rate (5.5% of ESt) above the phase-in
- *
- * We model this with two parameters:
- * - exemptIncomeTax: ESt amount below which Soli = 0
- * - phaseInRate: applied to (ESt - exemptIncomeTax), capped at rate * ESt
- *
- * This avoids the common bug of applying 5.5% to the full ESt immediately after the threshold.
- */
 export function computeGermanySolidaritySurcharge(
   incomeTax: number,
   soli: {
@@ -96,16 +64,6 @@ export function computeGermanySolidaritySurcharge(
   return Math.min(full, phaseIn);
 }
 
-/**
- * Calculate Germany tax allowances based on tax class, children, and other factors
- * Based on arbeitnow.com/tools/salary-calculator/germany tax allowances table for 2026
- * Returns total allowance amount
- * 
- * NOTE: This function is NOT used for taxable income calculation.
- * Grundfreibetrag is already built into EStG §32a formulas, so we only subtract
- * Werbungskostenpauschale (employee lump sum) to get taxable income.
- * This function is kept for reference/documentation purposes only.
- */
 function calculateGermanyAllowances(
   taxClass: '1' | '2' | '3' | '4' | '5' | '6',
   children: boolean
@@ -256,26 +214,6 @@ function computeGermanySocialContrib(
   };
 }
 
-/**
- * Compute net income for Germany with all specific parameters
- * 
- * Implements Ehegattensplitting (income splitting) for married couples:
- * - Tax classes 3 and 4: Apply splitting (tax on half income × 2)
- * - Tax class 5: No splitting (designed for higher withholding on lower earner)
- * - Tax classes 1, 2, 6: No splitting (single, single parent, secondary employment)
- * 
- * Sanity check example (55k gross, class 3, BY, inChurch=true, public insurance):
- * - Income tax with splitting: ~6,710 € (vs ~11,896 without splitting)
- * - Net: ~35-36k, Effective rate: ~mid-30%
- * 
- * @param annualGross - Annual gross income
- * @param table - Tax data table
- * @param options - Germany-specific tax options
- * @param germanyOptionsData - Germany options data (tax classes, states, rates)
- * @param hoursPerWeek - Hours worked per week (default: 40)
- * @param weeksPerYear - Weeks worked per year (default: 52)
- * @returns Net income result with breakdown
- */
 export function computeNetGermany(
   annualGross: number,
   table: TaxData,
