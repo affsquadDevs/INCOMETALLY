@@ -12,6 +12,9 @@ export interface SocialContribution {
   name: string;
   rate: number;
   cap?: number;
+  // When true, this contribution reduces the income-tax base (common in the EU,
+  // e.g. Poland's ZUS, Spain's Seguridad Social, Italy's INPS, France's cotisations).
+  deductible?: boolean;
 }
 
 export interface Allowances {

@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "countryCode": "PL",
+    "countryName": "Poland",
+    "currency": "PLN",
+    "year": 2026,
+    "disclaimerShort": "Estimates based on 2026 Polish PIT rates and ZUS social contributions. The 9% health contribution is not tax-deductible. Figures are simplified and for guidance only."
+  },
+  "brackets": [
+    { "from": 0, "to": 90000, "rate": 0.12 },
+    { "from": 90001, "to": null, "rate": 0.32 }
+  ],
+  "socialContrib": [
+    { "name": "Pension insurance (Emerytalne)", "rate": 0.0976, "cap": 260190, "deductible": true },
+    { "name": "Disability insurance (Rentowe)", "rate": 0.015, "cap": 260190, "deductible": true },
+    { "name": "Sickness insurance (Chorobowe)", "rate": 0.0245, "deductible": true },
+    { "name": "Health insurance (Zdrowotne)", "rate": 0.09, "deductible": false }
+  ],
+  "allowances": {
+    "personalAllowance": 30000
+  },
+  "roundingRules": { "nearestCent": true }
+}

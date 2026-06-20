@@ -76,6 +76,12 @@ export default function CalculatorForm({
               <option value="US">United States</option>
               <option value="DE">Germany</option>
               <option value="UK">United Kingdom</option>
+              <option value="PL">Poland</option>
+              <option value="FR">France</option>
+              <option value="ES">Spain</option>
+              <option value="IT">Italy</option>
+              <option value="SE">Sweden</option>
+              <option value="PT">Portugal</option>
             </select>
           </div>
 

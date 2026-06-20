@@ -27,6 +27,7 @@ export const SocialContributionSchema = z.object({
   name: z.string().min(1),
   rate: z.number().min(0).max(1),
   cap: z.number().min(0).optional(),
+  deductible: z.boolean().optional(),
 });
 
 /**

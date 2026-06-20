@@ -23,6 +23,12 @@ export function getCountryLinks(excludeCountry?: string): InternalLink[] {
     US: 'United States',
     DE: 'Germany',
     UK: 'United Kingdom',
+    PL: 'Poland',
+    FR: 'France',
+    ES: 'Spain',
+    IT: 'Italy',
+    SE: 'Sweden',
+    PT: 'Portugal',
   };
 
   return countries

@@ -41,6 +41,12 @@ export async function generateStaticParams() {
     { country: 'us' },
     { country: 'de' },
     { country: 'uk' },
+    { country: 'pl' },
+    { country: 'fr' },
+    { country: 'es' },
+    { country: 'it' },
+    { country: 'se' },
+    { country: 'pt' },
   ];
 }
 

@@ -510,6 +510,12 @@ export default function SalaryCalculator({
                 { value: 'US', label: '🇺🇸 United States (Federal Only)' },
                 { value: 'DE', label: '🇩🇪 Germany' },
                 { value: 'UK', label: '🇬🇧 United Kingdom' },
+                { value: 'PL', label: '🇵🇱 Poland' },
+                { value: 'FR', label: '🇫🇷 France' },
+                { value: 'ES', label: '🇪🇸 Spain' },
+                { value: 'IT', label: '🇮🇹 Italy' },
+                { value: 'SE', label: '🇸🇪 Sweden' },
+                { value: 'PT', label: '🇵🇹 Portugal' },
               ]}
               buttonClassName="text-base py-3 font-medium border-2 border-[#0066FF] border-opacity-40 bg-white hover:border-opacity-60 shadow-sm"
             />
