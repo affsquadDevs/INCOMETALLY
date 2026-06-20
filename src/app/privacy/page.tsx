@@ -1,5 +1,20 @@
 import { privacyPolicyConfig } from '@/config/privacy';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description:
+    'How IncomeTally collects, uses, and protects your information, including cookies and Google AdSense advertising.',
+  alternates: { canonical: '/privacy' },
+  openGraph: {
+    title: 'Privacy Policy',
+    description:
+      'How IncomeTally collects, uses, and protects your information, including cookies and Google AdSense advertising.',
+    url: '/privacy',
+    type: 'website',
+  },
+};
 
 export default function PrivacyPolicy() {
   const { title, lastUpdated, intro, sections } = privacyPolicyConfig;

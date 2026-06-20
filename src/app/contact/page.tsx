@@ -1,4 +1,19 @@
 import { siteConfig } from '@/config/site';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description:
+    'Get in touch with the IncomeTally team. Questions about our calculators, privacy, or feedback are welcome.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact IncomeTally',
+    description:
+      'Get in touch with the IncomeTally team. Questions about our calculators, privacy, or feedback are welcome.',
+    url: '/contact',
+    type: 'website',
+  },
+};
 
 export default function Contact() {
   const { contactPage, contact } = siteConfig;

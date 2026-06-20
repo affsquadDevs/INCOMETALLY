@@ -1,5 +1,20 @@
 import { termsOfServiceConfig } from '@/config/terms';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description:
+    "The terms and conditions for using IncomeTally's income, salary, and tax calculators.",
+  alternates: { canonical: '/terms' },
+  openGraph: {
+    title: 'Terms of Service',
+    description:
+      "The terms and conditions for using IncomeTally's income, salary, and tax calculators.",
+    url: '/terms',
+    type: 'website',
+  },
+};
 
 export default function TermsOfService() {
   const { title, lastUpdated, intro, sections } = termsOfServiceConfig;

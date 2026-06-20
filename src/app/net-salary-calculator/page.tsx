@@ -4,19 +4,19 @@ import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
   title: 'Net Salary Calculator - Calculate Your Take-Home Pay',
-  description: 'Calculate your net salary after taxes and deductions. Free net income calculator for multiple countries.',
+  description: 'Free net salary calculator. Work out your take-home pay after income tax and social contributions for the US, Germany, and the UK.',
   alternates: {
-    canonical: `${siteConfig.domain}/salary-calculator`, // Canonical points to hub
+    canonical: `${siteConfig.domain}/net-salary-calculator`,
   },
   robots: {
-    index: false, // Don't index this page (redirected via middleware)
+    index: true,
     follow: true,
   },
   openGraph: {
     title: 'Net Salary Calculator - Calculate Your Take-Home Pay',
-    description: 'Calculate your net salary after taxes and deductions. Free net income calculator for multiple countries.',
+    description: 'Free net salary calculator. Work out your take-home pay after income tax and social contributions for the US, Germany, and the UK.',
     type: 'website',
-    url: `${siteConfig.domain}/salary-calculator`, // OG URL points to canonical
+    url: `${siteConfig.domain}/net-salary-calculator`,
   },
 };
 
@@ -92,6 +92,37 @@ export default function NetSalaryCalculatorPage() {
             </div>
           </div>
         </div>
+
+        {/* Net salary explainer */}
+        <section className="mt-12 bg-white rounded-lg border border-black border-opacity-10 p-8 lg:p-12 text-left">
+          <h2 className="text-2xl md:text-3xl font-normal text-black mb-4">
+            What Is Net Salary?
+          </h2>
+          <div className="space-y-4 text-base text-black opacity-80 leading-relaxed">
+            <p>
+              Your <strong>net salary</strong> — often called take-home pay — is
+              the amount that actually reaches your bank account after mandatory
+              deductions are removed from your gross salary. Gross salary is the
+              headline figure in your employment contract; net salary is what you
+              can budget and spend.
+            </p>
+            <p>
+              The gap between the two is made up of <strong>income tax</strong> and{' '}
+              <strong>social contributions</strong>. Income tax is usually
+              progressive, meaning higher portions of your income are taxed at
+              higher rates. Social contributions fund programs such as state
+              pensions, healthcare, and unemployment insurance, and the exact
+              rates depend on where you live.
+            </p>
+            <p>
+              Because every country calculates these deductions differently, the
+              same gross salary can produce very different take-home pay in the
+              United States, Germany, or the United Kingdom. Choose your country
+              above to see a detailed, country-specific breakdown for the 2026 tax
+              year.
+            </p>
+          </div>
+        </section>
       </div>
     </div>
   );

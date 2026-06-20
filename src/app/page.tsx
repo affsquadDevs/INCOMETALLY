@@ -3,6 +3,23 @@ import { siteConfig } from '@/config/site';
 import TypewriterText from '@/components/TypewriterText';
 import AnimatedBlock from '@/components/AnimatedBlock';
 import MetricCard from '@/components/MetricCard';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Income Tally — Free Net Salary & Take-Home Pay Calculator',
+  },
+  description:
+    'Calculate your net salary and take-home pay after income tax and social contributions. Free, country-specific tax calculators for the US, Germany, and the UK.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Income Tally — Free Net Salary & Take-Home Pay Calculator',
+    description:
+      'Calculate your net salary and take-home pay after income tax and social contributions. Free calculators for the US, Germany, and the UK.',
+    url: '/',
+    type: 'website',
+  },
+};
 
 export default function Home() {
   const { home } = siteConfig;

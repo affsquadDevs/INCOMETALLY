@@ -32,7 +32,7 @@ export const siteConfig = {
       { label: 'Get Started', href: '/calculator' },
       { label: 'About Us', href: '/about-us' },
       // { label: 'Manifesto', href: '/manifesto' },
-      { label: 'Blog', href: '/blog' },
+      { label: 'Guides', href: '/guides' },
     ],
   },
 
@@ -58,7 +58,7 @@ export const siteConfig = {
       links: [
         { label: 'Salary Calculator Hub', href: '/salary-calculator' },
         { label: 'Hourly to Salary', href: '/hourly-to-salary' },
-        { label: 'Blog', href: '/blog' },
+        { label: 'Guides', href: '/guides' },
       ],
     },
     disclaimer: 'IncomeTally provides income and tax calculators for informational purposes only. Results are estimates and may not reflect actual tax obligations or financial outcomes. This website does not provide financial, tax, or legal advice. Always consult a qualified professional for personalized guidance.',
@@ -67,7 +67,7 @@ export const siteConfig = {
   // Contact Page Content
   contactPage: {
     title: 'Contact Us',
-    subtitle: 'If you have questions about Projekto, the website, or how the service works, you can reach us using the contact information below.',
+    subtitle: 'If you have questions about IncomeTally, our calculators, or how the website works, you can reach us using the contact information below.',
     inquiryTypes: {
       title: 'We welcome inquiries related to:',
       items: [
@@ -88,7 +88,7 @@ export const siteConfig = {
     },
     aboutCommunication: {
       title: 'About Communication',
-      description: 'Projekto is an independent online service focused on software project estimation and planning based on user-provided information.',
+      description: 'IncomeTally is an independent online service that provides income, salary, and tax calculators based on the information you enter.',
       notes: [
         'We do not offer customer support via social media and do not provide phone support at this time.',
         'Please do not send sensitive personal information by email unless it is necessary to address your request.',
@@ -127,7 +127,7 @@ export const siteConfig = {
     },
     cta: {
       title: 'Ready to Get Started?',
-      subtitle: 'Join thousands of companies already using our platform to build amazing products',
+      subtitle: 'Use our free calculators to estimate your net salary and take-home pay in seconds.',
       button: 'Contact Us Today',
     },
     metric: {

@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const url = `${siteConfig.domain}/guides/${guide.slug}`;
 
   return {
-    title: `${guide.title} | ${siteConfig.name}`,
+    title: guide.title,
     description: guide.description,
     alternates: {
       canonical: url,

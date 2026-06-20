@@ -5,11 +5,59 @@ import Footer from '@/components/Footer';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} - ${siteConfig.tagline}`,
+  metadataBase: new URL(siteConfig.domain),
+  title: {
+    default: `${siteConfig.name} - ${siteConfig.tagline}`,
+    template: `%s | ${siteConfig.name}`,
+  },
   description: siteConfig.description,
+  applicationName: siteConfig.name,
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: '/favicon.ico',
   },
+  openGraph: {
+    type: 'website',
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
+    description: siteConfig.description,
+    url: siteConfig.domain,
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+// Site-wide structured data: identifies the brand entity and the site to search engines
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteConfig.domain}/#organization`,
+      name: siteConfig.name,
+      url: siteConfig.domain,
+      logo: `${siteConfig.domain}${siteConfig.logo.image}`,
+      email: siteConfig.contact.email,
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteConfig.domain}/#website`,
+      name: siteConfig.name,
+      url: siteConfig.domain,
+      description: siteConfig.description,
+      publisher: { '@id': `${siteConfig.domain}/#organization` },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -39,6 +87,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </head>
       <body className="bg-[#F5F5F0]">
+        {/* Organization & WebSite structured data (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

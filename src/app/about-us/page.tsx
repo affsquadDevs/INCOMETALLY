@@ -2,6 +2,21 @@ import { siteConfig } from '@/config/site';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import FAQAccordion from '@/components/FAQAccordion';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description:
+    'Learn about IncomeTally — an independent tool for calculating net salary, take-home pay, and country-specific tax estimates for informational purposes.',
+  alternates: { canonical: '/about-us' },
+  openGraph: {
+    title: 'About IncomeTally',
+    description:
+      'IncomeTally is an independent tool for calculating net salary, take-home pay, and country-specific tax estimates.',
+    url: '/about-us',
+    type: 'website',
+  },
+};
 
 export default function AboutUs() {
   const { aboutUs } = siteConfig;
