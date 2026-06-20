@@ -13,6 +13,7 @@ import { getTaxTable } from '@/lib/tax';
 import { getCountryFAQs, generateFAQJsonLd } from '@/lib/seo/faq';
 import { generateBreadcrumbJsonLd } from '@/lib/seo/breadcrumbs';
 import { siteConfig } from '@/config/site';
+import DataSources from '@/components/DataSources';
 
 // Dynamic import for heavy calculator component
 // Reduces initial bundle size and improves Core Web Vitals (FCP, LCP)
@@ -221,6 +222,9 @@ export default async function CountryCalculatorPage({ params }: PageProps) {
           </h2>
           <FAQAccordion faqs={faqs} />
         </section>
+
+        {/* Data Sources */}
+        <DataSources countryCode={country.code} countryName={country.displayName} />
 
         {/* Additional Links */}
         <section className="border-t border-black border-opacity-10 pt-8">
