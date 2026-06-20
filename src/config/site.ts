@@ -151,7 +151,18 @@ The platform allows users to calculate net salary from gross income, convert bet
 
 IncomeTally does not provide financial, tax, or legal advice. All calculations are estimates based on publicly available tax data and are intended for informational and planning purposes only.
 
-Our goal is to offer a simple and practical experience for financial planning and decision-making. IncomeTally is an independent product and is not affiliated with tax authorities, financial institutions, or third-party service providers.`,
+Our goal is to offer a simple and practical experience for financial planning and decision-making. IncomeTally is an independent product and is not affiliated with tax authorities, financial institutions, or third-party service providers.
+
+## Our Editorial Standards
+
+IncomeTally's guides are written and reviewed by the IncomeTally Editorial Team. We follow a few simple principles to keep our content trustworthy:
+
+- **Official sources.** Our tax and salary guides are based on publicly available data from authorities such as the U.S. Internal Revenue Service (IRS), the UK's HM Revenue & Customs (HMRC), and the German Federal Ministry of Finance. Key articles list their sources at the end.
+- **Plain language.** We explain income, tax, and salary topics in clear terms, with worked examples, so they are useful to people without a finance background.
+- **Kept current.** Tax rules change every year. We review our guides and show a "Last updated" date on each one so you know how recent the information is.
+- **Estimates, not advice.** Our calculators and guides provide general, educational estimates. They are not financial, tax, or legal advice, and individual circumstances vary. For decisions that affect your money, consult a qualified professional.
+
+If you spot something that looks out of date or incorrect, please [contact us](/contact) — we welcome corrections.`,
     faq: {
       title: 'Frequently Asked Questions',
       items: [
