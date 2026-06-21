@@ -12,6 +12,11 @@ export interface UKTaxOptions {
   
   // Region (for future Scotland/Wales support)
   region: 'england' | 'wales' | 'scotland' | 'ni'; // Currently only England/Wales/NI supported
+
+  // Marriage Allowance (recipient: a basic-rate taxpayer whose partner is a non-taxpayer)
+  marriageAllowance: boolean;
+  // Number of children (for the High Income Child Benefit Charge)
+  children: number;
 }
 
 export interface UKOptionsData {
@@ -53,5 +58,8 @@ export interface UKOptionsData {
       description?: string;
     };
   };
+  marriageAllowance: { transfer: number; benefit: number };
+  childBenefit: { firstChild: number; additionalChild: number };
+  hicbc: { threshold: number; fullThreshold: number };
 }
 

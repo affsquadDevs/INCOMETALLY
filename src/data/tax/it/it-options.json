@@ -27,6 +27,7 @@
     "bonus65": 65
   },
   "dependentChildCredit": 950,
+  "spouseCredit": { "base": 800, "taper": 110, "band1": 15000, "flat": 690, "band2": 40000, "band3": 80000 },
   "regions": [
     { "id": "avg", "name": "National average (~1.70%)", "rate": 0.017 },
     { "id": "lombardia", "name": "Lombardia (~1.73%)", "rate": 0.0173 },

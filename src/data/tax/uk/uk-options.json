@@ -53,6 +53,9 @@
       "rate": 0.09,
       "description": "England/Wales students who started after Aug 1, 2023"
     }
-  }
+  },
+  "marriageAllowance": { "transfer": 1260, "benefit": 252 },
+  "childBenefit": { "firstChild": 1406.6, "additionalChild": 930.8 },
+  "hicbc": { "threshold": 60000, "fullThreshold": 80000 }
 }
 

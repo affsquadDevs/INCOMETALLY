@@ -38,6 +38,8 @@ export interface TaxBreakdown {
     stateIncomeTax?: number;
     localIncomeTax?: number;
     studentLoan?: number;
+    marriageAllowance?: number;
+    highIncomeChildBenefitCharge?: number;
   };
   socialContributions: SocialContribResult;
   netIncome: number;

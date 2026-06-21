@@ -9,6 +9,8 @@ export interface ITTaxOptions {
   municipalRate: number; // percent (addizionale comunale)
   // Dependent children aged 21-29 (under-21 use the Assegno Unico, not payroll detrazioni).
   dependentChildren: number;
+  // Dependent spouse (coniuge a carico) credit.
+  dependentSpouse: boolean;
 }
 
 export interface ITRegion {
@@ -42,5 +44,13 @@ export interface ITOptionsData {
     bonus65: number; // 65
   };
   dependentChildCredit: number; // 950 per child aged 21-29
+  spouseCredit: {
+    base: number; // 800
+    taper: number; // 110
+    band1: number; // 15000
+    flat: number; // 690
+    band2: number; // 40000
+    band3: number; // 80000
+  };
   regions: ITRegion[];
 }

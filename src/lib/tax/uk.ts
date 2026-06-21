@@ -177,11 +177,37 @@ export function computeNetUK(
   // Step 7: Student Loan
   const studentLoan = computeStudentLoan(adjustedIncome, normalized, uk, roundingRules);
 
-  // Step 8: Net Income = Adjusted Income - Income Tax - NI - Student Loan
-  const netAnnual = adjustedIncome - incomeTax - nationalInsurance.totalAnnual - studentLoan;
+  // Step 8: Marriage Allowance (recipient must be a basic-rate taxpayer with a non-taxpayer partner)
+  const higherRateBand = uk.incomeTaxBands.find((b) => b.rate >= 0.4);
+  const higherRateThreshold = higherRateBand ? higherRateBand.from : Infinity;
+  let marriageAllowanceRelief = 0;
+  if (
+    normalized.marriageAllowance &&
+    adjustedIncome > personalAllowance &&
+    adjustedIncome < higherRateThreshold
+  ) {
+    marriageAllowanceRelief = Math.min(incomeTax, uk.marriageAllowance.benefit);
+  }
+
+  // Step 9: High Income Child Benefit Charge (HICBC)
+  const kids = Math.max(0, Math.floor(normalized.children || 0));
+  const childBenefit =
+    kids >= 1 ? uk.childBenefit.firstChild + (kids - 1) * uk.childBenefit.additionalChild : 0;
+  let hicbc = 0;
+  if (childBenefit > 0 && adjustedIncome > uk.hicbc.threshold) {
+    const fraction = Math.min(
+      1,
+      Math.max(0, (adjustedIncome - uk.hicbc.threshold) / (uk.hicbc.fullThreshold - uk.hicbc.threshold))
+    );
+    hicbc = round(childBenefit * fraction, roundingRules.nearestCent);
+  }
+
+  const netIncomeTax = round(incomeTax - marriageAllowanceRelief + hicbc, roundingRules.nearestCent);
+
+  // Step 10: Net Income = Adjusted Income - Income Tax (incl. MA/HICBC) - NI - Student Loan
+  const netAnnual = adjustedIncome - netIncomeTax - nationalInsurance.totalAnnual - studentLoan;
   const deannualized = deannualizeIncome(netAnnual, hoursPerWeek, weeksPerYear);
-  // Total deductions include income tax, NI, and student loan
-  const totalDeductions = incomeTax + nationalInsurance.totalAnnual + studentLoan;
+  const totalDeductions = netIncomeTax + nationalInsurance.totalAnnual + studentLoan;
   const effectiveTaxRate = annualGross > 0 ? totalDeductions / annualGross : 0;
 
   const breakdown: TaxBreakdown = {
@@ -192,10 +218,12 @@ export function computeNetUK(
     },
     adjustedGrossIncome: adjustedIncome, // Adjusted income after pre-tax deductions
     taxableIncome,
-    incomeTax: incomeTax, // Income tax only (student loan shown separately)
+    incomeTax: netIncomeTax, // Income tax incl. Marriage Allowance / HICBC (student loan shown separately)
     incomeTaxComponents: {
       baseIncomeTax: incomeTax,
       studentLoan: studentLoan > 0 ? studentLoan : undefined, // Store student loan for UK display
+      marriageAllowance: marriageAllowanceRelief > 0 ? marriageAllowanceRelief : undefined,
+      highIncomeChildBenefitCharge: hicbc > 0 ? hicbc : undefined,
     },
     socialContributions: nationalInsurance,
     netIncome: netAnnual,

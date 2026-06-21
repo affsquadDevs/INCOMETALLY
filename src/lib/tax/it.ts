@@ -38,6 +38,14 @@ function lavoroDipendenteDetrazione(reddito: number, d: ITOptionsData['detrazion
   return Math.max(0, det);
 }
 
+// Dependent-spouse credit (coniuge a carico), Art. 12 TUIR (simplified taper).
+function spouseCreditAmount(reddito: number, s: ITOptionsData['spouseCredit']): number {
+  if (reddito <= s.band1) return Math.max(0, s.base - s.taper * (reddito / s.band1));
+  if (reddito <= s.band2) return s.flat;
+  if (reddito <= s.band3) return Math.max(0, s.flat * ((s.band3 - reddito) / (s.band3 - s.band2)));
+  return 0;
+}
+
 export function computeNetItaly(
   annualGross: number,
   table: TaxData,
@@ -62,7 +70,8 @@ export function computeNetItaly(
   const irpefGross = progressive(base, it.brackets);
   const det = lavoroDipendenteDetrazione(annualGross, it.detrazione);
   const childCredit = Math.max(0, Math.floor(options.dependentChildren)) * it.dependentChildCredit;
-  const irpefNet = Math.max(0, irpefGross - det - childCredit);
+  const spouseCredit = options.dependentSpouse ? spouseCreditAmount(annualGross, it.spouseCredit) : 0;
+  const irpefNet = Math.max(0, irpefGross - det - childCredit - spouseCredit);
 
   const presetRegion = it.regions.find((r) => r.id === options.region);
   const regionalRate =

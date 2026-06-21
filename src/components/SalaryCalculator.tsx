@@ -167,6 +167,8 @@ export default function SalaryCalculator({
   const [ukPreTaxOther, setUkPreTaxOther] = useState<string>('0');
   const [ukStudentLoanPlan, setUkStudentLoanPlan] = useState<'none' | 'plan2' | 'plan4' | 'plan5'>('none');
   const [ukRegion, setUkRegion] = useState<'england' | 'wales' | 'scotland' | 'ni'>('england');
+  const [ukMarriageAllowance, setUkMarriageAllowance] = useState<boolean>(false);
+  const [ukChildren, setUkChildren] = useState<string>('0');
 
   // Poland-specific state
   const [plOptions, setPlOptions] = useState<PLOptionsData | null>(null);
@@ -193,6 +195,7 @@ export default function SalaryCalculator({
   const [itCustomRegionalRate, setItCustomRegionalRate] = useState<string>('1.70');
   const [itMunicipalRate, setItMunicipalRate] = useState<string>('0.80');
   const [itDependentChildren, setItDependentChildren] = useState<string>('0');
+  const [itDependentSpouse, setItDependentSpouse] = useState<boolean>(false);
 
   // Spain-specific state
   const [esOptions, setEsOptions] = useState<ESOptionsData | null>(null);
@@ -510,6 +513,8 @@ export default function SalaryCalculator({
           preTaxOther: preTaxOtherAnnual,
           studentLoanPlan: ukStudentLoanPlan,
           region: ukRegion,
+          marriageAllowance: ukMarriageAllowance,
+          children: parseInt(ukChildren, 10) || 0,
         };
         calculationResult = computeNetUK(annualGross, taxTable, ukParams, ukOptions, hours, weeks);
       } else if (countryCode === 'PL' && plOptions) {
@@ -540,6 +545,7 @@ export default function SalaryCalculator({
           customRegionalRate: parseFloat(itCustomRegionalRate) || 0,
           municipalRate: parseFloat(itMunicipalRate) || 0,
           dependentChildren: parseInt(itDependentChildren, 10) || 0,
+          dependentSpouse: itDependentSpouse,
         };
         calculationResult = computeNetItaly(annualGross, taxTable, itParams, itOptions, hours, weeks);
       } else if (countryCode === 'ES' && esOptions) {
@@ -588,6 +594,8 @@ export default function SalaryCalculator({
     ukPreTaxOther,
     ukStudentLoanPlan,
     ukRegion,
+    ukMarriageAllowance,
+    ukChildren,
     usFilingStatus,
     usEmploymentType,
     usDeductionMethod,
@@ -621,6 +629,7 @@ export default function SalaryCalculator({
     itCustomRegionalRate,
     itMunicipalRate,
     itDependentChildren,
+    itDependentSpouse,
     esOptions,
     esCommunity,
     esFilingStatus,
@@ -1312,6 +1321,56 @@ export default function SalaryCalculator({
                 Note: Plan depends on where/when you studied, not where you work.
               </p>
             )}
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Marriage Allowance?
+              </label>
+              <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="radiogroup" aria-label="Marriage Allowance selection">
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={ukMarriageAllowance === true}
+                  onClick={() => setUkMarriageAllowance(true)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    ukMarriageAllowance === true ? 'bg-black text-white' : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={ukMarriageAllowance === false}
+                  onClick={() => setUkMarriageAllowance(false)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    ukMarriageAllowance === false ? 'bg-black text-white' : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                For a basic-rate taxpayer whose spouse/civil partner is a non-taxpayer (relief up to £252).
+              </p>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Children (for Child Benefit charge)
+              </label>
+              <input
+                type="number"
+                value={ukChildren}
+                onChange={(e) => setUkChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+              <p className="mt-2 text-xs text-gray-600">
+                Used for the High Income Child Benefit Charge (applies on incomes over £60,000).
+              </p>
+            </div>
           </>
         )}
 
@@ -1554,6 +1613,39 @@ export default function SalaryCalculator({
               />
               <p className="mt-2 text-xs text-gray-600">
                 Children under 21 are covered by the Assegno Unico (not payroll). Regional and municipal surtaxes vary by location.
+              </p>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Dependent spouse (coniuge a carico)?
+              </label>
+              <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="radiogroup" aria-label="Dependent spouse selection">
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={itDependentSpouse === true}
+                  onClick={() => setItDependentSpouse(true)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    itDependentSpouse === true ? 'bg-black text-white' : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={itDependentSpouse === false}
+                  onClick={() => setItDependentSpouse(false)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    itDependentSpouse === false ? 'bg-black text-white' : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                A spouse with little or no income (coniuge a carico) gives a tax credit of up to €800.
               </p>
             </div>
           </>
@@ -1862,6 +1954,28 @@ export default function SalaryCalculator({
                     </span>
                     <span className="text-sm text-black opacity-80">
                       -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.studentLoan)}
+                    </span>
+                  </div>
+                )}
+
+                {/* UK: Marriage Allowance relief */}
+                {countryCode === 'UK' && result.breakdown.incomeTaxComponents?.marriageAllowance !== undefined &&
+                 result.breakdown.incomeTaxComponents.marriageAllowance > 0 && (
+                  <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                    <span className="text-sm text-black opacity-80">Marriage Allowance (relief)</span>
+                    <span className="text-sm text-black opacity-80">
+                      +{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.marriageAllowance)}
+                    </span>
+                  </div>
+                )}
+
+                {/* UK: High Income Child Benefit Charge */}
+                {countryCode === 'UK' && result.breakdown.incomeTaxComponents?.highIncomeChildBenefitCharge !== undefined &&
+                 result.breakdown.incomeTaxComponents.highIncomeChildBenefitCharge > 0 && (
+                  <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                    <span className="text-sm text-black opacity-80">High Income Child Benefit Charge</span>
+                    <span className="text-sm text-black opacity-80">
+                      -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.highIncomeChildBenefitCharge)}
                     </span>
                   </div>
                 )}
