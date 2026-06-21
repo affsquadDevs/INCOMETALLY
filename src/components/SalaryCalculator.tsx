@@ -8,6 +8,7 @@ import { computeNetUK } from '@/lib/tax/uk';
 import { computeNetPoland } from '@/lib/tax/pl';
 import { computeNetPortugal } from '@/lib/tax/pt';
 import { computeNetSweden } from '@/lib/tax/se';
+import { computeNetItaly } from '@/lib/tax/it';
 import { type IncomeMode } from '@/lib/tax/types';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
 import { type USOptionsData, type USTaxOptions, type USFilingStatus, type USEmploymentType, type USDeductionMethod } from '@/types/us';
@@ -15,6 +16,7 @@ import { type UKOptionsData, type UKTaxOptions } from '@/types/uk';
 import { type PLOptionsData, type PLTaxOptions } from '@/types/pl';
 import { type PTOptionsData, type PTTaxOptions } from '@/types/pt';
 import { type SEOptionsData, type SETaxOptions } from '@/types/se';
+import { type ITOptionsData, type ITTaxOptions } from '@/types/it';
 import { inputToAnnualGross, getModeValue, formatPrecise, normalizeToAnnual } from '@/lib/calculator-state';
 import { trackModeChange, trackCountryChange, trackCalculate, trackCopyLink, trackCalcStarted, trackCalcFinished } from '@/lib/analytics';
 import TaxDisclaimer from './TaxDisclaimer';
@@ -181,6 +183,13 @@ export default function SalaryCalculator({
   const [seCustomRate, setSeCustomRate] = useState<string>('32.38');
   const [seChurchMember, setSeChurchMember] = useState<boolean>(false);
 
+  // Italy-specific state
+  const [itOptions, setItOptions] = useState<ITOptionsData | null>(null);
+  const [itRegion, setItRegion] = useState<string>('avg');
+  const [itCustomRegionalRate, setItCustomRegionalRate] = useState<string>('1.70');
+  const [itMunicipalRate, setItMunicipalRate] = useState<string>('0.80');
+  const [itDependentChildren, setItDependentChildren] = useState<string>('0');
+
   // Mark as mounted on client side
   useEffect(() => {
     setIsMounted(true);
@@ -322,6 +331,24 @@ export default function SalaryCalculator({
     }
   }, [countryCode, seOptions, year]);
 
+  // Load Italy options when country is IT
+  useEffect(() => {
+    if (countryCode === 'IT' && !itOptions) {
+      const loadItOptions = async () => {
+        try {
+          const response = await fetch(`/api/it-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setItOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Italy options:', err);
+        }
+      };
+      loadItOptions();
+    }
+  }, [countryCode, itOptions, year]);
+
   // Tax class II implies children; keep the toggle but force it on for class II.
   const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
 
@@ -456,6 +483,14 @@ export default function SalaryCalculator({
           churchMember: seChurchMember,
         };
         calculationResult = computeNetSweden(annualGross, taxTable, seParams, seOptions, hours, weeks);
+      } else if (countryCode === 'IT' && itOptions) {
+        const itParams: ITTaxOptions = {
+          region: itRegion,
+          customRegionalRate: parseFloat(itCustomRegionalRate) || 0,
+          municipalRate: parseFloat(itMunicipalRate) || 0,
+          dependentChildren: parseInt(itDependentChildren, 10) || 0,
+        };
+        calculationResult = computeNetItaly(annualGross, taxTable, itParams, itOptions, hours, weeks);
       } else {
         calculationResult = computeNet(annualGross, taxTable, hours, weeks);
       }
@@ -517,6 +552,11 @@ export default function SalaryCalculator({
     seMunicipality,
     seCustomRate,
     seChurchMember,
+    itOptions,
+    itRegion,
+    itCustomRegionalRate,
+    itMunicipalRate,
+    itDependentChildren,
   ]);
 
 
@@ -1381,6 +1421,68 @@ export default function SalaryCalculator({
               </div>
               <p className="mt-2 text-xs text-gray-600">
                 Adds the church fee (kyrkoavgift). Income tax already reflects the basic allowance and the jobbskatteavdrag credit (under 66).
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* Italy-specific fields */}
+        {countryCode === 'IT' && itOptions && (
+          <>
+            <CustomSelect
+              id="it-region"
+              label="Region (regional surtax)"
+              value={itRegion}
+              onChange={(value) => setItRegion(value.toString())}
+              options={itOptions.regions.map((r) => ({ value: r.id, label: r.name }))}
+            />
+
+            {itRegion === 'custom' && (
+              <div>
+                <label className="block text-sm font-medium text-black mb-2">
+                  Regional surtax rate (%)
+                </label>
+                <input
+                  type="number"
+                  value={itCustomRegionalRate}
+                  onChange={(e) => setItCustomRegionalRate(e.target.value)}
+                  min="0"
+                  max="5"
+                  step="0.01"
+                  className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+                />
+              </div>
+            )}
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Municipal surtax rate (%)
+              </label>
+              <input
+                type="number"
+                value={itMunicipalRate}
+                onChange={(e) => setItMunicipalRate(e.target.value)}
+                min="0"
+                max="2"
+                step="0.01"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Dependent children (aged 21–29)
+              </label>
+              <input
+                type="number"
+                value={itDependentChildren}
+                onChange={(e) => setItDependentChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+              <p className="mt-2 text-xs text-gray-600">
+                Children under 21 are covered by the Assegno Unico (not payroll). Regional and municipal surtaxes vary by location.
               </p>
             </div>
           </>
