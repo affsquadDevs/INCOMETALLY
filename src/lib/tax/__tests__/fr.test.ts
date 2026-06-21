@@ -4,7 +4,13 @@ import type { TaxData } from '@/types/tax';
 import type { FROptionsData, FRTaxOptions } from '@/types/fr';
 
 const table: TaxData = {
-  metadata: { countryCode: 'FR', countryName: 'France', currency: 'EUR', year: 2026, disclaimerShort: 'x' },
+  metadata: {
+    countryCode: 'FR',
+    countryName: 'France',
+    currency: 'EUR',
+    year: 2026,
+    disclaimerShort: 'x',
+  },
   brackets: [{ from: 0, to: null, rate: 0.11 }],
   socialContrib: [],
   allowances: {},
@@ -34,7 +40,13 @@ const fr: FROptionsData = {
   },
   deduction10: { rate: 0.1, min: 509, max: 14555 },
   halfPartCap: 1807,
-  decote: { singleThreshold: 1982, singleAmount: 897, coupleThreshold: 3277, coupleAmount: 1483, rate: 0.4525 },
+  decote: {
+    singleThreshold: 1982,
+    singleAmount: 897,
+    coupleThreshold: 3277,
+    coupleAmount: 1483,
+    rate: 0.4525,
+  },
 };
 
 const baseOpts: FRTaxOptions = { filingStatus: 'single', children: 0 };

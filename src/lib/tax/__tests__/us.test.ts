@@ -40,7 +40,10 @@ describe('computeNetUS (federal + payroll + credits)', () => {
 
     // Federal before credits:
     // 12400*10% + (50400-12400)*12% + (83900-50400)*22% = 13170
-    expect(result.breakdown.incomeTaxComponents?.federalIncomeTaxBeforeCredits).toBeCloseTo(13170, 2);
+    expect(result.breakdown.incomeTaxComponents?.federalIncomeTaxBeforeCredits).toBeCloseTo(
+      13170,
+      2
+    );
 
     // Payroll: SS 6.2% + Medicare 1.45% (no addl Medicare under 200k)
     const payroll = result.breakdown.socialContributions.totalAnnual;
@@ -79,5 +82,3 @@ describe('computeNetUS (federal + payroll + credits)', () => {
     expect(after).toBeCloseTo(Math.max(0, before - credits), 2);
   });
 });
-
-

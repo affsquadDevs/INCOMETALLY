@@ -4,7 +4,13 @@ import type { TaxData } from '@/types/tax';
 import type { PTOptionsData, PTTaxOptions } from '@/types/pt';
 
 const table: TaxData = {
-  metadata: { countryCode: 'PT', countryName: 'Portugal', currency: 'EUR', year: 2026, disclaimerShort: 'x' },
+  metadata: {
+    countryCode: 'PT',
+    countryName: 'Portugal',
+    currency: 'EUR',
+    year: 2026,
+    disclaimerShort: 'x',
+  },
   brackets: [{ from: 0, to: null, rate: 0.13 }],
   socialContrib: [],
   allowances: {},

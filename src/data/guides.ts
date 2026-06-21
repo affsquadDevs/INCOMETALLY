@@ -31,9 +31,16 @@ export const guides: Guide[] = [
     slug: 'how-to-calculate-net-salary',
     pillar: 'income-basics',
     title: 'How to Calculate Net Salary: A Complete Guide',
-    description: 'Learn how to calculate your net salary from gross income. Understand deductions, taxes, and take-home pay calculations for accurate budgeting.',
+    description:
+      'Learn how to calculate your net salary from gross income. Understand deductions, taxes, and take-home pay calculations for accurate budgeting.',
     date: '2026-01-15',
-    keywords: ['net salary', 'take-home pay', 'salary calculation', 'gross vs net', 'tax deductions'],
+    keywords: [
+      'net salary',
+      'take-home pay',
+      'salary calculation',
+      'gross vs net',
+      'tax deductions',
+    ],
     content: `# How to Calculate Net Salary: A Complete Guide
 
 Calculating your net salary is essential for understanding your actual take-home pay. This guide explains the process step by step.
@@ -87,15 +94,18 @@ Our salary calculator automates this process. Simply enter your gross income, se
     faqs: [
       {
         question: 'What is the difference between gross and net salary?',
-        answer: 'Gross salary is your total earnings before deductions. Net salary is your take-home pay after income tax, social security, and other mandatory deductions are subtracted.',
+        answer:
+          'Gross salary is your total earnings before deductions. Net salary is your take-home pay after income tax, social security, and other mandatory deductions are subtracted.',
       },
       {
         question: 'How accurate are net salary calculations?',
-        answer: 'Our calculations are estimates based on standard tax rates and brackets. Actual take-home pay may vary based on individual circumstances, deductions, credits, and local taxes.',
+        answer:
+          'Our calculations are estimates based on standard tax rates and brackets. Actual take-home pay may vary based on individual circumstances, deductions, credits, and local taxes.',
       },
       {
         question: 'Can I calculate net salary for different income modes?',
-        answer: 'Yes, you can calculate net salary from hourly, monthly, or yearly gross income. The calculator will annualize your income and apply the appropriate tax calculations.',
+        answer:
+          'Yes, you can calculate net salary from hourly, monthly, or yearly gross income. The calculator will annualize your income and apply the appropriate tax calculations.',
       },
     ],
   },
@@ -103,9 +113,16 @@ Our salary calculator automates this process. Simply enter your gross income, se
     slug: 'understanding-tax-brackets',
     pillar: 'income-tax',
     title: 'Understanding Tax Brackets: How Progressive Taxation Works',
-    description: 'Learn how progressive tax brackets work and how they affect your take-home pay. Understand marginal vs effective tax rates.',
+    description:
+      'Learn how progressive tax brackets work and how they affect your take-home pay. Understand marginal vs effective tax rates.',
     date: '2026-01-14',
-    keywords: ['tax brackets', 'progressive tax', 'marginal tax rate', 'effective tax rate', 'income tax'],
+    keywords: [
+      'tax brackets',
+      'progressive tax',
+      'marginal tax rate',
+      'effective tax rate',
+      'income tax',
+    ],
     content: `# Understanding Tax Brackets: How Progressive Taxation Works
 
 Tax brackets are a fundamental part of income tax systems in most countries. This guide explains how they work.
@@ -151,15 +168,18 @@ Use our country-specific calculators to see how brackets apply to your income.`,
     faqs: [
       {
         question: 'What is a marginal tax rate?',
-        answer: 'Your marginal tax rate is the rate applied to your highest income bracket. It represents the tax rate on your next dollar of income.',
+        answer:
+          'Your marginal tax rate is the rate applied to your highest income bracket. It represents the tax rate on your next dollar of income.',
       },
       {
         question: 'What is an effective tax rate?',
-        answer: 'Your effective tax rate is the percentage of your total income paid in taxes. It\'s calculated as total tax divided by total income and is typically lower than your marginal rate.',
+        answer:
+          "Your effective tax rate is the percentage of your total income paid in taxes. It's calculated as total tax divided by total income and is typically lower than your marginal rate.",
       },
       {
         question: 'Do I pay the highest tax rate on all my income?',
-        answer: 'No. In progressive tax systems, only income within each bracket is taxed at that bracket\'s rate. Lower portions of your income are taxed at lower rates.',
+        answer:
+          "No. In progressive tax systems, only income within each bracket is taxed at that bracket's rate. Lower portions of your income are taxed at lower rates.",
       },
     ],
   },
@@ -167,9 +187,16 @@ Use our country-specific calculators to see how brackets apply to your income.`,
     slug: 'hourly-to-salary-conversion',
     pillar: 'income-basics',
     title: 'Hourly to Salary Conversion: Complete Guide',
-    description: 'Convert hourly wages to annual, monthly, and weekly salary. Learn the formulas and use our free calculator.',
+    description:
+      'Convert hourly wages to annual, monthly, and weekly salary. Learn the formulas and use our free calculator.',
     date: '2026-01-13',
-    keywords: ['hourly to salary', 'wage conversion', 'hourly rate', 'annual salary', 'salary calculator'],
+    keywords: [
+      'hourly to salary',
+      'wage conversion',
+      'hourly rate',
+      'annual salary',
+      'salary calculator',
+    ],
     content: `# Hourly to Salary Conversion: Complete Guide
 
 Converting hourly wages to salary helps you understand your total compensation and compare job offers.
@@ -235,15 +262,18 @@ Our hourly to salary converter automates these calculations and shows both gross
     faqs: [
       {
         question: 'How do I convert hourly rate to annual salary?',
-        answer: 'Multiply your hourly rate by hours per week, then by weeks per year. Standard calculation: Hourly Rate × 40 × 52 = Annual Salary.',
+        answer:
+          'Multiply your hourly rate by hours per week, then by weeks per year. Standard calculation: Hourly Rate × 40 × 52 = Annual Salary.',
       },
       {
         question: 'Should I include overtime in my hourly rate?',
-        answer: 'For accurate base salary, use your base hourly rate. If you regularly work overtime, calculate it separately or use an average rate that accounts for overtime.',
+        answer:
+          'For accurate base salary, use your base hourly rate. If you regularly work overtime, calculate it separately or use an average rate that accounts for overtime.',
       },
       {
         question: 'How many weeks should I use in the calculation?',
-        answer: 'Use 52 weeks for full-time employees. Adjust to 50-51 weeks if you have unpaid vacation, or fewer weeks for seasonal work.',
+        answer:
+          'Use 52 weeks for full-time employees. Adjust to 50-51 weeks if you have unpaid vacation, or fewer weeks for seasonal work.',
       },
     ],
   },
@@ -251,9 +281,16 @@ Our hourly to salary converter automates these calculations and shows both gross
     slug: 'tax-deductions-explained',
     pillar: 'income-tax',
     title: 'Tax Deductions Explained: What Reduces Your Taxable Income',
-    description: 'Understand tax deductions, allowances, and how they reduce your taxable income. Learn about standard vs itemized deductions.',
+    description:
+      'Understand tax deductions, allowances, and how they reduce your taxable income. Learn about standard vs itemized deductions.',
     date: '2026-01-12',
-    keywords: ['tax deductions', 'standard deduction', 'taxable income', 'allowances', 'tax savings'],
+    keywords: [
+      'tax deductions',
+      'standard deduction',
+      'taxable income',
+      'allowances',
+      'tax savings',
+    ],
     content: `# Tax Deductions Explained: What Reduces Your Taxable Income
 
 Tax deductions reduce your taxable income, which can lower your tax liability. This guide explains how they work.
@@ -326,15 +363,18 @@ You pay taxes on $60,400, not $75,000.
     faqs: [
       {
         question: 'What is the difference between a deduction and a credit?',
-        answer: 'A deduction reduces your taxable income, while a credit reduces your tax liability directly. Credits are generally more valuable than deductions.',
+        answer:
+          'A deduction reduces your taxable income, while a credit reduces your tax liability directly. Credits are generally more valuable than deductions.',
       },
       {
         question: 'Should I take the standard deduction or itemize?',
-        answer: 'Take whichever is higher. If your itemized deductions exceed the standard deduction, itemize. Otherwise, take the standard deduction.',
+        answer:
+          'Take whichever is higher. If your itemized deductions exceed the standard deduction, itemize. Otherwise, take the standard deduction.',
       },
       {
         question: 'Do deductions apply to all countries?',
-        answer: 'Yes, but the specific deductions and allowances vary by country. Each country has its own system of reducing taxable income.',
+        answer:
+          'Yes, but the specific deductions and allowances vary by country. Each country has its own system of reducing taxable income.',
       },
     ],
   },
@@ -342,9 +382,16 @@ You pay taxes on $60,400, not $75,000.
     slug: 'social-security-contributions-guide',
     pillar: 'income-tax',
     title: 'Social Security Contributions: What You Need to Know',
-    description: 'Understand social security contributions in different countries. Learn how they affect your take-home pay and what benefits they provide.',
+    description:
+      'Understand social security contributions in different countries. Learn how they affect your take-home pay and what benefits they provide.',
     date: '2026-01-11',
-    keywords: ['social security', 'social contributions', 'FICA', 'National Insurance', 'pension contributions'],
+    keywords: [
+      'social security',
+      'social contributions',
+      'FICA',
+      'National Insurance',
+      'pension contributions',
+    ],
     content: `# Social Security Contributions: What You Need to Know
 
 Social security contributions fund state benefits like pensions, healthcare, and unemployment insurance. This guide explains how they work.
@@ -422,15 +469,18 @@ Contributions fund:
     faqs: [
       {
         question: 'Are social security contributions the same as income tax?',
-        answer: 'No. Social security contributions are separate from income tax and fund specific state benefits like pensions and healthcare. They\'re calculated differently and have different rates.',
+        answer:
+          "No. Social security contributions are separate from income tax and fund specific state benefits like pensions and healthcare. They're calculated differently and have different rates.",
       },
       {
         question: 'Do I get the money back from social security contributions?',
-        answer: 'Not directly. Contributions fund state benefits you may receive later, such as retirement pensions, healthcare, and unemployment benefits. Eligibility depends on your contribution history.',
+        answer:
+          'Not directly. Contributions fund state benefits you may receive later, such as retirement pensions, healthcare, and unemployment benefits. Eligibility depends on your contribution history.',
       },
       {
         question: 'How much do social security contributions reduce my take-home pay?',
-        answer: 'It varies by country. In the US, FICA taxes are 7.65% of wages (up to Social Security cap). In Germany and the UK, rates vary by income and are typically shared with employers.',
+        answer:
+          'It varies by country. In the US, FICA taxes are 7.65% of wages (up to Social Security cap). In Germany and the UK, rates vary by income and are typically shared with employers.',
       },
     ],
   },
@@ -438,7 +488,8 @@ Contributions fund:
     slug: 'salary-negotiation-tips',
     pillar: 'salary-career',
     title: 'Salary Negotiation Tips: Using Net Income Calculations',
-    description: 'Learn how to use net salary calculations in salary negotiations. Understand your true take-home pay before accepting an offer.',
+    description:
+      'Learn how to use net salary calculations in salary negotiations. Understand your true take-home pay before accepting an offer.',
     date: '2026-01-10',
     keywords: ['salary negotiation', 'net income', 'job offer', 'compensation', 'take-home pay'],
     content: `# Salary Negotiation Tips: Using Net Income Calculations
@@ -523,15 +574,18 @@ Remember: Knowledge is power in negotiations. Understanding your true take-home 
     faqs: [
       {
         question: 'Should I negotiate based on gross or net salary?',
-        answer: 'Consider both, but focus on net income for your actual financial situation. Gross salary is what employers discuss, but net income is what you actually receive.',
+        answer:
+          'Consider both, but focus on net income for your actual financial situation. Gross salary is what employers discuss, but net income is what you actually receive.',
       },
       {
         question: 'How do I account for tax differences when negotiating?',
-        answer: 'Use our calculators to compare net income in different locations. Factor in state/local taxes, cost of living, and other location-specific costs.',
+        answer:
+          'Use our calculators to compare net income in different locations. Factor in state/local taxes, cost of living, and other location-specific costs.',
       },
       {
-        question: 'What if the employer won\'t increase the gross salary?',
-        answer: 'Consider negotiating other benefits: additional vacation time, flexible work arrangements, professional development opportunities, or signing bonuses that may have different tax implications.',
+        question: "What if the employer won't increase the gross salary?",
+        answer:
+          'Consider negotiating other benefits: additional vacation time, flexible work arrangements, professional development opportunities, or signing bonuses that may have different tax implications.',
       },
     ],
   },
@@ -543,7 +597,14 @@ Remember: Knowledge is power in negotiations. Understanding your true take-home 
     description: `Understand the difference between gross income and net income, why your take-home pay is lower than your salary, and how taxes shape what you earn.`,
     date: '2026-06-05',
     updated: '2026-06-20',
-    keywords: ['gross income', 'net income', 'gross vs net', 'take-home pay', 'income tax', 'deductions'],
+    keywords: [
+      'gross income',
+      'net income',
+      'gross vs net',
+      'take-home pay',
+      'income tax',
+      'deductions',
+    ],
     content: `Income is one of the most common financial terms — and one of the most misunderstood. Many people assume that their salary, hourly wage, or contract rate is what they actually earn. In reality, the amount that reaches your bank account is usually very different from the number written in your contract.
 
 This guide explains what income is, the difference between gross income and net income, and why understanding that difference is essential when comparing jobs, planning expenses, or estimating taxes.
@@ -620,7 +681,10 @@ Knowing the difference between gross and net income helps you compare job offers
 Income is more than a number on a contract. Understanding gross income versus net income gives you a clearer picture of what you truly earn and what you can realistically afford. Before making financial decisions, always look beyond the headline salary and focus on take-home pay. Rates and rules change over time and vary by country, so treat estimates as a guide and consult a qualified professional when it matters.`,
     sources: [
       { label: `GOV.UK — Income Tax`, url: 'https://www.gov.uk/income-tax' },
-      { label: `IRS — Tax Topic 751 (Social Security and Medicare withholding)`, url: 'https://www.irs.gov/taxtopics/tc751' },
+      {
+        label: `IRS — Tax Topic 751 (Social Security and Medicare withholding)`,
+        url: 'https://www.irs.gov/taxtopics/tc751',
+      },
       { label: `GOV.UK — National Insurance`, url: 'https://www.gov.uk/national-insurance' },
     ],
     faqs: [
@@ -649,7 +713,14 @@ Income is more than a number on a contract. Understanding gross income versus ne
     description: `Learn how to convert hourly, weekly, monthly, and yearly income correctly — the standard formulas, the assumptions behind them, and the mistakes to avoid.`,
     date: '2026-06-06',
     updated: '2026-06-20',
-    keywords: ['income conversion', 'hourly to salary', 'monthly to yearly income', 'pay period', 'annual salary', 'gross income'],
+    keywords: [
+      'income conversion',
+      'hourly to salary',
+      'monthly to yearly income',
+      'pay period',
+      'annual salary',
+      'gross income',
+    ],
     content: `Income comes in several forms — hourly, weekly, monthly, and yearly — and at some point you will need to convert between them. Maybe you are comparing an hourly contract with a salaried offer, or working out what a monthly wage adds up to over a year. The math looks simple, but a few common assumptions can throw your numbers off.
 
 This guide explains the standard formulas, the assumptions behind them, and the mistakes to avoid.
@@ -737,7 +808,10 @@ Gross conversions are useful, but net income matters more for real life. Tax sys
 Income conversion is more than arithmetic. Working hours, unpaid periods, and scheduling differences all change the final figure, and taxes change it again. Use standard assumptions as a starting point, adjust them to your situation, and always check net pay before making a decision.`,
     sources: [
       { label: `GOV.UK — Income Tax`, url: 'https://www.gov.uk/income-tax' },
-      { label: `U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics`, url: 'https://www.bls.gov/oes/' },
+      {
+        label: `U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics`,
+        url: 'https://www.bls.gov/oes/',
+      },
     ],
     faqs: [
       {
@@ -765,7 +839,14 @@ Income conversion is more than arithmetic. Working hours, unpaid periods, and sc
     description: `Learn what take-home pay is, how it is calculated from your gross salary, what gets deducted, and see simple examples for the US, UK, and Germany.`,
     date: '2026-06-12',
     updated: '2026-06-20',
-    keywords: ['take-home pay', 'net pay', 'how to calculate net salary', 'gross vs net pay', 'income tax deductions', 'payroll deductions'],
+    keywords: [
+      'take-home pay',
+      'net pay',
+      'how to calculate net salary',
+      'gross vs net pay',
+      'income tax deductions',
+      'payroll deductions',
+    ],
     content: `Take-home pay is the money that actually lands in your bank account after every deduction has been subtracted from your salary. It is the number that matters most for budgeting, yet it is almost always smaller than the figure on your job offer. Understanding how it is calculated helps you plan, compare jobs fairly, and avoid nasty surprises on payday.
 
 ## Gross Pay vs Take-Home Pay
@@ -830,9 +911,15 @@ Because brackets, thresholds, and rates change every tax year, doing this by han
 
 Take-home pay is your true spendable income, shaped by income tax, social contributions, and personal deductions. The headline salary is only the starting point. Since rates and thresholds shift annually and vary by location, use these figures as a guide and consult a qualified tax professional for decisions that affect your finances.`,
     sources: [
-      { label: `IRS — Tax Topic 751 (Social Security and Medicare withholding)`, url: 'https://www.irs.gov/taxtopics/tc751' },
+      {
+        label: `IRS — Tax Topic 751 (Social Security and Medicare withholding)`,
+        url: 'https://www.irs.gov/taxtopics/tc751',
+      },
       { label: `GOV.UK — National Insurance`, url: 'https://www.gov.uk/national-insurance' },
-      { label: `GOV.UK — Income Tax rates and allowances`, url: 'https://www.gov.uk/income-tax-rates' },
+      {
+        label: `GOV.UK — Income Tax rates and allowances`,
+        url: 'https://www.gov.uk/income-tax-rates',
+      },
     ],
     faqs: [
       {
@@ -860,7 +947,14 @@ Take-home pay is your true spendable income, shaped by income tax, social contri
     description: `Learn how to read your payslip or paycheck line by line. Understand gross pay, taxes, deductions, and net pay across the US, UK, and Germany.`,
     date: '2026-06-13',
     updated: '2026-06-20',
-    keywords: ['how to read a payslip', 'payslip explained', 'paycheck breakdown', 'gross vs net pay', 'payslip deductions', 'pay stub guide'],
+    keywords: [
+      'how to read a payslip',
+      'payslip explained',
+      'paycheck breakdown',
+      'gross vs net pay',
+      'payslip deductions',
+      'pay stub guide',
+    ],
     content: `Opening your first payslip can feel like reading a foreign language. Acronyms, deductions, and two different totals for the same month leave many people confused. This guide walks through the common parts of a payslip or paycheck, explains what each line means, and points out how the terms differ across the US, the UK, and Germany.
 
 Note that exact tax rates and contribution thresholds change every year and vary by personal situation. Always confirm details with your employer or a qualified professional.
@@ -940,9 +1034,18 @@ To see how gross converts to net for your own situation, try our free [net salar
 
 A payslip is more than a receipt. It is a record of your earnings, the taxes you contribute, and the benefits you fund. Once you recognize the core sections of gross pay, deductions, and net pay, the document stops looking intimidating in any country. Review yours regularly, keep copies, and reach out to a professional whenever something does not add up.`,
     sources: [
-      { label: `GOV.UK — Understanding your pay`, url: 'https://www.gov.uk/understanding-your-pay' },
-      { label: `IRS — Tax withholding`, url: 'https://www.irs.gov/individuals/employees/tax-withholding' },
-      { label: `SSA — Social Security & Medicare tax rates`, url: 'https://www.ssa.gov/oact/cola/cbb.html' },
+      {
+        label: `GOV.UK — Understanding your pay`,
+        url: 'https://www.gov.uk/understanding-your-pay',
+      },
+      {
+        label: `IRS — Tax withholding`,
+        url: 'https://www.irs.gov/individuals/employees/tax-withholding',
+      },
+      {
+        label: `SSA — Social Security & Medicare tax rates`,
+        url: 'https://www.ssa.gov/oact/cola/cbb.html',
+      },
     ],
     faqs: [
       {
@@ -971,7 +1074,14 @@ A payslip is more than a receipt. It is a record of your earnings, the taxes you
     description: `A beginner-friendly guide to how income tax works: taxable income, progressive brackets, marginal vs effective rates, deductions, and take-home pay.`,
     date: '2026-06-08',
     updated: '2026-06-20',
-    keywords: ['how income tax works', 'income tax basics', 'taxable income', 'tax brackets explained', 'marginal vs effective tax rate', 'take-home pay'],
+    keywords: [
+      'how income tax works',
+      'income tax basics',
+      'taxable income',
+      'tax brackets explained',
+      'marginal vs effective tax rate',
+      'take-home pay',
+    ],
     content: `Income tax is one of the biggest reasons the number on your job offer is not the number that lands in your bank account. If you have ever looked at a payslip and wondered where a chunk of your salary went, this guide is for you. We will walk through how income tax works in plain English, using examples from the US, the UK, and Germany.
 
 This is general educational information, not tax or financial advice. Rates and thresholds change every year, so always check official sources or speak to a qualified professional for your situation.
@@ -1053,9 +1163,18 @@ Want a number for your own situation? Try our free [salary calculator](/salary-c
 
 Income tax can feel intimidating, but the core idea is simple: you are taxed in slices, only on what is left after your tax-free allowance and deductions, and that tax sits alongside separate social contributions. Once you see how gross income becomes take-home pay step by step, your payslip stops being a mystery. Because rates and thresholds shift each year, use official sources and a qualified professional for decisions that matter.`,
     sources: [
-      { label: `IRS — Federal income tax rates and brackets`, url: 'https://www.irs.gov/filing/federal-income-tax-rates-and-brackets' },
-      { label: `GOV.UK — Income Tax rates and Personal Allowances`, url: 'https://www.gov.uk/income-tax-rates' },
-      { label: `German Federal Ministry of Finance`, url: 'https://www.bundesfinanzministerium.de' },
+      {
+        label: `IRS — Federal income tax rates and brackets`,
+        url: 'https://www.irs.gov/filing/federal-income-tax-rates-and-brackets',
+      },
+      {
+        label: `GOV.UK — Income Tax rates and Personal Allowances`,
+        url: 'https://www.gov.uk/income-tax-rates',
+      },
+      {
+        label: `German Federal Ministry of Finance`,
+        url: 'https://www.bundesfinanzministerium.de',
+      },
     ],
     faqs: [
       {
@@ -1083,7 +1202,14 @@ Income tax can feel intimidating, but the core idea is simple: you are taxed in 
     description: `Compare take-home pay in the US, Germany, and the UK. See how income tax and social contributions shape net pay, with an illustrative country table.`,
     date: '2026-06-14',
     updated: '2026-06-20',
-    keywords: ['take-home pay comparison', 'US vs Germany vs UK salary', 'net pay by country', 'social contributions', 'income tax comparison', 'payroll deductions'],
+    keywords: [
+      'take-home pay comparison',
+      'US vs Germany vs UK salary',
+      'net pay by country',
+      'social contributions',
+      'income tax comparison',
+      'payroll deductions',
+    ],
     content: `## Why the Same Salary Feels Different in Each Country
 
 Imagine three workers, each earning the equivalent of a solid middle-income salary, living in the United States, Germany, and the United Kingdom. They might agree on the same gross pay, yet the amount that actually lands in their bank accounts can look surprisingly different. The reason is not just the income tax rate. It is the full stack of deductions, including social contributions, that each country layers on top of (or alongside) income tax.
@@ -1134,9 +1260,15 @@ Because rates, thresholds, and allowances change every year and depend heavily o
 
 Take-home pay is shaped by far more than a single tax rate. Across the US, Germany, and the UK, the mix of progressive income tax and social contributions tells the real story, and Germany's higher deductions largely reflect its broad statutory insurance system. Use the illustrative ranges here to build intuition, but always run the calculators for current estimates, and consult a qualified tax professional for decisions that affect your finances. Rates and thresholds vary by year and by individual situation.`,
     sources: [
-      { label: `IRS — Federal income tax rates and brackets`, url: 'https://www.irs.gov/filing/federal-income-tax-rates-and-brackets' },
+      {
+        label: `IRS — Federal income tax rates and brackets`,
+        url: 'https://www.irs.gov/filing/federal-income-tax-rates-and-brackets',
+      },
       { label: `GOV.UK — Income Tax rates`, url: 'https://www.gov.uk/income-tax-rates' },
-      { label: `German Federal Ministry of Finance`, url: 'https://www.bundesfinanzministerium.de' },
+      {
+        label: `German Federal Ministry of Finance`,
+        url: 'https://www.bundesfinanzministerium.de',
+      },
     ],
     faqs: [
       {
@@ -1165,7 +1297,14 @@ Take-home pay is shaped by far more than a single tax rate. Across the US, Germa
     description: `What is a good salary? Learn how to benchmark your pay using median wages, percentiles, gross vs net, and purchasing power across the US, UK, and Germany.`,
     date: '2026-06-09',
     updated: '2026-06-20',
-    keywords: ['what is a good salary', 'salary benchmarking', 'median vs average salary', 'gross vs net pay', 'salary percentiles', 'purchasing power'],
+    keywords: [
+      'what is a good salary',
+      'salary benchmarking',
+      'median vs average salary',
+      'gross vs net pay',
+      'salary percentiles',
+      'purchasing power',
+    ],
     content: `## What Counts as a Good Salary?
 
 Ask ten people what a good salary is and you will get ten different answers. That is because pay is relative. A number that feels generous for a recent graduate in a small town might feel tight for a parent of three in an expensive city. Instead of chasing one magic figure, it helps to learn how to benchmark your pay against real data and your own situation.
@@ -1248,9 +1387,18 @@ When you weigh two roles side by side, our guide on how to [compare job offers](
 
 A good salary is not a fixed number you can look up once. It is a number that fits your role, your location, your experience, and your cost of living, and that leaves you with healthy take-home pay. Use median and percentile data to see where you stand, always check net rather than gross, and judge any offer by what it actually buys.`,
     sources: [
-      { label: `U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics`, url: 'https://www.bls.gov/oes/' },
-      { label: `UK Office for National Statistics — Earnings and working hours`, url: 'https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours' },
-      { label: `Eurostat — Wages and labour costs`, url: 'https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Wages_and_labour_costs' },
+      {
+        label: `U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics`,
+        url: 'https://www.bls.gov/oes/',
+      },
+      {
+        label: `UK Office for National Statistics — Earnings and working hours`,
+        url: 'https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours',
+      },
+      {
+        label: `Eurostat — Wages and labour costs`,
+        url: 'https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Wages_and_labour_costs',
+      },
     ],
     faqs: [
       {
@@ -1278,7 +1426,14 @@ A good salary is not a fixed number you can look up once. It is a number that fi
     description: `Learn how to compare job offers beyond salary: convert to annual gross and net, value benefits, and factor in taxes, commute, and non-financial perks.`,
     date: '2026-06-16',
     updated: '2026-06-20',
-    keywords: ['compare job offers', 'total compensation', 'net pay comparison', 'employee benefits value', 'evaluating job offers', 'take-home pay'],
+    keywords: [
+      'compare job offers',
+      'total compensation',
+      'net pay comparison',
+      'employee benefits value',
+      'evaluating job offers',
+      'take-home pay',
+    ],
     content: `A higher number on the offer letter does not always mean more money in your pocket. Two jobs with the same gross salary can leave you with very different amounts once taxes, benefits, and commuting costs are counted. Comparing offers well means looking at the full picture, not just the headline figure.
 
 ## Start by Putting Every Offer on the Same Basis
@@ -1341,7 +1496,10 @@ If two offers are close on money, these factors should decide it. And if the mon
 
 The best offer is rarely the one with the biggest gross number. Convert everything to the same basis, compare net pay, add the cash value of benefits, and subtract commuting costs. Then layer in the non-financial factors that shape your daily life. Tax and benefit rules vary by country and personal situation, so treat these examples as a starting point and consult a qualified professional before making a final decision.`,
     sources: [
-      { label: `U.S. Bureau of Labor Statistics — Employee Benefits`, url: 'https://www.bls.gov/ebs/' },
+      {
+        label: `U.S. Bureau of Labor Statistics — Employee Benefits`,
+        url: 'https://www.bls.gov/ebs/',
+      },
       { label: `GOV.UK — Income Tax`, url: 'https://www.gov.uk/income-tax' },
     ],
     faqs: [
@@ -1370,7 +1528,14 @@ The best offer is rarely the one with the biggest gross number. Convert everythi
     description: `Learn how cost of living shapes your real income. Compare nominal vs real pay, purchasing power, and net salary across cities to see what you truly earn.`,
     date: '2026-06-15',
     updated: '2026-06-20',
-    keywords: ['cost of living vs salary', 'real income', 'purchasing power', 'nominal vs real income', 'net pay comparison', 'salary by city'],
+    keywords: [
+      'cost of living vs salary',
+      'real income',
+      'purchasing power',
+      'nominal vs real income',
+      'net pay comparison',
+      'salary by city',
+    ],
     content: `## What Your Salary Is Really Worth
 
 A job offer with a bigger number on it can feel like an automatic win. But the size of your paycheck only tells half the story. What truly matters is how much that money can buy where you live. This is the difference between nominal income and real income, and understanding it can change how you judge any job offer.
@@ -1435,9 +1600,18 @@ This keeps you focused on real income rather than an impressive but misleading g
 
 A salary is only as good as what it lets you afford. By thinking in terms of real income, purchasing power, and local costs, you can compare opportunities far more accurately. Start from your net pay, factor in housing and everyday expenses, and you will have a clear, honest picture of any offer. Remember that prices and tax rules shift over time, so treat every comparison as a current estimate rather than a fixed truth.`,
     sources: [
-      { label: `U.S. Bureau of Labor Statistics — Consumer Price Index`, url: 'https://www.bls.gov/cpi/' },
-      { label: `UK Office for National Statistics — Inflation and price indices`, url: 'https://www.ons.gov.uk/economy/inflationandpriceindices' },
-      { label: `Eurostat — Harmonised Index of Consumer Prices`, url: 'https://ec.europa.eu/eurostat/web/hicp' },
+      {
+        label: `U.S. Bureau of Labor Statistics — Consumer Price Index`,
+        url: 'https://www.bls.gov/cpi/',
+      },
+      {
+        label: `UK Office for National Statistics — Inflation and price indices`,
+        url: 'https://www.ons.gov.uk/economy/inflationandpriceindices',
+      },
+      {
+        label: `Eurostat — Harmonised Index of Consumer Prices`,
+        url: 'https://ec.europa.eu/eurostat/web/hicp',
+      },
     ],
     faqs: [
       {
@@ -1465,7 +1639,14 @@ A salary is only as good as what it lets you afford. By thinking in terms of rea
     description: `Freelance vs employee take-home pay differs more than rates suggest. Learn about self-employment tax, lost benefits, and how to set a fair freelance rate.`,
     date: '2026-06-17',
     updated: '2026-06-20',
-    keywords: ['freelance vs employee pay', 'freelance take-home pay', 'self-employment tax', 'setting freelance rate', 'contractor vs employee income', 'freelance net income'],
+    keywords: [
+      'freelance vs employee pay',
+      'freelance take-home pay',
+      'self-employment tax',
+      'setting freelance rate',
+      'contractor vs employee income',
+      'freelance net income',
+    ],
     content: `When you switch from a salaried job to freelancing, the numbers can fool you. A contract rate of 50 per hour might look far better than a 60,000 annual salary, but the two are not directly comparable. Freelancers carry costs that employers normally absorb. Before you celebrate a higher headline rate, it helps to understand where the money actually goes.
 
 ## Why a Freelance Rate Is Not a Salary
@@ -1536,7 +1717,10 @@ Tax rules vary by country and change every year, so treat all figures here as il
 
 Freelancing can pay well, but a higher rate is not automatically more money. Once you account for double social contributions, lost benefits, unpaid time, and business costs, the comparison shifts. Estimate your net income on both paths first, and you will negotiate from a position of clarity rather than guesswork.`,
     sources: [
-      { label: `IRS — Self-Employment Tax (Social Security and Medicare Taxes)`, url: 'https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes' },
+      {
+        label: `IRS — Self-Employment Tax (Social Security and Medicare Taxes)`,
+        url: 'https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes',
+      },
       { label: `GOV.UK — Working for yourself`, url: 'https://www.gov.uk/working-for-yourself' },
     ],
     faqs: [
@@ -1571,14 +1755,14 @@ export function getAllGuides(): Guide[] {
  * Get guide by slug
  */
 export function getGuideBySlug(slug: string): Guide | undefined {
-  return guides.find(guide => guide.slug === slug);
+  return guides.find((guide) => guide.slug === slug);
 }
 
 /**
  * Get all guide slugs for static generation
  */
 export function getAllGuideSlugs(): string[] {
-  return guides.map(guide => guide.slug);
+  return guides.map((guide) => guide.slug);
 }
 
 /**
@@ -1598,9 +1782,6 @@ export function getRelatedGuides(slug: string, limit = 4): Guide[] {
   const samePillar = guides.filter(
     (guide) => guide.slug !== slug && guide.pillar === current.pillar
   );
-  samePillar.sort(
-    (a, b) => Number(b.isPillar ?? false) - Number(a.isPillar ?? false)
-  );
+  samePillar.sort((a, b) => Number(b.isPillar ?? false) - Number(a.isPillar ?? false));
   return samePillar.slice(0, limit);
 }
-

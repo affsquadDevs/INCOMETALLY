@@ -122,17 +122,31 @@ describe('Germany (DE) 2026 - core correctness', () => {
       inChurch: false,
     };
 
-    const withChildren = computeNetGermany(60000, table, { ...common, children: true }, germanyOptions);
-    const childless = computeNetGermany(60000, table, { ...common, children: false }, germanyOptions);
+    const withChildren = computeNetGermany(
+      60000,
+      table,
+      { ...common, children: true },
+      germanyOptions
+    );
+    const childless = computeNetGermany(
+      60000,
+      table,
+      { ...common, children: false },
+      germanyOptions
+    );
 
-    const careWithChildren = withChildren.breakdown.socialContributions.breakdown.find(b => b.name === 'Long-term Care Insurance');
-    const careChildless = childless.breakdown.socialContributions.breakdown.find(b => b.name === 'Long-term Care Insurance');
+    const careWithChildren = withChildren.breakdown.socialContributions.breakdown.find(
+      (b) => b.name === 'Long-term Care Insurance'
+    );
+    const careChildless = childless.breakdown.socialContributions.breakdown.find(
+      (b) => b.name === 'Long-term Care Insurance'
+    );
 
     expect(careWithChildren).toBeTruthy();
     expect(careChildless).toBeTruthy();
 
     // Expected delta: 0.6% * gross (below KV/PV cap) = 360 EUR
-    expect((careChildless!.amount - careWithChildren!.amount)).toBeCloseTo(60000 * 0.006, 2);
+    expect(careChildless!.amount - careWithChildren!.amount).toBeCloseTo(60000 * 0.006, 2);
     expect(childless.netAnnual).toBeLessThan(withChildren.netAnnual);
   });
 
@@ -151,11 +165,15 @@ describe('Germany (DE) 2026 - core correctness', () => {
     const bw = computeNetGermany(60000, table, common, germanyOptions);
     const sn = computeNetGermany(60000, table, { ...common, state: 'SN' }, germanyOptions);
 
-    const careBW = bw.breakdown.socialContributions.breakdown.find(b => b.name === 'Long-term Care Insurance')!;
-    const careSN = sn.breakdown.socialContributions.breakdown.find(b => b.name === 'Long-term Care Insurance')!;
+    const careBW = bw.breakdown.socialContributions.breakdown.find(
+      (b) => b.name === 'Long-term Care Insurance'
+    )!;
+    const careSN = sn.breakdown.socialContributions.breakdown.find(
+      (b) => b.name === 'Long-term Care Insurance'
+    )!;
 
     // Expected delta in employee base share: 2.3% - 1.8% = 0.5% => 300 EUR
-    expect((careSN.amount - careBW.amount)).toBeCloseTo(60000 * 0.005, 2);
+    expect(careSN.amount - careBW.amount).toBeCloseTo(60000 * 0.005, 2);
     expect(sn.netAnnual).toBeLessThan(bw.netAnnual);
   });
 
@@ -170,12 +188,28 @@ describe('Germany (DE) 2026 - core correctness', () => {
       children: false,
     };
 
-    const pub = computeNetGermany(60000, table, { ...common, healthInsurance: 'public' }, germanyOptions);
-    const priv = computeNetGermany(60000, table, { ...common, healthInsurance: 'private-without' }, germanyOptions);
+    const pub = computeNetGermany(
+      60000,
+      table,
+      { ...common, healthInsurance: 'public' },
+      germanyOptions
+    );
+    const priv = computeNetGermany(
+      60000,
+      table,
+      { ...common, healthInsurance: 'private-without' },
+      germanyOptions
+    );
 
-    const pubHealth = pub.breakdown.socialContributions.breakdown.find(b => b.name === 'Health Insurance');
-    const privHealth = priv.breakdown.socialContributions.breakdown.find(b => b.name === 'Health Insurance');
-    const privCare = priv.breakdown.socialContributions.breakdown.find(b => b.name === 'Long-term Care Insurance');
+    const pubHealth = pub.breakdown.socialContributions.breakdown.find(
+      (b) => b.name === 'Health Insurance'
+    );
+    const privHealth = priv.breakdown.socialContributions.breakdown.find(
+      (b) => b.name === 'Health Insurance'
+    );
+    const privCare = priv.breakdown.socialContributions.breakdown.find(
+      (b) => b.name === 'Long-term Care Insurance'
+    );
 
     expect(pubHealth).toBeTruthy();
     expect(privHealth).toBeFalsy();
@@ -186,5 +220,3 @@ describe('Germany (DE) 2026 - core correctness', () => {
     expect(priv.netAnnual).toBeGreaterThan(pub.netAnnual);
   });
 });
-
-

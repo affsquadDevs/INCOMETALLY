@@ -10,10 +10,10 @@ interface TaxDisclaimerProps {
   variant?: 'default' | 'compact' | 'inline';
 }
 
-export default function TaxDisclaimer({ 
-  countryCode, 
+export default function TaxDisclaimer({
+  countryCode,
   className = '',
-  variant = 'default' 
+  variant = 'default',
 }: TaxDisclaimerProps) {
   // Customize message based on country
   const getDisclaimerText = () => {
@@ -25,9 +25,7 @@ export default function TaxDisclaimer({
 
   if (variant === 'inline') {
     return (
-      <span className={`text-sm text-black opacity-70 ${className}`}>
-        {getDisclaimerText()}
-      </span>
+      <span className={`text-sm text-black opacity-70 ${className}`}>{getDisclaimerText()}</span>
     );
   }
 
@@ -75,15 +73,10 @@ export default function TaxDisclaimer({
           />
         </svg>
         <div className="flex-1">
-          <h3 className="text-base font-medium text-amber-900 mb-1">
-            Tax Estimate Disclaimer
-          </h3>
-          <p className="text-sm text-amber-800 leading-relaxed">
-            {getDisclaimerText()}
-          </p>
+          <h3 className="text-base font-medium text-amber-900 mb-1">Tax Estimate Disclaimer</h3>
+          <p className="text-sm text-amber-800 leading-relaxed">{getDisclaimerText()}</p>
         </div>
       </div>
     </div>
   );
 }
-

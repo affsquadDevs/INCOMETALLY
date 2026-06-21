@@ -25,7 +25,8 @@ export const countries: Record<CountryCode, CountryMetadata> = {
     currency: 'USD',
     flag: '🇺🇸',
     title: 'US Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Calculate your net salary after federal taxes in the United States. Estimate your take-home pay with our free US tax calculator for 2026.',
+    description:
+      'Calculate your net salary after federal taxes in the United States. Estimate your take-home pay with our free US tax calculator for 2026.',
     taxExplanation: `The United States operates a progressive federal income tax system where tax rates increase as income rises. The Internal Revenue Service (IRS) administers the tax code, which includes seven tax brackets ranging from 10% to 37% for the 2026 tax year. This system is designed to ensure that those with higher incomes contribute a larger percentage of their earnings to federal revenue, while providing relief for lower-income households through lower tax rates and various credits.
 
 Federal income tax is calculated using marginal tax brackets, meaning different portions of your income are taxed at different rates. For example, if you earn $75,000 annually, the first portion of your income falls into lower brackets, and only the amount exceeding each bracket threshold is taxed at the higher rate. This progressive structure ensures that lower-income earners pay a smaller percentage of their income in taxes compared to higher earners. Understanding marginal tax rates is crucial because your effective tax rate—the percentage of your total income paid in taxes—is typically lower than your top marginal rate.
@@ -51,7 +52,8 @@ The tax code undergoes periodic changes through legislation, and rates and brack
     currency: 'EUR',
     flag: '🇩🇪',
     title: 'Germany Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Calculate your net salary after taxes and social contributions in Germany. Estimate your take-home pay with our free German tax calculator for 2026.',
+    description:
+      'Calculate your net salary after taxes and social contributions in Germany. Estimate your take-home pay with our free German tax calculator for 2026.',
     taxExplanation: `Germany operates a comprehensive tax and social security system that significantly impacts take-home pay. The income tax system is progressive, with rates ranging from 0% to 45% for the highest earners, plus a solidarity surcharge and church tax in some regions. This system is designed to fund extensive social services while maintaining a progressive structure that places a greater burden on higher earners.
 
 Income tax in Germany is calculated using a progressive scale with multiple tax brackets. The tax-free allowance (Grundfreibetrag) ensures that low-income earners pay no income tax. For 2026, this allowance is adjusted annually to account for inflation and cost of living increases. As income rises, different portions are taxed at increasing rates: 14% for the lowest taxable bracket, rising through intermediate rates to 42% for high earners, and 45% for the highest income bracket. The progressive nature means that only income above each threshold is taxed at the higher rate, not the entire income.
@@ -79,7 +81,8 @@ The complexity of the German tax and social security system means that effective
     currency: 'GBP',
     flag: '🇬🇧',
     title: 'UK Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Calculate your net salary after income tax and National Insurance in the United Kingdom. Estimate your take-home pay with our free UK tax calculator for 2026.',
+    description:
+      'Calculate your net salary after income tax and National Insurance in the United Kingdom. Estimate your take-home pay with our free UK tax calculator for 2026.',
     taxExplanation: `The United Kingdom operates a progressive income tax system administered by HM Revenue and Customs (HMRC). The system includes income tax and National Insurance contributions, which together determine the total deductions from gross salary. These two systems work in parallel, with income tax providing general government revenue and National Insurance specifically funding social security benefits and the National Health Service.
 
 Income tax in the UK is structured around a personal allowance, which is the amount of income an individual can earn before paying any income tax. For the 2026 tax year, this allowance is set at a specific threshold and is adjusted annually, typically in line with inflation. Income above the personal allowance is taxed at different rates depending on which tax band it falls into. The personal allowance is gradually withdrawn for very high earners, creating an effective higher tax rate for those in the withdrawal range.
@@ -109,7 +112,8 @@ It's important to note that this calculator provides estimates based on standard
     currency: 'PLN',
     flag: '🇵🇱',
     title: 'Poland Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Estimate your Poland net salary for 2026. Free calculator shows PIT, ZUS social and health contributions, and take-home pay from your gross income.',
+    description:
+      'Estimate your Poland net salary for 2026. Free calculator shows PIT, ZUS social and health contributions, and take-home pay from your gross income.',
     taxExplanation: `Poland operates a progressive personal income tax system known as PIT (podatek dochodowy od osob fizycznych), layered on top of mandatory social and health contributions collected through ZUS, the national social insurance institution. For most employees working under an employment contract (umowa o prace), the journey from a gross salary (brutto) to take-home pay (netto) involves several deductions that happen in a specific order. Understanding that order is the key to seeing why your net income is lower than your headline gross figure, and it is exactly what this calculator models for the 2026 tax year.
 
 Income tax in Poland uses two brackets. There is a tax-free amount, the kwota wolna, of 30,000 PLN per year, meaning the first portion of your income effectively carries no tax. Above that threshold, a rate of 12 percent applies to the tax base up to 120,000 PLN. Any portion of the tax base above 120,000 PLN is taxed at the higher rate of 32 percent. Because only the amount over each threshold is taxed at the higher figure, moving into the upper bracket does not penalize your entire salary; it affects only the income above the cut-off point.
@@ -133,7 +137,8 @@ Because of those simplifying assumptions, the numbers you see should be treated 
     currency: 'EUR',
     flag: '🇫🇷',
     title: 'France Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Estimate your France net salary for 2026. Free calculator applies the income tax bareme, social contributions, CSG and CRDS to show take-home pay.',
+    description:
+      'Estimate your France net salary for 2026. Free calculator applies the income tax bareme, social contributions, CSG and CRDS to show take-home pay.',
     taxExplanation: `France operates a comprehensive system of income tax and social contributions that together determine how much of your gross salary you take home. The two main components are the income tax (impot sur le revenu) and a set of mandatory social contributions deducted directly from your pay. Understanding how these fit together helps you estimate your net income and plan your finances, whether you are comparing job offers, negotiating a salary, or simply trying to understand your payslip. The figures below reflect the 2026 tax year and apply to a single person.
 
 The income tax follows a progressive scale known as the bareme, meaning different portions of your income are taxed at different rates. For a single person counted as one part, the first roughly 11,497 EUR of taxable income is taxed at 0 percent. Income between about 11,497 and 29,315 EUR is taxed at 11 percent, the band from about 29,315 to 83,823 EUR at 30 percent, the band from about 83,823 to 180,294 EUR at 41 percent, and anything above about 180,294 EUR at 45 percent. A common misunderstanding is that moving into a higher band taxes all of your income at the higher rate. In reality, only the portion of income that falls within each band is taxed at that band's rate, so your overall effective rate is always lower than the top rate that applies to you.
@@ -157,7 +162,8 @@ Because of these simplifications, your actual income tax may be lower than the e
     currency: 'EUR',
     flag: '🇪🇸',
     title: 'Spain Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Estimate your 2026 net salary in Spain. Free calculator covering IRPF income tax bands, Social Security contributions, and regional rate variation.',
+    description:
+      'Estimate your 2026 net salary in Spain. Free calculator covering IRPF income tax bands, Social Security contributions, and regional rate variation.',
     taxExplanation: `Spain taxes the income of its residents through the Impuesto sobre la Renta de las Personas Fisicas, commonly known as IRPF. For most employees, the largest deductions from a gross salary are this personal income tax and mandatory Social Security contributions. Your employer typically handles both, withholding amounts from each paycheck throughout the year and forwarding them to the tax authorities and the Social Security system. The figures below describe a simplified, representative picture for the 2026 tax year and are intended to help you estimate your take-home pay, not to replace official calculations.
 
 One feature that makes the Spanish system distinctive is that IRPF is shared between the central state and the autonomous communities. Each region sets part of the scale, so the exact rates you pay depend on where you live. Because of this, our calculator uses a representative combined scale rather than any single region's figures. Under that representative scale, income is taxed at 19 percent up to 12,450 euros, 24 percent on the portion from 12,450 to 20,200 euros, 30 percent from 20,200 to 35,200 euros, 37 percent from 35,200 to 60,000 euros, 45 percent from 60,000 to 300,000 euros, and 47 percent on anything above 300,000 euros. The system is progressive, so each rate applies only to the income that falls within its band, not to your whole salary.
@@ -181,7 +187,8 @@ It is worth repeating that regional rates vary across Spain's autonomous communi
     currency: 'EUR',
     flag: '🇮🇹',
     title: 'Italy Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Estimate your Italy net salary for 2026. Free calculator using IRPEF brackets, INPS contributions, and local surtaxes to estimate your take-home pay.',
+    description:
+      'Estimate your Italy net salary for 2026. Free calculator using IRPEF brackets, INPS contributions, and local surtaxes to estimate your take-home pay.',
     taxExplanation: `Italy taxes the income of resident workers through a national personal income tax called IRPEF (Imposta sul Reddito delle Persone Fisiche), layered with smaller local surtaxes and reduced by social security contributions and a set of tax credits. For most employees, the tax is calculated on annual gross salary, with pension contributions removed first and then progressive rates applied to what remains. The figures below reflect the 2026 tax year and are intended as general, educational information to help you understand roughly how your gross pay becomes net pay. They are estimates only, and your actual result will depend on your specific circumstances.
 
 IRPEF is progressive, meaning higher portions of income are taxed at higher rates while lower portions keep their lower rates. For 2026, our calculator applies three brackets: 23 percent on taxable income up to 28,000 EUR, 35 percent on the portion between 28,000 and 50,000 EUR, and 43 percent on any income above 50,000 EUR. Only the slice of income within each band is taxed at that band's rate, so moving into a higher bracket does not raise the rate on the income you already earned in the lower bands.
@@ -205,7 +212,8 @@ Keep in mind that regional and municipal surtaxes, detrazioni, and individual ci
     currency: 'SEK',
     flag: '🇸🇪',
     title: 'Sweden Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Estimate your Sweden net salary for 2026. Free calculator showing municipal and state income tax take-home pay from gross wages in Swedish krona (SEK).',
+    description:
+      'Estimate your Sweden net salary for 2026. Free calculator showing municipal and state income tax take-home pay from gross wages in Swedish krona (SEK).',
     taxExplanation: `Sweden's income tax system is built primarily around local taxation, which makes it somewhat different from many other countries. The largest portion of the tax that most workers pay is municipal income tax, collected by the municipality (kommun) and region where you live. On top of this, a separate state income tax applies only to higher earners. Because the system relies on where you live rather than a single national rate, the amount of tax you pay on the same salary can differ depending on your municipality. Our calculator uses an average municipal rate to give you a reasonable estimate of your net, take-home pay for the 2026 tax year.
 
 Municipal income tax is the main tax for ordinary earners. It averages roughly 32 percent, though the exact figure varies from one municipality to another. This tax does not apply to your entire gross salary. First, a basic allowance known as the grundavdrag is subtracted, and only the income above that allowance is taxed. The grundavdrag is calculated on a sliding scale in reality, but our calculator applies a simplified version of it. As a result, the effective rate you pay on your full salary is somewhat lower than the headline municipal percentage, especially at lower income levels where the allowance has a larger proportional effect.
@@ -229,7 +237,8 @@ It is worth repeating that the municipal rate varies by where you live, and the 
     currency: 'EUR',
     flag: '🇵🇹',
     title: 'Portugal Salary Tax Calculator 2026 - Calculate Your Net Income',
-    description: 'Estimate your net salary in mainland Portugal for 2026. Free calculator covering IRS income tax brackets and 11% social security to show your take-home pay.',
+    description:
+      'Estimate your net salary in mainland Portugal for 2026. Free calculator covering IRS income tax brackets and 11% social security to show your take-home pay.',
     taxExplanation: `Portugal taxes the income of its residents through a personal income tax known as IRS (Imposto sobre o Rendimento das Pessoas Singulares). For most employed workers on mainland Portugal, the amount you take home each month depends on two main charges: the IRS itself and a contribution to the social security system. Together these reduce your gross salary to your net, or take-home, pay. The figures shown by this calculator are simplified estimates for the 2026 tax year and are intended to help you understand roughly how your salary breaks down, not to serve as an official assessment.
 
 IRS in mainland Portugal is a progressive tax, which means the rate climbs in steps as your income rises. The lowest band is taxed at 13 percent, and the rates increase through several brackets up to a top rate of 48 percent that applies to income above roughly 83,696 EUR. A common point of confusion is the belief that moving into a higher bracket taxes all of your income at that higher rate. In practice, only the portion of your income that falls within each band is taxed at that band's rate, so the higher rates apply only to the slice of earnings above each threshold, not to your entire salary.
@@ -258,6 +267,5 @@ export function getAllCountryCodes(): CountryCode[] {
 }
 
 export function getOtherCountries(currentCode: CountryCode): CountryMetadata[] {
-  return Object.values(countries).filter(c => c.code !== currentCode);
+  return Object.values(countries).filter((c) => c.code !== currentCode);
 }
-

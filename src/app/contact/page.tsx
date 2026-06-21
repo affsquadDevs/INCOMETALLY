@@ -22,7 +22,9 @@ export default function Contact() {
     <div className="bg-[#F5F5F0] min-h-screen pt-16">
       <div className="max-w-4xl mx-auto px-6 lg:px-12 py-16">
         <div className="mb-12">
-          <h1 className="text-5xl lg:text-6xl font-normal text-black mb-4 tracking-[-0.02em]">{contactPage.title}</h1>
+          <h1 className="text-5xl lg:text-6xl font-normal text-black mb-4 tracking-[-0.02em]">
+            {contactPage.title}
+          </h1>
           <p className="text-lg lg:text-xl text-black max-w-2xl opacity-90 leading-relaxed">
             {contactPage.subtitle}
           </p>
@@ -86,4 +88,3 @@ export default function Contact() {
     </div>
   );
 }
-

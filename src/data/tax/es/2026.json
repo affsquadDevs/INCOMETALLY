@@ -15,7 +15,12 @@
     { "from": 300001, "to": null, "rate": 0.47 }
   ],
   "socialContrib": [
-    { "name": "Common contingencies (Seguridad Social)", "rate": 0.047, "cap": 59059, "deductible": true },
+    {
+      "name": "Common contingencies (Seguridad Social)",
+      "rate": 0.047,
+      "cap": 59059,
+      "deductible": true
+    },
     { "name": "Unemployment (Desempleo)", "rate": 0.0155, "cap": 59059, "deductible": true },
     { "name": "Training (Formacion profesional)", "rate": 0.001, "cap": 59059, "deductible": true },
     { "name": "MEI solidarity contribution", "rate": 0.0013, "cap": 59059, "deductible": true }

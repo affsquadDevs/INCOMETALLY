@@ -9,7 +9,7 @@ import path from 'path';
 
 /**
  * Loads tax table data for a given country code and year
- * 
+ *
  * @param countryCode - ISO country code (e.g., 'DE', 'UK', 'US')
  * @param year - Tax year (e.g., 2026)
  * @returns TaxData object with validated tax information
@@ -18,19 +18,25 @@ import path from 'path';
 export function getTaxTable(countryCode: string, year: number): TaxData {
   // Normalize country code to lowercase
   const normalizedCountryCode = countryCode.toUpperCase();
-  
+
   // Validate inputs
   if (!normalizedCountryCode || typeof normalizedCountryCode !== 'string') {
     throw new Error('Invalid country code provided');
   }
-  
+
   if (!Number.isInteger(year) || year < 2000 || year > 2100) {
     throw new Error(`Invalid year: ${year}. Year must be between 2000 and 2100`);
   }
 
   // Construct file path
   // In Next.js, we need to use process.cwd() for server-side operations
-  const dataDir = path.join(process.cwd(), 'src', 'data', 'tax', normalizedCountryCode.toLowerCase());
+  const dataDir = path.join(
+    process.cwd(),
+    'src',
+    'data',
+    'tax',
+    normalizedCountryCode.toLowerCase()
+  );
   let filePath = path.join(dataDir, `${year}.json`);
   let actualYear = year;
 
@@ -44,7 +50,7 @@ export function getTaxTable(countryCode: string, year: number): TaxData {
     } else {
       throw new Error(
         `Tax data file not found for country code "${normalizedCountryCode}" and year ${year}. ` +
-        `Expected path: ${filePath}`
+          `Expected path: ${filePath}`
       );
     }
   }
@@ -59,7 +65,7 @@ export function getTaxTable(countryCode: string, year: number): TaxData {
     if (!validation.valid) {
       throw new Error(
         `Invalid tax data format for ${normalizedCountryCode} ${year}:\n` +
-        validation.errors.map(e => `  - ${e}`).join('\n')
+          validation.errors.map((e) => `  - ${e}`).join('\n')
       );
     }
 
@@ -69,7 +75,7 @@ export function getTaxTable(countryCode: string, year: number): TaxData {
         `Country code mismatch: file contains "${data.metadata.countryCode}" but expected "${normalizedCountryCode}"`
       );
     }
-    
+
     // Validate year matches actual file year (may differ from requested year due to fallback)
     if (data.metadata.year !== actualYear) {
       throw new Error(
@@ -85,12 +91,12 @@ export function getTaxTable(countryCode: string, year: number): TaxData {
         `Failed to parse JSON file for ${normalizedCountryCode} ${year}: ${error.message}`
       );
     }
-    
+
     // Re-throw validation errors
     if (error instanceof Error && error.message.includes('Invalid tax data')) {
       throw error;
     }
-    
+
     // Handle other errors
     throw new Error(
       `Failed to load tax data for ${normalizedCountryCode} ${year}: ${
@@ -105,16 +111,14 @@ export function getTaxTable(countryCode: string, year: number): TaxData {
  */
 export function getAvailableCountries(): string[] {
   const taxDir = path.join(process.cwd(), 'src', 'data', 'tax');
-  
+
   if (!fs.existsSync(taxDir)) {
     return [];
   }
 
   try {
     const entries = fs.readdirSync(taxDir, { withFileTypes: true });
-    return entries
-      .filter(entry => entry.isDirectory())
-      .map(entry => entry.name.toUpperCase());
+    return entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name.toUpperCase());
   } catch (error) {
     console.error('Error reading tax data directory:', error);
     return [];
@@ -126,8 +130,14 @@ export function getAvailableCountries(): string[] {
  */
 export function getAvailableYears(countryCode: string): number[] {
   const normalizedCountryCode = countryCode.toUpperCase();
-  const countryDir = path.join(process.cwd(), 'src', 'data', 'tax', normalizedCountryCode.toLowerCase());
-  
+  const countryDir = path.join(
+    process.cwd(),
+    'src',
+    'data',
+    'tax',
+    normalizedCountryCode.toLowerCase()
+  );
+
   if (!fs.existsSync(countryDir)) {
     return [];
   }
@@ -135,13 +145,12 @@ export function getAvailableYears(countryCode: string): number[] {
   try {
     const files = fs.readdirSync(countryDir);
     return files
-      .filter(file => file.endsWith('.json'))
-      .map(file => parseInt(file.replace('.json', ''), 10))
-      .filter(year => !isNaN(year) && year > 2000 && year < 2100)
+      .filter((file) => file.endsWith('.json'))
+      .map((file) => parseInt(file.replace('.json', ''), 10))
+      .filter((year) => !isNaN(year) && year > 2000 && year < 2100)
       .sort((a, b) => b - a); // Sort descending (newest first)
   } catch (error) {
     console.error(`Error reading tax data directory for ${normalizedCountryCode}:`, error);
     return [];
   }
 }
-

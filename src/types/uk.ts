@@ -6,10 +6,10 @@ export interface UKTaxOptions {
   // Pre-tax deductions (salary sacrifice)
   preTaxPension: number; // Annual pension contributions
   preTaxOther: number; // Other salary sacrifice (cycle-to-work, etc.)
-  
+
   // Student Loan
   studentLoanPlan: 'none' | 'plan2' | 'plan4' | 'plan5'; // Student loan plan type
-  
+
   // Region (for future Scotland/Wales support)
   region: 'england' | 'wales' | 'scotland' | 'ni'; // Currently only England/Wales/NI supported
 
@@ -62,4 +62,3 @@ export interface UKOptionsData {
   childBenefit: { firstChild: number; additionalChild: number };
   hicbc: { threshold: number; fullThreshold: number };
 }
-

@@ -86,10 +86,7 @@ export function computeIncomeTax(
     totalAllowance = Math.max(totalAllowance, allowances.personalAllowance);
   }
 
-  const taxableIncome = Math.max(
-    0,
-    annualGross - totalAllowance - Math.max(0, preTaxDeduction)
-  );
+  const taxableIncome = Math.max(0, annualGross - totalAllowance - Math.max(0, preTaxDeduction));
 
   if (taxableIncome <= 0) {
     return 0;
@@ -107,9 +104,12 @@ export function computeIncomeTax(
     }
 
     const effectiveStart = previousBracketEnd + 1;
-    const effectiveEnd = Math.min(taxableIncome, bracketEnd === Infinity ? taxableIncome : bracketEnd);
+    const effectiveEnd = Math.min(
+      taxableIncome,
+      bracketEnd === Infinity ? taxableIncome : bracketEnd
+    );
     const incomeInBracket = Math.max(0, effectiveEnd - previousBracketEnd);
-    
+
     if (incomeInBracket > 0) {
       const taxInBracket = incomeInBracket * bracket.rate;
       totalTax += taxInBracket;
@@ -129,10 +129,7 @@ export function computeIncomeTax(
   return round(totalTax, roundingRules.nearestCent);
 }
 
-export function computeSocialContrib(
-  annualGross: number,
-  table: TaxData
-): SocialContribResult {
+export function computeSocialContrib(annualGross: number, table: TaxData): SocialContribResult {
   if (annualGross < 0) {
     throw new Error('Annual gross income cannot be negative');
   }
@@ -226,4 +223,3 @@ export function computeNet(
     breakdown,
   };
 }
-

@@ -62,15 +62,16 @@ export function computeNetItaly(
   // Employee INPS contribution (deductible): 9.19% up to the massimale, +1% above the prima fascia.
   const cappedBase = Math.min(annualGross, it.inps.massimale);
   const inpsAmount =
-    cappedBase * it.inps.rate +
-    Math.max(0, cappedBase - it.inps.primaFascia) * it.inps.extraRate;
+    cappedBase * it.inps.rate + Math.max(0, cappedBase - it.inps.primaFascia) * it.inps.extraRate;
 
   const base = Math.max(0, annualGross - inpsAmount);
 
   const irpefGross = progressive(base, it.brackets);
   const det = lavoroDipendenteDetrazione(annualGross, it.detrazione);
   const childCredit = Math.max(0, Math.floor(options.dependentChildren)) * it.dependentChildCredit;
-  const spouseCredit = options.dependentSpouse ? spouseCreditAmount(annualGross, it.spouseCredit) : 0;
+  const spouseCredit = options.dependentSpouse
+    ? spouseCreditAmount(annualGross, it.spouseCredit)
+    : 0;
   const irpefNet = Math.max(0, irpefGross - det - childCredit - spouseCredit);
 
   const presetRegion = it.regions.find((r) => r.id === options.region);

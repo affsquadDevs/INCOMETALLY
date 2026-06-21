@@ -19,7 +19,8 @@ export const termsOfServiceConfig: TermsOfServiceConfig = {
   lastUpdated: 'January 2026',
   title: 'Terms of Service',
   contactEmail,
-  intro: 'By accessing or using https://incometally.com ("Website"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Website.',
+  intro:
+    'By accessing or using https://incometally.com ("Website"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Website.',
   sections: [
     {
       title: '1. Use of the Website',
@@ -43,29 +44,18 @@ export const termsOfServiceConfig: TermsOfServiceConfig = {
     },
     {
       title: '3. Accuracy of Information',
-      paragraphs: [
-        'While we strive to keep information accurate and up to date:',
-      ],
+      paragraphs: ['While we strive to keep information accurate and up to date:'],
       listItems: [
         'We do not guarantee completeness, accuracy, or reliability',
         'Tax laws and regulations change frequently',
         'Results may differ from official or real-world outcomes',
       ],
-      paragraphsAfterList: [
-        'Use of the Website is at your own risk.',
-      ],
+      paragraphsAfterList: ['Use of the Website is at your own risk.'],
     },
     {
       title: '4. Intellectual Property',
-      paragraphs: [
-        'All content on IncomeTally, including:',
-      ],
-      listItems: [
-        'Text',
-        'Design',
-        'Calculator logic',
-        'Branding',
-      ],
+      paragraphs: ['All content on IncomeTally, including:'],
+      listItems: ['Text', 'Design', 'Calculator logic', 'Branding'],
       paragraphsAfterList: [
         'is the property of IncomeTally unless otherwise stated and is protected by applicable intellectual property laws.',
         'You may not copy, reproduce, or redistribute content without prior written permission.',
@@ -80,9 +70,7 @@ export const termsOfServiceConfig: TermsOfServiceConfig = {
     },
     {
       title: '6. Limitation of Liability',
-      paragraphs: [
-        'To the fullest extent permitted by law:',
-      ],
+      paragraphs: ['To the fullest extent permitted by law:'],
       listItems: [
         'IncomeTally shall not be liable for any direct, indirect, or consequential damages',
         'Including financial loss or decision-making outcomes',
@@ -91,16 +79,12 @@ export const termsOfServiceConfig: TermsOfServiceConfig = {
     },
     {
       title: '7. Modifications to the Service',
-      paragraphs: [
-        'We reserve the right to:',
-      ],
+      paragraphs: ['We reserve the right to:'],
       listItems: [
         'Modify or discontinue any part of the Website',
         'Update these Terms at any time',
       ],
-      paragraphsAfterList: [
-        'Changes become effective upon posting.',
-      ],
+      paragraphsAfterList: ['Changes become effective upon posting.'],
     },
     {
       title: '8. Governing Law',
@@ -110,11 +94,7 @@ export const termsOfServiceConfig: TermsOfServiceConfig = {
     },
     {
       title: '9. Contact Information',
-      paragraphs: [
-        'For questions regarding these Terms, contact us at:',
-        `📧 ${contactEmail}`,
-      ],
+      paragraphs: ['For questions regarding these Terms, contact us at:', `📧 ${contactEmail}`],
     },
   ],
 };
-

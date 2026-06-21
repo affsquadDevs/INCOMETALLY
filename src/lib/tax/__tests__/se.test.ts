@@ -4,7 +4,13 @@ import type { TaxData } from '@/types/tax';
 import type { SEOptionsData, SETaxOptions } from '@/types/se';
 
 const table: TaxData = {
-  metadata: { countryCode: 'SE', countryName: 'Sweden', currency: 'SEK', year: 2026, disclaimerShort: 'x' },
+  metadata: {
+    countryCode: 'SE',
+    countryName: 'Sweden',
+    currency: 'SEK',
+    year: 2026,
+    disclaimerShort: 'x',
+  },
   brackets: [{ from: 0, to: null, rate: 0.32 }],
   socialContrib: [],
   allowances: {},
@@ -24,7 +30,11 @@ const se: SEOptionsData = {
   ],
 };
 
-const baseOpts: SETaxOptions = { municipality: 'avg', customMunicipalRate: 32.38, churchMember: false };
+const baseOpts: SETaxOptions = {
+  municipality: 'avg',
+  customMunicipalRate: 32.38,
+  churchMember: false,
+};
 
 describe('computeNetSweden', () => {
   it('computes net for 500,000 SEK at the average municipal rate (with jobbskatteavdrag)', () => {
@@ -53,7 +63,12 @@ describe('computeNetSweden', () => {
   });
 
   it('uses a custom municipal rate when selected', () => {
-    const custom = computeNetSweden(500000, table, { municipality: 'custom', customMunicipalRate: 25, churchMember: false }, se);
+    const custom = computeNetSweden(
+      500000,
+      table,
+      { municipality: 'custom', customMunicipalRate: 25, churchMember: false },
+      se
+    );
     const avg = computeNetSweden(500000, table, baseOpts, se);
     expect(custom.netAnnual).toBeGreaterThan(avg.netAnnual); // lower rate -> higher net
   });

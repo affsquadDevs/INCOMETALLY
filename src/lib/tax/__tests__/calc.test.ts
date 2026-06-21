@@ -1,6 +1,6 @@
 /**
  * Tests for tax calculation engine
- * 
+ *
  * Run with: npm test (after installing Vitest)
  * Or: npx vitest run
  */
@@ -428,7 +428,7 @@ describe('mode conversions correctness', () => {
     const resultFT = computeNet(52000, table, 40, 52);
     // Part-time: 20 hrs/week, same annual income
     const resultPT = computeNet(52000, table, 20, 52);
-    
+
     // Net annual should be the same
     expect(resultFT.netAnnual).toBe(resultPT.netAnnual);
     // But hourly rates should differ
@@ -465,4 +465,3 @@ describe('edge cases and error handling', () => {
     expect(() => computeNet(-1000, table)).toThrow('negative');
   });
 });
-

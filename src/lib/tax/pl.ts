@@ -65,17 +65,13 @@ export function computeNetPoland(
   const health = healthBase * pl.health.rate;
 
   // Relief for the young (under 26): exempts employment income up to the limit.
-  const exemptYoung = options.under26
-    ? Math.min(annualGross, pl.under26ExemptLimit)
-    : 0;
+  const exemptYoung = options.under26 ? Math.min(annualGross, pl.under26ExemptLimit) : 0;
 
   // PIT base = gross - exempt income - deductible ZUS - deductible contributions.
   const base = Math.max(0, annualGross - exemptYoung - zusTotal - preTax);
 
   const incomeTaxBeforeCredits =
-    options.filingStatus === 'joint'
-      ? 2 * scaleTax(base / 2, pl)
-      : scaleTax(base, pl);
+    options.filingStatus === 'joint' ? 2 * scaleTax(base / 2, pl) : scaleTax(base, pl);
 
   // Child relief is a tax credit; floored at 0 here (Poland refunds unused credit
   // up to ZUS/health paid, which we do not model).
@@ -84,9 +80,23 @@ export function computeNetPoland(
 
   const capShown = pl.zus.annualCap < annualGross ? pl.zus.annualCap : undefined;
   const breakdownContribs: SocialContribBreakdown[] = [
-    { name: 'Pension insurance (Emerytalne)', amount: round(pension, nearest), rate: pl.zus.pension, cappedAmount: capShown },
-    { name: 'Disability insurance (Rentowe)', amount: round(disability, nearest), rate: pl.zus.disability, cappedAmount: capShown },
-    { name: 'Sickness insurance (Chorobowe)', amount: round(sickness, nearest), rate: pl.zus.sickness },
+    {
+      name: 'Pension insurance (Emerytalne)',
+      amount: round(pension, nearest),
+      rate: pl.zus.pension,
+      cappedAmount: capShown,
+    },
+    {
+      name: 'Disability insurance (Rentowe)',
+      amount: round(disability, nearest),
+      rate: pl.zus.disability,
+      cappedAmount: capShown,
+    },
+    {
+      name: 'Sickness insurance (Chorobowe)',
+      amount: round(sickness, nearest),
+      rate: pl.zus.sickness,
+    },
     { name: 'Health insurance (Zdrowotne)', amount: round(health, nearest), rate: pl.health.rate },
   ];
   const socialTotal = pension + disability + sickness + health;

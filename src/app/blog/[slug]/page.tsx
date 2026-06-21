@@ -39,12 +39,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
           href="/blog"
           className="inline-flex items-center text-black hover:opacity-70 mb-8 transition-opacity text-sm"
         >
-          <svg
-            className="mr-2 w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -56,7 +51,9 @@ export default function BlogPost({ params }: BlogPostPageProps) {
         </Link>
 
         <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">{blog.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">
+            {blog.title}
+          </h1>
           <div className="text-black text-base opacity-70">{formattedDate}</div>
         </header>
 
@@ -68,7 +65,9 @@ export default function BlogPost({ params }: BlogPostPageProps) {
         {siteConfig.aboutUs?.faq && (
           <div className="mt-16 pt-16 border-t border-black border-opacity-10">
             <div className="bg-white rounded-lg border border-black border-opacity-10 p-8 lg:p-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-black mb-12 tracking-[-0.02em]">{siteConfig.aboutUs.faq.title}</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-black mb-12 tracking-[-0.02em]">
+                {siteConfig.aboutUs.faq.title}
+              </h2>
               <FAQAccordion faqs={siteConfig.aboutUs.faq.items} />
             </div>
           </div>
@@ -77,4 +76,3 @@ export default function BlogPost({ params }: BlogPostPageProps) {
     </div>
   );
 }
-

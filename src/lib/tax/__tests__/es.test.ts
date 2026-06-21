@@ -4,7 +4,13 @@ import type { TaxData } from '@/types/tax';
 import type { ESOptionsData, ESTaxOptions } from '@/types/es';
 
 const table: TaxData = {
-  metadata: { countryCode: 'ES', countryName: 'Spain', currency: 'EUR', year: 2026, disclaimerShort: 'x' },
+  metadata: {
+    countryCode: 'ES',
+    countryName: 'Spain',
+    currency: 'EUR',
+    year: 2026,
+    disclaimerShort: 'x',
+  },
   brackets: [{ from: 0, to: null, rate: 0.19 }],
   socialContrib: [],
   allowances: {},

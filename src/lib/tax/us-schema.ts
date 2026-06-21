@@ -74,13 +74,19 @@ export const USOptionsDataSchema = z.object({
 
 export type USOptionsDataSchemaType = z.infer<typeof USOptionsDataSchema>;
 
-export function validateUsOptionsData(data: unknown): { valid: boolean; errors: string[]; data?: USOptionsDataSchemaType } {
+export function validateUsOptionsData(data: unknown): {
+  valid: boolean;
+  errors: string[];
+  data?: USOptionsDataSchemaType;
+} {
   try {
     const parsed = USOptionsDataSchema.parse(data);
 
     // Validate brackets for each filing status
     const errors: string[] = [];
-    for (const status of Object.keys(parsed.federalBrackets) as Array<keyof typeof parsed.federalBrackets>) {
+    for (const status of Object.keys(parsed.federalBrackets) as Array<
+      keyof typeof parsed.federalBrackets
+    >) {
       const brackets = parsed.federalBrackets[status];
       if (brackets) {
         const bracketValidation = validateBrackets(brackets);
@@ -110,5 +116,3 @@ export function validateUsOptionsData(data: unknown): { valid: boolean; errors: 
     };
   }
 }
-
-

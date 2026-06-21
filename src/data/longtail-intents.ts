@@ -25,19 +25,22 @@ export function generateLongTailPages(): LongTailIntent[] {
     {
       intent: 'hourly-to-net-salary',
       titleTemplate: 'Hourly to Net Salary Calculator in {country}',
-      descriptionTemplate: 'Convert your hourly wage to net salary in {country}. Calculate take-home pay after taxes.',
+      descriptionTemplate:
+        'Convert your hourly wage to net salary in {country}. Calculate take-home pay after taxes.',
       keywords: ['hourly to net salary', 'hourly wage calculator', 'take-home pay'],
     },
     {
       intent: 'monthly-to-net-salary',
       titleTemplate: 'Monthly to Net Salary Calculator in {country}',
-      descriptionTemplate: 'Calculate your net monthly income in {country}. See take-home pay after taxes.',
+      descriptionTemplate:
+        'Calculate your net monthly income in {country}. See take-home pay after taxes.',
       keywords: ['monthly net salary', 'monthly take-home pay', 'net monthly income'],
     },
     {
       intent: 'yearly-to-net-salary',
       titleTemplate: 'Annual to Net Salary Calculator in {country}',
-      descriptionTemplate: 'Calculate your net annual income in {country}. See take-home pay after taxes.',
+      descriptionTemplate:
+        'Calculate your net annual income in {country}. See take-home pay after taxes.',
       keywords: ['annual net salary', 'yearly take-home pay', 'net annual income'],
     },
   ];
@@ -47,8 +50,13 @@ export function generateLongTailPages(): LongTailIntent[] {
 
   for (const intent of intents) {
     for (const countryCode of countries) {
-      const countryName = countryCode === 'US' ? 'United States' : countryCode === 'DE' ? 'Germany' : 'United Kingdom';
-      
+      const countryName =
+        countryCode === 'US'
+          ? 'United States'
+          : countryCode === 'DE'
+            ? 'Germany'
+            : 'United Kingdom';
+
       pages.push({
         intent: `${intent.intent}-${countryCode.toLowerCase()}`,
         countryCode,
@@ -85,13 +93,12 @@ Ensure content is unique and valuable, not thin or duplicate.]`,
 }
 
 export function getAllLongTailSlugs(): string[] {
-  return generateLongTailPages().map(page => `${page.intent}`);
+  return generateLongTailPages().map((page) => `${page.intent}`);
 }
 
 /**
  * Get long-tail page by slug
  */
 export function getLongTailPage(slug: string): LongTailIntent | undefined {
-  return generateLongTailPages().find(page => page.intent === slug);
+  return generateLongTailPages().find((page) => page.intent === slug);
 }
-

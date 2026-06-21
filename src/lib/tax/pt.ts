@@ -1,11 +1,7 @@
 import type { TaxData } from '@/types/tax';
 import type { PTBracket, PTOptionsData, PTTaxOptions } from '@/types/pt';
 import { deannualizeIncome } from './calc';
-import type {
-  NetIncomeResult,
-  SocialContribResult,
-  TaxBreakdown,
-} from './types';
+import type { NetIncomeResult, SocialContribResult, TaxBreakdown } from './types';
 
 function round(value: number, nearestCent: boolean): number {
   return nearestCent ? Math.round(value * 100) / 100 : value;
@@ -13,11 +9,7 @@ function round(value: number, nearestCent: boolean): number {
 
 // Progressive tax over marginal brackets, applying a per-bracket rate reduction
 // (used for Azores / Madeira regional reductions).
-function progressive(
-  taxable: number,
-  brackets: PTBracket[],
-  reduction: number[]
-): number {
+function progressive(taxable: number, brackets: PTBracket[], reduction: number[]): number {
   if (taxable <= 0) return 0;
   let tax = 0;
   let prev = 0;

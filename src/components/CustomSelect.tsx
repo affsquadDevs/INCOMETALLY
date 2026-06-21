@@ -41,7 +41,7 @@ export default function CustomSelect({
     };
   }, [isOpen]);
 
-  const selectedOption = options.find(option => option.value === value) || options[0];
+  const selectedOption = options.find((option) => option.value === value) || options[0];
 
   const handleSelect = (optionValue: string | number) => {
     onChange(optionValue);
@@ -51,10 +51,7 @@ export default function CustomSelect({
   return (
     <div className={`relative ${className}`} ref={selectRef}>
       {label && (
-        <label 
-          htmlFor={id}
-          className="block text-sm font-medium text-black mb-2"
-        >
+        <label htmlFor={id} className="block text-sm font-medium text-black mb-2">
           {label}
         </label>
       )}
@@ -76,21 +73,13 @@ export default function CustomSelect({
           viewBox="0 0 24 24"
           aria-hidden="true"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M19 9l-7 7-7-7"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
 
       {isOpen && (
         <div className="absolute z-50 w-full mt-1 bg-white border border-black border-opacity-20 rounded-sm shadow-lg">
-          <ul
-            role="listbox"
-            className="py-1 max-h-60 overflow-auto"
-          >
+          <ul role="listbox" className="py-1 max-h-60 overflow-auto">
             {options.map((option) => (
               <li
                 key={option.value}
@@ -112,4 +101,3 @@ export default function CustomSelect({
     </div>
   );
 }
-

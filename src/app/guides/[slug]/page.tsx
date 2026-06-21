@@ -14,18 +14,15 @@ import { siteConfig } from '@/config/site';
 
 // Dynamic import for react-markdown - heavy library, only load when needed
 // Reduces initial bundle size for guide pages
-const ReactMarkdown = dynamic(
-  () => import('react-markdown'),
-  {
-    loading: () => (
-      <div className="animate-pulse space-y-4">
-        <div className="h-8 bg-gray-200 rounded w-3/4"></div>
-        <div className="h-4 bg-gray-200 rounded"></div>
-        <div className="h-4 bg-gray-200 rounded w-5/6"></div>
-      </div>
-    ),
-  }
-);
+const ReactMarkdown = dynamic(() => import('react-markdown'), {
+  loading: () => (
+    <div className="animate-pulse space-y-4">
+      <div className="h-8 bg-gray-200 rounded w-3/4"></div>
+      <div className="h-4 bg-gray-200 rounded"></div>
+      <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+    </div>
+  ),
+});
 
 interface PageProps {
   params: {
@@ -198,9 +195,7 @@ export default function GuidePage({ params }: PageProps) {
             <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">
               {guide.title}
             </h1>
-            <p className="text-lg text-black opacity-70 mb-4">
-              {guide.description}
-            </p>
+            <p className="text-lg text-black opacity-70 mb-4">{guide.description}</p>
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-black opacity-60">
               <span>
                 By{' '}
@@ -238,9 +233,7 @@ export default function GuidePage({ params }: PageProps) {
             <div className="lg:col-span-3">
               <article className="bg-white rounded-lg border border-black border-opacity-10 p-6 lg:p-8 mb-8">
                 <div className="prose prose-lg max-w-none">
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                    {contentBody}
-                  </ReactMarkdown>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{contentBody}</ReactMarkdown>
                 </div>
               </article>
 
@@ -280,19 +273,10 @@ export default function GuidePage({ params }: PageProps) {
               {/* Author / editorial standards */}
               <section className="border-t border-black border-opacity-10 pt-8 mb-8">
                 <div className="bg-white rounded-lg border border-black border-opacity-10 p-6">
-                  <h2 className="text-lg font-medium text-black mb-2">
-                    About the author
-                  </h2>
-                  <p className="text-sm font-medium text-black mb-1">
-                    {author.name}
-                  </p>
-                  <p className="text-sm text-black opacity-70 leading-relaxed mb-3">
-                    {author.bio}
-                  </p>
-                  <Link
-                    href={author.url}
-                    className="text-sm text-[#0066FF] hover:underline"
-                  >
+                  <h2 className="text-lg font-medium text-black mb-2">About the author</h2>
+                  <p className="text-sm font-medium text-black mb-1">{author.name}</p>
+                  <p className="text-sm text-black opacity-70 leading-relaxed mb-3">{author.bio}</p>
+                  <Link href={author.url} className="text-sm text-[#0066FF] hover:underline">
                     Read our editorial standards →
                   </Link>
                 </div>
@@ -326,9 +310,7 @@ export default function GuidePage({ params }: PageProps) {
 
               {/* Calculators */}
               <section className="border-t border-black border-opacity-10 pt-8">
-                <h2 className="text-xl font-normal text-black mb-4">
-                  Try the calculators
-                </h2>
+                <h2 className="text-xl font-normal text-black mb-4">Try the calculators</h2>
                 <ul className="space-y-2">
                   <li>
                     <Link
@@ -385,4 +367,3 @@ export default function GuidePage({ params }: PageProps) {
     </>
   );
 }
-

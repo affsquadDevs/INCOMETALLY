@@ -11,7 +11,7 @@ interface MetricCardProps {
 }
 
 export default function MetricCard({
-//   label,
+  //   label,
   value,
   change,
   subtitle = 'Compared to previous period',
@@ -23,14 +23,13 @@ export default function MetricCard({
   const [hasStarted, setHasStarted] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
   const animationStartedRef = useRef(false);
-  
+
   // Parse value - handle both string with commas and numbers
-  const numericValue = typeof value === 'number' 
-    ? value 
-    : parseFloat(value.toString().replace(/,/g, '').trim()) || 0;
-  
+  const numericValue =
+    typeof value === 'number' ? value : parseFloat(value.toString().replace(/,/g, '').trim()) || 0;
+
   const isNumeric = numericValue > 0 && !isNaN(numericValue);
-  
+
   // Generate default chart data if not provided
   const defaultChartData = chartData || [
     45, 52, 48, 61, 55, 58, 65, 62, 68, 72, 75, 80, 78, 82, 85, 88, 90, 92, 95, 100,
@@ -40,9 +39,7 @@ export default function MetricCard({
   const maxValue = Math.max(...defaultChartData);
   const minValue = Math.min(...defaultChartData);
   const range = maxValue - minValue || 1;
-  const normalizedData = defaultChartData.map(
-    (val) => ((val - minValue) / range) * 100
-  );
+  const normalizedData = defaultChartData.map((val) => ((val - minValue) / range) * 100);
 
   // Generate SVG path for line chart
   const width = 280;
@@ -58,7 +55,7 @@ export default function MetricCard({
   });
 
   const linePath = `M ${points.join(' L ')}`;
-  
+
   // Area path (closed path for fill)
   const areaPath = `${linePath} L ${width - padding},${height - padding} L ${padding},${height - padding} Z`;
 
@@ -66,11 +63,11 @@ export default function MetricCard({
   useEffect(() => {
     if (animationStartedRef.current) return;
     if (!isNumeric || numericValue <= 0) return;
-    
+
     let timer: NodeJS.Timeout | null = null;
     let slowGrowthTimer: NodeJS.Timeout | null = null;
     let initDelay: NodeJS.Timeout | null = null;
-    
+
     // Use Intersection Observer to detect when card is visible
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -78,7 +75,7 @@ export default function MetricCard({
           // Start animation when card becomes visible
           if (animationStartedRef.current) return;
           animationStartedRef.current = true;
-          
+
           // Small delay to ensure card is visible before animation starts
           initDelay = setTimeout(() => {
             setHasStarted(true);
@@ -91,7 +88,7 @@ export default function MetricCard({
               step++;
               const current = Math.min(increment * step, numericValue);
               setAnimatedValue(current);
-              
+
               if (step >= steps) {
                 if (timer) {
                   clearInterval(timer);
@@ -99,7 +96,7 @@ export default function MetricCard({
                 }
                 // Start infinite slow growth
                 slowGrowthTimer = setInterval(() => {
-                  setAnimatedValue(prev => {
+                  setAnimatedValue((prev) => {
                     // Very slow growth - about 0.01% per second
                     const growthRate = numericValue * 0.00001;
                     return prev + growthRate;
@@ -108,7 +105,7 @@ export default function MetricCard({
               }
             }, duration / steps);
           }, 300); // Small delay after card appears
-          
+
           observer.disconnect();
         }
       },
@@ -131,14 +128,18 @@ export default function MetricCard({
   const changeColor = isPositive ? '#10B981' : '#EF4444'; // green for positive, red for negative
 
   // Format displayed value
-  const displayValue = isNumeric && hasStarted
-    ? Math.floor(animatedValue).toLocaleString()
-    : isNumeric && !hasStarted
-    ? '0'
-    : value;
+  const displayValue =
+    isNumeric && hasStarted
+      ? Math.floor(animatedValue).toLocaleString()
+      : isNumeric && !hasStarted
+        ? '0'
+        : value;
 
   return (
-    <div ref={cardRef} className="bg-transparent   rounded-xl px-2 pt-2  lg:p-4 transition-all duration-300 hover:bg-[#e0e0de]  group">
+    <div
+      ref={cardRef}
+      className="bg-transparent   rounded-xl px-2 pt-2  lg:p-4 transition-all duration-300 hover:bg-[#e0e0de]  group"
+    >
       {/* Label */}
       {/* Value and Change */}
       <div className="flex items-baseline gap-3 mb-2 lg:mb-3">
@@ -157,10 +158,7 @@ export default function MetricCard({
             xmlns="http://www.w3.org/2000/svg"
             className={isPositive ? '' : 'rotate-180'}
           >
-            <path
-              d="M6 2L10 6H7V10H5V6H2L6 2Z"
-              fill="currentColor"
-            />
+            <path d="M6 2L10 6H7V10H5V6H2L6 2Z" fill="currentColor" />
           </svg>
           {isPositive ? '+' : ''}
           {change.toFixed(1)}%
@@ -195,11 +193,23 @@ export default function MetricCard({
             </linearGradient>
             {/* Filter for drop shadow - blue */}
             <filter id={`shadow-${gradientId}-blue`} x="-50%" y="-50%" width="200%" height="200%">
-              <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#0066FF" floodOpacity="0.5" />
+              <feDropShadow
+                dx="0"
+                dy="2"
+                stdDeviation="3"
+                floodColor="#0066FF"
+                floodOpacity="0.5"
+              />
             </filter>
             {/* Filter for drop shadow - green */}
             <filter id={`shadow-${gradientId}-green`} x="-50%" y="-50%" width="200%" height="200%">
-              <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#10B981" floodOpacity="0.5" />
+              <feDropShadow
+                dx="0"
+                dy="2"
+                stdDeviation="3"
+                floodColor="#10B981"
+                floodOpacity="0.5"
+              />
             </filter>
           </defs>
           {/* Area fill - blue */}
@@ -241,4 +251,3 @@ export default function MetricCard({
     </div>
   );
 }
-

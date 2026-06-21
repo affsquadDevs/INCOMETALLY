@@ -51,8 +51,20 @@ export default function Home() {
                   className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0]"
                 >
                   {home.hero.ctaPrimary}
-                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 12L10 8L6 4"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </Link>
                 <Link
@@ -60,14 +72,26 @@ export default function Home() {
                   className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0]"
                 >
                   {home.hero.ctaSecondary}
-                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 12L10 8L6 4"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </Link>
               </div>
             </AnimatedBlock>
           </div>
-          
+
           {/* Metric Card - appears after all animations, positioned bottom right */}
           {/* <div className="mt-6 lg:mt-0 lg:absolute lg:bottom-0 lg:right-0">
             <AnimatedBlock delay={3000} animationType="fade-slide">
@@ -101,17 +125,30 @@ export default function Home() {
             {/* Three Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 items-stretch">
               {home.features.items.map((feature, index) => (
-                <AnimatedBlock 
-                  key={index} 
-                  delay={index * 150} 
+                <AnimatedBlock
+                  key={index}
+                  delay={index * 150}
                   animationType="fade-slide"
                   className="h-full"
                 >
                   <div className="rounded-lg border border-white p-6 lg:p-10 relative hover:bg-gray-50 transition-all duration-300 h-full flex flex-col group cursor-pointer">
                     {/* Icon in top right */}
                     <div className="absolute top-6 right-6">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-400">
-                        <path d="M5 15L15 5M15 5H5M15 5V15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="text-gray-400"
+                      >
+                        <path
+                          d="M5 15L15 5M15 5H5M15 5V15"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </div>
                     <h3 className="text-xl lg:text-2xl font-normal text-[#fff] mb-4 tracking-[-0.01em] pr-8 group-hover:text-[#000] transition-colors duration-300">
@@ -136,18 +173,18 @@ export default function Home() {
               Salary Tax Calculators
             </h2>
             <p className="text-lg text-black opacity-70 mb-8 text-center max-w-2xl mx-auto">
-              Calculate your net income after taxes and social contributions. Free calculators for multiple countries with detailed breakdowns.
+              Calculate your net income after taxes and social contributions. Free calculators for
+              multiple countries with detailed breakdowns.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <Link
                 href="/salary-calculator"
                 className="bg-white rounded-lg border border-black border-opacity-10 p-6 hover:border-opacity-30 transition-all hover:shadow-lg"
               >
-                <h3 className="text-xl font-normal text-black mb-2">
-                  Calculator Hub
-                </h3>
+                <h3 className="text-xl font-normal text-black mb-2">Calculator Hub</h3>
                 <p className="text-sm text-black opacity-70 mb-4">
-                  Access salary calculators for US, Germany, UK, and more. Calculate net income with detailed tax breakdowns.
+                  Access salary calculators for US, Germany, UK, and more. Calculate net income with
+                  detailed tax breakdowns.
                 </p>
                 <span className="text-sm text-black opacity-70 underline">
                   View All Calculators →
@@ -157,11 +194,10 @@ export default function Home() {
                 href="/hourly-to-salary"
                 className="bg-white rounded-lg border border-black border-opacity-10 p-6 hover:border-opacity-30 transition-all hover:shadow-lg"
               >
-                <h3 className="text-xl font-normal text-black mb-2">
-                  Hourly to Salary
-                </h3>
+                <h3 className="text-xl font-normal text-black mb-2">Hourly to Salary</h3>
                 <p className="text-sm text-black opacity-70 mb-4">
-                  Convert hourly wage to annual, monthly, and weekly salary. Perfect for job negotiations and comparisons.
+                  Convert hourly wage to annual, monthly, and weekly salary. Perfect for job
+                  negotiations and comparisons.
                 </p>
                 <span className="text-sm text-black opacity-70 underline">
                   Convert Hourly Rate →
@@ -171,11 +207,10 @@ export default function Home() {
                 href="/salary-calculator/us"
                 className="bg-white rounded-lg border border-black border-opacity-10 p-6 hover:border-opacity-30 transition-all hover:shadow-lg"
               >
-                <h3 className="text-xl font-normal text-black mb-2">
-                  🇺🇸 US Calculator
-                </h3>
+                <h3 className="text-xl font-normal text-black mb-2">🇺🇸 US Calculator</h3>
                 <p className="text-sm text-black opacity-70 mb-4">
-                  Calculate net income for United States. Includes federal taxes, Social Security, and Medicare.
+                  Calculate net income for United States. Includes federal taxes, Social Security,
+                  and Medicare.
                 </p>
                 <span className="text-sm text-black opacity-70 underline">
                   Calculate US Salary →
@@ -185,9 +220,6 @@ export default function Home() {
           </div>
         </AnimatedBlock>
       </section>
-
-  
     </div>
   );
 }
-

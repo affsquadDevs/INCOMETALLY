@@ -10,12 +10,12 @@ interface AnimatedBlockProps {
   showImmediately?: boolean; // New prop to show content immediately for LCP
 }
 
-export default function AnimatedBlock({ 
-  children, 
-  delay = 0, 
+export default function AnimatedBlock({
+  children,
+  delay = 0,
   className = '',
   animationType = 'fade-slide',
-  showImmediately = false // Default to false for backward compatibility
+  showImmediately = false, // Default to false for backward compatibility
 }: AnimatedBlockProps) {
   // Show immediately if showImmediately is true (for LCP-critical content)
   const [isVisible, setIsVisible] = useState(showImmediately);
@@ -56,16 +56,18 @@ export default function AnimatedBlock({
     <div
       ref={ref}
       className={`transition-all duration-700 ease-out ${animationClasses[animationType]} ${className}`}
-      style={{ 
+      style={{
         willChange: isVisible ? 'auto' : 'transform, opacity',
         // Use transform for better performance
-        transform: animationType === 'slide' || animationType === 'fade-slide' 
-          ? (isVisible ? 'translateY(0)' : 'translateY(2rem)')
-          : undefined
+        transform:
+          animationType === 'slide' || animationType === 'fade-slide'
+            ? isVisible
+              ? 'translateY(0)'
+              : 'translateY(2rem)'
+            : undefined,
       }}
     >
       {children}
     </div>
   );
 }
-

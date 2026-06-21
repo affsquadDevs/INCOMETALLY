@@ -1,6 +1,6 @@
 /**
  * Progressive Enhancement: No-JS Fallback Form
- * 
+ *
  * This component provides a basic HTML form that works without JavaScript.
  * When JS is enabled, the SalaryCalculator component enhances this form.
  */
@@ -141,4 +141,3 @@ export default function CalculatorForm({
     </noscript>
   );
 }
-

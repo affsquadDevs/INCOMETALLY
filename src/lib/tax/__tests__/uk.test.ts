@@ -4,7 +4,13 @@ import type { TaxData } from '@/types/tax';
 import type { UKOptionsData, UKTaxOptions } from '@/types/uk';
 
 const table: TaxData = {
-  metadata: { countryCode: 'UK', countryName: 'United Kingdom', currency: 'GBP', year: 2026, disclaimerShort: 'x' },
+  metadata: {
+    countryCode: 'UK',
+    countryName: 'United Kingdom',
+    currency: 'GBP',
+    year: 2026,
+    disclaimerShort: 'x',
+  },
   brackets: [{ from: 0, to: null, rate: 0.2 }],
   socialContrib: [],
   allowances: {},
@@ -20,7 +26,12 @@ const uk: UKOptionsData = {
     { from: 50271, to: 125140, rate: 0.4 },
     { from: 125141, to: null, rate: 0.45 },
   ],
-  nationalInsurance: { primaryThreshold: 12570, upperEarningsLimit: 50270, rateBasic: 0.08, rateHigher: 0.02 },
+  nationalInsurance: {
+    primaryThreshold: 12570,
+    upperEarningsLimit: 50270,
+    rateBasic: 0.08,
+    rateHigher: 0.02,
+  },
   studentLoan: {
     plan2: { threshold: 27295, rate: 0.09 },
     plan4: { threshold: 25000, rate: 0.09 },

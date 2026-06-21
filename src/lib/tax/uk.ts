@@ -2,7 +2,12 @@ import type { TaxData } from '@/types/tax';
 import type { TaxBracket } from '@/types/tax';
 import type { UKOptionsData, UKTaxOptions } from '@/types/uk';
 import { deannualizeIncome } from './calc';
-import type { NetIncomeResult, SocialContribBreakdown, SocialContribResult, TaxBreakdown } from './types';
+import type {
+  NetIncomeResult,
+  SocialContribBreakdown,
+  SocialContribResult,
+  TaxBreakdown,
+} from './types';
 
 function round(value: number, nearestCent: boolean): number {
   if (nearestCent) return Math.round(value * 100) / 100;
@@ -36,10 +41,7 @@ function computeProgressiveTax(taxableIncome: number, brackets: TaxBracket[]): n
   return totalTax;
 }
 
-function calculatePersonalAllowance(
-  adjustedIncome: number,
-  uk: UKOptionsData
-): number {
+function calculatePersonalAllowance(adjustedIncome: number, uk: UKOptionsData): number {
   const { base, phaseOutStart, phaseOutEnd } = uk.personalAllowance;
 
   if (adjustedIncome <= phaseOutStart) {
@@ -65,7 +67,10 @@ function computeNationalInsurance(
   const breakdown: SocialContribBreakdown[] = [];
   let totalAnnual = 0;
 
-  const basicRateBase = Math.max(0, Math.min(adjustedIncome, upperEarningsLimit) - primaryThreshold);
+  const basicRateBase = Math.max(
+    0,
+    Math.min(adjustedIncome, upperEarningsLimit) - primaryThreshold
+  );
   if (basicRateBase > 0) {
     const basicRateAmount = basicRateBase * rateBasic;
     breakdown.push({
@@ -154,13 +159,13 @@ export function computeNetUK(
   // but we need to apply them to taxable income (which already has allowance subtracted).
   // Convert brackets to be relative to taxable income (starting from 0).
   const brackets: TaxBracket[] = uk.incomeTaxBands
-    .filter(b => b.rate > 0) // Skip the 0% bracket (Personal Allowance already applied)
-    .map(b => ({
+    .filter((b) => b.rate > 0) // Skip the 0% bracket (Personal Allowance already applied)
+    .map((b) => ({
       from: Math.max(0, b.from - personalAllowance), // Convert to taxable income basis
       to: b.to === null ? null : Math.max(0, b.to - personalAllowance),
       rate: b.rate,
     }))
-    .filter(b => b.to === null || b.to > 0) // Remove brackets that are fully below taxable income
+    .filter((b) => b.to === null || b.to > 0) // Remove brackets that are fully below taxable income
     .map((b, index, arr) => {
       // Ensure first bracket starts from 0
       if (index === 0 && b.from > 0) {
@@ -168,8 +173,11 @@ export function computeNetUK(
       }
       return b;
     });
-  
-  const incomeTax = round(computeProgressiveTax(taxableIncome, brackets), roundingRules.nearestCent);
+
+  const incomeTax = round(
+    computeProgressiveTax(taxableIncome, brackets),
+    roundingRules.nearestCent
+  );
 
   // Step 6: National Insurance (Class 1)
   const nationalInsurance = computeNationalInsurance(adjustedIncome, uk, roundingRules);
@@ -197,12 +205,18 @@ export function computeNetUK(
   if (childBenefit > 0 && adjustedIncome > uk.hicbc.threshold) {
     const fraction = Math.min(
       1,
-      Math.max(0, (adjustedIncome - uk.hicbc.threshold) / (uk.hicbc.fullThreshold - uk.hicbc.threshold))
+      Math.max(
+        0,
+        (adjustedIncome - uk.hicbc.threshold) / (uk.hicbc.fullThreshold - uk.hicbc.threshold)
+      )
     );
     hicbc = round(childBenefit * fraction, roundingRules.nearestCent);
   }
 
-  const netIncomeTax = round(incomeTax - marriageAllowanceRelief + hicbc, roundingRules.nearestCent);
+  const netIncomeTax = round(
+    incomeTax - marriageAllowanceRelief + hicbc,
+    roundingRules.nearestCent
+  );
 
   // Step 10: Net Income = Adjusted Income - Income Tax (incl. MA/HICBC) - NI - Student Loan
   const netAnnual = adjustedIncome - netIncomeTax - nationalInsurance.totalAnnual - studentLoan;
@@ -229,10 +243,13 @@ export function computeNetUK(
     netIncome: netAnnual,
     effectiveTaxRate,
     // Store salary sacrifice (pre-tax deductions) for UK display
-    preTaxDeductions: preTaxDeductions > 0 ? {
-      entered: preTaxDeductions,
-      applied: preTaxDeductions, // Already capped in normalized
-    } : undefined,
+    preTaxDeductions:
+      preTaxDeductions > 0
+        ? {
+            entered: preTaxDeductions,
+            applied: preTaxDeductions, // Already capped in normalized
+          }
+        : undefined,
   };
 
   // Store student loan amount for UI (we'll access it via a custom approach)
@@ -246,4 +263,3 @@ export function computeNetUK(
     breakdown,
   };
 }
-

@@ -59,4 +59,3 @@ export interface DeannualizedIncome {
   monthly: number;
   yearly: number;
 }
-

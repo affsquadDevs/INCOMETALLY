@@ -14,10 +14,10 @@ interface State {
 
 /**
  * Error Boundary for Calculator Failures
- * 
+ *
  * Catches JavaScript errors in child components and displays a fallback UI.
  * Prevents the entire app from crashing when calculator errors occur.
- * 
+ *
  * Why this is important:
  * - Calculator performs complex calculations that could fail
  * - API calls might fail or return unexpected data
@@ -82,9 +82,7 @@ export default class ErrorBoundary extends Component<Props, State> {
               </svg>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-medium text-black mb-2">
-                Something went wrong
-              </h3>
+              <h3 className="text-lg font-medium text-black mb-2">Something went wrong</h3>
               <p className="text-sm text-black opacity-70 mb-4">
                 The calculator encountered an error. This might be due to invalid input or a
                 temporary issue. Please try again.
@@ -115,4 +113,3 @@ export default class ErrorBoundary extends Component<Props, State> {
     return this.props.children;
   }
 }
-

@@ -10,22 +10,12 @@ import { type IncomeMode } from '@/lib/tax/types';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const {
-      countryCode,
-      year,
-      mode,
-      value,
-      hoursPerWeek = 40,
-      weeksPerYear = 52,
-    } = body;
+    const { countryCode, year, mode, value, hoursPerWeek = 40, weeksPerYear = 52 } = body;
 
     // Validate inputs
     const normalizedCountryCode = countryCode ? (countryCode as string).toUpperCase() : null;
     if (!normalizedCountryCode || !year || !mode || value === undefined) {
-      return NextResponse.json(
-        { error: 'Missing required fields' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
     // Germany needs extra parameters (tax class, state, church, insurance).
@@ -42,10 +32,7 @@ export async function POST(request: NextRequest) {
     const weeks = parseFloat(weeksPerYear) || 52;
 
     if (isNaN(income) || income < 0) {
-      return NextResponse.json(
-        { error: 'Invalid income value' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Invalid income value' }, { status: 400 });
     }
 
     // Get tax table
@@ -73,4 +60,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-

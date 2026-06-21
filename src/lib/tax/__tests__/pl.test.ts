@@ -4,7 +4,13 @@ import type { TaxData } from '@/types/tax';
 import type { PLOptionsData, PLTaxOptions } from '@/types/pl';
 
 const table: TaxData = {
-  metadata: { countryCode: 'PL', countryName: 'Poland', currency: 'PLN', year: 2026, disclaimerShort: 'x' },
+  metadata: {
+    countryCode: 'PL',
+    countryName: 'Poland',
+    currency: 'PLN',
+    year: 2026,
+    disclaimerShort: 'x',
+  },
   brackets: [{ from: 0, to: null, rate: 0.12 }],
   socialContrib: [],
   allowances: {},
@@ -24,7 +30,12 @@ const pl: PLOptionsData = {
   childRelief: { first: 1112.04, second: 1112.04, third: 2000.04, fourthPlus: 2700 },
 };
 
-const base: PLTaxOptions = { filingStatus: 'single', under26: false, children: 0, preTaxDeductible: 0 };
+const base: PLTaxOptions = {
+  filingStatus: 'single',
+  under26: false,
+  children: 0,
+  preTaxDeductible: 0,
+};
 
 describe('computeNetPoland', () => {
   it('computes single, no children, gross 90,000 PLN', () => {

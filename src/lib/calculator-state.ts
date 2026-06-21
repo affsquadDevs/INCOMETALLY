@@ -16,12 +16,7 @@ export interface CalculatorDisplay {
 }
 
 export function inputToAnnualGross(inputs: CalculatorInputs): number {
-  return annualizeIncome(
-    inputs.mode,
-    inputs.value,
-    inputs.hoursPerWeek,
-    inputs.weeksPerYear
-  );
+  return annualizeIncome(inputs.mode, inputs.value, inputs.hoursPerWeek, inputs.weeksPerYear);
 }
 
 export function annualGrossToDisplay(
@@ -30,7 +25,7 @@ export function annualGrossToDisplay(
   weeksPerYear: number
 ): CalculatorDisplay {
   const deannualized = deannualizeIncome(annualGross, hoursPerWeek, weeksPerYear);
-  
+
   return {
     annualGross,
     hourly: deannualized.hourly,
@@ -46,7 +41,7 @@ export function getModeValue(
   weeksPerYear: number
 ): number {
   const display = annualGrossToDisplay(annualGross, hoursPerWeek, weeksPerYear);
-  
+
   switch (mode) {
     case 'hourly':
       return display.hourly;
@@ -69,7 +64,7 @@ export function normalizeToAnnual(
   weeksPerYear: number = 52
 ): number {
   if (value <= 0) return 0;
-  
+
   switch (mode) {
     case 'hourly':
       return value * hoursPerWeek * weeksPerYear;
@@ -81,4 +76,3 @@ export function normalizeToAnnual(
       return value;
   }
 }
-

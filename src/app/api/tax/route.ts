@@ -10,19 +10,13 @@ export async function GET(request: NextRequest) {
   const year = searchParams.get('year');
 
   if (!countryCode || !year) {
-    return NextResponse.json(
-      { error: 'Missing countryCode or year parameter' },
-      { status: 400 }
-    );
+    return NextResponse.json({ error: 'Missing countryCode or year parameter' }, { status: 400 });
   }
 
   try {
     const yearNum = parseInt(year, 10);
     if (isNaN(yearNum)) {
-      return NextResponse.json(
-        { error: 'Invalid year parameter' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Invalid year parameter' }, { status: 400 });
     }
 
     const taxTable = getTaxTable(countryCode, yearNum);
@@ -34,4 +28,3 @@ export async function GET(request: NextRequest) {
     );
   }
 }
-

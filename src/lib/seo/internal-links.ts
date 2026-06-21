@@ -32,8 +32,8 @@ export function getCountryLinks(excludeCountry?: string): InternalLink[] {
   };
 
   return countries
-    .filter(code => code !== excludeCountry)
-    .map(code => ({
+    .filter((code) => code !== excludeCountry)
+    .map((code) => ({
       href: `/salary-calculator/${code.toLowerCase()}`,
       text: `${countryNames[code]} Salary Calculator`,
       description: `Calculate net income in ${countryNames[code]}`,
@@ -47,7 +47,7 @@ export function getGuideLinks(limit: number = 3): InternalLink[] {
   const guides = getAllGuideSlugs();
   // In a real implementation, you'd load guide metadata
   // For now, return placeholder links
-  return guides.slice(0, limit).map(slug => ({
+  return guides.slice(0, limit).map((slug) => ({
     href: `/guides/${slug}`,
     text: `Guide: ${slug.replace(/-/g, ' ')}`,
   }));
@@ -97,4 +97,3 @@ export function generateInternalLinks(context: {
 
   return links;
 }
-

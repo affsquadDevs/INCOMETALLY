@@ -24,4 +24,3 @@ export function generateBreadcrumbJsonLd(items: BreadcrumbItem[]): string {
 
   return JSON.stringify(breadcrumbSchema, null, 2);
 }
-

@@ -24,9 +24,7 @@ export const metadata: Metadata = {
 
 // Cornerstone article first, then the rest of the cluster
 function orderGuides(guides: Guide[]): Guide[] {
-  return [...guides].sort(
-    (a, b) => Number(b.isPillar ?? false) - Number(a.isPillar ?? false)
-  );
+  return [...guides].sort((a, b) => Number(b.isPillar ?? false) - Number(a.isPillar ?? false));
 }
 
 export default function GuidesPage() {
@@ -42,8 +40,7 @@ export default function GuidesPage() {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Salary & Tax Guides',
-    description:
-      'Educational guides on salary, take-home pay, income tax, and money planning.',
+    description: 'Educational guides on salary, take-home pay, income tax, and money planning.',
     url: `${siteConfig.domain}/guides`,
     isPartOf: { '@id': `${siteConfig.domain}/#website` },
     mainEntity: {
@@ -76,8 +73,8 @@ export default function GuidesPage() {
               Salary &amp; Tax Guides
             </h1>
             <p className="text-lg text-black opacity-70">
-              Expert articles on salary calculations, tax systems, deductions, and
-              understanding your take-home pay — organized into three topic pillars.
+              Expert articles on salary calculations, tax systems, deductions, and understanding
+              your take-home pay — organized into three topic pillars.
             </p>
           </div>
 
@@ -91,9 +88,7 @@ export default function GuidesPage() {
                   <h2 className="text-2xl md:text-3xl font-normal text-black mb-2 tracking-[-0.01em]">
                     {pillar.title}
                   </h2>
-                  <p className="text-base text-black opacity-70">
-                    {pillar.description}
-                  </p>
+                  <p className="text-base text-black opacity-70">{pillar.description}</p>
                 </div>
 
                 <div className="space-y-6">
@@ -132,9 +127,7 @@ export default function GuidesPage() {
                           </div>
                           <time className="text-sm text-black opacity-50">
                             Updated{' '}
-                            {new Date(
-                              guide.updated ?? guide.date
-                            ).toLocaleDateString('en-US', {
+                            {new Date(guide.updated ?? guide.date).toLocaleDateString('en-US', {
                               year: 'numeric',
                               month: 'long',
                               day: 'numeric',

@@ -34,9 +34,9 @@ export default function CalculatorPage() {
             Salary &amp; Tax Calculator
           </h1>
           <p className="text-lg text-black opacity-70">
-            Estimate your net income (take-home pay) after income tax and social
-            contributions. Enter your gross salary, choose your country and pay
-            period, and get an instant breakdown for the 2026 tax year.
+            Estimate your net income (take-home pay) after income tax and social contributions.
+            Enter your gross salary, choose your country and pay period, and get an instant
+            breakdown for the 2026 tax year.
           </p>
         </div>
 
@@ -49,29 +49,25 @@ export default function CalculatorPage() {
 
         {/* How it works */}
         <section className="mb-12">
-          <h2 className="text-3xl font-normal text-black mb-6">
-            How the Calculator Works
-          </h2>
+          <h2 className="text-3xl font-normal text-black mb-6">How the Calculator Works</h2>
           <div className="space-y-4 text-base text-black opacity-90 leading-relaxed">
             <p>
-              Our calculator converts your gross income into estimated take-home
-              pay using up-to-date tax brackets and social contribution rates for
-              each supported country. You can enter income as an hourly rate, a
-              monthly salary, or an annual figure, and the calculator annualizes
-              it before applying the relevant tax rules.
+              Our calculator converts your gross income into estimated take-home pay using
+              up-to-date tax brackets and social contribution rates for each supported country. You
+              can enter income as an hourly rate, a monthly salary, or an annual figure, and the
+              calculator annualizes it before applying the relevant tax rules.
             </p>
             <p>
-              The breakdown separates income tax from social contributions — such
-              as Social Security and Medicare in the United States, statutory
-              insurance contributions in Germany, and National Insurance in the
-              United Kingdom — so you can see exactly where your money goes and
-              what your effective tax rate is.
+              The breakdown separates income tax from social contributions — such as Social Security
+              and Medicare in the United States, statutory insurance contributions in Germany, and
+              National Insurance in the United Kingdom — so you can see exactly where your money
+              goes and what your effective tax rate is.
             </p>
             <p>
-              Results are estimates for informational and planning purposes only
-              and do not account for every individual circumstance, such as state
-              and local taxes, tax credits, or benefits in kind. For advice
-              specific to your situation, consult a qualified tax professional.
+              Results are estimates for informational and planning purposes only and do not account
+              for every individual circumstance, such as state and local taxes, tax credits, or
+              benefits in kind. For advice specific to your situation, consult a qualified tax
+              professional.
             </p>
           </div>
         </section>
@@ -123,10 +119,7 @@ export default function CalculatorPage() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/guides"
-                className="text-black opacity-70 hover:opacity-100 underline"
-              >
+              <Link href="/guides" className="text-black opacity-70 hover:opacity-100 underline">
                 Salary &amp; Tax Guides
               </Link>
             </li>
