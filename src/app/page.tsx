@@ -134,83 +134,81 @@ export default function Home() {
       />
 
       {/* Hero */}
-      <section className="max-w-[1920px] mx-auto px-4 lg:px-12 pt-24 pb-16 lg:pt-32 lg:pb-28">
-        <div className="max-w-[1200px]">
-          <h1 className="text-[56px] sm:text-[72px] lg:text-[96px] xl:text-[112px] font-normal text-black leading-[1.05] mb-6 lg:mb-8 tracking-[-0.03em]">
-            <TypewriterText
-              text="Free Net Salary Calculator"
-              highlightWords={['Net', 'Salary', 'Calculator']}
-              highlightColor="#0066FF"
-              speed={60}
-              showImmediately={true}
-            />
-          </h1>
-          <AnimatedBlock delay={0} animationType="fade-slide" showImmediately={true}>
-            <p className="text-lg lg:text-xl text-black mb-8 lg:mb-10 max-w-[640px] leading-relaxed opacity-90">
-              {
-                'Enter your gross pay and see your estimated take-home pay after income tax and social contributions — for the 2026 tax year, across 9 countries. No signup, and your inputs stay in your browser.'
-              }
-            </p>
-          </AnimatedBlock>
-          <AnimatedBlock delay={0} animationType="fade-slide" showImmediately={true}>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/calculator"
-                className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0]"
+      <section className="max-w-6xl mx-auto px-4 lg:px-8 pt-24 pb-10 lg:pt-28 lg:pb-14">
+        <h1 className="text-[44px] sm:text-[60px] lg:text-[76px] xl:text-[84px] font-normal text-black leading-[1.05] mb-5 tracking-[-0.03em]">
+          <TypewriterText
+            text="Free Net Salary Calculator"
+            highlightWords={['Net', 'Salary', 'Calculator']}
+            highlightColor="#0066FF"
+            speed={60}
+            showImmediately={true}
+          />
+        </h1>
+        <AnimatedBlock delay={0} animationType="fade-slide" showImmediately={true}>
+          <p className="text-lg lg:text-xl text-black mb-6 max-w-3xl leading-relaxed opacity-90">
+            {
+              'Enter your gross pay and see your estimated take-home pay after income tax and social contributions — for the 2026 tax year, across 9 countries. No signup, and your inputs stay in your browser.'
+            }
+          </p>
+        </AnimatedBlock>
+        <AnimatedBlock delay={0} animationType="fade-slide" showImmediately={true}>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/calculator"
+              className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0066FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F5F0]"
+            >
+              Get Started
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Get Started
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 12L10 8L6 4"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
-              <Link
-                href="/guides"
-                className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0]"
+                <path
+                  d="M6 12L10 8L6 4"
+                  stroke="currentColor"
+                  strokeWidth="1.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+            <Link
+              href="/guides"
+              className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0066FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F5F0]"
+            >
+              Browse Guides
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Browse Guides
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 12L10 8L6 4"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
-            </div>
-            <p className="text-sm text-black opacity-70 mt-4">
-              Free · No signup · Your inputs stay in your browser.
-            </p>
-          </AnimatedBlock>
-        </div>
+                <path
+                  d="M6 12L10 8L6 4"
+                  stroke="currentColor"
+                  strokeWidth="1.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+          </div>
+          <p className="text-sm text-black opacity-70 mt-4">
+            Free · No signup · Your inputs stay in your browser.
+          </p>
+        </AnimatedBlock>
       </section>
 
       {/* What IncomeTally Does / Who it's for */}
-      <section className="max-w-4xl mx-auto px-4 lg:px-12 py-12 lg:py-16">
+      <section className="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
         <AnimatedBlock delay={0} animationType="fade-slide">
           <h2 className="text-3xl lg:text-4xl font-normal text-black mb-6 tracking-[-0.02em]">
             What IncomeTally Does
           </h2>
-          <div className="text-base lg:text-lg text-black leading-relaxed opacity-90 space-y-5">
+          <div className="text-base lg:text-lg text-black leading-relaxed opacity-90 space-y-5 max-w-3xl">
             <p>
               {'IncomeTally is a free, browser-based '}
               <Link href="/net-salary-calculator" className="text-[#0066FF] hover:underline">
@@ -242,7 +240,7 @@ export default function Home() {
           <h3 className="text-xl lg:text-2xl font-normal text-black mt-8 mb-3 tracking-[-0.01em]">
             {"Who it's for"}
           </h3>
-          <p className="text-base lg:text-lg text-black leading-relaxed opacity-90">
+          <p className="text-base lg:text-lg text-black leading-relaxed opacity-90 max-w-3xl">
             {
               "It's built for employees checking whether a payslip looks right, job-seekers comparing two offers in real take-home terms, freelancers estimating what to set aside, and anyone weighing a move between countries. If you've ever wondered why a raise felt smaller than the headline number, this is the tool that explains it."
             }
@@ -251,8 +249,8 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section className="max-w-4xl mx-auto px-4 lg:px-12 py-12 lg:py-16">
-        <h2 className="text-3xl lg:text-4xl font-normal text-black mb-8 lg:mb-12 tracking-[-0.02em] text-center">
+      <section className="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+        <h2 className="text-3xl lg:text-4xl font-normal text-black mb-8 lg:mb-12 tracking-[-0.02em]">
           How It Works
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 items-stretch">
@@ -271,7 +269,7 @@ export default function Home() {
             </AnimatedBlock>
           ))}
         </div>
-        <div className="text-center mt-8">
+        <div className="mt-8">
           <Link
             href="/calculator"
             className="px-8 py-3 bg-transparent text-black rounded-sm font-normal hover:opacity-70 transition-all duration-300 border border-black inline-flex items-center justify-center gap-2 text-sm tracking-wide hover:bg-black hover:text-[#F5F5F0]"
@@ -297,13 +295,13 @@ export default function Home() {
       </section>
 
       {/* Calculators + 9 countries */}
-      <section className="max-w-[1920px] mx-auto px-4 lg:px-12 py-12 lg:py-16">
+      <section className="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
         {/* Part A: universal tools */}
-        <div className="max-w-4xl mx-auto mb-12 lg:mb-16">
-          <h2 className="text-3xl lg:text-4xl font-normal text-black mb-4 tracking-[-0.02em] text-center">
+        <div className="mb-12 lg:mb-16">
+          <h2 className="text-3xl lg:text-4xl font-normal text-black mb-4 tracking-[-0.02em]">
             Calculators
           </h2>
-          <p className="text-base text-black opacity-70 mb-8 max-w-2xl mx-auto text-center">
+          <p className="text-base text-black opacity-70 mb-8 max-w-2xl">
             Start with a general tool, or jump straight to your country below.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -311,7 +309,7 @@ export default function Home() {
               <Link
                 key={tool.href}
                 href={tool.href}
-                className="bg-white rounded-lg border border-black border-opacity-10 p-6 hover:border-opacity-30 transition-all hover:shadow-lg flex flex-col"
+                className="bg-white rounded-lg border border-black border-opacity-10 p-6 hover:border-opacity-30 transition-all hover:shadow-lg flex flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0066FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F5F0]"
               >
                 <h3 className="text-xl font-normal text-black mb-2">{tool.title}</h3>
                 <p className="text-sm text-black opacity-70 mb-4 flex-grow">{tool.body}</p>
@@ -323,7 +321,7 @@ export default function Home() {
 
         {/* Part B: the 9-country grid (single blue anchor block) */}
         <AnimatedBlock delay={0} animationType="fade-slide">
-          <div className="bg-[#0066FF] rounded-lg p-8 lg:p-16">
+          <div className="bg-[#0066FF] rounded-lg p-8 lg:p-12">
             <div className="mb-8 lg:mb-12">
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-normal text-white mb-4 tracking-[-0.02em]">
                 Salary Calculators by Country
@@ -333,7 +331,7 @@ export default function Home() {
                 social contributions.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6 items-stretch">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 items-stretch">
               {countryList.map((c, index) => (
                 <AnimatedBlock
                   key={c.code}
@@ -343,14 +341,17 @@ export default function Home() {
                 >
                   <Link
                     href={`/salary-calculator/${c.code.toLowerCase()}`}
-                    className="rounded-lg border border-white p-5 lg:p-6 group hover:bg-white transition-all duration-300 h-full flex flex-col cursor-pointer"
+                    className="rounded-lg border border-white p-5 lg:p-6 group hover:bg-white transition-all duration-300 h-full flex flex-col cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0066FF]"
                   >
                     <span className="text-3xl mb-3" aria-hidden="true">
                       {c.flag}
                     </span>
-                    <h3 className="text-base lg:text-lg font-normal text-white group-hover:text-black transition-colors duration-300 tracking-[-0.01em]">
+                    <h3 className="text-base lg:text-lg font-normal text-white group-hover:text-black group-focus-visible:text-black transition-colors duration-300 tracking-[-0.01em]">
                       {c.displayName} Salary Calculator
                     </h3>
+                    <p className="text-sm mt-1 text-white group-hover:text-black group-focus-visible:text-black transition-colors duration-300">
+                      {c.currency} · 2026 tax year
+                    </p>
                   </Link>
                 </AnimatedBlock>
               ))}
@@ -363,7 +364,7 @@ export default function Home() {
             <div className="mt-4">
               <Link
                 href="/salary-calculator"
-                className="text-sm text-white underline hover:opacity-80"
+                className="text-sm text-white underline hover:opacity-80 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0066FF]"
               >
                 See all calculators →
               </Link>
@@ -373,7 +374,7 @@ export default function Home() {
       </section>
 
       {/* Guide pillars */}
-      <section className="max-w-4xl mx-auto px-4 lg:px-12 py-12 lg:py-16">
+      <section className="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
         <h2 className="text-3xl lg:text-4xl font-normal text-black mb-4 tracking-[-0.02em]">
           Learn How Your Pay Is Calculated
         </h2>
@@ -394,7 +395,10 @@ export default function Home() {
                 <p className="text-sm text-black opacity-70 mb-4 flex-grow leading-relaxed">
                   {pillar.description}
                 </p>
-                <Link href={pillar.flagshipHref} className="text-sm text-[#0066FF] hover:underline">
+                <Link
+                  href={pillar.flagshipHref}
+                  className="text-sm text-[#0066FF] hover:underline focus-visible:outline-none focus-visible:underline"
+                >
                   {pillar.flagshipTitle} →
                 </Link>
               </div>
@@ -402,16 +406,19 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-8">
-          <Link href="/guides" className="text-black opacity-70 hover:opacity-100 underline">
+          <Link
+            href="/guides"
+            className="text-black opacity-70 hover:opacity-100 underline rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0066FF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F5F0]"
+          >
             View all guides →
           </Link>
         </div>
       </section>
 
       {/* Trust / official data sources */}
-      <section className="max-w-4xl mx-auto px-4 lg:px-12 py-12 lg:py-16">
+      <section className="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
         <AnimatedBlock delay={0} animationType="fade-slide">
-          <div className="bg-white rounded-lg border border-black border-opacity-10 p-8 lg:p-16">
+          <div className="bg-white rounded-lg border border-black border-opacity-10 p-8 lg:p-12">
             <p className="text-xs tracking-[0.05em] uppercase opacity-70 mb-3 text-black">
               Data current for the 2026 tax year · Last reviewed June 2026
             </p>
@@ -434,7 +441,10 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/about-us" className="text-sm text-[#0066FF] hover:underline">
+                <Link
+                  href="/about-us"
+                  className="text-sm text-[#0066FF] hover:underline focus-visible:outline-none focus-visible:underline"
+                >
                   Read about us and our editorial standards →
                 </Link>
               </div>
@@ -471,11 +481,13 @@ export default function Home() {
       </section>
 
       {/* Homepage FAQ */}
-      <section className="max-w-4xl mx-auto px-4 lg:px-12 py-12 lg:py-16">
+      <section className="max-w-6xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
         <h2 className="text-3xl lg:text-4xl font-normal text-black mb-8 tracking-[-0.02em]">
           Frequently Asked Questions
         </h2>
-        <FAQAccordion faqs={homeFaqs} />
+        <div className="max-w-3xl">
+          <FAQAccordion faqs={homeFaqs} />
+        </div>
       </section>
     </div>
   );
