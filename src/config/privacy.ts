@@ -19,7 +19,8 @@ export const privacyPolicyConfig: PrivacyPolicyConfig = {
   lastUpdated: 'January 2026',
   title: 'Privacy Policy',
   contactEmail,
-  intro: 'Welcome to IncomeTally ("we", "our", "us"). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect information when you visit https://incometally.com (the "Website").',
+  intro:
+    'Welcome to IncomeTally ("we", "our", "us"). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect information when you visit https://incometally.com (the "Website").',
   sections: [
     {
       title: '1. Information We Collect',
@@ -43,9 +44,7 @@ export const privacyPolicyConfig: PrivacyPolicyConfig = {
     },
     {
       title: '2. Cookies and Similar Technologies',
-      paragraphs: [
-        'IncomeTally uses cookies and similar technologies to:',
-      ],
+      paragraphs: ['IncomeTally uses cookies and similar technologies to:'],
       listItems: [
         'Ensure proper website functionality',
         'Measure traffic and usage patterns',
@@ -75,18 +74,14 @@ export const privacyPolicyConfig: PrivacyPolicyConfig = {
     },
     {
       title: '4. How We Use Information',
-      paragraphs: [
-        'We use collected information to:',
-      ],
+      paragraphs: ['We use collected information to:'],
       listItems: [
         'Operate and maintain the Website',
         'Improve calculator accuracy and usability',
         'Analyze traffic and performance',
         'Comply with legal obligations',
       ],
-      paragraphsAfterList: [
-        'We do not sell, rent, or trade user information.',
-      ],
+      paragraphsAfterList: ['We do not sell, rent, or trade user information.'],
     },
     {
       title: '5. Data Security',
@@ -103,7 +98,7 @@ export const privacyPolicyConfig: PrivacyPolicyConfig = {
       ],
     },
     {
-      title: '7. Children\'s Information',
+      title: "7. Children's Information",
       paragraphs: [
         'IncomeTally is not directed to children under the age of 13.',
         'We do not knowingly collect personal data from children.',
@@ -125,4 +120,3 @@ export const privacyPolicyConfig: PrivacyPolicyConfig = {
     },
   ],
 };
-

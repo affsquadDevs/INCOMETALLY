@@ -15,12 +15,9 @@ export async function GET(request: NextRequest) {
 
     // Load UK options file
     const filePath = path.join(process.cwd(), 'src', 'data', 'tax', 'uk', 'uk-options.json');
-    
+
     if (!fs.existsSync(filePath)) {
-      return NextResponse.json(
-        { error: 'UK options file not found' },
-        { status: 404 }
-      );
+      return NextResponse.json({ error: 'UK options file not found' }, { status: 404 });
     }
 
     const fileContent = fs.readFileSync(filePath, 'utf-8');
@@ -37,10 +34,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(data);
   } catch (error) {
     console.error('Error loading UK options:', error);
-    return NextResponse.json(
-      { error: 'Failed to load UK options' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Failed to load UK options' }, { status: 500 });
   }
 }
-

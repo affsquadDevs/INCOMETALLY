@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "countryCode": "IT",
+    "countryName": "Italy",
+    "currency": "EUR",
+    "year": 2026,
+    "disclaimerShort": "Estimates using 2025 IRPEF national rates, an approximate employee no-tax area, average regional and municipal surtaxes, and INPS contributions. Regional and municipal rates vary. For guidance only."
+  },
+  "brackets": [
+    { "from": 0, "to": 28000, "rate": 0.23 },
+    { "from": 28001, "to": 50000, "rate": 0.35 },
+    { "from": 50001, "to": null, "rate": 0.43 }
+  ],
+  "socialContrib": [
+    { "name": "INPS pension contribution", "rate": 0.0919, "cap": 120607, "deductible": true },
+    { "name": "Regional & municipal surtax (addizionali)", "rate": 0.025, "deductible": false }
+  ],
+  "allowances": {
+    "personalAllowance": 8500
+  },
+  "roundingRules": { "nearestCent": true }
+}

@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "currency": "EUR",
+    "year": 2026,
+    "disclaimerShort": "Estimates using 2025 mainland Portugal IRS brackets, the standard specific deduction, and employee Social Security contributions. Excludes regional (Azores and Madeira) rates. For guidance only."
+  },
+  "brackets": [
+    { "from": 0, "to": 8059, "rate": 0.13 },
+    { "from": 8060, "to": 12160, "rate": 0.165 },
+    { "from": 12161, "to": 17233, "rate": 0.22 },
+    { "from": 17234, "to": 22306, "rate": 0.25 },
+    { "from": 22307, "to": 28400, "rate": 0.32 },
+    { "from": 28401, "to": 41629, "rate": 0.355 },
+    { "from": 41630, "to": 44987, "rate": 0.435 },
+    { "from": 44988, "to": 83696, "rate": 0.45 },
+    { "from": 83697, "to": null, "rate": 0.48 }
+  ],
+  "socialContrib": [
+    { "name": "Social Security (Seguranca Social)", "rate": 0.11, "deductible": false }
+  ],
+  "allowances": {
+    "personalAllowance": 4104
+  },
+  "roundingRules": { "nearestCent": true }
+}

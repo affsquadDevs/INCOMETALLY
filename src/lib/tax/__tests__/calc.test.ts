@@ -1,6 +1,6 @@
 /**
  * Tests for tax calculation engine
- * 
+ *
  * Run with: npm test (after installing Vitest)
  * Or: npx vitest run
  */
@@ -353,6 +353,43 @@ describe('computeNet - comprehensive calculation', () => {
   });
 });
 
+describe('computeNet - deductible social contributions', () => {
+  const table: TaxData = {
+    metadata: {
+      countryCode: 'TS',
+      countryName: 'Test',
+      currency: 'EUR',
+      year: 2026,
+      disclaimerShort: 'Test data',
+    },
+    brackets: [
+      { from: 0, to: 10000, rate: 0 },
+      { from: 10001, to: null, rate: 0.2 },
+    ],
+    socialContrib: [
+      { name: 'Deductible', rate: 0.1, deductible: true },
+      { name: 'Non-deductible', rate: 0.05, deductible: false },
+    ],
+    allowances: { personalAllowance: 0 },
+    roundingRules: { nearestCent: true },
+  };
+
+  it('reduces the income-tax base by deductible social contributions', () => {
+    // gross 100000; deductible social = 10000; non-deductible = 5000
+    // taxable = 100000 - 0 - 10000 = 90000; tax = (90000 - 10000) * 0.2 = 16000
+    // net = 100000 - 16000 - 15000 = 69000
+    const result = computeNet(100000, table);
+    expect(result.breakdown.taxableIncome).toBe(90000);
+    expect(result.breakdown.incomeTax).toBe(16000);
+    expect(result.breakdown.socialContributions.totalAnnual).toBe(15000);
+    expect(result.netAnnual).toBe(69000);
+  });
+
+  it('computeIncomeTax accepts an explicit pre-tax deduction', () => {
+    expect(computeIncomeTax(100000, table, 10000)).toBe(16000);
+  });
+});
+
 describe('mode conversions correctness', () => {
   it('should maintain consistency between annualize and deannualize', () => {
     const hourly = 25;
@@ -391,7 +428,7 @@ describe('mode conversions correctness', () => {
     const resultFT = computeNet(52000, table, 40, 52);
     // Part-time: 20 hrs/week, same annual income
     const resultPT = computeNet(52000, table, 20, 52);
-    
+
     // Net annual should be the same
     expect(resultFT.netAnnual).toBe(resultPT.netAnnual);
     // But hourly rates should differ
@@ -428,4 +465,3 @@ describe('edge cases and error handling', () => {
     expect(() => computeNet(-1000, table)).toThrow('negative');
   });
 });
-

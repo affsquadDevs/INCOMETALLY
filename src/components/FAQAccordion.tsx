@@ -33,9 +33,7 @@ export default function FAQAccordion({ faqs, className = '' }: FAQAccordionProps
             aria-expanded={openIndex === index}
             aria-controls={`faq-answer-${index}`}
           >
-            <span className="text-lg font-medium text-black pr-4">
-              {faq.question}
-            </span>
+            <span className="text-lg font-medium text-black pr-4">{faq.question}</span>
             <svg
               className={`w-5 h-5 text-black flex-shrink-0 transition-transform ${
                 openIndex === index ? 'transform rotate-180' : ''
@@ -62,13 +60,9 @@ export default function FAQAccordion({ faqs, className = '' }: FAQAccordionProps
           >
             <div className="px-6 py-4 border-t border-black border-opacity-10">
               {typeof faq.answer === 'string' ? (
-                <p className="text-base text-black opacity-70 leading-relaxed">
-                  {faq.answer}
-                </p>
+                <p className="text-base text-black opacity-70 leading-relaxed">{faq.answer}</p>
               ) : (
-                <div className="text-base text-black opacity-70 leading-relaxed">
-                  {faq.answer}
-                </div>
+                <div className="text-base text-black opacity-70 leading-relaxed">{faq.answer}</div>
               )}
             </div>
           </div>
@@ -77,4 +71,3 @@ export default function FAQAccordion({ faqs, className = '' }: FAQAccordionProps
     </div>
   );
 }
-

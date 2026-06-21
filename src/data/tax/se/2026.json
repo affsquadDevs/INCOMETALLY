@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "countryCode": "SE",
+    "countryName": "Sweden",
+    "currency": "SEK",
+    "year": 2026,
+    "disclaimerShort": "Estimates using an average municipal tax rate (about 32%) plus state tax (20%) above the breakpoint, and a simplified basic allowance. The 7% employee pension fee is offset by a tax reduction and is not shown separately. For guidance only."
+  },
+  "brackets": [
+    { "from": 0, "to": 625800, "rate": 0.32 },
+    { "from": 625801, "to": null, "rate": 0.52 }
+  ],
+  "socialContrib": [],
+  "allowances": {
+    "personalAllowance": 24000
+  },
+  "roundingRules": { "nearestCent": true }
+}

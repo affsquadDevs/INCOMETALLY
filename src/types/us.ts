@@ -19,7 +19,7 @@ export interface USTaxOptions {
   taxpayerOver65: boolean;
   taxpayerBlind: boolean;
   spouseOver65: boolean; // only relevant for MFJ/MFS, ignored otherwise
-  spouseBlind: boolean;  // only relevant for MFJ/MFS, ignored otherwise
+  spouseBlind: boolean; // only relevant for MFJ/MFS, ignored otherwise
 
   // Above-the-line / pre-tax deductions (simplified inputs)
   preTax401k: number; // employee elective deferrals (traditional) / self-employed SEP/Solo 401k (simplified)
@@ -79,5 +79,3 @@ export interface USOptionsData {
     };
   };
 }
-
-

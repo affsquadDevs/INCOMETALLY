@@ -12,8 +12,8 @@ export default function Footer() {
         {/* Logo and Site Name */}
         <div className="mb-10">
           <div className="flex items-center gap-2 mb-6">
-            <Image 
-              src={logo.image} 
+            <Image
+              src={logo.image}
               alt={logo.linkText}
               width={36}
               height={36}
@@ -23,18 +23,22 @@ export default function Footer() {
               {logo.linkText.toUpperCase()}
             </span>
           </div>
-        
         </div>
 
         {/* Footer Links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-10">
           {/* Product Section */}
           <div>
-            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">{footer.product.title}</h3>
+            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">
+              {footer.product.title}
+            </h3>
             <ul className="space-y-2">
               {footer.product.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed">
+                  <Link
+                    href={link.href}
+                    className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed"
+                  >
                     {link.href === '/product' ? footer.calculatorLinkLabel : link.label}
                   </Link>
                 </li>
@@ -44,11 +48,16 @@ export default function Footer() {
 
           {/* Legal Section */}
           <div>
-            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">{footer.legal.title}</h3>
+            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">
+              {footer.legal.title}
+            </h3>
             <ul className="space-y-2">
               {footer.legal.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed">
+                  <Link
+                    href={link.href}
+                    className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -58,18 +67,21 @@ export default function Footer() {
 
           {/* Resources Section */}
           <div>
-            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">{footer.resources.title}</h3>
+            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">
+              {footer.resources.title}
+            </h3>
             <ul className="space-y-2">
               {footer.resources.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed">
+                  <Link
+                    href={link.href}
+                    className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed"
+                  >
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-
-          
           </div>
         </div>
 

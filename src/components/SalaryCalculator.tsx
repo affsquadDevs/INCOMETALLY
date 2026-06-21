@@ -5,22 +5,48 @@ import { computeNet, annualizeIncome, deannualizeIncome } from '@/lib/tax/calc';
 import { computeNetGermany } from '@/lib/tax/germany';
 import { computeNetUS } from '@/lib/tax/us';
 import { computeNetUK } from '@/lib/tax/uk';
+import { computeNetPoland } from '@/lib/tax/pl';
+import { computeNetPortugal } from '@/lib/tax/pt';
+import { computeNetSweden } from '@/lib/tax/se';
+import { computeNetItaly } from '@/lib/tax/it';
+import { computeNetSpain } from '@/lib/tax/es';
+import { computeNetFrance } from '@/lib/tax/fr';
 import { type IncomeMode } from '@/lib/tax/types';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
-import { type USOptionsData, type USTaxOptions, type USFilingStatus, type USEmploymentType, type USDeductionMethod } from '@/types/us';
+import {
+  type USOptionsData,
+  type USTaxOptions,
+  type USFilingStatus,
+  type USEmploymentType,
+  type USDeductionMethod,
+} from '@/types/us';
 import { type UKOptionsData, type UKTaxOptions } from '@/types/uk';
-import { inputToAnnualGross, getModeValue, formatPrecise, normalizeToAnnual } from '@/lib/calculator-state';
-import { trackModeChange, trackCountryChange, trackCalculate, trackCopyLink, trackCalcStarted, trackCalcFinished } from '@/lib/analytics';
+import { type PLOptionsData, type PLTaxOptions } from '@/types/pl';
+import { type PTOptionsData, type PTTaxOptions } from '@/types/pt';
+import { type SEOptionsData, type SETaxOptions } from '@/types/se';
+import { type ITOptionsData, type ITTaxOptions } from '@/types/it';
+import { type ESOptionsData, type ESTaxOptions } from '@/types/es';
+import { type FROptionsData, type FRTaxOptions } from '@/types/fr';
+import {
+  inputToAnnualGross,
+  getModeValue,
+  formatPrecise,
+  normalizeToAnnual,
+} from '@/lib/calculator-state';
+import {
+  trackModeChange,
+  trackCountryChange,
+  trackCalculate,
+  trackCopyLink,
+  trackCalcStarted,
+  trackCalcFinished,
+} from '@/lib/analytics';
 import TaxDisclaimer from './TaxDisclaimer';
 import AdSlot from './AdSlot';
 import CalculatorForm from './CalculatorForm';
 import CustomSelect from './CustomSelect';
 import { TaxData } from '@/types/tax';
-import {
-  parseQueryParams,
-  serializeToQueryParams,
-  type CalculatorState,
-} from '@/lib/urlState';
+import { parseQueryParams, serializeToQueryParams, type CalculatorState } from '@/lib/urlState';
 
 interface SalaryCalculatorProps {
   initialCountryCode?: string;
@@ -49,7 +75,7 @@ export default function SalaryCalculator({
   // Track if component has mounted to avoid SSR issues
   const [isMounted, setIsMounted] = useState(false);
   const calcStartedFired = useRef(false);
-  
+
   // Default state values
   const defaults = {
     country: initialCountryCode,
@@ -96,7 +122,7 @@ export default function SalaryCalculator({
   const [incomeMode, setIncomeMode] = useState<IncomeMode>(initialState.mode);
   const [hoursPerWeek, setHoursPerWeek] = useState<string>(initialState.hoursPerWeek);
   const [weeksPerYear, setWeeksPerYear] = useState<string>(initialState.weeksPerYear);
-  
+
   // Single source of truth: annualGross
   // All mode values are derived from this to prevent circular updates and precision loss
   const [annualGross, setAnnualGross] = useState<number>(() => {
@@ -116,17 +142,19 @@ export default function SalaryCalculator({
     ),
     incomeMode === 'hourly' ? 2 : 0
   );
-  
+
   const [taxTable, setTaxTable] = useState<TaxData | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
   const [result, setResult] = useState<any>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  
+
   // Germany-specific state
   const [germanyOptions, setGermanyOptions] = useState<GermanyOptionsData | null>(null);
   const [germanyTaxClass, setGermanyTaxClass] = useState<'1' | '2' | '3' | '4' | '5' | '6'>('1');
-  const [germanyHealthInsurance, setGermanyHealthInsurance] = useState<'public' | 'private-without' | 'private-with'>('public');
+  const [germanyHealthInsurance, setGermanyHealthInsurance] = useState<
+    'public' | 'private-without' | 'private-with'
+  >('public');
   const [germanyState, setGermanyState] = useState<string>('BW');
   const [germanyInChurch, setGermanyInChurch] = useState<boolean>(false);
   const [germanyHasChildren, setGermanyHasChildren] = useState<boolean>(false);
@@ -153,8 +181,50 @@ export default function SalaryCalculator({
   const [ukOptions, setUkOptions] = useState<UKOptionsData | null>(null);
   const [ukPreTaxPension, setUkPreTaxPension] = useState<string>('0');
   const [ukPreTaxOther, setUkPreTaxOther] = useState<string>('0');
-  const [ukStudentLoanPlan, setUkStudentLoanPlan] = useState<'none' | 'plan2' | 'plan4' | 'plan5'>('none');
+  const [ukStudentLoanPlan, setUkStudentLoanPlan] = useState<'none' | 'plan2' | 'plan4' | 'plan5'>(
+    'none'
+  );
   const [ukRegion, setUkRegion] = useState<'england' | 'wales' | 'scotland' | 'ni'>('england');
+  const [ukMarriageAllowance, setUkMarriageAllowance] = useState<boolean>(false);
+  const [ukChildren, setUkChildren] = useState<string>('0');
+
+  // Poland-specific state
+  const [plOptions, setPlOptions] = useState<PLOptionsData | null>(null);
+  const [plFilingStatus, setPlFilingStatus] = useState<'single' | 'joint'>('single');
+  const [plUnder26, setPlUnder26] = useState<boolean>(false);
+  const [plChildren, setPlChildren] = useState<string>('0');
+  const [plPreTax, setPlPreTax] = useState<string>('0');
+
+  // Portugal-specific state
+  const [ptOptions, setPtOptions] = useState<PTOptionsData | null>(null);
+  const [ptRegion, setPtRegion] = useState<'mainland' | 'azores' | 'madeira'>('mainland');
+  const [ptFilingStatus, setPtFilingStatus] = useState<'single' | 'joint'>('single');
+  const [ptDependants, setPtDependants] = useState<string>('0');
+
+  // Sweden-specific state
+  const [seOptions, setSeOptions] = useState<SEOptionsData | null>(null);
+  const [seMunicipality, setSeMunicipality] = useState<string>('avg');
+  const [seCustomRate, setSeCustomRate] = useState<string>('32.38');
+  const [seChurchMember, setSeChurchMember] = useState<boolean>(false);
+
+  // Italy-specific state
+  const [itOptions, setItOptions] = useState<ITOptionsData | null>(null);
+  const [itRegion, setItRegion] = useState<string>('avg');
+  const [itCustomRegionalRate, setItCustomRegionalRate] = useState<string>('1.70');
+  const [itMunicipalRate, setItMunicipalRate] = useState<string>('0.80');
+  const [itDependentChildren, setItDependentChildren] = useState<string>('0');
+  const [itDependentSpouse, setItDependentSpouse] = useState<boolean>(false);
+
+  // Spain-specific state
+  const [esOptions, setEsOptions] = useState<ESOptionsData | null>(null);
+  const [esCommunity, setEsCommunity] = useState<string>('default');
+  const [esFilingStatus, setEsFilingStatus] = useState<'single' | 'joint'>('single');
+  const [esChildren, setEsChildren] = useState<string>('0');
+
+  // France-specific state
+  const [frOptions, setFrOptions] = useState<FROptionsData | null>(null);
+  const [frFilingStatus, setFrFilingStatus] = useState<'single' | 'married'>('single');
+  const [frChildren, setFrChildren] = useState<string>('0');
 
   // Mark as mounted on client side
   useEffect(() => {
@@ -243,15 +313,124 @@ export default function SalaryCalculator({
     }
   }, [countryCode, ukOptions, year]);
 
+  // Load Poland options when country is PL
+  useEffect(() => {
+    if (countryCode === 'PL' && !plOptions) {
+      const loadPlOptions = async () => {
+        try {
+          const response = await fetch(`/api/pl-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setPlOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Poland options:', err);
+        }
+      };
+      loadPlOptions();
+    }
+  }, [countryCode, plOptions, year]);
+
+  // Load Portugal options when country is PT
+  useEffect(() => {
+    if (countryCode === 'PT' && !ptOptions) {
+      const loadPtOptions = async () => {
+        try {
+          const response = await fetch(`/api/pt-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setPtOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Portugal options:', err);
+        }
+      };
+      loadPtOptions();
+    }
+  }, [countryCode, ptOptions, year]);
+
+  // Load Sweden options when country is SE
+  useEffect(() => {
+    if (countryCode === 'SE' && !seOptions) {
+      const loadSeOptions = async () => {
+        try {
+          const response = await fetch(`/api/se-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setSeOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Sweden options:', err);
+        }
+      };
+      loadSeOptions();
+    }
+  }, [countryCode, seOptions, year]);
+
+  // Load Italy options when country is IT
+  useEffect(() => {
+    if (countryCode === 'IT' && !itOptions) {
+      const loadItOptions = async () => {
+        try {
+          const response = await fetch(`/api/it-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setItOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Italy options:', err);
+        }
+      };
+      loadItOptions();
+    }
+  }, [countryCode, itOptions, year]);
+
+  // Load Spain options when country is ES
+  useEffect(() => {
+    if (countryCode === 'ES' && !esOptions) {
+      const loadEsOptions = async () => {
+        try {
+          const response = await fetch(`/api/es-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setEsOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Spain options:', err);
+        }
+      };
+      loadEsOptions();
+    }
+  }, [countryCode, esOptions, year]);
+
+  // Load France options when country is FR
+  useEffect(() => {
+    if (countryCode === 'FR' && !frOptions) {
+      const loadFrOptions = async () => {
+        try {
+          const response = await fetch(`/api/fr-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setFrOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load France options:', err);
+        }
+      };
+      loadFrOptions();
+    }
+  }, [countryCode, frOptions, year]);
+
   // Tax class II implies children; keep the toggle but force it on for class II.
-  const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
+  const germanyChildrenEffective =
+    countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
 
   // Validate inputs based on annualGross (single source of truth)
   const validateInputs = useCallback(() => {
     const errors: Record<string, string> = {};
     const hours = parseFloat(hoursPerWeek) || 40;
     const weeks = parseFloat(weeksPerYear) || 52;
-    
+
     // Get current mode value from annualGross
     const currentValue = getModeValue(annualGross, incomeMode, hours, weeks);
 
@@ -307,7 +486,14 @@ export default function SalaryCalculator({
           inChurch: germanyInChurch,
           children: germanyChildrenEffective,
         };
-        calculationResult = computeNetGermany(annualGross, taxTable, germanyOptionsParams, germanyOptions, hours, weeks);
+        calculationResult = computeNetGermany(
+          annualGross,
+          taxTable,
+          germanyOptionsParams,
+          germanyOptions,
+          hours,
+          weeks
+        );
       } else if (countryCode === 'US' && usOptions) {
         // Normalize all monetary inputs to annual based on income mode
         // This ensures pre-tax deductions and itemized deductions are correctly converted
@@ -316,12 +502,12 @@ export default function SalaryCalculator({
         const preTaxHSAInput = parseFloat(usPreTaxHSA) || 0;
         const otherPreTaxInput = parseFloat(usOtherPreTax) || 0;
         const itemizedInput = parseFloat(usItemizedDeductions) || 0;
-        
+
         const preTax401kAnnual = normalizeToAnnual(preTax401kInput, incomeMode, hours, weeks);
         const preTaxHSAAnnual = normalizeToAnnual(preTaxHSAInput, incomeMode, hours, weeks);
         const otherPreTaxAnnual = normalizeToAnnual(otherPreTaxInput, incomeMode, hours, weeks);
         const itemizedAnnual = normalizeToAnnual(itemizedInput, incomeMode, hours, weeks);
-        
+
         const usParams: USTaxOptions = {
           filingStatus: usFilingStatus,
           employmentType: usEmploymentType,
@@ -344,17 +530,105 @@ export default function SalaryCalculator({
         // Normalize all monetary inputs to annual based on income mode
         const preTaxPensionInput = parseFloat(ukPreTaxPension) || 0;
         const preTaxOtherInput = parseFloat(ukPreTaxOther) || 0;
-        
+
         const preTaxPensionAnnual = normalizeToAnnual(preTaxPensionInput, incomeMode, hours, weeks);
         const preTaxOtherAnnual = normalizeToAnnual(preTaxOtherInput, incomeMode, hours, weeks);
-        
+
         const ukParams: UKTaxOptions = {
           preTaxPension: preTaxPensionAnnual,
           preTaxOther: preTaxOtherAnnual,
           studentLoanPlan: ukStudentLoanPlan,
           region: ukRegion,
+          marriageAllowance: ukMarriageAllowance,
+          children: parseInt(ukChildren, 10) || 0,
         };
         calculationResult = computeNetUK(annualGross, taxTable, ukParams, ukOptions, hours, weeks);
+      } else if (countryCode === 'PL' && plOptions) {
+        const plParams: PLTaxOptions = {
+          filingStatus: plFilingStatus,
+          under26: plUnder26,
+          children: parseInt(plChildren, 10) || 0,
+          preTaxDeductible: normalizeToAnnual(parseFloat(plPreTax) || 0, incomeMode, hours, weeks),
+        };
+        calculationResult = computeNetPoland(
+          annualGross,
+          taxTable,
+          plParams,
+          plOptions,
+          hours,
+          weeks
+        );
+      } else if (countryCode === 'PT' && ptOptions) {
+        const ptParams: PTTaxOptions = {
+          region: ptRegion,
+          filingStatus: ptFilingStatus,
+          dependants: parseInt(ptDependants, 10) || 0,
+        };
+        calculationResult = computeNetPortugal(
+          annualGross,
+          taxTable,
+          ptParams,
+          ptOptions,
+          hours,
+          weeks
+        );
+      } else if (countryCode === 'SE' && seOptions) {
+        const seParams: SETaxOptions = {
+          municipality: seMunicipality,
+          customMunicipalRate: parseFloat(seCustomRate) || 0,
+          churchMember: seChurchMember,
+        };
+        calculationResult = computeNetSweden(
+          annualGross,
+          taxTable,
+          seParams,
+          seOptions,
+          hours,
+          weeks
+        );
+      } else if (countryCode === 'IT' && itOptions) {
+        const itParams: ITTaxOptions = {
+          region: itRegion,
+          customRegionalRate: parseFloat(itCustomRegionalRate) || 0,
+          municipalRate: parseFloat(itMunicipalRate) || 0,
+          dependentChildren: parseInt(itDependentChildren, 10) || 0,
+          dependentSpouse: itDependentSpouse,
+        };
+        calculationResult = computeNetItaly(
+          annualGross,
+          taxTable,
+          itParams,
+          itOptions,
+          hours,
+          weeks
+        );
+      } else if (countryCode === 'ES' && esOptions) {
+        const esParams: ESTaxOptions = {
+          community: esCommunity,
+          filingStatus: esFilingStatus,
+          children: parseInt(esChildren, 10) || 0,
+        };
+        calculationResult = computeNetSpain(
+          annualGross,
+          taxTable,
+          esParams,
+          esOptions,
+          hours,
+          weeks
+        );
+      } else if (countryCode === 'FR' && frOptions) {
+        const frParams: FRTaxOptions = {
+          filingStatus: frFilingStatus,
+          children: parseInt(frChildren, 10) || 0,
+        };
+        calculationResult = computeNetFrance(
+          annualGross,
+          taxTable,
+          frParams,
+          frOptions,
+          hours,
+          weeks
+        );
       } else {
         calculationResult = computeNet(annualGross, taxTable, hours, weeks);
       }
@@ -388,6 +662,8 @@ export default function SalaryCalculator({
     ukPreTaxOther,
     ukStudentLoanPlan,
     ukRegion,
+    ukMarriageAllowance,
+    ukChildren,
     usFilingStatus,
     usEmploymentType,
     usDeductionMethod,
@@ -403,8 +679,33 @@ export default function SalaryCalculator({
     usOtherPreTax,
     usStateTaxRatePct,
     usLocalTaxRatePct,
+    plOptions,
+    plFilingStatus,
+    plUnder26,
+    plChildren,
+    plPreTax,
+    ptOptions,
+    ptRegion,
+    ptFilingStatus,
+    ptDependants,
+    seOptions,
+    seMunicipality,
+    seCustomRate,
+    seChurchMember,
+    itOptions,
+    itRegion,
+    itCustomRegionalRate,
+    itMunicipalRate,
+    itDependentChildren,
+    itDependentSpouse,
+    esOptions,
+    esCommunity,
+    esFilingStatus,
+    esChildren,
+    frOptions,
+    frFilingStatus,
+    frChildren,
   ]);
-
 
   // Copy share link
   const copyShareLink = useCallback(() => {
@@ -426,43 +727,51 @@ export default function SalaryCalculator({
 
     const queryString = serializeToQueryParams(state);
     const shareUrl = `${window.location.origin}${window.location.pathname}?${queryString}`;
-    
-    navigator.clipboard.writeText(shareUrl).then(() => {
-      // Track copy link event
-      trackCopyLink(countryCode);
-      // Show temporary feedback
-      const button = document.getElementById('share-link-button');
-      if (button) {
-        const originalText = button.textContent;
-        button.textContent = 'Copied!';
-        setTimeout(() => {
-          if (button) button.textContent = originalText;
-        }, 2000);
-      }
-    }).catch(() => {
-      // Fallback: show URL in alert
-      alert(`Share link: ${shareUrl}`);
-    });
+
+    navigator.clipboard
+      .writeText(shareUrl)
+      .then(() => {
+        // Track copy link event
+        trackCopyLink(countryCode);
+        // Show temporary feedback
+        const button = document.getElementById('share-link-button');
+        if (button) {
+          const originalText = button.textContent;
+          button.textContent = 'Copied!';
+          setTimeout(() => {
+            if (button) button.textContent = originalText;
+          }, 2000);
+        }
+      })
+      .catch(() => {
+        // Fallback: show URL in alert
+        alert(`Share link: ${shareUrl}`);
+      });
   }, [countryCode, year, incomeMode, annualGross, hoursPerWeek, weeksPerYear]);
 
   const formatCurrency = (value: number) => {
     if (!taxTable) return value.toLocaleString();
-    return value.toLocaleString('en-US', { 
-      minimumFractionDigits: 2, 
-      maximumFractionDigits: 2 
+    return value.toLocaleString('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
     });
   };
 
   const getModeLabel = (mode: IncomeMode) => {
     switch (mode) {
-      case 'hourly': return 'Hourly';
-      case 'monthly': return 'Monthly';
-      case 'yearly': return 'Yearly';
+      case 'hourly':
+        return 'Hourly';
+      case 'monthly':
+        return 'Monthly';
+      case 'yearly':
+        return 'Yearly';
     }
   };
 
   const availableModes: IncomeMode[] =
-    countryCode === 'DE' ? (['monthly', 'yearly'] as IncomeMode[]) : (['hourly', 'monthly', 'yearly'] as IncomeMode[]);
+    countryCode === 'DE'
+      ? (['monthly', 'yearly'] as IncomeMode[])
+      : (['hourly', 'monthly', 'yearly'] as IncomeMode[]);
 
   return (
     <div className="space-y-6">
@@ -478,22 +787,22 @@ export default function SalaryCalculator({
       {!hideCountrySelect && (
         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-[#0066FF] border-opacity-30 rounded-lg p-6 mb-6 shadow-sm">
           <div className="max-w-md">
-            <label 
+            <label
               htmlFor="country-select"
               className="block text-base font-semibold text-black mb-3 flex items-center gap-2"
             >
-              <svg 
-                className="w-5 h-5 text-[#0066FF]" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-5 h-5 text-[#0066FF]"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
               Select Country
@@ -510,6 +819,12 @@ export default function SalaryCalculator({
                 { value: 'US', label: '🇺🇸 United States (Federal Only)' },
                 { value: 'DE', label: '🇩🇪 Germany' },
                 { value: 'UK', label: '🇬🇧 United Kingdom' },
+                { value: 'PL', label: '🇵🇱 Poland' },
+                { value: 'FR', label: '🇫🇷 France' },
+                { value: 'ES', label: '🇪🇸 Spain' },
+                { value: 'IT', label: '🇮🇹 Italy' },
+                { value: 'SE', label: '🇸🇪 Sweden' },
+                { value: 'PT', label: '🇵🇹 Portugal' },
               ]}
               buttonClassName="text-base py-3 font-medium border-2 border-[#0066FF] border-opacity-40 bg-white hover:border-opacity-60 shadow-sm"
             />
@@ -522,11 +837,13 @@ export default function SalaryCalculator({
 
       {/* Mode Toggle - Germany: Monthly/Yearly; others: Hourly/Monthly/Yearly */}
       <div>
-          <label className="block text-sm font-medium text-black mb-3">
-            Salary Period
-          </label>
-          <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="tablist" aria-label="Salary period selection">
-            {availableModes.map((mode) => (
+        <label className="block text-sm font-medium text-black mb-3">Salary Period</label>
+        <div
+          className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
+          role="tablist"
+          aria-label="Salary period selection"
+        >
+          {availableModes.map((mode) => (
             <button
               key={mode}
               type="button"
@@ -549,17 +866,14 @@ export default function SalaryCalculator({
               {getModeLabel(mode)}
             </button>
           ))}
-          </div>
         </div>
+      </div>
 
       {/* Inputs Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Gross Income Input */}
         <div>
-          <label 
-            htmlFor="income-input"
-            className="block text-sm font-medium text-black mb-2"
-          >
+          <label htmlFor="income-input" className="block text-sm font-medium text-black mb-2">
             Gross Income ({taxTable?.metadata.currency ?? (countryCode === 'DE' ? 'EUR' : 'USD')})
           </label>
           <input
@@ -588,9 +902,7 @@ export default function SalaryCalculator({
             aria-invalid={!!validationErrors.income}
             aria-describedby={validationErrors.income ? 'income-error' : undefined}
             className={`w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent ${
-              validationErrors.income 
-                ? 'border-red-500' 
-                : 'border-black border-opacity-20'
+              validationErrors.income ? 'border-red-500' : 'border-black border-opacity-20'
             }`}
           />
           {validationErrors.income && (
@@ -603,10 +915,7 @@ export default function SalaryCalculator({
         {/* Hours per Week (hourly mode only; hidden for Germany) */}
         {countryCode !== 'DE' && incomeMode === 'hourly' && (
           <div>
-            <label 
-              htmlFor="hours-input"
-              className="block text-sm font-medium text-black mb-2"
-            >
+            <label htmlFor="hours-input" className="block text-sm font-medium text-black mb-2">
               Hours per Week
             </label>
             <input
@@ -630,9 +939,7 @@ export default function SalaryCalculator({
               aria-invalid={!!validationErrors.hoursPerWeek}
               aria-describedby={validationErrors.hoursPerWeek ? 'hours-error' : undefined}
               className={`w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent ${
-                validationErrors.hoursPerWeek 
-                  ? 'border-red-500' 
-                  : 'border-black border-opacity-20'
+                validationErrors.hoursPerWeek ? 'border-red-500' : 'border-black border-opacity-20'
               }`}
             />
             {validationErrors.hoursPerWeek && (
@@ -646,10 +953,7 @@ export default function SalaryCalculator({
         {/* Weeks per Year (hourly mode only; hidden for Germany) */}
         {countryCode !== 'DE' && incomeMode === 'hourly' && (
           <div>
-            <label 
-              htmlFor="weeks-input"
-              className="block text-sm font-medium text-black mb-2"
-            >
+            <label htmlFor="weeks-input" className="block text-sm font-medium text-black mb-2">
               Weeks per Year
             </label>
             <input
@@ -673,9 +977,7 @@ export default function SalaryCalculator({
               aria-invalid={!!validationErrors.weeksPerYear}
               aria-describedby={validationErrors.weeksPerYear ? 'weeks-error' : undefined}
               className={`w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent ${
-                validationErrors.weeksPerYear 
-                  ? 'border-red-500' 
-                  : 'border-black border-opacity-20'
+                validationErrors.weeksPerYear ? 'border-red-500' : 'border-black border-opacity-20'
               }`}
             />
             {validationErrors.weeksPerYear && (
@@ -696,8 +998,10 @@ export default function SalaryCalculator({
               id="germany-tax-class"
               label="Tax Class"
               value={germanyTaxClass}
-              onChange={(value) => setGermanyTaxClass(value.toString() as '1' | '2' | '3' | '4' | '5' | '6')}
-              options={germanyOptions.taxClasses.map(tc => ({
+              onChange={(value) =>
+                setGermanyTaxClass(value.toString() as '1' | '2' | '3' | '4' | '5' | '6')
+              }
+              options={germanyOptions.taxClasses.map((tc) => ({
                 value: tc.id,
                 label: tc.name,
               }))}
@@ -708,19 +1012,25 @@ export default function SalaryCalculator({
               id="germany-health-insurance"
               label="Health Insurance"
               value={germanyHealthInsurance}
-              onChange={(value) => setGermanyHealthInsurance(value.toString() as 'public' | 'private-without' | 'private-with')}
-              options={germanyOptions.healthInsuranceTypes.map(hi => ({
+              onChange={(value) =>
+                setGermanyHealthInsurance(
+                  value.toString() as 'public' | 'private-without' | 'private-with'
+                )
+              }
+              options={germanyOptions.healthInsuranceTypes.map((hi) => ({
                 value: hi.id,
                 label: hi.name,
               }))}
             />
 
             {/* Private Health Insurance Note (only for private) */}
-            {(germanyHealthInsurance === 'private-without' || germanyHealthInsurance === 'private-with') && (
+            {(germanyHealthInsurance === 'private-without' ||
+              germanyHealthInsurance === 'private-with') && (
               <div className="bg-blue-50 border border-blue-200 rounded-sm p-3">
                 <p className="text-sm text-gray-700">
-                  <strong>Note:</strong> Private health insurance is paid separately and is not deducted from your salary. 
-                  The net income shown above does not include private insurance costs, which you pay directly to your insurance provider.
+                  <strong>Note:</strong> Private health insurance is paid separately and is not
+                  deducted from your salary. The net income shown above does not include private
+                  insurance costs, which you pay directly to your insurance provider.
                 </p>
               </div>
             )}
@@ -731,7 +1041,7 @@ export default function SalaryCalculator({
               label="Your State"
               value={germanyState}
               onChange={(value) => setGermanyState(value.toString())}
-              options={germanyOptions.states.map(s => ({
+              options={germanyOptions.states.map((s) => ({
                 value: s.id,
                 label: s.name,
               }))}
@@ -739,10 +1049,12 @@ export default function SalaryCalculator({
 
             {/* In Church */}
             <div>
-              <label className="block text-sm font-medium text-black mb-3">
-                In the Church?
-              </label>
-              <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="radiogroup" aria-label="Church membership selection">
+              <label className="block text-sm font-medium text-black mb-3">In the Church?</label>
+              <div
+                className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
+                role="radiogroup"
+                aria-label="Church membership selection"
+              >
                 <button
                   type="button"
                   role="radio"
@@ -774,10 +1086,12 @@ export default function SalaryCalculator({
 
             {/* Children (affects Pflegeversicherung childless surcharge) */}
             <div>
-              <label className="block text-sm font-medium text-black mb-3">
-                Have children?
-              </label>
-              <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="radiogroup" aria-label="Children selection">
+              <label className="block text-sm font-medium text-black mb-3">Have children?</label>
+              <div
+                className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
+                role="radiogroup"
+                aria-label="Children selection"
+              >
                 <button
                   type="button"
                   role="radio"
@@ -810,7 +1124,9 @@ export default function SalaryCalculator({
                 </button>
               </div>
               <p className="mt-2 text-xs text-gray-600">
-                Used for long-term care insurance (Pflegeversicherung). For 2026 this means: with children ~1.80% employee share (most states), without children ~2.40% (includes the childless surcharge). Saxony uses a different split.
+                Used for long-term care insurance (Pflegeversicherung). For 2026 this means: with
+                children ~1.80% employee share (most states), without children ~2.40% (includes the
+                childless surcharge). Saxony uses a different split.
               </p>
             </div>
           </>
@@ -852,7 +1168,13 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Itemized Deductions ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+                Itemized Deductions (
+                {incomeMode === 'monthly'
+                  ? 'monthly'
+                  : incomeMode === 'hourly'
+                    ? 'hourly'
+                    : 'annual'}
+                )
               </label>
               <input
                 type="number"
@@ -879,9 +1201,7 @@ export default function SalaryCalculator({
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-black mb-2">
-                Other Dependents
-              </label>
+              <label className="block text-sm font-medium text-black mb-2">Other Dependents</label>
               <input
                 type="number"
                 value={usOtherDependents}
@@ -933,7 +1253,13 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Pre-tax 401(k) / retirement ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+                Pre-tax 401(k) / retirement (
+                {incomeMode === 'monthly'
+                  ? 'monthly'
+                  : incomeMode === 'hourly'
+                    ? 'hourly'
+                    : 'annual'}
+                )
               </label>
               <input
                 type="number"
@@ -947,7 +1273,13 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Pre-tax HSA ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+                Pre-tax HSA (
+                {incomeMode === 'monthly'
+                  ? 'monthly'
+                  : incomeMode === 'hourly'
+                    ? 'hourly'
+                    : 'annual'}
+                )
               </label>
               <input
                 type="number"
@@ -961,7 +1293,13 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Other pre-tax deductions ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+                Other pre-tax deductions (
+                {incomeMode === 'monthly'
+                  ? 'monthly'
+                  : incomeMode === 'hourly'
+                    ? 'hourly'
+                    : 'annual'}
+                )
               </label>
               <input
                 type="number"
@@ -1012,7 +1350,9 @@ export default function SalaryCalculator({
               id="uk-region"
               label="Region"
               value={ukRegion}
-              onChange={(value) => setUkRegion(value.toString() as 'england' | 'wales' | 'scotland' | 'ni')}
+              onChange={(value) =>
+                setUkRegion(value.toString() as 'england' | 'wales' | 'scotland' | 'ni')
+              }
               options={[
                 { value: 'england', label: 'England' },
                 { value: 'wales', label: 'Wales' },
@@ -1023,7 +1363,13 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Pre-tax Pension Contributions ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+                Pre-tax Pension Contributions (
+                {incomeMode === 'monthly'
+                  ? 'monthly'
+                  : incomeMode === 'hourly'
+                    ? 'hourly'
+                    : 'annual'}
+                )
               </label>
               <input
                 type="number"
@@ -1037,7 +1383,13 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Other Pre-tax Deductions ({incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+                Other Pre-tax Deductions (
+                {incomeMode === 'monthly'
+                  ? 'monthly'
+                  : incomeMode === 'hourly'
+                    ? 'hourly'
+                    : 'annual'}
+                )
               </label>
               <input
                 type="number"
@@ -1053,27 +1405,31 @@ export default function SalaryCalculator({
               id="uk-student-loan"
               label="Student Loan Plan"
               value={ukStudentLoanPlan}
-              onChange={(value) => setUkStudentLoanPlan(value.toString() as 'none' | 'plan2' | 'plan4' | 'plan5')}
+              onChange={(value) =>
+                setUkStudentLoanPlan(value.toString() as 'none' | 'plan2' | 'plan4' | 'plan5')
+              }
               options={[
                 { value: 'none', label: 'None' },
-                ...(ukOptions ? [
-                  { 
-                    value: 'plan2', 
-                    label: `Plan 2 (9% over £${ukOptions.studentLoan.plan2.threshold.toLocaleString('en-GB')})` 
-                  },
-                  { 
-                    value: 'plan4', 
-                    label: `Plan 4 (9% over £${ukOptions.studentLoan.plan4.threshold.toLocaleString('en-GB')})` 
-                  },
-                  { 
-                    value: 'plan5', 
-                    label: `Plan 5 (9% over £${ukOptions.studentLoan.plan5.threshold.toLocaleString('en-GB')})` 
-                  },
-                ] : [
-                  { value: 'plan2', label: 'Plan 2 (9% over £27,295)' },
-                  { value: 'plan4', label: 'Plan 4 (9% over £25,000)' },
-                  { value: 'plan5', label: 'Plan 5 (9% over £25,000)' },
-                ])
+                ...(ukOptions
+                  ? [
+                      {
+                        value: 'plan2',
+                        label: `Plan 2 (9% over £${ukOptions.studentLoan.plan2.threshold.toLocaleString('en-GB')})`,
+                      },
+                      {
+                        value: 'plan4',
+                        label: `Plan 4 (9% over £${ukOptions.studentLoan.plan4.threshold.toLocaleString('en-GB')})`,
+                      },
+                      {
+                        value: 'plan5',
+                        label: `Plan 5 (9% over £${ukOptions.studentLoan.plan5.threshold.toLocaleString('en-GB')})`,
+                      },
+                    ]
+                  : [
+                      { value: 'plan2', label: 'Plan 2 (9% over £27,295)' },
+                      { value: 'plan4', label: 'Plan 4 (9% over £25,000)' },
+                      { value: 'plan5', label: 'Plan 5 (9% over £25,000)' },
+                    ]),
               ]}
             />
             {ukOptions && (
@@ -1081,6 +1437,453 @@ export default function SalaryCalculator({
                 Note: Plan depends on where/when you studied, not where you work.
               </p>
             )}
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Marriage Allowance?
+              </label>
+              <div
+                className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
+                role="radiogroup"
+                aria-label="Marriage Allowance selection"
+              >
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={ukMarriageAllowance === true}
+                  onClick={() => setUkMarriageAllowance(true)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    ukMarriageAllowance === true
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={ukMarriageAllowance === false}
+                  onClick={() => setUkMarriageAllowance(false)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    ukMarriageAllowance === false
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                For a basic-rate taxpayer whose spouse/civil partner is a non-taxpayer (relief up to
+                £252).
+              </p>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Children (for Child Benefit charge)
+              </label>
+              <input
+                type="number"
+                value={ukChildren}
+                onChange={(e) => setUkChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+              <p className="mt-2 text-xs text-gray-600">
+                Used for the High Income Child Benefit Charge (applies on incomes over £60,000).
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* Poland-specific fields */}
+        {countryCode === 'PL' && plOptions && (
+          <>
+            <CustomSelect
+              id="pl-filing-status"
+              label="Filing Status"
+              value={plFilingStatus}
+              onChange={(value) => setPlFilingStatus(value.toString() as 'single' | 'joint')}
+              options={[
+                { value: 'single', label: 'Single' },
+                { value: 'joint', label: 'Married — joint assessment (sole earner)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Children (for child relief)
+              </label>
+              <input
+                type="number"
+                value={plChildren}
+                onChange={(e) => setPlChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Tax-deductible contributions (e.g. IKZE,{' '}
+                {incomeMode === 'monthly'
+                  ? 'monthly'
+                  : incomeMode === 'hourly'
+                    ? 'hourly'
+                    : 'annual'}
+                )
+              </label>
+              <input
+                type="number"
+                value={plPreTax}
+                onChange={(e) => setPlPreTax(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Relief for the young (under 26)?
+              </label>
+              <div
+                className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
+                role="radiogroup"
+                aria-label="Under-26 relief selection"
+              >
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={plUnder26 === true}
+                  onClick={() => setPlUnder26(true)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    plUnder26 === true
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={plUnder26 === false}
+                  onClick={() => setPlUnder26(false)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    plUnder26 === false
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                Exempts employment income up to 85,528 PLN from income tax (ZUS and health still
+                apply).
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* Portugal-specific fields */}
+        {countryCode === 'PT' && ptOptions && (
+          <>
+            <CustomSelect
+              id="pt-region"
+              label="Region"
+              value={ptRegion}
+              onChange={(value) =>
+                setPtRegion(value.toString() as 'mainland' | 'azores' | 'madeira')
+              }
+              options={[
+                { value: 'mainland', label: 'Mainland (Continente)' },
+                { value: 'azores', label: 'Azores (Açores)' },
+                { value: 'madeira', label: 'Madeira' },
+              ]}
+            />
+
+            <CustomSelect
+              id="pt-filing-status"
+              label="Filing Status"
+              value={ptFilingStatus}
+              onChange={(value) => setPtFilingStatus(value.toString() as 'single' | 'joint')}
+              options={[
+                { value: 'single', label: 'Single' },
+                { value: 'joint', label: 'Married — joint taxation (sole earner)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">Dependants</label>
+              <input
+                type="number"
+                value={ptDependants}
+                onChange={(e) => setPtDependants(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+          </>
+        )}
+
+        {/* Sweden-specific fields */}
+        {countryCode === 'SE' && seOptions && (
+          <>
+            <CustomSelect
+              id="se-municipality"
+              label="Municipality"
+              value={seMunicipality}
+              onChange={(value) => setSeMunicipality(value.toString())}
+              options={seOptions.municipalities.map((m) => ({ value: m.id, label: m.name }))}
+            />
+
+            {seMunicipality === 'custom' && (
+              <div>
+                <label className="block text-sm font-medium text-black mb-2">
+                  Municipal tax rate (%)
+                </label>
+                <input
+                  type="number"
+                  value={seCustomRate}
+                  onChange={(e) => setSeCustomRate(e.target.value)}
+                  min="0"
+                  max="40"
+                  step="0.01"
+                  className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+                />
+              </div>
+            )}
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Member of the Church of Sweden?
+              </label>
+              <div
+                className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
+                role="radiogroup"
+                aria-label="Church membership selection"
+              >
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={seChurchMember === true}
+                  onClick={() => setSeChurchMember(true)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    seChurchMember === true
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={seChurchMember === false}
+                  onClick={() => setSeChurchMember(false)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    seChurchMember === false
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                Adds the church fee (kyrkoavgift). Income tax already reflects the basic allowance
+                and the jobbskatteavdrag credit (under 66).
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* Italy-specific fields */}
+        {countryCode === 'IT' && itOptions && (
+          <>
+            <CustomSelect
+              id="it-region"
+              label="Region (regional surtax)"
+              value={itRegion}
+              onChange={(value) => setItRegion(value.toString())}
+              options={itOptions.regions.map((r) => ({ value: r.id, label: r.name }))}
+            />
+
+            {itRegion === 'custom' && (
+              <div>
+                <label className="block text-sm font-medium text-black mb-2">
+                  Regional surtax rate (%)
+                </label>
+                <input
+                  type="number"
+                  value={itCustomRegionalRate}
+                  onChange={(e) => setItCustomRegionalRate(e.target.value)}
+                  min="0"
+                  max="5"
+                  step="0.01"
+                  className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+                />
+              </div>
+            )}
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Municipal surtax rate (%)
+              </label>
+              <input
+                type="number"
+                value={itMunicipalRate}
+                onChange={(e) => setItMunicipalRate(e.target.value)}
+                min="0"
+                max="2"
+                step="0.01"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Dependent children (aged 21–29)
+              </label>
+              <input
+                type="number"
+                value={itDependentChildren}
+                onChange={(e) => setItDependentChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+              <p className="mt-2 text-xs text-gray-600">
+                Children under 21 are covered by the Assegno Unico (not payroll). Regional and
+                municipal surtaxes vary by location.
+              </p>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Dependent spouse (coniuge a carico)?
+              </label>
+              <div
+                className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
+                role="radiogroup"
+                aria-label="Dependent spouse selection"
+              >
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={itDependentSpouse === true}
+                  onClick={() => setItDependentSpouse(true)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    itDependentSpouse === true
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={itDependentSpouse === false}
+                  onClick={() => setItDependentSpouse(false)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    itDependentSpouse === false
+                      ? 'bg-black text-white'
+                      : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                A spouse with little or no income (coniuge a carico) gives a tax credit of up to
+                €800.
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* Spain-specific fields */}
+        {countryCode === 'ES' && esOptions && (
+          <>
+            <CustomSelect
+              id="es-community"
+              label="Autonomous community"
+              value={esCommunity}
+              onChange={(value) => setEsCommunity(value.toString())}
+              options={esOptions.communities.map((c) => ({ value: c.id, label: c.name }))}
+            />
+
+            <CustomSelect
+              id="es-filing-status"
+              label="Filing Status"
+              value={esFilingStatus}
+              onChange={(value) => setEsFilingStatus(value.toString() as 'single' | 'joint')}
+              options={[
+                { value: 'single', label: 'Individual' },
+                { value: 'joint', label: 'Joint return (declaración conjunta)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Children (dependent descendants)
+              </label>
+              <input
+                type="number"
+                value={esChildren}
+                onChange={(e) => setEsChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+              <p className="mt-2 text-xs text-gray-600">
+                Regional rates vary by community; País Vasco and Navarra use separate foral systems
+                not covered here.
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* France-specific fields */}
+        {countryCode === 'FR' && frOptions && (
+          <>
+            <CustomSelect
+              id="fr-filing-status"
+              label="Household"
+              value={frFilingStatus}
+              onChange={(value) => setFrFilingStatus(value.toString() as 'single' | 'married')}
+              options={[
+                { value: 'single', label: 'Single (1 part)' },
+                { value: 'married', label: 'Married / PACS — joint (2 parts)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Dependent children
+              </label>
+              <input
+                type="number"
+                value={frChildren}
+                onChange={(e) => setFrChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+              <p className="mt-2 text-xs text-gray-600">
+                Adds family-quotient parts (+0.5 for each of the first two children, +1 from the
+                third), with the benefit capped (plafonnement). Estimate for a single household/sole
+                earner.
+              </p>
+            </div>
           </>
         )}
       </div>
@@ -1113,7 +1916,7 @@ export default function SalaryCalculator({
 
       {/* Results Section */}
       {result && taxTable && (
-        <div 
+        <div
           className="space-y-6"
           role="region"
           aria-live="polite"
@@ -1125,7 +1928,9 @@ export default function SalaryCalculator({
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
                 <p className="text-sm opacity-90 mb-1">
-                  {countryCode === 'UK' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0
+                  {countryCode === 'UK' &&
+                  result.breakdown.preTaxDeductions &&
+                  result.breakdown.preTaxDeductions.applied > 0
                     ? 'Net Hourly (after salary sacrifice)'
                     : 'Net Hourly'}
                 </p>
@@ -1147,7 +1952,9 @@ export default function SalaryCalculator({
               </div>
             </div>
             <div className="mt-6 pt-6 border-t border-white border-opacity-20">
-              {countryCode === 'UK' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0 ? (
+              {countryCode === 'UK' &&
+              result.breakdown.preTaxDeductions &&
+              result.breakdown.preTaxDeductions.applied > 0 ? (
                 <>
                   {/* UK: Show 3 separate metrics when salary sacrifice exists */}
                   <div className="space-y-4">
@@ -1160,13 +1967,22 @@ export default function SalaryCalculator({
                     <div>
                       <p className="text-sm opacity-90 mb-1">Salary Sacrifice Rate</p>
                       <p className="text-2xl font-normal">
-                        {((result.breakdown.preTaxDeductions.applied / result.breakdown.grossIncome) * 100).toFixed(2)}%
+                        {(
+                          (result.breakdown.preTaxDeductions.applied /
+                            result.breakdown.grossIncome) *
+                          100
+                        ).toFixed(2)}
+                        %
                       </p>
                     </div>
                     <div>
                       <p className="text-sm opacity-90 mb-1">Total Non-Cash Share</p>
                       <p className="text-2xl font-normal">
-                        {((1 - (result.breakdown.netIncome / result.breakdown.grossIncome)) * 100).toFixed(2)}%
+                        {(
+                          (1 - result.breakdown.netIncome / result.breakdown.grossIncome) *
+                          100
+                        ).toFixed(2)}
+                        %
                       </p>
                     </div>
                   </div>
@@ -1186,7 +2002,7 @@ export default function SalaryCalculator({
           <div className="bg-white rounded-lg border border-black border-opacity-10 overflow-hidden">
             <div className="p-6 lg:p-8">
               <h2 className="text-2xl font-normal text-black mb-6">Breakdown</h2>
-              
+
               <div className="space-y-4">
                 {/* Gross Income */}
                 <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
@@ -1197,75 +2013,109 @@ export default function SalaryCalculator({
                 </div>
 
                 {/* US: Pre-tax Deductions (entered vs applied) */}
-                {countryCode === 'US' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.entered > 0 && (
-                  <>
-                    {result.breakdown.preTaxDeductions.entered !== result.breakdown.preTaxDeductions.applied ? (
-                      <>
-                        <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                          <span className="text-sm text-black opacity-80">Pre-tax Deductions (entered)</span>
-                          <span className="text-sm text-black opacity-80">
-                            -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.entered)}
-                          </span>
-                        </div>
+                {countryCode === 'US' &&
+                  result.breakdown.preTaxDeductions &&
+                  result.breakdown.preTaxDeductions.entered > 0 && (
+                    <>
+                      {result.breakdown.preTaxDeductions.entered !==
+                      result.breakdown.preTaxDeductions.applied ? (
+                        <>
+                          <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                            <span className="text-sm text-black opacity-80">
+                              Pre-tax Deductions (entered)
+                            </span>
+                            <span className="text-sm text-black opacity-80">
+                              -{taxTable.metadata.currency}{' '}
+                              {formatCurrency(result.breakdown.preTaxDeductions.entered)}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                            <span className="text-black">Pre-tax Deductions (applied, capped)</span>
+                            <span className="text-black">
+                              -{taxTable.metadata.currency}{' '}
+                              {formatCurrency(result.breakdown.preTaxDeductions.applied)}
+                            </span>
+                          </div>
+                        </>
+                      ) : (
                         <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                          <span className="text-black">Pre-tax Deductions (applied, capped)</span>
+                          <span className="text-black">Pre-tax Deductions</span>
                           <span className="text-black">
-                            -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.applied)}
+                            -{taxTable.metadata.currency}{' '}
+                            {formatCurrency(result.breakdown.preTaxDeductions.applied)}
                           </span>
                         </div>
-                      </>
-                    ) : (
-                      <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                        <span className="text-black">Pre-tax Deductions</span>
-                        <span className="text-black">
-                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.applied)}
-                        </span>
-                      </div>
-                    )}
-                  </>
-                )}
+                      )}
+                    </>
+                  )}
 
                 {/* US: AGI (can be negative) */}
                 {countryCode === 'US' && result.breakdown.adjustedGrossIncome !== undefined && (
                   <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
                     <span className="text-black">Adjusted Gross Income (AGI)</span>
-                    <span className={`text-black ${result.breakdown.adjustedGrossIncome < 0 ? 'opacity-70' : ''}`}>
-                      {taxTable.metadata.currency} {formatCurrency(result.breakdown.adjustedGrossIncome)}
+                    <span
+                      className={`text-black ${result.breakdown.adjustedGrossIncome < 0 ? 'opacity-70' : ''}`}
+                    >
+                      {taxTable.metadata.currency}{' '}
+                      {formatCurrency(result.breakdown.adjustedGrossIncome)}
                     </span>
                   </div>
                 )}
 
                 {/* UK: Salary Sacrifice (Pre-tax Deductions) */}
-                {countryCode === 'UK' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0 && (
-                  <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                    <span className="text-black">Salary Sacrifice (Pension & Pre-tax)</span>
-                    <span className="text-black">
-                      -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.applied)}
-                    </span>
-                  </div>
-                )}
+                {countryCode === 'UK' &&
+                  result.breakdown.preTaxDeductions &&
+                  result.breakdown.preTaxDeductions.applied > 0 && (
+                    <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                      <span className="text-black">Salary Sacrifice (Pension & Pre-tax)</span>
+                      <span className="text-black">
+                        -{taxTable.metadata.currency}{' '}
+                        {formatCurrency(result.breakdown.preTaxDeductions.applied)}
+                      </span>
+                    </div>
+                  )}
 
                 {/* UK: Adjusted Income (after pre-tax deductions) */}
-                {countryCode === 'UK' && result.breakdown.adjustedGrossIncome !== undefined && 
-                 result.breakdown.grossIncome > result.breakdown.adjustedGrossIncome && (
-                  <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                    <span className="text-black">Adjusted Income (after salary sacrifice)</span>
-                    <span className="text-black">
-                      {taxTable.metadata.currency} {formatCurrency(result.breakdown.adjustedGrossIncome)}
-                    </span>
-                  </div>
-                )}
+                {countryCode === 'UK' &&
+                  result.breakdown.adjustedGrossIncome !== undefined &&
+                  result.breakdown.grossIncome > result.breakdown.adjustedGrossIncome && (
+                    <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                      <span className="text-black">Adjusted Income (after salary sacrifice)</span>
+                      <span className="text-black">
+                        {taxTable.metadata.currency}{' '}
+                        {formatCurrency(result.breakdown.adjustedGrossIncome)}
+                      </span>
+                    </div>
+                  )}
+
+                {/* Pre-tax deductions (non US/UK/DE countries) */}
+                {countryCode !== 'US' &&
+                  countryCode !== 'UK' &&
+                  countryCode !== 'DE' &&
+                  result.breakdown.preTaxDeductions &&
+                  result.breakdown.preTaxDeductions.applied > 0 && (
+                    <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                      <span className="text-black">Pre-tax Contributions</span>
+                      <span className="text-black">
+                        -{taxTable.metadata.currency}{' '}
+                        {formatCurrency(result.breakdown.preTaxDeductions.applied)}
+                      </span>
+                    </div>
+                  )}
 
                 {/* Standard/Itemized Deduction (US) or Allowances (other countries) */}
                 {result.breakdown.allowances.total > 0 && (
                   <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
                     <span className="text-black">
-                      {countryCode === 'US' 
-                        ? (result.breakdown.allowances.standardDeduction !== undefined ? 'Standard Deduction' : 'Itemized Deduction')
+                      {countryCode === 'US'
+                        ? result.breakdown.allowances.standardDeduction !== undefined
+                          ? 'Standard Deduction'
+                          : 'Itemized Deduction'
                         : 'Allowances'}
                     </span>
                     <span className="text-black">
-                      -{taxTable.metadata.currency} {formatCurrency(result.breakdown.allowances.total)}
+                      -{taxTable.metadata.currency}{' '}
+                      {formatCurrency(result.breakdown.allowances.total)}
                     </span>
                   </div>
                 )}
@@ -1295,17 +2145,58 @@ export default function SalaryCalculator({
                 </div>
 
                 {/* UK: Student Loan */}
-                {countryCode === 'UK' && result.breakdown.incomeTaxComponents?.studentLoan !== undefined && 
-                 result.breakdown.incomeTaxComponents.studentLoan > 0 && (
-                  <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                    <span className="text-sm text-black opacity-80">
-                      Student Loan ({ukStudentLoanPlan === 'plan2' ? 'Plan 2' : ukStudentLoanPlan === 'plan4' ? 'Plan 4' : 'Plan 5'})
-                    </span>
-                    <span className="text-sm text-black opacity-80">
-                      -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.studentLoan)}
-                    </span>
-                  </div>
-                )}
+                {countryCode === 'UK' &&
+                  result.breakdown.incomeTaxComponents?.studentLoan !== undefined &&
+                  result.breakdown.incomeTaxComponents.studentLoan > 0 && (
+                    <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                      <span className="text-sm text-black opacity-80">
+                        Student Loan (
+                        {ukStudentLoanPlan === 'plan2'
+                          ? 'Plan 2'
+                          : ukStudentLoanPlan === 'plan4'
+                            ? 'Plan 4'
+                            : 'Plan 5'}
+                        )
+                      </span>
+                      <span className="text-sm text-black opacity-80">
+                        -{taxTable.metadata.currency}{' '}
+                        {formatCurrency(result.breakdown.incomeTaxComponents.studentLoan)}
+                      </span>
+                    </div>
+                  )}
+
+                {/* UK: Marriage Allowance relief */}
+                {countryCode === 'UK' &&
+                  result.breakdown.incomeTaxComponents?.marriageAllowance !== undefined &&
+                  result.breakdown.incomeTaxComponents.marriageAllowance > 0 && (
+                    <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                      <span className="text-sm text-black opacity-80">
+                        Marriage Allowance (relief)
+                      </span>
+                      <span className="text-sm text-black opacity-80">
+                        +{taxTable.metadata.currency}{' '}
+                        {formatCurrency(result.breakdown.incomeTaxComponents.marriageAllowance)}
+                      </span>
+                    </div>
+                  )}
+
+                {/* UK: High Income Child Benefit Charge */}
+                {countryCode === 'UK' &&
+                  result.breakdown.incomeTaxComponents?.highIncomeChildBenefitCharge !==
+                    undefined &&
+                  result.breakdown.incomeTaxComponents.highIncomeChildBenefitCharge > 0 && (
+                    <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
+                      <span className="text-sm text-black opacity-80">
+                        High Income Child Benefit Charge
+                      </span>
+                      <span className="text-sm text-black opacity-80">
+                        -{taxTable.metadata.currency}{' '}
+                        {formatCurrency(
+                          result.breakdown.incomeTaxComponents.highIncomeChildBenefitCharge
+                        )}
+                      </span>
+                    </div>
+                  )}
 
                 {/* Country-specific income tax components */}
                 {countryCode === 'DE' && result.breakdown.incomeTaxComponents && (
@@ -1313,22 +2204,31 @@ export default function SalaryCalculator({
                     <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                       <span className="text-sm text-black opacity-80">Einkommensteuer (ESt)</span>
                       <span className="text-sm text-black opacity-80">
-                        -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.baseIncomeTax)}
+                        -{taxTable.metadata.currency}{' '}
+                        {formatCurrency(result.breakdown.incomeTaxComponents.baseIncomeTax)}
                       </span>
                     </div>
                     {(result.breakdown.incomeTaxComponents.solidaritySurcharge ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                        <span className="text-sm text-black opacity-80">Solidarity Surcharge (Soli)</span>
                         <span className="text-sm text-black opacity-80">
-                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.solidaritySurcharge!)}
+                          Solidarity Surcharge (Soli)
+                        </span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency}{' '}
+                          {formatCurrency(
+                            result.breakdown.incomeTaxComponents.solidaritySurcharge!
+                          )}
                         </span>
                       </div>
                     )}
                     {(result.breakdown.incomeTaxComponents.churchTax ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                        <span className="text-sm text-black opacity-80">Church Tax (Kirchensteuer)</span>
                         <span className="text-sm text-black opacity-80">
-                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.churchTax!)}
+                          Church Tax (Kirchensteuer)
+                        </span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency}{' '}
+                          {formatCurrency(result.breakdown.incomeTaxComponents.churchTax!)}
                         </span>
                       </div>
                     )}
@@ -1337,11 +2237,17 @@ export default function SalaryCalculator({
 
                 {countryCode === 'US' && result.breakdown.incomeTaxComponents && (
                   <>
-                    {typeof result.breakdown.incomeTaxComponents.federalIncomeTaxBeforeCredits === 'number' && (
+                    {typeof result.breakdown.incomeTaxComponents.federalIncomeTaxBeforeCredits ===
+                      'number' && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                        <span className="text-sm text-black opacity-80">Federal income tax (before credits)</span>
                         <span className="text-sm text-black opacity-80">
-                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.federalIncomeTaxBeforeCredits)}
+                          Federal income tax (before credits)
+                        </span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency}{' '}
+                          {formatCurrency(
+                            result.breakdown.incomeTaxComponents.federalIncomeTaxBeforeCredits
+                          )}
                         </span>
                       </div>
                     )}
@@ -1349,31 +2255,44 @@ export default function SalaryCalculator({
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                         <span className="text-sm text-black opacity-80">Tax credits (applied)</span>
                         <span className="text-sm text-black opacity-80">
-                          +{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.taxCredits!)}
+                          +{taxTable.metadata.currency}{' '}
+                          {formatCurrency(result.breakdown.incomeTaxComponents.taxCredits!)}
                         </span>
                       </div>
                     )}
-                    {typeof result.breakdown.incomeTaxComponents.federalIncomeTaxAfterCredits === 'number' && (
+                    {typeof result.breakdown.incomeTaxComponents.federalIncomeTaxAfterCredits ===
+                      'number' && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                        <span className="text-sm text-black opacity-80">Federal income tax (after credits)</span>
                         <span className="text-sm text-black opacity-80">
-                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.federalIncomeTaxAfterCredits)}
+                          Federal income tax (after credits)
+                        </span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency}{' '}
+                          {formatCurrency(
+                            result.breakdown.incomeTaxComponents.federalIncomeTaxAfterCredits
+                          )}
                         </span>
                       </div>
                     )}
                     {(result.breakdown.incomeTaxComponents.stateIncomeTax ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                        <span className="text-sm text-black opacity-80">State income tax (estimate)</span>
                         <span className="text-sm text-black opacity-80">
-                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.stateIncomeTax!)}
+                          State income tax (estimate)
+                        </span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency}{' '}
+                          {formatCurrency(result.breakdown.incomeTaxComponents.stateIncomeTax!)}
                         </span>
                       </div>
                     )}
                     {(result.breakdown.incomeTaxComponents.localIncomeTax ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                        <span className="text-sm text-black opacity-80">Local income tax (estimate)</span>
                         <span className="text-sm text-black opacity-80">
-                          -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTaxComponents.localIncomeTax!)}
+                          Local income tax (estimate)
+                        </span>
+                        <span className="text-sm text-black opacity-80">
+                          -{taxTable.metadata.currency}{' '}
+                          {formatCurrency(result.breakdown.incomeTaxComponents.localIncomeTax!)}
                         </span>
                       </div>
                     )}
@@ -1383,36 +2302,41 @@ export default function SalaryCalculator({
                 {/* Social Contributions */}
                 {result.breakdown.socialContributions.breakdown.length > 0 && (
                   <>
-                    {result.breakdown.socialContributions.breakdown.map((contrib: any, index: number) => (
-                      <div 
-                        key={index}
-                        className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5"
-                      >
-                        <span className="text-sm text-black opacity-80">
-                          {contrib.name}
-                          {typeof contrib.rate === 'number' && (
-                            <span className="text-xs opacity-60 ml-2">
-                              ({(contrib.rate * 100).toFixed(2)}%)
-                              {countryCode === 'DE' && contrib.name === 'Long-term Care Insurance' && germanyState === 'SN'
-                                ? ' (Saxony split)'
-                                : ''}
-                            </span>
-                          )}
-                          {contrib.cappedAmount && (
-                            <span className="text-xs opacity-60 ml-2">
-                              (on {contrib.cappedAmount.toLocaleString('en-US')})
-                            </span>
-                          )}
-                        </span>
-                        <span className="text-sm text-black opacity-80">
-                          -{taxTable.metadata.currency} {formatCurrency(contrib.amount)}
-                        </span>
-                      </div>
-                    ))}
+                    {result.breakdown.socialContributions.breakdown.map(
+                      (contrib: any, index: number) => (
+                        <div
+                          key={index}
+                          className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5"
+                        >
+                          <span className="text-sm text-black opacity-80">
+                            {contrib.name}
+                            {typeof contrib.rate === 'number' && (
+                              <span className="text-xs opacity-60 ml-2">
+                                ({(contrib.rate * 100).toFixed(2)}%)
+                                {countryCode === 'DE' &&
+                                contrib.name === 'Long-term Care Insurance' &&
+                                germanyState === 'SN'
+                                  ? ' (Saxony split)'
+                                  : ''}
+                              </span>
+                            )}
+                            {contrib.cappedAmount && (
+                              <span className="text-xs opacity-60 ml-2">
+                                (on {contrib.cappedAmount.toLocaleString('en-US')})
+                              </span>
+                            )}
+                          </span>
+                          <span className="text-sm text-black opacity-80">
+                            -{taxTable.metadata.currency} {formatCurrency(contrib.amount)}
+                          </span>
+                        </div>
+                      )
+                    )}
                     <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
                       <span className="text-black">Total Social Contributions</span>
                       <span className="text-black">
-                        -{taxTable.metadata.currency} {formatCurrency(result.breakdown.socialContributions.totalAnnual)}
+                        -{taxTable.metadata.currency}{' '}
+                        {formatCurrency(result.breakdown.socialContributions.totalAnnual)}
                       </span>
                     </div>
                   </>
@@ -1422,23 +2346,29 @@ export default function SalaryCalculator({
                 <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
                   <span className="text-black">Taxes & NI</span>
                   <span className="text-black">
-                    -{taxTable.metadata.currency} {formatCurrency(
+                    -{taxTable.metadata.currency}{' '}
+                    {formatCurrency(
                       countryCode === 'UK' && result.breakdown.incomeTaxComponents?.studentLoan
-                        ? result.breakdown.incomeTax + result.breakdown.socialContributions.totalAnnual + result.breakdown.incomeTaxComponents.studentLoan
-                        : result.breakdown.incomeTax + result.breakdown.socialContributions.totalAnnual
+                        ? result.breakdown.incomeTax +
+                            result.breakdown.socialContributions.totalAnnual +
+                            result.breakdown.incomeTaxComponents.studentLoan
+                        : result.breakdown.incomeTax +
+                            result.breakdown.socialContributions.totalAnnual
                     )}
                   </span>
                 </div>
 
                 {/* UK: Cash in Hand (separate from salary sacrifice) */}
-                {countryCode === 'UK' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0 && (
-                  <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
-                    <span className="text-black">Cash in Hand</span>
-                    <span className="text-black font-bold">
-                      {taxTable.metadata.currency} {formatCurrency(result.breakdown.netIncome)}
-                    </span>
-                  </div>
-                )}
+                {countryCode === 'UK' &&
+                  result.breakdown.preTaxDeductions &&
+                  result.breakdown.preTaxDeductions.applied > 0 && (
+                    <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
+                      <span className="text-black">Cash in Hand</span>
+                      <span className="text-black font-bold">
+                        {taxTable.metadata.currency} {formatCurrency(result.breakdown.netIncome)}
+                      </span>
+                    </div>
+                  )}
 
                 {/* Net Income */}
                 <div className="flex justify-between items-center py-4 pt-6">
@@ -1463,7 +2393,6 @@ export default function SalaryCalculator({
         - Minimum 150px spacing from interactive elements maintained
         - Clear visual separation from calculator functionality
       */}
- 
 
       {!result && !error && !isLoading && taxTable && (
         <div className="bg-white rounded-lg border border-black border-opacity-10 p-6 text-center">
@@ -1473,4 +2402,3 @@ export default function SalaryCalculator({
     </div>
   );
 }
-

@@ -2,6 +2,21 @@ import { siteConfig } from '@/config/site';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import FAQAccordion from '@/components/FAQAccordion';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description:
+    'Learn about IncomeTally — an independent tool for calculating net salary, take-home pay, and country-specific tax estimates for informational purposes.',
+  alternates: { canonical: '/about-us' },
+  openGraph: {
+    title: 'About IncomeTally',
+    description:
+      'IncomeTally is an independent tool for calculating net salary, take-home pay, and country-specific tax estimates.',
+    url: '/about-us',
+    type: 'website',
+  },
+};
 
 export default function AboutUs() {
   const { aboutUs } = siteConfig;
@@ -10,7 +25,9 @@ export default function AboutUs() {
     <div className="bg-[#F5F5F0] min-h-screen pt-16">
       <article className="max-w-4xl mx-auto px-6 lg:px-12 py-16">
         <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">{aboutUs.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">
+            {aboutUs.title}
+          </h1>
           <div className="text-black text-base opacity-70">Last updated: {aboutUs.lastUpdated}</div>
         </header>
 
@@ -22,7 +39,9 @@ export default function AboutUs() {
         {aboutUs.faq && (
           <div className="mt-16 pt-16 border-t border-black border-opacity-10">
             <div className="bg-white rounded-lg border border-black border-opacity-10 p-8 lg:p-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-black mb-12 tracking-[-0.02em]">{aboutUs.faq.title}</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-black mb-12 tracking-[-0.02em]">
+                {aboutUs.faq.title}
+              </h2>
               <FAQAccordion faqs={aboutUs.faq.items} />
             </div>
           </div>

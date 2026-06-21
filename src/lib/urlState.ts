@@ -125,10 +125,7 @@ export function saveToLocalStorage(state: CalculatorState): void {
 /**
  * Hydrate state with priority: query params > localStorage > defaults
  */
-export function hydrateState(
-  queryParams: string,
-  defaults: CalculatorDefaults
-): CalculatorState {
+export function hydrateState(queryParams: string, defaults: CalculatorDefaults): CalculatorState {
   // Start with defaults
   const state: CalculatorState = {
     country: defaults.country,
@@ -161,4 +158,3 @@ export function hydrateState(
 
   return state;
 }
-

@@ -27,6 +27,7 @@ export const SocialContributionSchema = z.object({
   name: z.string().min(1),
   rate: z.number().min(0).max(1),
   cap: z.number().min(0).optional(),
+  deductible: z.boolean().optional(),
 });
 
 /**
@@ -85,7 +86,9 @@ export function validateBrackets(brackets: z.infer<typeof TaxBracketSchema>[]): 
   // Check brackets are sorted by 'from'
   for (let i = 1; i < brackets.length; i++) {
     if (brackets[i].from <= brackets[i - 1].from) {
-      errors.push(`Bracket ${i + 1} 'from' (${brackets[i].from}) must be greater than previous bracket 'from' (${brackets[i - 1].from})`);
+      errors.push(
+        `Bracket ${i + 1} 'from' (${brackets[i].from}) must be greater than previous bracket 'from' (${brackets[i - 1].from})`
+      );
     }
   }
 
@@ -96,7 +99,9 @@ export function validateBrackets(brackets: z.infer<typeof TaxBracketSchema>[]): 
 
     if (current.to !== null) {
       if (current.to >= next.from) {
-        errors.push(`Bracket ${i + 1} overlaps with bracket ${i + 2}: 'to' (${current.to}) >= 'from' (${next.from})`);
+        errors.push(
+          `Bracket ${i + 1} overlaps with bracket ${i + 2}: 'to' (${current.to}) >= 'from' (${next.from})`
+        );
       }
       // Check for gaps (optional - some tax systems have gaps)
       // if (current.to + 1 < next.from) {
@@ -163,4 +168,3 @@ export function validateTaxData(data: unknown): {
     };
   }
 }
-

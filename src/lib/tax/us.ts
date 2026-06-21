@@ -2,7 +2,12 @@ import type { TaxData } from '@/types/tax';
 import type { TaxBracket } from '@/types/tax';
 import type { USOptionsData, USTaxOptions, USFilingStatus } from '@/types/us';
 import { deannualizeIncome } from './calc';
-import type { NetIncomeResult, SocialContribBreakdown, SocialContribResult, TaxBreakdown } from './types';
+import type {
+  NetIncomeResult,
+  SocialContribBreakdown,
+  SocialContribResult,
+  TaxBreakdown,
+} from './types';
 
 function round(value: number, nearestCent: boolean): number {
   if (nearestCent) return Math.round(value * 100) / 100;
@@ -42,10 +47,14 @@ function additionalStandardDeductionAmount(
   us: USOptionsData
 ): number {
   const isMarried = filingStatus === 'mfj' || filingStatus === 'mfs';
-  const perUnit = isMarried ? us.additionalStandardDeduction.marriedOrMfs : us.additionalStandardDeduction.singleOrHoh;
+  const perUnit = isMarried
+    ? us.additionalStandardDeduction.marriedOrMfs
+    : us.additionalStandardDeduction.singleOrHoh;
 
   const taxpayerUnits = (options.taxpayerOver65 ? 1 : 0) + (options.taxpayerBlind ? 1 : 0);
-  const spouseUnits = isMarried ? ((options.spouseOver65 ? 1 : 0) + (options.spouseBlind ? 1 : 0)) : 0;
+  const spouseUnits = isMarried
+    ? (options.spouseOver65 ? 1 : 0) + (options.spouseBlind ? 1 : 0)
+    : 0;
 
   return (taxpayerUnits + spouseUnits) * perUnit;
 }
@@ -96,18 +105,18 @@ function computePayrollTaxes(
     // Step 1: Calculate net earnings from self-employment
     // Net earnings = Gross × 92.35%
     const seEarnings = annualGross * p.seEarningsMultiplier;
-    
+
     // Step 2: Calculate SE tax components
     // Social Security: 12.4% on net earnings up to wage base
     const ssTaxBase = Math.min(seEarnings, p.socialSecurityWageBase);
     const ss = ssTaxBase * p.socialSecurityRate; // 12.4%
-    
+
     // Medicare: 2.9% on all net earnings
     const medicare = seEarnings * p.medicareRate; // 2.9%
-    
+
     // Total SE tax = SS + Medicare = 15.3% (up to wage base for SS)
     const seTaxBase = ss + medicare;
-    
+
     // Additional Medicare Tax: 0.9% on net earnings above threshold
     const threshold = p.additionalMedicareThreshold[options.filingStatus];
     const addl = Math.max(0, seEarnings - threshold) * p.additionalMedicareRate;
@@ -206,13 +215,16 @@ export function computeNetUS(
   const preTaxHSAEntered = Math.max(0, options.preTaxHSA);
   const otherPreTaxEntered = Math.max(0, options.otherPreTaxDeductions);
   const preTaxEnteredTotal = preTax401kEntered + preTaxHSAEntered + otherPreTaxEntered;
-  
+
   // Apply caps: pre-tax deductions cannot exceed gross income
   const preTax401kApplied = Math.min(preTax401kEntered, annualGross);
   const preTaxHSAApplied = Math.min(preTaxHSAEntered, annualGross - preTax401kApplied);
-  const otherPreTaxApplied = Math.min(otherPreTaxEntered, annualGross - preTax401kApplied - preTaxHSAApplied);
+  const otherPreTaxApplied = Math.min(
+    otherPreTaxEntered,
+    annualGross - preTax401kApplied - preTaxHSAApplied
+  );
   const preTaxAppliedTotal = preTax401kApplied + preTaxHSAApplied + otherPreTaxApplied;
-  
+
   const normalized: USTaxOptions = {
     ...options,
     itemizedDeductions: clampNumber(options.itemizedDeductions, 0, 1_000_000_000),
@@ -229,7 +241,12 @@ export function computeNetUS(
 
   // Step 7 (calculated early for SE half-deduction, but applied at end): Payroll taxes (FICA)
   // For self-employed, we need the half-deduction for AGI calculation
-  const { socialContrib, seHalfDeduction } = computePayrollTaxes(annualGross, normalized, us, roundingRules);
+  const { socialContrib, seHalfDeduction } = computePayrollTaxes(
+    annualGross,
+    normalized,
+    us,
+    roundingRules
+  );
 
   // Step 2: Pre-tax deductions → Adjusted Gross Income (AGI)
   // AGI can be negative (before standard deduction is applied)
@@ -240,7 +257,11 @@ export function computeNetUS(
 
   // Step 3: Standard / Itemized deduction (max of the two)
   const baseStandard = us.standardDeduction[normalized.filingStatus] ?? 0;
-  const additionalStandard = additionalStandardDeductionAmount(normalized.filingStatus, normalized, us);
+  const additionalStandard = additionalStandardDeductionAmount(
+    normalized.filingStatus,
+    normalized,
+    us
+  );
   const standardDeductionTotal = baseStandard + additionalStandard;
   const itemized = normalized.itemizedDeductions;
 
@@ -262,19 +283,28 @@ export function computeNetUS(
 
   // Step 5: Federal Income Tax (progressive brackets)
   const brackets: TaxBracket[] = us.federalBrackets[normalized.filingStatus] ?? [];
-  const federalBeforeCredits = round(computeProgressiveTax(taxableIncome, brackets), roundingRules.nearestCent);
+  const federalBeforeCredits = round(
+    computeProgressiveTax(taxableIncome, brackets),
+    roundingRules.nearestCent
+  );
 
   // Step 6: Tax Credits (child tax credit, other dependents) - subtracted from federal tax
   // Credits are non-refundable (cannot reduce tax below 0)
   const { creditsAfterPhaseout } = computeCreditsNonRefundable(adjustedGrossIncome, normalized, us);
   const creditsApplied = Math.min(federalBeforeCredits, creditsAfterPhaseout);
-  const federalAfterCredits = round(federalBeforeCredits - creditsApplied, roundingRules.nearestCent);
+  const federalAfterCredits = round(
+    federalBeforeCredits - creditsApplied,
+    roundingRules.nearestCent
+  );
 
   // Step 8: State & Local tax (flat percentages on taxable income)
   const stateIncomeTax = round(taxableIncome * normalized.stateTaxRate, roundingRules.nearestCent);
   const localIncomeTax = round(taxableIncome * normalized.localTaxRate, roundingRules.nearestCent);
 
-  const totalIncomeTax = round(federalAfterCredits + stateIncomeTax + localIncomeTax, roundingRules.nearestCent);
+  const totalIncomeTax = round(
+    federalAfterCredits + stateIncomeTax + localIncomeTax,
+    roundingRules.nearestCent
+  );
 
   // Step 9: Net Income = Gross - Federal Tax - FICA - State Tax - Local Tax
   const netAnnual = annualGross - totalIncomeTax - socialContrib.totalAnnual;
@@ -295,10 +325,13 @@ export function computeNetUS(
     adjustedGrossIncome, // Can be negative (before standard deduction)
     taxableIncome, // Clamped to 0 (max(0, AGI - deduction))
     // Show pre-tax deductions entered vs applied (if capped)
-    preTaxDeductions: preTaxEnteredTotal > 0 ? {
-      entered: preTaxEnteredTotal,
-      applied: preTaxAppliedTotal,
-    } : undefined,
+    preTaxDeductions:
+      preTaxEnteredTotal > 0
+        ? {
+            entered: preTaxEnteredTotal,
+            applied: preTaxAppliedTotal,
+          }
+        : undefined,
     incomeTax: totalIncomeTax,
     incomeTaxComponents: {
       baseIncomeTax: federalAfterCredits,
@@ -321,5 +354,3 @@ export function computeNetUS(
     breakdown,
   };
 }
-
-

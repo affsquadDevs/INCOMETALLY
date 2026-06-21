@@ -12,7 +12,10 @@ export interface AnalyticsEventData {
   properties?: Record<string, string | number | boolean>;
 }
 
-export function trackEvent(event: AnalyticsEvent, properties?: Record<string, string | number | boolean>): void {
+export function trackEvent(
+  event: AnalyticsEvent,
+  properties?: Record<string, string | number | boolean>
+): void {
   if (typeof window === 'undefined') {
     return;
   }
@@ -49,8 +52,7 @@ export function trackEvent(event: AnalyticsEvent, properties?: Record<string, st
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(eventData),
-    }).catch(() => {
-    });
+    }).catch(() => {});
     return;
   }
 
@@ -130,4 +132,3 @@ declare global {
     dataLayer?: Array<Record<string, any>>;
   }
 }
-

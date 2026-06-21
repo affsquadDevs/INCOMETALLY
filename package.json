@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run generate:all && npm run validate:tax && next build",
+    "build": "npm run validate:tax && next build",
     "validate:tax": "tsx scripts/validate-tax-data.ts",
     "start": "next start",
     "lint": "next lint",
@@ -15,10 +15,7 @@
     "test:run": "vitest run",
     "ci": "npm run lint && npm run format:check && npm run test:run",
     "add:country": "tsx scripts/addCountry.ts",
-    "generate:robots": "node scripts/generate-robots.js",
-    "generate:sitemap": "node scripts/generate-sitemap.js",
-    "generate:favicon": "node scripts/generate-favicon.js",
-    "generate:all": "npm run generate:robots && npm run generate:sitemap && npm run generate:favicon"
+    "generate:favicon": "node scripts/generate-favicon.js"
   },
   "dependencies": {
     "next": "^14.0.0",

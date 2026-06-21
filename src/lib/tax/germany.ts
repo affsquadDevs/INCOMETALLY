@@ -1,7 +1,12 @@
 import { TaxData } from '@/types/tax';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
 import { deannualizeIncome } from './calc';
-import { NetIncomeResult, TaxBreakdown, SocialContribResult, SocialContribBreakdown } from './types';
+import {
+  NetIncomeResult,
+  TaxBreakdown,
+  SocialContribResult,
+  SocialContribBreakdown,
+} from './types';
 
 function round(value: number, nearestCent: boolean): number {
   if (nearestCent) {
@@ -21,19 +26,15 @@ function calculateGermanyIncomeTax(taxableIncome: number, table: TaxData): numbe
 
   if (x <= 12348) {
     tax = 0;
-  }
-  else if (x <= 17799) {
+  } else if (x <= 17799) {
     const y = (x - 12348) / 10000;
     tax = (914.51 * y + 1400) * y;
-  }
-  else if (x <= 69878) {
+  } else if (x <= 69878) {
     const z = (x - 17799) / 10000;
-    tax = (173.10 * z + 2397) * z + 1034.87;
-  }
-  else if (x <= 277825) {
+    tax = (173.1 * z + 2397) * z + 1034.87;
+  } else if (x <= 277825) {
     tax = 0.42 * x - 11135.63;
-  }
-  else {
+  } else {
     tax = 0.45 * x - 19470.38;
   }
 
@@ -131,19 +132,24 @@ function computeGermanySocialContrib(
   // Employee share is 50% of total contribution rates
   const employeeShareMultiplier = 0.5;
 
-  const healthContrib = socialContrib.find(c => c.name === 'Health Insurance');
-  const careContrib = socialContrib.find(c => c.name === 'Long-term Care Insurance');
+  const healthContrib = socialContrib.find((c) => c.name === 'Health Insurance');
+  const careContrib = socialContrib.find((c) => c.name === 'Long-term Care Insurance');
 
   // Gesetzlicher allgemeiner Beitragssatz (GKV): 14.6% total
   const statutoryHealthBaseTotalRate = 0.146;
   const derivedEmployeeZusatzbeitragRate =
     zusatzbeitragRate ??
-    (healthContrib ? Math.max(0, (healthContrib.rate - statutoryHealthBaseTotalRate) * 0.5) : 0.0145);
+    (healthContrib
+      ? Math.max(0, (healthContrib.rate - statutoryHealthBaseTotalRate) * 0.5)
+      : 0.0145);
 
   for (const contrib of socialContrib) {
     // Skip health insurance if private (both with and without employer contribution)
     // Private insurance is paid separately, not deducted from salary
-    if (contrib.name === 'Health Insurance' && (healthInsurance === 'private-without' || healthInsurance === 'private-with')) {
+    if (
+      contrib.name === 'Health Insurance' &&
+      (healthInsurance === 'private-without' || healthInsurance === 'private-with')
+    ) {
       continue;
     }
 
@@ -160,14 +166,14 @@ function computeGermanySocialContrib(
       const baseRateEmployee = statutoryHealthBaseTotalRate * 0.5; // 7.3%
       const totalRateEmployee = baseRateEmployee + derivedEmployeeZusatzbeitragRate;
       const amount = cappedAmount * totalRateEmployee;
-      
+
       breakdown.push({
         name: contrib.name,
         amount: round(amount, roundingRules.nearestCent),
         rate: totalRateEmployee,
         cappedAmount: contrib.cap !== undefined ? cappedAmount : undefined,
       });
-      
+
       totalAnnual += amount;
       continue;
     }
@@ -182,14 +188,14 @@ function computeGermanySocialContrib(
       const childlessSurchargeEmployee = children ? 0 : 0.006;
       const totalRateEmployee = baseRateEmployee + childlessSurchargeEmployee;
       const amount = cappedAmount * totalRateEmployee;
-      
+
       breakdown.push({
         name: contrib.name,
         amount: round(amount, roundingRules.nearestCent),
         rate: totalRateEmployee,
         cappedAmount: contrib.cap !== undefined ? cappedAmount : undefined,
       });
-      
+
       totalAnnual += amount;
       continue;
     }
@@ -272,16 +278,14 @@ export function computeNetGermany(
   const baseSoliParams = table.solidaritySurcharge ?? germanyOptions.solidaritySurcharge;
   const exempt = baseSoliParams.exemptIncomeTax ?? baseSoliParams.threshold ?? 0;
   const soliParams =
-    options.taxClass === '3'
-      ? { ...baseSoliParams, exemptIncomeTax: exempt * 2 }
-      : baseSoliParams;
+    options.taxClass === '3' ? { ...baseSoliParams, exemptIncomeTax: exempt * 2 } : baseSoliParams;
   const solidaritySurcharge = computeGermanySolidaritySurcharge(incomeTax, soliParams);
   const solidarityRounded = round(solidaritySurcharge, table.roundingRules.nearestCent);
 
   // Calculate church tax (8-9% of income tax, depending on state, if in church)
   let churchTax = 0;
   if (options.inChurch) {
-    const stateData = germanyOptions.states.find(s => s.id === options.state);
+    const stateData = germanyOptions.states.find((s) => s.id === options.state);
     if (stateData) {
       churchTax = incomeTax * stateData.churchTaxRate;
     }
@@ -342,4 +346,3 @@ export function computeNetGermany(
     breakdown,
   };
 }
-

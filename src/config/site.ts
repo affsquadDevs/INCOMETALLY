@@ -6,13 +6,13 @@ export const siteConfig = {
   name: 'Income Tally',
   tagline: 'Net Salary Calculator',
   description: 'Calculate your net salary after taxes with accurate, country-specific estimates.',
-  
+
   // Logo and Branding
   logo: {
     image: '/images/Logo.png', // Path to logo image (used site-wide)
     linkText: 'Income Tally', // Site name as link text to home page
   },
-  
+
   // Blogs
   blogs,
 
@@ -32,7 +32,7 @@ export const siteConfig = {
       { label: 'Get Started', href: '/calculator' },
       { label: 'About Us', href: '/about-us' },
       // { label: 'Manifesto', href: '/manifesto' },
-      { label: 'Blog', href: '/blog' },
+      { label: 'Guides', href: '/guides' },
     ],
   },
 
@@ -58,16 +58,18 @@ export const siteConfig = {
       links: [
         { label: 'Salary Calculator Hub', href: '/salary-calculator' },
         { label: 'Hourly to Salary', href: '/hourly-to-salary' },
-        { label: 'Blog', href: '/blog' },
+        { label: 'Guides', href: '/guides' },
       ],
     },
-    disclaimer: 'IncomeTally provides income and tax calculators for informational purposes only. Results are estimates and may not reflect actual tax obligations or financial outcomes. This website does not provide financial, tax, or legal advice. Always consult a qualified professional for personalized guidance.',
+    disclaimer:
+      'IncomeTally provides income and tax calculators for informational purposes only. Results are estimates and may not reflect actual tax obligations or financial outcomes. This website does not provide financial, tax, or legal advice. Always consult a qualified professional for personalized guidance.',
   },
 
   // Contact Page Content
   contactPage: {
     title: 'Contact Us',
-    subtitle: 'If you have questions about Projekto, the website, or how the service works, you can reach us using the contact information below.',
+    subtitle:
+      'If you have questions about IncomeTally, our calculators, or how the website works, you can reach us using the contact information below.',
     inquiryTypes: {
       title: 'We welcome inquiries related to:',
       items: [
@@ -88,7 +90,8 @@ export const siteConfig = {
     },
     aboutCommunication: {
       title: 'About Communication',
-      description: 'Projekto is an independent online service focused on software project estimation and planning based on user-provided information.',
+      description:
+        'IncomeTally is an independent online service that provides income, salary, and tax calculators based on the information you enter.',
       notes: [
         'We do not offer customer support via social media and do not provide phone support at this time.',
         'Please do not send sensitive personal information by email unless it is necessary to address your request.',
@@ -110,28 +113,32 @@ export const siteConfig = {
       items: [
         {
           title: 'Accurate Tax Estimates',
-          description: 'Up-to-date tax rules We calculate your net salary using country-specific tax brackets and social contributions, so you see realistic take-home pay - not rough guesses.',
+          description:
+            'Up-to-date tax rules We calculate your net salary using country-specific tax brackets and social contributions, so you see realistic take-home pay - not rough guesses.',
           icon: 'M13 10V3L4 14h7v7l9-11h-7z',
         },
         {
           title: 'No Signup Required',
-          description: 'Anonymous & private Use the calculator instantly without creating an account. Your inputs stay in your browser - simple, fast, and privacy-friendly.',
+          description:
+            'Anonymous & private Use the calculator instantly without creating an account. Your inputs stay in your browser - simple, fast, and privacy-friendly.',
           icon: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z',
         },
         {
           title: 'Built for Multiple Countries',
-          description: 'Hourly, monthly, or yearly Convert income and estimate taxes for different countries and pay types - hourly rates, monthly salaries, or annual income.',
+          description:
+            'Hourly, monthly, or yearly Convert income and estimate taxes for different countries and pay types - hourly rates, monthly salaries, or annual income.',
           icon: 'M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15',
         },
       ],
     },
     cta: {
       title: 'Ready to Get Started?',
-      subtitle: 'Join thousands of companies already using our platform to build amazing products',
+      subtitle:
+        'Use our free calculators to estimate your net salary and take-home pay in seconds.',
       button: 'Contact Us Today',
     },
     metric: {
-    //   label: 'Primary Metric',
+      //   label: 'Primary Metric',
       value: '15,480',
       change: 88.2, // percentage change
       subtitle: 'Compared to previous period',
@@ -151,36 +158,52 @@ The platform allows users to calculate net salary from gross income, convert bet
 
 IncomeTally does not provide financial, tax, or legal advice. All calculations are estimates based on publicly available tax data and are intended for informational and planning purposes only.
 
-Our goal is to offer a simple and practical experience for financial planning and decision-making. IncomeTally is an independent product and is not affiliated with tax authorities, financial institutions, or third-party service providers.`,
+Our goal is to offer a simple and practical experience for financial planning and decision-making. IncomeTally is an independent product and is not affiliated with tax authorities, financial institutions, or third-party service providers.
+
+## Our Editorial Standards
+
+IncomeTally's guides are written and reviewed by the IncomeTally Editorial Team. We follow a few simple principles to keep our content trustworthy:
+
+- **Official sources.** Our tax and salary guides are based on publicly available data from authorities such as the U.S. Internal Revenue Service (IRS), the UK's HM Revenue & Customs (HMRC), and the German Federal Ministry of Finance. Key articles list their sources at the end.
+- **Plain language.** We explain income, tax, and salary topics in clear terms, with worked examples, so they are useful to people without a finance background.
+- **Kept current.** Tax rules change every year. We review our guides and show a "Last updated" date on each one so you know how recent the information is.
+- **Estimates, not advice.** Our calculators and guides provide general, educational estimates. They are not financial, tax, or legal advice, and individual circumstances vary. For decisions that affect your money, consult a qualified professional.
+
+If you spot something that looks out of date or incorrect, please [contact us](/contact) — we welcome corrections.`,
     faq: {
       title: 'Frequently Asked Questions',
       items: [
         {
           question: 'What is IncomeTally?',
-          answer: 'IncomeTally is an online income and tax calculator tool. It helps users calculate net salary, estimate taxes, and convert between different income formats (hourly, monthly, annual) based on country-specific tax rules.',
+          answer:
+            'IncomeTally is an online income and tax calculator tool. It helps users calculate net salary, estimate taxes, and convert between different income formats (hourly, monthly, annual) based on country-specific tax rules.',
         },
         {
           question: 'Who is IncomeTally for?',
-          answer: 'IncomeTally is designed for employees, freelancers, job seekers, and anyone who wants to understand their take-home pay and tax obligations during salary negotiations or financial planning.',
+          answer:
+            'IncomeTally is designed for employees, freelancers, job seekers, and anyone who wants to understand their take-home pay and tax obligations during salary negotiations or financial planning.',
         },
         {
           question: 'Do I need to create an account to use IncomeTally?',
-          answer: 'No. IncomeTally can be used without creating an account. All inputs are provided voluntarily by the user.',
+          answer:
+            'No. IncomeTally can be used without creating an account. All inputs are provided voluntarily by the user.',
         },
         {
           question: 'Does IncomeTally provide financial or tax advice?',
-          answer: 'No. IncomeTally does not provide financial, tax, or legal advice. It is strictly a calculation and estimation tool for informational purposes only.',
+          answer:
+            'No. IncomeTally does not provide financial, tax, or legal advice. It is strictly a calculation and estimation tool for informational purposes only.',
         },
         {
           question: 'Is IncomeTally affiliated with tax authorities or financial institutions?',
-          answer: 'No. IncomeTally operates independently and has no affiliation with tax authorities, financial institutions, or third-party platforms.',
+          answer:
+            'No. IncomeTally operates independently and has no affiliation with tax authorities, financial institutions, or third-party platforms.',
         },
         {
           question: 'Is IncomeTally free to use?',
-          answer: 'IncomeTally offers free access to its core calculation features. Additional features or changes may be introduced in the future.',
+          answer:
+            'IncomeTally offers free access to its core calculation features. Additional features or changes may be introduced in the future.',
         },
       ],
     },
   },
 };
-

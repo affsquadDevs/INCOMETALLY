@@ -7,7 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.domain;
   const countries = getAllCountryCodes();
   const guides = getAllGuideSlugs();
-  const blogs = siteConfig.blogs;
 
   // Static routes
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -43,12 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/guides`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -95,14 +88,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Blog pages
-  const blogRoutes: MetadataRoute.Sitemap = blogs.map((blog) => ({
-    url: `${baseUrl}/blog/${blog.slug}`,
-    lastModified: new Date(blog.date),
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
-
-  return [...staticRoutes, ...countryRoutes, ...guideRoutes, ...blogRoutes];
+  return [...staticRoutes, ...countryRoutes, ...guideRoutes];
 }
-

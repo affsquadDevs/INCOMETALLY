@@ -41,4 +41,3 @@ export interface GermanyOptionsData {
     note: string;
   };
 }
-

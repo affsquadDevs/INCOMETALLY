@@ -11,13 +11,13 @@ interface TypewriterTextProps {
   showImmediately?: boolean; // New prop to show text immediately for LCP
 }
 
-export default function TypewriterText({ 
-  text, 
-  highlightWords = [], 
+export default function TypewriterText({
+  text,
+  highlightWords = [],
   highlightColor = '#0066FF',
   speed = 60,
   className = '',
-  showImmediately = false // Default to false for backward compatibility
+  showImmediately = false, // Default to false for backward compatibility
 }: TypewriterTextProps) {
   const [displayedText, setDisplayedText] = useState(showImmediately ? text : '');
   const [currentIndex, setCurrentIndex] = useState(showImmediately ? text.length : 0);
@@ -49,17 +49,17 @@ export default function TypewriterText({
 
   const shouldHighlight = (word: string) => {
     const cleanWord = word.replace(/[^\w]/g, '').toLowerCase();
-    return highlightWords.some(hw => cleanWord.includes(hw.toLowerCase()));
+    return highlightWords.some((hw) => cleanWord.includes(hw.toLowerCase()));
   };
 
   const renderText = () => {
     if (!displayedText) return null;
-    
+
     const words = displayedText.split(' ');
     return words.map((word, index) => {
       const isHighlighted = shouldHighlight(word);
       const isLastWord = index === words.length - 1;
-      
+
       return (
         <span key={index}>
           {isHighlighted ? (
@@ -77,12 +77,11 @@ export default function TypewriterText({
     <span className={className}>
       {renderText()}
       {showCursor && currentIndex <= text.length && isAnimating && (
-        <span 
-          className="inline-block w-[2px] h-[0.9em] bg-black ml-1 align-middle animate-pulse" 
+        <span
+          className="inline-block w-[2px] h-[0.9em] bg-black ml-1 align-middle animate-pulse"
           style={{ animation: 'blink 1s infinite', willChange: 'opacity' }}
         ></span>
       )}
     </span>
   );
 }
-

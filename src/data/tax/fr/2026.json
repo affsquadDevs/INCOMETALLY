@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "countryCode": "FR",
+    "countryName": "France",
+    "currency": "EUR",
+    "year": 2026,
+    "disclaimerShort": "Simplified estimate using the 2025 income tax bareme (single person, one part) and approximate employee social contributions. Excludes the 10% professional expense deduction and family quotient. For guidance only."
+  },
+  "brackets": [
+    { "from": 0, "to": 11497, "rate": 0 },
+    { "from": 11498, "to": 29315, "rate": 0.11 },
+    { "from": 29316, "to": 83823, "rate": 0.3 },
+    { "from": 83824, "to": 180294, "rate": 0.41 },
+    { "from": 180295, "to": null, "rate": 0.45 }
+  ],
+  "socialContrib": [
+    { "name": "Social security & pension contributions", "rate": 0.1131, "deductible": true },
+    { "name": "CSG (deductible)", "rate": 0.068, "deductible": true },
+    { "name": "CSG/CRDS (non-deductible)", "rate": 0.029, "deductible": false }
+  ],
+  "allowances": {},
+  "roundingRules": { "nearestCent": true }
+}

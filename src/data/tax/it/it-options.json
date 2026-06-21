@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "countryCode": "IT",
+    "year": 2026,
+    "notes": "Italy 2026: IRPEF 23% to 28,000, 33% 28,000-50,000 (reduced from 35% in 2026), 43% above 50,000. Employee INPS 9.19% up to the massimale (122,295) plus 1% above the prima fascia (56,224), deductible. Employee detrazioni (Art. 13 TUIR) create the no-tax area (~8,500). Regional (addizionale regionale) and municipal (addizionale comunale) surtaxes vary by location and are modelled as flat representative rates; choose your region or enter a custom rate. Children under 21 use the Assegno Unico (not payroll); the 950 EUR credit applies to dependent children aged 21-29. Estimate."
+  },
+  "brackets": [
+    { "from": 0, "to": 28000, "rate": 0.23 },
+    { "from": 28000, "to": 50000, "rate": 0.33 },
+    { "from": 50000, "to": null, "rate": 0.43 }
+  ],
+  "inps": {
+    "rate": 0.0919,
+    "extraRate": 0.01,
+    "primaFascia": 56224,
+    "massimale": 122295
+  },
+  "detrazione": {
+    "upTo15000": 1955,
+    "band2Base": 1910,
+    "band2Var": 1190,
+    "band2Width": 13000,
+    "band3Base": 1910,
+    "band3Width": 22000,
+    "bonus65Low": 25000,
+    "bonus65High": 35000,
+    "bonus65": 65
+  },
+  "dependentChildCredit": 950,
+  "spouseCredit": {
+    "base": 800,
+    "taper": 110,
+    "band1": 15000,
+    "flat": 690,
+    "band2": 40000,
+    "band3": 80000
+  },
+  "regions": [
+    { "id": "avg", "name": "National average (~1.70%)", "rate": 0.017 },
+    { "id": "lombardia", "name": "Lombardia (~1.73%)", "rate": 0.0173 },
+    { "id": "lazio", "name": "Lazio (~3.33%)", "rate": 0.0333 },
+    { "id": "campania", "name": "Campania (~2.03%)", "rate": 0.0203 },
+    { "id": "custom", "name": "Custom rate…", "rate": 0.017 }
+  ]
+}

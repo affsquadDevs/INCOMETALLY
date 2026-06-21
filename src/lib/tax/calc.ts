@@ -67,7 +67,11 @@ export function deannualizeIncome(
   };
 }
 
-export function computeIncomeTax(annualGross: number, table: TaxData): number {
+export function computeIncomeTax(
+  annualGross: number,
+  table: TaxData,
+  preTaxDeduction: number = 0
+): number {
   if (annualGross < 0) {
     throw new Error('Annual gross income cannot be negative');
   }
@@ -82,7 +86,7 @@ export function computeIncomeTax(annualGross: number, table: TaxData): number {
     totalAllowance = Math.max(totalAllowance, allowances.personalAllowance);
   }
 
-  const taxableIncome = Math.max(0, annualGross - totalAllowance);
+  const taxableIncome = Math.max(0, annualGross - totalAllowance - Math.max(0, preTaxDeduction));
 
   if (taxableIncome <= 0) {
     return 0;
@@ -100,9 +104,12 @@ export function computeIncomeTax(annualGross: number, table: TaxData): number {
     }
 
     const effectiveStart = previousBracketEnd + 1;
-    const effectiveEnd = Math.min(taxableIncome, bracketEnd === Infinity ? taxableIncome : bracketEnd);
+    const effectiveEnd = Math.min(
+      taxableIncome,
+      bracketEnd === Infinity ? taxableIncome : bracketEnd
+    );
     const incomeInBracket = Math.max(0, effectiveEnd - previousBracketEnd);
-    
+
     if (incomeInBracket > 0) {
       const taxInBracket = incomeInBracket * bracket.rate;
       totalTax += taxInBracket;
@@ -122,10 +129,7 @@ export function computeIncomeTax(annualGross: number, table: TaxData): number {
   return round(totalTax, roundingRules.nearestCent);
 }
 
-export function computeSocialContrib(
-  annualGross: number,
-  table: TaxData
-): SocialContribResult {
+export function computeSocialContrib(annualGross: number, table: TaxData): SocialContribResult {
   if (annualGross < 0) {
     throw new Error('Annual gross income cannot be negative');
   }
@@ -170,8 +174,17 @@ export function computeNet(
     throw new Error('Annual gross income cannot be negative');
   }
 
-  const incomeTax = computeIncomeTax(annualGross, table);
+  // Social contributions are computed first because, in some countries, the
+  // deductible portion reduces the income-tax base.
   const socialContrib = computeSocialContrib(annualGross, table);
+  let deductibleSocial = 0;
+  table.socialContrib.forEach((contrib, index) => {
+    if (contrib.deductible) {
+      deductibleSocial += socialContrib.breakdown[index]?.amount ?? 0;
+    }
+  });
+
+  const incomeTax = computeIncomeTax(annualGross, table, deductibleSocial);
   const netAnnual = annualGross - incomeTax - socialContrib.totalAnnual;
   const deannualized = deannualizeIncome(netAnnual, hoursPerWeek, weeksPerYear);
   const totalTaxes = incomeTax + socialContrib.totalAnnual;
@@ -186,7 +199,7 @@ export function computeNet(
     totalAllowance = Math.max(totalAllowance, allowances.personalAllowance);
   }
 
-  const taxableIncome = Math.max(0, annualGross - totalAllowance);
+  const taxableIncome = Math.max(0, annualGross - totalAllowance - deductibleSocial);
 
   const breakdown: TaxBreakdown = {
     grossIncome: annualGross,
@@ -210,4 +223,3 @@ export function computeNet(
     breakdown,
   };
 }
-

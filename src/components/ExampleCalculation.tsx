@@ -31,19 +31,21 @@ export default function ExampleCalculation({ country, taxData }: ExampleCalculat
 
   const getModeLabel = (mode: string) => {
     switch (mode) {
-      case 'hourly': return 'per hour';
-      case 'monthly': return 'per month';
-      case 'yearly': return 'per year';
-      default: return '';
+      case 'hourly':
+        return 'per hour';
+      case 'monthly':
+        return 'per month';
+      case 'yearly':
+        return 'per year';
+      default:
+        return '';
     }
   };
 
   return (
     <div className="bg-white rounded-lg border border-black border-opacity-10 p-6 lg:p-8">
-      <h3 className="text-2xl font-normal text-black mb-6">
-        Example Calculation
-      </h3>
-      
+      <h3 className="text-2xl font-normal text-black mb-6">Example Calculation</h3>
+
       <div className="space-y-4 mb-6">
         <div className="flex justify-between items-center py-2 border-b border-black border-opacity-10">
           <span className="text-black">Gross Income ({getModeLabel(mode)})</span>
@@ -98,7 +100,8 @@ export default function ExampleCalculation({ country, taxData }: ExampleCalculat
             <div className="flex justify-between items-center py-2 border-b-2 border-black border-opacity-20 font-medium">
               <span className="text-black">Total Social Contributions</span>
               <span className="text-black">
-                -{taxData.metadata.currency} {formatCurrency(result.breakdown.socialContributions.totalAnnual)}
+                -{taxData.metadata.currency}{' '}
+                {formatCurrency(result.breakdown.socialContributions.totalAnnual)}
               </span>
             </div>
           </>
@@ -136,13 +139,11 @@ export default function ExampleCalculation({ country, taxData }: ExampleCalculat
       </div>
 
       <p className="text-sm text-black opacity-60 italic">
-        Based on {taxData.metadata.currency} {formatCurrency(grossValue)} {getModeLabel(mode)} 
+        Based on {taxData.metadata.currency} {formatCurrency(grossValue)} {getModeLabel(mode)}
         {mode === 'hourly' && ` (${hoursPerWeek} hours/week, ${weeksPerYear} weeks/year)`}
         {mode === 'monthly' && ' (12 months/year)'}
-        {mode === 'yearly' && ''}
-        {' '}for {taxData.metadata.year} tax year.
+        {mode === 'yearly' && ''} for {taxData.metadata.year} tax year.
       </p>
     </div>
   );
 }
-

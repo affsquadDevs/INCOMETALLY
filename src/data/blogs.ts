@@ -6,8 +6,4 @@ export interface BlogPost {
   content: string;
 }
 
-export const blogs: BlogPost[] = [
- 
-  
-];
-
+export const blogs: BlogPost[] = [];

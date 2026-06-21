@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://incometally.com/sitemap.xml

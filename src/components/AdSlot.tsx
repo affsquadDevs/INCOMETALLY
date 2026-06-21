@@ -1,17 +1,17 @@
 /**
  * AdSense Ad Slot Component
- * 
+ *
  * IMPORTANT AD SENSE POLICIES:
  * - Ads must not be placed near interactive elements (buttons, form controls, navigation)
  * - Maintain minimum spacing (recommended: 150px from form controls)
  * - Prevent accidental clicks by ensuring adequate spacing and clear visual separation
  * - Do not place ads in ways that might confuse users (e.g., near submit buttons)
  * - Ensure ads are clearly distinguishable from content
- * 
+ *
  * This component renders:
  * - Development: Placeholder box for visual testing
  * - Production: Div with data attributes ready for AdSense script injection
- * 
+ *
  * Note: Actual AdSense script should be loaded separately in the layout or via Next.js Script component
  */
 
@@ -124,4 +124,3 @@ export default function AdSlot({
     </div>
   );
 }
-

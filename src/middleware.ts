@@ -11,8 +11,7 @@ export function middleware(request: NextRequest) {
   }
 
   const aliases: Record<string, string> = {
-    '/net-salary-calculator': '/salary-calculator',
-    '/salary-calculator/': '/salary-calculator',
+    '/blog': '/guides',
     '/privacy-policy': '/privacy',
     '/terms-of-service': '/terms',
   };
@@ -31,4 +30,3 @@ export const config = {
     '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
   ],
 };
-

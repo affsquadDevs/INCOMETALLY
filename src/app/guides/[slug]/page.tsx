@@ -4,7 +4,9 @@ import Link from 'next/link';
 import Script from 'next/script';
 import dynamic from 'next/dynamic';
 import remarkGfm from 'remark-gfm';
-import { getGuideBySlug, getAllGuideSlugs } from '@/data/guides';
+import { getGuideBySlug, getAllGuideSlugs, getRelatedGuides } from '@/data/guides';
+import { getAuthor } from '@/data/authors';
+import { getPillar } from '@/data/pillars';
 import FAQAccordion from '@/components/FAQAccordion';
 import { generateFAQJsonLd } from '@/lib/seo/faq';
 import { generateBreadcrumbJsonLd } from '@/lib/seo/breadcrumbs';
@@ -12,18 +14,15 @@ import { siteConfig } from '@/config/site';
 
 // Dynamic import for react-markdown - heavy library, only load when needed
 // Reduces initial bundle size for guide pages
-const ReactMarkdown = dynamic(
-  () => import('react-markdown'),
-  {
-    loading: () => (
-      <div className="animate-pulse space-y-4">
-        <div className="h-8 bg-gray-200 rounded w-3/4"></div>
-        <div className="h-4 bg-gray-200 rounded"></div>
-        <div className="h-4 bg-gray-200 rounded w-5/6"></div>
-      </div>
-    ),
-  }
-);
+const ReactMarkdown = dynamic(() => import('react-markdown'), {
+  loading: () => (
+    <div className="animate-pulse space-y-4">
+      <div className="h-8 bg-gray-200 rounded w-3/4"></div>
+      <div className="h-4 bg-gray-200 rounded"></div>
+      <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+    </div>
+  ),
+});
 
 interface PageProps {
   params: {
@@ -48,9 +47,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const url = `${siteConfig.domain}/guides/${guide.slug}`;
+  const author = getAuthor(guide.authorId);
+  const pillar = getPillar(guide.pillar);
 
   return {
-    title: `${guide.title} | ${siteConfig.name}`,
+    title: guide.title,
     description: guide.description,
     alternates: {
       canonical: url,
@@ -60,6 +61,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: guide.description,
       type: 'article',
       publishedTime: guide.date,
+      modifiedTime: guide.updated ?? guide.date,
+      authors: [author.name],
+      section: pillar?.title,
+      tags: guide.keywords,
       url,
     },
     keywords: guide.keywords,
@@ -94,7 +99,12 @@ export default function GuidePage({ params }: PageProps) {
     notFound();
   }
 
-  const toc = extractTOC(guide.content);
+  const author = getAuthor(guide.authorId);
+  const pillar = getPillar(guide.pillar);
+  const related = getRelatedGuides(guide.slug);
+  // Strip a leading H1 from the markdown so each page has a single H1 (the header below)
+  const contentBody = guide.content.replace(/^#\s+.+\n+/, '');
+  const toc = extractTOC(contentBody);
   const url = `${siteConfig.domain}/guides/${guide.slug}`;
   const breadcrumbs = [
     { name: 'Home', url: siteConfig.domain },
@@ -109,18 +119,37 @@ export default function GuidePage({ params }: PageProps) {
     headline: guide.title,
     description: guide.description,
     datePublished: guide.date,
+    dateModified: guide.updated ?? guide.date,
+    inLanguage: 'en',
+    articleSection: pillar?.title,
+    keywords: guide.keywords.join(', '),
     author: {
-      '@type': 'Organization',
-      name: siteConfig.name,
+      '@type': author.type,
+      name: author.name,
+      url: `${siteConfig.domain}${author.url}`,
     },
     publisher: {
       '@type': 'Organization',
       name: siteConfig.name,
+      url: siteConfig.domain,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteConfig.domain}${siteConfig.logo.image}`,
+      },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': url,
     },
+    ...(guide.sources && guide.sources.length > 0
+      ? {
+          citation: guide.sources.map((source) => ({
+            '@type': 'CreativeWork',
+            name: source.label,
+            url: source.url,
+          })),
+        }
+      : {}),
   };
 
   // Generate FAQ JSON-LD if FAQs exist
@@ -166,19 +195,36 @@ export default function GuidePage({ params }: PageProps) {
             <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">
               {guide.title}
             </h1>
-            <p className="text-lg text-black opacity-70 mb-4">
-              {guide.description}
-            </p>
-            <div className="flex items-center gap-4 text-sm text-black opacity-60">
+            <p className="text-lg text-black opacity-70 mb-4">{guide.description}</p>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-black opacity-60">
+              <span>
+                By{' '}
+                <Link href={author.url} className="hover:opacity-100 hover:underline">
+                  {author.name}
+                </Link>
+              </span>
+              <span>•</span>
               <time dateTime={guide.date}>
+                Published{' '}
                 {new Date(guide.date).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
                 })}
               </time>
-              <span>•</span>
-              <span>{guide.keywords.length} topics</span>
+              {guide.updated && (
+                <>
+                  <span>•</span>
+                  <time dateTime={guide.updated}>
+                    Updated{' '}
+                    {new Date(guide.updated).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                </>
+              )}
             </div>
           </div>
 
@@ -187,9 +233,7 @@ export default function GuidePage({ params }: PageProps) {
             <div className="lg:col-span-3">
               <article className="bg-white rounded-lg border border-black border-opacity-10 p-6 lg:p-8 mb-8">
                 <div className="prose prose-lg max-w-none">
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                    {guide.content}
-                  </ReactMarkdown>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{contentBody}</ReactMarkdown>
                 </div>
               </article>
 
@@ -203,9 +247,70 @@ export default function GuidePage({ params }: PageProps) {
                 </section>
               )}
 
-              {/* Related Links */}
+              {/* Sources & further reading */}
+              {guide.sources && guide.sources.length > 0 && (
+                <section className="border-t border-black border-opacity-10 pt-8 mb-8">
+                  <h2 className="text-xl font-normal text-black mb-4">
+                    Sources &amp; further reading
+                  </h2>
+                  <ul className="list-disc list-inside space-y-2 text-sm">
+                    {guide.sources.map((source) => (
+                      <li key={source.url}>
+                        <a
+                          href={source.url}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          className="text-[#0066FF] hover:underline"
+                        >
+                          {source.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
+              {/* Author / editorial standards */}
+              <section className="border-t border-black border-opacity-10 pt-8 mb-8">
+                <div className="bg-white rounded-lg border border-black border-opacity-10 p-6">
+                  <h2 className="text-lg font-medium text-black mb-2">About the author</h2>
+                  <p className="text-sm font-medium text-black mb-1">{author.name}</p>
+                  <p className="text-sm text-black opacity-70 leading-relaxed mb-3">{author.bio}</p>
+                  <Link href={author.url} className="text-sm text-[#0066FF] hover:underline">
+                    Read our editorial standards →
+                  </Link>
+                </div>
+              </section>
+
+              {/* Related guides (same pillar) */}
+              {related.length > 0 && (
+                <section className="border-t border-black border-opacity-10 pt-8 mb-8">
+                  <h2 className="text-xl font-normal text-black mb-4">
+                    {pillar ? `More in ${pillar.title}` : 'Related guides'}
+                  </h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {related.map((relatedGuide) => (
+                      <Link
+                        key={relatedGuide.slug}
+                        href={`/guides/${relatedGuide.slug}`}
+                        className="block bg-white rounded-lg border border-black border-opacity-10 p-4 hover:border-opacity-30 transition-all hover:shadow"
+                      >
+                        <span className="text-sm font-medium text-black">
+                          {relatedGuide.title}
+                          {relatedGuide.isPillar ? ' ★' : ''}
+                        </span>
+                        <span className="block text-xs text-black opacity-60 mt-1 line-clamp-2">
+                          {relatedGuide.description}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* Calculators */}
               <section className="border-t border-black border-opacity-10 pt-8">
-                <h3 className="text-xl font-normal text-black mb-4">Related Resources</h3>
+                <h2 className="text-xl font-normal text-black mb-4">Try the calculators</h2>
                 <ul className="space-y-2">
                   <li>
                     <Link
@@ -213,6 +318,14 @@ export default function GuidePage({ params }: PageProps) {
                       className="text-black opacity-70 hover:opacity-100 underline"
                     >
                       Salary Calculator Hub
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/net-salary-calculator"
+                      className="text-black opacity-70 hover:opacity-100 underline"
+                    >
+                      Net Salary Calculator
                     </Link>
                   </li>
                   <li>
@@ -254,4 +367,3 @@ export default function GuidePage({ params }: PageProps) {
     </>
   );
 }
-

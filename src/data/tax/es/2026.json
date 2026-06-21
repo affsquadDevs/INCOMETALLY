@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "countryCode": "ES",
+    "countryName": "Spain",
+    "currency": "EUR",
+    "year": 2026,
+    "disclaimerShort": "Estimates using 2025 combined state and regional IRPF rates and employee Social Security contributions. Regional rates vary by autonomous community. For guidance only."
+  },
+  "brackets": [
+    { "from": 0, "to": 12450, "rate": 0.19 },
+    { "from": 12451, "to": 20200, "rate": 0.24 },
+    { "from": 20201, "to": 35200, "rate": 0.3 },
+    { "from": 35201, "to": 60000, "rate": 0.37 },
+    { "from": 60001, "to": 300000, "rate": 0.45 },
+    { "from": 300001, "to": null, "rate": 0.47 }
+  ],
+  "socialContrib": [
+    {
+      "name": "Common contingencies (Seguridad Social)",
+      "rate": 0.047,
+      "cap": 59059,
+      "deductible": true
+    },
+    { "name": "Unemployment (Desempleo)", "rate": 0.0155, "cap": 59059, "deductible": true },
+    { "name": "Training (Formacion profesional)", "rate": 0.001, "cap": 59059, "deductible": true },
+    { "name": "MEI solidarity contribution", "rate": 0.0013, "cap": 59059, "deductible": true }
+  ],
+  "allowances": {
+    "personalAllowance": 5550
+  },
+  "roundingRules": { "nearestCent": true }
+}
