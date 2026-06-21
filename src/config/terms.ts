@@ -13,7 +13,7 @@ export interface TermsOfServiceConfig {
   contactEmail: string;
 }
 
-const contactEmail = 'hello@affsquad.com';
+const contactEmail = 'hello@incometally.com';
 
 export const termsOfServiceConfig: TermsOfServiceConfig = {
   lastUpdated: 'January 2026',

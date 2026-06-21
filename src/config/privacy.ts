@@ -13,7 +13,7 @@ export interface PrivacyPolicyConfig {
   contactEmail: string;
 }
 
-const contactEmail = 'hello@affsquad.com';
+const contactEmail = 'hello@incometally.com';
 
 export const privacyPolicyConfig: PrivacyPolicyConfig = {
   lastUpdated: 'January 2026',
