@@ -217,7 +217,7 @@ export default function Home() {
                 net salary calculator
               </Link>
               {
-                " that turns a gross salary into an estimate of your net, take-home pay. You enter what you earn — hourly, monthly, or yearly — choose your country, and we apply that country's 2026 income-tax brackets and mandatory social contributions to show what actually lands in your account. Every calculation runs locally in your browser; we don't ask you to create an account, and your figures are never sent to a server."
+                " that turns a gross salary into an estimate of your net, take-home pay. You enter what you earn — hourly, monthly, or yearly — choose your country, and we apply that country's 2026 income-tax brackets and mandatory social contributions to show what actually lands in your account. With JavaScript enabled, the calculation runs in your browser and your income figures aren't sent to our servers — only your country and the tax year are requested to load the right rates. You don't need to create an account."
               }
             </p>
             <p>
@@ -328,7 +328,7 @@ export default function Home() {
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-normal text-white mb-4 tracking-[-0.02em]">
                 Salary Calculators by Country
               </h2>
-              <p className="text-lg text-white opacity-90 leading-relaxed max-w-2xl">
+              <p className="text-lg text-white leading-relaxed max-w-2xl">
                 2026 tax-year estimates using each country&apos;s official income-tax brackets and
                 social contributions.
               </p>
@@ -345,7 +345,9 @@ export default function Home() {
                     href={`/salary-calculator/${c.code.toLowerCase()}`}
                     className="rounded-lg border border-white p-5 lg:p-6 group hover:bg-white transition-all duration-300 h-full flex flex-col cursor-pointer"
                   >
-                    <span className="text-3xl mb-3">{c.flag}</span>
+                    <span className="text-3xl mb-3" aria-hidden="true">
+                      {c.flag}
+                    </span>
                     <h3 className="text-base lg:text-lg font-normal text-white group-hover:text-black transition-colors duration-300 tracking-[-0.01em]">
                       {c.displayName} Salary Calculator
                     </h3>
@@ -353,10 +355,10 @@ export default function Home() {
                 </AnimatedBlock>
               ))}
             </div>
-            <p className="text-sm text-white opacity-90 mt-6 leading-relaxed">
-              The US, Germany, and the UK support filing status and regional options; other
-              countries are single-taxpayer estimates. See each country page for details and its
-              sources.
+            <p className="text-sm text-white mt-6 leading-relaxed">
+              Most calculators let you set options like filing status or region where they apply;
+              the available options differ by country. See each country page for the inputs it
+              offers and its official sources.
             </p>
             <div className="mt-4">
               <Link
