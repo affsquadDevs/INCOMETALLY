@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "countryCode": "FR",
+    "year": 2026,
+    "notes": "France: 2026 income tax bareme (Loi de finances 2026, applied to 2025 income), per part. Family quotient (parts) with plafonnement of 1,807 EUR per additional half-part; 10% professional-expense deduction (min 509, max 14,555); decote for low tax. Employee cotisations: old-age pension (6.9% to 1 PASS + 0.4% uncapped), Agirc-Arrco complementary pension, and CSG/CRDS (9.7% on 98.25% of gross to 4 PASS). PASS 2026 = 48,060. Single-taxpayer/sole-earner estimate."
+  },
+  "brackets": [
+    { "from": 0, "to": 11600, "rate": 0 },
+    { "from": 11600, "to": 29579, "rate": 0.11 },
+    { "from": 29579, "to": 84577, "rate": 0.3 },
+    { "from": 84577, "to": 181917, "rate": 0.41 },
+    { "from": 181917, "to": null, "rate": 0.45 }
+  ],
+  "pass": 48060,
+  "cotisations": {
+    "vieillessePlaf": 0.069,
+    "vieillesseDeplaf": 0.004,
+    "agircT1": 0.0401,
+    "agircT2": 0.0986,
+    "csgDeductibleRate": 0.068,
+    "csgNonDeductibleRate": 0.024,
+    "crdsRate": 0.005,
+    "csgBaseRate": 0.9825,
+    "csgBaseCapPassMultiple": 4
+  },
+  "deduction10": { "rate": 0.1, "min": 509, "max": 14555 },
+  "halfPartCap": 1807,
+  "decote": {
+    "singleThreshold": 1982,
+    "singleAmount": 897,
+    "coupleThreshold": 3277,
+    "coupleAmount": 1483,
+    "rate": 0.4525
+  }
+}

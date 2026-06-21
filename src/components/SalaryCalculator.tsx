@@ -10,6 +10,7 @@ import { computeNetPortugal } from '@/lib/tax/pt';
 import { computeNetSweden } from '@/lib/tax/se';
 import { computeNetItaly } from '@/lib/tax/it';
 import { computeNetSpain } from '@/lib/tax/es';
+import { computeNetFrance } from '@/lib/tax/fr';
 import { type IncomeMode } from '@/lib/tax/types';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
 import { type USOptionsData, type USTaxOptions, type USFilingStatus, type USEmploymentType, type USDeductionMethod } from '@/types/us';
@@ -19,6 +20,7 @@ import { type PTOptionsData, type PTTaxOptions } from '@/types/pt';
 import { type SEOptionsData, type SETaxOptions } from '@/types/se';
 import { type ITOptionsData, type ITTaxOptions } from '@/types/it';
 import { type ESOptionsData, type ESTaxOptions } from '@/types/es';
+import { type FROptionsData, type FRTaxOptions } from '@/types/fr';
 import { inputToAnnualGross, getModeValue, formatPrecise, normalizeToAnnual } from '@/lib/calculator-state';
 import { trackModeChange, trackCountryChange, trackCalculate, trackCopyLink, trackCalcStarted, trackCalcFinished } from '@/lib/analytics';
 import TaxDisclaimer from './TaxDisclaimer';
@@ -198,6 +200,11 @@ export default function SalaryCalculator({
   const [esFilingStatus, setEsFilingStatus] = useState<'single' | 'joint'>('single');
   const [esChildren, setEsChildren] = useState<string>('0');
 
+  // France-specific state
+  const [frOptions, setFrOptions] = useState<FROptionsData | null>(null);
+  const [frFilingStatus, setFrFilingStatus] = useState<'single' | 'married'>('single');
+  const [frChildren, setFrChildren] = useState<string>('0');
+
   // Mark as mounted on client side
   useEffect(() => {
     setIsMounted(true);
@@ -375,6 +382,24 @@ export default function SalaryCalculator({
     }
   }, [countryCode, esOptions, year]);
 
+  // Load France options when country is FR
+  useEffect(() => {
+    if (countryCode === 'FR' && !frOptions) {
+      const loadFrOptions = async () => {
+        try {
+          const response = await fetch(`/api/fr-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setFrOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load France options:', err);
+        }
+      };
+      loadFrOptions();
+    }
+  }, [countryCode, frOptions, year]);
+
   // Tax class II implies children; keep the toggle but force it on for class II.
   const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
 
@@ -524,6 +549,12 @@ export default function SalaryCalculator({
           children: parseInt(esChildren, 10) || 0,
         };
         calculationResult = computeNetSpain(annualGross, taxTable, esParams, esOptions, hours, weeks);
+      } else if (countryCode === 'FR' && frOptions) {
+        const frParams: FRTaxOptions = {
+          filingStatus: frFilingStatus,
+          children: parseInt(frChildren, 10) || 0,
+        };
+        calculationResult = computeNetFrance(annualGross, taxTable, frParams, frOptions, hours, weeks);
       } else {
         calculationResult = computeNet(annualGross, taxTable, hours, weeks);
       }
@@ -594,6 +625,9 @@ export default function SalaryCalculator({
     esCommunity,
     esFilingStatus,
     esChildren,
+    frOptions,
+    frFilingStatus,
+    frChildren,
   ]);
 
 
@@ -1561,6 +1595,39 @@ export default function SalaryCalculator({
               />
               <p className="mt-2 text-xs text-gray-600">
                 Regional rates vary by community; País Vasco and Navarra use separate foral systems not covered here.
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* France-specific fields */}
+        {countryCode === 'FR' && frOptions && (
+          <>
+            <CustomSelect
+              id="fr-filing-status"
+              label="Household"
+              value={frFilingStatus}
+              onChange={(value) => setFrFilingStatus(value.toString() as 'single' | 'married')}
+              options={[
+                { value: 'single', label: 'Single (1 part)' },
+                { value: 'married', label: 'Married / PACS — joint (2 parts)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Dependent children
+              </label>
+              <input
+                type="number"
+                value={frChildren}
+                onChange={(e) => setFrChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+              <p className="mt-2 text-xs text-gray-600">
+                Adds family-quotient parts (+0.5 for each of the first two children, +1 from the third), with the benefit capped (plafonnement). Estimate for a single household/sole earner.
               </p>
             </div>
           </>
