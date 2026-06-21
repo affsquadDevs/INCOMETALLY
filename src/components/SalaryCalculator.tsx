@@ -7,12 +7,14 @@ import { computeNetUS } from '@/lib/tax/us';
 import { computeNetUK } from '@/lib/tax/uk';
 import { computeNetPoland } from '@/lib/tax/pl';
 import { computeNetPortugal } from '@/lib/tax/pt';
+import { computeNetSweden } from '@/lib/tax/se';
 import { type IncomeMode } from '@/lib/tax/types';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
 import { type USOptionsData, type USTaxOptions, type USFilingStatus, type USEmploymentType, type USDeductionMethod } from '@/types/us';
 import { type UKOptionsData, type UKTaxOptions } from '@/types/uk';
 import { type PLOptionsData, type PLTaxOptions } from '@/types/pl';
 import { type PTOptionsData, type PTTaxOptions } from '@/types/pt';
+import { type SEOptionsData, type SETaxOptions } from '@/types/se';
 import { inputToAnnualGross, getModeValue, formatPrecise, normalizeToAnnual } from '@/lib/calculator-state';
 import { trackModeChange, trackCountryChange, trackCalculate, trackCopyLink, trackCalcStarted, trackCalcFinished } from '@/lib/analytics';
 import TaxDisclaimer from './TaxDisclaimer';
@@ -173,6 +175,12 @@ export default function SalaryCalculator({
   const [ptFilingStatus, setPtFilingStatus] = useState<'single' | 'joint'>('single');
   const [ptDependants, setPtDependants] = useState<string>('0');
 
+  // Sweden-specific state
+  const [seOptions, setSeOptions] = useState<SEOptionsData | null>(null);
+  const [seMunicipality, setSeMunicipality] = useState<string>('avg');
+  const [seCustomRate, setSeCustomRate] = useState<string>('32.38');
+  const [seChurchMember, setSeChurchMember] = useState<boolean>(false);
+
   // Mark as mounted on client side
   useEffect(() => {
     setIsMounted(true);
@@ -295,6 +303,24 @@ export default function SalaryCalculator({
       loadPtOptions();
     }
   }, [countryCode, ptOptions, year]);
+
+  // Load Sweden options when country is SE
+  useEffect(() => {
+    if (countryCode === 'SE' && !seOptions) {
+      const loadSeOptions = async () => {
+        try {
+          const response = await fetch(`/api/se-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setSeOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Sweden options:', err);
+        }
+      };
+      loadSeOptions();
+    }
+  }, [countryCode, seOptions, year]);
 
   // Tax class II implies children; keep the toggle but force it on for class II.
   const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
@@ -423,6 +449,13 @@ export default function SalaryCalculator({
           dependants: parseInt(ptDependants, 10) || 0,
         };
         calculationResult = computeNetPortugal(annualGross, taxTable, ptParams, ptOptions, hours, weeks);
+      } else if (countryCode === 'SE' && seOptions) {
+        const seParams: SETaxOptions = {
+          municipality: seMunicipality,
+          customMunicipalRate: parseFloat(seCustomRate) || 0,
+          churchMember: seChurchMember,
+        };
+        calculationResult = computeNetSweden(annualGross, taxTable, seParams, seOptions, hours, weeks);
       } else {
         calculationResult = computeNet(annualGross, taxTable, hours, weeks);
       }
@@ -480,6 +513,10 @@ export default function SalaryCalculator({
     ptRegion,
     ptFilingStatus,
     ptDependants,
+    seOptions,
+    seMunicipality,
+    seCustomRate,
+    seChurchMember,
   ]);
 
 
@@ -1282,6 +1319,69 @@ export default function SalaryCalculator({
                 step="1"
                 className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
               />
+            </div>
+          </>
+        )}
+
+        {/* Sweden-specific fields */}
+        {countryCode === 'SE' && seOptions && (
+          <>
+            <CustomSelect
+              id="se-municipality"
+              label="Municipality"
+              value={seMunicipality}
+              onChange={(value) => setSeMunicipality(value.toString())}
+              options={seOptions.municipalities.map((m) => ({ value: m.id, label: m.name }))}
+            />
+
+            {seMunicipality === 'custom' && (
+              <div>
+                <label className="block text-sm font-medium text-black mb-2">
+                  Municipal tax rate (%)
+                </label>
+                <input
+                  type="number"
+                  value={seCustomRate}
+                  onChange={(e) => setSeCustomRate(e.target.value)}
+                  min="0"
+                  max="40"
+                  step="0.01"
+                  className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+                />
+              </div>
+            )}
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Member of the Church of Sweden?
+              </label>
+              <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="radiogroup" aria-label="Church membership selection">
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={seChurchMember === true}
+                  onClick={() => setSeChurchMember(true)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    seChurchMember === true ? 'bg-black text-white' : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={seChurchMember === false}
+                  onClick={() => setSeChurchMember(false)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    seChurchMember === false ? 'bg-black text-white' : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                Adds the church fee (kyrkoavgift). Income tax already reflects the basic allowance and the jobbskatteavdrag credit (under 66).
+              </p>
             </div>
           </>
         )}

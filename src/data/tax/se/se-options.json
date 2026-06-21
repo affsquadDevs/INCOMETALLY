@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "countryCode": "SE",
+    "year": 2026,
+    "notes": "Sweden 2026, employee under 66. Municipal (kommun + region) income tax on income after grundavdrag; state tax 20% above the skiktgräns of 643,000 SEK (taxable income). Grundavdrag and jobbskatteavdrag computed per Skatteverket SKV 433 (prisbasbelopp 59,200). The 7% allmän pensionsavgift is fully offset by a matching tax reduction and is not shown. Employer social contributions are not deducted from the employee. Church fee (kyrkoavgift) applies to members only; burial fee is excluded. Estimate."
+  },
+  "pbb": 59200,
+  "skiktgrans": 643000,
+  "stateRate": 0.2,
+  "churchFeeRate": 0.0102,
+  "municipalities": [
+    { "id": "avg", "name": "National average (32.38%)", "rate": 0.3238 },
+    { "id": "stockholm", "name": "Stockholm (30.55%)", "rate": 0.3055 },
+    { "id": "goteborg", "name": "Göteborg (32.60%)", "rate": 0.326 },
+    { "id": "malmo", "name": "Malmö (32.42%)", "rate": 0.3242 },
+    { "id": "custom", "name": "Custom rate…", "rate": 0.3238 }
+  ]
+}
