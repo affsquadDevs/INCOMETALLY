@@ -74,7 +74,7 @@ export const siteConfig = {
       title: 'We welcome inquiries related to:',
       items: [
         'general questions about the platform',
-        'project estimation and planning features',
+        'how the calculators and tax estimates work',
         'privacy and data handling',
         'technical issues or feedback',
         'legal or policy-related matters',
