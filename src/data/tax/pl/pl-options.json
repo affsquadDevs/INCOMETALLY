@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "countryCode": "PL",
+    "year": 2026,
+    "notes": "Poland PIT and ZUS parameters for 2026. Tax-free amount 30,000 PLN realized via a 3,600 PLN tax-reducing amount. ZUS pension/disability base capped at 282,600 PLN/yr (2026); sickness uncapped. Health 9% on gross minus ZUS, not tax-deductible since 2022. Relief for the young (under 26) exempts up to 85,528 PLN of employment income. Child relief is a tax credit. Single-taxpayer estimate; joint assessment assumes the entered income is the household income."
+  },
+  "rateLow": 0.12,
+  "rateHigh": 0.32,
+  "threshold": 120000,
+  "taxReducingAmount": 3600,
+  "taxFreeAmount": 30000,
+  "zus": {
+    "pension": 0.0976,
+    "disability": 0.015,
+    "sickness": 0.0245,
+    "annualCap": 282600
+  },
+  "health": {
+    "rate": 0.09
+  },
+  "under26ExemptLimit": 85528,
+  "childRelief": {
+    "first": 1112.04,
+    "second": 1112.04,
+    "third": 2000.04,
+    "fourthPlus": 2700
+  }
+}

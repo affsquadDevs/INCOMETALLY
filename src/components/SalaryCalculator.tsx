@@ -5,10 +5,12 @@ import { computeNet, annualizeIncome, deannualizeIncome } from '@/lib/tax/calc';
 import { computeNetGermany } from '@/lib/tax/germany';
 import { computeNetUS } from '@/lib/tax/us';
 import { computeNetUK } from '@/lib/tax/uk';
+import { computeNetPoland } from '@/lib/tax/pl';
 import { type IncomeMode } from '@/lib/tax/types';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
 import { type USOptionsData, type USTaxOptions, type USFilingStatus, type USEmploymentType, type USDeductionMethod } from '@/types/us';
 import { type UKOptionsData, type UKTaxOptions } from '@/types/uk';
+import { type PLOptionsData, type PLTaxOptions } from '@/types/pl';
 import { inputToAnnualGross, getModeValue, formatPrecise, normalizeToAnnual } from '@/lib/calculator-state';
 import { trackModeChange, trackCountryChange, trackCalculate, trackCopyLink, trackCalcStarted, trackCalcFinished } from '@/lib/analytics';
 import TaxDisclaimer from './TaxDisclaimer';
@@ -156,6 +158,13 @@ export default function SalaryCalculator({
   const [ukStudentLoanPlan, setUkStudentLoanPlan] = useState<'none' | 'plan2' | 'plan4' | 'plan5'>('none');
   const [ukRegion, setUkRegion] = useState<'england' | 'wales' | 'scotland' | 'ni'>('england');
 
+  // Poland-specific state
+  const [plOptions, setPlOptions] = useState<PLOptionsData | null>(null);
+  const [plFilingStatus, setPlFilingStatus] = useState<'single' | 'joint'>('single');
+  const [plUnder26, setPlUnder26] = useState<boolean>(false);
+  const [plChildren, setPlChildren] = useState<string>('0');
+  const [plPreTax, setPlPreTax] = useState<string>('0');
+
   // Mark as mounted on client side
   useEffect(() => {
     setIsMounted(true);
@@ -242,6 +251,24 @@ export default function SalaryCalculator({
       loadUkOptions();
     }
   }, [countryCode, ukOptions, year]);
+
+  // Load Poland options when country is PL
+  useEffect(() => {
+    if (countryCode === 'PL' && !plOptions) {
+      const loadPlOptions = async () => {
+        try {
+          const response = await fetch(`/api/pl-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setPlOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Poland options:', err);
+        }
+      };
+      loadPlOptions();
+    }
+  }, [countryCode, plOptions, year]);
 
   // Tax class II implies children; keep the toggle but force it on for class II.
   const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
@@ -355,6 +382,14 @@ export default function SalaryCalculator({
           region: ukRegion,
         };
         calculationResult = computeNetUK(annualGross, taxTable, ukParams, ukOptions, hours, weeks);
+      } else if (countryCode === 'PL' && plOptions) {
+        const plParams: PLTaxOptions = {
+          filingStatus: plFilingStatus,
+          under26: plUnder26,
+          children: parseInt(plChildren, 10) || 0,
+          preTaxDeductible: normalizeToAnnual(parseFloat(plPreTax) || 0, incomeMode, hours, weeks),
+        };
+        calculationResult = computeNetPoland(annualGross, taxTable, plParams, plOptions, hours, weeks);
       } else {
         calculationResult = computeNet(annualGross, taxTable, hours, weeks);
       }
@@ -403,6 +438,11 @@ export default function SalaryCalculator({
     usOtherPreTax,
     usStateTaxRatePct,
     usLocalTaxRatePct,
+    plOptions,
+    plFilingStatus,
+    plUnder26,
+    plChildren,
+    plPreTax,
   ]);
 
 
@@ -1089,6 +1129,83 @@ export default function SalaryCalculator({
             )}
           </>
         )}
+
+        {/* Poland-specific fields */}
+        {countryCode === 'PL' && plOptions && (
+          <>
+            <CustomSelect
+              id="pl-filing-status"
+              label="Filing Status"
+              value={plFilingStatus}
+              onChange={(value) => setPlFilingStatus(value.toString() as 'single' | 'joint')}
+              options={[
+                { value: 'single', label: 'Single' },
+                { value: 'joint', label: 'Married — joint assessment (sole earner)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Children (for child relief)
+              </label>
+              <input
+                type="number"
+                value={plChildren}
+                onChange={(e) => setPlChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Tax-deductible contributions (e.g. IKZE, {incomeMode === 'monthly' ? 'monthly' : incomeMode === 'hourly' ? 'hourly' : 'annual'})
+              </label>
+              <input
+                type="number"
+                value={plPreTax}
+                onChange={(e) => setPlPreTax(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-3">
+                Relief for the young (under 26)?
+              </label>
+              <div className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1" role="radiogroup" aria-label="Under-26 relief selection">
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={plUnder26 === true}
+                  onClick={() => setPlUnder26(true)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    plUnder26 === true ? 'bg-black text-white' : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  Yes
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={plUnder26 === false}
+                  onClick={() => setPlUnder26(false)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    plUnder26 === false ? 'bg-black text-white' : 'text-black hover:bg-black hover:bg-opacity-5'
+                  }`}
+                >
+                  No
+                </button>
+              </div>
+              <p className="mt-2 text-xs text-gray-600">
+                Exempts employment income up to 85,528 PLN from income tax (ZUS and health still apply).
+              </p>
+            </div>
+          </>
+        )}
       </div>
 
       {/* Action Buttons */}
@@ -1258,6 +1375,16 @@ export default function SalaryCalculator({
                     <span className="text-black">Adjusted Income (after salary sacrifice)</span>
                     <span className="text-black">
                       {taxTable.metadata.currency} {formatCurrency(result.breakdown.adjustedGrossIncome)}
+                    </span>
+                  </div>
+                )}
+
+                {/* Pre-tax deductions (non US/UK/DE countries) */}
+                {countryCode !== 'US' && countryCode !== 'UK' && countryCode !== 'DE' && result.breakdown.preTaxDeductions && result.breakdown.preTaxDeductions.applied > 0 && (
+                  <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
+                    <span className="text-black">Pre-tax Contributions</span>
+                    <span className="text-black">
+                      -{taxTable.metadata.currency} {formatCurrency(result.breakdown.preTaxDeductions.applied)}
                     </span>
                   </div>
                 )}
