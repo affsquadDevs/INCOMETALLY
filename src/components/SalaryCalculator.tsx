@@ -9,6 +9,7 @@ import { computeNetPoland } from '@/lib/tax/pl';
 import { computeNetPortugal } from '@/lib/tax/pt';
 import { computeNetSweden } from '@/lib/tax/se';
 import { computeNetItaly } from '@/lib/tax/it';
+import { computeNetSpain } from '@/lib/tax/es';
 import { type IncomeMode } from '@/lib/tax/types';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
 import { type USOptionsData, type USTaxOptions, type USFilingStatus, type USEmploymentType, type USDeductionMethod } from '@/types/us';
@@ -17,6 +18,7 @@ import { type PLOptionsData, type PLTaxOptions } from '@/types/pl';
 import { type PTOptionsData, type PTTaxOptions } from '@/types/pt';
 import { type SEOptionsData, type SETaxOptions } from '@/types/se';
 import { type ITOptionsData, type ITTaxOptions } from '@/types/it';
+import { type ESOptionsData, type ESTaxOptions } from '@/types/es';
 import { inputToAnnualGross, getModeValue, formatPrecise, normalizeToAnnual } from '@/lib/calculator-state';
 import { trackModeChange, trackCountryChange, trackCalculate, trackCopyLink, trackCalcStarted, trackCalcFinished } from '@/lib/analytics';
 import TaxDisclaimer from './TaxDisclaimer';
@@ -190,6 +192,12 @@ export default function SalaryCalculator({
   const [itMunicipalRate, setItMunicipalRate] = useState<string>('0.80');
   const [itDependentChildren, setItDependentChildren] = useState<string>('0');
 
+  // Spain-specific state
+  const [esOptions, setEsOptions] = useState<ESOptionsData | null>(null);
+  const [esCommunity, setEsCommunity] = useState<string>('default');
+  const [esFilingStatus, setEsFilingStatus] = useState<'single' | 'joint'>('single');
+  const [esChildren, setEsChildren] = useState<string>('0');
+
   // Mark as mounted on client side
   useEffect(() => {
     setIsMounted(true);
@@ -349,6 +357,24 @@ export default function SalaryCalculator({
     }
   }, [countryCode, itOptions, year]);
 
+  // Load Spain options when country is ES
+  useEffect(() => {
+    if (countryCode === 'ES' && !esOptions) {
+      const loadEsOptions = async () => {
+        try {
+          const response = await fetch(`/api/es-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setEsOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Spain options:', err);
+        }
+      };
+      loadEsOptions();
+    }
+  }, [countryCode, esOptions, year]);
+
   // Tax class II implies children; keep the toggle but force it on for class II.
   const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
 
@@ -491,6 +517,13 @@ export default function SalaryCalculator({
           dependentChildren: parseInt(itDependentChildren, 10) || 0,
         };
         calculationResult = computeNetItaly(annualGross, taxTable, itParams, itOptions, hours, weeks);
+      } else if (countryCode === 'ES' && esOptions) {
+        const esParams: ESTaxOptions = {
+          community: esCommunity,
+          filingStatus: esFilingStatus,
+          children: parseInt(esChildren, 10) || 0,
+        };
+        calculationResult = computeNetSpain(annualGross, taxTable, esParams, esOptions, hours, weeks);
       } else {
         calculationResult = computeNet(annualGross, taxTable, hours, weeks);
       }
@@ -557,6 +590,10 @@ export default function SalaryCalculator({
     itCustomRegionalRate,
     itMunicipalRate,
     itDependentChildren,
+    esOptions,
+    esCommunity,
+    esFilingStatus,
+    esChildren,
   ]);
 
 
@@ -1483,6 +1520,47 @@ export default function SalaryCalculator({
               />
               <p className="mt-2 text-xs text-gray-600">
                 Children under 21 are covered by the Assegno Unico (not payroll). Regional and municipal surtaxes vary by location.
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* Spain-specific fields */}
+        {countryCode === 'ES' && esOptions && (
+          <>
+            <CustomSelect
+              id="es-community"
+              label="Autonomous community"
+              value={esCommunity}
+              onChange={(value) => setEsCommunity(value.toString())}
+              options={esOptions.communities.map((c) => ({ value: c.id, label: c.name }))}
+            />
+
+            <CustomSelect
+              id="es-filing-status"
+              label="Filing Status"
+              value={esFilingStatus}
+              onChange={(value) => setEsFilingStatus(value.toString() as 'single' | 'joint')}
+              options={[
+                { value: 'single', label: 'Individual' },
+                { value: 'joint', label: 'Joint return (declaración conjunta)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Children (dependent descendants)
+              </label>
+              <input
+                type="number"
+                value={esChildren}
+                onChange={(e) => setEsChildren(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
+              <p className="mt-2 text-xs text-gray-600">
+                Regional rates vary by community; País Vasco and Navarra use separate foral systems not covered here.
               </p>
             </div>
           </>
