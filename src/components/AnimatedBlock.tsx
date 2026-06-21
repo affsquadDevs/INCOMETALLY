@@ -17,16 +17,22 @@ export default function AnimatedBlock({
   animationType = 'fade-slide',
   showImmediately = false, // Default to false for backward compatibility
 }: AnimatedBlockProps) {
-  // Show immediately if showImmediately is true (for LCP-critical content)
-  const [isVisible, setIsVisible] = useState(showImmediately);
+  // Start VISIBLE so server-rendered HTML, crawlers, no-JS, and full-page
+  // screenshots always see the content. The fade is a pure enhancement applied
+  // only after hydration in a motion-capable browser (see effect below).
+  const [isVisible, setIsVisible] = useState(true);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // If showImmediately is true, skip observer
-    if (showImmediately) {
-      return;
-    }
+    if (showImmediately) return;
+    if (typeof window === 'undefined') return;
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+    // Capable browser with motion allowed. Let the observer's first callback
+    // decide so we never hide content that is already on screen: elements in
+    // view (e.g. above the fold) stay visible with no flash; off-screen elements
+    // arm the hidden state and fade in when scrolled into view.
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -34,6 +40,8 @@ export default function AnimatedBlock({
             setIsVisible(true);
           }, delay);
           observer.disconnect();
+        } else {
+          setIsVisible(false);
         }
       },
       { threshold: 0.1, rootMargin: '50px' } // Start animation slightly before element is visible
