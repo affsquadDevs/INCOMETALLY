@@ -6,11 +6,13 @@ import { computeNetGermany } from '@/lib/tax/germany';
 import { computeNetUS } from '@/lib/tax/us';
 import { computeNetUK } from '@/lib/tax/uk';
 import { computeNetPoland } from '@/lib/tax/pl';
+import { computeNetPortugal } from '@/lib/tax/pt';
 import { type IncomeMode } from '@/lib/tax/types';
 import { GermanyTaxOptions, GermanyOptionsData } from '@/types/germany';
 import { type USOptionsData, type USTaxOptions, type USFilingStatus, type USEmploymentType, type USDeductionMethod } from '@/types/us';
 import { type UKOptionsData, type UKTaxOptions } from '@/types/uk';
 import { type PLOptionsData, type PLTaxOptions } from '@/types/pl';
+import { type PTOptionsData, type PTTaxOptions } from '@/types/pt';
 import { inputToAnnualGross, getModeValue, formatPrecise, normalizeToAnnual } from '@/lib/calculator-state';
 import { trackModeChange, trackCountryChange, trackCalculate, trackCopyLink, trackCalcStarted, trackCalcFinished } from '@/lib/analytics';
 import TaxDisclaimer from './TaxDisclaimer';
@@ -165,6 +167,12 @@ export default function SalaryCalculator({
   const [plChildren, setPlChildren] = useState<string>('0');
   const [plPreTax, setPlPreTax] = useState<string>('0');
 
+  // Portugal-specific state
+  const [ptOptions, setPtOptions] = useState<PTOptionsData | null>(null);
+  const [ptRegion, setPtRegion] = useState<'mainland' | 'azores' | 'madeira'>('mainland');
+  const [ptFilingStatus, setPtFilingStatus] = useState<'single' | 'joint'>('single');
+  const [ptDependants, setPtDependants] = useState<string>('0');
+
   // Mark as mounted on client side
   useEffect(() => {
     setIsMounted(true);
@@ -269,6 +277,24 @@ export default function SalaryCalculator({
       loadPlOptions();
     }
   }, [countryCode, plOptions, year]);
+
+  // Load Portugal options when country is PT
+  useEffect(() => {
+    if (countryCode === 'PT' && !ptOptions) {
+      const loadPtOptions = async () => {
+        try {
+          const response = await fetch(`/api/pt-options?year=${year}`);
+          if (response.ok) {
+            const data = await response.json();
+            setPtOptions(data);
+          }
+        } catch (err) {
+          console.error('Failed to load Portugal options:', err);
+        }
+      };
+      loadPtOptions();
+    }
+  }, [countryCode, ptOptions, year]);
 
   // Tax class II implies children; keep the toggle but force it on for class II.
   const germanyChildrenEffective = countryCode === 'DE' ? (germanyTaxClass === '2' ? true : germanyHasChildren) : false;
@@ -390,6 +416,13 @@ export default function SalaryCalculator({
           preTaxDeductible: normalizeToAnnual(parseFloat(plPreTax) || 0, incomeMode, hours, weeks),
         };
         calculationResult = computeNetPoland(annualGross, taxTable, plParams, plOptions, hours, weeks);
+      } else if (countryCode === 'PT' && ptOptions) {
+        const ptParams: PTTaxOptions = {
+          region: ptRegion,
+          filingStatus: ptFilingStatus,
+          dependants: parseInt(ptDependants, 10) || 0,
+        };
+        calculationResult = computeNetPortugal(annualGross, taxTable, ptParams, ptOptions, hours, weeks);
       } else {
         calculationResult = computeNet(annualGross, taxTable, hours, weeks);
       }
@@ -443,6 +476,10 @@ export default function SalaryCalculator({
     plUnder26,
     plChildren,
     plPreTax,
+    ptOptions,
+    ptRegion,
+    ptFilingStatus,
+    ptDependants,
   ]);
 
 
@@ -1203,6 +1240,48 @@ export default function SalaryCalculator({
               <p className="mt-2 text-xs text-gray-600">
                 Exempts employment income up to 85,528 PLN from income tax (ZUS and health still apply).
               </p>
+            </div>
+          </>
+        )}
+
+        {/* Portugal-specific fields */}
+        {countryCode === 'PT' && ptOptions && (
+          <>
+            <CustomSelect
+              id="pt-region"
+              label="Region"
+              value={ptRegion}
+              onChange={(value) => setPtRegion(value.toString() as 'mainland' | 'azores' | 'madeira')}
+              options={[
+                { value: 'mainland', label: 'Mainland (Continente)' },
+                { value: 'azores', label: 'Azores (Açores)' },
+                { value: 'madeira', label: 'Madeira' },
+              ]}
+            />
+
+            <CustomSelect
+              id="pt-filing-status"
+              label="Filing Status"
+              value={ptFilingStatus}
+              onChange={(value) => setPtFilingStatus(value.toString() as 'single' | 'joint')}
+              options={[
+                { value: 'single', label: 'Single' },
+                { value: 'joint', label: 'Married — joint taxation (sole earner)' },
+              ]}
+            />
+
+            <div>
+              <label className="block text-sm font-medium text-black mb-2">
+                Dependants
+              </label>
+              <input
+                type="number"
+                value={ptDependants}
+                onChange={(e) => setPtDependants(e.target.value)}
+                min="0"
+                step="1"
+                className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
+              />
             </div>
           </>
         )}

@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "countryCode": "PT",
+    "year": 2026,
+    "notes": "Portugal IRS (mainland Art. 68) 2026 brackets, with Azores (flat 30% rate reduction) and Madeira (30% up to the 6th bracket, then 15%/9%/3% on the 7th/8th/9th). Employment specific deduction 8.54 x IAS 2026 = 4,587.09 EUR, or actual Social Security if higher. Employee Social Security 11% (no ceiling). Dependant credit 600 EUR. Single-taxpayer estimate; joint taxation uses the spousal quotient (split by 2)."
+  },
+  "brackets": [
+    { "from": 0, "to": 8342, "rate": 0.125 },
+    { "from": 8342, "to": 12587, "rate": 0.157 },
+    { "from": 12587, "to": 17838, "rate": 0.212 },
+    { "from": 17838, "to": 23089, "rate": 0.241 },
+    { "from": 23089, "to": 29397, "rate": 0.311 },
+    { "from": 29397, "to": 43090, "rate": 0.349 },
+    { "from": 43090, "to": 46566, "rate": 0.431 },
+    { "from": 46566, "to": 86634, "rate": 0.446 },
+    { "from": 86634, "to": null, "rate": 0.48 }
+  ],
+  "regionalReduction": {
+    "mainland": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "azores": [0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3],
+    "madeira": [0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.15, 0.09, 0.03]
+  },
+  "specificDeduction": 4587.09,
+  "ssRate": 0.11,
+  "dependantCredit": 600
+}
