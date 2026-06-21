@@ -23,6 +23,10 @@ export const countrySources: Record<string, DataSource[]> = {
       label: 'IRS — Tax Topic 751 (Social Security & Medicare withholding)',
       url: 'https://www.irs.gov/taxtopics/tc751',
     },
+    {
+      label: 'SSA — Social Security wage base (contribution and benefit base)',
+      url: 'https://www.ssa.gov/oact/cola/cbb.html',
+    },
   ],
   DE: [
     {

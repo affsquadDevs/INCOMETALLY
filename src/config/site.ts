@@ -18,7 +18,7 @@ export const siteConfig = {
 
   // Contact Information
   contact: {
-    email: 'hello@affsquad.com',
+    email: 'hello@incometally.com',
     // phone: '+1 (555) 123-4567',
     // address: '123 Business St, Suite 100, San Francisco, CA 94105',
   },
@@ -74,7 +74,7 @@ export const siteConfig = {
       title: 'We welcome inquiries related to:',
       items: [
         'general questions about the platform',
-        'project estimation and planning features',
+        'how the calculators and tax estimates work',
         'privacy and data handling',
         'technical issues or feedback',
         'legal or policy-related matters',
@@ -84,7 +84,7 @@ export const siteConfig = {
       title: 'How to Contact Us',
       email: {
         label: 'Email:',
-        value: 'hello@affsquad.com',
+        value: 'hello@incometally.com',
         note: 'We aim to respond to all legitimate inquiries within a reasonable timeframe.',
       },
     },
