@@ -21,5 +21,126 @@
     "disclaimerLabel": "Avvertenza:",
     "disclaimer": "IncomeTally fornisce calcolatori di reddito e imposte solo a scopo informativo. I risultati sono stime e potrebbero non riflettere gli obblighi fiscali reali o i risultati finanziari. Questo sito non fornisce consulenza finanziaria, fiscale o legale. Consulta sempre un professionista qualificato per indicazioni personalizzate.",
     "rights": "Tutti i diritti riservati."
+  },
+  "home": {
+    "meta": {
+      "title": "Calcolatore Stipendio Netto — Retribuzione Netta dopo le Tasse per 9 Paesi | IncomeTally",
+      "description": "Calcola il tuo stipendio netto dopo l'imposta sul reddito e i contributi previdenziali. Gratuito, senza registrazione, stime specifiche per paese per l'anno fiscale 2026 in Stati Uniti, Germania, Regno Unito, Polonia, Francia, Spagna, Italia, Svezia e Portogallo."
+    },
+    "hero": {
+      "title": "Calcolatore Stipendio Netto Gratuito",
+      "highlightWords": [
+        "Calcolatore",
+        "Stipendio",
+        "Netto"
+      ],
+      "subtitle": "Inserisci la tua retribuzione lorda e scopri lo stipendio netto stimato dopo l'imposta sul reddito e i contributi previdenziali — per l'anno fiscale 2026, in 9 paesi. Nessuna registrazione e i tuoi dati restano nel tuo browser.",
+      "getStarted": "Inizia ora",
+      "browseGuides": "Sfoglia le guide",
+      "trustLine": "Gratuito · Senza registrazione · I tuoi dati restano nel tuo browser."
+    },
+    "about": {
+      "heading": "Cosa fa IncomeTally",
+      "p1": "IncomeTally è un <calc>calcolatore di stipendio netto</calc> gratuito basato sul browser che trasforma uno stipendio lordo in una stima del tuo stipendio netto, ovvero la retribuzione che ti resta in tasca. Inserisci quanto guadagni — su base oraria, mensile o annuale — scegli il tuo paese e noi applichiamo gli scaglioni dell'imposta sul reddito 2026 di quel paese e i contributi previdenziali obbligatori per mostrarti ciò che arriva davvero sul tuo conto. Con JavaScript abilitato, il calcolo viene eseguito nel tuo browser e le cifre del tuo reddito non vengono inviate ai nostri server — vengono richiesti solo il tuo paese e l'anno fiscale per caricare le aliquote corrette. Non è necessario creare un account.",
+      "p2": "La differenza tra il tuo <gross>stipendio lordo e il tuo stipendio netto</gross> raramente è evidente. I sistemi fiscali progressivi applicano aliquote più elevate solo al reddito che supera la soglia di ciascuno scaglione, quindi la tua aliquota marginale — l'aliquota sull'ultimo euro o dollaro guadagnato — è quasi sempre più alta della tua aliquota effettiva, ovvero la quota dell'intero stipendio destinata alle tasse. Oltre all'imposta sul reddito, la maggior parte dei paesi trattiene <social>contributi previdenziali</social> per pensioni, sanità e copertura contro la disoccupazione. IncomeTally separa queste voci una per una, così vedi dove vanno i tuoi soldi, non solo il totale finale.",
+      "whoHeading": "A chi è rivolto",
+      "whoBody": "È pensato per i dipendenti che vogliono verificare se una busta paga è corretta, per chi cerca lavoro e confronta due offerte in termini di retribuzione netta reale, per i liberi professionisti che stimano quanto accantonare e per chiunque stia valutando un trasferimento tra paesi. Se ti sei mai chiesto perché un aumento è sembrato più piccolo della cifra dichiarata, questo è lo strumento che te lo spiega."
+    },
+    "howItWorks": {
+      "heading": "Come funziona",
+      "steps": [
+        {
+          "title": "Scegli il tuo paese",
+          "body": "Seleziona uno dei nove paesi supportati affinché il calcolatore carichi i corretti scaglioni fiscali 2026, le detrazioni e le aliquote dei contributi previdenziali."
+        },
+        {
+          "title": "Inserisci la tua retribuzione",
+          "body": "Digita il tuo reddito lordo come cifra oraria, mensile o annuale. Il calcolatore converte automaticamente tra i diversi periodi di paga e puoi impostare opzioni come lo stato civile o la regione dove applicabili."
+        },
+        {
+          "title": "Visualizza il dettaglio",
+          "body": "Ottieni il tuo stipendio netto stimato insieme a un dettaglio voce per voce dell'imposta sul reddito e dei contributi previdenziali, oltre alle tue aliquote marginale ed effettiva."
+        }
+      ],
+      "cta": "Apri il calcolatore"
+    },
+    "calculators": {
+      "heading": "Calcolatori",
+      "intro": "Inizia con uno strumento generale, oppure vai direttamente al tuo paese qui sotto.",
+      "tools": [
+        {
+          "title": "Calcolatore Stipendio Netto",
+          "body": "Converti qualsiasi stipendio lordo in retribuzione netta stimata con un dettaglio completo di tasse e contributi.",
+          "cta": "Calcola lo stipendio netto →"
+        },
+        {
+          "title": "Hub Calcolatori Stipendio",
+          "body": "Parti dal tuo paese ed esplora le regole fiscali 2026, gli scaglioni e i contributi previdenziali.",
+          "cta": "Sfoglia per paese →"
+        },
+        {
+          "title": "Da Orario a Stipendio",
+          "body": "Trasforma una tariffa oraria in reddito settimanale, mensile e annuale — poi scoprilo al netto delle tasse.",
+          "cta": "Converti la tariffa oraria →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Calcolatori di stipendio per paese",
+      "subtitle": "Stime per l'anno fiscale 2026 basate sugli scaglioni ufficiali dell'imposta sul reddito e sui contributi previdenziali di ciascun paese.",
+      "cardSuffix": "Calcolatore Stipendio",
+      "cardMeta": "{currency} · anno fiscale 2026",
+      "note": "La maggior parte dei calcolatori consente di impostare opzioni come lo stato civile o la regione dove applicabili; le opzioni disponibili variano da paese a paese. Consulta la pagina di ciascun paese per i dati richiesti e le sue fonti ufficiali.",
+      "seeAll": "Vedi tutti i calcolatori →"
+    },
+    "pillarsSection": {
+      "heading": "Scopri come viene calcolata la tua retribuzione",
+      "intro": "Guide in linguaggio semplice su reddito, tasse e pianificazione dello stipendio — redatte e verificate internamente, con fonti e date di ultimo aggiornamento.",
+      "viewAll": "Vedi tutte le guide →"
+    },
+    "trust": {
+      "badge": "Dati aggiornati all'anno fiscale 2026 · Ultima revisione giugno 2026",
+      "heading": "Da dove provengono i nostri dati",
+      "body": "I calcolatori e le guide di IncomeTally sono gestiti dal Team Editoriale di IncomeTally. Costruiamo la logica fiscale di ciascun paese a partire dai dati pubblicamente disponibili pubblicati dalle autorità fiscali e previdenziali ufficiali, spieghiamo i concetti in linguaggio semplice con esempi pratici e verifichiamo i dati rispetto alle aliquote ufficiali di ogni anno. Ogni calcolatore per paese mostra le sue fonti specifiche e l'anno fiscale a cui si riferisce.",
+      "standardsHeading": "I nostri standard",
+      "standards": [
+        "Fonti ufficiali",
+        "Linguaggio semplice",
+        "Revisione annuale",
+        "Stime, non consulenza"
+      ],
+      "aboutLink": "Scopri di più su di noi e sui nostri standard editoriali →",
+      "sourcesHeading": "Fonti ufficiali per paese",
+      "sourcesNote": "La pagina di ciascun paese rimanda alle fonti specifiche utilizzate per i suoi dati.",
+      "disclaimerLabel": "Stime, non consulenza.",
+      "disclaimer": "IncomeTally fornisce calcolatori di reddito e tasse solo a scopo informativo ed educativo. I risultati sono stime e potrebbero non riflettere i tuoi effettivi obblighi fiscali o i tuoi risultati finanziari. Questo sito web non è affiliato ad alcun governo o autorità fiscale e non fornisce consulenza finanziaria, fiscale o legale. Consulta sempre un professionista qualificato per una guida personalizzata."
+    },
+    "faqHeading": "Domande frequenti",
+    "faqs": [
+      {
+        "question": "IncomeTally è gratuito?",
+        "answer": "Sì. Ogni calcolatore e guida su IncomeTally è gratuito e non è necessario creare un account. I tuoi dati vengono elaborati nel tuo browser e non vengono memorizzati sui nostri server."
+      },
+      {
+        "question": "Quali paesi e quale anno fiscale copre il calcolatore?",
+        "answer": "IncomeTally copre nove paesi — Stati Uniti, Germania, Regno Unito, Polonia, Francia, Spagna, Italia, Svezia e Portogallo — utilizzando le regole 2026 dell'imposta sul reddito e dei contributi previdenziali. L'anno fiscale applicabile è indicato su ciascun calcolatore."
+      },
+      {
+        "question": "Qual è la differenza tra stipendio lordo e netto?",
+        "answer": "Lo stipendio lordo è la tua retribuzione totale prima di qualsiasi trattenuta. Lo stipendio netto — la retribuzione che ti resta in tasca — è ciò che rimane dopo aver sottratto l'imposta sul reddito e i contributi previdenziali obbligatori. IncomeTally mostra il dettaglio completo così puoi vedere esattamente cosa viene trattenuto e perché."
+      },
+      {
+        "question": "Quanto sono accurati i risultati?",
+        "answer": "I calcolatori utilizzano gli scaglioni, le detrazioni e le aliquote contributive ufficiali del 2026, ma si tratta di stime. La retribuzione netta reale può variare in base a circostanze personali come detrazioni aggiuntive, regole regionali, stato civile, benefit e trattenute una tantum. Considera i risultati come una stima ben documentata, non come una dichiarazione dei redditi."
+      },
+      {
+        "question": "Posso convertire tra retribuzione oraria, mensile e annuale?",
+        "answer": "Sì. Inserisci la tua retribuzione in uno qualsiasi di questi periodi e il calcolatore la converte in tutti gli altri, mostrando poi l'equivalente al netto. Il nostro strumento Da Orario a Stipendio si concentra specificamente sulle conversioni salariali, se è tutto ciò di cui hai bisogno."
+      },
+      {
+        "question": "Da dove provengono i vostri dati fiscali e IncomeTally fornisce consulenza finanziaria?",
+        "answer": "I nostri dati provengono dalle autorità fiscali e previdenziali ufficiali di ciascun paese, come l'IRS e la SSA, l'HMRC e il Bundesfinanzministerium tedesco, e la pagina di ciascun paese rimanda alle fonti specifiche utilizzate. IncomeTally è solo uno strumento informativo: non fornisce consulenza finanziaria, fiscale o legale e non è affiliato ad alcun governo o autorità fiscale. Per le decisioni relative alle tue tasse o alle tue finanze, consulta un professionista qualificato."
+      }
+    ]
   }
 }

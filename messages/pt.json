@@ -21,5 +21,126 @@
     "disclaimerLabel": "Aviso:",
     "disclaimer": "A IncomeTally disponibiliza calculadoras de rendimentos e impostos apenas para fins informativos. Os resultados são estimativas e podem não refletir as obrigações fiscais reais nem os resultados financeiros. Este site não presta aconselhamento financeiro, fiscal ou jurídico. Consulte sempre um profissional qualificado para orientação personalizada.",
     "rights": "Todos os direitos reservados."
+  },
+  "home": {
+    "meta": {
+      "title": "Calculadora de Salário Líquido — Vencimento Líquido Após Impostos em 9 Países | IncomeTally",
+      "description": "Calcule o seu salário líquido após o imposto sobre o rendimento e as contribuições para a segurança social. Gratuito, sem registo, com estimativas específicas por país para o ano fiscal de 2026 nos EUA, Alemanha, Reino Unido, Polónia, França, Espanha, Itália, Suécia e Portugal."
+    },
+    "hero": {
+      "title": "Calculadora de Salário Líquido Gratuita",
+      "highlightWords": [
+        "Calculadora",
+        "Salário",
+        "Líquido"
+      ],
+      "subtitle": "Introduza o seu salário bruto e veja a estimativa do seu vencimento líquido após o imposto sobre o rendimento e as contribuições para a segurança social — para o ano fiscal de 2026, em 9 países. Sem registo, e os seus dados permanecem no seu navegador.",
+      "getStarted": "Começar",
+      "browseGuides": "Explorar Guias",
+      "trustLine": "Gratuito · Sem registo · Os seus dados permanecem no seu navegador."
+    },
+    "about": {
+      "heading": "O Que Faz a IncomeTally",
+      "p1": "A IncomeTally é uma <calc>calculadora de salário líquido</calc> gratuita, baseada no navegador, que converte um salário bruto numa estimativa do seu vencimento líquido. Indica quanto ganha — à hora, ao mês ou ao ano — escolhe o seu país, e nós aplicamos os escalões do imposto sobre o rendimento de 2026 desse país e as contribuições obrigatórias para a segurança social para mostrar o que efetivamente entra na sua conta. Com o JavaScript ativado, o cálculo é feito no seu navegador e os seus valores de rendimento não são enviados para os nossos servidores — apenas o seu país e o ano fiscal são solicitados para carregar as taxas corretas. Não precisa de criar uma conta.",
+      "p2": "A diferença entre o seu <gross>salário bruto e o seu vencimento líquido</gross> raramente é óbvia. Os sistemas fiscais progressivos aplicam taxas mais elevadas apenas ao rendimento acima do limite de cada escalão, pelo que a sua taxa marginal — a taxa sobre o último euro ou dólar que ganhou — é quase sempre superior à sua taxa efetiva, a parcela de todo o seu salário que vai para impostos. Além do imposto sobre o rendimento, a maioria dos países deduz <social>contribuições para a segurança social</social> para pensões, saúde e cobertura de desemprego. A IncomeTally separa estas rubricas linha a linha, para que veja para onde vai o seu dinheiro, e não apenas o total final.",
+      "whoHeading": "Para quem é",
+      "whoBody": "Foi concebida para trabalhadores que querem verificar se o recibo de vencimento está correto, para quem procura emprego e quer comparar duas propostas em termos reais de vencimento líquido, para trabalhadores independentes que estimam quanto devem reservar e para qualquer pessoa que pondere mudar-se de país. Se alguma vez se perguntou por que razão um aumento pareceu menor do que o valor anunciado, esta é a ferramenta que o explica."
+    },
+    "howItWorks": {
+      "heading": "Como Funciona",
+      "steps": [
+        {
+          "title": "Escolha o seu país",
+          "body": "Selecione um dos nove países suportados para que a calculadora carregue os escalões fiscais, as deduções e as taxas de contribuição para a segurança social corretos de 2026."
+        },
+        {
+          "title": "Introduza o seu salário",
+          "body": "Escreva o seu rendimento bruto como valor horário, mensal ou anual. A calculadora converte entre os períodos de pagamento por si, e pode definir opções como o estado civil para efeitos fiscais ou a região, onde aplicável."
+        },
+        {
+          "title": "Veja a sua decomposição",
+          "body": "Obtenha a estimativa do seu vencimento líquido juntamente com uma decomposição, linha a linha, do imposto sobre o rendimento e das contribuições para a segurança social, além das suas taxas marginal e efetiva."
+        }
+      ],
+      "cta": "Abrir a Calculadora"
+    },
+    "calculators": {
+      "heading": "Calculadoras",
+      "intro": "Comece com uma ferramenta geral ou avance diretamente para o seu país abaixo.",
+      "tools": [
+        {
+          "title": "Calculadora de Salário Líquido",
+          "body": "Converta qualquer salário bruto numa estimativa do vencimento líquido, com uma decomposição completa de impostos e contribuições.",
+          "cta": "Calcular vencimento líquido →"
+        },
+        {
+          "title": "Central de Calculadoras de Salário",
+          "body": "Comece pelo seu país e explore as regras fiscais, os escalões e as contribuições para a segurança social de 2026.",
+          "cta": "Explorar por país →"
+        },
+        {
+          "title": "De Hora para Salário",
+          "body": "Transforme uma taxa horária em rendimento semanal, mensal e anual — e depois veja-o após impostos.",
+          "cta": "Converter taxa horária →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Calculadoras de Salário por País",
+      "subtitle": "Estimativas para o ano fiscal de 2026 utilizando os escalões oficiais do imposto sobre o rendimento e as contribuições para a segurança social de cada país.",
+      "cardSuffix": "Calculadora de Salário",
+      "cardMeta": "{currency} · ano fiscal de 2026",
+      "note": "A maioria das calculadoras permite definir opções como o estado civil para efeitos fiscais ou a região, onde aplicável; as opções disponíveis variam consoante o país. Consulte a página de cada país para conhecer os dados que oferece e as suas fontes oficiais.",
+      "seeAll": "Ver todas as calculadoras →"
+    },
+    "pillarsSection": {
+      "heading": "Saiba Como o Seu Salário é Calculado",
+      "intro": "Guias em linguagem clara sobre rendimento, impostos e planeamento salarial — redigidos e revistos internamente, com fontes e datas da última atualização.",
+      "viewAll": "Ver todos os guias →"
+    },
+    "trust": {
+      "badge": "Dados atualizados para o ano fiscal de 2026 · Última revisão em junho de 2026",
+      "heading": "De Onde Vêm os Nossos Números",
+      "body": "As calculadoras e os guias da IncomeTally são mantidos pela Equipa Editorial da IncomeTally. Construímos a lógica fiscal de cada país a partir de valores publicamente disponíveis publicados pelas autoridades oficiais de impostos e de segurança social, explicamos os conceitos em linguagem clara com exemplos práticos e revemos os dados face às taxas oficiais de cada ano. Cada calculadora por país apresenta as suas fontes específicas e o ano fiscal que abrange.",
+      "standardsHeading": "Os nossos padrões",
+      "standards": [
+        "Fontes oficiais",
+        "Linguagem clara",
+        "Revistos anualmente",
+        "Estimativas, não aconselhamento"
+      ],
+      "aboutLink": "Saiba mais sobre nós e os nossos padrões editoriais →",
+      "sourcesHeading": "Fontes oficiais por país",
+      "sourcesNote": "A página de cada país liga às fontes específicas que utilizámos para os seus valores.",
+      "disclaimerLabel": "Estimativas, não aconselhamento.",
+      "disclaimer": "A IncomeTally disponibiliza calculadoras de rendimento e impostos apenas para fins informativos e educativos. Os resultados são estimativas e podem não refletir as suas obrigações fiscais ou os seus resultados financeiros reais. Este sítio Web não está associado a qualquer governo ou autoridade tributária e não presta aconselhamento financeiro, fiscal ou jurídico. Consulte sempre um profissional qualificado para obter orientação personalizada."
+    },
+    "faqHeading": "Perguntas Frequentes",
+    "faqs": [
+      {
+        "question": "A IncomeTally é gratuita?",
+        "answer": "Sim. Todas as calculadoras e guias da IncomeTally são gratuitos e não precisa de criar uma conta. Os seus dados são processados no seu navegador e não são armazenados nos nossos servidores."
+      },
+      {
+        "question": "Que países e que ano fiscal abrange a calculadora?",
+        "answer": "A IncomeTally abrange nove países — os Estados Unidos, a Alemanha, o Reino Unido, a Polónia, a França, a Espanha, a Itália, a Suécia e Portugal — utilizando as regras de 2026 do imposto sobre o rendimento e das contribuições para a segurança social. O ano fiscal aplicável é apresentado em cada calculadora."
+      },
+      {
+        "question": "Qual é a diferença entre salário bruto e salário líquido?",
+        "answer": "O salário bruto é a sua remuneração total antes de quaisquer deduções. O salário líquido — o seu vencimento líquido — é o que resta depois de subtraídos o imposto sobre o rendimento e as contribuições obrigatórias para a segurança social. A IncomeTally mostra a decomposição completa para que veja exatamente o que é deduzido e porquê."
+      },
+      {
+        "question": "Qual é o rigor dos resultados?",
+        "answer": "As calculadoras utilizam os escalões, as deduções e as taxas de contribuição oficiais de 2026, mas são estimativas. O vencimento líquido real pode variar consoante as circunstâncias pessoais, tais como deduções adicionais, regras regionais, estado civil para efeitos fiscais, benefícios e deduções pontuais. Encare os resultados como uma estimativa bem fundamentada, e não como uma declaração fiscal."
+      },
+      {
+        "question": "Posso converter entre salário horário, mensal e anual?",
+        "answer": "Sim. Introduza o seu salário em qualquer um desses períodos e a calculadora converte-o entre todos eles, mostrando depois o valor líquido equivalente. A nossa ferramenta De Hora para Salário foca-se especificamente nas conversões de salário, caso seja só disso que precisa."
+      },
+      {
+        "question": "De onde vêm os vossos valores fiscais e a IncomeTally presta aconselhamento financeiro?",
+        "answer": "Os nossos valores provêm das autoridades oficiais de impostos e de segurança social de cada país, como o IRS e a SSA, o HMRC e o Bundesfinanzministerium alemão, e a página de cada país liga às fontes específicas que utilizámos. A IncomeTally é apenas uma ferramenta informativa: não presta aconselhamento financeiro, fiscal ou jurídico e não está associada a qualquer governo ou autoridade tributária. Para decisões sobre os seus impostos ou finanças, consulte um profissional qualificado."
+      }
+    ]
   }
 }

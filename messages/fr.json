@@ -21,5 +21,126 @@
     "disclaimerLabel": "Avertissement :",
     "disclaimer": "IncomeTally propose des calculateurs de revenus et d'impôts à titre informatif uniquement. Les résultats sont des estimations et peuvent ne pas refléter vos obligations fiscales réelles ni votre situation financière. Ce site ne fournit aucun conseil financier, fiscal ou juridique. Consultez toujours un professionnel qualifié pour des conseils personnalisés.",
     "rights": "Tous droits réservés."
+  },
+  "home": {
+    "meta": {
+      "title": "Calculateur de salaire net — Salaire après impôt pour 9 pays | IncomeTally",
+      "description": "Calculez votre salaire net après impôt sur le revenu et cotisations sociales. Gratuit, sans inscription, avec des estimations propres à chaque pays pour l'année fiscale 2026 aux États-Unis, en Allemagne, au Royaume-Uni, en Pologne, en France, en Espagne, en Italie, en Suède et au Portugal."
+    },
+    "hero": {
+      "title": "Calculateur de salaire net gratuit",
+      "highlightWords": [
+        "Calculateur",
+        "salaire",
+        "net"
+      ],
+      "subtitle": "Saisissez votre salaire brut et découvrez une estimation de votre salaire net après impôt sur le revenu et cotisations sociales — pour l'année fiscale 2026, dans 9 pays. Sans inscription, et vos données restent dans votre navigateur.",
+      "getStarted": "Commencer",
+      "browseGuides": "Parcourir les guides",
+      "trustLine": "Gratuit · Sans inscription · Vos données restent dans votre navigateur."
+    },
+    "about": {
+      "heading": "Ce que fait IncomeTally",
+      "p1": "IncomeTally est un <calc>calculateur de salaire net</calc> gratuit, fonctionnant dans votre navigateur, qui transforme un salaire brut en une estimation de votre salaire net, celui que vous touchez réellement. Vous saisissez ce que vous gagnez — par heure, par mois ou par an — vous choisissez votre pays, et nous appliquons les tranches d'impôt sur le revenu et les cotisations sociales obligatoires de ce pays pour l'année 2026 afin de montrer ce qui arrive vraiment sur votre compte. Avec JavaScript activé, le calcul s'exécute dans votre navigateur et vos données de revenu ne sont pas envoyées à nos serveurs — seuls votre pays et l'année fiscale sont demandés pour charger les bons taux. Vous n'avez pas besoin de créer de compte.",
+      "p2": "L'écart entre votre <gross>salaire brut et votre salaire net</gross> est rarement évident. Les systèmes d'imposition progressive n'appliquent des taux plus élevés qu'aux revenus dépassant le seuil de chaque tranche : votre taux marginal — le taux sur le dernier euro ou dollar gagné — est donc presque toujours supérieur à votre taux effectif, c'est-à-dire la part de l'ensemble de votre salaire consacrée à l'impôt. En plus de l'impôt sur le revenu, la plupart des pays prélèvent des <social>cotisations sociales</social> pour la retraite, la santé et l'assurance chômage. IncomeTally détaille chacun de ces postes ligne par ligne, pour que vous voyiez où va votre argent, et pas seulement le total final.",
+      "whoHeading": "À qui cela s'adresse",
+      "whoBody": "Il est conçu pour les salariés qui vérifient si une fiche de paie semble correcte, les chercheurs d'emploi qui comparent deux offres en termes de salaire net réel, les indépendants qui estiment ce qu'ils doivent mettre de côté, et toute personne qui envisage un changement de pays. Si vous vous êtes déjà demandé pourquoi une augmentation semblait plus modeste que le montant annoncé, voici l'outil qui vous l'explique."
+    },
+    "howItWorks": {
+      "heading": "Comment ça marche",
+      "steps": [
+        {
+          "title": "Choisissez votre pays",
+          "body": "Sélectionnez l'un des neuf pays pris en charge pour que le calculateur charge les tranches d'imposition, les abattements et les taux de cotisations sociales corrects pour 2026."
+        },
+        {
+          "title": "Saisissez votre salaire",
+          "body": "Indiquez votre revenu brut sous forme de montant horaire, mensuel ou annuel. Le calculateur effectue la conversion entre les périodes de paie pour vous, et vous pouvez définir des options telles que la situation fiscale ou la région lorsqu'elles s'appliquent."
+        },
+        {
+          "title": "Consultez votre décomposition",
+          "body": "Obtenez l'estimation de votre salaire net accompagnée d'une décomposition ligne par ligne de l'impôt sur le revenu et des cotisations sociales, ainsi que de vos taux marginal et effectif."
+        }
+      ],
+      "cta": "Ouvrir le calculateur"
+    },
+    "calculators": {
+      "heading": "Calculateurs",
+      "intro": "Commencez avec un outil général, ou accédez directement à votre pays ci-dessous.",
+      "tools": [
+        {
+          "title": "Calculateur de salaire net",
+          "body": "Convertissez n'importe quel salaire brut en une estimation du salaire net, avec une décomposition complète de l'impôt et des cotisations.",
+          "cta": "Calculer le salaire net →"
+        },
+        {
+          "title": "Hub des calculateurs de salaire",
+          "body": "Partez de votre pays et explorez les règles fiscales, les tranches et les cotisations sociales de 2026.",
+          "cta": "Parcourir par pays →"
+        },
+        {
+          "title": "Du taux horaire au salaire",
+          "body": "Transformez un taux horaire en revenu hebdomadaire, mensuel et annuel — puis voyez le résultat après impôt.",
+          "cta": "Convertir le taux horaire →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Calculateurs de salaire par pays",
+      "subtitle": "Estimations pour l'année fiscale 2026 utilisant les tranches officielles d'impôt sur le revenu et les cotisations sociales de chaque pays.",
+      "cardSuffix": "Calculateur de salaire",
+      "cardMeta": "{currency} · année fiscale 2026",
+      "note": "La plupart des calculateurs vous permettent de définir des options telles que la situation fiscale ou la région lorsqu'elles s'appliquent ; les options disponibles varient selon le pays. Consultez la page de chaque pays pour connaître les champs de saisie proposés et ses sources officielles.",
+      "seeAll": "Voir tous les calculateurs →"
+    },
+    "pillarsSection": {
+      "heading": "Comprenez comment votre salaire est calculé",
+      "intro": "Des guides en langage clair sur le revenu, l'impôt et la planification salariale — rédigés et vérifiés en interne, avec sources et dates de dernière mise à jour.",
+      "viewAll": "Voir tous les guides →"
+    },
+    "trust": {
+      "badge": "Données à jour pour l'année fiscale 2026 · Dernière vérification en juin 2026",
+      "heading": "D'où viennent nos chiffres",
+      "body": "Les calculateurs et les guides d'IncomeTally sont gérés par l'équipe éditoriale d'IncomeTally. Nous construisons la logique fiscale de chaque pays à partir de chiffres accessibles au public publiés par les autorités fiscales et de sécurité sociale officielles, nous expliquons les concepts en langage clair à l'aide d'exemples concrets, et nous vérifions les données par rapport aux taux officiels de chaque année. Chaque calculateur de pays indique ses sources spécifiques ainsi que l'année fiscale qu'il couvre.",
+      "standardsHeading": "Nos exigences",
+      "standards": [
+        "Sources officielles",
+        "Langage clair",
+        "Vérifié chaque année",
+        "Des estimations, pas des conseils"
+      ],
+      "aboutLink": "En savoir plus sur nous et sur nos standards éditoriaux →",
+      "sourcesHeading": "Sources officielles par pays",
+      "sourcesNote": "La page de chaque pays renvoie aux sources spécifiques que nous avons utilisées pour ses chiffres.",
+      "disclaimerLabel": "Des estimations, pas des conseils.",
+      "disclaimer": "IncomeTally propose des calculateurs de revenu et d'impôt à des fins purement informatives et éducatives. Les résultats sont des estimations et peuvent ne pas refléter vos obligations fiscales ou vos résultats financiers réels. Ce site web n'est affilié à aucun gouvernement ni à aucune autorité fiscale et ne fournit pas de conseils financiers, fiscaux ou juridiques. Consultez toujours un professionnel qualifié pour des conseils personnalisés."
+    },
+    "faqHeading": "Foire aux questions",
+    "faqs": [
+      {
+        "question": "IncomeTally est-il gratuit ?",
+        "answer": "Oui. Chaque calculateur et chaque guide d'IncomeTally est gratuit, et vous n'avez pas besoin de créer de compte. Vos données sont traitées dans votre navigateur et ne sont pas stockées sur nos serveurs."
+      },
+      {
+        "question": "Quels pays et quelle année fiscale le calculateur couvre-t-il ?",
+        "answer": "IncomeTally couvre neuf pays — les États-Unis, l'Allemagne, le Royaume-Uni, la Pologne, la France, l'Espagne, l'Italie, la Suède et le Portugal — en utilisant les règles de l'impôt sur le revenu et des cotisations sociales de 2026. L'année fiscale applicable est indiquée sur chaque calculateur."
+      },
+      {
+        "question": "Quelle est la différence entre salaire brut et salaire net ?",
+        "answer": "Le salaire brut correspond à votre rémunération totale avant tout prélèvement. Le salaire net — celui que vous touchez réellement — est ce qu'il reste après déduction de l'impôt sur le revenu et des cotisations sociales obligatoires. IncomeTally affiche la décomposition complète pour que vous voyiez exactement ce qui est prélevé et pourquoi."
+      },
+      {
+        "question": "Quelle est la précision des résultats ?",
+        "answer": "Les calculateurs utilisent les tranches, abattements et taux de cotisations officiels de 2026, mais il s'agit d'estimations. Le salaire net réel peut varier selon votre situation personnelle, par exemple des abattements supplémentaires, des règles régionales, votre situation fiscale, des avantages ou des déductions ponctuelles. Considérez les résultats comme une estimation bien documentée, et non comme une déclaration fiscale."
+      },
+      {
+        "question": "Puis-je convertir entre salaire horaire, mensuel et annuel ?",
+        "answer": "Oui. Saisissez votre salaire dans l'une de ces périodes et le calculateur le convertit dans toutes les autres, puis affiche l'équivalent net. Notre outil Du taux horaire au salaire se concentre spécifiquement sur la conversion des rémunérations si c'est tout ce dont vous avez besoin."
+      },
+      {
+        "question": "D'où proviennent vos chiffres fiscaux, et IncomeTally donne-t-il des conseils financiers ?",
+        "answer": "Nos chiffres proviennent des autorités fiscales et de sécurité sociale officielles de chaque pays, telles que l'IRS et la SSA, HMRC et le Bundesfinanzministerium allemand, et la page de chaque pays renvoie aux sources spécifiques que nous avons utilisées. IncomeTally est un outil purement informatif : il ne fournit pas de conseils financiers, fiscaux ou juridiques et n'est affilié à aucun gouvernement ni à aucune autorité fiscale. Pour vos décisions concernant vos impôts ou vos finances, consultez un professionnel qualifié."
+      }
+    ]
   }
 }

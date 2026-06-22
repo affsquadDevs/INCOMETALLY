@@ -21,5 +21,125 @@
     "disclaimerLabel": "Friskrivning:",
     "disclaimer": "IncomeTally tillhandahåller inkomst- och skattekalkylatorer endast i informationssyfte. Resultaten är uppskattningar och återspeglar kanske inte faktiska skatteförpliktelser eller ekonomiska utfall. Den här webbplatsen ger inte finansiell, skattemässig eller juridisk rådgivning. Rådgör alltid med en kvalificerad expert för personlig vägledning.",
     "rights": "Med ensamrätt."
+  },
+  "home": {
+    "meta": {
+      "title": "Nettolönekalkylator — Lön efter skatt för 9 länder | IncomeTally",
+      "description": "Beräkna din nettolön efter inkomstskatt och sociala avgifter. Gratis, ingen registrering, landsspecifika uppskattningar för skatteåret 2026 i USA, Tyskland, Storbritannien, Polen, Frankrike, Spanien, Italien, Sverige och Portugal."
+    },
+    "hero": {
+      "title": "Gratis nettolönekalkylator",
+      "highlightWords": [
+        "Gratis",
+        "nettolönekalkylator"
+      ],
+      "subtitle": "Ange din bruttolön och se din uppskattade nettolön efter inkomstskatt och sociala avgifter — för skatteåret 2026, i 9 länder. Ingen registrering, och dina uppgifter stannar i din webbläsare.",
+      "getStarted": "Kom igång",
+      "browseGuides": "Bläddra bland guider",
+      "trustLine": "Gratis · Ingen registrering · Dina uppgifter stannar i din webbläsare."
+    },
+    "about": {
+      "heading": "Vad IncomeTally gör",
+      "p1": "IncomeTally är en gratis, webbläsarbaserad <calc>nettolönekalkylator</calc> som omvandlar en bruttolön till en uppskattning av din nettolön. Du anger vad du tjänar — per timme, månad eller år — väljer ditt land, och vi tillämpar landets inkomstskatteskikt och obligatoriska sociala avgifter för 2026 för att visa vad som faktiskt landar på ditt konto. Med JavaScript aktiverat körs beräkningen i din webbläsare och dina inkomstuppgifter skickas inte till våra servrar — endast ditt land och skatteåret efterfrågas för att ladda rätt satser. Du behöver inte skapa något konto.",
+      "p2": "Skillnaden mellan din <gross>bruttolön och din nettolön</gross> är sällan självklar. Progressiva skattesystem tillämpar högre satser endast på inkomst över varje skiktgräns, så din marginalskatt — satsen på din sist intjänade krona eller euro — är nästan alltid högre än din effektiva skattesats, den andel av hela din lön som går till skatt. Utöver inkomstskatt drar de flesta länder <social>sociala avgifter</social> för pension, sjukvård och arbetslöshetsförsäkring. IncomeTally separerar dessa post för post, så att du ser vart dina pengar tar vägen, inte bara slutsumman.",
+      "whoHeading": "Vem den är till för",
+      "whoBody": "Den är gjord för anställda som vill kontrollera om en lönespecifikation ser rätt ut, jobbsökande som jämför två erbjudanden i faktiska nettotermer, frilansare som uppskattar vad de bör sätta undan, och alla som överväger en flytt mellan länder. Om du någonsin undrat varför en löneförhöjning kändes mindre än den utlovade siffran, är det här verktyget som förklarar det."
+    },
+    "howItWorks": {
+      "heading": "Så fungerar det",
+      "steps": [
+        {
+          "title": "Välj ditt land",
+          "body": "Välj ett av nio länder som stöds så att kalkylatorn laddar rätt skatteskikt, avdrag och satser för sociala avgifter för 2026."
+        },
+        {
+          "title": "Ange din lön",
+          "body": "Skriv in din bruttoinkomst som ett tim-, månads- eller årsbelopp. Kalkylatorn räknar om mellan löneperioder åt dig, och du kan ställa in alternativ som civilstånd eller region där de är tillämpliga."
+        },
+        {
+          "title": "Se din uppdelning",
+          "body": "Få din uppskattade nettolön tillsammans med en post-för-post-uppdelning av inkomstskatt och sociala avgifter, plus din marginalskatt och effektiva skattesats."
+        }
+      ],
+      "cta": "Öppna kalkylatorn"
+    },
+    "calculators": {
+      "heading": "Kalkylatorer",
+      "intro": "Börja med ett allmänt verktyg, eller hoppa direkt till ditt land nedan.",
+      "tools": [
+        {
+          "title": "Nettolönekalkylator",
+          "body": "Omvandla vilken bruttolön som helst till uppskattad nettolön med en fullständig uppdelning av skatt och avgifter.",
+          "cta": "Beräkna nettolön →"
+        },
+        {
+          "title": "Lönekalkylatornav",
+          "body": "Utgå från ditt land och utforska skatteregler, skatteskikt och sociala avgifter för 2026.",
+          "cta": "Bläddra efter land →"
+        },
+        {
+          "title": "Timlön till årslön",
+          "body": "Omvandla en timlön till vecko-, månads- och årsinkomst — och se den sedan efter skatt.",
+          "cta": "Omvandla timlön →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Lönekalkylatorer per land",
+      "subtitle": "Uppskattningar för skatteåret 2026 med varje lands officiella inkomstskatteskikt och sociala avgifter.",
+      "cardSuffix": "Lönekalkylator",
+      "cardMeta": "{currency} · skatteåret 2026",
+      "note": "De flesta kalkylatorer låter dig ställa in alternativ som civilstånd eller region där de är tillämpliga; de tillgängliga alternativen skiljer sig åt mellan länder. Se varje lands sida för vilka uppgifter den efterfrågar och dess officiella källor.",
+      "seeAll": "Se alla kalkylatorer →"
+    },
+    "pillarsSection": {
+      "heading": "Lär dig hur din lön beräknas",
+      "intro": "Guider på vanligt språk om inkomst, skatt och löneplanering — skrivna och granskade internt, med källor och datum för senaste uppdatering.",
+      "viewAll": "Visa alla guider →"
+    },
+    "trust": {
+      "badge": "Uppgifter aktuella för skatteåret 2026 · Senast granskad juni 2026",
+      "heading": "Varifrån våra siffror kommer",
+      "body": "IncomeTallys kalkylatorer och guider underhålls av IncomeTallys redaktion. Vi bygger varje lands skattelogik utifrån offentligt tillgängliga siffror publicerade av officiella skatte- och socialförsäkringsmyndigheter, förklarar begreppen på vanligt språk med genomräknade exempel, och granskar uppgifterna mot varje års officiella satser. Varje landskalkylator visar sina specifika källor och vilket skatteår den omfattar.",
+      "standardsHeading": "Våra principer",
+      "standards": [
+        "Officiella källor",
+        "Vanligt språk",
+        "Granskas årligen",
+        "Uppskattningar, inte rådgivning"
+      ],
+      "aboutLink": "Läs om oss och våra redaktionella principer →",
+      "sourcesHeading": "Officiella källor per land",
+      "sourcesNote": "Varje lands sida länkar till de specifika källor vi använde för dess siffror.",
+      "disclaimerLabel": "Uppskattningar, inte rådgivning.",
+      "disclaimer": "IncomeTally tillhandahåller inkomst- och skattekalkylatorer endast i informations- och utbildningssyfte. Resultaten är uppskattningar och kanske inte återspeglar dina faktiska skatteskyldigheter eller ekonomiska utfall. Den här webbplatsen är inte ansluten till någon myndighet eller skattemyndighet och tillhandahåller inte ekonomisk, skattemässig eller juridisk rådgivning. Rådgör alltid med en kvalificerad yrkesperson för personlig vägledning."
+    },
+    "faqHeading": "Vanliga frågor",
+    "faqs": [
+      {
+        "question": "Är IncomeTally gratis att använda?",
+        "answer": "Ja. Varje kalkylator och guide på IncomeTally är gratis, och du behöver inte skapa något konto. Dina uppgifter behandlas i din webbläsare och lagras inte på våra servrar."
+      },
+      {
+        "question": "Vilka länder och vilket skatteår omfattar kalkylatorn?",
+        "answer": "IncomeTally omfattar nio länder — USA, Tyskland, Storbritannien, Polen, Frankrike, Spanien, Italien, Sverige och Portugal — med regler för inkomstskatt och sociala avgifter för 2026. Det tillämpliga skatteåret visas på varje kalkylator."
+      },
+      {
+        "question": "Vad är skillnaden mellan bruttolön och nettolön?",
+        "answer": "Bruttolön är din totala lön före eventuella avdrag. Nettolön — din lön efter skatt — är vad som återstår när inkomstskatt och obligatoriska sociala avgifter har dragits av. IncomeTally visar hela uppdelningen så att du kan se exakt vad som dras av och varför."
+      },
+      {
+        "question": "Hur exakta är resultaten?",
+        "answer": "Kalkylatorerna använder officiella skatteskikt, avdrag och avgiftssatser för 2026, men de är uppskattningar. Den faktiska nettolönen kan variera med personliga omständigheter som ytterligare avdrag, regionala regler, civilstånd, förmåner och engångsavdrag. Behandla resultaten som en välunderbyggd uppskattning, inte som en skattedeklaration."
+      },
+      {
+        "question": "Kan jag räkna om mellan timlön, månadslön och årslön?",
+        "answer": "Ja. Ange din lön i någon av dessa perioder så räknar kalkylatorn om den mellan alla, och visar sedan motsvarigheten efter skatt. Vårt verktyg Timlön till årslön fokuserar specifikt på löneomvandlingar om det är allt du behöver."
+      },
+      {
+        "question": "Varifrån kommer era skattesiffror, och ger IncomeTally ekonomisk rådgivning?",
+        "answer": "Våra siffror kommer från varje lands officiella skatte- och socialförsäkringsmyndigheter, såsom IRS och SSA, HMRC och tyska Bundesfinanzministerium, och varje lands sida länkar till de specifika källor vi använde. IncomeTally är endast ett informationsverktyg: det tillhandahåller inte ekonomisk, skattemässig eller juridisk rådgivning och är inte anslutet till någon myndighet eller skattemyndighet. För beslut om dina skatter eller din ekonomi, rådgör med en kvalificerad yrkesperson."
+      }
+    ]
   }
 }

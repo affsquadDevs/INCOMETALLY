@@ -21,5 +21,126 @@
     "disclaimerLabel": "Zastrzeżenie:",
     "disclaimer": "IncomeTally udostępnia kalkulatory dochodów i podatków wyłącznie w celach informacyjnych. Wyniki są szacunkowe i mogą nie odzwierciedlać rzeczywistych zobowiązań podatkowych ani sytuacji finansowej. Ta strona nie świadczy doradztwa finansowego, podatkowego ani prawnego. W sprawach indywidualnych zawsze skonsultuj się z wykwalifikowanym specjalistą.",
     "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "home": {
+    "meta": {
+      "title": "Kalkulator wynagrodzenia netto — pensja na rękę po opodatkowaniu dla 9 krajów | IncomeTally",
+      "description": "Oblicz swoje wynagrodzenie netto po odliczeniu podatku dochodowego i składek na ubezpieczenia społeczne. Bezpłatnie, bez rejestracji, szacunki dostosowane do kraju na rok podatkowy 2026 dla USA, Niemiec, Wielkiej Brytanii, Polski, Francji, Hiszpanii, Włoch, Szwecji i Portugalii."
+    },
+    "hero": {
+      "title": "Bezpłatny kalkulator wynagrodzenia netto",
+      "highlightWords": [
+        "kalkulator",
+        "wynagrodzenia",
+        "netto"
+      ],
+      "subtitle": "Wpisz swoje wynagrodzenie brutto i zobacz szacowaną pensję na rękę po odliczeniu podatku dochodowego i składek na ubezpieczenia społeczne — dla roku podatkowego 2026, w 9 krajach. Bez rejestracji, a Twoje dane pozostają w przeglądarce.",
+      "getStarted": "Rozpocznij",
+      "browseGuides": "Przeglądaj poradniki",
+      "trustLine": "Bezpłatnie · Bez rejestracji · Twoje dane pozostają w przeglądarce."
+    },
+    "about": {
+      "heading": "Co robi IncomeTally",
+      "p1": "IncomeTally to bezpłatny, działający w przeglądarce <calc>kalkulator wynagrodzenia netto</calc>, który przelicza pensję brutto na szacunkową kwotę netto, czyli wynagrodzenie na rękę. Wpisujesz, ile zarabiasz — godzinowo, miesięcznie lub rocznie — wybierasz swój kraj, a my stosujemy obowiązujące w nim na rok 2026 progi podatku dochodowego oraz obowiązkowe składki na ubezpieczenia społeczne, aby pokazać, co faktycznie trafia na Twoje konto. Przy włączonym JavaScript obliczenia odbywają się w Twojej przeglądarce, a kwoty Twoich dochodów nie są wysyłane na nasze serwery — pobierany jest jedynie Twój kraj i rok podatkowy, aby wczytać właściwe stawki. Nie musisz zakładać konta.",
+      "p2": "Różnica między Twoją <gross>pensją brutto a wynagrodzeniem netto</gross> rzadko jest oczywista. Progresywne systemy podatkowe stosują wyższe stawki tylko do dochodu powyżej progu każdego przedziału, więc Twoja stawka krańcowa — stawka od ostatniego zarobionego euro lub dolara — jest niemal zawsze wyższa niż stawka efektywna, czyli udział całego wynagrodzenia, który trafia do fiskusa. Oprócz podatku dochodowego większość krajów potrąca <social>składki na ubezpieczenia społeczne</social> na emerytury, opiekę zdrowotną i ubezpieczenie na wypadek bezrobocia. IncomeTally rozdziela je pozycja po pozycji, dzięki czemu widzisz, na co idą Twoje pieniądze, a nie tylko ostateczną sumę.",
+      "whoHeading": "Dla kogo jest przeznaczony",
+      "whoBody": "Został stworzony dla pracowników sprawdzających, czy odcinek wypłaty wygląda prawidłowo, dla osób poszukujących pracy porównujących dwie oferty w realnych kwotach na rękę, dla freelancerów szacujących, ile odłożyć, oraz dla każdego, kto rozważa przeprowadzkę między krajami. Jeśli kiedykolwiek zastanawiałeś się, dlaczego podwyżka okazała się mniejsza niż wynikało z podanej liczby, to jest narzędzie, które to wyjaśnia."
+    },
+    "howItWorks": {
+      "heading": "Jak to działa",
+      "steps": [
+        {
+          "title": "Wybierz swój kraj",
+          "body": "Wybierz jeden z dziewięciu obsługiwanych krajów, aby kalkulator wczytał właściwe progi podatkowe, kwoty wolne i stawki składek na ubezpieczenia społeczne na rok 2026."
+        },
+        {
+          "title": "Wpisz swoje wynagrodzenie",
+          "body": "Podaj dochód brutto jako kwotę godzinową, miesięczną lub roczną. Kalkulator przelicza wartości między okresami rozliczeniowymi, a tam, gdzie to istotne, możesz ustawić opcje takie jak status rozliczenia czy region."
+        },
+        {
+          "title": "Zobacz zestawienie",
+          "body": "Otrzymaj szacowane wynagrodzenie netto wraz ze szczegółowym, pozycyjnym zestawieniem podatku dochodowego i składek na ubezpieczenia społeczne oraz Twoją stawką krańcową i efektywną."
+        }
+      ],
+      "cta": "Otwórz kalkulator"
+    },
+    "calculators": {
+      "heading": "Kalkulatory",
+      "intro": "Zacznij od narzędzia ogólnego lub przejdź od razu do swojego kraju poniżej.",
+      "tools": [
+        {
+          "title": "Kalkulator wynagrodzenia netto",
+          "body": "Przelicz dowolną pensję brutto na szacowane wynagrodzenie na rękę wraz z pełnym zestawieniem podatków i składek.",
+          "cta": "Oblicz pensję netto →"
+        },
+        {
+          "title": "Centrum kalkulatorów wynagrodzeń",
+          "body": "Zacznij od swojego kraju i poznaj zasady podatkowe, progi i składki na ubezpieczenia społeczne na rok 2026.",
+          "cta": "Przeglądaj według kraju →"
+        },
+        {
+          "title": "Stawka godzinowa na pensję",
+          "body": "Zamień stawkę godzinową na dochód tygodniowy, miesięczny i roczny — a następnie zobacz go po opodatkowaniu.",
+          "cta": "Przelicz stawkę godzinową →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Kalkulatory wynagrodzeń według kraju",
+      "subtitle": "Szacunki na rok podatkowy 2026 oparte na oficjalnych progach podatku dochodowego i składkach na ubezpieczenia społeczne każdego kraju.",
+      "cardSuffix": "Kalkulator wynagrodzenia",
+      "cardMeta": "{currency} · rok podatkowy 2026",
+      "note": "Większość kalkulatorów pozwala ustawić opcje takie jak status rozliczenia czy region, tam gdzie mają one zastosowanie; dostępne opcje różnią się w zależności od kraju. Zajrzyj na stronę każdego kraju, aby poznać oferowane przez niego dane wejściowe i jego oficjalne źródła.",
+      "seeAll": "Zobacz wszystkie kalkulatory →"
+    },
+    "pillarsSection": {
+      "heading": "Dowiedz się, jak obliczane jest Twoje wynagrodzenie",
+      "intro": "Napisane prostym językiem poradniki o dochodach, podatkach i planowaniu wynagrodzeń — tworzone i weryfikowane wewnętrznie, ze źródłami i datami ostatniej aktualizacji.",
+      "viewAll": "Zobacz wszystkie poradniki →"
+    },
+    "trust": {
+      "badge": "Dane aktualne na rok podatkowy 2026 · Ostatnia weryfikacja: czerwiec 2026",
+      "heading": "Skąd pochodzą nasze liczby",
+      "body": "Kalkulatory i poradniki IncomeTally są prowadzone przez Zespół Redakcyjny IncomeTally. Logikę podatkową każdego kraju budujemy na podstawie publicznie dostępnych danych publikowanych przez oficjalne organy podatkowe i ubezpieczeń społecznych, wyjaśniamy pojęcia prostym językiem z praktycznymi przykładami i weryfikujemy dane względem oficjalnych stawek z danego roku. Każdy kalkulator krajowy wskazuje swoje konkretne źródła oraz rok podatkowy, którego dotyczy.",
+      "standardsHeading": "Nasze standardy",
+      "standards": [
+        "Oficjalne źródła",
+        "Prosty język",
+        "Coroczna weryfikacja",
+        "Szacunki, nie porady"
+      ],
+      "aboutLink": "Przeczytaj o nas i naszych standardach redakcyjnych →",
+      "sourcesHeading": "Oficjalne źródła według kraju",
+      "sourcesNote": "Strona każdego kraju zawiera linki do konkretnych źródeł, których użyliśmy do jego danych.",
+      "disclaimerLabel": "Szacunki, nie porady.",
+      "disclaimer": "IncomeTally udostępnia kalkulatory dochodów i podatków wyłącznie w celach informacyjnych i edukacyjnych. Wyniki są szacunkami i mogą nie odzwierciedlać Twoich rzeczywistych zobowiązań podatkowych ani wyników finansowych. Ta witryna nie jest powiązana z żadnym organem rządowym ani podatkowym i nie świadczy doradztwa finansowego, podatkowego ani prawnego. W celu uzyskania spersonalizowanych wskazówek zawsze skonsultuj się z wykwalifikowanym specjalistą."
+    },
+    "faqHeading": "Najczęściej zadawane pytania",
+    "faqs": [
+      {
+        "question": "Czy korzystanie z IncomeTally jest bezpłatne?",
+        "answer": "Tak. Każdy kalkulator i poradnik w IncomeTally jest bezpłatny, a Ty nie musisz zakładać konta. Twoje dane są przetwarzane w przeglądarce i nie są przechowywane na naszych serwerach."
+      },
+      {
+        "question": "Jakie kraje i rok podatkowy obejmuje kalkulator?",
+        "answer": "IncomeTally obejmuje dziewięć krajów — Stany Zjednoczone, Niemcy, Wielką Brytanię, Polskę, Francję, Hiszpanię, Włochy, Szwecję i Portugalię — w oparciu o zasady dotyczące podatku dochodowego i składek na ubezpieczenia społeczne na rok 2026. Obowiązujący rok podatkowy jest pokazany w każdym kalkulatorze."
+      },
+      {
+        "question": "Jaka jest różnica między wynagrodzeniem brutto a netto?",
+        "answer": "Wynagrodzenie brutto to Twoja całkowita pensja przed wszelkimi potrąceniami. Wynagrodzenie netto — czyli pensja na rękę — to kwota, która pozostaje po odliczeniu podatku dochodowego i obowiązkowych składek na ubezpieczenia społeczne. IncomeTally pokazuje pełne zestawienie, dzięki czemu widzisz dokładnie, co i dlaczego zostało potrącone."
+      },
+      {
+        "question": "Jak dokładne są wyniki?",
+        "answer": "Kalkulatory korzystają z oficjalnych progów, kwot wolnych i stawek składek na rok 2026, ale stanowią one szacunki. Rzeczywiste wynagrodzenie na rękę może się różnić w zależności od sytuacji osobistej, takiej jak dodatkowe ulgi, zasady regionalne, status rozliczenia, świadczenia i jednorazowe odliczenia. Traktuj wyniki jako dobrze udokumentowany szacunek, a nie jako rozliczenie podatkowe."
+      },
+      {
+        "question": "Czy mogę przeliczać między wynagrodzeniem godzinowym, miesięcznym a rocznym?",
+        "answer": "Tak. Wpisz wynagrodzenie w dowolnym z tych okresów, a kalkulator przeliczy je na wszystkie pozostałe, a następnie pokaże równowartość na rękę. Nasze narzędzie Stawka godzinowa na pensję skupia się konkretnie na przeliczeniach płac, jeśli tylko tego potrzebujesz."
+      },
+      {
+        "question": "Skąd pochodzą wasze dane podatkowe i czy IncomeTally udziela porad finansowych?",
+        "answer": "Nasze dane pochodzą od oficjalnych organów podatkowych i ubezpieczeń społecznych każdego kraju, takich jak IRS i SSA, HMRC oraz niemiecki Bundesfinanzministerium, a strona każdego kraju zawiera linki do konkretnych źródeł, których użyliśmy. IncomeTally jest wyłącznie narzędziem informacyjnym: nie świadczy doradztwa finansowego, podatkowego ani prawnego i nie jest powiązany z żadnym organem rządowym ani podatkowym. W sprawach dotyczących Twoich podatków lub finansów skonsultuj się z wykwalifikowanym specjalistą."
+      }
+    ]
   }
 }

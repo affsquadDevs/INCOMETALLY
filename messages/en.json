@@ -21,5 +21,117 @@
     "disclaimerLabel": "Disclaimer:",
     "disclaimer": "IncomeTally provides income and tax calculators for informational purposes only. Results are estimates and may not reflect actual tax obligations or financial outcomes. This website does not provide financial, tax, or legal advice. Always consult a qualified professional for personalized guidance.",
     "rights": "All rights reserved."
+  },
+  "home": {
+    "meta": {
+      "title": "Net Salary Calculator — Take-Home Pay After Tax for 9 Countries | IncomeTally",
+      "description": "Calculate your net salary after income tax and social contributions. Free, no signup, country-specific estimates for the 2026 tax year across the US, Germany, UK, Poland, France, Spain, Italy, Sweden, and Portugal."
+    },
+    "hero": {
+      "title": "Free Net Salary Calculator",
+      "highlightWords": ["Net", "Salary", "Calculator"],
+      "subtitle": "Enter your gross pay and see your estimated take-home pay after income tax and social contributions — for the 2026 tax year, across 9 countries. No signup, and your inputs stay in your browser.",
+      "getStarted": "Get Started",
+      "browseGuides": "Browse Guides",
+      "trustLine": "Free · No signup · Your inputs stay in your browser."
+    },
+    "about": {
+      "heading": "What IncomeTally Does",
+      "p1": "IncomeTally is a free, browser-based <calc>net salary calculator</calc> that turns a gross salary into an estimate of your net, take-home pay. You enter what you earn — hourly, monthly, or yearly — choose your country, and we apply that country's 2026 income-tax brackets and mandatory social contributions to show what actually lands in your account. With JavaScript enabled, the calculation runs in your browser and your income figures aren't sent to our servers — only your country and the tax year are requested to load the right rates. You don't need to create an account.",
+      "p2": "The gap between your <gross>gross salary and your net pay</gross> is rarely obvious. Progressive tax systems apply higher rates only to income above each bracket threshold, so your marginal rate — the rate on your last euro or dollar earned — is almost always higher than your effective rate, the share of your whole salary that goes to tax. On top of income tax, most countries deduct <social>social contributions</social> for pensions, health, and unemployment cover. IncomeTally separates these line by line, so you see where your money goes, not just the final total.",
+      "whoHeading": "Who it's for",
+      "whoBody": "It's built for employees checking whether a payslip looks right, job-seekers comparing two offers in real take-home terms, freelancers estimating what to set aside, and anyone weighing a move between countries. If you've ever wondered why a raise felt smaller than the headline number, this is the tool that explains it."
+    },
+    "howItWorks": {
+      "heading": "How It Works",
+      "steps": [
+        {
+          "title": "Choose your country",
+          "body": "Pick one of nine supported countries so the calculator loads the correct 2026 tax brackets, allowances, and social contribution rates."
+        },
+        {
+          "title": "Enter your pay",
+          "body": "Type in your gross income as an hourly, monthly, or yearly figure. The calculator converts between pay periods for you, and you can set options like filing status or region where they apply."
+        },
+        {
+          "title": "See your breakdown",
+          "body": "Get your estimated net pay alongside a line-by-line breakdown of income tax and social contributions, plus your marginal and effective rates."
+        }
+      ],
+      "cta": "Open the Calculator"
+    },
+    "calculators": {
+      "heading": "Calculators",
+      "intro": "Start with a general tool, or jump straight to your country below.",
+      "tools": [
+        {
+          "title": "Net Salary Calculator",
+          "body": "Convert any gross salary into estimated take-home pay with a full tax and contributions breakdown.",
+          "cta": "Calculate net pay →"
+        },
+        {
+          "title": "Salary Calculator Hub",
+          "body": "Start from your country and explore 2026 tax rules, brackets, and social contributions.",
+          "cta": "Browse by country →"
+        },
+        {
+          "title": "Hourly to Salary",
+          "body": "Turn an hourly rate into weekly, monthly, and annual income — then see it after tax.",
+          "cta": "Convert hourly rate →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Salary Calculators by Country",
+      "subtitle": "2026 tax-year estimates using each country's official income-tax brackets and social contributions.",
+      "cardSuffix": "Salary Calculator",
+      "cardMeta": "{currency} · 2026 tax year",
+      "note": "Most calculators let you set options like filing status or region where they apply; the available options differ by country. See each country page for the inputs it offers and its official sources.",
+      "seeAll": "See all calculators →"
+    },
+    "pillarsSection": {
+      "heading": "Learn How Your Pay Is Calculated",
+      "intro": "Plain-language guides on income, tax, and salary planning — written and reviewed in-house, with sources and last-updated dates.",
+      "viewAll": "View all guides →"
+    },
+    "trust": {
+      "badge": "Data current for the 2026 tax year · Last reviewed June 2026",
+      "heading": "Where Our Numbers Come From",
+      "body": "IncomeTally's calculators and guides are maintained by the IncomeTally Editorial Team. We build each country's tax logic from publicly available figures published by official tax and social-security authorities, explain the concepts in plain language with worked examples, and review the data against each year's official rates. Every country calculator shows its specific sources and the tax year it covers.",
+      "standardsHeading": "Our standards",
+      "standards": ["Official sources", "Plain language", "Reviewed annually", "Estimates, not advice"],
+      "aboutLink": "Read about us and our editorial standards →",
+      "sourcesHeading": "Official sources by country",
+      "sourcesNote": "Each country page links the specific sources we used for its figures.",
+      "disclaimerLabel": "Estimates, not advice.",
+      "disclaimer": "IncomeTally provides income and tax calculators for informational and educational purposes only. Results are estimates and may not reflect your actual tax obligations or financial outcomes. This website is not affiliated with any government or tax authority and does not provide financial, tax, or legal advice. Always consult a qualified professional for personalized guidance."
+    },
+    "faqHeading": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "Is IncomeTally free to use?",
+        "answer": "Yes. Every calculator and guide on IncomeTally is free, and you don't need to create an account. Your inputs are processed in your browser and are not stored on our servers."
+      },
+      {
+        "question": "Which countries and tax year does the calculator cover?",
+        "answer": "IncomeTally covers nine countries — the United States, Germany, the United Kingdom, Poland, France, Spain, Italy, Sweden, and Portugal — using 2026 income-tax and social-contribution rules. The applicable tax year is shown on each calculator."
+      },
+      {
+        "question": "What's the difference between gross and net salary?",
+        "answer": "Gross salary is your total pay before any deductions. Net salary — your take-home pay — is what remains after income tax and mandatory social contributions are subtracted. IncomeTally shows the full breakdown so you can see exactly what is deducted and why."
+      },
+      {
+        "question": "How accurate are the results?",
+        "answer": "The calculators use official 2026 brackets, allowances, and contribution rates, but they are estimates. Real take-home pay can vary with personal circumstances such as additional allowances, regional rules, filing status, benefits, and one-off deductions. Treat the results as a well-sourced estimate, not a tax filing."
+      },
+      {
+        "question": "Can I convert between hourly, monthly, and yearly pay?",
+        "answer": "Yes. Enter your pay in any of those periods and the calculator converts it across all of them, then shows the take-home equivalent. Our Hourly to Salary tool focuses specifically on wage conversions if that is all you need."
+      },
+      {
+        "question": "Where do your tax figures come from, and does IncomeTally give financial advice?",
+        "answer": "Our figures come from each country's official tax and social-security authorities, such as the IRS and SSA, HMRC, and the German Bundesfinanzministerium, and each country page links the specific sources we used. IncomeTally is an informational tool only: it does not provide financial, tax, or legal advice and is not affiliated with any government or tax authority. For decisions about your taxes or finances, consult a qualified professional."
+      }
+    ]
   }
 }

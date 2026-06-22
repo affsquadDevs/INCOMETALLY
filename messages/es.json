@@ -21,5 +21,125 @@
     "disclaimerLabel": "Aviso:",
     "disclaimer": "IncomeTally ofrece calculadoras de ingresos e impuestos solo con fines informativos. Los resultados son estimaciones y pueden no reflejar las obligaciones fiscales reales ni los resultados financieros. Este sitio web no ofrece asesoramiento financiero, fiscal ni legal. Consulta siempre a un profesional cualificado para obtener orientación personalizada.",
     "rights": "Todos los derechos reservados."
+  },
+  "home": {
+    "about": {
+      "heading": "Qué hace IncomeTally",
+      "p1": "IncomeTally es una <calc>calculadora de salario neto</calc> gratuita y basada en el navegador que convierte un salario bruto en una estimación de tu salario neto, lo que realmente cobras. Introduces lo que ganas — por hora, al mes o al año —, eliges tu país y aplicamos los tramos del impuesto sobre la renta de 2026 de ese país y las cotizaciones sociales obligatorias para mostrarte lo que realmente llega a tu cuenta. Con JavaScript activado, el cálculo se ejecuta en tu navegador y tus cifras de ingresos no se envían a nuestros servidores; solo solicitamos tu país y el ejercicio fiscal para cargar los tipos correctos. No necesitas crear una cuenta.",
+      "p2": "La diferencia entre tu <gross>salario bruto y tu salario neto</gross> rara vez resulta evidente. Los sistemas tributarios progresivos aplican tipos más altos únicamente a la renta que supera el umbral de cada tramo, de modo que tu tipo marginal — el tipo sobre el último euro o dólar que ganas — es casi siempre superior a tu tipo efectivo, la parte de todo tu salario que se destina a impuestos. Además del impuesto sobre la renta, la mayoría de los países deducen <social>cotizaciones sociales</social> para pensiones, sanidad y desempleo. IncomeTally separa estos conceptos línea por línea, para que veas adónde va tu dinero y no solo el total final.",
+      "whoHeading": "Para quién es",
+      "whoBody": "Está pensada para empleados que quieren comprobar si su nómina cuadra, para quienes buscan trabajo y comparan dos ofertas en términos reales de salario neto, para autónomos que estiman cuánto deben reservar y para cualquiera que valore mudarse de país. Si alguna vez te has preguntado por qué una subida de sueldo se notó menos de lo que prometía la cifra principal, esta es la herramienta que te lo explica."
+    },
+    "calculators": {
+      "heading": "Calculadoras",
+      "intro": "Empieza con una herramienta general o ve directamente a tu país más abajo.",
+      "tools": [
+        {
+          "title": "Calculadora de salario neto",
+          "body": "Convierte cualquier salario bruto en una estimación de salario neto con un desglose completo de impuestos y cotizaciones.",
+          "cta": "Calcular salario neto →"
+        },
+        {
+          "title": "Centro de calculadoras salariales",
+          "body": "Parte de tu país y explora las normas fiscales, los tramos y las cotizaciones sociales de 2026.",
+          "cta": "Ver por país →"
+        },
+        {
+          "title": "De salario por hora a anual",
+          "body": "Convierte una tarifa por hora en ingresos semanales, mensuales y anuales, y después ve cuánto queda tras impuestos.",
+          "cta": "Convertir tarifa por hora →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Calculadoras de salario por país",
+      "subtitle": "Estimaciones para el ejercicio fiscal 2026 utilizando los tramos oficiales del impuesto sobre la renta y las cotizaciones sociales de cada país.",
+      "cardSuffix": "Calculadora de salario",
+      "cardMeta": "{currency} · ejercicio fiscal 2026",
+      "note": "La mayoría de las calculadoras te permiten configurar opciones como la situación de declaración o la región cuando proceden; las opciones disponibles varían según el país. Consulta la página de cada país para ver los datos que solicita y sus fuentes oficiales.",
+      "seeAll": "Ver todas las calculadoras →"
+    },
+    "faqHeading": "Preguntas frecuentes",
+    "faqs": [
+      {
+        "question": "¿Es gratis usar IncomeTally?",
+        "answer": "Sí. Todas las calculadoras y guías de IncomeTally son gratuitas y no necesitas crear una cuenta. Tus datos se procesan en tu navegador y no se almacenan en nuestros servidores."
+      },
+      {
+        "question": "¿Qué países y qué ejercicio fiscal cubre la calculadora?",
+        "answer": "IncomeTally cubre nueve países — Estados Unidos, Alemania, el Reino Unido, Polonia, Francia, España, Italia, Suecia y Portugal — aplicando las normas de 2026 sobre el impuesto sobre la renta y las cotizaciones sociales. El ejercicio fiscal aplicable se muestra en cada calculadora."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre salario bruto y salario neto?",
+        "answer": "El salario bruto es tu retribución total antes de cualquier deducción. El salario neto — lo que realmente cobras — es lo que queda tras restar el impuesto sobre la renta y las cotizaciones sociales obligatorias. IncomeTally muestra el desglose completo para que veas exactamente qué se deduce y por qué."
+      },
+      {
+        "question": "¿Hasta qué punto son precisos los resultados?",
+        "answer": "Las calculadoras utilizan los tramos, las reducciones y los tipos de cotización oficiales de 2026, pero son estimaciones. El salario neto real puede variar según las circunstancias personales, como reducciones adicionales, normas regionales, la situación de declaración, las prestaciones y deducciones puntuales. Toma los resultados como una estimación bien fundamentada, no como una declaración de la renta."
+      },
+      {
+        "question": "¿Puedo convertir entre salario por hora, mensual y anual?",
+        "answer": "Sí. Introduce tu retribución en cualquiera de esos periodos y la calculadora la convierte a todos ellos, y después muestra el equivalente neto. Nuestra herramienta De salario por hora a anual se centra específicamente en la conversión de salarios si es lo único que necesitas."
+      },
+      {
+        "question": "¿De dónde proceden vuestras cifras fiscales y ofrece IncomeTally asesoramiento financiero?",
+        "answer": "Nuestras cifras proceden de las autoridades tributarias y de seguridad social oficiales de cada país, como el IRS y la SSA, HMRC y el Bundesfinanzministerium alemán, y la página de cada país enlaza las fuentes concretas que utilizamos. IncomeTally es únicamente una herramienta informativa: no ofrece asesoramiento financiero, fiscal ni jurídico y no está afiliada a ningún gobierno ni autoridad tributaria. Para tomar decisiones sobre tus impuestos o tus finanzas, consulta a un profesional cualificado."
+      }
+    ],
+    "hero": {
+      "title": "Calculadora de salario neto gratuita",
+      "highlightWords": [
+        "salario",
+        "neto"
+      ],
+      "subtitle": "Introduce tu salario bruto y consulta una estimación de tu salario neto tras el impuesto sobre la renta y las cotizaciones sociales — para el ejercicio fiscal 2026 y en 9 países. Sin registro, y tus datos se quedan en tu navegador.",
+      "getStarted": "Empezar",
+      "browseGuides": "Explorar guías",
+      "trustLine": "Gratis · Sin registro · Tus datos se quedan en tu navegador."
+    },
+    "howItWorks": {
+      "heading": "Cómo funciona",
+      "steps": [
+        {
+          "title": "Elige tu país",
+          "body": "Selecciona uno de los nueve países disponibles para que la calculadora cargue los tramos fiscales, las reducciones y los tipos de cotización social correctos de 2026."
+        },
+        {
+          "title": "Introduce tu retribución",
+          "body": "Escribe tu salario bruto como cifra por hora, mensual o anual. La calculadora convierte entre los distintos periodos por ti, y puedes ajustar opciones como la situación de declaración o la región cuando proceden."
+        },
+        {
+          "title": "Consulta tu desglose",
+          "body": "Obtén la estimación de tu salario neto junto a un desglose línea por línea del impuesto sobre la renta y las cotizaciones sociales, además de tus tipos marginal y efectivo."
+        }
+      ],
+      "cta": "Abrir la calculadora"
+    },
+    "meta": {
+      "title": "Calculadora de salario neto — Salario neto tras impuestos en 9 países | IncomeTally",
+      "description": "Calcula tu salario neto tras el impuesto sobre la renta y las cotizaciones sociales. Gratis, sin registro y con estimaciones por país para el ejercicio fiscal 2026 en EE. UU., Alemania, Reino Unido, Polonia, Francia, España, Italia, Suecia y Portugal."
+    },
+    "pillarsSection": {
+      "heading": "Aprende cómo se calcula tu salario",
+      "intro": "Guías en lenguaje claro sobre ingresos, impuestos y planificación salarial — redactadas y revisadas internamente, con fuentes y fechas de última actualización.",
+      "viewAll": "Ver todas las guías →"
+    },
+    "trust": {
+      "badge": "Datos vigentes para el ejercicio fiscal 2026 · Última revisión en junio de 2026",
+      "heading": "De dónde proceden nuestras cifras",
+      "body": "Las calculadoras y guías de IncomeTally las mantiene el Equipo Editorial de IncomeTally. Construimos la lógica fiscal de cada país a partir de cifras públicas publicadas por las autoridades tributarias y de seguridad social oficiales, explicamos los conceptos en lenguaje claro con ejemplos resueltos y revisamos los datos frente a los tipos oficiales de cada año. La calculadora de cada país muestra sus fuentes concretas y el ejercicio fiscal que cubre.",
+      "standardsHeading": "Nuestros principios",
+      "standards": [
+        "Fuentes oficiales",
+        "Lenguaje claro",
+        "Revisado cada año",
+        "Estimaciones, no asesoramiento"
+      ],
+      "aboutLink": "Conoce quiénes somos y nuestros principios editoriales →",
+      "sourcesHeading": "Fuentes oficiales por país",
+      "sourcesNote": "La página de cada país enlaza las fuentes concretas que utilizamos para sus cifras.",
+      "disclaimerLabel": "Estimaciones, no asesoramiento.",
+      "disclaimer": "IncomeTally ofrece calculadoras de ingresos e impuestos con fines exclusivamente informativos y educativos. Los resultados son estimaciones y pueden no reflejar tus obligaciones fiscales reales ni tus resultados financieros. Este sitio web no está afiliado a ningún gobierno ni autoridad tributaria y no ofrece asesoramiento financiero, fiscal ni jurídico. Consulta siempre a un profesional cualificado para obtener orientación personalizada."
+    }
   }
 }

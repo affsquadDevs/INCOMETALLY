@@ -21,5 +21,126 @@
     "disclaimerLabel": "Upozornění:",
     "disclaimer": "IncomeTally poskytuje kalkulačky příjmů a daní pouze pro informační účely. Výsledky jsou odhady a nemusí odpovídat skutečným daňovým povinnostem ani finančním výsledkům. Tento web neposkytuje finanční, daňové ani právní poradenství. Pro radu na míru se vždy obraťte na kvalifikovaného odborníka.",
     "rights": "Všechna práva vyhrazena."
+  },
+  "home": {
+    "meta": {
+      "title": "Kalkulačka čisté mzdy — čistý příjem po zdanění pro 9 zemí | IncomeTally",
+      "description": "Spočítejte si čistou mzdu po dani z příjmu a sociálních odvodech. Zdarma, bez registrace, odhady specifické pro jednotlivé země za daňový rok 2026 pro USA, Německo, Velkou Británii, Polsko, Francii, Španělsko, Itálii, Švédsko a Portugalsko."
+    },
+    "hero": {
+      "title": "Kalkulačka čisté mzdy zdarma",
+      "highlightWords": [
+        "Kalkulačka",
+        "čisté",
+        "mzdy"
+      ],
+      "subtitle": "Zadejte svou hrubou mzdu a uvidíte odhad svého čistého příjmu po dani z příjmu a sociálních odvodech — pro daňový rok 2026 a napříč 9 zeměmi. Bez registrace a vaše zadané údaje zůstávají ve vašem prohlížeči.",
+      "getStarted": "Začít",
+      "browseGuides": "Procházet průvodce",
+      "trustLine": "Zdarma · Bez registrace · Vaše údaje zůstávají ve vašem prohlížeči."
+    },
+    "about": {
+      "heading": "Co IncomeTally dělá",
+      "p1": "IncomeTally je bezplatná <calc>kalkulačka čisté mzdy</calc> běžící v prohlížeči, která z hrubé mzdy spočítá odhad vašeho čistého příjmu. Zadáte, kolik vyděláte — hodinově, měsíčně nebo ročně — vyberete svou zemi a my použijeme daňová pásma pro daň z příjmu za rok 2026 a povinné sociální odvody dané země, abychom ukázali, kolik vám skutečně přistane na účtu. Se zapnutým JavaScriptem probíhá výpočet ve vašem prohlížeči a vaše příjmové údaje se neodesílají na naše servery — pro načtení správných sazeb se vyžaduje pouze vaše země a daňový rok. Nemusíte si vytvářet účet.",
+      "p2": "Rozdíl mezi vaší <gross>hrubou mzdou a čistým příjmem</gross> je málokdy zřejmý. Progresivní daňové systémy uplatňují vyšší sazby pouze na příjem nad hranicí každého pásma, takže vaše marginální sazba — sazba na poslední vydělané euro nebo dolar — je téměř vždy vyšší než vaše efektivní sazba, tedy podíl celé vaší mzdy, který jde na daň. Kromě daně z příjmu většina zemí strhává <social>sociální odvody</social> na důchodové, zdravotní a pojištění v nezaměstnanosti. IncomeTally tyto položky rozděluje řádek po řádku, takže vidíte, kam vaše peníze jdou, nejen konečný součet.",
+      "whoHeading": "Pro koho je určena",
+      "whoBody": "Je vytvořena pro zaměstnance, kteří si ověřují, zda výplatní páska vypadá správně, pro uchazeče o práci porovnávající dvě nabídky podle skutečného čistého příjmu, pro freelancery odhadující, kolik si odložit stranou, i pro kohokoli, kdo zvažuje přesun mezi zeměmi. Pokud jste se někdy divili, proč vám zvýšení platu připadalo menší než částka v titulku, je tohle nástroj, který to vysvětlí."
+    },
+    "howItWorks": {
+      "heading": "Jak to funguje",
+      "steps": [
+        {
+          "title": "Vyberte svou zemi",
+          "body": "Zvolte jednu z devíti podporovaných zemí, aby kalkulačka načetla správná daňová pásma, slevy a sazby sociálních odvodů pro rok 2026."
+        },
+        {
+          "title": "Zadejte svou mzdu",
+          "body": "Zadejte svůj hrubý příjem jako hodinovou, měsíční nebo roční částku. Kalkulačka za vás převede mezi jednotlivými obdobími a tam, kde to lze, můžete nastavit možnosti jako typ zdanění nebo region."
+        },
+        {
+          "title": "Zobrazte si rozpis",
+          "body": "Získejte odhad svého čistého příjmu spolu s podrobným rozpisem daně z příjmu a sociálních odvodů řádek po řádku, a navíc svou marginální a efektivní sazbu."
+        }
+      ],
+      "cta": "Otevřít kalkulačku"
+    },
+    "calculators": {
+      "heading": "Kalkulačky",
+      "intro": "Začněte obecným nástrojem nebo přejděte rovnou ke své zemi níže.",
+      "tools": [
+        {
+          "title": "Kalkulačka čisté mzdy",
+          "body": "Převeďte jakoukoli hrubou mzdu na odhad čistého příjmu s úplným rozpisem daní a odvodů.",
+          "cta": "Spočítat čistý příjem →"
+        },
+        {
+          "title": "Rozcestník mzdových kalkulaček",
+          "body": "Začněte u své země a prozkoumejte daňová pravidla, pásma a sociální odvody pro rok 2026.",
+          "cta": "Procházet podle země →"
+        },
+        {
+          "title": "Z hodinové sazby na mzdu",
+          "body": "Převeďte hodinovou sazbu na týdenní, měsíční a roční příjem — a pak si jej zobrazte po zdanění.",
+          "cta": "Převést hodinovou sazbu →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Mzdové kalkulačky podle země",
+      "subtitle": "Odhady pro daňový rok 2026 využívající oficiální daňová pásma pro daň z příjmu a sociální odvody každé země.",
+      "cardSuffix": "Mzdová kalkulačka",
+      "cardMeta": "{currency} · daňový rok 2026",
+      "note": "Většina kalkulaček vám umožňuje nastavit možnosti jako typ zdanění nebo region tam, kde to lze; dostupné možnosti se liší podle země. Vstupy, které jednotlivé kalkulačky nabízejí, a jejich oficiální zdroje najdete na stránce dané země.",
+      "seeAll": "Zobrazit všechny kalkulačky →"
+    },
+    "pillarsSection": {
+      "heading": "Zjistěte, jak se počítá vaše mzda",
+      "intro": "Srozumitelné průvodce o příjmu, daních a plánování mzdy — psané a kontrolované interně, se zdroji a daty poslední aktualizace.",
+      "viewAll": "Zobrazit všechny průvodce →"
+    },
+    "trust": {
+      "badge": "Data aktuální pro daňový rok 2026 · Naposledy zkontrolováno v červnu 2026",
+      "heading": "Odkud naše čísla pocházejí",
+      "body": "Kalkulačky a průvodce IncomeTally spravuje redakční tým IncomeTally. Daňovou logiku každé země sestavujeme z veřejně dostupných údajů zveřejněných oficiálními daňovými orgány a orgány sociálního zabezpečení, vysvětlujeme koncepty srozumitelným jazykem na propočítaných příkladech a porovnáváme data s oficiálními sazbami pro každý rok. Každá kalkulačka pro danou zemi uvádí své konkrétní zdroje a daňový rok, který pokrývá.",
+      "standardsHeading": "Naše standardy",
+      "standards": [
+        "Oficiální zdroje",
+        "Srozumitelný jazyk",
+        "Každoroční kontrola",
+        "Odhady, nikoli rady"
+      ],
+      "aboutLink": "Přečtěte si o nás a našich redakčních standardech →",
+      "sourcesHeading": "Oficiální zdroje podle země",
+      "sourcesNote": "Každá stránka země odkazuje na konkrétní zdroje, které jsme pro její čísla použili.",
+      "disclaimerLabel": "Odhady, nikoli rady.",
+      "disclaimer": "IncomeTally poskytuje kalkulačky příjmu a daní pouze pro informační a vzdělávací účely. Výsledky jsou odhady a nemusí odpovídat vašim skutečným daňovým povinnostem nebo finančním výsledkům. Tento web není spojen s žádnou vládou ani daňovým úřadem a neposkytuje finanční, daňové ani právní poradenství. Pro personalizované rady se vždy obraťte na kvalifikovaného odborníka."
+    },
+    "faqHeading": "Často kladené otázky",
+    "faqs": [
+      {
+        "question": "Je IncomeTally zdarma?",
+        "answer": "Ano. Každá kalkulačka a průvodce na IncomeTally jsou zdarma a nemusíte si vytvářet účet. Vaše zadané údaje se zpracovávají ve vašem prohlížeči a neukládají se na našich serverech."
+      },
+      {
+        "question": "Které země a daňový rok kalkulačka pokrývá?",
+        "answer": "IncomeTally pokrývá devět zemí — Spojené státy, Německo, Velkou Británii, Polsko, Francii, Španělsko, Itálii, Švédsko a Portugalsko — s využitím pravidel pro daň z příjmu a sociální odvody pro rok 2026. Příslušný daňový rok je uveden u každé kalkulačky."
+      },
+      {
+        "question": "Jaký je rozdíl mezi hrubou a čistou mzdou?",
+        "answer": "Hrubá mzda je váš celkový příjem před jakýmikoli srážkami. Čistá mzda — váš čistý příjem — je to, co zůstane po odečtení daně z příjmu a povinných sociálních odvodů. IncomeTally zobrazuje úplný rozpis, takže přesně vidíte, co se sráží a proč."
+      },
+      {
+        "question": "Jak přesné jsou výsledky?",
+        "answer": "Kalkulačky používají oficiální daňová pásma, slevy a sazby odvodů pro rok 2026, ale jde o odhady. Skutečný čistý příjem se může lišit podle osobních okolností, jako jsou dodatečné slevy, regionální pravidla, typ zdanění, benefity a jednorázové srážky. Berte výsledky jako dobře podložený odhad, nikoli jako daňové přiznání."
+      },
+      {
+        "question": "Mohu převádět mezi hodinovou, měsíční a roční mzdou?",
+        "answer": "Ano. Zadejte svou mzdu v kterémkoli z těchto období a kalkulačka ji převede mezi všemi, poté zobrazí odpovídající čistý příjem. Náš nástroj Z hodinové sazby na mzdu se zaměřuje konkrétně na převody mezd, pokud potřebujete jen to."
+      },
+      {
+        "question": "Odkud pocházejí vaše daňová čísla a poskytuje IncomeTally finanční poradenství?",
+        "answer": "Naše čísla pocházejí od oficiálních daňových orgánů a orgánů sociálního zabezpečení každé země, jako jsou IRS a SSA, HMRC a německé Bundesfinanzministerium, a každá stránka země odkazuje na konkrétní zdroje, které jsme použili. IncomeTally je pouze informační nástroj: neposkytuje finanční, daňové ani právní poradenství a není spojen s žádnou vládou ani daňovým úřadem. Pro rozhodnutí o svých daních nebo financích se obraťte na kvalifikovaného odborníka."
+      }
+    ]
   }
 }

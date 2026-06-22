@@ -21,5 +21,124 @@
     "disclaimerLabel": "Haftungsausschluss:",
     "disclaimer": "IncomeTally stellt Einkommens- und Steuerrechner ausschließlich zu Informationszwecken bereit. Die Ergebnisse sind Schätzungen und spiegeln möglicherweise nicht die tatsächlichen Steuerpflichten oder finanziellen Ergebnisse wider. Diese Website bietet keine Finanz-, Steuer- oder Rechtsberatung. Wenden Sie sich für eine individuelle Beratung stets an eine qualifizierte Fachkraft.",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "home": {
+    "meta": {
+      "title": "Brutto-Netto-Rechner — Nettogehalt nach Steuern für 9 Länder | IncomeTally",
+      "description": "Berechnen Sie Ihr Nettogehalt nach Lohnsteuer und Sozialabgaben. Kostenlos, ohne Anmeldung, länderspezifische Schätzungen für das Steuerjahr 2026 für die USA, Deutschland, Großbritannien, Polen, Frankreich, Spanien, Italien, Schweden und Portugal."
+    },
+    "hero": {
+      "title": "Kostenloser Brutto-Netto-Rechner",
+      "highlightWords": [
+        "Brutto-Netto-Rechner"
+      ],
+      "subtitle": "Geben Sie Ihr Bruttogehalt ein und sehen Sie Ihr geschätztes Nettogehalt nach Lohnsteuer und Sozialabgaben — für das Steuerjahr 2026, in 9 Ländern. Ohne Anmeldung, und Ihre Eingaben bleiben in Ihrem Browser.",
+      "getStarted": "Jetzt starten",
+      "browseGuides": "Ratgeber durchsuchen",
+      "trustLine": "Kostenlos · Ohne Anmeldung · Ihre Eingaben bleiben in Ihrem Browser."
+    },
+    "about": {
+      "heading": "Was IncomeTally leistet",
+      "p1": "IncomeTally ist ein kostenloser, browserbasierter <calc>Brutto-Netto-Rechner</calc>, der aus einem Bruttogehalt eine Schätzung Ihres Nettogehalts macht. Sie geben ein, was Sie verdienen — pro Stunde, pro Monat oder pro Jahr —, wählen Ihr Land aus, und wir wenden die Steuerstufen 2026 und die gesetzlichen Sozialabgaben dieses Landes an, um zu zeigen, was tatsächlich auf Ihrem Konto landet. Bei aktiviertem JavaScript läuft die Berechnung in Ihrem Browser und Ihre Einkommensangaben werden nicht an unsere Server gesendet — nur Ihr Land und das Steuerjahr werden abgefragt, um die richtigen Sätze zu laden. Sie müssen kein Konto anlegen.",
+      "p2": "Der Unterschied zwischen Ihrem <gross>Bruttogehalt und Ihrem Nettogehalt</gross> ist selten offensichtlich. Progressive Steuersysteme wenden höhere Sätze nur auf Einkommen oberhalb der jeweiligen Stufengrenze an, sodass Ihr Grenzsteuersatz — der Satz auf den zuletzt verdienten Euro oder Dollar — fast immer höher ist als Ihr Durchschnittssteuersatz, also der Anteil Ihres gesamten Gehalts, der an Steuern geht. Zusätzlich zur Lohnsteuer ziehen die meisten Länder <social>Sozialabgaben</social> für Rente, Gesundheit und Arbeitslosenabsicherung ab. IncomeTally trennt diese Posten Zeile für Zeile auf, sodass Sie sehen, wohin Ihr Geld fließt, und nicht nur die Endsumme.",
+      "whoHeading": "Für wen es gedacht ist",
+      "whoBody": "Es ist gemacht für Arbeitnehmer, die prüfen möchten, ob eine Gehaltsabrechnung stimmt, für Stellensuchende, die zwei Angebote in echten Nettobeträgen vergleichen, für Freiberufler, die abschätzen wollen, wie viel sie zurücklegen sollten, und für alle, die einen Umzug zwischen Ländern erwägen. Wenn Sie sich je gefragt haben, warum sich eine Gehaltserhöhung kleiner anfühlte als die genannte Zahl, ist dies das Tool, das es erklärt."
+    },
+    "howItWorks": {
+      "heading": "So funktioniert es",
+      "steps": [
+        {
+          "title": "Wählen Sie Ihr Land",
+          "body": "Wählen Sie eines der neun unterstützten Länder aus, damit der Rechner die korrekten Steuerstufen, Freibeträge und Sozialabgabensätze für 2026 lädt."
+        },
+        {
+          "title": "Geben Sie Ihr Gehalt ein",
+          "body": "Tragen Sie Ihr Bruttoeinkommen als Stunden-, Monats- oder Jahresbetrag ein. Der Rechner rechnet zwischen den Lohnperioden um, und Sie können Optionen wie Steuerklasse oder Region festlegen, sofern zutreffend."
+        },
+        {
+          "title": "Sehen Sie Ihre Aufschlüsselung",
+          "body": "Erhalten Sie Ihr geschätztes Nettogehalt zusammen mit einer Zeile-für-Zeile-Aufschlüsselung von Lohnsteuer und Sozialabgaben sowie Ihrem Grenz- und Durchschnittssteuersatz."
+        }
+      ],
+      "cta": "Rechner öffnen"
+    },
+    "calculators": {
+      "heading": "Rechner",
+      "intro": "Beginnen Sie mit einem allgemeinen Tool oder springen Sie direkt zu Ihrem Land unten.",
+      "tools": [
+        {
+          "title": "Brutto-Netto-Rechner",
+          "body": "Wandeln Sie jedes Bruttogehalt in ein geschätztes Nettogehalt um — mit einer vollständigen Aufschlüsselung von Steuern und Abgaben.",
+          "cta": "Nettogehalt berechnen →"
+        },
+        {
+          "title": "Gehaltsrechner-Übersicht",
+          "body": "Starten Sie bei Ihrem Land und entdecken Sie die Steuerregeln, Stufen und Sozialabgaben für 2026.",
+          "cta": "Nach Land durchsuchen →"
+        },
+        {
+          "title": "Stundenlohn zu Gehalt",
+          "body": "Verwandeln Sie einen Stundenlohn in ein wöchentliches, monatliches und jährliches Einkommen — und sehen Sie es dann nach Steuern.",
+          "cta": "Stundenlohn umrechnen →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Gehaltsrechner nach Land",
+      "subtitle": "Schätzungen für das Steuerjahr 2026 auf Basis der offiziellen Steuerstufen und Sozialabgaben jedes Landes.",
+      "cardSuffix": "Gehaltsrechner",
+      "cardMeta": "{currency} · Steuerjahr 2026",
+      "note": "Bei den meisten Rechnern können Sie Optionen wie Steuerklasse oder Region festlegen, sofern zutreffend; die verfügbaren Optionen unterscheiden sich je nach Land. Auf der jeweiligen Länderseite finden Sie die angebotenen Eingaben und die offiziellen Quellen.",
+      "seeAll": "Alle Rechner ansehen →"
+    },
+    "pillarsSection": {
+      "heading": "Erfahren Sie, wie Ihr Gehalt berechnet wird",
+      "intro": "Verständliche Ratgeber zu Einkommen, Steuern und Gehaltsplanung — intern verfasst und geprüft, mit Quellen und Aktualisierungsdaten.",
+      "viewAll": "Alle Ratgeber ansehen →"
+    },
+    "trust": {
+      "badge": "Daten aktuell für das Steuerjahr 2026 · Zuletzt geprüft im Juni 2026",
+      "heading": "Woher unsere Zahlen stammen",
+      "body": "Die Rechner und Ratgeber von IncomeTally werden vom IncomeTally-Redaktionsteam gepflegt. Wir bauen die Steuerlogik jedes Landes aus öffentlich verfügbaren Angaben auf, die von offiziellen Steuer- und Sozialversicherungsbehörden veröffentlicht werden, erklären die Konzepte in verständlicher Sprache mit durchgerechneten Beispielen und gleichen die Daten mit den offiziellen Sätzen jedes Jahres ab. Jeder Länderrechner zeigt seine spezifischen Quellen und das Steuerjahr, das er abdeckt.",
+      "standardsHeading": "Unsere Standards",
+      "standards": [
+        "Offizielle Quellen",
+        "Verständliche Sprache",
+        "Jährlich geprüft",
+        "Schätzungen, keine Beratung"
+      ],
+      "aboutLink": "Mehr über uns und unsere redaktionellen Standards lesen →",
+      "sourcesHeading": "Offizielle Quellen nach Land",
+      "sourcesNote": "Jede Länderseite verlinkt die spezifischen Quellen, die wir für ihre Zahlen verwendet haben.",
+      "disclaimerLabel": "Schätzungen, keine Beratung.",
+      "disclaimer": "IncomeTally stellt Einkommens- und Steuerrechner ausschließlich zu Informations- und Bildungszwecken bereit. Die Ergebnisse sind Schätzungen und spiegeln möglicherweise nicht Ihre tatsächlichen Steuerpflichten oder finanziellen Ergebnisse wider. Diese Website ist mit keiner Regierung oder Steuerbehörde verbunden und bietet keine finanzielle, steuerliche oder rechtliche Beratung. Wenden Sie sich für eine persönliche Beratung stets an eine qualifizierte Fachkraft."
+    },
+    "faqHeading": "Häufig gestellte Fragen",
+    "faqs": [
+      {
+        "question": "Ist die Nutzung von IncomeTally kostenlos?",
+        "answer": "Ja. Jeder Rechner und jeder Ratgeber auf IncomeTally ist kostenlos, und Sie müssen kein Konto anlegen. Ihre Eingaben werden in Ihrem Browser verarbeitet und nicht auf unseren Servern gespeichert."
+      },
+      {
+        "question": "Welche Länder und welches Steuerjahr deckt der Rechner ab?",
+        "answer": "IncomeTally deckt neun Länder ab — die USA, Deutschland, Großbritannien, Polen, Frankreich, Spanien, Italien, Schweden und Portugal — auf Basis der Lohnsteuer- und Sozialabgabenregeln für 2026. Das jeweils geltende Steuerjahr wird bei jedem Rechner angezeigt."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Brutto- und Nettogehalt?",
+        "answer": "Das Bruttogehalt ist Ihr gesamtes Gehalt vor allen Abzügen. Das Nettogehalt — Ihr Auszahlungsbetrag — ist das, was nach Abzug von Lohnsteuer und gesetzlichen Sozialabgaben übrig bleibt. IncomeTally zeigt die vollständige Aufschlüsselung, sodass Sie genau sehen, was abgezogen wird und warum."
+      },
+      {
+        "question": "Wie genau sind die Ergebnisse?",
+        "answer": "Die Rechner verwenden offizielle Steuerstufen, Freibeträge und Abgabensätze für 2026, sind aber Schätzungen. Das tatsächliche Nettogehalt kann je nach persönlichen Umständen variieren, etwa durch zusätzliche Freibeträge, regionale Regeln, Steuerklasse, Sozialleistungen und einmalige Abzüge. Betrachten Sie die Ergebnisse als gut belegte Schätzung, nicht als Steuererklärung."
+      },
+      {
+        "question": "Kann ich zwischen Stunden-, Monats- und Jahreslohn umrechnen?",
+        "answer": "Ja. Geben Sie Ihr Gehalt in einer dieser Perioden ein, und der Rechner rechnet es in alle anderen um und zeigt dann den entsprechenden Nettobetrag an. Unser Tool „Stundenlohn zu Gehalt“ konzentriert sich speziell auf Lohnumrechnungen, falls Sie nur das benötigen."
+      },
+      {
+        "question": "Woher stammen Ihre Steuerzahlen, und gibt IncomeTally Finanzberatung?",
+        "answer": "Unsere Zahlen stammen von den offiziellen Steuer- und Sozialversicherungsbehörden jedes Landes, etwa dem IRS und der SSA, HMRC sowie dem deutschen Bundesfinanzministerium, und jede Länderseite verlinkt die spezifischen Quellen, die wir verwendet haben. IncomeTally ist ausschließlich ein Informationstool: Es bietet keine finanzielle, steuerliche oder rechtliche Beratung und ist mit keiner Regierung oder Steuerbehörde verbunden. Für Entscheidungen über Ihre Steuern oder Finanzen wenden Sie sich an eine qualifizierte Fachkraft."
+      }
+    ]
   }
 }
