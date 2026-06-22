@@ -35,6 +35,17 @@ async function main() {
   const CHUNK = 10000;
   for (let i = 0; i < urlList.length; i += CHUNK) {
     const chunk = urlList.slice(i, i + CHUNK);
+    await submitChunk(chunk);
+  }
+}
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function submitChunk(chunk) {
+  // Retry transient responses: 403 SiteVerificationNotCompleted (key not yet
+  // verified after first setup) and 429 Too Many Requests.
+  const maxAttempts = 6;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     const res = await fetch(ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
@@ -42,10 +53,17 @@ async function main() {
     });
     const text = await res.text();
     console.log(`  -> ${res.status} ${res.statusText} ${text ? '· ' + text.slice(0, 200) : ''}`);
-    if (res.status !== 200 && res.status !== 202) {
-      console.error('IndexNow submission was not accepted. See status/reason above.');
-      process.exitCode = 1;
+    if (res.status === 200 || res.status === 202) return;
+    const transient = res.status === 429 || /SiteVerificationNotCompleted/i.test(text);
+    if (transient && attempt < maxAttempts) {
+      const wait = Math.min(60, 10 * attempt);
+      console.log(`  (transient; retrying in ${wait}s — attempt ${attempt + 1}/${maxAttempts})`);
+      await sleep(wait * 1000);
+      continue;
     }
+    console.error('IndexNow submission was not accepted. See status/reason above.');
+    process.exitCode = 1;
+    return;
   }
 }
 
