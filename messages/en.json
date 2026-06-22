@@ -511,5 +511,157 @@
       "editorialLink": "editorial standards",
       "editorialSuffix": "for how we research and update this data."
     }
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Salary & Tax Calculator — Estimate Your Net Income",
+      "description": "Free salary tax calculator. Enter your gross income to estimate net pay, income tax, and social contributions for the US, Germany, and the UK in 2026.",
+      "ogDescription": "Free salary tax calculator. Estimate net pay, income tax, and social contributions for the US, Germany, and the UK."
+    },
+    "title": "Salary & Tax Calculator",
+    "intro": "Estimate your net income (take-home pay) after income tax and social contributions. Enter your gross salary, choose your country and pay period, and get an instant breakdown for the 2026 tax year.",
+    "howItWorks": {
+      "heading": "How the Calculator Works",
+      "p1": "Our calculator converts your gross income into estimated take-home pay using up-to-date tax brackets and social contribution rates for each supported country. You can enter income as an hourly rate, a monthly salary, or an annual figure, and the calculator annualizes it before applying the relevant tax rules.",
+      "p2": "The breakdown separates income tax from social contributions — such as Social Security and Medicare in the United States, statutory insurance contributions in Germany, and National Insurance in the United Kingdom — so you can see exactly where your money goes and what your effective tax rate is.",
+      "p3": "Results are estimates for informational and planning purposes only and do not account for every individual circumstance, such as state and local taxes, tax credits, or benefits in kind. For advice specific to your situation, consult a qualified tax professional."
+    },
+    "related": {
+      "heading": "Explore Country-Specific Calculators",
+      "hub": "Salary Calculator Hub",
+      "us": "United States Salary Calculator",
+      "de": "Germany Salary Calculator",
+      "uk": "United Kingdom Salary Calculator",
+      "hourly": "Hourly to Salary Converter",
+      "guides": "Salary & Tax Guides"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Net Salary Calculator - Calculate Your Take-Home Pay",
+      "description": "Free net salary calculator. Work out your take-home pay after income tax and social contributions for the US, Germany, and the UK."
+    },
+    "title": "Net Salary Calculator",
+    "intro": "Calculate your net income (take-home pay) after taxes and social contributions. Our comprehensive salary calculator helps you understand exactly how much you'll receive after all deductions.",
+    "cta": "Go to Salary Calculator Hub →",
+    "breakdownIntro": "Our salary calculator provides detailed breakdowns of:",
+    "breakdown": {
+      "gross": "Gross income (before taxes)",
+      "incomeTax": "Income tax calculations",
+      "social": "Social security contributions",
+      "net": "Net income (take-home pay)",
+      "effectiveRate": "Effective tax rates"
+    },
+    "availability": "Available for multiple countries including the United States, Germany, and the United Kingdom. Select your country to get started with accurate, up-to-date tax calculations for 2026.",
+    "specialized": "You can also access our specialized calculators:",
+    "links": {
+      "hourly": "Hourly to Salary Converter",
+      "us": "US Calculator",
+      "de": "Germany Calculator",
+      "uk": "UK Calculator"
+    },
+    "explainer": {
+      "heading": "What Is Net Salary?",
+      "p1": "Your <b>net salary</b> — often called take-home pay — is the amount that actually reaches your bank account after mandatory deductions are removed from your gross salary. Gross salary is the headline figure in your employment contract; net salary is what you can budget and spend.",
+      "p2": "The gap between the two is made up of <b>income tax</b> and <b>social contributions</b>. Income tax is usually progressive, meaning higher portions of your income are taxed at higher rates. Social contributions fund programs such as state pensions, healthcare, and unemployment insurance, and the exact rates depend on where you live.",
+      "p3": "Because every country calculates these deductions differently, the same gross salary can produce very different take-home pay in the United States, Germany, or the United Kingdom. Choose your country above to see a detailed, country-specific breakdown for the 2026 tax year."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Hourly to Salary Converter - Calculate Annual, Monthly & Weekly Income",
+      "description": "Convert hourly wage to annual, monthly, and weekly salary. Free calculator with formulas and examples. Perfect for job negotiations and salary comparisons.",
+      "ogDescription": "Convert hourly wage to annual, monthly, and weekly salary. Free calculator with formulas and examples."
+    },
+    "title": "Hourly to Salary Converter",
+    "intro": "Convert your hourly wage to annual, monthly, weekly, and daily salary. Understand your total compensation when negotiating job offers or comparing positions.",
+    "calc": {
+      "heading": "Calculate Your Net Income",
+      "intro": "Enter your hourly rate below to calculate your gross and net income. The calculator is pre-set to hourly mode and will show your take-home pay after taxes."
+    },
+    "formulas": {
+      "heading": "Conversion Formulas",
+      "annual": {
+        "title": "Annual Salary from Hourly Rate",
+        "code": "Annual Salary = Hourly Rate × Hours per Week × Weeks per Year",
+        "note": "Standard calculation: Multiply your hourly rate by 40 hours per week and 52 weeks per year."
+      },
+      "monthly": {
+        "title": "Monthly Salary",
+        "code": "Monthly Salary = Annual Salary ÷ 12",
+        "note": "Divide annual salary by 12 months. Note: This gives an average monthly amount; actual monthly pay may vary if paid bi-weekly or semi-monthly."
+      },
+      "weekly": {
+        "title": "Weekly Salary",
+        "code": "Weekly Salary = Hourly Rate × Hours per Week",
+        "note": "Simply multiply your hourly rate by the number of hours you work per week."
+      },
+      "daily": {
+        "title": "Daily Salary",
+        "code": "Daily Salary = Hourly Rate × Hours per Day",
+        "note": "For an 8-hour workday, multiply your hourly rate by 8."
+      },
+      "grossNote": "<b>Note:</b> These formulas calculate gross (pre-tax) income. Use the calculator below to see your net (take-home) pay after taxes and deductions."
+    },
+    "examples": {
+      "heading": "Examples",
+      "annualGross": "Annual Gross:",
+      "monthlyGross": "Monthly Gross:",
+      "weeklyGross": "Weekly Gross:",
+      "dailyGross": "Daily Gross",
+      "ex1": {
+        "title": "Example 1: $25 per hour, 40 hours/week, 52 weeks/year",
+        "annual": "<b>Annual Gross:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Monthly Gross:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Weekly Gross:</b> $25 × 40 = $1,000",
+        "daily": "<b>Daily Gross (8 hours):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Example 2: $30 per hour, 35 hours/week, 50 weeks/year",
+        "annual": "<b>Annual Gross:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Monthly Gross:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Weekly Gross:</b> $30 × 35 = $1,050",
+        "daily": "<b>Daily Gross (7 hours):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Example 3: $20 per hour, 40 hours/week, 48 weeks/year (with 4 weeks unpaid time off)",
+        "annual": "<b>Annual Gross:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Monthly Gross:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Weekly Gross:</b> $20 × 40 = $800",
+        "note": "Note: Adjusting weeks per year accounts for unpaid time off, vacation, or seasonal work."
+      }
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What's the difference between gross and net salary?",
+          "answer": "Gross salary is your total earnings before taxes and deductions. Net salary (take-home pay) is what you receive after income tax, social security, and other mandatory deductions are subtracted. The calculator above shows both gross and net amounts."
+        },
+        {
+          "question": "How many weeks should I use in the calculation?",
+          "answer": "The standard is 52 weeks per year for full-time employees. However, if you have unpaid time off, work seasonally, or take extended leave, adjust accordingly. For example, 2 weeks of unpaid vacation would mean 50 weeks per year."
+        },
+        {
+          "question": "Should I include overtime in my hourly rate?",
+          "answer": "For accurate annual salary calculations, use your base hourly rate and standard hours. If you regularly work overtime, you can either: (1) calculate base salary separately and add estimated overtime, or (2) use an average hourly rate that accounts for overtime. The calculator allows you to adjust hours per week to reflect your actual schedule."
+        },
+        {
+          "question": "How do I convert salary back to hourly rate?",
+          "answer": "To convert annual salary to hourly: Hourly Rate = Annual Salary ÷ (Hours per Week × Weeks per Year). For example, $52,000 ÷ (40 × 52) = $25 per hour. Use our calculator in reverse by entering your annual salary and selecting yearly mode."
+        }
+      ],
+      "countriesQuestion": "Are these calculations accurate for all countries?",
+      "countriesAnswer": "The conversion formulas (hourly to annual, monthly, etc.) are universal. However, net income calculations vary by country due to different tax systems. Use the country-specific calculators on our <link>Salary Calculator Hub</link> for accurate net income estimates.",
+      "partTimeQuestion": "What if I work part-time or have irregular hours?",
+      "partTimeAnswer": "For part-time work, enter your actual hours per week. For irregular hours, calculate an average weekly hours over a longer period (e.g., 3-6 months) and use that. The calculator allows custom hours per week and weeks per year to match any work schedule."
+    },
+    "related": {
+      "heading": "Related Resources",
+      "hub": "Salary Calculator Hub",
+      "us": "US Salary Calculator",
+      "de": "Germany Salary Calculator",
+      "uk": "UK Salary Calculator"
+    }
   }
 }
