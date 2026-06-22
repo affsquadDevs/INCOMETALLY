@@ -1,1 +1,602 @@
-{}
+{
+  "how-to-calculate-net-salary": {
+    "title": "Comment calculer le salaire net : guide complet",
+    "description": "Apprenez à calculer votre salaire net à partir du revenu brut. Comprenez les déductions, les impôts et le calcul du salaire net à percevoir pour une budgétisation précise.",
+    "content": "# Comment calculer le salaire net : guide complet\n\nCalculer votre salaire net est essentiel pour comprendre votre revenu réellement perçu. Ce guide explique le processus étape par étape.\n\n## Comprendre le salaire brut et le salaire net\n\nLe **salaire brut** correspond à l'ensemble de vos revenus avant toute déduction. C'est le montant convenu dans votre contrat de travail.\n\nLe **salaire net** (aussi appelé revenu à percevoir) est ce que vous recevez après toutes les déductions, notamment :\n- L'impôt sur le revenu\n- Les cotisations de sécurité sociale\n- L'assurance maladie\n- Les autres déductions obligatoires\n\n## Calcul étape par étape\n\n### Étape 1 : Déterminer votre revenu brut\n\nCommencez par votre revenu brut annuel, mensuel ou horaire. C'est votre point de départ.\n\n### Étape 2 : Calculer le revenu imposable\n\nSoustrayez les abattements ou déductions de votre revenu brut :\n- L'abattement standard ou l'abattement personnel\n- Les cotisations avant impôt (401(k), primes d'assurance maladie)\n\n### Étape 3 : Appliquer l'impôt sur le revenu\n\nCalculez l'impôt sur le revenu en fonction des tranches d'imposition progressives. Les différentes portions de votre revenu sont imposées à des taux différents.\n\n### Étape 4 : Soustraire les cotisations de sécurité sociale\n\nDéduisez les cotisations de sécurité sociale, qui varient selon les pays :\n- **États-Unis** : Social Security (6,2 %) et Medicare (1,45 %)\n- **Allemagne** : assurance maladie, retraite, chômage et dépendance\n- **Royaume-Uni** : cotisations National Insurance\n\n### Étape 5 : Calculer le revenu net\n\nRevenu net = Revenu brut - Impôt sur le revenu - Cotisations de sécurité sociale\n\n## Utiliser notre calculateur\n\nNotre calculateur de salaire automatise ce processus. Saisissez simplement votre revenu brut, sélectionnez votre pays et obtenez une estimation instantanée de votre revenu net.\n\n## Remarques importantes\n\n- Ces calculs sont des estimations basées sur des scénarios standard\n- Le revenu réellement perçu peut varier selon votre situation personnelle\n- Consultez un professionnel de la fiscalité pour des conseils personnalisés",
+    "keywords": [
+      "salaire net",
+      "revenu à percevoir",
+      "calcul du salaire",
+      "brut vs net",
+      "déductions fiscales"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Quelle est la différence entre le salaire brut et le salaire net ?",
+        "answer": "Le salaire brut correspond à l'ensemble de vos revenus avant déductions. Le salaire net est le revenu que vous percevez après soustraction de l'impôt sur le revenu, de la sécurité sociale et des autres déductions obligatoires."
+      },
+      {
+        "question": "Quelle est la précision des calculs de salaire net ?",
+        "answer": "Nos calculs sont des estimations basées sur des taux et des tranches d'imposition standard. Le revenu réellement perçu peut varier selon votre situation personnelle, vos déductions, vos crédits d'impôt et les taxes locales."
+      },
+      {
+        "question": "Puis-je calculer le salaire net pour différents modes de revenu ?",
+        "answer": "Oui, vous pouvez calculer le salaire net à partir d'un revenu brut horaire, mensuel ou annuel. Le calculateur annualise votre revenu et applique les calculs fiscaux appropriés."
+      }
+    ]
+  },
+  "understanding-tax-brackets": {
+    "title": "Comprendre les tranches d'imposition : comment fonctionne l'imposition progressive",
+    "description": "Découvrez comment fonctionnent les tranches d'imposition progressives et comment elles influencent votre salaire net. Comprenez la différence entre taux d'imposition marginal et effectif.",
+    "content": "# Comprendre les tranches d'imposition : comment fonctionne l'imposition progressive\n\nLes tranches d'imposition constituent un élément fondamental des systèmes d'impôt sur le revenu dans la plupart des pays. Ce guide explique comment elles fonctionnent.\n\n## Que sont les tranches d'imposition ?\n\nLes tranches d'imposition sont des plages de revenus imposées à des taux différents. À mesure que votre revenu augmente, différentes portions sont imposées à des taux progressivement plus élevés.\n\n## Comment fonctionne l'imposition progressive\n\nDans un système d'imposition progressif :\n- Les revenus les plus bas sont imposés à des taux plus faibles\n- Les revenus les plus élevés sont imposés à des taux plus élevés\n- Seul le revenu situé à l'intérieur de chaque tranche est imposé au taux de cette tranche\n\n## Exemple de calcul\n\nSi vous gagnez 75 000 $ et que les tranches sont les suivantes :\n- 10 % sur les revenus jusqu'à 10 000 $\n- 20 % sur les revenus de 10 001 $ à 40 000 $\n- 30 % sur les revenus supérieurs à 40 000 $\n\nVotre impôt serait :\n- 10 000 $ × 10 % = 1 000 $\n- 30 000 $ × 20 % = 6 000 $\n- 35 000 $ × 30 % = 10 500 $\n- Total : 17 500 $\n\n## Taux marginal d'imposition vs taux effectif d'imposition\n\nLe **taux marginal d'imposition** est le taux appliqué à votre tranche de revenu la plus élevée (30 % dans l'exemple ci-dessus).\n\nLe **taux effectif d'imposition** correspond à votre impôt total divisé par votre revenu total (17 500 $ ÷ 75 000 $ = 23,3 % dans l'exemple).\n\n## Informations spécifiques par pays\n\nLes tranches d'imposition varient selon les pays :\n- **États-Unis** : 7 tranches fédérales allant de 10 % à 37 %\n- **Allemagne** : taux progressifs de 14 % à 45 %\n- **Royaume-Uni** : taux de base (20 %), taux supérieur (40 %), taux additionnel (45 %)\n\nUtilisez nos calculateurs spécifiques à chaque pays pour voir comment les tranches s'appliquent à votre revenu.",
+    "keywords": [
+      "tranches d'imposition",
+      "impôt progressif",
+      "taux marginal d'imposition",
+      "taux effectif d'imposition",
+      "impôt sur le revenu"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Qu'est-ce qu'un taux marginal d'imposition ?",
+        "answer": "Votre taux marginal d'imposition est le taux appliqué à votre tranche de revenu la plus élevée. Il représente le taux d'imposition sur votre prochain dollar de revenu."
+      },
+      {
+        "question": "Qu'est-ce qu'un taux effectif d'imposition ?",
+        "answer": "Votre taux effectif d'imposition est le pourcentage de votre revenu total versé en impôts. Il se calcule en divisant l'impôt total par le revenu total et il est généralement inférieur à votre taux marginal."
+      },
+      {
+        "question": "Est-ce que je paie le taux d'imposition le plus élevé sur l'ensemble de mes revenus ?",
+        "answer": "Non. Dans les systèmes d'imposition progressifs, seul le revenu situé à l'intérieur de chaque tranche est imposé au taux de cette tranche. Les portions inférieures de votre revenu sont imposées à des taux plus faibles."
+      }
+    ]
+  },
+  "hourly-to-salary-conversion": {
+    "title": "Conversion du taux horaire en salaire : guide complet",
+    "description": "Convertissez un taux horaire en salaire annuel, mensuel et hebdomadaire. Découvrez les formules et utilisez notre calculatrice gratuite.",
+    "content": "# Conversion du taux horaire en salaire : guide complet\n\nConvertir un taux horaire en salaire vous aide à comprendre votre rémunération totale et à comparer les offres d'emploi.\n\n## Formules de conversion de base\n\n### Salaire annuel à partir du taux horaire\n\n```\nSalaire annuel = Taux horaire × Heures par semaine × Semaines par an\n```\n\n**Calcul standard** : 25 $/heure × 40 heures/semaine × 52 semaines/an = 52 000 $/an\n\n### Salaire mensuel\n\n```\nSalaire mensuel = Salaire annuel ÷ 12\n```\n\n**Exemple** : 52 000 $ ÷ 12 = 4 333,33 $/mois\n\n### Salaire hebdomadaire\n\n```\nSalaire hebdomadaire = Taux horaire × Heures par semaine\n```\n\n**Exemple** : 25 $/heure × 40 heures = 1 000 $/semaine\n\n## Ajuster pour le travail à temps partiel\n\nPour les horaires à temps partiel ou irréguliers, ajustez le calcul :\n\n**Exemple** : 30 $/heure × 35 heures/semaine × 50 semaines/an = 52 500 $/an\n\nCela prend en compte :\n- Moins d'heures par semaine\n- Les congés ou vacances non rémunérés\n\n## Facteurs à prendre en compte\n\n### Heures par semaine\n- Temps plein : généralement 40 heures\n- Temps partiel : variable (souvent 20 à 30 heures)\n- Heures supplémentaires : peuvent nécessiter un calcul distinct\n\n### Semaines par an\n- Standard : 52 semaines\n- Avec congés : 50 à 51 semaines (congés non rémunérés)\n- Travail saisonnier : variable selon le secteur\n\n### Considérations sur les heures supplémentaires\n\nSi vous faites régulièrement des heures supplémentaires :\n1. Calculez le salaire de base séparément\n2. Ajoutez les gains estimés liés aux heures supplémentaires\n3. Ou utilisez un taux horaire moyen qui inclut les heures supplémentaires\n\n## Utiliser notre calculatrice\n\nNotre convertisseur de taux horaire en salaire automatise ces calculs et affiche à la fois le revenu brut et le revenu net après impôts.",
+    "keywords": [
+      "taux horaire en salaire",
+      "conversion de salaire",
+      "taux horaire",
+      "salaire annuel",
+      "calculatrice de salaire"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Comment convertir un taux horaire en salaire annuel ?",
+        "answer": "Multipliez votre taux horaire par le nombre d'heures par semaine, puis par le nombre de semaines par an. Calcul standard : Taux horaire × 40 × 52 = Salaire annuel."
+      },
+      {
+        "question": "Dois-je inclure les heures supplémentaires dans mon taux horaire ?",
+        "answer": "Pour obtenir un salaire de base précis, utilisez votre taux horaire de base. Si vous faites régulièrement des heures supplémentaires, calculez-les séparément ou utilisez un taux moyen qui tient compte des heures supplémentaires."
+      },
+      {
+        "question": "Combien de semaines dois-je utiliser dans le calcul ?",
+        "answer": "Utilisez 52 semaines pour les employés à temps plein. Ajustez à 50 ou 51 semaines si vous avez des congés non rémunérés, ou utilisez moins de semaines pour le travail saisonnier."
+      }
+    ]
+  },
+  "tax-deductions-explained": {
+    "title": "Les déductions fiscales expliquées : ce qui réduit votre revenu imposable",
+    "description": "Comprenez les déductions fiscales, les abattements et comment ils réduisent votre revenu imposable. Découvrez la différence entre la déduction standard et les déductions détaillées.",
+    "content": "# Les déductions fiscales expliquées : ce qui réduit votre revenu imposable\n\nLes déductions fiscales réduisent votre revenu imposable, ce qui peut diminuer votre charge fiscale. Ce guide explique leur fonctionnement.\n\n## Que sont les déductions fiscales ?\n\nLes déductions fiscales sont des dépenses ou des abattements qui réduisent votre revenu imposable. Un revenu imposable plus faible signifie des impôts plus faibles.\n\n## Types de déductions\n\n### Déduction standard\n\nUn montant fixe qui réduit le revenu imposable sans avoir à détailler les dépenses. Disponible pour tous les contribuables.\n\n**Avantages** :\n- Simple à demander\n- Aucun justificatif requis\n- Réduction d'impôt garantie\n\n### Déductions détaillées\n\nDes dépenses spécifiques que vous pouvez déduire si elles dépassent le montant de la déduction standard.\n\n**Déductions détaillées courantes** :\n- Intérêts hypothécaires\n- Impôts d'État et locaux\n- Dons à des organismes caritatifs\n- Frais médicaux (au-delà d'un seuil)\n- Taxes foncières\n\n## Comment fonctionnent les déductions\n\n**Exemple** :\n- Revenu brut : 75 000 $\n- Déduction standard : 14 600 $\n- Revenu imposable : 75 000 $ - 14 600 $ = 60 400 $\n\nVous payez des impôts sur 60 400 $, et non sur 75 000 $.\n\n## Informations par pays\n\n### États-Unis\n- La déduction standard varie selon le statut de déclaration\n- Vous pouvez choisir la déduction standard ou les déductions détaillées (selon ce qui est le plus élevé)\n- De nombreuses déductions sont supprimées progressivement pour les hauts revenus\n\n### Allemagne\n- Abattement personnel (Grundfreibetrag) pour tous les contribuables\n- Déductions supplémentaires pour les enfants et les dépenses spéciales\n- La classe d'imposition affecte la retenue à la source, pas la charge fiscale finale\n\n### Royaume-Uni\n- Abattement personnel pour tous les contribuables\n- Abattement pour les couples mariés éligibles\n- Les cotisations de retraite bénéficient d'un allègement fiscal\n\n## Maximiser vos déductions\n\n1. **Connaissez vos options** : comprenez la différence entre déduction standard et déductions détaillées\n2. **Suivez vos dépenses** : conservez les justificatifs des dépenses déductibles\n3. **Planifiez vos dépenses** : tenez compte du moment des paiements déductibles\n4. **Consultez des professionnels** : les conseillers fiscaux peuvent identifier des déductions supplémentaires\n\n## Points importants\n\n- Les déductions réduisent le revenu imposable, et non directement l'impôt\n- Les crédits d'impôt (différents des déductions) réduisent l'impôt dollar pour dollar\n- Les règles varient selon les pays et changent chaque année\n- Consultez un professionnel de la fiscalité pour des conseils personnalisés",
+    "keywords": [
+      "déductions fiscales",
+      "déduction standard",
+      "revenu imposable",
+      "abattements",
+      "économies d'impôt"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Quelle est la différence entre une déduction et un crédit ?",
+        "answer": "Une déduction réduit votre revenu imposable, tandis qu'un crédit réduit directement votre charge fiscale. Les crédits sont généralement plus avantageux que les déductions."
+      },
+      {
+        "question": "Devrais-je prendre la déduction standard ou détailler mes déductions ?",
+        "answer": "Prenez celle qui est la plus élevée. Si vos déductions détaillées dépassent la déduction standard, détaillez-les. Sinon, prenez la déduction standard."
+      },
+      {
+        "question": "Les déductions s'appliquent-elles à tous les pays ?",
+        "answer": "Oui, mais les déductions et abattements spécifiques varient selon les pays. Chaque pays dispose de son propre système de réduction du revenu imposable."
+      }
+    ]
+  },
+  "social-security-contributions-guide": {
+    "title": "Cotisations sociales : ce qu'il faut savoir",
+    "description": "Comprenez les cotisations sociales dans différents pays. Découvrez comment elles influent sur votre salaire net et quelles prestations elles financent.",
+    "content": "# Cotisations sociales : ce qu'il faut savoir\n\nLes cotisations sociales financent des prestations publiques comme les retraites, la santé et l'assurance chômage. Ce guide explique leur fonctionnement.\n\n## Que sont les cotisations sociales ?\n\nLes cotisations sociales sont des versements obligatoires qui financent des prestations publiques. Elles sont distinctes de l'impôt sur le revenu et généralement réparties entre l'employeur et le salarié.\n\n## États-Unis : les taxes FICA\n\n### Taxe Social Security\n- Taux : 6,2 % du salaire\n- Plafond : s'applique uniquement jusqu'à l'assiette salariale de la Social Security\n- Objectif : finance les prestations de retraite et d'invalidité\n\n### Taxe Medicare\n- Taux : 1,45 % de l'ensemble du salaire (sans plafond)\n- Supplément : surtaxe de 0,9 % pour les hauts revenus\n- Objectif : finance les soins de santé des seniors\n\n**Total FICA** : 7,65 % pour la plupart des salariés (6,2 % + 1,45 %)\n\n## Allemagne : le système de sécurité sociale\n\n### Composantes\n1. **Assurance maladie** (Krankenversicherung)\n   - Obligatoire pour les salariés en dessous d'un seuil de revenu\n   - Partagée à parts égales (50/50) avec l'employeur\n\n2. **Assurance retraite** (Rentenversicherung)\n   - Finance le système de retraite public\n   - Partagée à parts égales (50/50) avec l'employeur\n\n3. **Assurance chômage** (Arbeitslosenversicherung)\n   - Verse les allocations chômage\n   - Partagée à parts égales (50/50) avec l'employeur\n\n4. **Assurance dépendance** (Pflegeversicherung)\n   - Couvre les services de soins et de dépendance\n   - Partagée à parts égales (50/50) avec l'employeur\n\n## Royaume-Uni : la National Insurance\n\n### Cotisations de classe 1 (salariés)\n- Calculées par période de paie (hebdomadaire/mensuelle)\n- Taux principal entre le seuil primaire (primary threshold) et la limite supérieure de revenus (upper earnings limit)\n- Taux réduit au-delà de la limite supérieure\n- Financent : la retraite de l'État, le NHS, les allocations chômage\n\n## Comment les cotisations influent sur le salaire net\n\nLes cotisations sociales réduisent directement votre revenu net :\n\n**Exemple (États-Unis)** :\n- Salaire brut : 75 000 $\n- FICA (7,65 %) : -5 737,50 $\n- Net avant impôt sur le revenu : 69 262,50 $\n\n## Prestations financées\n\nLes cotisations financent :\n- Les pensions de retraite\n- Les systèmes de santé\n- Les allocations chômage\n- Les prestations d'invalidité\n- La dépendance (dans certains pays)\n\n## Points importants\n\n- Les cotisations sont obligatoires pour les salariés\n- Les taux et les seuils changent chaque année\n- L'employeur verse généralement une cotisation équivalente à celle du salarié\n- L'admissibilité aux prestations dépend de l'historique de cotisation\n- Les travailleurs indépendants paient des taux plus élevés",
+    "keywords": [
+      "sécurité sociale",
+      "cotisations sociales",
+      "FICA",
+      "National Insurance",
+      "cotisations de retraite"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Les cotisations sociales sont-elles la même chose que l'impôt sur le revenu ?",
+        "answer": "Non. Les cotisations sociales sont distinctes de l'impôt sur le revenu et financent des prestations publiques précises comme les retraites et la santé. Elles sont calculées différemment et ont des taux différents."
+      },
+      {
+        "question": "Récupère-t-on l'argent versé au titre des cotisations sociales ?",
+        "answer": "Pas directement. Les cotisations financent des prestations publiques dont vous pourrez bénéficier plus tard, comme les pensions de retraite, les soins de santé et les allocations chômage. L'admissibilité dépend de votre historique de cotisation."
+      },
+      {
+        "question": "De combien les cotisations sociales réduisent-elles mon salaire net ?",
+        "answer": "Cela varie selon les pays. Aux États-Unis, les taxes FICA représentent 7,65 % du salaire (jusqu'au plafond de la Social Security). En Allemagne et au Royaume-Uni, les taux varient selon le revenu et sont généralement partagés avec l'employeur."
+      }
+    ]
+  },
+  "salary-negotiation-tips": {
+    "title": "Conseils pour négocier son salaire : utiliser le calcul du revenu net",
+    "description": "Découvrez comment utiliser le calcul du salaire net lors de vos négociations salariales. Comprenez votre véritable salaire net avant d'accepter une offre.",
+    "content": "# Conseils pour négocier son salaire : utiliser le calcul du revenu net\n\nComprendre votre revenu net est essentiel pour mener des négociations salariales efficaces. Ce guide vous montre comment utiliser les calculs à votre avantage.\n\n## Pourquoi le revenu net est important\n\nLes chiffres du salaire brut peuvent être trompeurs. Une différence de 5 000 $ sur le salaire brut peut ne représenter que 3 500 $ de revenu net après impôts.\n\n## Avant de négocier\n\n### 1. Calculez votre revenu net actuel\n\nUtilisez notre calculateur pour déterminer votre salaire net actuel. C'est votre point de référence.\n\n### 2. Calculez le revenu net de l'offre\n\nSaisissez le salaire brut proposé pour voir votre salaire net réel. Comparez-le à votre situation actuelle.\n\n### 3. Prenez en compte tous les facteurs\n\n- Les différences fiscales entre les lieux\n- Les ajustements liés au coût de la vie\n- La valeur des avantages (assurance santé, retraite)\n- Les frais de transport\n- L'équilibre entre vie professionnelle et vie privée\n\n## Stratégies de négociation\n\n### Utilisez le revenu net dans les discussions\n\nAu lieu de : « J'ai besoin de 10 000 $ de plus »\nDites : « Après impôts, cette offre me laisserait X $ de salaire net, soit Y $ de moins que ma situation actuelle »\n\n### Tenez compte des différences fiscales\n\nDéménager dans un autre État ou pays peut considérablement affecter le revenu net :\n- Les États à forte fiscalité réduisent le salaire net\n- Certains États n'ont pas d'impôt sur le revenu\n- Les déménagements internationaux impliquent des systèmes fiscaux différents\n\n### Intégrez les avantages dans votre calcul\n\nLes avantages peuvent valoir des milliers :\n- Les primes d'assurance santé\n- Les cotisations retraite\n- Les congés payés\n- Le développement professionnel\n\n## Erreurs courantes à éviter\n\n1. **Se concentrer uniquement sur le salaire brut**\n   - Calculez toujours le revenu net\n\n2. **Ignorer les différences de lieu**\n   - Un même salaire brut ≠ un même revenu net selon les lieux\n\n3. **Ne pas considérer la rémunération totale**\n   - Les avantages et les à-côtés ont une réelle valeur\n\n4. **Accepter la première offre**\n   - La plupart des employeurs s'attendent à une négociation\n\n## Utiliser nos outils\n\nNos calculateurs vous aident à :\n- Comparer le revenu brut et le revenu net\n- Comprendre les implications fiscales\n- Prendre des décisions éclairées\n- Négocier en position de connaissance\n\n## Après la négociation\n\nUne fois que vous vous êtes mis d'accord sur les conditions :\n1. Vérifiez l'offre par écrit\n2. Confirmez tous les avantages et à-côtés\n3. Comprenez que votre première fiche de paie sera différente (calcul au prorata, retenues différentes)\n4. Planifiez votre budget en fonction du revenu net\n\nN'oubliez pas : la connaissance est un atout dans une négociation. Comprendre votre véritable salaire net vous aide à prendre de meilleures décisions.",
+    "keywords": [
+      "négociation salariale",
+      "revenu net",
+      "offre d'emploi",
+      "rémunération",
+      "salaire net"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Dois-je négocier sur la base du salaire brut ou du salaire net ?",
+        "answer": "Tenez compte des deux, mais concentrez-vous sur le revenu net pour évaluer votre situation financière réelle. Le salaire brut est ce dont discutent les employeurs, mais le revenu net est ce que vous percevez réellement."
+      },
+      {
+        "question": "Comment tenir compte des différences fiscales lors d'une négociation ?",
+        "answer": "Utilisez nos calculateurs pour comparer le revenu net selon les lieux. Prenez en compte les impôts d'État et locaux, le coût de la vie et les autres frais propres à chaque lieu."
+      },
+      {
+        "question": "Que faire si l'employeur refuse d'augmenter le salaire brut ?",
+        "answer": "Envisagez de négocier d'autres avantages : des jours de congé supplémentaires, des modalités de travail flexibles, des possibilités de développement professionnel, ou des primes à l'embauche qui peuvent avoir des implications fiscales différentes."
+      }
+    ]
+  },
+  "gross-income-vs-net-income": {
+    "title": "Revenu brut et revenu net : quelle est la différence ?",
+    "description": "Comprenez la différence entre le revenu brut et le revenu net, pourquoi votre salaire net est inférieur à votre salaire, et comment les impôts façonnent ce que vous gagnez.",
+    "content": "Le revenu est l'un des termes financiers les plus courants — et l'un des plus mal compris. Beaucoup de gens supposent que leur salaire, leur taux horaire ou leur tarif de prestation correspond à ce qu'ils gagnent réellement. En réalité, le montant qui arrive sur votre compte bancaire est généralement très différent du chiffre inscrit dans votre contrat.\n\nCe guide explique ce qu'est le revenu, la différence entre le revenu brut et le revenu net, et pourquoi comprendre cette différence est essentiel lorsque vous comparez des emplois, planifiez vos dépenses ou estimez vos impôts.\n\n## Qu'est-ce que le revenu ?\n\nLe revenu est l'argent que vous gagnez en échange d'un travail, de services ou d'une activité commerciale sur une période donnée. Il peut être perçu à l'heure, à la semaine, au mois ou à l'année, et il peut provenir de :\n\n- un salaire ou des gages d'emploi\n- un travail en freelance ou en prestation\n- une activité indépendante ou commerciale\n- des primes, commissions ou indemnités\n\nCependant, tous les revenus ne sont pas traités de la même manière une fois les impôts et les cotisations obligatoires appliqués.\n\n## Qu'est-ce que le revenu brut ?\n\nLe revenu brut est le montant total que vous gagnez avant l'application de toute déduction. C'est le chiffre que vous voyez habituellement dans les offres d'emploi, sur les contrats de travail, sur les factures de freelances et dans les discussions sur le salaire annuel.\n\nLe revenu brut ne reflète pas ce que vous percevez réellement. Par exemple :\n\n- Salaire annuel brut : 60 000\n- Salaire mensuel brut : 5 000\n\nÀ ce stade, aucun impôt ni aucune cotisation n'a encore été retiré.\n\n## Qu'est-ce que le revenu net ?\n\nLe revenu net — aussi appelé salaire net — est le montant que vous percevez réellement après déductions. Ces déductions comprennent généralement l'impôt sur le revenu, les cotisations de sécurité sociale, l'assurance maladie et les impôts locaux ou régionaux selon le pays.\n\nLe revenu net est l'argent que vous pouvez réellement dépenser, épargner ou investir. Par exemple :\n\n- Revenu mensuel brut : 5 000\n- Déductions totales : 1 600\n- Revenu mensuel net : 3 400\n\nPour un examen plus approfondi du salaire net lui-même, consultez notre guide sur le [salaire net](/guides/what-is-take-home-pay).\n\n## Revenu brut et revenu net : côte à côte\n\n| | Revenu brut | Revenu net |\n|---|---|---|\n| Ce que cela signifie | Gains avant impôts et déductions | Argent perçu après déductions |\n| Où vous le voyez | Contrats, offres d'emploi, comparaisons | Votre compte bancaire et votre budget |\n| Idéal pour | Comparer des postes et le salaire affiché | Dépenses courantes, épargne, planification |\n\nCette différence explique pourquoi deux personnes ayant le même salaire brut peuvent avoir un salaire net très différent.\n\n## Pourquoi le revenu brut est souvent trompeur\n\nLe revenu brut est utile pour les comparaisons standard, mais il peut être trompeur car les taux d'imposition diffèrent selon les pays, les cotisations sociales varient, la situation fiscale compte, et les avantages et déductions modifient le résultat. C'est pourquoi le revenu net est le chiffre le plus pratique pour les décisions de la vie réelle.\n\n## Comment les impôts affectent votre revenu\n\nLes impôts sont la principale raison pour laquelle le revenu brut et le revenu net diffèrent. La plupart des systèmes fiscaux appliquent des tranches d'imposition progressives (les revenus plus élevés sont imposés à des taux plus élevés), des cotisations sociales obligatoires et des déductions fixes ou plafonnées. Pour cette raison, augmenter votre revenu brut n'augmente pas toujours votre revenu net dans la même proportion. Notre guide sur le [fonctionnement de l'impôt sur le revenu](/guides/how-income-tax-works) l'explique en termes simples.\n\n## Comment calculer le revenu brut et le revenu net\n\nVous pouvez calculer le revenu manuellement, mais cela devient vite complexe une fois les impôts entrés en jeu. Une approche plus simple consiste à :\n\n1. Partir de votre revenu brut.\n2. Appliquer les règles fiscales propres au pays.\n3. Soustraire les cotisations et les déductions.\n4. Obtenir votre revenu net.\n\nC'est exactement ce que le [calculateur de salaire](/salary-calculator) d'IncomeTally est conçu pour faire — estimer le revenu sur différentes périodes de paie et dans différents pays à l'aide d'hypothèses transparentes. Si vous êtes payé à l'heure ou souhaitez basculer entre les périodes de paie, consultez [comment convertir un revenu horaire, mensuel et annuel](/guides/how-to-convert-income-pay-periods).\n\n## Pourquoi comprendre le revenu est important\n\nConnaître la différence entre le revenu brut et le revenu net vous aide à comparer les offres d'emploi avec précision, à éviter les déceptions salariales, à planifier votre budget mensuel, à comprendre votre véritable pouvoir d'achat et à estimer vos impôts de manière plus réaliste. C'est particulièrement important pour les freelances, les travailleurs à distance et les personnes qui s'installent dans un autre pays.\n\n## Réflexions finales\n\nLe revenu est bien plus qu'un chiffre sur un contrat. Comprendre le revenu brut par rapport au revenu net vous donne une image plus claire de ce que vous gagnez vraiment et de ce que vous pouvez réellement vous permettre. Avant de prendre des décisions financières, regardez toujours au-delà du salaire affiché et concentrez-vous sur le salaire net. Les taux et les règles évoluent avec le temps et varient selon les pays, alors considérez les estimations comme une indication et consultez un professionnel qualifié lorsque cela compte.",
+    "keywords": [
+      "revenu brut",
+      "revenu net",
+      "brut vs net",
+      "salaire net",
+      "impôt sur le revenu",
+      "déductions"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Impôt sur le revenu",
+        "url": "https://www.gov.uk/income-tax"
+      },
+      {
+        "label": "IRS — Tax Topic 751 (retenue Social Security et Medicare)",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "GOV.UK — National Insurance",
+        "url": "https://www.gov.uk/national-insurance"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Quelle est la différence entre le revenu brut et le revenu net ?",
+        "answer": "Le revenu brut correspond à vos gains avant déductions. Le revenu net est ce que vous percevez réellement une fois les impôts et les cotisations soustraits."
+      },
+      {
+        "question": "Pourquoi mon revenu net est-il bien inférieur à mon salaire brut ?",
+        "answer": "Les impôts, la sécurité sociale et d'autres cotisations obligatoires réduisent le revenu brut — parfois de façon importante, selon votre pays et votre niveau de revenu."
+      },
+      {
+        "question": "Quel revenu dois-je utiliser pour établir mon budget ?",
+        "answer": "Le revenu net, car il reflète l'argent dont vous disposez réellement pour dépenser, épargner ou investir."
+      },
+      {
+        "question": "Le revenu net est-il le même dans tous les pays ?",
+        "answer": "Non. Les systèmes fiscaux diffèrent considérablement, c'est pourquoi le revenu net varie même pour un salaire brut identique."
+      }
+    ]
+  },
+  "how-to-convert-income-pay-periods": {
+    "title": "Comment convertir correctement un revenu horaire, mensuel et annuel",
+    "description": "Apprenez à convertir correctement un revenu horaire, hebdomadaire, mensuel et annuel — les formules standard, les hypothèses qui les sous-tendent et les erreurs à éviter.",
+    "content": "# Comment convertir correctement un revenu horaire, mensuel et annuel\n\nLe revenu se présente sous plusieurs formes — horaire, hebdomadaire, mensuel et annuel — et, à un moment donné, vous aurez besoin de convertir l'une en l'autre. Peut-être comparez-vous un contrat horaire avec une offre salariée, ou cherchez-vous à savoir ce qu'un salaire mensuel représente sur une année. Le calcul semble simple, mais quelques hypothèses courantes peuvent fausser vos chiffres.\n\nCe guide explique les formules standard, les hypothèses qui les sous-tendent et les erreurs à éviter.\n\n## Les périodes de paie courantes\n\nLe revenu est généralement exprimé de l'une de ces quatre manières :\n\n- Horaire : un montant par heure travaillée, courant pour le travail à temps partiel, posté et sous contrat.\n- Hebdomadaire : un total versé chaque semaine, souvent pour des postes temporaires.\n- Mensuel : courant pour les salariés.\n- Annuel : utilisé dans les contrats et les offres d'emploi.\n\n## Pourquoi la conversion du revenu n'est pas toujours simple\n\nL'hypothèse selon laquelle taux horaire multiplié par le nombre d'heures multiplié par le nombre de semaines égale le salaire simplifie trop les choses. En pratique :\n\n- les heures de travail fluctuent\n- le temps payé et le temps non payé diffèrent\n- les congés et les arrêts maladie varient\n- les indépendants ont des emplois du temps irréguliers\n- les conventions diffèrent d'un pays à l'autre\n\n## Les hypothèses standard utilisées pour la conversion\n\nSauf indication contraire, la plupart des calculateurs supposent :\n\n- 40 heures de travail par semaine\n- 5 jours travaillés par semaine\n- 52 semaines par an\n- 12 mois par an\n\nCes hypothèses rendent les conversions cohérentes, mais votre situation réelle peut différer.\n\n## Comment convertir un revenu horaire en salaire annuel\n\nMultipliez votre taux horaire par le nombre d'heures par semaine, puis par le nombre de semaines par an :\n\n- Taux horaire x heures par semaine x semaines par an = salaire annuel\n- Exemple : 25 par heure x 40 heures x 52 semaines = 52 000 par an\n\nPour un outil prêt à l'emploi, utilisez notre [convertisseur horaire vers salaire](/hourly-to-salary), et pour davantage d'exemples détaillés, consultez le [guide de conversion horaire vers salaire](/guides/hourly-to-salary-conversion).\n\n## Comment convertir un revenu mensuel en salaire annuel\n\nMultipliez votre revenu mensuel par 12 :\n\n- Revenu mensuel x 12 = revenu annuel\n- Exemple : 4 000 par mois x 12 = 48 000 par an\n\nCela suppose des versements mensuels constants, sans mois supplémentaire ni mois manquant.\n\n## Conversions de l'hebdomadaire vers le mensuel et l'annuel\n\nLa paie hebdomadaire, souvent utilisée pour le travail temporaire, se convertit ainsi :\n\n- Hebdomadaire x 52 = annuel\n- Annuel divisé par 12 = mensuel\n- Exemple : 1 000 par semaine = 52 000 par an, soit environ 4 333 par mois\n\n## Horaire ou salaire : lequel est préférable ?\n\nAucun format n'est universellement meilleur. Le travail horaire convient aux arrangements flexibles et peut récompenser les heures supplémentaires, tandis qu'un salaire offre de la stabilité et une rémunération prévisible. Le bon choix dépend de vos priorités.\n\n## Les erreurs courantes de conversion du revenu\n\n- négliger les congés non payés\n- supposer exactement 52 semaines travaillées pour tout le monde\n- ignorer les emplois du temps à temps partiel\n- confondre la rémunération horaire brute avec le salaire net\n- omettre entièrement les impôts\n\nCe dernier point est le plus important : une conversion vous donne un montant brut, pas votre [salaire net](/guides/what-is-take-home-pay).\n\n## Comment comparer des offres d'emploi avec des périodes de paie différentes\n\nConvertissez chaque offre en revenu annuel brut en utilisant des hypothèses identiques, puis estimez le revenu net lorsque c'est possible, et enfin évaluez les avantages et la stabilité de l'emploi. Notre guide sur [comment comparer des offres d'emploi](/guides/how-to-compare-job-offers) détaille l'ensemble du processus.\n\n## Quand se concentrer plutôt sur le revenu net\n\nLes conversions brutes sont utiles, mais le revenu net compte davantage dans la vie réelle. Les systèmes fiscaux, le statut d'emploi et le lieu de résidence influencent tous votre salaire net réel. Pour bien voir l'écart, lisez [revenu brut vs revenu net](/guides/gross-income-vs-net-income), puis faites passer vos chiffres dans le [calculateur de salaire](/salary-calculator).\n\n## Pour conclure\n\nLa conversion du revenu est plus que de l'arithmétique. Les heures de travail, les périodes non payées et les différences d'emploi du temps modifient tous le chiffre final, et les impôts le modifient encore. Utilisez les hypothèses standard comme point de départ, ajustez-les à votre situation et vérifiez toujours le salaire net avant de prendre une décision.",
+    "keywords": [
+      "conversion de revenu",
+      "horaire vers salaire",
+      "revenu mensuel vers annuel",
+      "période de paie",
+      "salaire annuel",
+      "revenu brut"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Impôt sur le revenu",
+        "url": "https://www.gov.uk/income-tax"
+      },
+      {
+        "label": "U.S. Bureau of Labor Statistics — Statistiques sur l'emploi et les salaires par profession",
+        "url": "https://www.bls.gov/oes/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Quel nombre d'heures dois-je retenir pour convertir une rémunération ?",
+        "answer": "La plupart des calculateurs supposent 40 heures par semaine, 52 semaines par an et 12 mois par an. Ajustez ces valeurs pour qu'elles correspondent à votre emploi du temps réel, en particulier pour le travail à temps partiel ou saisonnier."
+      },
+      {
+        "question": "La rémunération horaire ou salariée est-elle préférable ?",
+        "answer": "Aucune n'est universellement meilleure. Le travail horaire offre de la flexibilité et peut récompenser les heures supplémentaires ; le travail salarié offre de la stabilité, une rémunération prévisible et souvent davantage d'avantages."
+      },
+      {
+        "question": "Puis-je convertir un revenu sans connaître mes impôts ?",
+        "answer": "Oui, pour une estimation brute. Mais pour connaître votre salaire net réel, vous devez tenir compte de l'impôt sur le revenu et des cotisations sociales, qui varient selon les pays."
+      },
+      {
+        "question": "Pourquoi ma paie mensuelle multipliée par 12 ne correspond-elle pas à mon montant annuel ?",
+        "answer": "Les écarts proviennent des variations d'heures de travail, du temps non payé, des primes et des hypothèses utilisées. Les emplois du temps irréguliers et les versements ponctuels peuvent rendre la formule simple imprécise."
+      }
+    ]
+  },
+  "what-is-take-home-pay": {
+    "title": "Qu'est-ce que le salaire net à payer et comment le calculer ?",
+    "description": "Découvrez ce qu'est le salaire net à payer, comment il se calcule à partir de votre salaire brut, ce qui est déduit, et consultez des exemples simples pour les États-Unis, le Royaume-Uni et l'Allemagne.",
+    "content": "# Qu'est-ce que le salaire net à payer et comment le calculer ?\n\nLe salaire net à payer correspond à l'argent qui arrive réellement sur votre compte bancaire une fois toutes les déductions soustraites de votre salaire. C'est le chiffre le plus important pour établir un budget, et pourtant il est presque toujours inférieur au montant indiqué dans votre offre d'emploi. Comprendre comment il se calcule vous aide à planifier, à comparer les emplois de façon équitable et à éviter les mauvaises surprises le jour de la paie.\n\n## Salaire brut et salaire net à payer\n\nVotre salaire brut correspond à votre rémunération totale avant tout prélèvement. Le salaire net à payer (souvent appelé salaire net) est ce qui reste après les impôts et les autres retenues. L'écart entre les deux peut être considérable. Si vous souhaitez une analyse plus détaillée de ces deux montants, consultez notre guide sur le [revenu brut et le revenu net](/guides/gross-income-vs-net-income).\n\nVoici le principe de base :\n\n- Partez du salaire brut (votre salaire annoncé ou vos gains horaires)\n- Soustrayez l'impôt sur le revenu\n- Soustrayez les cotisations sociales\n- Soustrayez les autres déductions (retraite, mutuelle santé, remboursement de prêt étudiant)\n- Ce qui reste constitue votre salaire net à payer\n\n## Ce qui est déduit\n\nLes déductions exactes dépendent de l'endroit où vous vivez et travaillez, mais la plupart relèvent de quelques catégories.\n\n### Impôt sur le revenu\n\nL'impôt sur le revenu est généralement la déduction la plus importante. La plupart des pays utilisent un système progressif, ce qui signifie que les tranches de revenu les plus élevées sont imposées à des taux plus élevés. Pour voir comment les tranches s'empilent, lisez [comment fonctionne l'impôt sur le revenu](/guides/how-income-tax-works).\n\n### Cotisations sociales\n\nElles financent des programmes publics tels que les retraites, la santé et l'assurance chômage. Aux États-Unis, il s'agit de Social Security et de Medicare ; au Royaume-Uni, de la National Insurance ; et en Allemagne, elles couvrent la retraite, la santé, la dépendance et l'assurance chômage. Notre guide sur les [cotisations sociales](/guides/social-security-contributions-guide) explique chaque système.\n\n### Autres déductions\n\nSelon votre situation, vous pouvez également voir des cotisations de retraite d'entreprise, des primes de mutuelle santé privée, des cotisations syndicales ou des remboursements de prêt étudiant.\n\n## Un exemple simple\n\nImaginons un salaire brut annuel de 50 000 dans trois pays. Les chiffres ci-dessous sont donnés à titre indicatif uniquement et arrondis pour plus de clarté.\n\n| Pays | Brut | Impôt sur le revenu | Cotisations sociales | Net à payer (env.) |\n|---|---|---|---|---|\n| États-Unis | 50 000 USD | 4 300 USD | 3 825 USD | 41 875 USD |\n| Royaume-Uni | 50 000 GBP | 7 486 GBP | 2 494 GBP | 40 020 GBP |\n| Allemagne | 50 000 EUR | 8 200 EUR | 10 000 EUR | 31 800 EUR |\n\nComme vous pouvez le constater, deux personnes gagnant le même montant affiché peuvent percevoir des sommes très différentes. Les impôts nationaux, régionaux ou locaux peuvent encore modifier ces résultats.\n\n## Le calculer soi-même\n\nLa méthode manuelle la plus simple est la suivante :\n\n1. Trouvez votre salaire brut annuel.\n2. Estimez l'impôt sur le revenu à l'aide des tranches et de l'abattement personnel de votre pays.\n3. Additionnez les cotisations sociales.\n4. Soustrayez les deux du salaire brut.\n5. Divisez par 12 pour obtenir un montant mensuel, ou par votre nombre de périodes de paie.\n\nComme les tranches, les seuils et les taux changent chaque année fiscale, le faire à la main est fastidieux et source d'erreurs. Un outil garantit la précision. Essayez notre [calculateur de salaire net](/net-salary-calculator) ou le [calculateur de salaire](/calculator) complet pour obtenir une estimation personnalisée en quelques secondes.\n\n## Pourquoi le salaire net à payer est important\n\n- Budget : le loyer, les factures et l'épargne proviennent du salaire net, pas du brut.\n- Comparaison des emplois : un salaire plus élevé dans un contexte fortement imposé peut vous laisser moins d'argent.\n- Négociation : connaître votre montant net vous aide à évaluer les augmentations et les avantages.\n\n## En conclusion\n\nLe salaire net à payer correspond à votre véritable revenu disponible, façonné par l'impôt sur le revenu, les cotisations sociales et les déductions personnelles. Le salaire affiché n'est qu'un point de départ. Comme les taux et les seuils évoluent chaque année et varient selon le lieu, utilisez ces chiffres comme repère et consultez un fiscaliste qualifié pour les décisions qui touchent à vos finances.",
+    "keywords": [
+      "salaire net à payer",
+      "salaire net",
+      "comment calculer le salaire net",
+      "salaire brut et salaire net",
+      "déductions de l'impôt sur le revenu",
+      "retenues sur salaire"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Tax Topic 751 (retenues Social Security et Medicare)",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "GOV.UK — National Insurance",
+        "url": "https://www.gov.uk/national-insurance"
+      },
+      {
+        "label": "GOV.UK — Taux et abattements de l'impôt sur le revenu",
+        "url": "https://www.gov.uk/income-tax-rates"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Le salaire net à payer est-il identique au salaire net ?",
+        "answer": "Oui. Le salaire net à payer et le salaire net désignent tous deux le montant qui reste après que tous les impôts et déductions ont été retirés de votre salaire brut. C'est l'argent qui arrive réellement sur votre compte bancaire."
+      },
+      {
+        "question": "Pourquoi mon salaire net à payer est-il inférieur à ce que j'attendais ?",
+        "answer": "Les raisons les plus courantes incluent l'impôt sur le revenu, les cotisations sociales, l'adhésion à un régime de retraite, les remboursements de prêt étudiant et les primes d'avantages. Les impôts locaux ou régionaux et une tranche d'imposition plus élevée peuvent également le réduire davantage que prévu."
+      },
+      {
+        "question": "Le salaire net à payer change-t-il au cours de l'année ?",
+        "answer": "C'est possible. Atteindre certains seuils de revenu, un changement de code fiscal, des primes ponctuelles ou des ajustements des cotisations de retraite et d'avantages peuvent tous modifier votre salaire net d'une période de paie à l'autre."
+      },
+      {
+        "question": "Puis-je augmenter mon salaire net à payer ?",
+        "answer": "Parfois. Des cotisations de retraite avantageuses sur le plan fiscal, la demande d'abattements éligibles et la vérification de l'exactitude de votre code fiscal ou de vos retenues peuvent aider. Un fiscaliste peut vous conseiller sur ce qui s'applique à votre situation."
+      }
+    ]
+  },
+  "how-to-read-your-payslip": {
+    "title": "Comment lire votre bulletin de paie ligne par ligne",
+    "description": "Apprenez à lire votre bulletin de paie ou fiche de paie ligne par ligne. Comprenez le salaire brut, les impôts, les retenues et le salaire net aux États-Unis, au Royaume-Uni et en Allemagne.",
+    "content": "# Comment lire votre bulletin de paie ligne par ligne\n\nOuvrir votre premier bulletin de paie peut donner l'impression de lire une langue étrangère. Les sigles, les retenues et deux totaux différents pour le même mois laissent beaucoup de gens perplexes. Ce guide passe en revue les éléments courants d'un bulletin de paie ou d'une fiche de paie, explique ce que signifie chaque ligne et souligne les différences de terminologie entre les États-Unis, le Royaume-Uni et l'Allemagne.\n\nNotez que les taux d'imposition exacts et les seuils de cotisation changent chaque année et varient selon la situation personnelle. Vérifiez toujours les détails auprès de votre employeur ou d'un professionnel qualifié.\n\n## Les deux chiffres qui comptent le plus\n\nTout bulletin de paie tourne autour de deux montants : le salaire brut et le salaire net.\n\n- Le salaire brut correspond à votre rémunération totale avant tout prélèvement.\n- Le salaire net est ce qui arrive réellement sur votre compte bancaire, également appelé votre [salaire net à percevoir](/guides/what-is-take-home-pay).\n\nL'écart entre les deux est constitué des impôts, des cotisations sociales ou d'assurance, et de toute autre retenue. Comprendre cet écart est tout l'intérêt de lire attentivement votre bulletin de paie.\n\n## Les éléments courants, ligne par ligne\n\nSi la présentation varie selon les pays et les employeurs, la plupart des bulletins de paie comprennent les mêmes composantes de base.\n\n### Rémunération\n\nCette section indique votre salaire de base ou votre rémunération horaire, ainsi que les éventuels suppléments tels que les heures supplémentaires, les primes, les commissions ou les pourboires. Additionnez ces montants et vous obtenez votre salaire brut pour la période.\n\n### Impôts prélevés\n\nVotre employeur retient généralement l'impôt sur le revenu avant de vous verser votre salaire. Aux États-Unis, cela comprend l'impôt fédéral sur le revenu et, dans la plupart des États, l'impôt sur le revenu de l'État. Au Royaume-Uni, il s'agit de l'impôt sur le revenu PAYE. En Allemagne, il s'agit du Lohnsteuer, parfois assorti d'un impôt cultuel et d'une contribution de solidarité.\n\n### Cotisations sociales et d'assurance\n\nElles financent les retraites, la santé et d'autres programmes publics. Elles sont souvent obligatoires et réparties entre vous et votre employeur. Consultez notre guide sur les [cotisations de sécurité sociale](/guides/social-security-contributions-guide) pour plus de détails.\n\n### Retenues avant impôt et après impôt\n\nCertains montants sont déduits avant le calcul de l'impôt, ce qui peut réduire votre revenu imposable. Les exemples courants sont les cotisations à un plan de retraite et certains avantages liés à la santé ou aux transports domicile-travail. Pour en savoir plus, consultez notre présentation des [déductions fiscales](/guides/tax-deductions-explained). D'autres retenues, comme les cotisations syndicales, peuvent être prélevées après impôt.\n\n### Salaire net\n\nAprès toutes les retenues, ce qui reste constitue votre salaire net. C'est le chiffre à comparer à votre budget.\n\n### Cumuls annuels\n\nLa plupart des bulletins de paie affichent des totaux cumulés, étiquetés YTD aux États-Unis, pour l'année civile ou l'année fiscale en cours. Ils vous aident à suivre vos revenus totaux et le total des impôts payés, ce qui est utile au moment de la déclaration.\n\n## Un exemple de décomposition\n\nVoici un exemple mensuel simplifié pour un salarié gagnant 5 000 dans sa monnaie locale. Les chiffres sont donnés à titre purement indicatif.\n\n| Poste | Montant |\n|---|---|\n| Salaire brut | 5 000 |\n| Cotisation retraite avant impôt | -300 |\n| Impôt sur le revenu | -750 |\n| Cotisations sociales ou d'assurance | -450 |\n| Retenue après impôt (cotisations syndicales) | -25 |\n| Salaire net | 3 475 |\n\nDans cet exemple, le salarié gagne 5 000 brut mais perçoit 3 475 net. La différence d'environ 1 525 est exactement ce que la maîtrise du bulletin de paie vous aide à comprendre.\n\n## La terminologie par pays en un coup d'œil\n\nLa structure est similaire partout, mais les appellations changent.\n\n- États-Unis : souvent appelé pay stub ou paycheck. Surveillez la FICA, qui couvre la Social Security et Medicare, ainsi que les retenues fédérales et celles de l'État.\n- Royaume-Uni : appelé payslip. Repérez l'impôt sur le revenu PAYE et les cotisations National Insurance, ainsi que votre code des impôts (tax code).\n- Allemagne : appelé Lohnabrechnung ou Gehaltsabrechnung. Attendez-vous au Lohnsteuer ainsi qu'aux cotisations sociales pour la retraite, la santé, le chômage et l'assurance dépendance.\n\n## Conseils pour vérifier votre bulletin de paie\n\nUn examen mensuel rapide peut détecter des erreurs coûteuses.\n\n- Vérifiez que votre salaire brut correspond au salaire ou aux heures convenus.\n- Assurez-vous que votre code des impôts ou vos données de déclaration semblent corrects.\n- Surveillez les variations soudaines des retenues d'un mois à l'autre.\n- Conservez vos bulletins de paie pour la déclaration d'impôts, les demandes de prêt et les références locatives.\n\nPour voir comment le brut se convertit en net dans votre propre situation, essayez notre [calculateur de salaire net](/net-salary-calculator) gratuit.\n\n## Réflexions finales\n\nUn bulletin de paie est bien plus qu'un reçu. C'est un relevé de vos revenus, des impôts que vous contribuez et des prestations que vous financez. Une fois que vous reconnaissez les sections principales que sont le salaire brut, les retenues et le salaire net, le document cesse de paraître intimidant, quel que soit le pays. Examinez le vôtre régulièrement, conservez des copies et adressez-vous à un professionnel chaque fois que quelque chose ne colle pas.",
+    "keywords": [
+      "comment lire un bulletin de paie",
+      "bulletin de paie expliqué",
+      "décomposition de la fiche de paie",
+      "salaire brut vs salaire net",
+      "retenues sur le bulletin de paie",
+      "guide de la fiche de paie"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Comprendre votre rémunération",
+        "url": "https://www.gov.uk/understanding-your-pay"
+      },
+      {
+        "label": "IRS — Retenue à la source de l'impôt",
+        "url": "https://www.irs.gov/individuals/employees/tax-withholding"
+      },
+      {
+        "label": "SSA — Taux des cotisations Social Security et Medicare",
+        "url": "https://www.ssa.gov/oact/cola/cbb.html"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Pourquoi mon salaire net est-il tellement inférieur à mon salaire brut ?",
+        "answer": "La différence provient de l'impôt sur le revenu, des cotisations sociales ou d'assurance obligatoires, et de toute retenue facultative comme l'épargne retraite. La répartition exacte dépend de votre pays, de votre niveau de revenu et de votre situation personnelle."
+      },
+      {
+        "question": "Que signifie le cumul annuel (YTD) sur un bulletin de paie ?",
+        "answer": "Les cumuls annuels indiquent vos revenus et vos retenues cumulés depuis le début de l'année civile ou de l'année fiscale jusqu'à la période de paie en cours. Ils vous aident à suivre les totaux pour votre budget et votre déclaration d'impôts."
+      },
+      {
+        "question": "Les bulletins de paie sont-ils les mêmes aux États-Unis, au Royaume-Uni et en Allemagne ?",
+        "answer": "La structure de base est similaire, mais la terminologie diffère. Les États-Unis l'appellent pay stub, le Royaume-Uni payslip et l'Allemagne Lohnabrechnung. Chaque pays a également ses propres intitulés fiscaux et systèmes de cotisations."
+      },
+      {
+        "question": "Que dois-je faire si je repère une erreur sur mon bulletin de paie ?",
+        "answer": "Contactez d'abord votre employeur ou votre service de paie, car la plupart des erreurs sont simples à corriger. Si le problème concerne des impôts ou des cotisations, un comptable ou un fiscaliste qualifié peut vous aider à le clarifier."
+      }
+    ]
+  },
+  "how-income-tax-works": {
+    "title": "Comment fonctionne l'impôt sur le revenu : guide pour débutants",
+    "description": "Un guide accessible aux débutants sur le fonctionnement de l'impôt sur le revenu : revenu imposable, tranches progressives, taux marginal et taux effectif, déductions et salaire net.",
+    "content": "# Comment fonctionne l'impôt sur le revenu : guide pour débutants\n\nL'impôt sur le revenu est l'une des principales raisons pour lesquelles le montant indiqué sur votre offre d'emploi n'est pas celui qui arrive sur votre compte bancaire. Si vous avez déjà regardé une fiche de paie en vous demandant où était passée une partie de votre salaire, ce guide est fait pour vous. Nous allons expliquer en termes simples comment fonctionne l'impôt sur le revenu, à l'aide d'exemples tirés des États-Unis, du Royaume-Uni et de l'Allemagne.\n\nIl s'agit d'informations éducatives générales, et non de conseils fiscaux ou financiers. Les taux et les seuils changent chaque année : vérifiez donc toujours les sources officielles ou consultez un professionnel qualifié pour votre situation.\n\n## Qu'est-ce que l'impôt sur le revenu ?\n\nL'impôt sur le revenu est une somme que vous versez à l'État en fonction de ce que vous gagnez. Il finance des services publics comme la santé, les écoles, les routes et les retraites. Dans la plupart des pays, plus vous gagnez, plus le pourcentage que vous payez est élevé, du moins sur la tranche supérieure de votre revenu.\n\nPour les salariés, l'impôt sur le revenu est généralement prélevé automatiquement sur chaque paie avant son versement. On parle de retenue à la source (« withholding » aux États-Unis), de PAYE au Royaume-Uni ou de Lohnsteuer en Allemagne. Les indépendants et les travailleurs à leur compte le calculent et le paient eux-mêmes la plupart du temps, souvent par acomptes.\n\n## Revenu brut et revenu imposable\n\nCes deux notions induisent presque tout le monde en erreur ; distinguons-les donc clairement.\n\n- Le **revenu brut** correspond à votre rémunération totale avant tout prélèvement. Si votre offre d'emploi indique 50 000 par an, c'est un montant brut.\n- Le **revenu imposable** est ce qu'il reste après soustraction des abattements et des déductions. C'est sur ce montant, plus faible, que votre impôt est réellement calculé.\n\nVous n'êtes pas imposé sur chaque centime que vous gagnez. La plupart des pays vous accordent d'abord une tranche exonérée d'impôt. Par exemple, le Royaume-Uni dispose d'une Personal Allowance, et l'Allemagne d'un montant de base exonéré d'impôt (Grundfreibetrag). En dessous de ces seuils, vous ne payez aucun impôt sur le revenu. Pour une vue d'ensemble plus large, voir [revenu brut et revenu net](/guides/gross-income-vs-net-income).\n\n## Les tranches d'imposition progressives\n\nLa plupart des systèmes d'impôt sur le revenu sont progressifs. Votre revenu est divisé en tranches, et chaque tranche est imposée à son propre taux. Une idée reçue courante veut que gagner plus puisse faire basculer l'ensemble de votre revenu dans un taux supérieur. Ce n'est pas ainsi que cela fonctionne. Seule la portion de revenu située dans chaque tranche est imposée au taux de cette tranche.\n\nVoici une illustration simplifiée (il ne s'agit pas de taux réels actuels) :\n\n| Tranche de revenu | Taux d'imposition | Impôt sur cette tranche |\n|---|---|---|\n| Premiers 12 000 | 0 % | 0 |\n| 12 001 à 40 000 | 20 % | 5 600 |\n| 40 001 à 50 000 | 40 % | 4 000 |\n\nDans cet exemple, une personne gagnant 50 000 paie 9 600 au total, et non 40 % de l'ensemble. Pour comprendre comment les tranches s'empilent dans les systèmes réels, consultez notre guide plus approfondi sur les [tranches d'imposition](/guides/understanding-tax-brackets).\n\n### Taux marginal et taux effectif\n\nDeux définitions rapides qui découlent des tranches :\n\n- Le **taux marginal** est le taux appliqué au prochain dollar, à la prochaine livre ou au prochain euro gagné. Dans le tableau ci-dessus, il est de 40 %.\n- Le **taux effectif** est le taux moyen appliqué à l'ensemble de votre revenu. Ici, il s'agit de 9 600 divisé par 50 000, soit environ 19 %.\n\nVotre taux effectif est presque toujours inférieur à votre taux marginal le plus élevé. Les gens confondent souvent les deux et surestiment le montant d'impôt qu'ils paient réellement.\n\n## Abattements et déductions\n\nLes abattements et les déductions réduisent votre revenu imposable, ce qui diminue votre facture. Ils varient considérablement d'un pays à l'autre, mais on trouve par exemple couramment :\n\n- Un abattement personnel ou un montant de base exonéré d'impôt.\n- Les frais professionnels, comme les outils, les déplacements ou un bureau à domicile.\n- Les cotisations de retraite ou d'épargne-retraite.\n- Certaines primes d'assurance ou dons à des œuvres caritatives.\n\nSavoir ce que vous pouvez déclarer est l'un des moyens les plus simples de garder davantage d'argent. Notre guide sur les [déductions fiscales](/guides/tax-deductions-explained) détaille les principales catégories.\n\n## Impôt sur le revenu et cotisations sociales\n\nVoici un point qui surprend beaucoup de gens : l'impôt sur le revenu n'est pas la seule chose prélevée sur votre salaire. À part cela, il existe des cotisations sociales ou salariales.\n\n- Aux **États-Unis**, il s'agit de Social Security et de Medicare (souvent regroupés sous l'appellation FICA).\n- Au **Royaume-Uni**, il s'agit de la National Insurance.\n- En **Allemagne**, elles couvrent l'assurance retraite, l'assurance maladie, l'assurance chômage et l'assurance dépendance.\n\nCes cotisations financent les retraites, la santé et le soutien au chômage. Elles sont calculées différemment de l'impôt sur le revenu et ont souvent leurs propres seuils et plafonds. Comme elles peuvent représenter une part importante de votre rémunération, les ignorer donne une image trompeuse de votre véritable salaire net. Pour en savoir plus, consultez notre aperçu des [cotisations de sécurité sociale](/guides/social-security-contributions-guide).\n\n## Comment tout cela devient le salaire net\n\nEn assemblant les différents éléments, votre salaire net (aussi appelé paie nette) se présente généralement ainsi :\n\n1. Partez du **revenu brut**.\n2. Soustrayez les **abattements et déductions** pour obtenir le revenu imposable.\n3. Appliquez les **tranches progressives** pour calculer l'impôt sur le revenu.\n4. Soustrayez les **cotisations sociales**.\n5. Ce qu'il reste constitue votre **salaire net**.\n\nUn travailleur gagnant le même salaire brut aux États-Unis, au Royaume-Uni et en Allemagne peut se retrouver avec des montants nets très différents, car chaque pays combine impôt et cotisations à sa manière. Nous comparons les trois côte à côte dans notre guide sur le [salaire net comparé entre pays](/guides/take-home-pay-us-uk-germany).\n\nVous voulez un chiffre pour votre propre situation ? Essayez notre [calculateur de salaire](/salary-calculator) gratuit pour estimer votre salaire net en quelques secondes.\n\n## En conclusion\n\nL'impôt sur le revenu peut sembler intimidant, mais l'idée de base est simple : vous êtes imposé par tranches, uniquement sur ce qu'il reste après votre abattement exonéré d'impôt et vos déductions, et cet impôt s'ajoute à des cotisations sociales distinctes. Une fois que vous comprenez comment le revenu brut devient le salaire net, étape par étape, votre fiche de paie cesse d'être un mystère. Comme les taux et les seuils évoluent chaque année, appuyez-vous sur les sources officielles et sur un professionnel qualifié pour les décisions importantes.",
+    "keywords": [
+      "comment fonctionne l'impôt sur le revenu",
+      "bases de l'impôt sur le revenu",
+      "revenu imposable",
+      "tranches d'imposition expliquées",
+      "taux marginal et taux effectif",
+      "salaire net"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Taux et tranches de l'impôt fédéral sur le revenu",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      },
+      {
+        "label": "GOV.UK — Taux de l'Income Tax et Personal Allowances",
+        "url": "https://www.gov.uk/income-tax-rates"
+      },
+      {
+        "label": "Ministère fédéral allemand des Finances",
+        "url": "https://www.bundesfinanzministerium.de"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Gagner plus d'argent peut-il un jour me désavantager ?",
+        "answer": "Dans un système progressif normal, non. Seul le revenu situé dans une tranche supérieure est imposé au taux supérieur : une augmentation accroît donc toujours votre salaire net. Les effets de seuil propres à certaines prestations sont une question distincte et ne font pas partie du fonctionnement des tranches d'imposition."
+      },
+      {
+        "question": "Quelle est la différence entre l'impôt sur le revenu et les cotisations sociales ?",
+        "answer": "L'impôt sur le revenu est un impôt général sur les revenus qui finance les services publics. Les cotisations sociales (comme la National Insurance, le FICA ou l'assurance sociale allemande) sont des versements distincts qui financent les retraites, la santé et le soutien au chômage, et elles sont calculées selon leurs propres règles."
+      },
+      {
+        "question": "Pourquoi mon salaire net est-il inférieur à ce que j'attendais ?",
+        "answer": "Votre salaire brut subit à la fois l'impôt sur le revenu et les cotisations sociales, et parfois aussi des prélèvements de retraite ou autres. L'effet combiné peut être plus important que prévu, c'est pourquoi une estimation issue d'un calculateur aide à fixer des attentes réalistes."
+      },
+      {
+        "question": "Les indépendants paient-ils l'impôt sur le revenu différemment des salariés ?",
+        "answer": "Les taux sont généralement les mêmes, mais le processus diffère. Les salariés voient leur impôt retenu automatiquement à chaque paie, tandis que les indépendants le calculent et le paient eux-mêmes la plupart du temps, souvent par acomptes, et peuvent parfois déduire davantage de frais professionnels."
+      }
+    ]
+  },
+  "take-home-pay-us-uk-germany": {
+    "title": "Salaire net comparé : États-Unis vs Allemagne vs Royaume-Uni",
+    "description": "Comparez le salaire net aux États-Unis, en Allemagne et au Royaume-Uni. Découvrez comment l'impôt sur le revenu et les cotisations sociales façonnent la paie nette, avec un tableau illustratif par pays.",
+    "content": "## Pourquoi un même salaire ne se ressent pas de la même façon dans chaque pays\n\nImaginez trois travailleurs, gagnant chacun l'équivalent d'un solide salaire de classe moyenne, vivant aux États-Unis, en Allemagne et au Royaume-Uni. Ils pourraient s'accorder sur la même rémunération brute, et pourtant le montant qui atterrit réellement sur leur compte en banque peut être étonnamment différent. La raison ne tient pas seulement au taux d'imposition sur le revenu. Elle tient à l'ensemble des prélèvements, y compris les cotisations sociales, que chaque pays superpose à (ou place aux côtés de) l'impôt sur le revenu.\n\nComprendre ces différences vous aide à comparer des offres d'emploi, à planifier une expatriation, ou tout simplement à mieux saisir votre propre fiche de paie. Si vous souhaitez d'abord voir comment les pièces s'emboîtent, notre guide sur [le fonctionnement de l'impôt sur le revenu](/guides/how-income-tax-works) est un bon point de départ, tout comme la différence entre [revenu brut et revenu net](/guides/gross-income-vs-net-income).\n\n## Les composantes du salaire net\n\nChaque pays de cette comparaison applique un impôt sur le revenu progressif, ce qui signifie que les tranches de revenu plus élevées sont taxées à des taux plus élevés. Mais chacun y ajoute sa propre particularité.\n\n### États-Unis\n\nAux États-Unis, l'impôt fédéral sur le revenu repose sur des tranches graduées, et la plupart des États y ajoutent leur propre impôt sur le revenu (quelques-uns n'en prélèvent aucun). À cela s'ajoute la FICA, qui finance la Social Security et le Medicare. La FICA est une cotisation salariale à taux fixe répartie entre l'employé et l'employeur, de sorte qu'elle s'applique même aux travailleurs à faibles revenus qui peuvent ne devoir que peu d'impôt fédéral sur le revenu.\n\n### Allemagne\n\nL'Allemagne combine un impôt sur le revenu progressif avec le Solidaritaetszuschlag (la surtaxe de solidarité), qui aujourd'hui concerne principalement les hauts revenus. Le point le plus important reste toutefois l'assurance sociale obligatoire. Les travailleurs allemands cotisent à l'assurance maladie publique, à l'assurance retraite, à l'assurance dépendance et à l'assurance chômage. Ces cotisations sont substantielles et constituent une raison majeure pour laquelle le salaire net allemand est souvent inférieur à celui des États-Unis ou du Royaume-Uni à brut équivalent.\n\n### Royaume-Uni\n\nLe Royaume-Uni applique un impôt sur le revenu progressif avec une Personal Allowance exonérée d'impôt, un montant que vous pouvez gagner avant que tout impôt sur le revenu ne s'applique. Parallèlement à l'impôt sur le revenu, les salariés versent des cotisations de National Insurance, qui financent la pension d'État et d'autres prestations. La charge combinée se situe généralement entre celle des États-Unis et celle de l'Allemagne pour de nombreux travailleurs.\n\n## Une comparaison illustrative\n\nLe tableau ci-dessous est une illustration approximative et simplifiée pour un travailleur célibataire sans personne à charge, en supposant un salaire brut approximatif de 60 000 dans chaque devise locale. Ces chiffres sont des estimations à des fins pédagogiques uniquement. Ils ne sont pas exacts, ne reflètent pas chaque situation personnelle et ne doivent pas servir à une planification réelle. Les devises ne sont pas converties, ne lisez donc pas le tableau ligne par ligne comme une comparaison à taux équivalent.\n\n| Élément | États-Unis | Allemagne | Royaume-Uni |\n|---|---|---|---|\n| Devise | USD | EUR | GBP |\n| Brut approx. | 60 000 | 60 000 | 60 000 |\n| Impôt sur le revenu | Modéré | Plus élevé | Modéré |\n| Cotisations sociales | FICA (plus faibles) | Santé, retraite, dépendance, chômage (plus élevées) | National Insurance (modérées) |\n| Part nette approx. | Environ 70-78 % | Environ 58-65 % | Environ 68-74 % |\n\nConsidérez ces pourcentages de salaire net comme de larges fourchettes illustratives, et non comme des garanties. Les impôts d'État ou locaux, la situation matrimoniale, les enfants, les choix de retraite et les détails de l'assurance maladie peuvent les faire varier significativement.\n\n## Pourquoi l'Allemagne prélève souvent davantage\n\nLa raison principale est l'assurance sociale. L'Allemagne finance un système complet de santé publique, de retraite, de dépendance et de couverture chômage en grande partie par des cotisations salariales obligatoires. Aux États-Unis, les soins de santé sont plus couramment liés à des régimes privés ou d'employeur plutôt qu'à un prélèvement légal unique, et au Royaume-Uni une grande partie des soins de santé est financée par l'impôt général plutôt que par une cotisation distincte et importante. Ainsi, une fiche de paie allemande regroupe davantage de services dans des prélèvements visibles, ce qui réduit le salaire net mais reflète aussi les prestations que le travailleur reçoit en contrepartie.\n\nC'est pourquoi comparer uniquement le taux d'imposition sur le revenu peut être trompeur. Un pays avec un taux d'imposition sur le revenu plus faible peut tout de même vous laisser un salaire net inférieur une fois les cotisations sociales incluses, et ce qui ressemble à un prélèvement plus élevé peut s'accompagner de services publics plus étendus.\n\n## Calculez les vrais chiffres pour votre situation\n\nComme les taux, les seuils et les abattements changent chaque année et dépendent fortement de votre situation personnelle, le seul moyen fiable de connaître votre chiffre est de le calculer. Vous pouvez essayer le [calculateur de salaire américain](/salary-calculator/us), le [calculateur de salaire allemand](/salary-calculator/de) et le [calculateur de salaire britannique](/salary-calculator/uk) pour estimer votre propre salaire net dans chaque pays.\n\n## Pour conclure\n\nLe salaire net est façonné par bien plus qu'un simple taux d'imposition. Aux États-Unis, en Allemagne et au Royaume-Uni, c'est le dosage entre impôt sur le revenu progressif et cotisations sociales qui raconte la véritable histoire, et les prélèvements plus élevés de l'Allemagne reflètent en grande partie son vaste système d'assurance obligatoire. Servez-vous des fourchettes illustratives présentées ici pour développer votre intuition, mais utilisez toujours les calculateurs pour des estimations actuelles, et consultez un professionnel de la fiscalité qualifié pour les décisions qui touchent à vos finances. Les taux et les seuils varient selon l'année et selon la situation de chacun.",
+    "keywords": [
+      "comparaison du salaire net",
+      "salaire États-Unis vs Allemagne vs Royaume-Uni",
+      "salaire net par pays",
+      "cotisations sociales",
+      "comparaison de l'impôt sur le revenu",
+      "prélèvements sur la paie"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Taux et tranches de l'impôt fédéral sur le revenu",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      },
+      {
+        "label": "GOV.UK — Taux de l'impôt sur le revenu",
+        "url": "https://www.gov.uk/income-tax-rates"
+      },
+      {
+        "label": "Ministère fédéral allemand des Finances",
+        "url": "https://www.bundesfinanzministerium.de"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Pourquoi mon salaire net est-il plus faible en Allemagne qu'aux États-Unis pour un même salaire brut ?",
+        "answer": "L'Allemagne finance l'assurance maladie publique, la retraite, l'assurance dépendance et l'assurance chômage par d'importantes cotisations salariales obligatoires. Ces prélèvements sociaux, plus que l'impôt sur le revenu à lui seul, sont la principale raison pour laquelle le salaire net allemand est souvent plus faible à brut équivalent."
+      },
+      {
+        "question": "Un taux d'imposition sur le revenu plus faible signifie-t-il toujours un salaire net plus élevé ?",
+        "answer": "Non. Les cotisations sociales comme la FICA aux États-Unis, la National Insurance au Royaume-Uni et l'assurance obligatoire en Allemagne peuvent changer la donne de manière significative. Un pays avec un taux d'imposition sur le revenu plus faible peut tout de même vous laisser un salaire net inférieur une fois ces cotisations ajoutées."
+      },
+      {
+        "question": "Les pourcentages du tableau de comparaison sont-ils exacts ?",
+        "answer": "Non. Ce sont des fourchettes illustratives pour un travailleur célibataire sans personne à charge, destinées uniquement à développer l'intuition. Votre chiffre réel dépend de votre État ou de votre région, de votre situation matrimoniale, de vos enfants, de vos choix de retraite et des taux de l'année en cours. Utilisez les calculateurs pour obtenir une estimation."
+      },
+      {
+        "question": "Puis-je comparer les trois pays en lisant le tableau de gauche à droite ?",
+        "answer": "Pas directement. Chaque colonne utilise sa propre devise locale sans conversion de taux de change, de sorte que les chiffres ne sont pas comparables à valeur égale. Le tableau est conçu pour montrer des tendances dans les prélèvements, et non pour convertir des salaires d'un pays à l'autre."
+      }
+    ]
+  },
+  "what-is-a-good-salary": {
+    "title": "Qu'est-ce qu'un bon salaire ? Comment évaluer votre rémunération",
+    "description": "Qu'est-ce qu'un bon salaire ? Apprenez à évaluer votre rémunération à l'aide des salaires médians, des centiles, du brut vs net et du pouvoir d'achat aux États-Unis, au Royaume-Uni et en Allemagne.",
+    "content": "## Qu'est-ce qui constitue un bon salaire ?\n\nDemandez à dix personnes ce qu'est un bon salaire et vous obtiendrez dix réponses différentes. C'est parce que la rémunération est relative. Un chiffre qui semble généreux pour un jeune diplômé dans une petite ville peut paraître juste pour un parent de trois enfants dans une grande ville chère. Plutôt que de courir après un chiffre magique, il est utile d'apprendre à évaluer votre rémunération par rapport à des données réelles et à votre propre situation.\n\nCe guide passe en revue les principales façons de juger un salaire, les statistiques auxquelles se fier et pourquoi le chiffre affiché ne raconte que la moitié de l'histoire.\n\n## Pourquoi il n'existe pas de chiffre unique\n\nPlusieurs facteurs modifient ce que signifie « bon » pour vous :\n\n- **L'emplacement.** Les salaires et les prix varient selon le pays, la région et même le quartier.\n- **Le poste et le secteur.** Un métier qualifié, un enseignant et un développeur de logiciels se situent à des points très différents de l'échelle salariale.\n- **L'expérience.** La rémunération de début de carrière et celle d'un poste senior pour le même intitulé peuvent différer considérablement.\n- **La taille du foyer.** Un seul revenu qui fait vivre quatre personnes ne va pas aussi loin qu'un seul revenu qui fait vivre une seule personne.\n- **Le coût de la vie.** Le loyer, l'alimentation, les transports et les impôts grignotent chaque salaire avant qu'il n'atteigne votre épargne.\n\nC'est pourquoi la question la plus pertinente n'est pas de savoir si un salaire est bon dans l'absolu, mais s'il est bon pour votre poste, dans votre région, à votre stade. Pour un examen plus approfondi de la façon dont les prix transforment votre rémunération, consultez notre guide sur le [coût de la vie vs salaire](/guides/cost-of-living-vs-salary).\n\n## Évaluer avec la médiane, la moyenne et les centiles\n\nPour comparer votre rémunération équitablement, vous avez besoin d'un point de référence. Les statistiques officielles sur les salaires vous offrent trois outils utiles.\n\n- **Médiane :** la valeur centrale. La moitié des travailleurs gagnent plus, l'autre moitié gagnent moins. La médiane est généralement le repère le plus honnête, car elle n'est pas faussée par une poignée de très hauts revenus.\n- **Moyenne :** additionnez tous les salaires et divisez par le nombre de travailleurs. Quelques salaires énormes peuvent tirer la moyenne bien au-dessus de ce que gagne une personne typique.\n- **Centiles :** ils indiquent où vous vous situez dans le groupe. Si vous êtes au 75e centile, vous gagnez plus que 75 pour cent des travailleurs de ce groupe.\n\nVoici un exemple simplifié pour un emploi imaginaire. Les chiffres évoluent dans le temps et varient selon la région, alors traitez ceci comme une simple illustration.\n\n| Mesure | Chiffre annuel | Ce que cela vous indique |\n|---|---|---|\n| 25e centile | 38 000 | Le bas de la fourchette de rémunération typique |\n| Médiane (50e) | 52 000 | Un travailleur typique dans ce poste |\n| Moyenne | 57 000 | Tirée vers le haut par les hauts revenus |\n| 75e centile | 68 000 | Une rémunération solide pour le poste |\n\nSi vous gagnez proche de la médiane pour votre poste et votre région, vous êtes globalement aligné sur vos pairs. Se situer près du 75e centile suggère une bonne rémunération, tandis que le 25e centile peut être un signal pour préparer une [négociation salariale](/guides/salary-negotiation-tips).\n\n## Brut vs net : jugez l'argent que vous conservez\n\nUne offre d'emploi indique presque toujours un chiffre brut, le montant avant impôts et déductions. Ce qui arrive sur votre compte en banque, c'est votre salaire net, et l'écart entre les deux peut être important.\n\n- L'impôt sur le revenu, les cotisations de sécurité sociale et les cotisations santé sont prélevés en premier.\n- Deux offres avec le même salaire brut peuvent donner des nets très différents selon les pays ou les situations fiscales.\n- Un chiffre brut plus élevé dans un contexte fortement taxé peut vous laisser moins qu'un chiffre brut plus faible ailleurs.\n\nDonc, lorsque vous comparez des chiffres, comparez le net dès que vous le pouvez. Passez n'importe quelle offre dans notre [calculateur de salaire](/salary-calculator) gratuit pour estimer le salaire net aux États-Unis, en Allemagne ou au Royaume-Uni avant de vous décider.\n\n## Utiliser les statistiques officielles sur les salaires\n\nLes organismes publics publient des données salariales fiables et régulièrement mises à jour. Elles sont gratuites et bien plus dignes de confiance que des messages anonymes sur des forums.\n\n- **États-Unis :** le Bureau of Labor Statistics publie les rémunérations par profession et par zone géographique.\n- **Royaume-Uni :** l'Office for National Statistics présente les revenus et les heures de travail.\n- **Union européenne et Allemagne :** Eurostat couvre les salaires et les coûts de la main-d'œuvre dans les États membres.\n\nLorsque vous les consultez, notez la date, la région et si le chiffre est brut ou net. Recherchez votre profession spécifique plutôt qu'une moyenne nationale, car les intitulés de poste varient énormément.\n\n## Pourquoi le pouvoir d'achat l'emporte sur le chiffre affiché\n\nDeux personnes peuvent gagner le même salaire et mener des vies très différentes. La raison en est le pouvoir d'achat, c'est-à-dire ce que votre argent permet réellement d'acheter là où vous vivez.\n\nConsidérez cette comparaison simple. Les chiffres sont donnés à titre indicatif.\n\n| Ville | Salaire brut | Loyer mensuel typique | Argent restant après le loyer (approximatif) |\n|---|---|---|---|\n| Ville à faible coût | 50 000 | 900 | Plus de marge de manœuvre |\n| Ville à coût élevé | 60 000 | 1 800 | Moins de marge de manœuvre |\n\nLe salaire de 60 000 paraît plus élevé, mais après un loyer bien plus important, le travailleur de la ville à faible coût peut épargner davantage chaque mois. C'est pourquoi une augmentation accompagnée d'un déménagement vers une ville chère n'est pas toujours un gain réel.\n\nQuelques habitudes vous aident à vous concentrer sur le pouvoir d'achat :\n\n- Comparez le salaire net, et non le brut, par rapport aux prix locaux.\n- Tenez compte du loyer, des transports, des impôts et de la garde d'enfants, pas seulement du salaire.\n- Évaluez les avantages comme les cotisations de retraite, les congés payés et la couverture santé.\n\nLorsque vous mettez deux postes côte à côte, notre guide sur la façon de [comparer des offres d'emploi](/guides/how-to-compare-job-offers) déroule la liste complète des points à vérifier.\n\n## Réflexions finales\n\nUn bon salaire n'est pas un chiffre fixe que vous pouvez consulter une seule fois. C'est un chiffre qui correspond à votre poste, à votre emplacement, à votre expérience et à votre coût de la vie, et qui vous laisse un salaire net confortable. Utilisez les données de médiane et de centiles pour voir où vous vous situez, vérifiez toujours le net plutôt que le brut, et jugez chaque offre selon ce qu'elle permet réellement d'acheter.",
+    "keywords": [
+      "qu'est-ce qu'un bon salaire",
+      "évaluation salariale",
+      "salaire médian vs moyen",
+      "salaire brut vs net",
+      "centiles de salaire",
+      "pouvoir d'achat"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics",
+        "url": "https://www.bls.gov/oes/"
+      },
+      {
+        "label": "UK Office for National Statistics — Revenus et heures de travail",
+        "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours"
+      },
+      {
+        "label": "Eurostat — Salaires et coûts de la main-d'œuvre",
+        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Wages_and_labour_costs"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Dois-je regarder le salaire médian ou le salaire moyen lors d'une évaluation ?",
+        "answer": "La médiane est généralement plus fiable, car elle reflète le travailleur situé au milieu et n'est pas faussée par quelques très hauts revenus. La moyenne peut paraître plus élevée que ce que gagnent réellement la plupart des gens. Dans la mesure du possible, vérifiez les deux, ainsi que les centiles pour votre poste et votre région spécifiques."
+      },
+      {
+        "question": "Un salaire brut plus élevé est-il toujours préférable ?",
+        "answer": "Pas nécessairement. Après l'impôt sur le revenu, les cotisations de sécurité sociale et les autres déductions, un chiffre brut plus élevé dans une zone fortement taxée peut vous laisser un salaire net inférieur à un chiffre brut plus faible ailleurs. Comparez toujours le salaire net et évaluez le coût de la vie local avant de décider."
+      },
+      {
+        "question": "Où puis-je trouver des données salariales fiables ?",
+        "answer": "Les organismes publics de statistiques constituent un excellent point de départ : le U.S. Bureau of Labor Statistics, l'UK Office for National Statistics et Eurostat pour l'UE et l'Allemagne. Recherchez votre profession et votre région spécifiques, et notez la date ainsi que le caractère brut ou net des chiffres."
+      },
+      {
+        "question": "Comment le coût de la vie modifie-t-il ce qui constitue un bon salaire ?",
+        "answer": "Un salaire plus important dans une ville chère peut vous laisser moins d'argent disponible qu'un salaire plus modeste dans une région moins coûteuse, une fois le loyer, les impôts et les dépenses quotidiennes payés. Le pouvoir d'achat, c'est-à-dire ce que votre salaire net permet réellement d'acheter localement, compte souvent plus que le chiffre affiché."
+      }
+    ]
+  },
+  "how-to-compare-job-offers": {
+    "title": "Comment comparer des offres d'emploi (au-delà du salaire)",
+    "description": "Apprenez à comparer des offres d'emploi au-delà du salaire : convertir en brut et net annuels, valoriser les avantages et tenir compte des impôts, du trajet et des avantages non financiers.",
+    "content": "Un chiffre plus élevé sur la lettre d'offre ne signifie pas toujours plus d'argent dans votre poche. Deux emplois affichant le même salaire brut peuvent vous laisser des montants très différents une fois pris en compte les impôts, les avantages et les frais de trajet. Bien comparer des offres, c'est regarder l'ensemble du tableau, et pas seulement le chiffre principal.\n\n## Commencez par mettre chaque offre sur la même base\n\nLes offres se présentent sous des formes différentes. L'une est exprimée par an, une autre par mois, une autre par heure. Avant de pouvoir comparer quoi que ce soit, convertissez chacune en salaire brut annuel.\n\n- De l'horaire à l'annuel : multipliez le taux horaire par le nombre d'heures par semaine, puis par 52. Un taux de 25 par heure à raison de 40 heures par semaine représente environ 52 000 par an.\n- Du mensuel à l'annuel : multipliez par 12. Un salaire de 4 500 EUR par mois équivaut à 54 000 EUR par an.\n\nUne fois que chaque offre est exprimée en brut annuel, passez à l'étape que la plupart des gens sautent : estimez le [salaire net perçu](/guides/what-is-take-home-pay). Le brut est ce qu'on vous promet ; le net est ce qui arrive réellement sur votre compte bancaire après impôt sur le revenu et cotisations sociales. Vous pouvez passer chaque chiffre dans notre [calculateur de salaire](/calculator) ou le [calculateur de salaire net](/net-salary-calculator) pour comparer le net côte à côte.\n\n## Chiffrez les avantages\n\nLes avantages sont de l'argent bien réel, même s'ils n'apparaissent jamais comme du salaire. Selon le U.S. Bureau of Labor Statistics, les avantages représentent une part significative de la rémunération totale des salariés ; les ignorer peut donc masquer un écart important.\n\nÉléments à valoriser :\n\n- Assurance santé : à combien s'élève la cotisation et quelle part l'employeur prend-il en charge ?\n- Pension ou abondement retraite : un abondement de 5 pour cent sur un salaire de 60 000 représente 3 000 par an d'argent quasiment gratuit.\n- Congés payés : une semaine de congés supplémentaire a une valeur monétaire à peu près égale à une semaine de salaire.\n- Primes : vérifiez si elles sont garanties ou discrétionnaires, et utilisez une estimation prudente.\n\n## Tenez compte du lieu et des impôts\n\nL'endroit où se situe un emploi modifie votre salaire net et vos coûts. Les règles fiscales diffèrent selon le pays, et parfois selon la région, et le même salaire brut donne un net différent aux États-Unis, en Allemagne et au Royaume-Uni. Voyez comment les trois se comparent dans [le salaire net comparé entre pays](/guides/take-home-pay-us-uk-germany).\n\nUn salaire qui paraît plus élevé dans une ville chère peut s'étirer moins loin qu'un salaire plus modeste dans une région moins coûteuse. Évaluez l'offre par rapport aux prix locaux à l'aide de notre guide sur le [coût de la vie](/guides/cost-of-living-vs-salary) avant de décider.\n\n## Deux offres côte à côte\n\nVoici un exemple simplifié comparant deux offres au salaire brut identique.\n\n| Facteur | Offre A | Offre B |\n| --- | --- | --- |\n| Brut annuel | 60 000 | 60 000 |\n| Net estimé | 45 000 | 44 000 |\n| Abondement retraite | 0 | 3 000 |\n| Congés payés | 20 jours | 28 jours |\n| Coût du trajet (annuel) | 2 400 | 0 (télétravail) |\n| Valeur totale approximative | 42 600 | 47 000 |\n\nSur le papier, elles étaient à égalité. Une fois les avantages et le trajet intégrés, l'Offre B est nettement en tête.\n\n### Trajet et télétravail\n\nSe déplacer coûte de l'argent et du temps. Un trajet de 2 400 par an équivaut concrètement à une baisse de salaire. Les postes en télétravail ou hybrides peuvent aussi faire économiser sur les déjeuners, le stationnement et les vêtements de travail, et vous redonner des heures chaque semaine.\n\n## N'oubliez pas les facteurs non financiers\n\nLes chiffres comptent, mais le reste de l'emploi aussi :\n\n- Évolution : formation, perspectives de promotion et compétences que vous allez développer.\n- Stabilité : santé de l'entreprise et sentiment de sécurité dans le poste.\n- Flexibilité : maîtrise de votre emploi du temps et options de télétravail.\n- Culture et manager : souvent le principal moteur du bien-être au quotidien.\n\nSi deux offres sont proches sur le plan financier, ces facteurs devraient faire la différence. Et si l'argent est proche mais pas égal, rappelez-vous que vous pouvez souvent demander davantage. Consultez nos conseils sur la [négociation salariale](/guides/salary-negotiation-tips) avant d'accepter.\n\n## En résumé\n\nLa meilleure offre est rarement celle qui affiche le brut le plus élevé. Convertissez tout sur la même base, comparez le salaire net, ajoutez la valeur monétaire des avantages et soustrayez les frais de trajet. Intégrez ensuite les facteurs non financiers qui façonnent votre vie quotidienne. Les règles fiscales et celles relatives aux avantages varient selon le pays et la situation personnelle ; considérez donc ces exemples comme un point de départ et consultez un professionnel qualifié avant de prendre une décision finale.",
+    "keywords": [
+      "comparer des offres d'emploi",
+      "rémunération totale",
+      "comparaison du salaire net",
+      "valeur des avantages salariaux",
+      "évaluer des offres d'emploi",
+      "salaire net perçu"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Avantages sociaux des salariés",
+        "url": "https://www.bls.gov/ebs/"
+      },
+      {
+        "label": "GOV.UK — Impôt sur le revenu",
+        "url": "https://www.gov.uk/income-tax"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Dois-je comparer les offres d'emploi en brut ou en net ?",
+        "answer": "Comparez le salaire net, le montant que vous percevez réellement après impôts et cotisations. Deux offres au même brut peuvent donner des montants nets différents selon le lieu et les déductions ; le net offre donc une image plus fidèle."
+      },
+      {
+        "question": "Comment chiffrer des avantages comme des jours de congés supplémentaires ?",
+        "answer": "Estimez l'équivalent en argent. Une semaine de congés payés supplémentaire vaut environ une semaine de votre salaire, et un abondement retraite est de l'argent bien réel : par exemple, un abondement de 5 pour cent sur 60 000 équivaut à 3 000 par an."
+      },
+      {
+        "question": "Un salaire plus élevé dans une ville chère en vaut-il la peine ?",
+        "answer": "Pas toujours. Un salaire plus important peut acheter moins si le loyer, les transports et les dépenses quotidiennes sont bien plus élevés. Comparez l'offre au coût de la vie local et à votre salaire net estimé avant de décider."
+      },
+      {
+        "question": "Quel est l'impact réel du trajet sur une offre d'emploi ?",
+        "answer": "Plus important qu'on ne le pense. Les frais de déplacement agissent comme une baisse de salaire, et le temps perdu a aussi une valeur. Un poste en télétravail qui supprime un trajet de 2 400 par an peut l'emporter sur un salaire brut légèrement supérieur."
+      }
+    ]
+  },
+  "cost-of-living-vs-salary": {
+    "title": "Coût de la vie et salaire : comprendre votre revenu réel",
+    "description": "Découvrez comment le coût de la vie façonne votre revenu réel. Comparez salaire nominal et réel, pouvoir d'achat et salaire net entre les villes pour voir ce que vous gagnez vraiment.",
+    "content": "## Ce que vaut réellement votre salaire\n\nUne offre d'emploi affichant un chiffre plus élevé peut sembler une victoire automatique. Mais le montant de votre fiche de paie ne raconte que la moitié de l'histoire. Ce qui compte vraiment, c'est ce que cet argent peut acheter là où vous vivez. C'est toute la différence entre le revenu nominal et le revenu réel, et la comprendre peut changer votre façon de juger n'importe quelle offre d'emploi.\n\n## Revenu nominal et revenu réel\n\nLe revenu nominal est le montant brut que vous gagnez, mesuré en monnaie courante. Le revenu réel ajuste ce chiffre en fonction du coût des choses que vous achetez réellement.\n\n- Revenu nominal : le chiffre sur votre contrat, par exemple 60 000 USD par an.\n- Revenu réel : ce que ces 60 000 peuvent couvrir une fois pris en compte le loyer, la nourriture, les transports et les impôts.\n\nDeux personnes peuvent gagner le même salaire nominal et vivre très différemment, selon les prix locaux.\n\n## Pouvoir d'achat et inflation\n\nLe pouvoir d'achat correspond à ce qu'une unité de monnaie permet d'acheter. Il diminue lorsque les prix augmentent. Si votre rémunération reste stable tandis que les prix grimpent de 4 pour cent en un an, vous avez en réalité subi une baisse de salaire, car votre argent achète moins.\n\nL'inflation est mesurée par des indices de prix officiels tels que l'indice des prix à la consommation (Consumer Price Index). Notez que les prix et les taux d'inflation changent constamment, de sorte que tout chiffre que vous voyez est un instantané, et non une règle permanente.\n\n## Les dépenses qui grignotent votre salaire\n\nQuelques dépenses importantes façonnent votre niveau de vie plus que tout le reste :\n\n- Le logement : généralement le coût le plus élevé, et celui qui varie le plus d'un endroit à l'autre.\n- Les transports : possession d'une voiture, carburant ou abonnements aux transports en commun.\n- L'alimentation et les courses : des dépenses quotidiennes qui s'accumulent rapidement.\n- Les impôts et cotisations : ils réduisent le salaire brut avant même que vous dépensiez le moindre centime, ce qui explique pourquoi le [revenu brut et le revenu net](/guides/gross-income-vs-net-income) ont tant d'importance.\n\n## Même salaire, réalité différente\n\nImaginez deux personnes gagnant chacune 70 000 par an en monnaie locale. Le tableau ci-dessous utilise des chiffres illustratifs pour montrer comment un même salaire peut se déployer très différemment.\n\n| Poste de dépense (par an) | Ville chère | Ville moins chère |\n| --- | --- | --- |\n| Loyer | 24 000 | 12 000 |\n| Transports | 4 000 | 2 500 |\n| Alimentation | 8 000 | 6 000 |\n| Impôts estimés | 18 000 | 18 000 |\n| Argent restant | 16 000 | 31 500 |\n\nMême salaire brut, presque deux fois plus d'argent restant. La ville moins chère offre un revenu réel plus élevé alors même que la fiche de paie est identique.\n\n## Pourquoi un salaire brut plus élevé peut représenter moins\n\nC'est le piège que beaucoup de chercheurs d'emploi ne voient pas. Un poste payé 90 000 dans une grande agglomération chère peut vous laisser moins de pouvoir d'achat qu'un poste à 65 000 dans une région plus abordable. Un loyer plus élevé, des transports plus coûteux et parfois des impôts locaux plus lourds peuvent discrètement effacer la différence, et même au-delà.\n\nLorsque vous évaluez des offres, regardez au-delà du chiffre affiché et demandez-vous ce que votre vie coûtera réellement. Pour déterminer si une offre est compétitive en premier lieu, consultez [ce qu'est un bon salaire](/guides/what-is-a-good-salary).\n\n## Comparer entre villes et pays\n\nLa comparaison entre pays ajoute des couches supplémentaires : systèmes fiscaux différents, modèles de santé et monnaies. Un salaire en Allemagne, au Royaume-Uni et aux États-Unis peut correspondre à des montants nets et à des coûts de la vie très différents. Notre guide sur le [salaire net comparé](/guides/take-home-pay-us-uk-germany) détaille ces différences.\n\nUne approche simple et pratique :\n\n1. Partez du salaire net, et non du brut. Utilisez un [calculateur de salaire](/salary-calculator) pour estimer ce qui arrive réellement sur votre compte.\n2. Soustrayez vos principales dépenses locales, en particulier le logement.\n3. Comparez l'argent restant, et non les salaires affichés.\n\nCela vous permet de rester concentré sur le revenu réel plutôt que sur un chiffre brut impressionnant mais trompeur.\n\n## Réflexions finales\n\nUn salaire ne vaut que ce qu'il vous permet de vous offrir. En raisonnant en termes de revenu réel, de pouvoir d'achat et de coûts locaux, vous pouvez comparer les opportunités avec bien plus de précision. Partez de votre salaire net, tenez compte du logement et des dépenses quotidiennes, et vous aurez une image claire et honnête de n'importe quelle offre. N'oubliez pas que les prix et les règles fiscales évoluent avec le temps : traitez donc chaque comparaison comme une estimation actuelle plutôt que comme une vérité figée.",
+    "keywords": [
+      "coût de la vie et salaire",
+      "revenu réel",
+      "pouvoir d'achat",
+      "revenu nominal et revenu réel",
+      "comparaison du salaire net",
+      "salaire par ville"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Indice des prix à la consommation (Consumer Price Index)",
+        "url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "label": "UK Office for National Statistics — Inflation et indices des prix",
+        "url": "https://www.ons.gov.uk/economy/inflationandpriceindices"
+      },
+      {
+        "label": "Eurostat — Indice des prix à la consommation harmonisé",
+        "url": "https://ec.europa.eu/eurostat/web/hicp"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Quelle est la différence entre revenu nominal et revenu réel ?",
+        "answer": "Le revenu nominal est le montant brut que vous gagnez en monnaie, tandis que le revenu réel reflète ce que cet argent peut réellement acheter une fois pris en compte les prix et l'inflation. Le revenu réel est la meilleure mesure de votre niveau de vie."
+      },
+      {
+        "question": "Pourquoi un salaire plus élevé peut-il me laisser dans une moins bonne situation ?",
+        "answer": "Un salaire brut plus élevé dans une région chère peut être annulé par des coûts élevés de logement, de transport et d'impôts. Après ces dépenses, il peut vous rester moins d'argent qu'à quelqu'un qui gagne moins dans un endroit moins cher."
+      },
+      {
+        "question": "Comment comparer des salaires entre deux villes ou deux pays ?",
+        "answer": "Partez de votre salaire net estimé plutôt que du brut, soustrayez les principaux coûts locaux comme le loyer et les transports, puis comparez l'argent restant. Cela reflète le pouvoir d'achat réel plutôt que les chiffres affichés."
+      },
+      {
+        "question": "L'inflation affecte-t-elle la valeur de mon salaire ?",
+        "answer": "Oui. Lorsque les prix augmentent plus vite que votre rémunération, votre pouvoir d'achat diminue, ce qui signifie que le même salaire achète moins au fil du temps. Les taux d'inflation changent régulièrement, de sorte que tout chiffre n'est qu'un instantané actuel."
+      }
+    ]
+  },
+  "freelance-vs-employee-income": {
+    "title": "Freelance ou salarié : comment le revenu net diffère",
+    "description": "Le revenu net d'un freelance et d'un salarié diffère plus que ne le laissent penser les taux. Découvrez les cotisations sociales du travailleur indépendant, les avantages perdus et comment fixer un tarif freelance équitable.",
+    "content": "Lorsque vous passez d'un emploi salarié au freelancing, les chiffres peuvent vous induire en erreur. Un tarif horaire de 50 peut sembler bien plus avantageux qu'un salaire annuel de 60 000, mais les deux ne sont pas directement comparables. Les freelances supportent des coûts que les employeurs absorbent normalement. Avant de vous réjouir d'un tarif affiché plus élevé, il est utile de comprendre où va réellement l'argent.\n\n## Pourquoi un tarif freelance n'est pas un salaire\n\nUn salaire d'employé est un ensemble complet. Votre employeur prend en charge une partie de vos impôts, cotise aux programmes sociaux en votre nom et vous accorde des congés payés. Un tarif freelance n'est qu'un prix pour votre travail, sans rien d'inclus. Tout ce que votre employeur couvrait auparavant sort désormais de votre poche.\n\nPour comparer les deux équitablement, il faut regarder au-delà du montant brut. Comprendre la différence entre le [revenu brut et le revenu net](/guides/gross-income-vs-net-income) est la première étape, car vos véritables gains sont ceux qui atterrissent sur votre compte bancaire après impôts et frais.\n\n## Vous payez les deux moitiés des cotisations sociales\n\nEn tant que salarié, vous partagez les cotisations sociales avec votre employeur. Lorsque vous vous mettez à votre compte, vous payez généralement les deux parts.\n\n- États-Unis : les salariés versent 7,65 pour cent au titre de Social Security et de Medicare, et les employeurs y ajoutent une part équivalente. Les travailleurs indépendants paient l'intégralité de la self-employment tax, soit environ 15,3 pour cent du bénéfice net.\n- Royaume-Uni : les travailleurs indépendants paient la National Insurance via les Class 2 et Class 4, calculées sur les bénéfices, plutôt que le taux salarié Class 1 prélevé par un employeur.\n- Allemagne : les salariés partagent les cotisations légales d'assurance maladie, de retraite et de dépendance avec leur employeur. De nombreux freelances doivent souscrire eux-mêmes leur assurance maladie et décider s'ils cotisent volontairement au régime public de retraite, payant souvent la totalité du montant eux-mêmes.\n\nCes [cotisations de sécurité sociale](/guides/social-security-contributions-guide) sont faciles à négliger quand on fixe un tarif, mais elles peuvent engloutir une part importante de vos revenus.\n\n## Les avantages que vous n'avez plus\n\nLes employeurs offrent bien plus qu'un salaire. En tant que freelance, les éléments suivants disparaissent généralement ou deviennent votre propre responsabilité :\n\n- Les congés payés et les jours fériés payés\n- Les arrêts maladie indemnisés\n- Les cotisations ou abondements de retraite de l'employeur\n- La couverture santé dans certains pays\n- Les délais de préavis et les protections en cas de licenciement économique\n\nSi votre ancien emploi vous accordait 25 jours de congés payés, ce sont autant de jours pendant lesquels un freelance ne gagne rien. Ce temps non rémunéré doit être intégré dans votre tarif.\n\n## Salarié et freelance en un coup d'œil\n\n| Facteur | Salarié | Freelance |\n| --- | --- | --- |\n| Cotisations sociales | Partagées avec l'employeur | Souvent payées en totalité par vous |\n| Congés payés et indemnités maladie | Généralement inclus | Aucuns sauf si vous les financez |\n| Cotisations de retraite | Souvent abondées | Autofinancées |\n| Stabilité des revenus | Salaire régulier | Irréguliers, sujets aux trous |\n| Frais professionnels | Pris en charge par l'employeur | Déductibles mais à votre charge |\n| Déclaration d'impôts | Le plus souvent automatique | Votre responsabilité |\n\n## Frais professionnels et revenus irréguliers\n\nLes freelances paient souvent eux-mêmes leur ordinateur portable, leurs logiciels, leurs assurances, leur aide comptable et leur espace de travail. Beaucoup de ces frais sont déductibles d'impôt, ce qui réduit le bénéfice imposable, mais vous devez tout de même avancer l'argent.\n\nLes revenus arrivent aussi de manière inégale. Un mois solide peut être suivi d'un mois calme, vous avez donc besoin d'une réserve pour les périodes creuses et pour les notes d'impôts qui tombent d'un coup au lieu d'être prélevées automatiquement.\n\n## Fixer un tarif qui fonctionne vraiment\n\nUn tarif freelance viable tient compte du temps que vous ne pouvez pas facturer et des impôts que vous devez. Une façon approximative d'y réfléchir :\n\n- Partez du revenu annuel que vous souhaitez percevoir net.\n- Ajoutez les impôts et cotisations sociales que vous prévoyez.\n- Ajoutez les coûts des avantages que vous devez autofinancer, comme la retraite et l'assurance.\n- Divisez par des heures facturables réalistes, et non par l'ensemble de vos heures de travail. Les vacances, les jours de maladie, l'administratif et la recherche de clients ne sont pas rémunérés.\n\n### Un exemple rapide\n\nSupposons que vous vouliez 60 000 de revenu net. Après environ 30 pour cent pour les impôts et cotisations, plus les frais et les avantages non financés, il vous faudrait peut-être facturer 90 000 ou plus. Répartis sur, disons, 1 400 heures facturables par an plutôt que 2 080 complètes, cela conduit à un tarif bien supérieur à ce que suggère le simple calcul du salaire à l'heure.\n\nComprendre le [revenu net](/guides/what-is-take-home-pay) des deux côtés de la comparaison permet de garder des attentes réalistes.\n\n## Faites une estimation avant de décider\n\nLes règles fiscales varient selon les pays et changent chaque année, considérez donc tous les chiffres présentés ici comme illustratifs. Faites vos propres calculs avec un [calculateur de salaire](/calculator) pour voir approximativement ce qu'un salaire d'employé vous rapporte net, puis remontez jusqu'au tarif freelance qui y correspond. Lorsque la décision est importante, consultez un fiscaliste qualifié.\n\n## Pour conclure\n\nLe freelancing peut bien payer, mais un tarif plus élevé ne signifie pas automatiquement plus d'argent. Une fois que vous tenez compte des doubles cotisations sociales, des avantages perdus, du temps non rémunéré et des frais professionnels, la comparaison change. Estimez d'abord votre revenu net sur les deux voies, et vous négocierez en position de clarté plutôt qu'au jugé.",
+    "keywords": [
+      "freelance ou salarié rémunération",
+      "revenu net freelance",
+      "cotisations du travailleur indépendant",
+      "fixer un tarif freelance",
+      "revenu indépendant vs salarié",
+      "revenu net du freelance"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Self-Employment Tax (cotisations Social Security et Medicare)",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "GOV.UK — Travailler à son compte",
+        "url": "https://www.gov.uk/working-for-yourself"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Un tarif horaire de freelance équivaut-il à un salaire horaire d'employé ?",
+        "answer": "Non. Un salaire d'employé s'accompagne de cotisations payées par l'employeur, de congés payés et d'avantages. Un tarif freelance doit couvrir tout cela lui-même, il doit donc généralement être nettement plus élevé pour atteindre le même revenu net."
+      },
+      {
+        "question": "Pourquoi les travailleurs indépendants paient-ils davantage de cotisations sociales ?",
+        "answer": "En tant que salarié, votre employeur verse une part équivalente de cotisations sociales. Lorsque vous êtes indépendant, vous couvrez généralement à la fois la part salariale et la part patronale, comme la self-employment tax américaine d'environ 15,3 pour cent ou la National Insurance britannique des Class 2 et Class 4."
+      },
+      {
+        "question": "Comment déterminer un tarif freelance équitable ?",
+        "answer": "Partez du revenu net que vous souhaitez, ajoutez les impôts, les cotisations et les avantages autofinancés, puis divisez par des heures facturables réalistes plutôt que par le total des heures de travail. Le temps non rémunéré consacré à l'administratif, aux congés et à la recherche de clients doit être intégré."
+      },
+      {
+        "question": "Les frais professionnels peuvent-ils réduire mes impôts de freelance ?",
+        "answer": "Dans de nombreux pays, les frais professionnels légitimes comme le matériel, les logiciels et les assurances sont déductibles et réduisent votre bénéfice imposable. Vous les payez tout de même d'avance, et les règles diffèrent selon les pays, alors consultez les directives locales ou un fiscaliste."
+      }
+    ]
+  }
+}
