@@ -146,5 +146,16 @@
   "common": {
     "lastUpdated": "Останнє оновлення:",
     "backToHome": "Повернутися на головну"
+  },
+  "country": {
+    "h1Suffix": "Калькулятор податку на зарплату",
+    "allCalculators": "← Усі калькулятори",
+    "hourlyConverter": "Конвертер погодинної оплати в зарплату",
+    "otherCountries": "Інші країни:",
+    "howItWorksHeading": "{country}: як працюють податки на зарплату",
+    "faqHeading": "Поширені запитання",
+    "relatedHeading": "Пов’язані ресурси",
+    "relatedHub": "Центр калькуляторів зарплати",
+    "calculatorSuffix": "Калькулятор зарплати"
   }
 }

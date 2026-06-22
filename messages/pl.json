@@ -146,5 +146,16 @@
   "common": {
     "lastUpdated": "Ostatnia aktualizacja:",
     "backToHome": "Powrót do strony głównej"
+  },
+  "country": {
+    "h1Suffix": "Kalkulator podatku od wynagrodzenia",
+    "allCalculators": "← Wszystkie kalkulatory",
+    "hourlyConverter": "Przelicznik stawki godzinowej na wynagrodzenie",
+    "otherCountries": "Inne kraje:",
+    "howItWorksHeading": "{country}: jak działają podatki od wynagrodzeń",
+    "faqHeading": "Najczęściej zadawane pytania",
+    "relatedHeading": "Powiązane materiały",
+    "relatedHub": "Centrum kalkulatora wynagrodzeń",
+    "calculatorSuffix": "Kalkulator wynagrodzeń"
   }
 }

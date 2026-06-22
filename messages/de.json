@@ -144,5 +144,16 @@
   "common": {
     "lastUpdated": "Zuletzt aktualisiert:",
     "backToHome": "Zurück zur Startseite"
+  },
+  "country": {
+    "h1Suffix": "Gehalts- und Steuerrechner",
+    "allCalculators": "← Alle Rechner",
+    "hourlyConverter": "Stundenlohn-zu-Gehalt-Rechner",
+    "otherCountries": "Andere Länder:",
+    "howItWorksHeading": "Gehaltssteuern in {country}: So funktioniert es",
+    "faqHeading": "Häufig gestellte Fragen",
+    "relatedHeading": "Verwandte Ressourcen",
+    "relatedHub": "Gehaltsrechner-Übersicht",
+    "calculatorSuffix": "Gehaltsrechner"
   }
 }

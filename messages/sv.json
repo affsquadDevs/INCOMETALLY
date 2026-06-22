@@ -145,5 +145,16 @@
   "common": {
     "lastUpdated": "Senast uppdaterad:",
     "backToHome": "Tillbaka till startsidan"
+  },
+  "country": {
+    "h1Suffix": "lönekalkylator för skatt",
+    "allCalculators": "← Alla kalkylatorer",
+    "hourlyConverter": "Omvandla timlön till årslön",
+    "otherCountries": "Andra länder:",
+    "howItWorksHeading": "Så fungerar löneskatter i {country}",
+    "faqHeading": "Vanliga frågor",
+    "relatedHeading": "Relaterade resurser",
+    "relatedHub": "Lönekalkylator-hubb",
+    "calculatorSuffix": "lönekalkylator"
   }
 }

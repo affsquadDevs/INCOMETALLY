@@ -146,5 +146,16 @@
   "common": {
     "lastUpdated": "Poslední aktualizace:",
     "backToHome": "Zpět na domovskou stránku"
+  },
+  "country": {
+    "h1Suffix": "kalkulačka daně z platu",
+    "allCalculators": "← Všechny kalkulačky",
+    "hourlyConverter": "Převodník hodinové mzdy na plat",
+    "otherCountries": "Další země:",
+    "howItWorksHeading": "{country}: Jak funguje zdanění platů",
+    "faqHeading": "Často kladené otázky",
+    "relatedHeading": "Související zdroje",
+    "relatedHub": "Centrum platových kalkulaček",
+    "calculatorSuffix": "platová kalkulačka"
   }
 }

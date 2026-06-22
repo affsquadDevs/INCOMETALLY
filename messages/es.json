@@ -145,5 +145,16 @@
   "common": {
     "lastUpdated": "Última actualización:",
     "backToHome": "Volver al inicio"
+  },
+  "country": {
+    "h1Suffix": "Calculadora de Impuestos sobre el Salario",
+    "allCalculators": "← Todas las calculadoras",
+    "hourlyConverter": "Conversor de salario por hora",
+    "otherCountries": "Otros países:",
+    "howItWorksHeading": "{country}: cómo funcionan los impuestos sobre el salario",
+    "faqHeading": "Preguntas frecuentes",
+    "relatedHeading": "Recursos relacionados",
+    "relatedHub": "Centro de calculadoras de salario",
+    "calculatorSuffix": "Calculadora de Salario"
   }
 }

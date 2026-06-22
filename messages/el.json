@@ -146,5 +146,16 @@
   "common": {
     "lastUpdated": "Τελευταία ενημέρωση:",
     "backToHome": "Επιστροφή στην Αρχική"
+  },
+  "country": {
+    "h1Suffix": "Φορολογικός Υπολογιστής Μισθού",
+    "allCalculators": "← Όλοι οι Υπολογιστές",
+    "hourlyConverter": "Μετατροπέας Ωριαίας Αμοιβής σε Μισθό",
+    "otherCountries": "Άλλες Χώρες:",
+    "howItWorksHeading": "Πώς λειτουργεί η φορολογία μισθού: {country}",
+    "faqHeading": "Συχνές Ερωτήσεις",
+    "relatedHeading": "Σχετικοί Πόροι",
+    "relatedHub": "Κόμβος Υπολογιστών Μισθού",
+    "calculatorSuffix": "Υπολογιστής Μισθού"
   }
 }

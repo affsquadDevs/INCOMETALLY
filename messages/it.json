@@ -146,5 +146,16 @@
   "common": {
     "lastUpdated": "Ultimo aggiornamento:",
     "backToHome": "Torna alla home"
+  },
+  "country": {
+    "h1Suffix": "Calcolatore delle Tasse sullo Stipendio",
+    "allCalculators": "← Tutti i Calcolatori",
+    "hourlyConverter": "Convertitore da Paga Oraria a Stipendio",
+    "otherCountries": "Altri Paesi:",
+    "howItWorksHeading": "Come Funzionano le Tasse sullo Stipendio in {country}",
+    "faqHeading": "Domande Frequenti",
+    "relatedHeading": "Risorse Correlate",
+    "relatedHub": "Hub dei Calcolatori di Stipendio",
+    "calculatorSuffix": "Calcolatore di Stipendio"
   }
 }
