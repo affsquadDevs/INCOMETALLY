@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { siteConfig } from '@/config/site';
 import { getContact } from '@/lib/content';
 import { buildAlternates } from '@/i18n/seo';
@@ -10,15 +10,14 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const contactPage = getContact(locale);
+  const md = await getTranslations({ locale, namespace: 'metaDesc' });
   return {
     title: contactPage.title,
-    description:
-      'Get in touch with the IncomeTally team. Questions about our calculators, privacy, or feedback are welcome.',
+    description: md('contact'),
     alternates: buildAlternates(locale, '/contact'),
     openGraph: {
       title: contactPage.title,
-      description:
-        'Get in touch with the IncomeTally team. Questions about our calculators, privacy, or feedback are welcome.',
+      description: md('contact'),
       url: '/contact',
       type: 'website',
     },
@@ -95,6 +94,24 @@ export default async function Contact({ params: { locale } }: { params: { locale
               ))}
             </ul>
           </div>
+
+          {/* Before you reach out */}
+          {contactPage.beforeContact && (
+            <div className="pt-6 border-t border-black border-opacity-10">
+              <h2 className="text-2xl font-normal text-black mb-4">
+                {contactPage.beforeContact.title}
+              </h2>
+              <p className="text-black mb-4 opacity-80">{contactPage.beforeContact.intro}</p>
+              <ul className="space-y-2 text-black opacity-80">
+                {contactPage.beforeContact.tips.map((tip, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="mr-2">•</span>
+                    <span>{tip}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>

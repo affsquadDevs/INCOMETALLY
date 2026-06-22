@@ -661,5 +661,11 @@
       "de": "Gehaltsrechner Deutschland",
       "uk": "Gehaltsrechner Grossbritannien"
     }
+  },
+  "metaDesc": {
+    "about": "IncomeTally ist ein kostenloses, unabhängiges Tool zur Schätzung von Nettogehalt, Auszahlung und Einkommensteuer in neun Ländern — klare, gut belegte Schätzungen, keine Beratung.",
+    "contact": "Kontaktieren Sie das IncomeTally-Team zu unseren Gehalts- und Steuerrechnern, zur Erstellung der Schätzungen, zu Datenschutz und Datenverarbeitung oder für Feedback und Korrekturen.",
+    "privacy": "Wie IncomeTally Ihre Daten erfasst, nutzt und schützt — Cookies, Analyse, Google AdSense-Werbung und Datensicherheit. Für die Nutzung ist kein Konto erforderlich.",
+    "terms": "Die Bedingungen für die Nutzung der kostenlosen Einkommens-, Gehalts- und Steuerrechner von IncomeTally: zulässige Nutzung, Schätzungen-statt-Beratung-Hinweis, geistiges Eigentum und Haftung."
   }
 }

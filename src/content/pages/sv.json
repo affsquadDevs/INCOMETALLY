@@ -60,6 +60,15 @@
         "Vi erbjuder inte kundsupport via sociala medier och tillhandahåller för närvarande inte telefonsupport.",
         "Skicka inte känsliga personuppgifter via e-post om det inte är nödvändigt för att hantera din förfrågan."
       ]
+    },
+    "beforeContact": {
+      "title": "Innan du hör av dig",
+      "intro": "Många frågor besvaras snabbare på själva webbplatsen. Innan du mejlar hjälper det ofta att:",
+      "tips": [
+        "Titta i kalkylatorn för ditt land — varje landsida förklarar hur landets inkomstskatt och sociala avgifter uppskattas och listar de officiella källorna bakom siffrorna.",
+        "Bläddra bland våra guider för enkla förklaringar av brutto- kontra nettolön, skatteskikt, avdrag och hur du läser din lönespecifikation.",
+        "Om du rapporterar ett problem, berätta vilken sida eller kalkylator du använde, vilka värden du angav och vad du förväntade dig jämfört med vad du såg — det hjälper oss att svara korrekt och snabbt."
+      ]
     }
   },
   "privacy": {

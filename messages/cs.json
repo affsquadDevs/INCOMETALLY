@@ -663,5 +663,11 @@
       "de": "Kalkulačka mzdy pro Německo",
       "uk": "Kalkulačka mzdy pro Velkou Británii"
     }
+  },
+  "metaDesc": {
+    "about": "IncomeTally je bezplatný a nezávislý nástroj pro odhad čisté mzdy, výplaty a daně z příjmu v devíti zemích — přehledné odhady z ověřených zdrojů, nikoli poradenství.",
+    "contact": "Kontaktujte tým IncomeTally ohledně našich mzdových a daňových kalkulaček, způsobu výpočtu odhadů, ochrany soukromí a dat, nebo nám pošlete zpětnou vazbu a opravy.",
+    "privacy": "Jak IncomeTally shromažďuje, používá a chrání vaše údaje — cookies, analytika, reklama Google AdSense a zabezpečení dat. K používání webu není potřeba účet.",
+    "terms": "Podmínky používání bezplatných kalkulaček příjmu, mzdy a daní IncomeTally: přijatelné použití, upozornění že jde o odhady nikoli poradenství, duševní vlastnictví a odpovědnost."
   }
 }

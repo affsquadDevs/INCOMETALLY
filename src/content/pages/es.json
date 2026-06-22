@@ -60,6 +60,15 @@
         "No ofrecemos atención al cliente a través de redes sociales y, por el momento, no proporcionamos soporte telefónico.",
         "Por favor, no envíes información personal sensible por correo electrónico a menos que sea necesario para atender tu solicitud."
       ]
+    },
+    "beforeContact": {
+      "title": "Antes de escribirnos",
+      "intro": "Muchas dudas se resuelven más rápido en el propio sitio. Antes de enviar un correo, suele ayudar:",
+      "tips": [
+        "Consultar la calculadora de tu país: cada página de país explica cómo se estiman el IRPF y las cotizaciones sociales de ese país e indica las fuentes oficiales en las que se basan las cifras.",
+        "Echar un vistazo a nuestras guías para entender en lenguaje sencillo el sueldo bruto frente al neto, los tramos impositivos, las deducciones y cómo leer tu nómina.",
+        "Si nos informas de un problema, indícanos qué página o calculadora usaste, los valores que introdujiste y qué esperabas en comparación con lo que viste: así podremos responderte con precisión y rapidez."
+      ]
     }
   },
   "privacy": {

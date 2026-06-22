@@ -663,5 +663,11 @@
       "de": "Calculadora de Salário da Alemanha",
       "uk": "Calculadora de Salário do Reino Unido"
     }
+  },
+  "metaDesc": {
+    "about": "O IncomeTally é uma ferramenta gratuita e independente para estimar o salário líquido, o vencimento e o imposto sobre o rendimento em nove países — estimativas claras e fundamentadas, não aconselhamento.",
+    "contact": "Contacte a equipa do IncomeTally sobre as nossas calculadoras de salários e impostos, como são produzidas as estimativas, privacidade e tratamento de dados, ou para enviar comentários e correções.",
+    "privacy": "Como o IncomeTally recolhe, utiliza e protege as suas informações — cookies, análises, publicidade Google AdSense e segurança dos dados. Não é necessária conta para usar o site.",
+    "terms": "As condições de utilização das calculadoras gratuitas de rendimento, salário e impostos do IncomeTally: uso aceitável, aviso de estimativas-não-aconselhamento, propriedade intelectual e responsabilidade."
   }
 }

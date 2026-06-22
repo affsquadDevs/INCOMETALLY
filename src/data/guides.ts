@@ -188,7 +188,7 @@ Use our country-specific calculators to see how brackets apply to your income.`,
     pillar: 'income-basics',
     title: 'Hourly to Salary Conversion: Complete Guide',
     description:
-      'Convert hourly wages to annual, monthly, and weekly salary. Learn the formulas and use our free calculator.',
+      'Convert an hourly wage into annual, monthly, weekly, and daily salary using simple formulas and worked examples, then use our free calculator to estimate your take-home pay after tax.',
     date: '2026-01-13',
     keywords: [
       'hourly to salary',

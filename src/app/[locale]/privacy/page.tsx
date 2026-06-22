@@ -10,15 +10,14 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const { title } = getPrivacy(locale);
+  const md = await getTranslations({ locale, namespace: 'metaDesc' });
   return {
     title,
-    description:
-      'How IncomeTally collects, uses, and protects your information, including cookies and Google AdSense advertising.',
+    description: md('privacy'),
     alternates: buildAlternates(locale, '/privacy'),
     openGraph: {
       title,
-      description:
-        'How IncomeTally collects, uses, and protects your information, including cookies and Google AdSense advertising.',
+      description: md('privacy'),
       url: '/privacy',
       type: 'website',
     },

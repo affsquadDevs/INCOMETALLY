@@ -60,6 +60,15 @@
         "Al momento non offriamo assistenza clienti tramite i social media e non forniamo supporto telefonico.",
         "Ti preghiamo di non inviare informazioni personali sensibili via email, a meno che non sia necessario per gestire la tua richiesta."
       ]
+    },
+    "beforeContact": {
+      "title": "Prima di contattarci",
+      "intro": "Molte domande trovano risposta più rapidamente sul sito stesso. Prima di scriverci, spesso è utile:",
+      "tips": [
+        "Controllare il calcolatore del tuo paese: ogni pagina paese spiega come vengono stimate le imposte sul reddito e i contributi sociali di quel paese ed elenca le fonti ufficiali alla base dei dati.",
+        "Sfogliare le nostre guide per spiegazioni in linguaggio semplice su retribuzione lorda vs. netta, scaglioni fiscali, detrazioni e come leggere la tua busta paga.",
+        "Se stai segnalando un problema, indicaci quale pagina o calcolatore hai usato, i valori che hai inserito e cosa ti aspettavi rispetto a ciò che hai visto: ci aiuta a risponderti in modo accurato e veloce."
+      ]
     }
   },
   "privacy": {

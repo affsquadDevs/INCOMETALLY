@@ -97,6 +97,16 @@ export const siteConfig = {
         'Please do not send sensitive personal information by email unless it is necessary to address your request.',
       ],
     },
+    beforeContact: {
+      title: 'Before you reach out',
+      intro:
+        'Many questions are answered faster on the site itself. Before emailing, it often helps to:',
+      tips: [
+        'Check the calculator for your country — each country page explains how that country’s income tax and social contributions are estimated and lists the official sources behind the figures.',
+        'Browse our guides for plain-language explanations of gross vs. net pay, tax brackets, deductions, and how to read your payslip.',
+        'If you are reporting a problem, tell us which page or calculator you used, the values you entered, and what you expected compared with what you saw — it helps us respond accurately and quickly.',
+      ],
+    },
   },
 
   // Home Page Content

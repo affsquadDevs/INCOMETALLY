@@ -1,4 +1,10 @@
 {
+  "metaDesc": {
+    "about": "IncomeTally is a free, independent tool for estimating net salary, take-home pay and income tax across nine countries — clear, well-sourced estimates, not advice.",
+    "contact": "Contact the IncomeTally team about our salary and tax calculators, how the estimates are produced, privacy and data handling, or to send feedback and corrections.",
+    "privacy": "How IncomeTally collects, uses and protects your information — cookies, analytics, Google AdSense advertising and data security. No account is required to use the site.",
+    "terms": "The terms for using IncomeTally's free income, salary and tax calculators: acceptable use, the estimates-not-advice disclaimer, intellectual property and liability."
+  },
   "common": {
     "lastUpdated": "Last updated:",
     "backToHome": "Back to Home"

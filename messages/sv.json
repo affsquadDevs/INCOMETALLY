@@ -662,5 +662,11 @@
       "de": "Lönekalkylator för Tyskland",
       "uk": "Lönekalkylator för Storbritannien"
     }
+  },
+  "metaDesc": {
+    "about": "IncomeTally är ett gratis, oberoende verktyg för att uppskatta nettolön, lön efter skatt och inkomstskatt i nio länder — tydliga, väl underbyggda uppskattningar, inte rådgivning.",
+    "contact": "Kontakta IncomeTally-teamet om våra löne- och skattekalkylatorer, hur uppskattningarna tas fram, integritet och datahantering, eller för att skicka feedback och rättelser.",
+    "privacy": "Så samlar in, använder och skyddar IncomeTally din information — cookies, analys, Google AdSense-annonsering och datasäkerhet. Inget konto krävs för att använda webbplatsen.",
+    "terms": "Villkoren för att använda IncomeTallys gratis inkomst-, löne- och skattekalkylatorer: tillåten användning, friskrivningen om uppskattningar inte rådgivning, immateriella rättigheter och ansvar."
   }
 }

@@ -663,5 +663,11 @@
       "de": "Kalkulator wynagrodzeń dla Niemiec",
       "uk": "Kalkulator wynagrodzeń dla Wielkiej Brytanii"
     }
+  },
+  "metaDesc": {
+    "about": "IncomeTally to bezpłatne, niezależne narzędzie do szacowania wynagrodzenia netto, pensji na rękę i podatku dochodowego w dziewięciu krajach — jasne, oparte na źródłach szacunki, nie porady.",
+    "contact": "Skontaktuj się z zespołem IncomeTally w sprawie naszych kalkulatorów pensji i podatków, sposobu obliczania szacunków, prywatności i przetwarzania danych albo prześlij opinię i poprawki.",
+    "privacy": "Jak IncomeTally zbiera, wykorzystuje i chroni Twoje dane — pliki cookie, analityka, reklamy Google AdSense i bezpieczeństwo danych. Korzystanie z serwisu nie wymaga konta.",
+    "terms": "Warunki korzystania z bezpłatnych kalkulatorów dochodu, pensji i podatków IncomeTally: dozwolony użytek, zastrzeżenie szacunki-nie-porady, własność intelektualna i odpowiedzialność."
   }
 }

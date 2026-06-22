@@ -662,5 +662,11 @@
       "de": "Calculadora de salario de Alemania",
       "uk": "Calculadora de salario del Reino Unido"
     }
+  },
+  "metaDesc": {
+    "about": "IncomeTally es una herramienta gratuita e independiente para estimar el salario neto, el sueldo líquido y el IRPF en nueve países: estimaciones claras y bien documentadas, no asesoramiento.",
+    "contact": "Contacta con el equipo de IncomeTally sobre nuestras calculadoras de salario e impuestos, cómo se elaboran las estimaciones, la privacidad y el tratamiento de datos, o para enviar comentarios y correcciones.",
+    "privacy": "Cómo IncomeTally recopila, usa y protege tu información: cookies, analítica, publicidad de Google AdSense y seguridad de datos. No necesitas cuenta para usar el sitio.",
+    "terms": "Las condiciones de uso de las calculadoras gratuitas de ingresos, salario e impuestos de IncomeTally: uso aceptable, la aclaración de estimaciones no asesoramiento, propiedad intelectual y responsabilidad."
   }
 }
