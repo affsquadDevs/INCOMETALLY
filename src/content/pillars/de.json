@@ -1,1 +1,14 @@
-{}
+{
+  "income-basics": {
+    "title": "Ihr Einkommen verstehen",
+    "description": "Brutto- und Nettolohn, Nettoverdienst sowie die Umrechnung des Einkommens zwischen Stunden-, Monats- und Jahreswerten."
+  },
+  "income-tax": {
+    "title": "So funktioniert die Einkommensteuer",
+    "description": "Steuerklassen, Abzuege, Sozialabgaben und wie die Einkommensteuer Ihren Nettoverdienst in verschiedenen Laendern beeinflusst."
+  },
+  "salary-career": {
+    "title": "Gehalt, Jobs & Finanzplanung",
+    "description": "Vergleichen Sie Ihr Gehalt, bewerten Sie Stellenangebote, beruecksichtigen Sie die Lebenshaltungskosten und verstehen Sie den Unterschied zwischen freiberuflichem und angestelltem Einkommen."
+  }
+}

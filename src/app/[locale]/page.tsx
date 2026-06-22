@@ -6,9 +6,7 @@ import AnimatedBlock from '@/components/AnimatedBlock';
 import FAQAccordion from '@/components/FAQAccordion';
 import { generateFAQJsonLd, type FAQ } from '@/lib/seo/faq';
 import { countries } from '@/lib/countries';
-import { getLocalizedCountry } from '@/lib/content';
-import { getAllPillars } from '@/data/pillars';
-import { getGuideBySlug } from '@/data/guides';
+import { getLocalizedCountry, getLocalizedPillars, getLocalizedGuideBySlug } from '@/lib/content';
 
 export async function generateMetadata({
   params: { locale },
@@ -53,8 +51,8 @@ export default async function Home({ params: { locale } }: { params: { locale: s
     ...c,
     displayName: getLocalizedCountry(c.code, locale)?.displayName ?? c.displayName,
   }));
-  const pillars = getAllPillars().map((pillar) => {
-    const guide = getGuideBySlug(pillar.cornerstoneSlug);
+  const pillars = getLocalizedPillars(locale).map((pillar) => {
+    const guide = getLocalizedGuideBySlug(pillar.cornerstoneSlug, locale);
     return {
       ...pillar,
       flagshipTitle: guide ? guide.title : pillar.title,

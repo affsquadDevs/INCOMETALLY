@@ -1,19 +1,23 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Script from 'next/script';
 import dynamic from 'next/dynamic';
 import remarkGfm from 'remark-gfm';
-import { getGuideBySlug, getAllGuideSlugs, getRelatedGuides } from '@/data/guides';
-import { getAuthor } from '@/data/authors';
-import { getPillar } from '@/data/pillars';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAllGuideSlugs } from '@/data/guides';
+import {
+  getLocalizedGuideBySlug,
+  getLocalizedRelatedGuides,
+  getLocalizedPillar,
+  getLocalizedAuthor,
+} from '@/lib/content';
 import FAQAccordion from '@/components/FAQAccordion';
 import { generateFAQJsonLd } from '@/lib/seo/faq';
 import { generateBreadcrumbJsonLd } from '@/lib/seo/breadcrumbs';
 import { siteConfig } from '@/config/site';
 
 // Dynamic import for react-markdown - heavy library, only load when needed
-// Reduces initial bundle size for guide pages
 const ReactMarkdown = dynamic(() => import('react-markdown'), {
   loading: () => (
     <div className="animate-pulse space-y-4">
@@ -26,6 +30,7 @@ const ReactMarkdown = dynamic(() => import('react-markdown'), {
 
 interface PageProps {
   params: {
+    locale: string;
     slug: string;
   };
 }
@@ -38,7 +43,7 @@ export async function generateStaticParams() {
 
 // Generate metadata
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const guide = getGuideBySlug(params.slug);
+  const guide = getLocalizedGuideBySlug(params.slug, params.locale);
 
   if (!guide) {
     return {
@@ -47,8 +52,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const url = `${siteConfig.domain}/guides/${guide.slug}`;
-  const author = getAuthor(guide.authorId);
-  const pillar = getPillar(guide.pillar);
+  const author = getLocalizedAuthor(guide.authorId, params.locale);
+  const pillar = getLocalizedPillar(guide.pillar, params.locale);
 
   return {
     title: guide.title,
@@ -76,15 +81,17 @@ function extractTOC(content: string): Array<{ id: string; text: string; level: n
   const lines = content.split('\n');
   const toc: Array<{ id: string; text: string; level: number }> = [];
 
-  lines.forEach((line) => {
+  lines.forEach((line, index) => {
     const headerMatch = line.match(/^(#{1,6})\s+(.+)$/);
     if (headerMatch) {
       const level = headerMatch[1].length;
       const text = headerMatch[2].trim();
-      const id = text
+      const slug = text
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '');
+      // Fall back to a positional id for non-Latin scripts where the slug is empty
+      const id = slug || `section-${index}`;
       toc.push({ id, text, level });
     }
   });
@@ -92,23 +99,28 @@ function extractTOC(content: string): Array<{ id: string; text: string; level: n
   return toc;
 }
 
-export default function GuidePage({ params }: PageProps) {
-  const guide = getGuideBySlug(params.slug);
+export default async function GuidePage({ params }: PageProps) {
+  const { locale } = params;
+  setRequestLocale(locale);
+  const t = await getTranslations('guides');
+  const dateLocale = locale === 'en' ? 'en-US' : locale;
+
+  const guide = getLocalizedGuideBySlug(params.slug, locale);
 
   if (!guide) {
     notFound();
   }
 
-  const author = getAuthor(guide.authorId);
-  const pillar = getPillar(guide.pillar);
-  const related = getRelatedGuides(guide.slug);
+  const author = getLocalizedAuthor(guide.authorId, locale);
+  const pillar = getLocalizedPillar(guide.pillar, locale);
+  const related = getLocalizedRelatedGuides(guide.slug, locale);
   // Strip a leading H1 from the markdown so each page has a single H1 (the header below)
   const contentBody = guide.content.replace(/^#\s+.+\n+/, '');
   const toc = extractTOC(contentBody);
   const url = `${siteConfig.domain}/guides/${guide.slug}`;
   const breadcrumbs = [
-    { name: 'Home', url: siteConfig.domain },
-    { name: 'Guides', url: `${siteConfig.domain}/guides` },
+    { name: t('breadcrumbHome'), url: siteConfig.domain },
+    { name: t('breadcrumbGuides'), url: `${siteConfig.domain}/guides` },
     { name: guide.title, url },
   ];
 
@@ -120,7 +132,7 @@ export default function GuidePage({ params }: PageProps) {
     description: guide.description,
     datePublished: guide.date,
     dateModified: guide.updated ?? guide.date,
-    inLanguage: 'en',
+    inLanguage: locale,
     articleSection: pillar?.title,
     keywords: guide.keywords.join(', '),
     author: {
@@ -180,11 +192,11 @@ export default function GuidePage({ params }: PageProps) {
           {/* Breadcrumbs */}
           <nav className="mb-6 text-sm text-black opacity-70">
             <Link href="/" className="hover:opacity-100">
-              Home
+              {t('breadcrumbHome')}
             </Link>
             <span className="mx-2">/</span>
             <Link href="/guides" className="hover:opacity-100">
-              Guides
+              {t('breadcrumbGuides')}
             </Link>
             <span className="mx-2">/</span>
             <span className="opacity-100">{guide.title}</span>
@@ -198,15 +210,15 @@ export default function GuidePage({ params }: PageProps) {
             <p className="text-lg text-black opacity-70 mb-4">{guide.description}</p>
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-black opacity-60">
               <span>
-                By{' '}
+                {t('by')}{' '}
                 <Link href={author.url} className="hover:opacity-100 hover:underline">
                   {author.name}
                 </Link>
               </span>
               <span>•</span>
               <time dateTime={guide.date}>
-                Published{' '}
-                {new Date(guide.date).toLocaleDateString('en-US', {
+                {t('published')}{' '}
+                {new Date(guide.date).toLocaleDateString(dateLocale, {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
@@ -216,8 +228,8 @@ export default function GuidePage({ params }: PageProps) {
                 <>
                   <span>•</span>
                   <time dateTime={guide.updated}>
-                    Updated{' '}
-                    {new Date(guide.updated).toLocaleDateString('en-US', {
+                    {t('updated')}{' '}
+                    {new Date(guide.updated).toLocaleDateString(dateLocale, {
                       year: 'numeric',
                       month: 'long',
                       day: 'numeric',
@@ -240,9 +252,7 @@ export default function GuidePage({ params }: PageProps) {
               {/* FAQ Section */}
               {guide.faqs && guide.faqs.length > 0 && (
                 <section className="mb-8">
-                  <h2 className="text-3xl font-normal text-black mb-6">
-                    Frequently Asked Questions
-                  </h2>
+                  <h2 className="text-3xl font-normal text-black mb-6">{t('faqHeading')}</h2>
                   <FAQAccordion faqs={guide.faqs} />
                 </section>
               )}
@@ -250,9 +260,7 @@ export default function GuidePage({ params }: PageProps) {
               {/* Sources & further reading */}
               {guide.sources && guide.sources.length > 0 && (
                 <section className="border-t border-black border-opacity-10 pt-8 mb-8">
-                  <h2 className="text-xl font-normal text-black mb-4">
-                    Sources &amp; further reading
-                  </h2>
+                  <h2 className="text-xl font-normal text-black mb-4">{t('sourcesHeading')}</h2>
                   <ul className="list-disc list-inside space-y-2 text-sm">
                     {guide.sources.map((source) => (
                       <li key={source.url}>
@@ -273,11 +281,11 @@ export default function GuidePage({ params }: PageProps) {
               {/* Author / editorial standards */}
               <section className="border-t border-black border-opacity-10 pt-8 mb-8">
                 <div className="bg-white rounded-lg border border-black border-opacity-10 p-6">
-                  <h2 className="text-lg font-medium text-black mb-2">About the author</h2>
+                  <h2 className="text-lg font-medium text-black mb-2">{t('aboutAuthorHeading')}</h2>
                   <p className="text-sm font-medium text-black mb-1">{author.name}</p>
                   <p className="text-sm text-black opacity-70 leading-relaxed mb-3">{author.bio}</p>
                   <Link href={author.url} className="text-sm text-[#0066FF] hover:underline">
-                    Read our editorial standards →
+                    {t('editorialStandards')}
                   </Link>
                 </div>
               </section>
@@ -286,7 +294,7 @@ export default function GuidePage({ params }: PageProps) {
               {related.length > 0 && (
                 <section className="border-t border-black border-opacity-10 pt-8 mb-8">
                   <h2 className="text-xl font-normal text-black mb-4">
-                    {pillar ? `More in ${pillar.title}` : 'Related guides'}
+                    {pillar ? t('moreInPillar', { pillar: pillar.title }) : t('relatedGeneric')}
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {related.map((relatedGuide) => (
@@ -310,14 +318,14 @@ export default function GuidePage({ params }: PageProps) {
 
               {/* Calculators */}
               <section className="border-t border-black border-opacity-10 pt-8">
-                <h2 className="text-xl font-normal text-black mb-4">Try the calculators</h2>
+                <h2 className="text-xl font-normal text-black mb-4">{t('tryCalculators')}</h2>
                 <ul className="space-y-2">
                   <li>
                     <Link
                       href="/salary-calculator"
                       className="text-black opacity-70 hover:opacity-100 underline"
                     >
-                      Salary Calculator Hub
+                      {t('linkHub')}
                     </Link>
                   </li>
                   <li>
@@ -325,7 +333,7 @@ export default function GuidePage({ params }: PageProps) {
                       href="/net-salary-calculator"
                       className="text-black opacity-70 hover:opacity-100 underline"
                     >
-                      Net Salary Calculator
+                      {t('linkNet')}
                     </Link>
                   </li>
                   <li>
@@ -333,7 +341,7 @@ export default function GuidePage({ params }: PageProps) {
                       href="/hourly-to-salary"
                       className="text-black opacity-70 hover:opacity-100 underline"
                     >
-                      Hourly to Salary Converter
+                      {t('linkHourly')}
                     </Link>
                   </li>
                 </ul>
@@ -344,7 +352,7 @@ export default function GuidePage({ params }: PageProps) {
             {toc.length > 0 && (
               <aside className="lg:col-span-1">
                 <div className="sticky top-24 bg-white rounded-lg border border-black border-opacity-10 p-6">
-                  <h3 className="text-lg font-medium text-black mb-4">Table of Contents</h3>
+                  <h3 className="text-lg font-medium text-black mb-4">{t('toc')}</h3>
                   <nav className="space-y-2">
                     {toc.map((item) => (
                       <a

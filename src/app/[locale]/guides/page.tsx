@@ -1,46 +1,56 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Script from 'next/script';
-import { getAllGuides, getGuidesByPillar, type Guide } from '@/data/guides';
-import { getAllPillars } from '@/data/pillars';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { type Guide } from '@/data/guides';
+import { getLocalizedGuides, getLocalizedGuidesByPillar, getLocalizedPillars } from '@/lib/content';
 import { generateBreadcrumbJsonLd } from '@/lib/seo/breadcrumbs';
 import { siteConfig } from '@/config/site';
 
-export const metadata: Metadata = {
-  title: 'Salary & Tax Guides - Expert Articles on Income Calculations',
-  description:
-    'Comprehensive guides on salary calculations, tax brackets, deductions, and net income. Learn how to calculate take-home pay and understand tax systems.',
-  alternates: {
-    canonical: `${siteConfig.domain}/guides`,
-  },
-  openGraph: {
-    title: 'Salary & Tax Guides - Expert Articles on Income Calculations',
-    description:
-      'Comprehensive guides on salary calculations, tax brackets, deductions, and net income.',
-    type: 'website',
-    url: `${siteConfig.domain}/guides`,
-  },
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'guides' });
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    alternates: {
+      canonical: `${siteConfig.domain}/guides`,
+    },
+    openGraph: {
+      title: t('metaTitle'),
+      description: t('metaDescription'),
+      type: 'website',
+      url: `${siteConfig.domain}/guides`,
+    },
+  };
+}
 
 // Cornerstone article first, then the rest of the cluster
 function orderGuides(guides: Guide[]): Guide[] {
   return [...guides].sort((a, b) => Number(b.isPillar ?? false) - Number(a.isPillar ?? false));
 }
 
-export default function GuidesPage() {
-  const pillars = getAllPillars();
-  const allGuides = getAllGuides();
+export default async function GuidesPage({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
+  const t = await getTranslations('guides');
+  const dateLocale = locale === 'en' ? 'en-US' : locale;
+
+  const pillars = getLocalizedPillars(locale);
+  const allGuides = getLocalizedGuides(locale);
 
   const breadcrumbs = [
-    { name: 'Home', url: siteConfig.domain },
-    { name: 'Guides', url: `${siteConfig.domain}/guides` },
+    { name: t('breadcrumbHome'), url: siteConfig.domain },
+    { name: t('breadcrumbGuides'), url: `${siteConfig.domain}/guides` },
   ];
 
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Salary & Tax Guides',
-    description: 'Educational guides on salary, take-home pay, income tax, and money planning.',
+    name: t('title'),
+    description: t('metaDescription'),
     url: `${siteConfig.domain}/guides`,
     isPartOf: { '@id': `${siteConfig.domain}/#website` },
     mainEntity: {
@@ -70,16 +80,13 @@ export default function GuidesPage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-12 py-16">
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">
-              Salary &amp; Tax Guides
+              {t('title')}
             </h1>
-            <p className="text-lg text-black opacity-70">
-              Expert articles on salary calculations, tax systems, deductions, and understanding
-              your take-home pay — organized into three topic pillars.
-            </p>
+            <p className="text-lg text-black opacity-70">{t('intro')}</p>
           </div>
 
           {pillars.map((pillar) => {
-            const pillarGuides = orderGuides(getGuidesByPillar(pillar.id));
+            const pillarGuides = orderGuides(getLocalizedGuidesByPillar(pillar.id, locale));
             if (pillarGuides.length === 0) return null;
 
             return (
@@ -106,7 +113,7 @@ export default function GuidesPage() {
                         <div className="flex-1">
                           {guide.isPillar && (
                             <span className="inline-block text-xs font-medium uppercase tracking-[0.05em] text-[#0066FF] mb-2">
-                              Start here · Pillar guide
+                              {t('startHere')}
                             </span>
                           )}
                           <h3 className="text-xl md:text-2xl font-normal text-black mb-2">
@@ -126,8 +133,8 @@ export default function GuidesPage() {
                             ))}
                           </div>
                           <time className="text-sm text-black opacity-50">
-                            Updated{' '}
-                            {new Date(guide.updated ?? guide.date).toLocaleDateString('en-US', {
+                            {t('updated')}{' '}
+                            {new Date(guide.updated ?? guide.date).toLocaleDateString(dateLocale, {
                               year: 'numeric',
                               month: 'long',
                               day: 'numeric',
@@ -156,14 +163,14 @@ export default function GuidesPage() {
           })}
 
           <div className="mt-4 pt-8 border-t border-black border-opacity-10">
-            <h2 className="text-2xl font-normal text-black mb-4">Try the calculators</h2>
+            <h2 className="text-2xl font-normal text-black mb-4">{t('tryCalculators')}</h2>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/salary-calculator"
                   className="text-black opacity-70 hover:opacity-100 underline"
                 >
-                  Salary Calculator Hub
+                  {t('linkHub')}
                 </Link>
               </li>
               <li>
@@ -171,7 +178,7 @@ export default function GuidesPage() {
                   href="/net-salary-calculator"
                   className="text-black opacity-70 hover:opacity-100 underline"
                 >
-                  Net Salary Calculator
+                  {t('linkNet')}
                 </Link>
               </li>
               <li>
@@ -179,7 +186,7 @@ export default function GuidesPage() {
                   href="/hourly-to-salary"
                   className="text-black opacity-70 hover:opacity-100 underline"
                 >
-                  Hourly to Salary Converter
+                  {t('linkHourly')}
                 </Link>
               </li>
             </ul>

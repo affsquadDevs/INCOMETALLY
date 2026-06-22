@@ -1,1 +1,14 @@
-{}
+{
+  "income-basics": {
+    "title": "Porozumění vašemu příjmu",
+    "description": "Hrubá vs. čistá mzda, čistý příjem na ruku a jak převádět příjem mezi hodinovými, měsíčními a ročními částkami."
+  },
+  "income-tax": {
+    "title": "Jak funguje daň z příjmu",
+    "description": "Daňová pásma, odpočty, sociální odvody a jak daň z příjmu ovlivňuje vaši čistou mzdu v různých zemích."
+  },
+  "salary-career": {
+    "title": "Mzda, práce a finanční plánování",
+    "description": "Porovnejte svou mzdu s trhem, srovnejte pracovní nabídky, zvažte životní náklady a pochopte rozdíl mezi příjmem na volné noze a příjmem zaměstnance."
+  }
+}
