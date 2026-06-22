@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllCountryCodes } from '@/lib/countries';
 import { getAllGuideSlugs } from '@/data/guides';
 import { buildAlternates } from '@/i18n/seo';
+import { locales } from '@/i18n/routing';
 
 // Fixed build-stable timestamp (no Date.now()) so the sitemap is deterministic.
 const LAST_MODIFIED = '2026-06-01';
@@ -52,14 +53,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ),
   ];
 
-  return routes.map(({ path, changeFrequency, priority }) => {
-    const { canonical, languages } = buildAlternates('en', path);
-    return {
-      url: canonical,
+  // Emit one <url> entry per (path × locale) so every localized URL is its own
+  // <loc>, each carrying the full hreflang alternate set (incl. x-default).
+  return routes.flatMap(({ path, changeFrequency, priority }) => {
+    const { languages } = buildAlternates('en', path);
+    return locales.map((locale) => ({
+      url: languages[locale],
       lastModified: LAST_MODIFIED,
       changeFrequency,
       priority,
       alternates: { languages },
-    };
+    }));
   });
 }

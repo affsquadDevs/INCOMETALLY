@@ -15,7 +15,8 @@
     "test:run": "vitest run",
     "ci": "npm run lint && npm run format:check && npm run test:run",
     "add:country": "tsx scripts/addCountry.ts",
-    "generate:favicon": "node scripts/generate-favicon.js"
+    "generate:favicon": "node scripts/generate-favicon.js",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "next": "^14.0.0",
