@@ -1,0 +1,30 @@
+name: IndexNow
+
+# Automatically notify IndexNow (Bing, Yandex, Seznam, …) whenever a Production
+# deployment succeeds, so search engines re-crawl promptly. Fires after the
+# deploy is live (Vercel reports deployment_status: success), so the live
+# sitemap + key file are already in place. Can also be run manually.
+on:
+  deployment_status:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    # Only run for a successful Production deployment (skip previews + non-success
+    # statuses). For manual runs (workflow_dispatch) there is no deployment_status,
+    # so allow those through too.
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       contains(github.event.deployment_status.environment, 'Production'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Submit live sitemap URLs to IndexNow
+        run: node scripts/indexnow.mjs
