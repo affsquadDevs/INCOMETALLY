@@ -1,1 +1,25 @@
-{}
+{
+  "nav": {
+    "salaryCalculator": "Calculadora de salário",
+    "getStarted": "Começar",
+    "aboutUs": "Sobre nós",
+    "guides": "Guias",
+    "toggleMenu": "Alternar menu",
+    "selectLanguage": "Selecionar idioma"
+  },
+  "footer": {
+    "productTitle": "Produto",
+    "legalTitle": "Jurídico",
+    "resourcesTitle": "Recursos",
+    "home": "Início",
+    "calculator": "Calculadora",
+    "privacyPolicy": "Política de privacidade",
+    "termsOfService": "Termos de serviço",
+    "salaryCalculatorHub": "Centro de calculadoras de salário",
+    "hourlyToSalary": "De hora para salário",
+    "guides": "Guias",
+    "disclaimerLabel": "Aviso:",
+    "disclaimer": "A IncomeTally disponibiliza calculadoras de rendimentos e impostos apenas para fins informativos. Os resultados são estimativas e podem não refletir as obrigações fiscais reais nem os resultados financeiros. Este site não presta aconselhamento financeiro, fiscal ou jurídico. Consulte sempre um profissional qualificado para orientação personalizada.",
+    "rights": "Todos os direitos reservados."
+  }
+}

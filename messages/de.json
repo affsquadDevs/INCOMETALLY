@@ -1,1 +1,25 @@
-{}
+{
+  "nav": {
+    "salaryCalculator": "Gehaltsrechner",
+    "getStarted": "Loslegen",
+    "aboutUs": "Über uns",
+    "guides": "Ratgeber",
+    "toggleMenu": "Menü umschalten",
+    "selectLanguage": "Sprache auswählen"
+  },
+  "footer": {
+    "productTitle": "Produkt",
+    "legalTitle": "Rechtliches",
+    "resourcesTitle": "Ressourcen",
+    "home": "Startseite",
+    "calculator": "Rechner",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen",
+    "salaryCalculatorHub": "Gehaltsrechner-Übersicht",
+    "hourlyToSalary": "Stundenlohn zu Gehalt",
+    "guides": "Ratgeber",
+    "disclaimerLabel": "Haftungsausschluss:",
+    "disclaimer": "IncomeTally stellt Einkommens- und Steuerrechner ausschließlich zu Informationszwecken bereit. Die Ergebnisse sind Schätzungen und spiegeln möglicherweise nicht die tatsächlichen Steuerpflichten oder finanziellen Ergebnisse wider. Diese Website bietet keine Finanz-, Steuer- oder Rechtsberatung. Wenden Sie sich für eine individuelle Beratung stets an eine qualifizierte Fachkraft.",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

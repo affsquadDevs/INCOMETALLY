@@ -1,12 +1,22 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 import { siteConfig } from '@/config/site';
 import { useEffect, useState } from 'react';
+import LanguageSwitcher from './LanguageSwitcher';
+
+const navLinks = [
+  { href: '/salary-calculator', key: 'salaryCalculator' },
+  { href: '/calculator', key: 'getStarted' },
+  { href: '/about-us', key: 'aboutUs' },
+  { href: '/guides', key: 'guides' },
+] as const;
 
 export default function Navbar() {
-  const { nav, logo } = siteConfig;
+  const t = useTranslations('nav');
+  const { logo } = siteConfig;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -62,23 +72,24 @@ export default function Navbar() {
               </Link>
             </div>
             <div className="hidden md:flex items-center gap-8">
-              {nav.links.map((link, index) => (
+              {navLinks.map((link, index) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   className="text-black hover:opacity-70 transition-all duration-300 font-normal text-xs tracking-[0.05em] uppercase relative group"
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  {link.label.toUpperCase()}
+                  {t(link.key).toUpperCase()}
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ))}
+              <LanguageSwitcher />
             </div>
             <div className="md:hidden">
               <button
                 onClick={toggleMobileMenu}
                 className="text-black hover:opacity-70 transition-opacity"
-                aria-label="Toggle menu"
+                aria-label={t('toggleMenu')}
               >
                 {isMobileMenuOpen ? (
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -122,16 +133,19 @@ export default function Navbar() {
         <div className="flex flex-col h-full pt-16">
           <div className="flex-1 overflow-y-auto px-6 py-4">
             <nav className="flex flex-col gap-6">
-              {nav.links.map((link, index) => (
+              {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={closeMobileMenu}
                   className="text-black hover:opacity-70 transition-all duration-300 font-normal text-xs tracking-[0.05em] uppercase border-b border-black border-opacity-10 pb-4"
                 >
-                  {link.label.toUpperCase()}
+                  {t(link.key).toUpperCase()}
                 </Link>
               ))}
+              <div className="pt-2">
+                <LanguageSwitcher className="w-full" />
+              </div>
             </nav>
           </div>
         </div>

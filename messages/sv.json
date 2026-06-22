@@ -1,1 +1,25 @@
-{}
+{
+  "nav": {
+    "salaryCalculator": "Lönekalkylator",
+    "getStarted": "Kom igång",
+    "aboutUs": "Om oss",
+    "guides": "Guider",
+    "toggleMenu": "Växla meny",
+    "selectLanguage": "Välj språk"
+  },
+  "footer": {
+    "productTitle": "Produkt",
+    "legalTitle": "Juridik",
+    "resourcesTitle": "Resurser",
+    "home": "Hem",
+    "calculator": "Kalkylator",
+    "privacyPolicy": "Integritetspolicy",
+    "termsOfService": "Användarvillkor",
+    "salaryCalculatorHub": "Lönekalkylatorcenter",
+    "hourlyToSalary": "Timlön till årslön",
+    "guides": "Guider",
+    "disclaimerLabel": "Friskrivning:",
+    "disclaimer": "IncomeTally tillhandahåller inkomst- och skattekalkylatorer endast i informationssyfte. Resultaten är uppskattningar och återspeglar kanske inte faktiska skatteförpliktelser eller ekonomiska utfall. Den här webbplatsen ger inte finansiell, skattemässig eller juridisk rådgivning. Rådgör alltid med en kvalificerad expert för personlig vägledning.",
+    "rights": "Med ensamrätt."
+  }
+}

@@ -1,1 +1,25 @@
-{}
+{
+  "nav": {
+    "salaryCalculator": "Mzdová kalkulačka",
+    "getStarted": "Začít",
+    "aboutUs": "O nás",
+    "guides": "Průvodci",
+    "toggleMenu": "Přepnout menu",
+    "selectLanguage": "Vybrat jazyk"
+  },
+  "footer": {
+    "productTitle": "Produkt",
+    "legalTitle": "Právní informace",
+    "resourcesTitle": "Zdroje",
+    "home": "Domů",
+    "calculator": "Kalkulačka",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "termsOfService": "Podmínky služby",
+    "salaryCalculatorHub": "Centrum mzdových kalkulaček",
+    "hourlyToSalary": "Z hodinové mzdy na plat",
+    "guides": "Průvodci",
+    "disclaimerLabel": "Upozornění:",
+    "disclaimer": "IncomeTally poskytuje kalkulačky příjmů a daní pouze pro informační účely. Výsledky jsou odhady a nemusí odpovídat skutečným daňovým povinnostem ani finančním výsledkům. Tento web neposkytuje finanční, daňové ani právní poradenství. Pro radu na míru se vždy obraťte na kvalifikovaného odborníka.",
+    "rights": "Všechna práva vyhrazena."
+  }
+}
