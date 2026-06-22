@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { siteConfig } from '@/config/site';
 import { getContact } from '@/lib/content';
+import { buildAlternates } from '@/i18n/seo';
 
 export async function generateMetadata({
   params: { locale },
@@ -13,7 +14,7 @@ export async function generateMetadata({
     title: contactPage.title,
     description:
       'Get in touch with the IncomeTally team. Questions about our calculators, privacy, or feedback are welcome.',
-    alternates: { canonical: '/contact' },
+    alternates: buildAlternates(locale, '/contact'),
     openGraph: {
       title: contactPage.title,
       description:

@@ -4,6 +4,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAbout } from '@/lib/content';
+import { buildAlternates } from '@/i18n/seo';
 
 export async function generateMetadata({
   params: { locale },
@@ -15,7 +16,7 @@ export async function generateMetadata({
     title: about.title,
     description:
       'Learn about IncomeTally — an independent tool for calculating net salary, take-home pay, and country-specific tax estimates for informational purposes.',
-    alternates: { canonical: '/about-us' },
+    alternates: buildAlternates(locale, '/about-us'),
     openGraph: {
       title: about.title,
       description:

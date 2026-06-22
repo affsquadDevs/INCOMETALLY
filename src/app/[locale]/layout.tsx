@@ -8,38 +8,52 @@ import Footer from '@/components/Footer';
 import { siteConfig } from '@/config/site';
 import { routing, type Locale } from '@/i18n/routing';
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.domain),
-  title: {
-    default: `${siteConfig.name} - ${siteConfig.tagline}`,
-    template: `%s | ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  applicationName: siteConfig.name,
-  alternates: {
-    canonical: '/',
-  },
-  icons: {
-    icon: '/favicon.ico',
-  },
-  openGraph: {
-    type: 'website',
-    siteName: siteConfig.name,
-    title: `${siteConfig.name} - ${siteConfig.tagline}`,
-    description: siteConfig.description,
-    url: siteConfig.domain,
-    locale: 'en_US',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${siteConfig.name} - ${siteConfig.tagline}`,
-    description: siteConfig.description,
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+// Maps next-intl locale codes to OpenGraph locale identifiers.
+const ogLocaleMap: Record<string, string> = {
+  en: 'en_US',
+  pl: 'pl_PL',
+  es: 'es_ES',
+  pt: 'pt_PT',
+  fr: 'fr_FR',
+  it: 'it_IT',
+  de: 'de_DE',
+  uk: 'uk_UA',
+  sv: 'sv_SE',
+  cs: 'cs_CZ',
+  el: 'el_GR',
 };
+
+export function generateMetadata({ params: { locale } }: { params: { locale: string } }): Metadata {
+  return {
+    metadataBase: new URL(siteConfig.domain),
+    title: {
+      default: `${siteConfig.name} - ${siteConfig.tagline}`,
+      template: `%s | ${siteConfig.name}`,
+    },
+    description: siteConfig.description,
+    applicationName: siteConfig.name,
+    icons: {
+      icon: '/favicon.ico',
+    },
+    openGraph: {
+      type: 'website',
+      siteName: siteConfig.name,
+      title: `${siteConfig.name} - ${siteConfig.tagline}`,
+      description: siteConfig.description,
+      url: siteConfig.domain,
+      locale: ogLocaleMap[locale] ?? 'en_US',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${siteConfig.name} - ${siteConfig.tagline}`,
+      description: siteConfig.description,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 // Site-wide structured data: identifies the brand entity and the site to search engines
 const structuredData = {

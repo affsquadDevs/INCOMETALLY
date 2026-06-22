@@ -15,6 +15,7 @@ import { getTaxTable } from '@/lib/tax';
 import { generateFAQJsonLd } from '@/lib/seo/faq';
 import { generateBreadcrumbJsonLd } from '@/lib/seo/breadcrumbs';
 import { siteConfig } from '@/config/site';
+import { buildAlternates } from '@/i18n/seo';
 import DataSources from '@/components/DataSources';
 
 // Dynamic import for heavy calculator component
@@ -60,9 +61,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: country.title,
     description: country.description,
-    alternates: {
-      canonical: url,
-    },
+    alternates: buildAlternates(
+      params.locale,
+      `/salary-calculator/${params.country.toLowerCase()}`
+    ),
     openGraph: {
       title: country.title,
       description: country.description,

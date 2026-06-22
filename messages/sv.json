@@ -487,5 +487,180 @@
       "editorialLink": "redaktionella riktlinjer",
       "editorialSuffix": "för hur vi efterforskar och uppdaterar denna data."
     }
+  },
+  "hub": {
+    "metaTitle": "Lönekalkylator-hubb - Beräkna nettoinkomst per land",
+    "metaDescription": "Gratis lönekalkylatorer för flera länder. Beräkna din nettoinkomst efter skatt och sociala avgifter i USA, Tyskland, Storbritannien och fler.",
+    "title": "Lönekalkylator-hubb",
+    "intro1": "Beräkna din nettoinkomst efter skatt och sociala avgifter. Våra gratis kalkylatorer hjälper dig att förstå hur mycket du får behålla i olika länder, med detaljerade uppdelningar av inkomstskatt, sociala avgifter och andra avdrag.",
+    "intro2": "Välj ett land nedan för att komma igång, eller välj ett beräkningsläge som passar dina behov.",
+    "byCountryHeading": "Beräkna per land",
+    "calculateCta": "Beräkna →",
+    "hourlyTitle": "Kalkylator för timinkomst",
+    "monthlyTitle": "Kalkylator för månadslön",
+    "yearlyTitle": "Kalkylator för årslön",
+    "chooseModeHeading": "Välj beräkningsläge",
+    "converterTitle": "Omvandlare från timlön till lön",
+    "converterBody": "Omvandla din timlön till års-, månads- och veckolön. Perfekt för att förstå din totala ersättning vid förhandling eller jämförelse av jobberbjudanden.",
+    "converterCta": "Omvandla timlön →",
+    "hourlyBody": "Beräkna nettoinkomst när du känner till din timlön. Inkluderar alternativ för anpassade timmar per vecka och veckor per år för att matcha ditt arbetsschema.",
+    "hourlyCta": "Beräkna timlön →",
+    "monthlyBody": "Beräkna din månatliga nettoinkomst efter skatt. Idealiskt för budgetering och för att förstå din månatliga nettolön.",
+    "monthlyCta": "Beräkna månadsvis →",
+    "yearlyBody": "Beräkna din årliga nettoinkomst utifrån din årliga bruttolön. Se den fullständiga uppdelningen av skatter och avdrag för hela året.",
+    "yearlyCta": "Beräkna årsvis →",
+    "faqHeading": "Vanliga frågor"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Löne- och skattekalkylator — Uppskatta din nettoinkomst",
+      "description": "Gratis lönekalkylator. Ange din bruttoinkomst för att uppskatta nettolön, inkomstskatt och sociala avgifter för USA, Tyskland och Storbritannien 2026.",
+      "ogDescription": "Gratis lönekalkylator. Uppskatta nettolön, inkomstskatt och sociala avgifter för USA, Tyskland och Storbritannien."
+    },
+    "title": "Löne- och skattekalkylator",
+    "intro": "Uppskatta din nettoinkomst (nettolön) efter inkomstskatt och sociala avgifter. Ange din bruttolön, välj land och löneperiod och få en omedelbar uppdelning för skatteåret 2026.",
+    "howItWorks": {
+      "heading": "Så fungerar kalkylatorn",
+      "p1": "Vår kalkylator omvandlar din bruttoinkomst till uppskattad nettolön med hjälp av aktuella skatteskikt och sociala avgifter för varje land som stöds. Du kan ange inkomst som en timlön, en månadslön eller en årssumma, och kalkylatorn räknar om den till årsbasis innan de relevanta skattereglerna tillämpas.",
+      "p2": "Uppdelningen separerar inkomstskatt från sociala avgifter — såsom Social Security och Medicare i USA, lagstadgade försäkringsavgifter i Tyskland och National Insurance i Storbritannien — så att du kan se exakt vart dina pengar tar vägen och vad din effektiva skattesats är.",
+      "p3": "Resultaten är uppskattningar enbart för informations- och planeringsändamål och tar inte hänsyn till varje individuell omständighet, såsom delstatliga och lokala skatter, skattereduktioner eller naturaförmåner. För råd som är specifika för din situation, rådfråga en kvalificerad skatteexpert."
+    },
+    "related": {
+      "heading": "Utforska landsspecifika kalkylatorer",
+      "hub": "Lönekalkylator-hubb",
+      "us": "Lönekalkylator för USA",
+      "de": "Lönekalkylator för Tyskland",
+      "uk": "Lönekalkylator för Storbritannien",
+      "hourly": "Omvandlare från timlön till lön",
+      "guides": "Löne- och skatteguider"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Nettolönekalkylator - Beräkna din nettolön",
+      "description": "Gratis nettolönekalkylator. Räkna ut din nettolön efter inkomstskatt och sociala avgifter för USA, Tyskland och Storbritannien."
+    },
+    "title": "Nettolönekalkylator",
+    "intro": "Beräkna din nettoinkomst (nettolön) efter skatt och sociala avgifter. Vår omfattande lönekalkylator hjälper dig att förstå exakt hur mycket du får ut efter alla avdrag.",
+    "cta": "Gå till Lönekalkylator-hubben →",
+    "breakdownIntro": "Vår lönekalkylator ger detaljerade uppdelningar av:",
+    "breakdown": {
+      "gross": "Bruttoinkomst (före skatt)",
+      "incomeTax": "Beräkningar av inkomstskatt",
+      "social": "Sociala avgifter",
+      "net": "Nettoinkomst (nettolön)",
+      "effectiveRate": "Effektiva skattesatser"
+    },
+    "availability": "Tillgänglig för flera länder, däribland USA, Tyskland och Storbritannien. Välj ditt land för att komma igång med korrekta och aktuella skatteberäkningar för 2026.",
+    "specialized": "Du kan även använda våra specialiserade kalkylatorer:",
+    "links": {
+      "hourly": "Omvandlare från timlön till lön",
+      "us": "USA-kalkylator",
+      "de": "Tysklands-kalkylator",
+      "uk": "Storbritannien-kalkylator"
+    },
+    "explainer": {
+      "heading": "Vad är nettolön?",
+      "p1": "Din <b>nettolön</b> — ofta kallad nettolön eller utbetald lön — är det belopp som faktiskt landar på ditt bankkonto efter att obligatoriska avdrag dragits från din bruttolön. Bruttolönen är huvudbeloppet i ditt anställningsavtal; nettolönen är det du kan budgetera och spendera.",
+      "p2": "Skillnaden mellan de två består av <b>inkomstskatt</b> och <b>sociala avgifter</b>. Inkomstskatten är vanligtvis progressiv, vilket innebär att högre delar av din inkomst beskattas med högre skattesatser. Sociala avgifter finansierar program som statlig pension, sjukvård och arbetslöshetsförsäkring, och de exakta satserna beror på var du bor.",
+      "p3": "Eftersom varje land beräknar dessa avdrag olika kan samma bruttolön ge mycket olika nettolön i USA, Tyskland eller Storbritannien. Välj ditt land ovan för att se en detaljerad, landsspecifik uppdelning för skatteåret 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Omvandlare från timlön till lön - Beräkna års-, månads- och veckoinkomst",
+      "description": "Omvandla timlön till års-, månads- och veckolön. Gratis kalkylator med formler och exempel. Perfekt för löneförhandlingar och lönejämförelser.",
+      "ogDescription": "Omvandla timlön till års-, månads- och veckolön. Gratis kalkylator med formler och exempel."
+    },
+    "title": "Omvandlare från timlön till lön",
+    "intro": "Omvandla din timlön till års-, månads-, vecko- och dagslön. Förstå din totala ersättning när du förhandlar om jobberbjudanden eller jämför tjänster.",
+    "calc": {
+      "heading": "Beräkna din nettoinkomst",
+      "intro": "Ange din timlön nedan för att beräkna din brutto- och nettoinkomst. Kalkylatorn är förinställd på timläge och visar din nettolön efter skatt."
+    },
+    "formulas": {
+      "heading": "Omvandlingsformler",
+      "annual": {
+        "title": "Årslön utifrån timlön",
+        "code": "Årslön = Timlön × Timmar per vecka × Veckor per år",
+        "note": "Standardberäkning: Multiplicera din timlön med 40 timmar per vecka och 52 veckor per år."
+      },
+      "monthly": {
+        "title": "Månadslön",
+        "code": "Månadslön = Årslön ÷ 12",
+        "note": "Dela årslönen med 12 månader. Obs: Detta ger ett genomsnittligt månadsbelopp; den faktiska månadslönen kan variera om utbetalning sker varannan vecka eller två gånger i månaden."
+      },
+      "weekly": {
+        "title": "Veckolön",
+        "code": "Veckolön = Timlön × Timmar per vecka",
+        "note": "Multiplicera helt enkelt din timlön med antalet timmar du arbetar per vecka."
+      },
+      "daily": {
+        "title": "Dagslön",
+        "code": "Dagslön = Timlön × Timmar per dag",
+        "note": "För en 8-timmars arbetsdag, multiplicera din timlön med 8."
+      },
+      "grossNote": "<b>Obs:</b> Dessa formler beräknar bruttoinkomst (före skatt). Använd kalkylatorn nedan för att se din nettolön efter skatt och avdrag."
+    },
+    "examples": {
+      "heading": "Exempel",
+      "annualGross": "Bruttoårslön:",
+      "monthlyGross": "Bruttomånadslön:",
+      "weeklyGross": "Bruttoveckolön:",
+      "dailyGross": "Bruttodagslön",
+      "ex1": {
+        "title": "Exempel 1: $25 per timme, 40 timmar/vecka, 52 veckor/år",
+        "annual": "<b>Bruttoårslön:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Bruttomånadslön:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Bruttoveckolön:</b> $25 × 40 = $1,000",
+        "daily": "<b>Bruttodagslön (8 timmar):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Exempel 2: $30 per timme, 35 timmar/vecka, 50 veckor/år",
+        "annual": "<b>Bruttoårslön:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Bruttomånadslön:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Bruttoveckolön:</b> $30 × 35 = $1,050",
+        "daily": "<b>Bruttodagslön (7 timmar):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Exempel 3: $20 per timme, 40 timmar/vecka, 48 veckor/år (med 4 veckors obetald ledighet)",
+        "annual": "<b>Bruttoårslön:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Bruttomånadslön:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Bruttoveckolön:</b> $20 × 40 = $800",
+        "note": "Obs: Att justera antalet veckor per år tar hänsyn till obetald ledighet, semester eller säsongsarbete."
+      }
+    },
+    "faq": {
+      "heading": "Vanliga frågor",
+      "items": [
+        {
+          "question": "Vad är skillnaden mellan brutto- och nettolön?",
+          "answer": "Bruttolön är din totala inkomst före skatt och avdrag. Nettolön (utbetald lön) är det du får efter att inkomstskatt, sociala avgifter och andra obligatoriska avdrag har dragits av. Kalkylatorn ovan visar både brutto- och nettobelopp."
+        },
+        {
+          "question": "Hur många veckor bör jag använda i beräkningen?",
+          "answer": "Standarden är 52 veckor per år för heltidsanställda. Om du dock har obetald ledighet, arbetar säsongsbetonat eller tar längre ledighet bör du justera därefter. Till exempel innebär 2 veckors obetald semester 50 veckor per år."
+        },
+        {
+          "question": "Bör jag inkludera övertid i min timlön?",
+          "answer": "För korrekta årslöneberäkningar, använd din grundtimlön och standardtimmar. Om du regelbundet arbetar övertid kan du antingen: (1) beräkna grundlönen separat och lägga till uppskattad övertid, eller (2) använda en genomsnittlig timlön som tar hänsyn till övertid. Kalkylatorn låter dig justera timmar per vecka för att återspegla ditt faktiska schema."
+        },
+        {
+          "question": "Hur omvandlar jag lön tillbaka till timlön?",
+          "answer": "För att omvandla årslön till timlön: Timlön = Årslön ÷ (Timmar per vecka × Veckor per år). Till exempel $52,000 ÷ (40 × 52) = $25 per timme. Använd vår kalkylator omvänt genom att ange din årslön och välja årsläge."
+        }
+      ],
+      "countriesQuestion": "Är dessa beräkningar korrekta för alla länder?",
+      "countriesAnswer": "Omvandlingsformlerna (timlön till årslön, månadslön osv.) är universella. Nettoinkomstberäkningar varierar dock mellan länder på grund av olika skattesystem. Använd de landsspecifika kalkylatorerna på vår <link>Lönekalkylator-hubb</link> för korrekta uppskattningar av nettoinkomst.",
+      "partTimeQuestion": "Vad händer om jag arbetar deltid eller har oregelbundna timmar?",
+      "partTimeAnswer": "För deltidsarbete, ange dina faktiska timmar per vecka. För oregelbundna timmar, beräkna ett genomsnitt av veckotimmarna över en längre period (t.ex. 3–6 månader) och använd det. Kalkylatorn tillåter anpassade timmar per vecka och veckor per år för att matcha vilket arbetsschema som helst."
+    },
+    "related": {
+      "heading": "Relaterade resurser",
+      "hub": "Lönekalkylator-hubb",
+      "us": "Lönekalkylator för USA",
+      "de": "Lönekalkylator för Tyskland",
+      "uk": "Lönekalkylator för Storbritannien"
+    }
   }
 }

@@ -488,5 +488,180 @@
       "editorialLink": "normes éditoriales",
       "editorialSuffix": "pour savoir comment nous recherchons et mettons à jour ces données."
     }
+  },
+  "hub": {
+    "metaTitle": "Hub de calculateurs de salaire net - Calculez votre revenu net par pays",
+    "metaDescription": "Calculateurs de salaire net gratuits pour plusieurs pays. Calculez votre revenu net après impôts et cotisations sociales aux États-Unis, en Allemagne, au Royaume-Uni et ailleurs.",
+    "title": "Hub de calculateurs de salaire net",
+    "intro1": "Calculez votre revenu net après impôts et cotisations sociales. Nos calculateurs gratuits vous aident à comprendre combien il vous restera dans différents pays, avec des décompositions détaillées de l'impôt sur le revenu, des cotisations sociales et des autres prélèvements.",
+    "intro2": "Sélectionnez un pays ci-dessous pour commencer, ou choisissez un mode de calcul adapté à vos besoins.",
+    "byCountryHeading": "Calculer par pays",
+    "calculateCta": "Calculer →",
+    "hourlyTitle": "Calculateur de revenu horaire",
+    "monthlyTitle": "Calculateur de salaire mensuel",
+    "yearlyTitle": "Calculateur de salaire annuel",
+    "chooseModeHeading": "Choisir le mode de calcul",
+    "converterTitle": "Convertisseur salaire horaire en annuel",
+    "converterBody": "Convertissez votre taux horaire en salaire annuel, mensuel et hebdomadaire. Idéal pour comprendre votre rémunération totale lors d'une négociation ou de la comparaison d'offres d'emploi.",
+    "converterCta": "Convertir le taux horaire →",
+    "hourlyBody": "Calculez votre revenu net lorsque vous connaissez votre taux horaire. Inclut des options pour personnaliser les heures par semaine et les semaines par an selon votre rythme de travail.",
+    "hourlyCta": "Calculer à l'heure →",
+    "monthlyBody": "Calculez votre revenu mensuel net après impôts. Idéal pour établir un budget et comprendre votre salaire net mensuel.",
+    "monthlyCta": "Calculer au mois →",
+    "yearlyBody": "Calculez votre revenu annuel net à partir de votre salaire brut annuel. Voyez la décomposition complète des impôts et prélèvements pour toute l'année.",
+    "yearlyCta": "Calculer à l'année →",
+    "faqHeading": "Foire aux questions"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Calculateur de salaire et d'impôts — Estimez votre revenu net",
+      "description": "Calculateur de salaire net gratuit. Saisissez votre revenu brut pour estimer votre salaire net, l'impôt sur le revenu et les cotisations sociales aux États-Unis, en Allemagne et au Royaume-Uni en 2026.",
+      "ogDescription": "Calculateur de salaire net gratuit. Estimez votre salaire net, l'impôt sur le revenu et les cotisations sociales aux États-Unis, en Allemagne et au Royaume-Uni."
+    },
+    "title": "Calculateur de salaire et d'impôts",
+    "intro": "Estimez votre revenu net (salaire net) après l'impôt sur le revenu et les cotisations sociales. Saisissez votre salaire brut, choisissez votre pays et votre période de paie, et obtenez une décomposition instantanée pour l'année fiscale 2026.",
+    "howItWorks": {
+      "heading": "Comment fonctionne le calculateur",
+      "p1": "Notre calculateur convertit votre revenu brut en salaire net estimé à l'aide des tranches d'imposition et des taux de cotisations sociales à jour pour chaque pays pris en charge. Vous pouvez saisir votre revenu sous forme de taux horaire, de salaire mensuel ou de montant annuel, et le calculateur le ramène en base annuelle avant d'appliquer les règles fiscales pertinentes.",
+      "p2": "La décomposition sépare l'impôt sur le revenu des cotisations sociales — telles que la Social Security et Medicare aux États-Unis, les cotisations d'assurance obligatoires en Allemagne et la National Insurance au Royaume-Uni — afin que vous puissiez voir exactement où va votre argent et quel est votre taux d'imposition effectif.",
+      "p3": "Les résultats sont des estimations fournies à des fins d'information et de planification uniquement et ne tiennent pas compte de chaque situation individuelle, comme les impôts régionaux et locaux, les crédits d'impôt ou les avantages en nature. Pour des conseils adaptés à votre situation, consultez un professionnel de la fiscalité qualifié."
+    },
+    "related": {
+      "heading": "Découvrir les calculateurs par pays",
+      "hub": "Hub de calculateurs de salaire",
+      "us": "Calculateur de salaire des États-Unis",
+      "de": "Calculateur de salaire de l'Allemagne",
+      "uk": "Calculateur de salaire du Royaume-Uni",
+      "hourly": "Convertisseur salaire horaire en annuel",
+      "guides": "Guides salaire et impôts"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Calculateur de salaire net - Calculez votre salaire net",
+      "description": "Calculateur de salaire net gratuit. Déterminez votre salaire net après l'impôt sur le revenu et les cotisations sociales aux États-Unis, en Allemagne et au Royaume-Uni."
+    },
+    "title": "Calculateur de salaire net",
+    "intro": "Calculez votre revenu net (salaire net) après impôts et cotisations sociales. Notre calculateur de salaire complet vous aide à comprendre exactement combien vous percevrez après tous les prélèvements.",
+    "cta": "Accéder au hub de calculateurs de salaire →",
+    "breakdownIntro": "Notre calculateur de salaire fournit des décompositions détaillées de :",
+    "breakdown": {
+      "gross": "Revenu brut (avant impôts)",
+      "incomeTax": "Calcul de l'impôt sur le revenu",
+      "social": "Cotisations sociales",
+      "net": "Revenu net (salaire net)",
+      "effectiveRate": "Taux d'imposition effectifs"
+    },
+    "availability": "Disponible pour plusieurs pays, dont les États-Unis, l'Allemagne et le Royaume-Uni. Sélectionnez votre pays pour commencer avec des calculs d'impôts précis et à jour pour 2026.",
+    "specialized": "Vous pouvez également accéder à nos calculateurs spécialisés :",
+    "links": {
+      "hourly": "Convertisseur salaire horaire en annuel",
+      "us": "Calculateur États-Unis",
+      "de": "Calculateur Allemagne",
+      "uk": "Calculateur Royaume-Uni"
+    },
+    "explainer": {
+      "heading": "Qu'est-ce que le salaire net ?",
+      "p1": "Votre <b>salaire net</b> — souvent appelé salaire net à payer — est le montant qui arrive réellement sur votre compte bancaire une fois les prélèvements obligatoires retirés de votre salaire brut. Le salaire brut est le montant phare de votre contrat de travail ; le salaire net est ce que vous pouvez budgétiser et dépenser.",
+      "p2": "L'écart entre les deux se compose de l'<b>impôt sur le revenu</b> et des <b>cotisations sociales</b>. L'impôt sur le revenu est généralement progressif, ce qui signifie que des parts plus élevées de votre revenu sont imposées à des taux plus élevés. Les cotisations sociales financent des programmes tels que les retraites publiques, la santé et l'assurance chômage, et les taux exacts dépendent de votre lieu de résidence.",
+      "p3": "Comme chaque pays calcule ces prélèvements différemment, un même salaire brut peut donner un salaire net très différent aux États-Unis, en Allemagne ou au Royaume-Uni. Choisissez votre pays ci-dessus pour voir une décomposition détaillée et propre à chaque pays pour l'année fiscale 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Convertisseur salaire horaire en annuel - Calculez le revenu annuel, mensuel et hebdomadaire",
+      "description": "Convertissez un salaire horaire en salaire annuel, mensuel et hebdomadaire. Calculateur gratuit avec formules et exemples. Idéal pour les négociations salariales et les comparaisons de salaires.",
+      "ogDescription": "Convertissez un salaire horaire en salaire annuel, mensuel et hebdomadaire. Calculateur gratuit avec formules et exemples."
+    },
+    "title": "Convertisseur salaire horaire en annuel",
+    "intro": "Convertissez votre salaire horaire en salaire annuel, mensuel, hebdomadaire et journalier. Comprenez votre rémunération totale lors de la négociation d'offres d'emploi ou de la comparaison de postes.",
+    "calc": {
+      "heading": "Calculez votre revenu net",
+      "intro": "Saisissez votre taux horaire ci-dessous pour calculer votre revenu brut et net. Le calculateur est préréglé en mode horaire et affichera votre salaire net après impôts."
+    },
+    "formulas": {
+      "heading": "Formules de conversion",
+      "annual": {
+        "title": "Salaire annuel à partir du taux horaire",
+        "code": "Salaire annuel = Taux horaire × Heures par semaine × Semaines par an",
+        "note": "Calcul standard : multipliez votre taux horaire par 40 heures par semaine et 52 semaines par an."
+      },
+      "monthly": {
+        "title": "Salaire mensuel",
+        "code": "Salaire mensuel = Salaire annuel ÷ 12",
+        "note": "Divisez le salaire annuel par 12 mois. Remarque : cela donne un montant mensuel moyen ; la paie mensuelle réelle peut varier en cas de versement bimensuel ou semi-mensuel."
+      },
+      "weekly": {
+        "title": "Salaire hebdomadaire",
+        "code": "Salaire hebdomadaire = Taux horaire × Heures par semaine",
+        "note": "Multipliez simplement votre taux horaire par le nombre d'heures que vous travaillez par semaine."
+      },
+      "daily": {
+        "title": "Salaire journalier",
+        "code": "Salaire journalier = Taux horaire × Heures par jour",
+        "note": "Pour une journée de travail de 8 heures, multipliez votre taux horaire par 8."
+      },
+      "grossNote": "<b>Remarque :</b> ces formules calculent le revenu brut (avant impôts). Utilisez le calculateur ci-dessous pour voir votre salaire net après impôts et prélèvements."
+    },
+    "examples": {
+      "heading": "Exemples",
+      "annualGross": "Brut annuel :",
+      "monthlyGross": "Brut mensuel :",
+      "weeklyGross": "Brut hebdomadaire :",
+      "dailyGross": "Brut journalier",
+      "ex1": {
+        "title": "Exemple 1 : 25 $ de l'heure, 40 heures/semaine, 52 semaines/an",
+        "annual": "<b>Brut annuel :</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Brut mensuel :</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Brut hebdomadaire :</b> $25 × 40 = $1,000",
+        "daily": "<b>Brut journalier (8 heures) :</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Exemple 2 : 30 $ de l'heure, 35 heures/semaine, 50 semaines/an",
+        "annual": "<b>Brut annuel :</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Brut mensuel :</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Brut hebdomadaire :</b> $30 × 35 = $1,050",
+        "daily": "<b>Brut journalier (7 heures) :</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Exemple 3 : 20 $ de l'heure, 40 heures/semaine, 48 semaines/an (avec 4 semaines de congé non payé)",
+        "annual": "<b>Brut annuel :</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Brut mensuel :</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Brut hebdomadaire :</b> $20 × 40 = $800",
+        "note": "Remarque : ajuster le nombre de semaines par an permet de tenir compte des congés non payés, des vacances ou du travail saisonnier."
+      }
+    },
+    "faq": {
+      "heading": "Foire aux questions",
+      "items": [
+        {
+          "question": "Quelle est la différence entre le salaire brut et le salaire net ?",
+          "answer": "Le salaire brut correspond à l'ensemble de vos gains avant impôts et prélèvements. Le salaire net (salaire net à payer) est ce que vous percevez après déduction de l'impôt sur le revenu, des cotisations sociales et des autres prélèvements obligatoires. Le calculateur ci-dessus affiche à la fois les montants bruts et nets."
+        },
+        {
+          "question": "Combien de semaines dois-je utiliser dans le calcul ?",
+          "answer": "La norme est de 52 semaines par an pour les salariés à temps plein. Toutefois, si vous avez des congés non payés, travaillez de façon saisonnière ou prenez un congé prolongé, ajustez en conséquence. Par exemple, 2 semaines de congé non payé correspondraient à 50 semaines par an."
+        },
+        {
+          "question": "Dois-je inclure les heures supplémentaires dans mon taux horaire ?",
+          "answer": "Pour des calculs de salaire annuel précis, utilisez votre taux horaire de base et vos heures standard. Si vous faites régulièrement des heures supplémentaires, vous pouvez soit : (1) calculer le salaire de base séparément et y ajouter une estimation des heures supplémentaires, soit (2) utiliser un taux horaire moyen qui tient compte des heures supplémentaires. Le calculateur vous permet d'ajuster les heures par semaine pour refléter votre véritable rythme de travail."
+        },
+        {
+          "question": "Comment reconvertir un salaire en taux horaire ?",
+          "answer": "Pour convertir un salaire annuel en taux horaire : Taux horaire = Salaire annuel ÷ (Heures par semaine × Semaines par an). Par exemple, $52,000 ÷ (40 × 52) = $25 de l'heure. Utilisez notre calculateur à l'envers en saisissant votre salaire annuel et en sélectionnant le mode annuel."
+        }
+      ],
+      "countriesQuestion": "Ces calculs sont-ils exacts pour tous les pays ?",
+      "countriesAnswer": "Les formules de conversion (horaire vers annuel, mensuel, etc.) sont universelles. Cependant, les calculs de revenu net varient selon les pays en raison des différents systèmes fiscaux. Utilisez les calculateurs propres à chaque pays sur notre <link>Hub de calculateurs de salaire</link> pour obtenir des estimations précises de votre revenu net.",
+      "partTimeQuestion": "Et si je travaille à temps partiel ou si j'ai des horaires irréguliers ?",
+      "partTimeAnswer": "Pour le travail à temps partiel, saisissez vos heures réelles par semaine. Pour des horaires irréguliers, calculez une moyenne d'heures hebdomadaires sur une période plus longue (par exemple 3 à 6 mois) et utilisez-la. Le calculateur permet de personnaliser les heures par semaine et les semaines par an pour s'adapter à n'importe quel rythme de travail."
+    },
+    "related": {
+      "heading": "Ressources connexes",
+      "hub": "Hub de calculateurs de salaire",
+      "us": "Calculateur de salaire des États-Unis",
+      "de": "Calculateur de salaire de l'Allemagne",
+      "uk": "Calculateur de salaire du Royaume-Uni"
+    }
   }
 }

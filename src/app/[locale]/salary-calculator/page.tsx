@@ -12,6 +12,7 @@ import { type IncomeMode } from '@/lib/tax/types';
 import { generateFAQJsonLd } from '@/lib/seo/faq';
 import { generateBreadcrumbJsonLd } from '@/lib/seo/breadcrumbs';
 import { siteConfig } from '@/config/site';
+import { buildAlternates } from '@/i18n/seo';
 
 // Dynamic import for heavy calculator component
 const SalaryCalculator = dynamic(() => import('@/components/SalaryCalculator'), {
@@ -28,9 +29,7 @@ export async function generateMetadata({
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
-    alternates: {
-      canonical: `${siteConfig.domain}/salary-calculator`,
-    },
+    alternates: buildAlternates(locale, '/salary-calculator'),
     openGraph: {
       title: t('metaTitle'),
       description: t('metaDescription'),

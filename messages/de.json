@@ -486,5 +486,180 @@
       "editorialLink": "redaktionellen Standards",
       "editorialSuffix": "dazu, wie wir diese Daten recherchieren und aktualisieren."
     }
+  },
+  "hub": {
+    "metaTitle": "Gehaltsrechner-Hub - Nettoeinkommen nach Land berechnen",
+    "metaDescription": "Kostenlose Gehaltsrechner fuer mehrere Laender. Berechnen Sie Ihr Nettoeinkommen nach Steuern und Sozialabgaben in den USA, Deutschland, Grossbritannien und mehr.",
+    "title": "Gehaltsrechner-Hub",
+    "intro1": "Berechnen Sie Ihr Nettoeinkommen nach Steuern und Sozialabgaben. Unsere kostenlosen Rechner helfen Ihnen zu verstehen, wie viel Ihnen in verschiedenen Laendern netto bleibt, mit detaillierten Aufschluesselungen von Einkommensteuer, Sozialversicherungsbeitraegen und weiteren Abzuegen.",
+    "intro2": "Waehlen Sie unten ein Land aus, um zu beginnen, oder waehlen Sie einen Berechnungsmodus, der zu Ihren Beduerfnissen passt.",
+    "byCountryHeading": "Nach Land berechnen",
+    "calculateCta": "Berechnen →",
+    "hourlyTitle": "Stundenlohn-Rechner",
+    "monthlyTitle": "Monatsgehalts-Rechner",
+    "yearlyTitle": "Jahresgehalts-Rechner",
+    "chooseModeHeading": "Berechnungsmodus waehlen",
+    "converterTitle": "Stundenlohn-in-Gehalt-Umrechner",
+    "converterBody": "Rechnen Sie Ihren Stundenlohn in Jahres-, Monats- und Wochengehalt um. Ideal, um Ihre Gesamtverguetung zu verstehen, wenn Sie verhandeln oder Stellenangebote vergleichen.",
+    "converterCta": "Stundenlohn umrechnen →",
+    "hourlyBody": "Berechnen Sie Ihr Nettoeinkommen, wenn Sie Ihren Stundenlohn kennen. Mit Optionen fuer individuelle Stunden pro Woche und Wochen pro Jahr, passend zu Ihrem Arbeitszeitplan.",
+    "hourlyCta": "Stundenlohn berechnen →",
+    "monthlyBody": "Berechnen Sie Ihr monatliches Nettoeinkommen nach Steuern. Ideal fuer die Budgetplanung und um Ihr monatliches Nettogehalt zu verstehen.",
+    "monthlyCta": "Monatlich berechnen →",
+    "yearlyBody": "Berechnen Sie Ihr jaehrliches Nettoeinkommen aus Ihrem Bruttojahresgehalt. Sehen Sie die vollstaendige Aufschluesselung der Steuern und Abzuege fuer das gesamte Jahr.",
+    "yearlyCta": "Jaehrlich berechnen →",
+    "faqHeading": "Haeufig gestellte Fragen"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Gehalts- & Steuerrechner — Schaetzen Sie Ihr Nettoeinkommen",
+      "description": "Kostenloser Gehalts- und Steuerrechner. Geben Sie Ihr Bruttoeinkommen ein, um Nettogehalt, Einkommensteuer und Sozialabgaben fuer die USA, Deutschland und Grossbritannien im Jahr 2026 zu schaetzen.",
+      "ogDescription": "Kostenloser Gehalts- und Steuerrechner. Schaetzen Sie Nettogehalt, Einkommensteuer und Sozialabgaben fuer die USA, Deutschland und Grossbritannien."
+    },
+    "title": "Gehalts- & Steuerrechner",
+    "intro": "Schaetzen Sie Ihr Nettoeinkommen (Nettogehalt) nach Einkommensteuer und Sozialabgaben. Geben Sie Ihr Bruttogehalt ein, waehlen Sie Ihr Land und Ihren Abrechnungszeitraum und erhalten Sie eine sofortige Aufschluesselung fuer das Steuerjahr 2026.",
+    "howItWorks": {
+      "heading": "So funktioniert der Rechner",
+      "p1": "Unser Rechner wandelt Ihr Bruttoeinkommen mithilfe aktueller Steuersaetze und Sozialabgaben fuer jedes unterstuetzte Land in ein geschaetztes Nettogehalt um. Sie koennen Ihr Einkommen als Stundenlohn, Monatsgehalt oder Jahresbetrag eingeben, und der Rechner rechnet es auf das Jahr hoch, bevor er die jeweiligen Steuerregeln anwendet.",
+      "p2": "Die Aufschluesselung trennt die Einkommensteuer von den Sozialabgaben — wie Social Security und Medicare in den USA, gesetzlichen Versicherungsbeitraegen in Deutschland und National Insurance in Grossbritannien — sodass Sie genau sehen, wohin Ihr Geld fliesst und wie hoch Ihr effektiver Steuersatz ist.",
+      "p3": "Die Ergebnisse sind Schaetzungen, die nur zu Informations- und Planungszwecken dienen, und beruecksichtigen nicht jede individuelle Situation, etwa bundesstaatliche und lokale Steuern, Steuergutschriften oder Sachbezuege. Fuer eine auf Ihre Situation zugeschnittene Beratung wenden Sie sich an einen qualifizierten Steuerberater."
+    },
+    "related": {
+      "heading": "Laenderspezifische Rechner entdecken",
+      "hub": "Gehaltsrechner-Hub",
+      "us": "Gehaltsrechner USA",
+      "de": "Gehaltsrechner Deutschland",
+      "uk": "Gehaltsrechner Grossbritannien",
+      "hourly": "Stundenlohn-in-Gehalt-Umrechner",
+      "guides": "Gehalts- & Steuer-Ratgeber"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Nettogehalt-Rechner - Berechnen Sie Ihr Nettogehalt",
+      "description": "Kostenloser Nettogehalt-Rechner. Ermitteln Sie Ihr Nettogehalt nach Einkommensteuer und Sozialabgaben fuer die USA, Deutschland und Grossbritannien."
+    },
+    "title": "Nettogehalt-Rechner",
+    "intro": "Berechnen Sie Ihr Nettoeinkommen (Nettogehalt) nach Steuern und Sozialabgaben. Unser umfassender Gehaltsrechner hilft Ihnen zu verstehen, wie viel Sie nach allen Abzuegen genau erhalten.",
+    "cta": "Zum Gehaltsrechner-Hub →",
+    "breakdownIntro": "Unser Gehaltsrechner liefert detaillierte Aufschluesselungen zu:",
+    "breakdown": {
+      "gross": "Bruttoeinkommen (vor Steuern)",
+      "incomeTax": "Einkommensteuer-Berechnungen",
+      "social": "Sozialversicherungsbeitraege",
+      "net": "Nettoeinkommen (Nettogehalt)",
+      "effectiveRate": "Effektive Steuersaetze"
+    },
+    "availability": "Verfuegbar fuer mehrere Laender, darunter die USA, Deutschland und Grossbritannien. Waehlen Sie Ihr Land aus, um mit genauen, aktuellen Steuerberechnungen fuer 2026 zu beginnen.",
+    "specialized": "Sie koennen auch auf unsere spezialisierten Rechner zugreifen:",
+    "links": {
+      "hourly": "Stundenlohn-in-Gehalt-Umrechner",
+      "us": "USA-Rechner",
+      "de": "Deutschland-Rechner",
+      "uk": "Grossbritannien-Rechner"
+    },
+    "explainer": {
+      "heading": "Was ist das Nettogehalt?",
+      "p1": "Ihr <b>Nettogehalt</b> — oft auch als Nettolohn bezeichnet — ist der Betrag, der nach Abzug der Pflichtabgaben von Ihrem Bruttogehalt tatsaechlich auf Ihrem Bankkonto landet. Das Bruttogehalt ist die Kennzahl in Ihrem Arbeitsvertrag; das Nettogehalt ist das, was Sie einplanen und ausgeben koennen.",
+      "p2": "Die Differenz zwischen beiden setzt sich aus <b>Einkommensteuer</b> und <b>Sozialabgaben</b> zusammen. Die Einkommensteuer ist in der Regel progressiv, das heisst, hoehere Einkommensteile werden mit hoeheren Saetzen besteuert. Sozialabgaben finanzieren Programme wie staatliche Renten, Gesundheitsversorgung und Arbeitslosenversicherung, und die genauen Saetze haengen von Ihrem Wohnort ab.",
+      "p3": "Da jedes Land diese Abzuege unterschiedlich berechnet, kann dasselbe Bruttogehalt in den USA, Deutschland oder Grossbritannien zu sehr unterschiedlichen Nettogehaeltern fuehren. Waehlen Sie oben Ihr Land aus, um eine detaillierte, laenderspezifische Aufschluesselung fuer das Steuerjahr 2026 zu sehen."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Stundenlohn-in-Gehalt-Umrechner - Jahres-, Monats- & Wocheneinkommen berechnen",
+      "description": "Rechnen Sie Ihren Stundenlohn in Jahres-, Monats- und Wochengehalt um. Kostenloser Rechner mit Formeln und Beispielen. Ideal fuer Gehaltsverhandlungen und Gehaltsvergleiche.",
+      "ogDescription": "Rechnen Sie Ihren Stundenlohn in Jahres-, Monats- und Wochengehalt um. Kostenloser Rechner mit Formeln und Beispielen."
+    },
+    "title": "Stundenlohn-in-Gehalt-Umrechner",
+    "intro": "Rechnen Sie Ihren Stundenlohn in Jahres-, Monats-, Wochen- und Tagesgehalt um. Verstehen Sie Ihre Gesamtverguetung, wenn Sie Stellenangebote verhandeln oder Positionen vergleichen.",
+    "calc": {
+      "heading": "Berechnen Sie Ihr Nettoeinkommen",
+      "intro": "Geben Sie unten Ihren Stundenlohn ein, um Ihr Brutto- und Nettoeinkommen zu berechnen. Der Rechner ist auf den Stundenmodus voreingestellt und zeigt Ihr Nettogehalt nach Steuern an."
+    },
+    "formulas": {
+      "heading": "Umrechnungsformeln",
+      "annual": {
+        "title": "Jahresgehalt aus dem Stundenlohn",
+        "code": "Jahresgehalt = Stundenlohn × Stunden pro Woche × Wochen pro Jahr",
+        "note": "Standardberechnung: Multiplizieren Sie Ihren Stundenlohn mit 40 Stunden pro Woche und 52 Wochen pro Jahr."
+      },
+      "monthly": {
+        "title": "Monatsgehalt",
+        "code": "Monatsgehalt = Jahresgehalt ÷ 12",
+        "note": "Teilen Sie das Jahresgehalt durch 12 Monate. Hinweis: Dies ergibt einen durchschnittlichen Monatsbetrag; das tatsaechliche Monatsgehalt kann abweichen, wenn zweiwoechentlich oder halbmonatlich gezahlt wird."
+      },
+      "weekly": {
+        "title": "Wochengehalt",
+        "code": "Wochengehalt = Stundenlohn × Stunden pro Woche",
+        "note": "Multiplizieren Sie einfach Ihren Stundenlohn mit der Anzahl der Stunden, die Sie pro Woche arbeiten."
+      },
+      "daily": {
+        "title": "Tagesgehalt",
+        "code": "Tagesgehalt = Stundenlohn × Stunden pro Tag",
+        "note": "Bei einem 8-Stunden-Arbeitstag multiplizieren Sie Ihren Stundenlohn mit 8."
+      },
+      "grossNote": "<b>Hinweis:</b> Diese Formeln berechnen das Brutto-Einkommen (vor Steuern). Verwenden Sie den Rechner unten, um Ihr Nettogehalt nach Steuern und Abzuegen zu sehen."
+    },
+    "examples": {
+      "heading": "Beispiele",
+      "annualGross": "Jahresbrutto:",
+      "monthlyGross": "Monatsbrutto:",
+      "weeklyGross": "Wochenbrutto:",
+      "dailyGross": "Tagesbrutto",
+      "ex1": {
+        "title": "Beispiel 1: $25 pro Stunde, 40 Stunden/Woche, 52 Wochen/Jahr",
+        "annual": "<b>Jahresbrutto:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Monatsbrutto:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Wochenbrutto:</b> $25 × 40 = $1,000",
+        "daily": "<b>Tagesbrutto (8 Stunden):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Beispiel 2: $30 pro Stunde, 35 Stunden/Woche, 50 Wochen/Jahr",
+        "annual": "<b>Jahresbrutto:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Monatsbrutto:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Wochenbrutto:</b> $30 × 35 = $1,050",
+        "daily": "<b>Tagesbrutto (7 Stunden):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Beispiel 3: $20 pro Stunde, 40 Stunden/Woche, 48 Wochen/Jahr (mit 4 Wochen unbezahltem Urlaub)",
+        "annual": "<b>Jahresbrutto:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Monatsbrutto:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Wochenbrutto:</b> $20 × 40 = $800",
+        "note": "Hinweis: Die Anpassung der Wochen pro Jahr beruecksichtigt unbezahlte Freistellungen, Urlaub oder saisonale Arbeit."
+      }
+    },
+    "faq": {
+      "heading": "Haeufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Was ist der Unterschied zwischen Brutto- und Nettogehalt?",
+          "answer": "Das Bruttogehalt ist Ihr Gesamtverdienst vor Steuern und Abzuegen. Das Nettogehalt (Nettolohn) ist das, was Sie nach Abzug von Einkommensteuer, Sozialversicherung und anderen Pflichtabgaben erhalten. Der Rechner oben zeigt sowohl Brutto- als auch Nettobetraege an."
+        },
+        {
+          "question": "Wie viele Wochen sollte ich in der Berechnung verwenden?",
+          "answer": "Der Standard sind 52 Wochen pro Jahr fuer Vollzeitbeschaeftigte. Wenn Sie jedoch unbezahlte Freistellungen haben, saisonal arbeiten oder laengeren Urlaub nehmen, passen Sie den Wert entsprechend an. Zum Beispiel wuerden 2 Wochen unbezahlter Urlaub 50 Wochen pro Jahr bedeuten."
+        },
+        {
+          "question": "Sollte ich Ueberstunden in meinen Stundenlohn einbeziehen?",
+          "answer": "Fuer genaue Jahresgehaltsberechnungen verwenden Sie Ihren Basis-Stundenlohn und Ihre Standardstunden. Wenn Sie regelmaessig Ueberstunden leisten, koennen Sie entweder: (1) das Basisgehalt separat berechnen und geschaetzte Ueberstunden hinzufuegen oder (2) einen durchschnittlichen Stundenlohn verwenden, der Ueberstunden beruecksichtigt. Der Rechner ermoeglicht es Ihnen, die Stunden pro Woche an Ihren tatsaechlichen Arbeitsplan anzupassen."
+        },
+        {
+          "question": "Wie rechne ich das Gehalt zurueck in einen Stundenlohn um?",
+          "answer": "Um das Jahresgehalt in einen Stundenlohn umzurechnen: Stundenlohn = Jahresgehalt ÷ (Stunden pro Woche × Wochen pro Jahr). Zum Beispiel: $52,000 ÷ (40 × 52) = $25 pro Stunde. Verwenden Sie unseren Rechner umgekehrt, indem Sie Ihr Jahresgehalt eingeben und den Jahresmodus waehlen."
+        }
+      ],
+      "countriesQuestion": "Sind diese Berechnungen fuer alle Laender genau?",
+      "countriesAnswer": "Die Umrechnungsformeln (Stunde zu Jahr, Monat usw.) sind universell gueltig. Die Nettoeinkommensberechnungen unterscheiden sich jedoch je nach Land aufgrund unterschiedlicher Steuersysteme. Verwenden Sie die laenderspezifischen Rechner in unserem <link>Gehaltsrechner-Hub</link> fuer genaue Nettoeinkommensschaetzungen.",
+      "partTimeQuestion": "Was, wenn ich in Teilzeit arbeite oder unregelmaessige Arbeitszeiten habe?",
+      "partTimeAnswer": "Geben Sie fuer Teilzeitarbeit Ihre tatsaechlichen Stunden pro Woche ein. Berechnen Sie bei unregelmaessigen Arbeitszeiten einen Durchschnitt der Wochenstunden ueber einen laengeren Zeitraum (z. B. 3-6 Monate) und verwenden Sie diesen. Der Rechner ermoeglicht individuelle Stunden pro Woche und Wochen pro Jahr, passend zu jedem Arbeitsplan."
+    },
+    "related": {
+      "heading": "Verwandte Ressourcen",
+      "hub": "Gehaltsrechner-Hub",
+      "us": "Gehaltsrechner USA",
+      "de": "Gehaltsrechner Deutschland",
+      "uk": "Gehaltsrechner Grossbritannien"
+    }
   }
 }

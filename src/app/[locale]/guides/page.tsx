@@ -6,6 +6,7 @@ import { type Guide } from '@/data/guides';
 import { getLocalizedGuides, getLocalizedGuidesByPillar, getLocalizedPillars } from '@/lib/content';
 import { generateBreadcrumbJsonLd } from '@/lib/seo/breadcrumbs';
 import { siteConfig } from '@/config/site';
+import { buildAlternates } from '@/i18n/seo';
 
 export async function generateMetadata({
   params: { locale },
@@ -16,9 +17,7 @@ export async function generateMetadata({
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
-    alternates: {
-      canonical: `${siteConfig.domain}/guides`,
-    },
+    alternates: buildAlternates(locale, '/guides'),
     openGraph: {
       title: t('metaTitle'),
       description: t('metaDescription'),

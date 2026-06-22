@@ -487,5 +487,180 @@
       "editorialLink": "normas editoriales",
       "editorialSuffix": "para saber cómo investigamos y actualizamos estos datos."
     }
+  },
+  "hub": {
+    "metaTitle": "Centro de calculadoras de impuestos sobre el salario - Calcula tu sueldo neto por país",
+    "metaDescription": "Calculadoras gratuitas de impuestos sobre el salario para varios países. Calcula tu sueldo neto después de impuestos y cotizaciones sociales en EE. UU., Alemania, Reino Unido y más.",
+    "title": "Centro de calculadoras de impuestos sobre el salario",
+    "intro1": "Calcula tu sueldo neto después de impuestos y cotizaciones sociales. Nuestras calculadoras gratuitas te ayudan a entender cuánto te llevarás a casa en distintos países, con desgloses detallados del impuesto sobre la renta, las cotizaciones a la seguridad social y otras deducciones.",
+    "intro2": "Selecciona un país a continuación para empezar, o elige el modo de cálculo que mejor se adapte a tus necesidades.",
+    "byCountryHeading": "Calcular por país",
+    "calculateCta": "Calcular →",
+    "hourlyTitle": "Calculadora de ingresos por hora",
+    "monthlyTitle": "Calculadora de salario mensual",
+    "yearlyTitle": "Calculadora de salario anual",
+    "chooseModeHeading": "Elige el modo de cálculo",
+    "converterTitle": "Conversor de salario por hora a anual",
+    "converterBody": "Convierte tu salario por hora en sueldo anual, mensual y semanal. Ideal para entender tu retribución total al negociar o comparar ofertas de trabajo.",
+    "converterCta": "Convertir tarifa por hora →",
+    "hourlyBody": "Calcula tu sueldo neto cuando conoces tu tarifa por hora. Incluye opciones para personalizar las horas por semana y las semanas por año según tu jornada laboral.",
+    "hourlyCta": "Calcular por hora →",
+    "monthlyBody": "Calcula tu sueldo neto mensual después de impuestos. Ideal para planificar tu presupuesto y entender cuánto te llevas a casa cada mes.",
+    "monthlyCta": "Calcular mensual →",
+    "yearlyBody": "Calcula tu sueldo neto anual a partir de tu salario bruto anual. Consulta el desglose completo de impuestos y deducciones de todo el año.",
+    "yearlyCta": "Calcular anual →",
+    "faqHeading": "Preguntas frecuentes"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Calculadora de salario e impuestos — Estima tu sueldo neto",
+      "description": "Calculadora gratuita de impuestos sobre el salario. Introduce tu salario bruto para estimar el sueldo neto, el impuesto sobre la renta y las cotizaciones sociales en EE. UU., Alemania y el Reino Unido en 2026.",
+      "ogDescription": "Calculadora gratuita de impuestos sobre el salario. Estima el sueldo neto, el impuesto sobre la renta y las cotizaciones sociales en EE. UU., Alemania y el Reino Unido."
+    },
+    "title": "Calculadora de salario e impuestos",
+    "intro": "Estima tu sueldo neto (lo que te llevas a casa) después del impuesto sobre la renta y las cotizaciones sociales. Introduce tu salario bruto, elige tu país y periodo de pago, y obtén un desglose instantáneo para el ejercicio fiscal de 2026.",
+    "howItWorks": {
+      "heading": "Cómo funciona la calculadora",
+      "p1": "Nuestra calculadora convierte tu salario bruto en una estimación de tu sueldo neto usando los tramos impositivos y las tasas de cotización social actualizados de cada país compatible. Puedes introducir los ingresos como tarifa por hora, salario mensual o cifra anual, y la calculadora los anualiza antes de aplicar las normas fiscales correspondientes.",
+      "p2": "El desglose separa el impuesto sobre la renta de las cotizaciones sociales —como la Social Security y Medicare en Estados Unidos, las cotizaciones obligatorias a los seguros en Alemania y el National Insurance en el Reino Unido— para que veas exactamente adónde va tu dinero y cuál es tu tipo impositivo efectivo.",
+      "p3": "Los resultados son estimaciones con fines meramente informativos y de planificación, y no contemplan todas las circunstancias individuales, como los impuestos estatales y locales, las deducciones fiscales o las retribuciones en especie. Para asesoramiento específico sobre tu situación, consulta a un profesional fiscal cualificado."
+    },
+    "related": {
+      "heading": "Explora calculadoras específicas por país",
+      "hub": "Centro de calculadoras de salario",
+      "us": "Calculadora de salario de Estados Unidos",
+      "de": "Calculadora de salario de Alemania",
+      "uk": "Calculadora de salario del Reino Unido",
+      "hourly": "Conversor de salario por hora a anual",
+      "guides": "Guías de salario e impuestos"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Calculadora de sueldo neto - Calcula lo que te llevas a casa",
+      "description": "Calculadora gratuita de sueldo neto. Calcula lo que te llevas a casa después del impuesto sobre la renta y las cotizaciones sociales en EE. UU., Alemania y el Reino Unido."
+    },
+    "title": "Calculadora de sueldo neto",
+    "intro": "Calcula tu sueldo neto (lo que te llevas a casa) después de impuestos y cotizaciones sociales. Nuestra completa calculadora de salario te ayuda a entender exactamente cuánto recibirás tras todas las deducciones.",
+    "cta": "Ir al centro de calculadoras de salario →",
+    "breakdownIntro": "Nuestra calculadora de salario ofrece desgloses detallados de:",
+    "breakdown": {
+      "gross": "Salario bruto (antes de impuestos)",
+      "incomeTax": "Cálculos del impuesto sobre la renta",
+      "social": "Cotizaciones a la seguridad social",
+      "net": "Sueldo neto (lo que te llevas a casa)",
+      "effectiveRate": "Tipos impositivos efectivos"
+    },
+    "availability": "Disponible para varios países, incluidos Estados Unidos, Alemania y el Reino Unido. Selecciona tu país para empezar con cálculos fiscales precisos y actualizados para 2026.",
+    "specialized": "También puedes acceder a nuestras calculadoras especializadas:",
+    "links": {
+      "hourly": "Conversor de salario por hora a anual",
+      "us": "Calculadora de EE. UU.",
+      "de": "Calculadora de Alemania",
+      "uk": "Calculadora del Reino Unido"
+    },
+    "explainer": {
+      "heading": "¿Qué es el sueldo neto?",
+      "p1": "Tu <b>sueldo neto</b> —a menudo llamado lo que te llevas a casa— es la cantidad que realmente llega a tu cuenta bancaria una vez restadas las deducciones obligatorias de tu salario bruto. El salario bruto es la cifra principal de tu contrato laboral; el sueldo neto es lo que puedes presupuestar y gastar.",
+      "p2": "La diferencia entre ambos la forman el <b>impuesto sobre la renta</b> y las <b>cotizaciones sociales</b>. El impuesto sobre la renta suele ser progresivo, lo que significa que las partes más altas de tus ingresos tributan a tipos más elevados. Las cotizaciones sociales financian programas como las pensiones públicas, la sanidad y el seguro de desempleo, y los tipos exactos dependen de dónde vivas.",
+      "p3": "Como cada país calcula estas deducciones de forma diferente, el mismo salario bruto puede dar lugar a un sueldo neto muy distinto en Estados Unidos, Alemania o el Reino Unido. Elige tu país arriba para ver un desglose detallado y específico de cada país para el ejercicio fiscal de 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Conversor de salario por hora a anual - Calcula ingresos anuales, mensuales y semanales",
+      "description": "Convierte el salario por hora en sueldo anual, mensual y semanal. Calculadora gratuita con fórmulas y ejemplos. Ideal para negociaciones salariales y comparaciones de sueldos.",
+      "ogDescription": "Convierte el salario por hora en sueldo anual, mensual y semanal. Calculadora gratuita con fórmulas y ejemplos."
+    },
+    "title": "Conversor de salario por hora a anual",
+    "intro": "Convierte tu salario por hora en sueldo anual, mensual, semanal y diario. Entiende tu retribución total al negociar ofertas de trabajo o comparar puestos.",
+    "calc": {
+      "heading": "Calcula tu sueldo neto",
+      "intro": "Introduce tu tarifa por hora a continuación para calcular tu salario bruto y neto. La calculadora está configurada en modo por hora y mostrará lo que te llevas a casa después de impuestos."
+    },
+    "formulas": {
+      "heading": "Fórmulas de conversión",
+      "annual": {
+        "title": "Salario anual a partir de la tarifa por hora",
+        "code": "Salario anual = Tarifa por hora × Horas por semana × Semanas por año",
+        "note": "Cálculo estándar: multiplica tu tarifa por hora por 40 horas a la semana y 52 semanas al año."
+      },
+      "monthly": {
+        "title": "Salario mensual",
+        "code": "Salario mensual = Salario anual ÷ 12",
+        "note": "Divide el salario anual entre 12 meses. Nota: esto da una cantidad mensual media; el pago mensual real puede variar si se cobra cada dos semanas o quincenalmente."
+      },
+      "weekly": {
+        "title": "Salario semanal",
+        "code": "Salario semanal = Tarifa por hora × Horas por semana",
+        "note": "Simplemente multiplica tu tarifa por hora por el número de horas que trabajas a la semana."
+      },
+      "daily": {
+        "title": "Salario diario",
+        "code": "Salario diario = Tarifa por hora × Horas por día",
+        "note": "Para una jornada laboral de 8 horas, multiplica tu tarifa por hora por 8."
+      },
+      "grossNote": "<b>Nota:</b> estas fórmulas calculan el salario bruto (antes de impuestos). Usa la calculadora de abajo para ver tu sueldo neto (lo que te llevas a casa) después de impuestos y deducciones."
+    },
+    "examples": {
+      "heading": "Ejemplos",
+      "annualGross": "Bruto anual:",
+      "monthlyGross": "Bruto mensual:",
+      "weeklyGross": "Bruto semanal:",
+      "dailyGross": "Bruto diario",
+      "ex1": {
+        "title": "Ejemplo 1: 25 $ por hora, 40 horas/semana, 52 semanas/año",
+        "annual": "<b>Bruto anual:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Bruto mensual:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Bruto semanal:</b> $25 × 40 = $1,000",
+        "daily": "<b>Bruto diario (8 horas):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Ejemplo 2: 30 $ por hora, 35 horas/semana, 50 semanas/año",
+        "annual": "<b>Bruto anual:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Bruto mensual:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Bruto semanal:</b> $30 × 35 = $1,050",
+        "daily": "<b>Bruto diario (7 horas):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Ejemplo 3: 20 $ por hora, 40 horas/semana, 48 semanas/año (con 4 semanas de permiso no retribuido)",
+        "annual": "<b>Bruto anual:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Bruto mensual:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Bruto semanal:</b> $20 × 40 = $800",
+        "note": "Nota: ajustar las semanas por año tiene en cuenta el permiso no retribuido, las vacaciones o el trabajo de temporada."
+      }
+    },
+    "faq": {
+      "heading": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Cuál es la diferencia entre el salario bruto y el neto?",
+          "answer": "El salario bruto son tus ingresos totales antes de impuestos y deducciones. El sueldo neto (lo que te llevas a casa) es lo que recibes una vez restados el impuesto sobre la renta, la seguridad social y otras deducciones obligatorias. La calculadora de arriba muestra tanto el importe bruto como el neto."
+        },
+        {
+          "question": "¿Cuántas semanas debo usar en el cálculo?",
+          "answer": "Lo estándar son 52 semanas al año para los empleados a tiempo completo. Sin embargo, si tienes permisos no retribuidos, trabajas por temporadas o disfrutas de una excedencia prolongada, ajústalo en consecuencia. Por ejemplo, 2 semanas de vacaciones no retribuidas supondrían 50 semanas al año."
+        },
+        {
+          "question": "¿Debo incluir las horas extra en mi tarifa por hora?",
+          "answer": "Para calcular el salario anual con precisión, usa tu tarifa por hora base y tus horas estándar. Si haces horas extra con regularidad, puedes: (1) calcular el salario base por separado y sumar las horas extra estimadas, o (2) usar una tarifa por hora media que tenga en cuenta las horas extra. La calculadora te permite ajustar las horas por semana para reflejar tu jornada real."
+        },
+        {
+          "question": "¿Cómo convierto el salario de nuevo en tarifa por hora?",
+          "answer": "Para convertir el salario anual en tarifa por hora: Tarifa por hora = Salario anual ÷ (Horas por semana × Semanas por año). Por ejemplo, $52,000 ÷ (40 × 52) = $25 por hora. Usa nuestra calculadora a la inversa introduciendo tu salario anual y seleccionando el modo anual."
+        }
+      ],
+      "countriesQuestion": "¿Son precisos estos cálculos para todos los países?",
+      "countriesAnswer": "Las fórmulas de conversión (de por hora a anual, mensual, etc.) son universales. Sin embargo, los cálculos del sueldo neto varían según el país debido a los distintos sistemas fiscales. Usa las calculadoras específicas por país de nuestro <link>Centro de calculadoras de salario</link> para obtener estimaciones precisas del sueldo neto.",
+      "partTimeQuestion": "¿Y si trabajo a tiempo parcial o tengo un horario irregular?",
+      "partTimeAnswer": "Para el trabajo a tiempo parcial, introduce tus horas reales por semana. Para horarios irregulares, calcula una media de horas semanales a lo largo de un periodo más largo (por ejemplo, de 3 a 6 meses) y úsala. La calculadora permite personalizar las horas por semana y las semanas por año para adaptarse a cualquier jornada laboral."
+    },
+    "related": {
+      "heading": "Recursos relacionados",
+      "hub": "Centro de calculadoras de salario",
+      "us": "Calculadora de salario de EE. UU.",
+      "de": "Calculadora de salario de Alemania",
+      "uk": "Calculadora de salario del Reino Unido"
+    }
   }
 }

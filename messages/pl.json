@@ -488,5 +488,180 @@
       "editorialLink": "standardy redakcyjne",
       "editorialSuffix": "aby dowiedzieć się, jak badamy i aktualizujemy te dane."
     }
+  },
+  "hub": {
+    "metaTitle": "Centrum kalkulatorów podatku od wynagrodzenia - oblicz dochód netto według kraju",
+    "metaDescription": "Bezpłatne kalkulatory podatku od wynagrodzenia dla wielu krajów. Oblicz swój dochód netto po opodatkowaniu i składkach społecznych w USA, Niemczech, Wielkiej Brytanii i nie tylko.",
+    "title": "Centrum kalkulatorów podatku od wynagrodzenia",
+    "intro1": "Oblicz swój dochód netto po opodatkowaniu i składkach społecznych. Nasze bezpłatne kalkulatory pomagają zrozumieć, ile zarobisz na rękę w różnych krajach, z szczegółowym podziałem na podatek dochodowy, składki na ubezpieczenia społeczne i inne potrącenia.",
+    "intro2": "Wybierz kraj poniżej, aby rozpocząć, lub wybierz tryb obliczeń odpowiadający Twoim potrzebom.",
+    "byCountryHeading": "Oblicz według kraju",
+    "calculateCta": "Oblicz →",
+    "hourlyTitle": "Kalkulator dochodu godzinowego",
+    "monthlyTitle": "Kalkulator wynagrodzenia miesięcznego",
+    "yearlyTitle": "Kalkulator wynagrodzenia rocznego",
+    "chooseModeHeading": "Wybierz tryb obliczeń",
+    "converterTitle": "Przelicznik stawki godzinowej na wynagrodzenie",
+    "converterBody": "Przelicz swoją stawkę godzinową na wynagrodzenie roczne, miesięczne i tygodniowe. Idealne do zrozumienia całkowitego wynagrodzenia podczas negocjacji lub porównywania ofert pracy.",
+    "converterCta": "Przelicz stawkę godzinową →",
+    "hourlyBody": "Oblicz dochód netto, gdy znasz swoją stawkę godzinową. Zawiera opcje dostosowania liczby godzin tygodniowo i tygodni rocznie do Twojego harmonogramu pracy.",
+    "hourlyCta": "Oblicz godzinowo →",
+    "monthlyBody": "Oblicz swój miesięczny dochód netto po opodatkowaniu. Idealne do planowania budżetu i zrozumienia miesięcznego wynagrodzenia na rękę.",
+    "monthlyCta": "Oblicz miesięcznie →",
+    "yearlyBody": "Oblicz swój roczny dochód netto z rocznego wynagrodzenia brutto. Zobacz pełny podział podatków i potrąceń za cały rok.",
+    "yearlyCta": "Oblicz rocznie →",
+    "faqHeading": "Najczęściej zadawane pytania"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Kalkulator wynagrodzenia i podatku — oszacuj swój dochód netto",
+      "description": "Bezpłatny kalkulator podatku od wynagrodzenia. Wprowadź swój dochód brutto, aby oszacować wynagrodzenie netto, podatek dochodowy i składki społeczne dla USA, Niemiec i Wielkiej Brytanii w 2026 roku.",
+      "ogDescription": "Bezpłatny kalkulator podatku od wynagrodzenia. Oszacuj wynagrodzenie netto, podatek dochodowy i składki społeczne dla USA, Niemiec i Wielkiej Brytanii."
+    },
+    "title": "Kalkulator wynagrodzenia i podatku",
+    "intro": "Oszacuj swój dochód netto (wynagrodzenie na rękę) po podatku dochodowym i składkach społecznych. Wprowadź swoje wynagrodzenie brutto, wybierz kraj i okres rozliczeniowy i otrzymaj natychmiastowy podział dla roku podatkowego 2026.",
+    "howItWorks": {
+      "heading": "Jak działa kalkulator",
+      "p1": "Nasz kalkulator przelicza Twój dochód brutto na szacowane wynagrodzenie na rękę, korzystając z aktualnych progów podatkowych i stawek składek społecznych dla każdego obsługiwanego kraju. Możesz wprowadzić dochód jako stawkę godzinową, wynagrodzenie miesięczne lub kwotę roczną, a kalkulator przeliczy ją na ujęcie roczne przed zastosowaniem odpowiednich zasad podatkowych.",
+      "p2": "Podział oddziela podatek dochodowy od składek społecznych — takich jak Social Security i Medicare w Stanach Zjednoczonych, ustawowe składki ubezpieczeniowe w Niemczech oraz National Insurance w Wielkiej Brytanii — dzięki czemu możesz dokładnie zobaczyć, gdzie trafiają Twoje pieniądze i jaka jest Twoja efektywna stopa podatkowa.",
+      "p3": "Wyniki są szacunkami przeznaczonymi wyłącznie do celów informacyjnych i planistycznych i nie uwzględniają każdej indywidualnej sytuacji, takiej jak podatki stanowe i lokalne, ulgi podatkowe czy świadczenia rzeczowe. W celu uzyskania porady dostosowanej do Twojej sytuacji skonsultuj się z wykwalifikowanym doradcą podatkowym."
+    },
+    "related": {
+      "heading": "Poznaj kalkulatory dla poszczególnych krajów",
+      "hub": "Centrum kalkulatorów wynagrodzeń",
+      "us": "Kalkulator wynagrodzeń w Stanach Zjednoczonych",
+      "de": "Kalkulator wynagrodzeń w Niemczech",
+      "uk": "Kalkulator wynagrodzeń w Wielkiej Brytanii",
+      "hourly": "Przelicznik stawki godzinowej na wynagrodzenie",
+      "guides": "Poradniki o wynagrodzeniach i podatkach"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Kalkulator wynagrodzenia netto - oblicz swoje wynagrodzenie na rękę",
+      "description": "Bezpłatny kalkulator wynagrodzenia netto. Oblicz swoje wynagrodzenie na rękę po podatku dochodowym i składkach społecznych dla USA, Niemiec i Wielkiej Brytanii."
+    },
+    "title": "Kalkulator wynagrodzenia netto",
+    "intro": "Oblicz swój dochód netto (wynagrodzenie na rękę) po opodatkowaniu i składkach społecznych. Nasz kompleksowy kalkulator wynagrodzeń pomaga zrozumieć dokładnie, ile otrzymasz po wszystkich potrąceniach.",
+    "cta": "Przejdź do centrum kalkulatorów wynagrodzeń →",
+    "breakdownIntro": "Nasz kalkulator wynagrodzeń zapewnia szczegółowy podział:",
+    "breakdown": {
+      "gross": "Dochód brutto (przed opodatkowaniem)",
+      "incomeTax": "Obliczenia podatku dochodowego",
+      "social": "Składki na ubezpieczenia społeczne",
+      "net": "Dochód netto (wynagrodzenie na rękę)",
+      "effectiveRate": "Efektywne stopy podatkowe"
+    },
+    "availability": "Dostępny dla wielu krajów, w tym Stanów Zjednoczonych, Niemiec i Wielkiej Brytanii. Wybierz swój kraj, aby rozpocząć dokładne, aktualne obliczenia podatkowe na rok 2026.",
+    "specialized": "Możesz również skorzystać z naszych wyspecjalizowanych kalkulatorów:",
+    "links": {
+      "hourly": "Przelicznik stawki godzinowej na wynagrodzenie",
+      "us": "Kalkulator dla USA",
+      "de": "Kalkulator dla Niemiec",
+      "uk": "Kalkulator dla Wielkiej Brytanii"
+    },
+    "explainer": {
+      "heading": "Czym jest wynagrodzenie netto?",
+      "p1": "Twoje <b>wynagrodzenie netto</b> — często nazywane wynagrodzeniem na rękę — to kwota, która faktycznie trafia na Twoje konto bankowe po odjęciu obowiązkowych potrąceń od wynagrodzenia brutto. Wynagrodzenie brutto to główna kwota w Twojej umowie o pracę; wynagrodzenie netto to kwota, którą możesz zaplanować w budżecie i wydać.",
+      "p2": "Różnicę między nimi stanowią <b>podatek dochodowy</b> i <b>składki społeczne</b>. Podatek dochodowy jest zazwyczaj progresywny, co oznacza, że wyższe części Twojego dochodu są opodatkowane wyższymi stawkami. Składki społeczne finansują programy takie jak emerytury państwowe, opieka zdrowotna i ubezpieczenie na wypadek bezrobocia, a dokładne stawki zależą od miejsca zamieszkania.",
+      "p3": "Ponieważ każdy kraj oblicza te potrącenia inaczej, to samo wynagrodzenie brutto może dawać bardzo różne wynagrodzenie na rękę w Stanach Zjednoczonych, Niemczech czy Wielkiej Brytanii. Wybierz swój kraj powyżej, aby zobaczyć szczegółowy podział dla danego kraju w roku podatkowym 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Przelicznik stawki godzinowej na wynagrodzenie - oblicz dochód roczny, miesięczny i tygodniowy",
+      "description": "Przelicz stawkę godzinową na wynagrodzenie roczne, miesięczne i tygodniowe. Bezpłatny kalkulator ze wzorami i przykładami. Idealny do negocjacji płacowych i porównań wynagrodzeń.",
+      "ogDescription": "Przelicz stawkę godzinową na wynagrodzenie roczne, miesięczne i tygodniowe. Bezpłatny kalkulator ze wzorami i przykładami."
+    },
+    "title": "Przelicznik stawki godzinowej na wynagrodzenie",
+    "intro": "Przelicz swoją stawkę godzinową na wynagrodzenie roczne, miesięczne, tygodniowe i dzienne. Zrozum swoje całkowite wynagrodzenie podczas negocjowania ofert pracy lub porównywania stanowisk.",
+    "calc": {
+      "heading": "Oblicz swój dochód netto",
+      "intro": "Wprowadź poniżej swoją stawkę godzinową, aby obliczyć swój dochód brutto i netto. Kalkulator jest wstępnie ustawiony na tryb godzinowy i pokaże Twoje wynagrodzenie na rękę po opodatkowaniu."
+    },
+    "formulas": {
+      "heading": "Wzory przeliczeniowe",
+      "annual": {
+        "title": "Wynagrodzenie roczne ze stawki godzinowej",
+        "code": "Wynagrodzenie roczne = stawka godzinowa × godziny tygodniowo × tygodnie w roku",
+        "note": "Standardowe obliczenie: pomnóż swoją stawkę godzinową przez 40 godzin tygodniowo i 52 tygodnie w roku."
+      },
+      "monthly": {
+        "title": "Wynagrodzenie miesięczne",
+        "code": "Wynagrodzenie miesięczne = wynagrodzenie roczne ÷ 12",
+        "note": "Podziel wynagrodzenie roczne przez 12 miesięcy. Uwaga: daje to średnią kwotę miesięczną; rzeczywiste wynagrodzenie miesięczne może się różnić, jeśli jest wypłacane co dwa tygodnie lub dwa razy w miesiącu."
+      },
+      "weekly": {
+        "title": "Wynagrodzenie tygodniowe",
+        "code": "Wynagrodzenie tygodniowe = stawka godzinowa × godziny tygodniowo",
+        "note": "Po prostu pomnóż swoją stawkę godzinową przez liczbę godzin, które przepracowujesz w tygodniu."
+      },
+      "daily": {
+        "title": "Wynagrodzenie dzienne",
+        "code": "Wynagrodzenie dzienne = stawka godzinowa × godziny dziennie",
+        "note": "Dla 8-godzinnego dnia pracy pomnóż swoją stawkę godzinową przez 8."
+      },
+      "grossNote": "<b>Uwaga:</b> Te wzory obliczają dochód brutto (przed opodatkowaniem). Skorzystaj z kalkulatora poniżej, aby zobaczyć swoje wynagrodzenie netto (na rękę) po opodatkowaniu i potrąceniach."
+    },
+    "examples": {
+      "heading": "Przykłady",
+      "annualGross": "Brutto rocznie:",
+      "monthlyGross": "Brutto miesięcznie:",
+      "weeklyGross": "Brutto tygodniowo:",
+      "dailyGross": "Brutto dziennie",
+      "ex1": {
+        "title": "Przykład 1: $25 za godzinę, 40 godzin/tydzień, 52 tygodnie/rok",
+        "annual": "<b>Brutto rocznie:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Brutto miesięcznie:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Brutto tygodniowo:</b> $25 × 40 = $1,000",
+        "daily": "<b>Brutto dziennie (8 godzin):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Przykład 2: $30 za godzinę, 35 godzin/tydzień, 50 tygodni/rok",
+        "annual": "<b>Brutto rocznie:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Brutto miesięcznie:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Brutto tygodniowo:</b> $30 × 35 = $1,050",
+        "daily": "<b>Brutto dziennie (7 godzin):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Przykład 3: $20 za godzinę, 40 godzin/tydzień, 48 tygodni/rok (z 4 tygodniami bezpłatnego urlopu)",
+        "annual": "<b>Brutto rocznie:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Brutto miesięcznie:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Brutto tygodniowo:</b> $20 × 40 = $800",
+        "note": "Uwaga: Dostosowanie liczby tygodni w roku uwzględnia bezpłatny urlop, wakacje lub pracę sezonową."
+      }
+    },
+    "faq": {
+      "heading": "Najczęściej zadawane pytania",
+      "items": [
+        {
+          "question": "Jaka jest różnica między wynagrodzeniem brutto a netto?",
+          "answer": "Wynagrodzenie brutto to Twoje całkowite zarobki przed opodatkowaniem i potrąceniami. Wynagrodzenie netto (na rękę) to kwota, którą otrzymujesz po odjęciu podatku dochodowego, składek na ubezpieczenia społeczne i innych obowiązkowych potrąceń. Kalkulator powyżej pokazuje zarówno kwotę brutto, jak i netto."
+        },
+        {
+          "question": "Ile tygodni powinienem przyjąć do obliczeń?",
+          "answer": "Standardem są 52 tygodnie w roku dla pracowników pełnoetatowych. Jednak jeśli masz bezpłatny urlop, pracujesz sezonowo lub bierzesz dłuższe zwolnienie, odpowiednio to dostosuj. Na przykład 2 tygodnie bezpłatnego urlopu oznaczałyby 50 tygodni w roku."
+        },
+        {
+          "question": "Czy powinienem uwzględnić nadgodziny w mojej stawce godzinowej?",
+          "answer": "Aby dokładnie obliczyć wynagrodzenie roczne, użyj swojej podstawowej stawki godzinowej i standardowych godzin. Jeśli regularnie pracujesz w nadgodzinach, możesz: (1) obliczyć wynagrodzenie podstawowe oddzielnie i dodać szacowane nadgodziny lub (2) użyć średniej stawki godzinowej uwzględniającej nadgodziny. Kalkulator pozwala dostosować liczbę godzin tygodniowo do Twojego rzeczywistego harmonogramu."
+        },
+        {
+          "question": "Jak przeliczyć wynagrodzenie z powrotem na stawkę godzinową?",
+          "answer": "Aby przeliczyć wynagrodzenie roczne na godzinowe: stawka godzinowa = wynagrodzenie roczne ÷ (godziny tygodniowo × tygodnie w roku). Na przykład $52,000 ÷ (40 × 52) = $25 za godzinę. Skorzystaj z naszego kalkulatora w odwrotny sposób, wprowadzając swoje wynagrodzenie roczne i wybierając tryb roczny."
+        }
+      ],
+      "countriesQuestion": "Czy te obliczenia są dokładne dla wszystkich krajów?",
+      "countriesAnswer": "Wzory przeliczeniowe (z godzinowego na roczne, miesięczne itd.) są uniwersalne. Jednak obliczenia dochodu netto różnią się w zależności od kraju ze względu na odmienne systemy podatkowe. Skorzystaj z kalkulatorów dla poszczególnych krajów w naszym <link>Centrum kalkulatorów wynagrodzeń</link>, aby uzyskać dokładne szacunki dochodu netto.",
+      "partTimeQuestion": "Co, jeśli pracuję na część etatu lub mam nieregularne godziny?",
+      "partTimeAnswer": "W przypadku pracy na część etatu wprowadź swoją rzeczywistą liczbę godzin tygodniowo. W przypadku nieregularnych godzin oblicz średnią liczbę godzin tygodniowo w dłuższym okresie (np. 3-6 miesięcy) i jej użyj. Kalkulator pozwala dostosować liczbę godzin tygodniowo i tygodni w roku do dowolnego harmonogramu pracy."
+    },
+    "related": {
+      "heading": "Powiązane zasoby",
+      "hub": "Centrum kalkulatorów wynagrodzeń",
+      "us": "Kalkulator wynagrodzeń dla USA",
+      "de": "Kalkulator wynagrodzeń dla Niemiec",
+      "uk": "Kalkulator wynagrodzeń dla Wielkiej Brytanii"
+    }
   }
 }

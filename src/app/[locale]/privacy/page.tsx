@@ -2,6 +2,7 @@ import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getPrivacy } from '@/lib/content';
+import { buildAlternates } from '@/i18n/seo';
 
 export async function generateMetadata({
   params: { locale },
@@ -13,7 +14,7 @@ export async function generateMetadata({
     title,
     description:
       'How IncomeTally collects, uses, and protects your information, including cookies and Google AdSense advertising.',
-    alternates: { canonical: '/privacy' },
+    alternates: buildAlternates(locale, '/privacy'),
     openGraph: {
       title,
       description:

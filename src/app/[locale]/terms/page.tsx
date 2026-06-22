@@ -2,6 +2,7 @@ import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getTerms } from '@/lib/content';
+import { buildAlternates } from '@/i18n/seo';
 
 export async function generateMetadata({
   params: { locale },
@@ -13,7 +14,7 @@ export async function generateMetadata({
     title,
     description:
       "The terms and conditions for using IncomeTally's income, salary, and tax calculators.",
-    alternates: { canonical: '/terms' },
+    alternates: buildAlternates(locale, '/terms'),
     openGraph: {
       title,
       description:

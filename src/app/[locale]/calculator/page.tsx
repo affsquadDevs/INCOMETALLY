@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation';
 import dynamic from 'next/dynamic';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import CalculatorSkeleton from '@/components/CalculatorSkeleton';
+import { buildAlternates } from '@/i18n/seo';
 
 // Dynamic import - calculator is heavy, load on demand
 const SalaryCalculator = dynamic(() => import('@/components/SalaryCalculator'), {
@@ -20,7 +21,7 @@ export async function generateMetadata({
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    alternates: { canonical: '/calculator' },
+    alternates: buildAlternates(locale, '/calculator'),
     openGraph: {
       title: t('meta.title'),
       description: t('meta.ogDescription'),

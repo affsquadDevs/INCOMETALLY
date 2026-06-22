@@ -7,6 +7,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import { generateFAQJsonLd, type FAQ } from '@/lib/seo/faq';
 import { countries } from '@/lib/countries';
 import { getLocalizedCountry, getLocalizedPillars, getLocalizedGuideBySlug } from '@/lib/content';
+import { buildAlternates } from '@/i18n/seo';
 
 export async function generateMetadata({
   params: { locale },
@@ -17,6 +18,7 @@ export async function generateMetadata({
   return {
     title: { absolute: t('meta.title') },
     description: t('meta.description'),
+    alternates: buildAlternates(locale, '/'),
     openGraph: {
       title: t('meta.title'),
       description: t('meta.description'),

@@ -488,5 +488,180 @@
       "editorialLink": "standard editoriali",
       "editorialSuffix": "per sapere come ricerchiamo e aggiorniamo questi dati."
     }
+  },
+  "hub": {
+    "metaTitle": "Hub Calcolatore Tasse sullo Stipendio - Calcola il Reddito Netto per Paese",
+    "metaDescription": "Calcolatori gratuiti delle tasse sullo stipendio per diversi paesi. Calcola il tuo reddito netto dopo tasse e contributi sociali negli USA, in Germania, nel Regno Unito e altro.",
+    "title": "Hub Calcolatore Tasse sullo Stipendio",
+    "intro1": "Calcola il tuo reddito netto dopo tasse e contributi sociali. I nostri calcolatori gratuiti ti aiutano a capire quanto porterai a casa nei diversi paesi, con suddivisioni dettagliate di imposta sul reddito, contributi previdenziali e altre trattenute.",
+    "intro2": "Seleziona un paese qui sotto per iniziare, oppure scegli una modalità di calcolo adatta alle tue esigenze.",
+    "byCountryHeading": "Calcola per Paese",
+    "calculateCta": "Calcola →",
+    "hourlyTitle": "Calcolatore Reddito Orario",
+    "monthlyTitle": "Calcolatore Stipendio Mensile",
+    "yearlyTitle": "Calcolatore Stipendio Annuale",
+    "chooseModeHeading": "Scegli la Modalità di Calcolo",
+    "converterTitle": "Convertitore da Paga Oraria a Stipendio",
+    "converterBody": "Converti la tua paga oraria in stipendio annuale, mensile e settimanale. Perfetto per comprendere la tua retribuzione totale durante una trattativa o nel confronto tra offerte di lavoro.",
+    "converterCta": "Converti la Paga Oraria →",
+    "hourlyBody": "Calcola il reddito netto quando conosci la tua paga oraria. Include opzioni per ore settimanali e settimane annuali personalizzate, in base al tuo orario di lavoro.",
+    "hourlyCta": "Calcola la Paga Oraria →",
+    "monthlyBody": "Calcola il tuo reddito netto mensile dopo le tasse. Ideale per pianificare il budget e capire quanto porti a casa ogni mese.",
+    "monthlyCta": "Calcola Mensile →",
+    "yearlyBody": "Calcola il tuo reddito netto annuale partendo dallo stipendio lordo annuo. Visualizza la suddivisione completa di tasse e trattenute per l'intero anno.",
+    "yearlyCta": "Calcola Annuale →",
+    "faqHeading": "Domande Frequenti"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Calcolatore Stipendio e Tasse — Stima il Tuo Reddito Netto",
+      "description": "Calcolatore gratuito delle tasse sullo stipendio. Inserisci il tuo reddito lordo per stimare la retribuzione netta, l'imposta sul reddito e i contributi sociali per USA, Germania e Regno Unito nel 2026.",
+      "ogDescription": "Calcolatore gratuito delle tasse sullo stipendio. Stima la retribuzione netta, l'imposta sul reddito e i contributi sociali per USA, Germania e Regno Unito."
+    },
+    "title": "Calcolatore Stipendio e Tasse",
+    "intro": "Stima il tuo reddito netto (quanto porti a casa) dopo l'imposta sul reddito e i contributi sociali. Inserisci il tuo stipendio lordo, scegli il paese e il periodo di paga e ottieni una suddivisione immediata per l'anno fiscale 2026.",
+    "howItWorks": {
+      "heading": "Come Funziona il Calcolatore",
+      "p1": "Il nostro calcolatore converte il tuo reddito lordo in una stima di quanto porti a casa, utilizzando scaglioni fiscali e aliquote dei contributi sociali aggiornati per ciascun paese supportato. Puoi inserire il reddito come paga oraria, stipendio mensile o importo annuale, e il calcolatore lo annualizza prima di applicare le regole fiscali pertinenti.",
+      "p2": "La suddivisione separa l'imposta sul reddito dai contributi sociali — come Social Security e Medicare negli Stati Uniti, i contributi assicurativi obbligatori in Germania e la National Insurance nel Regno Unito — così puoi vedere esattamente dove vanno i tuoi soldi e qual è la tua aliquota fiscale effettiva.",
+      "p3": "I risultati sono stime a scopo puramente informativo e di pianificazione e non tengono conto di ogni singola circostanza, come tasse statali e locali, crediti d'imposta o benefit in natura. Per consigli specifici sulla tua situazione, consulta un professionista fiscale qualificato."
+    },
+    "related": {
+      "heading": "Esplora i Calcolatori Specifici per Paese",
+      "hub": "Hub Calcolatore Stipendio",
+      "us": "Calcolatore Stipendio Stati Uniti",
+      "de": "Calcolatore Stipendio Germania",
+      "uk": "Calcolatore Stipendio Regno Unito",
+      "hourly": "Convertitore da Paga Oraria a Stipendio",
+      "guides": "Guide su Stipendio e Tasse"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Calcolatore Stipendio Netto - Calcola Quanto Porti a Casa",
+      "description": "Calcolatore gratuito dello stipendio netto. Calcola quanto porti a casa dopo l'imposta sul reddito e i contributi sociali per USA, Germania e Regno Unito."
+    },
+    "title": "Calcolatore Stipendio Netto",
+    "intro": "Calcola il tuo reddito netto (quanto porti a casa) dopo tasse e contributi sociali. Il nostro calcolatore completo dello stipendio ti aiuta a capire esattamente quanto riceverai dopo tutte le trattenute.",
+    "cta": "Vai all'Hub Calcolatore Stipendio →",
+    "breakdownIntro": "Il nostro calcolatore dello stipendio fornisce suddivisioni dettagliate di:",
+    "breakdown": {
+      "gross": "Reddito lordo (prima delle tasse)",
+      "incomeTax": "Calcoli dell'imposta sul reddito",
+      "social": "Contributi previdenziali",
+      "net": "Reddito netto (quanto porti a casa)",
+      "effectiveRate": "Aliquote fiscali effettive"
+    },
+    "availability": "Disponibile per diversi paesi, tra cui Stati Uniti, Germania e Regno Unito. Seleziona il tuo paese per iniziare con calcoli fiscali accurati e aggiornati per il 2026.",
+    "specialized": "Puoi anche accedere ai nostri calcolatori specializzati:",
+    "links": {
+      "hourly": "Convertitore da Paga Oraria a Stipendio",
+      "us": "Calcolatore USA",
+      "de": "Calcolatore Germania",
+      "uk": "Calcolatore Regno Unito"
+    },
+    "explainer": {
+      "heading": "Cos'è lo Stipendio Netto?",
+      "p1": "Il tuo <b>stipendio netto</b> — spesso chiamato quanto porti a casa — è l'importo che arriva effettivamente sul tuo conto bancario dopo che le trattenute obbligatorie sono state sottratte dal tuo stipendio lordo. Lo stipendio lordo è la cifra principale indicata nel tuo contratto di lavoro; lo stipendio netto è ciò che puoi gestire come budget e spendere.",
+      "p2": "La differenza tra i due è composta da <b>imposta sul reddito</b> e <b>contributi sociali</b>. L'imposta sul reddito è solitamente progressiva, il che significa che le porzioni più alte del tuo reddito sono tassate ad aliquote più elevate. I contributi sociali finanziano programmi come le pensioni statali, la sanità e l'assicurazione contro la disoccupazione, e le aliquote esatte dipendono da dove vivi.",
+      "p3": "Poiché ogni paese calcola queste trattenute in modo diverso, lo stesso stipendio lordo può tradursi in importi netti molto diversi negli Stati Uniti, in Germania o nel Regno Unito. Scegli il tuo paese qui sopra per vedere una suddivisione dettagliata e specifica per paese relativa all'anno fiscale 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Convertitore da Paga Oraria a Stipendio - Calcola il Reddito Annuale, Mensile e Settimanale",
+      "description": "Converti la paga oraria in stipendio annuale, mensile e settimanale. Calcolatore gratuito con formule ed esempi. Perfetto per trattative di lavoro e confronti salariali.",
+      "ogDescription": "Converti la paga oraria in stipendio annuale, mensile e settimanale. Calcolatore gratuito con formule ed esempi."
+    },
+    "title": "Convertitore da Paga Oraria a Stipendio",
+    "intro": "Converti la tua paga oraria in stipendio annuale, mensile, settimanale e giornaliero. Comprendi la tua retribuzione totale durante le trattative per un'offerta di lavoro o nel confronto tra posizioni.",
+    "calc": {
+      "heading": "Calcola il Tuo Reddito Netto",
+      "intro": "Inserisci la tua paga oraria qui sotto per calcolare il tuo reddito lordo e netto. Il calcolatore è preimpostato in modalità oraria e mostrerà quanto porti a casa dopo le tasse."
+    },
+    "formulas": {
+      "heading": "Formule di Conversione",
+      "annual": {
+        "title": "Stipendio Annuale dalla Paga Oraria",
+        "code": "Stipendio Annuale = Paga Oraria × Ore a Settimana × Settimane all'Anno",
+        "note": "Calcolo standard: moltiplica la tua paga oraria per 40 ore a settimana e 52 settimane all'anno."
+      },
+      "monthly": {
+        "title": "Stipendio Mensile",
+        "code": "Stipendio Mensile = Stipendio Annuale ÷ 12",
+        "note": "Dividi lo stipendio annuale per 12 mesi. Nota: questo fornisce un importo mensile medio; la paga mensile effettiva può variare in caso di pagamento bisettimanale o quindicinale."
+      },
+      "weekly": {
+        "title": "Stipendio Settimanale",
+        "code": "Stipendio Settimanale = Paga Oraria × Ore a Settimana",
+        "note": "Moltiplica semplicemente la tua paga oraria per il numero di ore che lavori a settimana."
+      },
+      "daily": {
+        "title": "Stipendio Giornaliero",
+        "code": "Stipendio Giornaliero = Paga Oraria × Ore al Giorno",
+        "note": "Per una giornata lavorativa di 8 ore, moltiplica la tua paga oraria per 8."
+      },
+      "grossNote": "<b>Nota:</b> queste formule calcolano il reddito lordo (al lordo delle tasse). Usa il calcolatore qui sotto per vedere quanto porti a casa al netto di tasse e trattenute."
+    },
+    "examples": {
+      "heading": "Esempi",
+      "annualGross": "Lordo Annuale:",
+      "monthlyGross": "Lordo Mensile:",
+      "weeklyGross": "Lordo Settimanale:",
+      "dailyGross": "Lordo Giornaliero",
+      "ex1": {
+        "title": "Esempio 1: $25 all'ora, 40 ore/settimana, 52 settimane/anno",
+        "annual": "<b>Lordo Annuale:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Lordo Mensile:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Lordo Settimanale:</b> $25 × 40 = $1,000",
+        "daily": "<b>Lordo Giornaliero (8 ore):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Esempio 2: $30 all'ora, 35 ore/settimana, 50 settimane/anno",
+        "annual": "<b>Lordo Annuale:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Lordo Mensile:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Lordo Settimanale:</b> $30 × 35 = $1,050",
+        "daily": "<b>Lordo Giornaliero (7 ore):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Esempio 3: $20 all'ora, 40 ore/settimana, 48 settimane/anno (con 4 settimane di permesso non retribuito)",
+        "annual": "<b>Lordo Annuale:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Lordo Mensile:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Lordo Settimanale:</b> $20 × 40 = $800",
+        "note": "Nota: modificare le settimane all'anno tiene conto di permessi non retribuiti, ferie o lavoro stagionale."
+      }
+    },
+    "faq": {
+      "heading": "Domande Frequenti",
+      "items": [
+        {
+          "question": "Qual è la differenza tra stipendio lordo e netto?",
+          "answer": "Lo stipendio lordo è il tuo guadagno totale prima di tasse e trattenute. Lo stipendio netto (quanto porti a casa) è ciò che ricevi dopo che sono stati sottratti l'imposta sul reddito, i contributi previdenziali e altre trattenute obbligatorie. Il calcolatore qui sopra mostra sia gli importi lordi sia quelli netti."
+        },
+        {
+          "question": "Quante settimane dovrei usare nel calcolo?",
+          "answer": "Lo standard è di 52 settimane all'anno per i dipendenti a tempo pieno. Tuttavia, se hai permessi non retribuiti, lavori stagionalmente o prendi congedi prolungati, adegua di conseguenza. Ad esempio, 2 settimane di ferie non retribuite significherebbero 50 settimane all'anno."
+        },
+        {
+          "question": "Dovrei includere gli straordinari nella mia paga oraria?",
+          "answer": "Per calcoli accurati dello stipendio annuale, usa la tua paga oraria base e le ore standard. Se fai regolarmente straordinari, puoi: (1) calcolare lo stipendio base separatamente e aggiungere gli straordinari stimati, oppure (2) usare una paga oraria media che tenga conto degli straordinari. Il calcolatore ti permette di modificare le ore a settimana per riflettere il tuo orario effettivo."
+        },
+        {
+          "question": "Come converto lo stipendio nuovamente in paga oraria?",
+          "answer": "Per convertire lo stipendio annuale in paga oraria: Paga Oraria = Stipendio Annuale ÷ (Ore a Settimana × Settimane all'Anno). Ad esempio, $52,000 ÷ (40 × 52) = $25 all'ora. Usa il nostro calcolatore al contrario inserendo il tuo stipendio annuale e selezionando la modalità annuale."
+        }
+      ],
+      "countriesQuestion": "Questi calcoli sono accurati per tutti i paesi?",
+      "countriesAnswer": "Le formule di conversione (da oraria ad annuale, mensile, ecc.) sono universali. Tuttavia, i calcoli del reddito netto variano da paese a paese a causa dei diversi sistemi fiscali. Usa i calcolatori specifici per paese sul nostro <link>Hub Calcolatore Stipendio</link> per stime accurate del reddito netto.",
+      "partTimeQuestion": "E se lavoro part-time o ho orari irregolari?",
+      "partTimeAnswer": "Per il lavoro part-time, inserisci le tue ore effettive a settimana. Per orari irregolari, calcola una media delle ore settimanali su un periodo più lungo (ad es. 3-6 mesi) e usa quella. Il calcolatore consente di personalizzare le ore a settimana e le settimane all'anno per adattarsi a qualsiasi orario di lavoro."
+    },
+    "related": {
+      "heading": "Risorse Correlate",
+      "hub": "Hub Calcolatore Stipendio",
+      "us": "Calcolatore Stipendio USA",
+      "de": "Calcolatore Stipendio Germania",
+      "uk": "Calcolatore Stipendio Regno Unito"
+    }
   }
 }

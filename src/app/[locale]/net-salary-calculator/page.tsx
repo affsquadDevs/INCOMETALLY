@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { siteConfig } from '@/config/site';
+import { buildAlternates } from '@/i18n/seo';
 
 export async function generateMetadata({
   params: { locale },
@@ -12,9 +12,7 @@ export async function generateMetadata({
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    alternates: {
-      canonical: `${siteConfig.domain}/net-salary-calculator`,
-    },
+    alternates: buildAlternates(locale, '/net-salary-calculator'),
     robots: {
       index: true,
       follow: true,
@@ -23,7 +21,7 @@ export async function generateMetadata({
       title: t('meta.title'),
       description: t('meta.description'),
       type: 'website',
-      url: `${siteConfig.domain}/net-salary-calculator`,
+      url: '/net-salary-calculator',
     },
   };
 }

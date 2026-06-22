@@ -488,5 +488,180 @@
       "editorialLink": "normas editoriais",
       "editorialSuffix": "para saber como pesquisamos e atualizamos estes dados."
     }
+  },
+  "hub": {
+    "metaTitle": "Central de Calculadoras de Impostos sobre o Salário - Calcule o Rendimento Líquido por País",
+    "metaDescription": "Calculadoras gratuitas de impostos sobre o salário para vários países. Calcule o seu rendimento líquido após impostos e contribuições sociais nos EUA, Alemanha, Reino Unido e mais.",
+    "title": "Central de Calculadoras de Impostos sobre o Salário",
+    "intro1": "Calcule o seu rendimento líquido após impostos e contribuições sociais. As nossas calculadoras gratuitas ajudam-no a perceber quanto vai receber em diferentes países, com discriminações detalhadas do imposto sobre o rendimento, das contribuições para a segurança social e de outras deduções.",
+    "intro2": "Selecione um país abaixo para começar ou escolha um modo de cálculo adequado às suas necessidades.",
+    "byCountryHeading": "Calcular por País",
+    "calculateCta": "Calcular →",
+    "hourlyTitle": "Calculadora de Rendimento à Hora",
+    "monthlyTitle": "Calculadora de Salário Mensal",
+    "yearlyTitle": "Calculadora de Salário Anual",
+    "chooseModeHeading": "Escolher o Modo de Cálculo",
+    "converterTitle": "Conversor de Valor à Hora para Salário",
+    "converterBody": "Converta o seu valor à hora em salário anual, mensal e semanal. Ideal para perceber a sua remuneração total ao negociar ou comparar propostas de emprego.",
+    "converterCta": "Converter Valor à Hora →",
+    "hourlyBody": "Calcule o rendimento líquido quando sabe o seu valor à hora. Inclui opções para horas por semana e semanas por ano personalizadas, de acordo com o seu horário de trabalho.",
+    "hourlyCta": "Calcular à Hora →",
+    "monthlyBody": "Calcule o seu rendimento líquido mensal após impostos. Ideal para fazer orçamentos e perceber o seu salário líquido mensal.",
+    "monthlyCta": "Calcular Mensalmente →",
+    "yearlyBody": "Calcule o seu rendimento líquido anual a partir do salário bruto anual. Veja a discriminação completa de impostos e deduções para o ano inteiro.",
+    "yearlyCta": "Calcular Anualmente →",
+    "faqHeading": "Perguntas Frequentes"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Calculadora de Salário e Impostos — Estime o Seu Rendimento Líquido",
+      "description": "Calculadora gratuita de impostos sobre o salário. Introduza o seu rendimento bruto para estimar o salário líquido, o imposto sobre o rendimento e as contribuições sociais para os EUA, Alemanha e Reino Unido em 2026.",
+      "ogDescription": "Calculadora gratuita de impostos sobre o salário. Estime o salário líquido, o imposto sobre o rendimento e as contribuições sociais para os EUA, Alemanha e Reino Unido."
+    },
+    "title": "Calculadora de Salário e Impostos",
+    "intro": "Estime o seu rendimento líquido (salário líquido) após o imposto sobre o rendimento e as contribuições sociais. Introduza o seu salário bruto, escolha o país e o período de pagamento e obtenha uma discriminação instantânea para o ano fiscal de 2026.",
+    "howItWorks": {
+      "heading": "Como Funciona a Calculadora",
+      "p1": "A nossa calculadora converte o seu rendimento bruto num salário líquido estimado utilizando escalões de imposto e taxas de contribuição social atualizados para cada país suportado. Pode introduzir o rendimento como valor à hora, salário mensal ou valor anual, e a calculadora anualiza-o antes de aplicar as regras fiscais relevantes.",
+      "p2": "A discriminação separa o imposto sobre o rendimento das contribuições sociais — como a Social Security e o Medicare nos Estados Unidos, as contribuições obrigatórias para os seguros na Alemanha e o National Insurance no Reino Unido — para que possa ver exatamente para onde vai o seu dinheiro e qual é a sua taxa de imposto efetiva.",
+      "p3": "Os resultados são estimativas apenas para fins informativos e de planeamento e não têm em conta todas as circunstâncias individuais, como os impostos estaduais e locais, os créditos fiscais ou os benefícios em espécie. Para aconselhamento específico para a sua situação, consulte um profissional de impostos qualificado."
+    },
+    "related": {
+      "heading": "Explore Calculadoras Específicas por País",
+      "hub": "Central de Calculadoras de Salário",
+      "us": "Calculadora de Salário dos Estados Unidos",
+      "de": "Calculadora de Salário da Alemanha",
+      "uk": "Calculadora de Salário do Reino Unido",
+      "hourly": "Conversor de Valor à Hora para Salário",
+      "guides": "Guias de Salário e Impostos"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Calculadora de Salário Líquido - Calcule o Seu Salário Líquido",
+      "description": "Calculadora gratuita de salário líquido. Calcule o seu salário líquido após o imposto sobre o rendimento e as contribuições sociais para os EUA, Alemanha e Reino Unido."
+    },
+    "title": "Calculadora de Salário Líquido",
+    "intro": "Calcule o seu rendimento líquido (salário líquido) após impostos e contribuições sociais. A nossa calculadora de salário abrangente ajuda-o a perceber exatamente quanto vai receber após todas as deduções.",
+    "cta": "Ir para a Central de Calculadoras de Salário →",
+    "breakdownIntro": "A nossa calculadora de salário fornece discriminações detalhadas de:",
+    "breakdown": {
+      "gross": "Rendimento bruto (antes de impostos)",
+      "incomeTax": "Cálculo do imposto sobre o rendimento",
+      "social": "Contribuições para a segurança social",
+      "net": "Rendimento líquido (salário líquido)",
+      "effectiveRate": "Taxas de imposto efetivas"
+    },
+    "availability": "Disponível para vários países, incluindo os Estados Unidos, a Alemanha e o Reino Unido. Selecione o seu país para começar com cálculos de impostos precisos e atualizados para 2026.",
+    "specialized": "Também pode aceder às nossas calculadoras especializadas:",
+    "links": {
+      "hourly": "Conversor de Valor à Hora para Salário",
+      "us": "Calculadora dos EUA",
+      "de": "Calculadora da Alemanha",
+      "uk": "Calculadora do Reino Unido"
+    },
+    "explainer": {
+      "heading": "O Que É o Salário Líquido?",
+      "p1": "O seu <b>salário líquido</b> — muitas vezes chamado de salário a receber — é o montante que chega efetivamente à sua conta bancária depois de removidas as deduções obrigatórias do seu salário bruto. O salário bruto é o valor principal no seu contrato de trabalho; o salário líquido é o que pode orçamentar e gastar.",
+      "p2": "A diferença entre os dois é composta pelo <b>imposto sobre o rendimento</b> e pelas <b>contribuições sociais</b>. O imposto sobre o rendimento é normalmente progressivo, o que significa que as parcelas mais elevadas do seu rendimento são tributadas a taxas mais altas. As contribuições sociais financiam programas como as pensões do Estado, os cuidados de saúde e o seguro de desemprego, e as taxas exatas dependem do local onde vive.",
+      "p3": "Como cada país calcula estas deduções de forma diferente, o mesmo salário bruto pode resultar em salários líquidos muito diferentes nos Estados Unidos, na Alemanha ou no Reino Unido. Escolha o seu país acima para ver uma discriminação detalhada e específica do país para o ano fiscal de 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Conversor de Valor à Hora para Salário - Calcule o Rendimento Anual, Mensal e Semanal",
+      "description": "Converta o valor à hora em salário anual, mensal e semanal. Calculadora gratuita com fórmulas e exemplos. Ideal para negociações de emprego e comparações de salários.",
+      "ogDescription": "Converta o valor à hora em salário anual, mensal e semanal. Calculadora gratuita com fórmulas e exemplos."
+    },
+    "title": "Conversor de Valor à Hora para Salário",
+    "intro": "Converta o seu valor à hora em salário anual, mensal, semanal e diário. Perceba a sua remuneração total ao negociar propostas de emprego ou comparar posições.",
+    "calc": {
+      "heading": "Calcule o Seu Rendimento Líquido",
+      "intro": "Introduza o seu valor à hora abaixo para calcular o seu rendimento bruto e líquido. A calculadora está predefinida para o modo à hora e mostrará o seu salário líquido após impostos."
+    },
+    "formulas": {
+      "heading": "Fórmulas de Conversão",
+      "annual": {
+        "title": "Salário Anual a partir do Valor à Hora",
+        "code": "Salário Anual = Valor à Hora × Horas por Semana × Semanas por Ano",
+        "note": "Cálculo padrão: Multiplique o seu valor à hora por 40 horas por semana e 52 semanas por ano."
+      },
+      "monthly": {
+        "title": "Salário Mensal",
+        "code": "Salário Mensal = Salário Anual ÷ 12",
+        "note": "Divida o salário anual por 12 meses. Nota: Isto dá um montante mensal médio; o salário mensal real pode variar se for pago quinzenalmente ou bimensalmente."
+      },
+      "weekly": {
+        "title": "Salário Semanal",
+        "code": "Salário Semanal = Valor à Hora × Horas por Semana",
+        "note": "Basta multiplicar o seu valor à hora pelo número de horas que trabalha por semana."
+      },
+      "daily": {
+        "title": "Salário Diário",
+        "code": "Salário Diário = Valor à Hora × Horas por Dia",
+        "note": "Para um dia de trabalho de 8 horas, multiplique o seu valor à hora por 8."
+      },
+      "grossNote": "<b>Nota:</b> Estas fórmulas calculam o rendimento bruto (antes de impostos). Utilize a calculadora abaixo para ver o seu salário líquido após impostos e deduções."
+    },
+    "examples": {
+      "heading": "Exemplos",
+      "annualGross": "Bruto Anual:",
+      "monthlyGross": "Bruto Mensal:",
+      "weeklyGross": "Bruto Semanal:",
+      "dailyGross": "Bruto Diário",
+      "ex1": {
+        "title": "Exemplo 1: $25 por hora, 40 horas/semana, 52 semanas/ano",
+        "annual": "<b>Bruto Anual:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Bruto Mensal:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Bruto Semanal:</b> $25 × 40 = $1,000",
+        "daily": "<b>Bruto Diário (8 horas):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Exemplo 2: $30 por hora, 35 horas/semana, 50 semanas/ano",
+        "annual": "<b>Bruto Anual:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Bruto Mensal:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Bruto Semanal:</b> $30 × 35 = $1,050",
+        "daily": "<b>Bruto Diário (7 horas):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Exemplo 3: $20 por hora, 40 horas/semana, 48 semanas/ano (com 4 semanas de tempo livre não remunerado)",
+        "annual": "<b>Bruto Anual:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Bruto Mensal:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Bruto Semanal:</b> $20 × 40 = $800",
+        "note": "Nota: Ajustar as semanas por ano tem em conta o tempo livre não remunerado, as férias ou o trabalho sazonal."
+      }
+    },
+    "faq": {
+      "heading": "Perguntas Frequentes",
+      "items": [
+        {
+          "question": "Qual é a diferença entre salário bruto e líquido?",
+          "answer": "O salário bruto são os seus rendimentos totais antes de impostos e deduções. O salário líquido (salário a receber) é o que recebe após subtraídos o imposto sobre o rendimento, a segurança social e outras deduções obrigatórias. A calculadora acima mostra tanto os montantes brutos como os líquidos."
+        },
+        {
+          "question": "Quantas semanas devo utilizar no cálculo?",
+          "answer": "O padrão é de 52 semanas por ano para trabalhadores a tempo inteiro. No entanto, se tiver tempo livre não remunerado, trabalhar sazonalmente ou tirar licença prolongada, ajuste em conformidade. Por exemplo, 2 semanas de férias não remuneradas significariam 50 semanas por ano."
+        },
+        {
+          "question": "Devo incluir as horas extraordinárias no meu valor à hora?",
+          "answer": "Para cálculos precisos do salário anual, utilize o seu valor à hora base e as horas padrão. Se trabalha regularmente horas extraordinárias, pode: (1) calcular o salário base em separado e adicionar as horas extraordinárias estimadas, ou (2) utilizar um valor à hora médio que tenha em conta as horas extraordinárias. A calculadora permite-lhe ajustar as horas por semana para refletir o seu horário real."
+        },
+        {
+          "question": "Como converto o salário de volta para valor à hora?",
+          "answer": "Para converter o salário anual em valor à hora: Valor à Hora = Salário Anual ÷ (Horas por Semana × Semanas por Ano). Por exemplo, $52,000 ÷ (40 × 52) = $25 por hora. Utilize a nossa calculadora ao contrário, introduzindo o seu salário anual e selecionando o modo anual."
+        }
+      ],
+      "countriesQuestion": "Estes cálculos são precisos para todos os países?",
+      "countriesAnswer": "As fórmulas de conversão (de valor à hora para anual, mensal, etc.) são universais. No entanto, os cálculos do rendimento líquido variam de país para país devido aos diferentes sistemas fiscais. Utilize as calculadoras específicas por país na nossa <link>Central de Calculadoras de Salário</link> para obter estimativas precisas do rendimento líquido.",
+      "partTimeQuestion": "E se trabalhar a tempo parcial ou tiver horários irregulares?",
+      "partTimeAnswer": "Para trabalho a tempo parcial, introduza as suas horas reais por semana. Para horários irregulares, calcule uma média de horas semanais ao longo de um período mais longo (por exemplo, 3 a 6 meses) e utilize esse valor. A calculadora permite horas por semana e semanas por ano personalizadas para se adaptar a qualquer horário de trabalho."
+    },
+    "related": {
+      "heading": "Recursos Relacionados",
+      "hub": "Central de Calculadoras de Salário",
+      "us": "Calculadora de Salário dos EUA",
+      "de": "Calculadora de Salário da Alemanha",
+      "uk": "Calculadora de Salário do Reino Unido"
+    }
   }
 }

@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import CalculatorSkeleton from '@/components/CalculatorSkeleton';
 import FAQAccordion, { type FAQ } from '@/components/FAQAccordion';
-import { siteConfig } from '@/config/site';
+import { buildAlternates } from '@/i18n/seo';
 
 // Dynamic import for calculator - reduces initial page load
 const SalaryCalculator = dynamic(() => import('@/components/SalaryCalculator'), {
@@ -22,14 +22,12 @@ export async function generateMetadata({
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    alternates: {
-      canonical: `${siteConfig.domain}/hourly-to-salary`,
-    },
+    alternates: buildAlternates(locale, '/hourly-to-salary'),
     openGraph: {
       title: t('meta.title'),
       description: t('meta.ogDescription'),
       type: 'website',
-      url: `${siteConfig.domain}/hourly-to-salary`,
+      url: '/hourly-to-salary',
     },
   };
 }

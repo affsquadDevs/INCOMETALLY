@@ -16,6 +16,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import { generateFAQJsonLd } from '@/lib/seo/faq';
 import { generateBreadcrumbJsonLd } from '@/lib/seo/breadcrumbs';
 import { siteConfig } from '@/config/site';
+import { buildAlternates } from '@/i18n/seo';
 
 // Dynamic import for react-markdown - heavy library, only load when needed
 const ReactMarkdown = dynamic(() => import('react-markdown'), {
@@ -58,9 +59,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: guide.title,
     description: guide.description,
-    alternates: {
-      canonical: url,
-    },
+    alternates: buildAlternates(params.locale, `/guides/${guide.slug}`),
     openGraph: {
       title: guide.title,
       description: guide.description,

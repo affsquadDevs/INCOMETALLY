@@ -488,5 +488,180 @@
       "editorialLink": "redakční standardy",
       "editorialSuffix": "k tomu, jak tato data zkoumáme a aktualizujeme."
     }
+  },
+  "hub": {
+    "metaTitle": "Centrum kalkulaček daně z mzdy – Vypočítejte čistý příjem podle země",
+    "metaDescription": "Bezplatné kalkulačky daně z mzdy pro různé země. Vypočítejte si čistý příjem po odečtení daní a sociálních odvodů v USA, Německu, Velké Británii a dalších zemích.",
+    "title": "Centrum kalkulaček daně z mzdy",
+    "intro1": "Vypočítejte si čistý příjem po odečtení daní a sociálních odvodů. Naše bezplatné kalkulačky vám pomohou pochopit, kolik si odnesete domů v různých zemích, s podrobným rozpisem daně z příjmu, sociálních odvodů a dalších srážek.",
+    "intro2": "Začněte výběrem země níže nebo zvolte režim výpočtu, který vyhovuje vašim potřebám.",
+    "byCountryHeading": "Vypočítat podle země",
+    "calculateCta": "Vypočítat →",
+    "hourlyTitle": "Kalkulačka hodinového příjmu",
+    "monthlyTitle": "Kalkulačka měsíční mzdy",
+    "yearlyTitle": "Kalkulačka roční mzdy",
+    "chooseModeHeading": "Zvolte režim výpočtu",
+    "converterTitle": "Převodník z hodinové sazby na mzdu",
+    "converterBody": "Převeďte svou hodinovou sazbu na roční, měsíční a týdenní mzdu. Ideální pro pochopení celkové odměny při vyjednávání nebo porovnávání pracovních nabídek.",
+    "converterCta": "Převést hodinovou sazbu →",
+    "hourlyBody": "Vypočítejte čistý příjem, pokud znáte svou hodinovou sazbu. Zahrnuje možnosti pro vlastní počet hodin týdně a týdnů za rok, aby odpovídaly vašemu pracovnímu rozvrhu.",
+    "hourlyCta": "Vypočítat hodinově →",
+    "monthlyBody": "Vypočítejte si čistý měsíční příjem po zdanění. Ideální pro sestavení rozpočtu a pochopení toho, kolik si měsíčně odnesete domů.",
+    "monthlyCta": "Vypočítat měsíčně →",
+    "yearlyBody": "Vypočítejte si čistý roční příjem z hrubé roční mzdy. Zobrazte si úplný rozpis daní a srážek za celý rok.",
+    "yearlyCta": "Vypočítat ročně →",
+    "faqHeading": "Často kladené otázky"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Kalkulačka mzdy a daně – Odhadněte svůj čistý příjem",
+      "description": "Bezplatná kalkulačka daně z mzdy. Zadejte svůj hrubý příjem a odhadněte čistou mzdu, daň z příjmu a sociální odvody pro USA, Německo a Velkou Británii v roce 2026.",
+      "ogDescription": "Bezplatná kalkulačka daně z mzdy. Odhadněte čistou mzdu, daň z příjmu a sociální odvody pro USA, Německo a Velkou Británii."
+    },
+    "title": "Kalkulačka mzdy a daně",
+    "intro": "Odhadněte si čistý příjem (mzdu, kterou si odnesete domů) po odečtení daně z příjmu a sociálních odvodů. Zadejte hrubou mzdu, zvolte zemi a výplatní období a získejte okamžitý rozpis pro daňový rok 2026.",
+    "howItWorks": {
+      "heading": "Jak kalkulačka funguje",
+      "p1": "Naše kalkulačka převádí váš hrubý příjem na odhadovanou čistou mzdu pomocí aktuálních daňových pásem a sazeb sociálních odvodů pro každou podporovanou zemi. Příjem můžete zadat jako hodinovou sazbu, měsíční mzdu nebo roční částku a kalkulačka jej před uplatněním příslušných daňových pravidel přepočítá na roční základ.",
+      "p2": "Rozpis odděluje daň z příjmu od sociálních odvodů – jako jsou Social Security a Medicare ve Spojených státech, zákonné pojistné v Německu a National Insurance ve Velké Británii – takže přesně vidíte, kam vaše peníze putují a jaká je vaše efektivní daňová sazba.",
+      "p3": "Výsledky jsou odhady určené pouze pro informační a plánovací účely a nezohledňují každou individuální okolnost, jako jsou státní a místní daně, daňové slevy nebo nepeněžní plnění. Pro radu specifickou pro vaši situaci se obraťte na kvalifikovaného daňového odborníka."
+    },
+    "related": {
+      "heading": "Prozkoumejte kalkulačky pro konkrétní země",
+      "hub": "Centrum kalkulaček mzdy",
+      "us": "Kalkulačka mzdy pro Spojené státy",
+      "de": "Kalkulačka mzdy pro Německo",
+      "uk": "Kalkulačka mzdy pro Velkou Británii",
+      "hourly": "Převodník z hodinové sazby na mzdu",
+      "guides": "Průvodci mzdou a daněmi"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Kalkulačka čisté mzdy – Vypočítejte svou čistou výplatu",
+      "description": "Bezplatná kalkulačka čisté mzdy. Spočítejte si čistou výplatu po odečtení daně z příjmu a sociálních odvodů pro USA, Německo a Velkou Británii."
+    },
+    "title": "Kalkulačka čisté mzdy",
+    "intro": "Vypočítejte si čistý příjem (mzdu, kterou si odnesete domů) po odečtení daní a sociálních odvodů. Naše komplexní kalkulačka mzdy vám pomůže přesně pochopit, kolik dostanete po všech srážkách.",
+    "cta": "Přejít do Centra kalkulaček mzdy →",
+    "breakdownIntro": "Naše kalkulačka mzdy poskytuje podrobné rozpisy pro:",
+    "breakdown": {
+      "gross": "Hrubý příjem (před zdaněním)",
+      "incomeTax": "Výpočty daně z příjmu",
+      "social": "Sociální odvody",
+      "net": "Čistý příjem (mzda, kterou si odnesete domů)",
+      "effectiveRate": "Efektivní daňové sazby"
+    },
+    "availability": "Dostupné pro více zemí včetně Spojených států, Německa a Velké Británie. Vyberte si zemi a začněte s přesnými, aktuálními výpočty daní pro rok 2026.",
+    "specialized": "Můžete také využít naše specializované kalkulačky:",
+    "links": {
+      "hourly": "Převodník z hodinové sazby na mzdu",
+      "us": "Kalkulačka pro USA",
+      "de": "Kalkulačka pro Německo",
+      "uk": "Kalkulačka pro Velkou Británii"
+    },
+    "explainer": {
+      "heading": "Co je čistá mzda?",
+      "p1": "Vaše <b>čistá mzda</b> – často nazývaná mzda, kterou si odnesete domů – je částka, která skutečně dorazí na váš bankovní účet po odečtení povinných srážek z hrubé mzdy. Hrubá mzda je hlavní údaj ve vaší pracovní smlouvě; čistá mzda je to, s čím můžete plánovat rozpočet a utrácet.",
+      "p2": "Rozdíl mezi nimi tvoří <b>daň z příjmu</b> a <b>sociální odvody</b>. Daň z příjmu je obvykle progresivní, což znamená, že vyšší části vašeho příjmu jsou zdaněny vyššími sazbami. Sociální odvody financují programy jako státní důchody, zdravotní péči a pojištění v nezaměstnanosti a přesné sazby závisí na tom, kde žijete.",
+      "p3": "Protože každá země počítá tyto srážky jinak, stejná hrubá mzda může vést k velmi rozdílné čisté výplatě ve Spojených státech, Německu nebo Velké Británii. Vyberte si zemi výše a zobrazte podrobný rozpis pro konkrétní zemi pro daňový rok 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Převodník z hodinové sazby na mzdu – Vypočítejte roční, měsíční a týdenní příjem",
+      "description": "Převeďte hodinovou mzdu na roční, měsíční a týdenní mzdu. Bezplatná kalkulačka se vzorci a příklady. Ideální pro vyjednávání o práci a porovnávání mezd.",
+      "ogDescription": "Převeďte hodinovou mzdu na roční, měsíční a týdenní mzdu. Bezplatná kalkulačka se vzorci a příklady."
+    },
+    "title": "Převodník z hodinové sazby na mzdu",
+    "intro": "Převeďte svou hodinovou mzdu na roční, měsíční, týdenní a denní mzdu. Pochopte svou celkovou odměnu při vyjednávání pracovních nabídek nebo porovnávání pozic.",
+    "calc": {
+      "heading": "Vypočítejte si čistý příjem",
+      "intro": "Zadejte níže svou hodinovou sazbu a vypočítejte si hrubý a čistý příjem. Kalkulačka je přednastavena na hodinový režim a zobrazí vám mzdu, kterou si odnesete domů po zdanění."
+    },
+    "formulas": {
+      "heading": "Vzorce pro převod",
+      "annual": {
+        "title": "Roční mzda z hodinové sazby",
+        "code": "Roční mzda = Hodinová sazba × Hodiny za týden × Týdny za rok",
+        "note": "Standardní výpočet: Vynásobte svou hodinovou sazbu 40 hodinami za týden a 52 týdny za rok."
+      },
+      "monthly": {
+        "title": "Měsíční mzda",
+        "code": "Měsíční mzda = Roční mzda ÷ 12",
+        "note": "Vydělte roční mzdu 12 měsíci. Poznámka: Tím získáte průměrnou měsíční částku; skutečná měsíční výplata se může lišit, pokud je vyplácena každé dva týdny nebo dvakrát měsíčně."
+      },
+      "weekly": {
+        "title": "Týdenní mzda",
+        "code": "Týdenní mzda = Hodinová sazba × Hodiny za týden",
+        "note": "Jednoduše vynásobte svou hodinovou sazbu počtem hodin, které odpracujete za týden."
+      },
+      "daily": {
+        "title": "Denní mzda",
+        "code": "Denní mzda = Hodinová sazba × Hodiny za den",
+        "note": "Pro osmihodinový pracovní den vynásobte svou hodinovou sazbu 8."
+      },
+      "grossNote": "<b>Poznámka:</b> Tyto vzorce počítají hrubý příjem (před zdaněním). Pomocí kalkulačky níže si zobrazte čistou mzdu (kterou si odnesete domů) po zdanění a srážkách."
+    },
+    "examples": {
+      "heading": "Příklady",
+      "annualGross": "Roční hrubý:",
+      "monthlyGross": "Měsíční hrubý:",
+      "weeklyGross": "Týdenní hrubý:",
+      "dailyGross": "Denní hrubý",
+      "ex1": {
+        "title": "Příklad 1: 25 $ za hodinu, 40 hodin/týden, 52 týdnů/rok",
+        "annual": "<b>Roční hrubý:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Měsíční hrubý:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Týdenní hrubý:</b> $25 × 40 = $1,000",
+        "daily": "<b>Denní hrubý (8 hodin):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Příklad 2: 30 $ za hodinu, 35 hodin/týden, 50 týdnů/rok",
+        "annual": "<b>Roční hrubý:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Měsíční hrubý:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Týdenní hrubý:</b> $30 × 35 = $1,050",
+        "daily": "<b>Denní hrubý (7 hodin):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Příklad 3: 20 $ za hodinu, 40 hodin/týden, 48 týdnů/rok (se 4 týdny neplaceného volna)",
+        "annual": "<b>Roční hrubý:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Měsíční hrubý:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Týdenní hrubý:</b> $20 × 40 = $800",
+        "note": "Poznámka: Úprava počtu týdnů za rok zohledňuje neplacené volno, dovolenou nebo sezónní práci."
+      }
+    },
+    "faq": {
+      "heading": "Často kladené otázky",
+      "items": [
+        {
+          "question": "Jaký je rozdíl mezi hrubou a čistou mzdou?",
+          "answer": "Hrubá mzda je váš celkový výdělek před zdaněním a srážkami. Čistá mzda (kterou si odnesete domů) je to, co dostanete po odečtení daně z příjmu, sociálního pojištění a dalších povinných srážek. Kalkulačka výše zobrazuje hrubé i čisté částky."
+        },
+        {
+          "question": "Kolik týdnů mám použít ve výpočtu?",
+          "answer": "Standardem je 52 týdnů za rok pro zaměstnance na plný úvazek. Pokud však máte neplacené volno, pracujete sezónně nebo čerpáte dlouhodobou dovolenou, upravte to odpovídajícím způsobem. Například 2 týdny neplacené dovolené by znamenaly 50 týdnů za rok."
+        },
+        {
+          "question": "Mám do hodinové sazby zahrnout přesčasy?",
+          "answer": "Pro přesné výpočty roční mzdy použijte svou základní hodinovou sazbu a standardní počet hodin. Pokud pravidelně pracujete přesčas, můžete buď: (1) vypočítat základní mzdu zvlášť a přidat odhadované přesčasy, nebo (2) použít průměrnou hodinovou sazbu, která přesčasy zohledňuje. Kalkulačka vám umožňuje upravit počet hodin za týden tak, aby odpovídal vašemu skutečnému rozvrhu."
+        },
+        {
+          "question": "Jak převedu mzdu zpět na hodinovou sazbu?",
+          "answer": "Pro převod roční mzdy na hodinovou: Hodinová sazba = Roční mzda ÷ (Hodiny za týden × Týdny za rok). Například $52,000 ÷ (40 × 52) = $25 za hodinu. Použijte naši kalkulačku opačně tak, že zadáte roční mzdu a zvolíte roční režim."
+        }
+      ],
+      "countriesQuestion": "Jsou tyto výpočty přesné pro všechny země?",
+      "countriesAnswer": "Vzorce pro převod (z hodinové sazby na roční, měsíční atd.) jsou univerzální. Výpočty čistého příjmu se však v jednotlivých zemích liší kvůli odlišným daňovým systémům. Pro přesné odhady čistého příjmu použijte kalkulačky pro konkrétní země v našem <link>Centru kalkulaček mzdy</link>.",
+      "partTimeQuestion": "Co když pracuji na částečný úvazek nebo mám nepravidelnou pracovní dobu?",
+      "partTimeAnswer": "Pro práci na částečný úvazek zadejte svůj skutečný počet hodin za týden. U nepravidelné pracovní doby vypočítejte průměrný týdenní počet hodin za delší období (např. 3–6 měsíců) a ten použijte. Kalkulačka umožňuje vlastní počet hodin za týden a týdnů za rok tak, aby odpovídaly jakémukoli pracovnímu rozvrhu."
+    },
+    "related": {
+      "heading": "Související zdroje",
+      "hub": "Centrum kalkulaček mzdy",
+      "us": "Kalkulačka mzdy pro USA",
+      "de": "Kalkulačka mzdy pro Německo",
+      "uk": "Kalkulačka mzdy pro Velkou Británii"
+    }
   }
 }
