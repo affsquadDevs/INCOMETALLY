@@ -60,6 +60,15 @@
         "Wir bieten keinen Kundensupport über soziale Medien an und stellen derzeit keinen telefonischen Support bereit.",
         "Bitte senden Sie keine sensiblen persönlichen Informationen per E-Mail, es sei denn, dies ist zur Bearbeitung Ihrer Anfrage erforderlich."
       ]
+    },
+    "beforeContact": {
+      "title": "Bevor Sie uns kontaktieren",
+      "intro": "Viele Fragen lassen sich direkt auf der Website schneller beantworten. Bevor Sie eine E-Mail schreiben, hilft es oft:",
+      "tips": [
+        "Prüfen Sie den Rechner für Ihr Land — jede Länderseite erklärt, wie die Einkommensteuer und die Sozialabgaben des jeweiligen Landes geschätzt werden, und nennt die offiziellen Quellen hinter den Zahlen.",
+        "Stöbern Sie in unseren Ratgebern für verständliche Erklärungen zu Brutto- vs. Nettogehalt, Steuerklassen, Abzügen und zum Lesen Ihrer Gehaltsabrechnung.",
+        "Wenn Sie ein Problem melden, teilen Sie uns mit, welche Seite oder welchen Rechner Sie verwendet haben, welche Werte Sie eingegeben haben und was Sie erwartet hatten im Vergleich zu dem, was Sie gesehen haben — so können wir genau und schnell reagieren."
+      ]
     }
   },
   "privacy": {

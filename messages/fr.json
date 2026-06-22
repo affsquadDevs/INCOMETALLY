@@ -663,5 +663,11 @@
       "de": "Calculateur de salaire de l'Allemagne",
       "uk": "Calculateur de salaire du Royaume-Uni"
     }
+  },
+  "metaDesc": {
+    "about": "IncomeTally est un outil gratuit et indépendant pour estimer le salaire net, le revenu disponible et l'impôt sur le revenu dans neuf pays — des estimations claires et sourcées, pas des conseils.",
+    "contact": "Contactez l'équipe IncomeTally au sujet de nos calculateurs de salaire et d'impôt, du mode de calcul des estimations, de la confidentialité, ou pour envoyer vos remarques et corrections.",
+    "privacy": "Comment IncomeTally collecte, utilise et protège vos informations : cookies, analytique, publicité Google AdSense et sécurité des données. Aucun compte n'est requis pour utiliser le site.",
+    "terms": "Les conditions d'utilisation des calculateurs gratuits de revenu, de salaire et d'impôt d'IncomeTally : usage acceptable, avertissement estimations et non conseils, propriété intellectuelle et responsabilité."
   }
 }

@@ -60,6 +60,15 @@
         "Não oferecemos apoio ao cliente através das redes sociais e, de momento, não disponibilizamos apoio telefónico.",
         "Por favor, não envie informações pessoais sensíveis por e-mail, a menos que seja necessário para tratar do seu pedido."
       ]
+    },
+    "beforeContact": {
+      "title": "Antes de nos contactar",
+      "intro": "Muitas perguntas têm resposta mais rápida no próprio site. Antes de enviar um email, costuma ajudar:",
+      "tips": [
+        "Consultar a calculadora do seu país — cada página de país explica como são estimados o imposto sobre o rendimento e as contribuições sociais desse país e indica as fontes oficiais por trás dos valores.",
+        "Explorar os nossos guias para explicações em linguagem simples sobre salário bruto vs. líquido, escalões de imposto, deduções e como ler o seu recibo de vencimento.",
+        "Se está a comunicar um problema, diga-nos que página ou calculadora utilizou, os valores que introduziu e o que esperava em comparação com o que viu — ajuda-nos a responder com rigor e rapidez."
+      ]
     }
   },
   "privacy": {

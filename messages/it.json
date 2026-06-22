@@ -663,5 +663,11 @@
       "de": "Calcolatore Stipendio Germania",
       "uk": "Calcolatore Stipendio Regno Unito"
     }
+  },
+  "metaDesc": {
+    "about": "IncomeTally è uno strumento gratuito e indipendente per stimare stipendio netto, retribuzione netta e imposte sul reddito in nove paesi: stime chiare e documentate, non consulenza.",
+    "contact": "Contatta il team di IncomeTally per i nostri calcolatori di stipendio e imposte, su come vengono prodotte le stime, sulla privacy e il trattamento dei dati, o per inviare feedback e correzioni.",
+    "privacy": "Come IncomeTally raccoglie, usa e protegge le tue informazioni: cookie, analytics, pubblicità Google AdSense e sicurezza dei dati. Nessun account richiesto per usare il sito.",
+    "terms": "I termini per usare i calcolatori gratuiti di reddito, stipendio e imposte di IncomeTally: uso accettabile, disclaimer stime-non-consulenza, proprietà intellettuale e responsabilità."
   }
 }

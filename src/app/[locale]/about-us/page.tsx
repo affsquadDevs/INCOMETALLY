@@ -12,15 +12,14 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const about = getAbout(locale);
+  const md = await getTranslations({ locale, namespace: 'metaDesc' });
   return {
     title: about.title,
-    description:
-      'Learn about IncomeTally — an independent tool for calculating net salary, take-home pay, and country-specific tax estimates for informational purposes.',
+    description: md('about'),
     alternates: buildAlternates(locale, '/about-us'),
     openGraph: {
       title: about.title,
-      description:
-        'IncomeTally is an independent tool for calculating net salary, take-home pay, and country-specific tax estimates.',
+      description: md('about'),
       url: '/about-us',
       type: 'website',
     },

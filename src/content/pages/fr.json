@@ -60,6 +60,15 @@
         "Nous n'offrons pas d'assistance client via les réseaux sociaux et ne proposons pas de support téléphonique pour le moment.",
         "Veuillez ne pas envoyer d'informations personnelles sensibles par e-mail, sauf si cela est nécessaire pour traiter votre demande."
       ]
+    },
+    "beforeContact": {
+      "title": "Avant de nous contacter",
+      "intro": "De nombreuses questions trouvent une réponse plus rapide sur le site lui-même. Avant d'écrire, il est souvent utile de :",
+      "tips": [
+        "Consulter le calculateur de votre pays — chaque page pays explique comment l'impôt sur le revenu et les cotisations sociales du pays sont estimés et indique les sources officielles à l'origine des chiffres.",
+        "Parcourir nos guides pour des explications en langage clair sur le salaire brut et net, les tranches d'imposition, les déductions et la lecture de votre bulletin de paie.",
+        "Si vous signalez un problème, indiquez-nous la page ou le calculateur utilisé, les valeurs saisies et ce que vous attendiez par rapport à ce que vous avez vu — cela nous aide à répondre avec précision et rapidité."
+      ]
     }
   },
   "privacy": {

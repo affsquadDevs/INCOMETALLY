@@ -10,15 +10,14 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const { title } = getTerms(locale);
+  const md = await getTranslations({ locale, namespace: 'metaDesc' });
   return {
     title,
-    description:
-      "The terms and conditions for using IncomeTally's income, salary, and tax calculators.",
+    description: md('terms'),
     alternates: buildAlternates(locale, '/terms'),
     openGraph: {
       title,
-      description:
-        "The terms and conditions for using IncomeTally's income, salary, and tax calculators.",
+      description: md('terms'),
       url: '/terms',
       type: 'website',
     },

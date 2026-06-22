@@ -60,6 +60,15 @@
         "Nie oferujemy obsługi klienta za pośrednictwem mediów społecznościowych i obecnie nie zapewniamy wsparcia telefonicznego.",
         "Prosimy nie przesyłać poufnych danych osobowych pocztą elektroniczną, chyba że jest to konieczne do rozpatrzenia Twojego zapytania."
       ]
+    },
+    "beforeContact": {
+      "title": "Zanim się skontaktujesz",
+      "intro": "Na wiele pytań szybciej znajdziesz odpowiedź bezpośrednio na stronie. Przed wysłaniem e-maila często warto:",
+      "tips": [
+        "Sprawdź kalkulator dla swojego kraju — każda strona kraju wyjaśnia, jak szacowane są podatek dochodowy i składki na ubezpieczenia społeczne w danym kraju, oraz podaje oficjalne źródła stojące za tymi liczbami.",
+        "Przejrzyj nasze poradniki, w których prostym językiem wyjaśniamy różnicę między wynagrodzeniem brutto a netto, progi podatkowe, odliczenia oraz jak czytać swój pasek wypłaty.",
+        "Jeśli zgłaszasz problem, napisz nam, której strony lub kalkulatora użyłeś, jakie wartości wprowadziłeś i czego oczekiwałeś w porównaniu z tym, co zobaczyłeś — pomoże nam to odpowiedzieć trafnie i szybko."
+      ]
     }
   },
   "privacy": {

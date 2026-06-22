@@ -60,6 +60,15 @@
         "Neposkytujeme zákaznickou podporu prostřednictvím sociálních sítí a v současné době neposkytujeme telefonickou podporu.",
         "Neposílejte prosím citlivé osobní údaje e-mailem, pokud to není nezbytné k vyřízení vašeho požadavku."
       ]
+    },
+    "beforeContact": {
+      "title": "Než nás kontaktujete",
+      "intro": "Na mnohé otázky najdete odpověď rychleji přímo na webu. Než nám napíšete, často pomůže:",
+      "tips": [
+        "Podívejte se na kalkulačku pro vaši zemi — stránka každé země vysvětluje, jak se odhaduje daň z příjmu a sociální odvody dané země, a uvádí oficiální zdroje stojící za uvedenými čísly.",
+        "Projděte si naše průvodce se srozumitelným vysvětlením rozdílu mezi hrubou a čistou mzdou, daňových pásem, odpočtů a toho, jak číst svou výplatní pásku.",
+        "Pokud hlásíte problém, sdělte nám, kterou stránku nebo kalkulačku jste použili, jaké hodnoty jste zadali a co jste očekávali ve srovnání s tím, co jste viděli — pomůže nám to odpovědět přesně a rychle."
+      ]
     }
   },
   "privacy": {
