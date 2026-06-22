@@ -11,6 +11,18 @@ import { pageOverrides } from '@/content/pages';
 import { countries, type CountryCode, type CountryMetadata } from '@/lib/countries';
 import { getCountryFAQs, getHubFAQs, type FAQ } from '@/lib/seo/faq';
 import { countryOverrides } from '@/content/countries';
+import {
+  guides,
+  getGuideBySlug,
+  getGuidesByPillar,
+  getRelatedGuides,
+  type Guide,
+} from '@/data/guides';
+import { getAllPillars, getPillar, type Pillar } from '@/data/pillars';
+import { getAuthor, type Author } from '@/data/authors';
+import { guideOverrides } from '@/content/guides';
+import { pillarOverrides } from '@/content/pillars';
+import { authorOverrides } from '@/content/authors';
 
 type AboutContent = typeof siteConfig.aboutUs;
 type ContactContent = typeof siteConfig.contactPage;
@@ -56,6 +68,54 @@ export function getLocalizedCountryFAQs(code: string, locale: string): FAQ[] {
 export function getLocalizedHubFAQs(locale: string): FAQ[] {
   const loc = countryOverrides[locale] as { hub?: { faqs?: FAQ[] } } | undefined;
   return loc?.hub?.faqs ?? getHubFAQs();
+}
+
+// ---- Guides -----------------------------------------------------------------
+
+function mergeGuide(g: Guide, locale: string): Guide {
+  const o = (guideOverrides[locale] as Record<string, Partial<Guide>> | undefined)?.[g.slug];
+  return o ? deepMerge(g, o) : g;
+}
+
+export function getLocalizedGuideBySlug(slug: string, locale: string): Guide | undefined {
+  const g = getGuideBySlug(slug);
+  return g ? mergeGuide(g, locale) : g;
+}
+
+export function getLocalizedGuides(locale: string): Guide[] {
+  return guides.map((g) => mergeGuide(g, locale));
+}
+
+export function getLocalizedGuidesByPillar(pillarId: string, locale: string): Guide[] {
+  return getGuidesByPillar(pillarId).map((g) => mergeGuide(g, locale));
+}
+
+export function getLocalizedRelatedGuides(slug: string, locale: string): Guide[] {
+  return getRelatedGuides(slug).map((g) => mergeGuide(g, locale));
+}
+
+// ---- Pillars ----------------------------------------------------------------
+
+function mergePillar(p: Pillar, locale: string): Pillar {
+  const o = (pillarOverrides[locale] as Record<string, Partial<Pillar>> | undefined)?.[p.id];
+  return o ? deepMerge(p, o) : p;
+}
+
+export function getLocalizedPillars(locale: string): Pillar[] {
+  return getAllPillars().map((p) => mergePillar(p, locale));
+}
+
+export function getLocalizedPillar(id: string, locale: string): Pillar | undefined {
+  const p = getPillar(id);
+  return p ? mergePillar(p, locale) : p;
+}
+
+// ---- Authors ----------------------------------------------------------------
+
+export function getLocalizedAuthor(id: string | undefined, locale: string): Author {
+  const a = getAuthor(id);
+  const o = (authorOverrides[locale] as Record<string, Partial<Author>> | undefined)?.[a.id];
+  return o ? deepMerge(a, o) : a;
 }
 
 export function getAbout(locale: string): AboutContent {
