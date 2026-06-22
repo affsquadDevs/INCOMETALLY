@@ -3,6 +3,17 @@
     "lastUpdated": "Last updated:",
     "backToHome": "Back to Home"
   },
+  "country": {
+    "h1Suffix": "Salary Tax Calculator",
+    "allCalculators": "← All Calculators",
+    "hourlyConverter": "Hourly to Salary Converter",
+    "otherCountries": "Other Countries:",
+    "howItWorksHeading": "How Salary Taxes Work in {country}",
+    "faqHeading": "Frequently Asked Questions",
+    "relatedHeading": "Related Resources",
+    "relatedHub": "Salary Calculator Hub",
+    "calculatorSuffix": "Salary Calculator"
+  },
   "nav": {
     "salaryCalculator": "Salary Calculator",
     "getStarted": "Get Started",

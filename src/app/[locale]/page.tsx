@@ -6,6 +6,7 @@ import AnimatedBlock from '@/components/AnimatedBlock';
 import FAQAccordion from '@/components/FAQAccordion';
 import { generateFAQJsonLd, type FAQ } from '@/lib/seo/faq';
 import { countries } from '@/lib/countries';
+import { getLocalizedCountry } from '@/lib/content';
 import { getAllPillars } from '@/data/pillars';
 import { getGuideBySlug } from '@/data/guides';
 
@@ -33,22 +34,25 @@ const toolHrefs = ['/net-salary-calculator', '/salary-calculator', '/hourly-to-s
 // Official-source labels per country (proper nouns; the country name is shown
 // from country data and will localize when the content layer lands).
 const sourcesByCountry = [
-  { country: 'United States', sources: 'IRS · SSA' },
-  { country: 'United Kingdom', sources: 'GOV.UK · HMRC' },
-  { country: 'Germany', sources: 'Bundesfinanzministerium' },
-  { country: 'Poland', sources: 'podatki.gov.pl · ZUS' },
-  { country: 'France', sources: 'service-public.gouv.fr · URSSAF' },
-  { country: 'Spain', sources: 'AEAT · Seguridad Social' },
-  { country: 'Italy', sources: 'Agenzia delle Entrate · INPS' },
-  { country: 'Sweden', sources: 'Skatteverket' },
-  { country: 'Portugal', sources: 'Portal das Finanças · Segurança Social' },
+  { code: 'US', sources: 'IRS · SSA' },
+  { code: 'UK', sources: 'GOV.UK · HMRC' },
+  { code: 'DE', sources: 'Bundesfinanzministerium' },
+  { code: 'PL', sources: 'podatki.gov.pl · ZUS' },
+  { code: 'FR', sources: 'service-public.gouv.fr · URSSAF' },
+  { code: 'ES', sources: 'AEAT · Seguridad Social' },
+  { code: 'IT', sources: 'Agenzia delle Entrate · INPS' },
+  { code: 'SE', sources: 'Skatteverket' },
+  { code: 'PT', sources: 'Portal das Finanças · Segurança Social' },
 ];
 
 export default async function Home({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const t = await getTranslations('home');
 
-  const countryList = Object.values(countries);
+  const countryList = Object.values(countries).map((c) => ({
+    ...c,
+    displayName: getLocalizedCountry(c.code, locale)?.displayName ?? c.displayName,
+  }));
   const pillars = getAllPillars().map((pillar) => {
     const guide = getGuideBySlug(pillar.cornerstoneSlug);
     return {
@@ -379,10 +383,12 @@ export default async function Home({ params: { locale } }: { params: { locale: s
                 <ul className="space-y-2 text-sm">
                   {sourcesByCountry.map((row) => (
                     <li
-                      key={row.country}
+                      key={row.code}
                       className="flex justify-between gap-4 border-b border-black border-opacity-5 pb-2"
                     >
-                      <span className="text-black">{row.country}</span>
+                      <span className="text-black">
+                        {getLocalizedCountry(row.code, locale)?.displayName ?? row.code}
+                      </span>
                       <span className="text-black opacity-70 text-right">{row.sources}</span>
                     </li>
                   ))}

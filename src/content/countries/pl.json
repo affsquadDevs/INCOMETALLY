@@ -1,1 +1,482 @@
-{}
+{
+  "US": {
+    "displayName": "Stany Zjednoczone",
+    "title": "Kalkulator podatku od wynagrodzenia w USA 2026 - Oblicz swój dochód netto",
+    "description": "Oblicz swoje wynagrodzenie netto po podatkach federalnych w Stanach Zjednoczonych. Oszacuj swoją pensję na rękę dzięki naszemu darmowemu kalkulatorowi podatkowemu IncomeTally dla USA na rok 2026.",
+    "taxExplanation": "Stany Zjednoczone stosują progresywny system federalnego podatku dochodowego, w którym stawki podatkowe rosną wraz ze wzrostem dochodu. Internal Revenue Service (IRS) zarządza kodeksem podatkowym, który obejmuje siedem progów podatkowych w zakresie od 10% do 37% w roku podatkowym 2026. System ten ma zapewnić, aby osoby o wyższych dochodach wnosiły większy procent swoich zarobków do dochodów federalnych, jednocześnie zapewniając ulgę gospodarstwom domowym o niższych dochodach poprzez niższe stawki podatkowe i różne ulgi.\n\nFederalny podatek dochodowy obliczany jest przy użyciu krańcowych progów podatkowych, co oznacza, że różne części Twojego dochodu są opodatkowane według różnych stawek. Na przykład, jeśli zarabiasz 75,000 USD rocznie, pierwsza część Twojego dochodu mieści się w niższych progach, a tylko kwota przekraczająca próg każdego przedziału jest opodatkowana według wyższej stawki. Ta progresywna struktura zapewnia, że osoby o niższych dochodach płacą mniejszy procent swojego dochodu w podatkach w porównaniu z osobami o wyższych dochodach. Zrozumienie krańcowych stawek podatkowych jest kluczowe, ponieważ Twoja efektywna stawka podatkowa - procent całkowitego dochodu zapłacony w podatkach - jest zazwyczaj niższa niż Twoja najwyższa stawka krańcowa.\n\nOprócz federalnego podatku dochodowego większość pracowników płaci również podatki na Social Security i Medicare, powszechnie określane jako podatki FICA. Podatek na Social Security jest pobierany w wysokości 6.2% od wynagrodzeń do określonego limitu (podstawa wymiaru składek na Social Security), który jest corocznie korygowany o inflację. Limit ten oznacza, że po osiągnięciu pułapu podstawy wymiaru składek nie pobiera się żadnego dodatkowego podatku na Social Security do końca roku. Podatek na Medicare jest naliczany w wysokości 1.45% od wszystkich wynagrodzeń bez żadnego limitu, co oznacza, że osoby o wysokich dochodach nadal płacą podatek na Medicare od całego swojego dochodu. Osoby o wysokich dochodach mogą również podlegać dodatkowej dopłacie na Medicare w wysokości 0.9% od dochodu powyżej określonych progów, która ma zastosowanie do wynagrodzeń, dochodu z samozatrudnienia i innych form wynagrodzenia.\n\nStandardowe odliczenie (standard deduction) jest kluczowym elementem amerykańskiego systemu podatkowego, pozwalającym podatnikom obniżyć dochód podlegający opodatkowaniu bez wyszczególniania odliczeń. Na rok 2026 kwoty standardowego odliczenia są korygowane o inflację i różnią się w zależności od statusu rozliczeniowego - osoby rozliczające się samotnie, małżeństwa rozliczające się wspólnie, małżeństwa rozliczające się osobno oraz głowa gospodarstwa domowego mają różne kwoty. Odliczenie to skutecznie zwalnia część dochodu z opodatkowania, sprawiając, że efektywna stawka podatkowa jest niższa niż stawka krańcowa dla wielu podatników. Podatnicy mogą wybrać między skorzystaniem ze standardowego odliczenia a wyszczególnieniem odliczeń, takich jak odsetki od kredytu hipotecznego, podatki stanowe i lokalne oraz darowizny na cele charytatywne, w zależności od tego, co przynosi większą korzyść podatkową.\n\nPobór podatku odbywa się przez cały rok poprzez potrącenia z listy płac, gdzie pracodawcy potrącają szacunkowe podatki z każdej wypłaty na podstawie informacji podanych na formularzu W-4. Formularz ten pozwala pracownikom określić ich status rozliczeniowy, liczbę osób na utrzymaniu oraz inne czynniki wpływające na zobowiązanie podatkowe. Pod koniec roku podatkowego podatnicy składają roczne zeznanie, aby uzgodnić swoje rzeczywiste zobowiązanie podatkowe z kwotami potrąconymi. Jeśli potrącono zbyt dużo, podatnicy otrzymują zwrot; jeśli zbyt mało, muszą dopłacić różnicę. Celem jest, aby potrącenia odpowiadały rzeczywistemu zobowiązaniu podatkowemu jak najdokładniej, aby uniknąć dużych zwrotów lub nieoczekiwanych rachunków podatkowych.\n\nAmerykański system podatkowy obejmuje również różne ulgi i odliczenia, które mogą dodatkowo zmniejszyć zobowiązanie podatkowe. Należą do nich ulga podatkowa z tytułu uzyskanego dochodu (Earned Income Tax Credit, EITC) dla pracowników o niskich i średnich dochodach, ulgi na dzieci, ulgi edukacyjne oraz odliczenia za składki emerytalne i inne. Ulgi podatkowe są szczególnie wartościowe, ponieważ zmniejszają zobowiązanie podatkowe w stosunku jeden do jednego, podczas gdy odliczenia obniżają dochód podlegający opodatkowaniu. Jednak ten kalkulator koncentruje się na podstawowym federalnym podatku dochodowym i składkach FICA, zapewniając bazowe oszacowanie przed uwzględnieniem tych dodatkowych czynników.\n\nNależy pamiętać, że podatki stanowe i lokalne nie są uwzględnione w obliczeniach federalnych. Wiele stanów nakłada własne podatki dochodowe, które mogą wahać się od stawek liniowych po struktury progresywne podobne do systemu federalnego. Niektóre stany, takie jak Texas i Floryda, nie mają stanowego podatku dochodowego, podczas gdy inne, jak Kalifornia i Nowy Jork, mają stosunkowo wysokie stanowe stawki podatkowe. Jurysdykcje lokalne mogą również nakładać dodatkowe podatki dochodowe, szczególnie w dużych aglomeracjach miejskich. Te podatki stanowe i lokalne mogą znacząco wpłynąć na całkowite obciążenie podatkowe, czasami dodając kilka punktów procentowych do efektywnej stawki podatkowej.\n\nKodeks podatkowy podlega okresowym zmianom poprzez ustawodawstwo, a stawki i progi są corocznie korygowane o inflację przy użyciu wskaźnika cen towarów i usług konsumpcyjnych (Consumer Price Index). Podatnicy powinni zapoznać się z najbardziej aktualnymi publikacjami IRS lub skonsultować się z wykwalifikowanym doradcą podatkowym w celu uzyskania porady dostosowanej do ich sytuacji, ponieważ indywidualne okoliczności mogą się znacznie różnić w zależności od statusu rozliczeniowego, osób na utrzymaniu, odliczeń i innych czynników. Złożoność amerykańskiego systemu podatkowego oznacza, że dwie osoby o takim samym dochodzie brutto mogą mieć bardzo różne dochody netto w zależności od ich konkretnej sytuacji.",
+    "faqs": [
+      {
+        "question": "Czy kalkulator dla USA uwzględnia podatki stanowe i lokalne?",
+        "answer": "Nie, nasz kalkulator dla USA uwzględnia wyłącznie federalny podatek dochodowy oraz podatki FICA (Social Security i Medicare). Stanowe i lokalne podatki dochodowe nie są uwzględnione i mogą znacząco wpłynąć na całkowite zobowiązanie podatkowe, zwłaszcza w stanach o wysokich podatkach, takich jak Kalifornia i Nowy Jork."
+      },
+      {
+        "question": "Ile wynosi standardowe odliczenie (standard deduction) na rok 2026?",
+        "answer": "Kwoty standardowego odliczenia na rok 2026 są korygowane o inflację i różnią się w zależności od statusu rozliczeniowego. Osoby rozliczające się samotnie, małżeństwa rozliczające się wspólnie, małżeństwa rozliczające się osobno oraz głowa gospodarstwa domowego mają różne kwoty. Standardowe odliczenie obniża dochód podlegający opodatkowaniu bez konieczności wyszczególniania odliczeń."
+      },
+      {
+        "question": "Jak obliczane są podatki na Social Security i Medicare?",
+        "answer": "Podatek na Social Security wynosi 6.2% od wynagrodzeń do podstawy wymiaru składek na Social Security (która jest corocznie korygowana). Podatek na Medicare wynosi 1.45% od wszystkich wynagrodzeń bez żadnego limitu. Osoby o wysokich dochodach mogą również zapłacić dodatkową dopłatę na Medicare w wysokości 0.9% od dochodu powyżej określonych progów. Są one odrębne od federalnego podatku dochodowego."
+      },
+      {
+        "question": "Jaka jest różnica między krańcową a efektywną stawką podatkową?",
+        "answer": "Twoja krańcowa stawka podatkowa to stawka stosowana do najwyższego progu Twojego dochodu. Twoja efektywna stawka podatkowa to procent całkowitego dochodu zapłacony w podatkach, który jest zazwyczaj niższy, ponieważ różne części dochodu są opodatkowane według różnych stawek. Kalkulator pokazuje Twoją efektywną stawkę podatkową."
+      },
+      {
+        "question": "Czy mogę obliczyć podatki dla różnych statusów rozliczeniowych?",
+        "answer": "Kalkulator stosuje standardowe założenia dla osoby rozliczającej się samotnie. Różne statusy rozliczeniowe (małżeństwo rozliczające się wspólnie, głowa gospodarstwa domowego itp.) mają różne standardowe odliczenia i progi podatkowe. Aby uzyskać dokładne obliczenia dla swojego konkretnego statusu rozliczeniowego, skonsultuj się z doradcą podatkowym lub skorzystaj z tabel podatkowych IRS."
+      },
+      {
+        "question": "Czy ulgi i odliczenia podatkowe są uwzględnione w obliczeniach?",
+        "answer": "Kalkulator uwzględnia standardowe odliczenie, ale nie uwzględnia odliczeń wyszczególnionych ani ulg podatkowych, takich jak Earned Income Tax Credit, ulgi na dzieci czy ulgi edukacyjne. Mogą one znacząco zmniejszyć Twoje zobowiązanie podatkowe, więc rzeczywista pensja na rękę może być wyższa niż oszacowana."
+      },
+      {
+        "question": "Jak obliczyć mój dochód netto, jeśli pracuję na godziny?",
+        "answer": "Wprowadź swoją stawkę godzinową i wybierz tryb godzinowy. Kalkulator zapyta o liczbę godzin tygodniowo (domyślnie 40) oraz liczbę tygodni w roku (domyślnie 52). Następnie obliczy Twój roczny dochód brutto i zastosuje podatki federalne oraz składki FICA, aby pokazać Twój dochód netto godzinowy, miesięczny i roczny."
+      },
+      {
+        "question": "Co, jeśli mam kilka prac lub dodatkowe źródła dochodu?",
+        "answer": "Kalkulator szacuje podatki dla jednego źródła dochodu. Jeśli masz kilka prac lub dodatkowy dochód, Twoje całkowite zobowiązanie podatkowe może być inne, ponieważ połączony dochód może przesunąć Cię do wyższych progów. W przypadku złożonych sytuacji dochodowych skonsultuj się z doradcą podatkowym."
+      },
+      {
+        "question": "Czy składki emerytalne (401k, IRA) są uwzględnione?",
+        "answer": "Nie, składki emerytalne odprowadzane przed opodatkowaniem nie są uwzględnione w obliczeniach. Składki na plany 401(k) oraz tradycyjne IRA obniżają Twój dochód podlegający opodatkowaniu, co zmniejszyłoby Twoje zobowiązanie podatkowe. Jeśli odprowadzasz składki emerytalne, Twoja rzeczywista pensja na rękę i oszczędności podatkowe mogą różnić się od oszacowania."
+      },
+      {
+        "question": "Jak dokładne jest oszacowanie dla osób o wysokich dochodach?",
+        "answer": "W przypadku osób o wysokich dochodach oszacowanie może być mniej dokładne, ponieważ nie uwzględnia alternatywnego podatku minimalnego (Alternative Minimum Tax, AMT), dodatkowego podatku na Medicare ani ograniczeń dotyczących niektórych odliczeń. Osoby o wysokich dochodach powinny skonsultować się z doradcą podatkowym w celu uzyskania dokładniejszych oszacowań."
+      }
+    ]
+  },
+  "DE": {
+    "displayName": "Niemcy",
+    "title": "Kalkulator podatku od wynagrodzenia w Niemczech 2026 - Oblicz swój dochód netto",
+    "description": "Oblicz swoje wynagrodzenie netto po opodatkowaniu i składkach na ubezpieczenie społeczne w Niemczech. Oszacuj swoją wypłatę na rękę za pomocą naszego bezpłatnego niemieckiego kalkulatora podatkowego na rok 2026.",
+    "taxExplanation": "Niemcy stosują kompleksowy system podatkowy i ubezpieczeń społecznych, który w istotny sposób wpływa na wynagrodzenie na rękę. System podatku dochodowego jest progresywny, ze stawkami od 0% do 45% dla osób o najwyższych dochodach, a w niektórych regionach dodatkowo z dopłatą solidarnościową i podatkiem kościelnym. System ten ma na celu finansowanie rozbudowanych usług społecznych przy jednoczesnym zachowaniu progresywnej struktury, która nakłada większe obciążenie na osoby o wyższych dochodach.\n\nPodatek dochodowy w Niemczech jest obliczany według skali progresywnej z wieloma progami podatkowymi. Kwota wolna od podatku (Grundfreibetrag) sprawia, że osoby o niskich dochodach nie płacą podatku dochodowego. W 2026 roku kwota ta jest corocznie korygowana z uwzględnieniem inflacji i wzrostu kosztów utrzymania. W miarę wzrostu dochodu kolejne jego części są opodatkowane według rosnących stawek: 14% dla najniższego progu podlegającego opodatkowaniu, poprzez stawki pośrednie aż do 42% dla osób o wysokich dochodach oraz 45% dla najwyższego progu dochodowego. Progresywny charakter oznacza, że tylko dochód powyżej każdego progu jest opodatkowany wyższą stawką, a nie cały dochód.\n\nDopłata solidarnościowa (Solidaritätszuschlag) to dodatkowy podatek wprowadzony pierwotnie w celu sfinansowania zjednoczenia Niemiec. Choć dla większości podatników został w dużej mierze zniesiony, może nadal dotyczyć osób o bardzo wysokich dochodach. Podatek kościelny (Kirchensteuer) jest pobierany w większości niemieckich landów od członków uznanych wspólnot religijnych i zazwyczaj dodaje 8-9% do kwoty podatku dochodowego. Podatek ten jest automatycznie potrącany od zarejestrowanych członków kościołów i wspólnot religijnych, choć osoby fizyczne mogą z niego zrezygnować, formalnie występując ze swojej wspólnoty religijnej.\n\nSkładki na ubezpieczenie społeczne stanowią znaczną część potrąceń w Niemczech. System obejmuje cztery główne elementy: ubezpieczenie zdrowotne, ubezpieczenie pielęgnacyjne, ubezpieczenie na wypadek bezrobocia oraz ubezpieczenie emerytalne. Składki te są zazwyczaj dzielone między pracodawcę a pracownika, przy czym każda ze stron pokrywa około połowy łącznej składki. Ten model współodpowiedzialności ma na celu rozłożenie kosztu usług społecznych między pracowników a pracodawców, choć część przypadająca na pracownika bezpośrednio obniża wynagrodzenie na rękę.\n\nSkładki na ubezpieczenie zdrowotne są obowiązkowe dla wszystkich pracowników zarabiających poniżej określonego progu (Versicherungspflichtgrenze). Powyżej tego progu pracownicy mogą wybrać prywatne ubezpieczenie zdrowotne, choć wielu pozostaje w systemie publicznym. Stawka składki to procent dochodu brutto, dzielony po równo między pracodawcę a pracownika. Ubezpieczenie pielęgnacyjne działa według podobnej struktury, gdzie składki są obliczane jako procent dochodu. Oba systemy zapewniają kompleksową ochronę, przy czym publiczne ubezpieczenie zdrowotne pokrywa większość wydatków medycznych, a ubezpieczenie pielęgnacyjne zapewnia wsparcie w zakresie opieki pielęgniarskiej i usług opiekuńczych.\n\nUbezpieczenie na wypadek bezrobocia zapewnia wsparcie finansowe w okresach utraty pracy i jest finansowane ze składek zarówno pracodawcy, jak i pracownika. Stawka składki jest ustalana corocznie i dotyczy dochodu do określonego pułapu wymiaru składek. Ubezpieczenie to zapewnia zasiłek dla bezrobotnych (Arbeitslosengeld) przez ograniczony okres, zazwyczaj na podstawie wcześniejszych zarobków i historii odprowadzania składek. Składki na ubezpieczenie emerytalne finansują państwowy system emerytalny, a ich stawki są ustalane przez rząd i również dzielone między pracodawcę a pracownika. System emerytalny zapewnia świadczenia emerytalne oparte na składkach odprowadzanych przez całe życie i ma na celu zastąpienie części dochodu sprzed przejścia na emeryturę.\n\nNiemiecki system podatkowy obejmuje różne odliczenia i ulgi, które mogą obniżyć dochód podlegający opodatkowaniu. Należą do nich ulgi na dzieci, wydatki specjalne (Sonderausgaben) oraz wydatki nadzwyczajne (außergewöhnliche Belastungen). System klas podatkowych (Steuerklassen) określa, ile podatku jest potrącane, przy czym różne klasy dotyczą osób samotnych, par małżeńskich i innych sytuacji. Klasa podatkowa III zapewnia najkorzystniejsze potrącenia dla jednego z małżonków w parze małżeńskiej, podczas gdy klasa podatkowa V zapewnia mniej korzystne potrącenia dla drugiego małżonka, choć łączne zobowiązanie podatkowe pozostaje takie samo niezależnie od wyboru klasy.\n\nPotrącanie podatku w Niemczech odbywa się poprzez system podatku od wynagrodzeń (Lohnsteuer), w którym pracodawcy obliczają i potrącają podatki oraz składki społeczne z każdej wypłaty na podstawie klasy podatkowej pracownika i przekazanych informacji. Proces rocznego rozliczenia podatkowego pozwala podatnikom ubiegać się o dodatkowe odliczenia i ewentualnie otrzymać zwrot, jeśli doszło do nadpłaty. Wielu podatników otrzymuje zwroty po złożeniu rocznego zeznania, w szczególności ci, którzy mogą ubiegać się o dodatkowe odliczenia lub ponieśli w ciągu roku znaczne wydatki specjalne.\n\nZłożoność niemieckiego systemu podatkowego i ubezpieczeń społecznych sprawia, że efektywne stawki podatkowe mogą znacznie się różnić w zależności od indywidualnej sytuacji, w tym stanu cywilnego, liczby dzieci, rodzaju ubezpieczenia zdrowotnego i innych czynników. Pary małżeńskie często korzystają na podziale dochodów, co może obniżyć ich łączne obciążenie podatkowe. Rodzice otrzymują ulgi na dzieci i mogą kwalifikować się do dodatkowych korzyści podatkowych. Kalkulator ten dostarcza szacunków opartych na standardowych scenariuszach i powinien być traktowany jako wskazówka, a nie ostateczne wyliczenie, ponieważ rzeczywiste wynagrodzenie na rękę może się różnić w zależności od wielu indywidualnych czynników.",
+    "faqs": [
+      {
+        "question": "Jakie podatki i składki są potrącane w Niemczech?",
+        "answer": "Pracownicy w Niemczech płacą podatek dochodowy (Einkommensteuer), dopłatę solidarnościową (jeśli dotyczy), podatek kościelny (jeśli dotyczy) oraz składki na ubezpieczenie społeczne, w tym ubezpieczenie zdrowotne, ubezpieczenie pielęgnacyjne, ubezpieczenie na wypadek bezrobocia i ubezpieczenie emerytalne. Składki te są zazwyczaj dzielone między pracodawcę a pracownika."
+      },
+      {
+        "question": "Czym jest kwota wolna od podatku (Grundfreibetrag) w Niemczech?",
+        "answer": "Kwota wolna od podatku to wysokość dochodu, jaki można uzyskać bez płacenia podatku dochodowego. W 2026 roku kwota ta jest corocznie korygowana z uwzględnieniem inflacji. Dochód powyżej tej kwoty jest opodatkowany progresywnie, ze stawkami od 14% do 45% w zależności od poziomu dochodu."
+      },
+      {
+        "question": "Jak działa system klas podatkowych (Steuerklassen)?",
+        "answer": "Niemcy stosują klasy podatkowe w celu określenia, ile podatku jest potrącane z wynagrodzenia. Klasa podatkowa I dotyczy osób samotnych, klasy III i V dotyczą par małżeńskich (z różnymi stawkami potrąceń), a klasa IV dotyczy par małżeńskich o podobnych dochodach. Roczne zobowiązanie podatkowe jest takie samo niezależnie od klasy, ale potrącenia się różnią."
+      },
+      {
+        "question": "Czym są składki na ubezpieczenie społeczne w Niemczech?",
+        "answer": "Składki na ubezpieczenie społeczne obejmują ubezpieczenie zdrowotne (Krankenversicherung), ubezpieczenie pielęgnacyjne (Pflegeversicherung), ubezpieczenie na wypadek bezrobocia (Arbeitslosenversicherung) oraz ubezpieczenie emerytalne (Rentenversicherung). Są one obliczane jako procent dochodu brutto i zazwyczaj dzielone po połowie (50/50) między pracodawcę a pracownika."
+      },
+      {
+        "question": "Czy w Niemczech potrzebuję publicznego czy prywatnego ubezpieczenia zdrowotnego?",
+        "answer": "Pracownicy zarabiający poniżej progu obowiązku ubezpieczenia (Versicherungspflichtgrenze) muszą mieć publiczne ubezpieczenie zdrowotne. Powyżej tego progu można wybrać ubezpieczenie prywatne, choć wielu pozostaje w systemie publicznym. Kalkulator zakłada stawki publicznego ubezpieczenia zdrowotnego."
+      },
+      {
+        "question": "Czym jest dopłata solidarnościowa (Solidaritätszuschlag)?",
+        "answer": "Dopłata solidarnościowa została wprowadzona w celu sfinansowania zjednoczenia Niemiec. Dla większości podatników została w dużej mierze zniesiona, ale może nadal dotyczyć osób o bardzo wysokich dochodach. Jest obliczana jako procent podatku dochodowego i jest uwzględniana w wyliczeniu, jeśli ma zastosowanie."
+      },
+      {
+        "question": "Jak obliczyć dochód netto dla pracowników godzinowych w Niemczech?",
+        "answer": "Wprowadź swoją stawkę godzinową i wybierz tryb godzinowy. Podaj liczbę godzin tygodniowo i liczbę tygodni w roku. Kalkulator przeliczy Twój dochód w skali roku, zastosuje niemieckie progi podatku dochodowego i potrąci składki na ubezpieczenie społeczne, aby pokazać Twój dochód netto w ujęciu godzinowym, miesięcznym i rocznym."
+      },
+      {
+        "question": "Czy uwzględniono ulgi na dzieci i korzyści podatkowe?",
+        "answer": "Kalkulator stosuje standardowe scenariusze i może nie uwzględniać wszystkich ulg na dzieci (Kinderfreibetrag) ani innych korzyści podatkowych, do których możesz być uprawniony. Rodzice zazwyczaj otrzymują dodatkowe korzyści podatkowe, które mogą obniżyć zobowiązanie podatkowe, więc rzeczywiste wynagrodzenie na rękę może być wyższe niż szacowane."
+      },
+      {
+        "question": "Co jeśli jestem w związku małżeńskim lub mam dzieci?",
+        "answer": "Pary małżeńskie mogą skorzystać z podziału dochodów (Ehegattensplitting), co może obniżyć łączne zobowiązanie podatkowe. Rodzice otrzymują ulgi na dzieci i mogą kwalifikować się do dodatkowych świadczeń. Kalkulator dostarcza szacunków opartych na standardowych scenariuszach; rzeczywiste podatki dla rodzin mogą być niższe."
+      },
+      {
+        "question": "Jak dokładny jest szacunek dla pracowników zatrudnionych w niepełnym wymiarze?",
+        "answer": "Szacunek jest dokładny dla pracowników zatrudnionych w niepełnym wymiarze, o ile wprowadzisz rzeczywistą liczbę godzin tygodniowo. Jednak pracownicy zatrudnieni w niepełnym wymiarze zarabiający poniżej określonych progów mogą mieć inne stawki składek na ubezpieczenie społeczne lub zwolnienia. Kalkulator stosuje standardowe stawki składek."
+      },
+      {
+        "question": "A co z rocznym zeznaniem podatkowym (Steuererklärung)?",
+        "answer": "Wielu niemieckich podatników składa roczne zeznanie podatkowe, aby ubiegać się o dodatkowe odliczenia i ewentualnie otrzymać zwrot. Kalkulator pokazuje szacunkowe kwoty potrąceń, ale Twoje ostateczne zobowiązanie podatkowe po złożeniu zeznania może się różnić, zwłaszcza jeśli masz wydatki podlegające odliczeniu lub kwalifikujesz się do dodatkowych ulg."
+      }
+    ]
+  },
+  "UK": {
+    "displayName": "Wielka Brytania",
+    "title": "Kalkulator podatku od wynagrodzenia w Wielkiej Brytanii 2026 - Oblicz swój dochód netto",
+    "description": "Oblicz swoje wynagrodzenie netto po odliczeniu podatku dochodowego i National Insurance w Wielkiej Brytanii. Oszacuj swoją pensję na rękę za pomocą naszego darmowego kalkulatora podatkowego dla Wielkiej Brytanii na rok 2026.",
+    "taxExplanation": "Wielka Brytania stosuje progresywny system podatku dochodowego administrowany przez HM Revenue and Customs (HMRC). System ten obejmuje podatek dochodowy oraz składki National Insurance, które wspólnie determinują łączną wysokość odliczeń od wynagrodzenia brutto. Te dwa systemy działają równolegle: podatek dochodowy zapewnia ogólne wpływy do budżetu państwa, a National Insurance finansuje konkretnie świadczenia z zabezpieczenia społecznego oraz National Health Service.\n\nPodatek dochodowy w Wielkiej Brytanii zbudowany jest wokół kwoty wolnej od podatku (personal allowance), czyli kwoty dochodu, jaką osoba może uzyskać przed zapłaceniem jakiegokolwiek podatku dochodowego. Na rok podatkowy 2026 ta kwota wolna ustalona jest na określonym progu i jest corocznie korygowana, zazwyczaj zgodnie z inflacją. Dochód powyżej kwoty wolnej opodatkowany jest według różnych stawek w zależności od tego, do którego przedziału podatkowego trafia. Kwota wolna jest stopniowo wycofywana dla osób o bardzo wysokich dochodach, co tworzy efektywnie wyższą stawkę podatkową dla osób znajdujących się w przedziale wycofywania.\n\nWielka Brytania ma trzy główne przedziały podatku dochodowego dla większości podatników: stawkę podstawową (basic rate), stawkę wyższą (higher rate) oraz stawkę dodatkową (additional rate). Stawka podstawowa w wysokości 20% ma zastosowanie do dochodu powyżej kwoty wolnej do limitu stawki podstawowej. Stawka wyższa w wysokości 40% ma zastosowanie do dochodu powyżej limitu stawki podstawowej do progu stawki dodatkowej. Stawka dodatkowa w wysokości 45% ma zastosowanie do dochodu powyżej progu stawki dodatkowej. Progi te są corocznie korygowane, a w Szkocji mogą obowiązywać odmienne stawki ze względu na przekazane uprawnienia podatkowe. Struktura progresywna zapewnia, że tylko dochód w obrębie danego przedziału jest opodatkowany według danej stawki, a nie cały dochód.\n\nNational Insurance (NI) to odrębny system, który finansuje świadczenia państwowe, w tym emeryturę państwową, zasiłki dla bezrobotnych oraz opiekę zdrowotną poprzez National Health Service. Pracownicy płacą składki National Insurance klasy 1 (Class 1), które obliczane są jako procent zarobków powyżej progu podstawowego (primary threshold). Stawka główna ma zastosowanie do zarobków pomiędzy progiem podstawowym a górnym limitem zarobków (upper earnings limit), przy czym powyżej górnego limitu zarobków obowiązuje stawka obniżona. Tworzy to element regresywny w całym systemie podatkowym, ponieważ stawki National Insurance maleją dla osób o bardzo wysokich dochodach, choć dodatkowa stawka podatku dochodowego to rekompensuje.\n\nSkładki National Insurance obliczane są w cyklu tygodniowym lub miesięcznym, w zależności od tego, jak pracownik otrzymuje wynagrodzenie. Stawki i progi ustalane są corocznie i mogą zmieniać się przy każdym ogłoszeniu budżetu. W przeciwieństwie do podatku dochodowego, National Insurance ma tygodniowy lub miesięczny okres obliczeniowy, co oznacza, że progi stosowane są w przeliczeniu na okres rozliczeniowy, a nie rocznie. Może to prowadzić do sytuacji, w których pracownicy o nieregularnych zarobkach płacą różne kwoty National Insurance w zależności od układu wypłat, nawet jeśli ich dochód roczny jest taki sam.\n\nBrytyjski system podatkowy działa w oparciu o zasadę Pay As You Earn (PAYE), zgodnie z którą pracodawcy obliczają i odliczają podatek dochodowy oraz National Insurance od każdej wypłaty. System kodów podatkowych (tax code) określa, jaką kwotę wolną od podatku otrzymuje dana osoba, przy czym różne kody odpowiadają różnym sytuacjom, takim jak wiele miejsc pracy, dochód z emerytury lub inne źródła dochodu. Na koniec roku podatkowego HMRC uzgadnia zapłacone kwoty i wydaje rozliczenia podatkowe, wraz ze zwrotami lub dopłatami w razie potrzeby. Większość pracowników otrzymuje swój kod podatkowy automatycznie, jednak osoby w złożonych sytuacjach mogą potrzebować skontaktować się z HMRC, aby zapewnić prawidłowe przypisanie kodu.\n\nRóżne kwoty wolne i ulgi mogą obniżyć zobowiązanie podatkowe, w tym kwota wolna, ulga małżeńska (marriage allowance) dla uprawnionych par oraz ulgi z tytułu składek emerytalnych. Składki emerytalne korzystają z ulgi podatkowej, co oznacza, że są wpłacane z dochodu przed opodatkowaniem, efektywnie obniżając dochód podlegający opodatkowaniu. Wiek uprawniający do emerytury państwowej oraz kwalifikacja do różnych świadczeń powiązane są z historią składek National Insurance, przy czym do pełnego prawa do emerytury państwowej wymagana jest minimalna liczba lat kwalifikujących. Stanowi to zachętę do regularnego opłacania składek National Insurance przez całe życie zawodowe.\n\nBrytyjski system podatkowy obejmuje również różne odliczenia i ulgi, choć kwota wolna jest podstawowym mechanizmem obniżania podatku dla większości pracowników. Podatnicy objęci wyższą stawką mogą podlegać ograniczeniom w zakresie niektórych ulg, a kwota wolna jest stopniowo wycofywana dla osób o bardzo wysokich dochodach. Wolne od podatku rachunki oszczędnościowe (ISA) zapewniają dodatkowe korzyści podatkowe, umożliwiając osobom oszczędzanie i inwestowanie bez płacenia podatku od odsetek, dywidend czy zysków kapitałowych. Rachunki te mają roczne limity wpłat i mogą znacząco przynieść korzyści osobom oszczędzającym długoterminowo.\n\nSzkocja posiada przekazane uprawnienia w zakresie stawek i przedziałów podatku dochodowego, co oznacza, że szkoccy podatnicy mogą podlegać innym stawkom i progom niż osoby w pozostałej części Wielkiej Brytanii. Rząd Szkocji może ustalać odmienne stawki i przedziały, co zaowocowało nieco innymi strukturami podatkowymi, szczególnie dla osób o wyższych dochodach. Walia również posiada pewne przekazane uprawnienia podatkowe, choć obecnie dla większości podatników stosuje te same stawki co Anglia i Irlandia Północna. Ta decentralizacja oznacza, że podatnicy w różnych częściach Wielkiej Brytanii mogą mieć różne efektywne stawki podatkowe nawet przy tym samym dochodzie.\n\nNależy pamiętać, że kalkulator ten dostarcza szacunków opartych na standardowych scenariuszach i standardowych kodach podatkowych. Indywidualne okoliczności, w tym składki emerytalne, świadczenia w naturze i inne czynniki, mogą znacząco wpłynąć na rzeczywistą pensję na rękę. Świadczenia w naturze, takie jak samochody służbowe czy prywatne ubezpieczenie zdrowotne, podlegają podatkowi dochodowemu i National Insurance, co może obniżyć wynagrodzenie netto. Podatnicy powinni zapoznać się z wytycznymi HMRC lub skonsultować się z wykwalifikowanym doradcą podatkowym w sprawach dotyczących ich konkretnej sytuacji, zwłaszcza jeśli mają wiele źródeł dochodu, znaczne odliczenia lub złożone uwarunkowania finansowe.",
+    "faqs": [
+      {
+        "question": "Jakie podatki są odliczane od wynagrodzeń w Wielkiej Brytanii?",
+        "answer": "Pracownicy w Wielkiej Brytanii płacą podatek dochodowy oraz składki National Insurance. Podatek dochodowy obliczany jest od dochodu powyżej kwoty wolnej, ze stawkami 20% (stawka podstawowa), 40% (stawka wyższa) oraz 45% (stawka dodatkowa). National Insurance finansuje świadczenia państwowe oraz NHS."
+      },
+      {
+        "question": "Czym jest kwota wolna od podatku (personal allowance) w Wielkiej Brytanii?",
+        "answer": "Kwota wolna od podatku (personal allowance) to kwota dochodu, jaką możesz uzyskać przed zapłaceniem podatku dochodowego. Na rok 2026 kwota ta ustalana jest corocznie i może być korygowana o inflację. Dochód powyżej kwoty wolnej opodatkowany jest według stawek progresywnych. Kwota wolna jest stopniowo wycofywana dla osób o bardzo wysokich dochodach."
+      },
+      {
+        "question": "Jak obliczana jest składka National Insurance?",
+        "answer": "National Insurance obliczana jest w cyklu tygodniowym lub miesięcznym (w zależności od częstotliwości wypłat) od zarobków powyżej progu podstawowego (primary threshold). Stawka główna ma zastosowanie pomiędzy progiem podstawowym a górnym limitem zarobków (upper earnings limit), przy czym powyżej górnego limitu obowiązuje stawka obniżona. W przeciwieństwie do podatku dochodowego, progi NI stosowane są w przeliczeniu na okres rozliczeniowy, a nie rocznie."
+      },
+      {
+        "question": "Jaka jest różnica między podatkiem dochodowym a National Insurance?",
+        "answer": "Podatek dochodowy zapewnia ogólne wpływy do budżetu państwa i obliczany jest rocznie. National Insurance finansuje konkretnie świadczenia państwowe (emeryturę, zasiłki dla bezrobotnych, opiekę zdrowotną) i obliczany jest w przeliczeniu na okres rozliczeniowy. Oba odliczane są poprzez PAYE, ale działają według różnych zasad i progów."
+      },
+      {
+        "question": "Czy szkoccy podatnicy płacą inne stawki?",
+        "answer": "Tak, Szkocja posiada przekazane uprawnienia w zakresie stawek i przedziałów podatku dochodowego. Szkoccy podatnicy mogą podlegać innym stawkom i progom niż osoby w Anglii, Walii oraz Irlandii Północnej. Kalkulator stosuje standardowe stawki brytyjskie; szkoccy podatnicy powinni zweryfikować swoje konkretne stawki."
+      },
+      {
+        "question": "Jak obliczyć dochód netto dla pracowników godzinowych w Wielkiej Brytanii?",
+        "answer": "Wprowadź swoją stawkę godzinową i wybierz tryb godzinowy. Podaj liczbę godzin tygodniowo (domyślnie 40) oraz tygodni w roku (domyślnie 52). Kalkulator przeliczy Twój dochód na ujęcie roczne, zastosuje brytyjskie przedziały podatku dochodowego oraz składki National Insurance, aby pokazać Twój dochód netto w ujęciu godzinowym, miesięcznym i rocznym."
+      },
+      {
+        "question": "Czym jest ulga małżeńska (marriage allowance)?",
+        "answer": "Ulga małżeńska (marriage allowance) pozwala uprawnionym parom przenieść część kwoty wolnej od podatku z jednego małżonka na drugiego, co może obniżyć zobowiązanie podatkowe. Kalkulator nie uwzględnia tej ulgi, więc pary małżeńskie mogą płacić mniej podatku niż wynika z szacunku."
+      },
+      {
+        "question": "Czy składki emerytalne są uwzględnione w obliczeniach?",
+        "answer": "Nie, składki emerytalne nie są uwzględnione. Składki emerytalne korzystają z ulgi podatkowej, co oznacza, że wpłacane są z dochodu przed opodatkowaniem, co obniża Twój dochód podlegający opodatkowaniu oraz zobowiązanie podatkowe. Jeśli opłacasz składki emerytalne, Twoja rzeczywista pensja na rękę oraz oszczędności podatkowe mogą różnić się od szacunku."
+      },
+      {
+        "question": "Jak działa system PAYE?",
+        "answer": "PAYE (Pay As You Earn) to brytyjski system, w którym pracodawcy obliczają i odliczają podatek dochodowy oraz National Insurance od każdej wypłaty. Twój kod podatkowy (tax code) określa Twoją kwotę wolną od podatku. Na koniec roku HMRC uzgadnia zapłacone kwoty i wydaje rozliczenia podatkowe wraz ze zwrotami lub dopłatami w razie potrzeby."
+      },
+      {
+        "question": "Co jeśli mam wiele miejsc pracy lub dodatkowy dochód?",
+        "answer": "Kalkulator szacuje podatki dla pojedynczego źródła dochodu. Jeśli masz wiele miejsc pracy lub dodatkowy dochód, Twoje łączne zobowiązanie podatkowe może być inne, ponieważ połączony dochód może przesunąć Cię do wyższych przedziałów podatkowych. Na koniec roku możesz być zobowiązany do dopłaty podatku lub otrzymać zwrot."
+      },
+      {
+        "question": "Czy świadczenia w naturze są uwzględnione w obliczeniach?",
+        "answer": "Nie, świadczenia w naturze (samochód służbowy, prywatne ubezpieczenie zdrowotne itp.) nie są uwzględnione. Podlegają one podatkowi dochodowemu oraz National Insurance, co obniżyłoby Twoje wynagrodzenie netto. Jeśli otrzymujesz świadczenia w naturze, Twoja rzeczywista pensja na rękę może być niższa niż wynika z szacunku."
+      },
+      {
+        "question": "Jak dokładny jest szacunek dla osób o wysokich dochodach?",
+        "answer": "Dla osób o wysokich dochodach szacunek może być mniej dokładny, ponieważ nie uwzględnia wycofywania kwoty wolnej, ograniczeń w zakresie niektórych ulg ani potencjalnych dodatkowych zobowiązań podatkowych. Osoby o wysokich dochodach powinny zapoznać się z wytycznymi HMRC lub skonsultować się z doradcą podatkowym w celu uzyskania dokładniejszych szacunków."
+      }
+    ]
+  },
+  "PL": {
+    "displayName": "Polska",
+    "title": "Kalkulator wynagrodzenia i podatku w Polsce 2026 - Oblicz swoje wynagrodzenie netto",
+    "description": "Oszacuj swoje wynagrodzenie netto w Polsce na 2026 rok. Darmowy kalkulator pokazuje PIT, składki społeczne i zdrowotne ZUS oraz wynagrodzenie na rękę na podstawie kwoty brutto.",
+    "taxExplanation": "Polska stosuje progresywny system podatku dochodowego od osób fizycznych znany jako PIT (podatek dochodowy od osob fizycznych), nałożony na obowiązkowe składki społeczne i zdrowotne pobierane przez ZUS, krajową instytucję ubezpieczeń społecznych. W przypadku większości pracowników zatrudnionych na podstawie umowy o pracę droga od wynagrodzenia brutto do wynagrodzenia na rękę (netto) obejmuje kilka potrąceń, które następują w określonej kolejności. Zrozumienie tej kolejności jest kluczem do tego, dlaczego Twój dochód netto jest niższy niż widniejąca kwota brutto, i właśnie to modeluje ten kalkulator dla roku podatkowego 2026.\n\nPodatek dochodowy w Polsce stosuje dwa progi podatkowe. Istnieje kwota wolna od podatku, kwota wolna, w wysokości 30,000 PLN rocznie, co oznacza, że pierwsza część Twojego dochodu faktycznie nie jest opodatkowana. Powyżej tego progu do podstawy opodatkowania do 120,000 PLN stosuje się stawkę 12 procent. Każda część podstawy opodatkowania powyżej 120,000 PLN jest opodatkowana wyższą stawką 32 procent. Ponieważ wyższą stawką opodatkowana jest tylko kwota powyżej każdego progu, wejście do wyższego progu nie obciąża całej Twojej pensji; wpływa jedynie na dochód powyżej punktu granicznego.\n\nZanim w ogóle zostanie obliczony podatek dochodowy, z wynagrodzenia brutto potrącane są pracownicze składki społeczne ZUS. Obejmują one trzy obszary: składkę emerytalną (emerytalne) w wysokości 9.76 procent, składkę rentową (rentowe) w wysokości 1.5 procent oraz składkę chorobową (chorobowe) w wysokości 2.45 procent. Ważną cechą jest to, że te składki społeczne są odliczane od podatku, więc zmniejszają podstawę, od której obliczany jest Twój podatek dochodowy. Składki emerytalna i rentowa podlegają również rocznemu limitowi, stosowanemu po osiągnięciu skumulowanego dochodu brutto wynoszącego około 260,190 PLN, po którym te dwie składki przestają być pobierane do końca roku.\n\nObok składek społecznych występuje składka na ubezpieczenie zdrowotne (skladka zdrowotna) w wysokości 9 procent. Ta zachowuje się inaczej. Od 2022 roku składka zdrowotna nie jest już odliczana od podatku, co oznacza, że obniża ona Twoje wynagrodzenie na rękę bez zmniejszania podstawy podatku dochodowego. Dla uproszczenia ten kalkulator oblicza składkę zdrowotną od kwoty brutto, co daje jasne i spójne oszacowanie, choć indywidualne okoliczności mogą powodować niewielkie odchylenia od dokładnej kwoty na pasku wynagrodzenia.\n\nW praktyce rzadko płaci się to wszystko jednorazowo. Pracodawcy działają jako płatnicy, potrącając składki ZUS oraz zaliczkę na podatek dochodowy (zaliczka) z każdej wypłaty i przekazując je organom w Twoim imieniu. To podejście pobierania podatku na bieżąco rozkłada Twój podatek na cały rok. Po zakończeniu roku pracownicy składają roczne zeznanie, PIT-37, które rozlicza już zapłacone zaliczki z faktycznie należnym podatkiem. W zależności od Twojej sytuacji to rozliczenie może skutkować zwrotem lub dodatkową kwotą do zapłaty.\n\nTen kalkulator został stworzony z myślą o przeciętnych pracownikach, osobach poszukujących pracy porównujących oferty oraz o każdym, kto chce szybko zorientować się, jak wynagrodzenie brutto przekłada się na pieniądze w kieszeni. Wprowadzając kwotę brutto, możesz zobaczyć szacunkowy podział na składki społeczne, składkę zdrowotną, podatek dochodowy oraz wynikającą z tego kwotę netto. Zakłada on jednego podatnika według standardowych zasad i nie modeluje wspólnego rozliczenia z małżonkiem, specjalnych ulg, ulgi dla młodych pracowników ani innych zindywidualizowanych korekt, które mogłyby zmienić ostateczny wynik.\n\nZ powodu tych upraszczających założeń liczby, które widzisz, należy traktować jako szacunki, a nie dokładne odzwierciedlenie Twojej sytuacji podatkowej. Wartości tutaj odzwierciedlają zasady i progi dla roku podatkowego 2026, a polskie stawki podatkowe, procentowe wysokości składek i progi są poddawane przeglądowi i mogą zmieniać się z roku na rok. Twój rzeczywisty wynik może się różnić w zależności od rodzaju umowy, ulg, które Ci przysługują, oraz innych czynników osobistych. Aby uzyskać dokładną kwotę przy ważnej decyzji, lub jeśli Twoja sytuacja obejmuje cokolwiek wykraczającego poza standardowe zatrudnienie jednego podatnika, rozsądnie jest skonsultować się z wykwalifikowanym doradcą podatkowym lub księgowym, który może przeanalizować Twoje konkretne okoliczności.",
+    "faqs": [
+      {
+        "question": "Jak obliczyć moje wynagrodzenie netto w Polsce na 2026 rok?",
+        "answer": "Wprowadź swoje wynagrodzenie brutto, a kalkulator oszacuje Twoje składki społeczne ZUS, składkę zdrowotną w wysokości 9 procent oraz podatek dochodowy PIT, a następnie odejmie je, aby pokazać szacunkowe wynagrodzenie netto (na rękę) za rok podatkowy 2026."
+      },
+      {
+        "question": "Jaka jest kwota wolna od podatku (kwota wolna) w Polsce?",
+        "answer": "Na 2026 rok kwota wolna od podatku wynosi 30,000 PLN rocznie. Dochód do tego poziomu faktycznie nie jest objęty podatkiem dochodowym, a kwoty powyżej niego są opodatkowane według obowiązującej stawki progowej. Kalkulator uwzględnia to w swoim oszacowaniu."
+      },
+      {
+        "question": "Jakie są progi podatku dochodowego w Polsce?",
+        "answer": "Polska stosuje dwa progi PIT. Stawka 12 procent dotyczy podstawy opodatkowania do 120,000 PLN, a stawka 32 procent dotyczy części powyżej 120,000 PLN. Wyższą stawką opodatkowany jest tylko dochód powyżej progu."
+      },
+      {
+        "question": "Jakie składki ZUS są potrącane z mojego wynagrodzenia?",
+        "answer": "Pracownicy płacą składkę emerytalną (emerytalne) w wysokości 9.76 procent, rentową (rentowe) w wysokości 1.5 procent oraz chorobową (chorobowe) w wysokości 2.45 procent. Te składki społeczne są potrącane przed podatkiem dochodowym i zmniejszają Twoją podstawę opodatkowania w tym oszacowaniu."
+      },
+      {
+        "question": "Czy składka na ubezpieczenie zdrowotne jest odliczana od podatku?",
+        "answer": "Nie. Od 2022 roku składka zdrowotna w wysokości 9 procent (skladka zdrowotna) nie jest odliczana od podatku, więc obniża ona Twoje wynagrodzenie na rękę bez zmniejszania podstawy podatku dochodowego. Kalkulator odzwierciedla to w swoim oszacowaniu."
+      },
+      {
+        "question": "Czy kalkulator może oszacować wynagrodzenie netto godzinowe, miesięczne lub roczne?",
+        "answer": "Narzędzie wychodzi od Twojej kwoty brutto, aby uzyskać szacunkową kwotę netto, którą możesz wyświetlić w ujęciu rocznym lub rozbić na miesięczne. Wszelkie kwoty godzinowe, miesięczne lub roczne są szacunkami i zależą od wprowadzonej przez Ciebie kwoty brutto."
+      },
+      {
+        "question": "Jak dokładny jest ten kalkulator wynagrodzeń dla Polski?",
+        "answer": "Daje on bliskie oszacowanie na podstawie standardowych zasad na 2026 rok dla jednego podatnika, ale nie jest dokładny. Dla uproszczenia oblicza składkę zdrowotną od kwoty brutto i pomija wspólne rozliczenie oraz specjalne ulgi, więc Twój rzeczywisty wynik może się różnić."
+      },
+      {
+        "question": "Jakie są ograniczenia tego kalkulatora?",
+        "answer": "Zakłada on jednego podatnika według standardowych zasad i nie uwzględnia wspólnego rozliczenia z małżonkiem, ulgi dla młodych pracowników, specjalnych ulg ani niestandardowych rodzajów umów. Czynniki te mogą zmienić Twój rzeczywisty wynik, więc traktuj rezultat jako szacunek."
+      },
+      {
+        "question": "Czym jest roczne zeznanie PIT-37?",
+        "answer": "PIT-37 to roczne zeznanie podatkowe, które składa większość pracowników w Polsce. Pracodawcy potrącają w ciągu roku miesięczne zaliczki na podatek (zaliczka), a zeznanie rozlicza te zaliczki z faktycznie należnym podatkiem, co może prowadzić do zwrotu lub dodatkowej płatności."
+      },
+      {
+        "question": "Czy składki emerytalna i rentowa są objęte limitem?",
+        "answer": "Tak. Składki emerytalna i rentowa są pobierane do momentu, gdy Twój skumulowany roczny dochód brutto osiągnie około 260,190 PLN, po czym przestają być pobierane do końca roku. Składki chorobowa i zdrowotna nie podlegają temu rocznemu limitowi."
+      }
+    ]
+  },
+  "FR": {
+    "displayName": "Francja",
+    "title": "Kalkulator podatku od wynagrodzenia we Francji 2026 - Oblicz swój dochód netto",
+    "description": "Oszacuj swoje wynagrodzenie netto we Francji na 2026 rok. Bezpłatny kalkulator stosuje skalę podatkową bareme, składki na ubezpieczenia społeczne, CSG i CRDS, aby pokazać wynagrodzenie na rękę.",
+    "taxExplanation": "Francja stosuje kompleksowy system podatku dochodowego oraz składek na ubezpieczenia społeczne, które wspólnie określają, jaką część wynagrodzenia brutto otrzymujesz na rękę. Dwoma głównymi elementami są podatek dochodowy (impot sur le revenu) oraz zestaw obowiązkowych składek na ubezpieczenia społeczne potrącanych bezpośrednio z wynagrodzenia. Zrozumienie, jak te elementy się ze sobą łączą, pomaga oszacować dochód netto i zaplanować finanse, niezależnie od tego, czy porównujesz oferty pracy, negocjujesz wynagrodzenie, czy po prostu próbujesz zrozumieć swój pasek wypłaty. Poniższe wartości odzwierciedlają rok podatkowy 2026 i dotyczą osoby samotnej.\n\nPodatek dochodowy opiera się na progresywnej skali znanej jako bareme, co oznacza, że różne części dochodu są opodatkowane według różnych stawek. Dla osoby samotnej liczonej jako jedna część (part) pierwsze około 11,497 EUR dochodu podlegającego opodatkowaniu jest opodatkowane stawką 0 percent. Dochód między około 11,497 a 29,315 EUR jest opodatkowany stawką 11 percent, przedział od około 29,315 do 83,823 EUR stawką 30 percent, przedział od około 83,823 do 180,294 EUR stawką 41 percent, a wszystko powyżej około 180,294 EUR stawką 45 percent. Częstym nieporozumieniem jest przekonanie, że wejście w wyższy próg powoduje opodatkowanie całego dochodu wyższą stawką. W rzeczywistości tylko ta część dochodu, która mieści się w danym przedziale, jest opodatkowana według stawki tego przedziału, więc Twoja ogólna efektywna stawka jest zawsze niższa niż najwyższa stawka, która Cię dotyczy.\n\nZanim zostanie obliczony podatek dochodowy, pracownicy płacą składki na ubezpieczenia społeczne, które finansują zabezpieczenie społeczne, opiekę zdrowotną i emerytury. Składki te wynoszą łącznie około 21 do 22 percent wynagrodzenia brutto. Pierwsza grupa, obejmująca składki na zabezpieczenie społeczne i emerytalne, wynosi około 11.31 percent i jest potrącana przed naliczeniem podatku dochodowego. Na to nakładają się dwie szczególne daniny: CSG (contribution sociale generalisee) w wysokości 9.2 percent oraz CRDS (contribution au remboursement de la dette sociale) w wysokości 0.5 percent. Te dwie daniny to powszechne obciążenia społeczne stosowane do dochodu z pracy i stanowią istotną część różnicy między wynagrodzeniem brutto a netto.\n\nSposób traktowania tych składek dla celów podatku dochodowego jest zróżnicowany. Z 9.2 percent CSG, 6.8 punktów procentowych podlega odliczeniu, co oznacza, że ta część zmniejsza dochód, od którego obliczany jest podatek dochodowy, podczas gdy pozostałe 2.4 punktów procentowych nie podlega odliczeniu. CRDS w wysokości 0.5 percent nie podlega odliczeniu. Składki na zabezpieczenie społeczne i emerytalne w wysokości około 11.31 percent są potrącane przed podatkiem dochodowym. Te rozróżnienia mają znaczenie, ponieważ składki podlegające odliczeniu obniżają Twoją podstawę opodatkowania, co z kolei obniża podatek dochodowy, który ostatecznie jesteś winien.\n\nOd 2019 roku podatek dochodowy we Francji jest pobierany poprzez potrącenie u źródła, znane jako prelevement a la source (PAS). Oznacza to, że Twój pracodawca potrąca z każdej wypłaty szacunkową kwotę podatku dochodowego na podstawie stawki podanej przez organy podatkowe, dzięki czemu podatek jest płacony stopniowo w ciągu roku, a nie jednorazowo. Potrącenie u źródła nie zastępuje rocznego zeznania podatkowego. Nadal co roku składasz deklarację, która uzgadnia kwoty potrącone z tym, co faktycznie jesteś winien, uwzględniając Twoją pełną sytuację. Może to skutkować zwrotem albo dopłatą.\n\nNasz kalkulator został zaprojektowany tak, aby dać Ci szybkie, uproszczone oszacowanie, a nie dokładne rozliczenie podatkowe. Zakłada osobę samotną liczoną jako jedna część i stosuje skalę bareme oraz stawki składek na ubezpieczenia społeczne opisane powyżej. Aby zachować prostotę, pomija dwa istotne elementy rzeczywistego systemu. Po pierwsze, nie stosuje standardowego odliczenia 10 percent na koszty zawodowe, które zwykle zmniejsza opodatkowany dochód z wynagrodzenia dla większości pracowników. Po drugie, nie korzysta z ilorazu rodzinnego (quotient familial), czyli systemu części (parts), który koryguje dochód podlegający opodatkowaniu w zależności od składu gospodarstwa domowego, takiego jak małżonek lub dzieci na utrzymaniu. Oba te elementy zazwyczaj zmniejszają w rzeczywistości kwotę należnego podatku dochodowego.\n\nZ powodu tych uproszczeń Twój rzeczywisty podatek dochodowy może być niższy niż oszacowanie generowane przez ten kalkulator, zwłaszcza po uwzględnieniu odliczenia 10 percent oraz ewentualnych części rodzinnych. Oszacowanie jest najbardziej przydatne jako zgrubny przewodnik po skali podatków i składek od danego wynagrodzenia oraz do porównywania wynagrodzeń między sobą na spójnej podstawie. Prosimy traktować wszystkie wyniki jako oszacowania wyłącznie do celów edukacyjnych. Progi podatkowe, stawki składek oraz zasady regulujące odliczenia są weryfikowane i mogą się zmieniać każdego roku, a sytuacje indywidualne znacznie się różnią. W przypadku decyzji zależnych od dokładnych wartości lub w celu uzyskania wskazówek dotyczących Twojej konkretnej sytuacji skonsultuj się z wykwalifikowanym doradcą podatkowym lub z oficjalną francuską administracją podatkową.",
+    "faqs": [
+      {
+        "question": "Jak oblicza się wynagrodzenie netto we Francji?",
+        "answer": "Wynagrodzenie netto to Twoje wynagrodzenie brutto pomniejszone o składki na ubezpieczenia społeczne (około 21 do 22 percent, w tym CSG i CRDS) oraz podatek dochodowy potrącony u źródła. Nasz kalkulator szacuje każdy z tych elementów, aby pokazać przybliżoną kwotę na rękę dla osoby samotnej w 2026 roku."
+      },
+      {
+        "question": "Jakie stawki podatku dochodowego obowiązują we Francji w 2026 roku?",
+        "answer": "Dla osoby samotnej progresywna skala bareme wynosi 0 percent do około 11,497 EUR, 11 percent do około 29,315, 30 percent do około 83,823, 41 percent do około 180,294 oraz 45 percent powyżej tej kwoty. Każda stawka dotyczy tylko dochodu mieszczącego się w danym przedziale."
+      },
+      {
+        "question": "Czym są CSG i CRDS?",
+        "answer": "CSG (contribution sociale generalisee) to danina społeczna w wysokości 9.2 percent od dochodu z pracy, z której 6.8 punktów procentowych podlega odliczeniu od podatku dochodowego, a 2.4 nie podlega. CRDS to danina w wysokości 0.5 percent, która nie podlega odliczeniu. Obie zmniejszają Twoje wynagrodzenie netto."
+      },
+      {
+        "question": "Ile składek na ubezpieczenia społeczne jest potrącanych z mojego wynagrodzenia?",
+        "answer": "Składki pracownika na ubezpieczenia społeczne wynoszą łącznie około 21 do 22 percent wynagrodzenia brutto. Obejmuje to około 11.31 percent na zabezpieczenie społeczne i emerytury oraz 9.2 percent CSG i 0.5 percent CRDS. Wszystkie te wartości są szacunkowe i mogą się różnić w zależności od sytuacji."
+      },
+      {
+        "question": "Czy mogę oszacować wynagrodzenie na rękę w ujęciu godzinowym, miesięcznym lub rocznym?",
+        "answer": "Tak. Wprowadź swoje wynagrodzenie w tej formie, której używasz, a kalkulator oszacuje dochód netto na spójnej podstawie. Pamiętaj, że są to wartości przybliżone, mające pomóc w porównywaniu wynagrodzeń, a nie dokładne kwoty z paska wypłaty."
+      },
+      {
+        "question": "Co oznacza potrącenie u źródła (prelevement a la source)?",
+        "answer": "Od 2019 roku podatek dochodowy jest potrącany z każdej wypłaty przez Twojego pracodawcę według stawki ustalonej przez organy podatkowe, dzięki czemu podatek jest płacony przez cały rok. Nadal składasz roczne zeznanie, które uzgadnia kwoty potrącone z tym, co faktycznie jesteś winien."
+      },
+      {
+        "question": "Czy nadal muszę składać zeznanie podatkowe, jeśli podatek jest potrącany u źródła?",
+        "answer": "Tak. Potrącenie u źródła pobiera podatek w ciągu roku, ale nadal musisz złożyć roczną deklarację podatku dochodowego. Zeznanie uwzględnia Twoją pełną sytuację i może skutkować zwrotem lub dodatkową kwotą do zapłaty."
+      },
+      {
+        "question": "Jak dokładny jest ten kalkulator?",
+        "answer": "Zapewnia uproszczone oszacowanie dla osoby samotnej liczonej jako jedna część. Pomija odliczenie 10 percent na koszty zawodowe oraz system ilorazu rodzinnego (quotient familial, czyli parts), więc Twój rzeczywisty podatek dochodowy może być niższy. Traktuj wyniki wyłącznie jako zgrubny przewodnik."
+      },
+      {
+        "question": "Dlaczego mój rzeczywisty podatek może być niższy niż oszacowanie?",
+        "answer": "Nasze oszacowanie pomija standardowe odliczenie 10 percent na koszty zawodowe oraz iloraz rodzinny, które oba zwykle zmniejszają podatek dochodowy w rzeczywistości. CSG podlegające odliczeniu również obniża Twoją podstawę opodatkowania. Czynniki te mogą sprawić, że Twój rzeczywisty podatek będzie niższy."
+      },
+      {
+        "question": "Czy te wartości są oficjalne lub gwarantowane?",
+        "answer": "Nie. Wszystkie wyniki są oszacowaniami dla roku podatkowego 2026, podanymi do celów edukacyjnych. Progi i stawki podatkowe zmieniają się co roku, a sytuacje indywidualne się różnią, dlatego w celu uzyskania dokładnych wartości skonsultuj się z wykwalifikowanym doradcą podatkowym lub z oficjalną francuską administracją podatkową."
+      }
+    ]
+  },
+  "ES": {
+    "displayName": "Hiszpania",
+    "title": "Kalkulator podatku od wynagrodzenia w Hiszpanii 2026 - Oblicz swój dochód netto",
+    "description": "Oszacuj swoje wynagrodzenie netto w Hiszpanii na 2026 rok. Darmowy kalkulator uwzgledniajacy progi podatku dochodowego IRPF, skladki na ubezpieczenie spoleczne (Seguridad Social) oraz regionalne zroznicowanie stawek.",
+    "taxExplanation": "Hiszpania opodatkowuje dochody swoich rezydentow za posrednictwem podatku Impuesto sobre la Renta de las Personas Fisicas, powszechnie znanego jako IRPF. Dla wiekszosci pracownikow najwiekszymi potraceniami z wynagrodzenia brutto sa wlasnie ten podatek dochodowy od osob fizycznych oraz obowiazkowe skladki na ubezpieczenie spoleczne. Twoj pracodawca zazwyczaj obsluguje oba te elementy, potracajac kwoty z kazdej wyplaty przez caly rok i przekazujac je organom podatkowym oraz systemowi ubezpieczen spolecznych. Ponizsze dane przedstawiaja uproszczony, reprezentatywny obraz dla roku podatkowego 2026 i maja pomoc Ci oszacowac wynagrodzenie na reke, a nie zastapic oficjalne obliczenia.\n\nCecha, ktora wyroznia hiszpanski system, jest to, ze IRPF jest dzielony miedzy panstwo centralne a wspolnoty autonomiczne. Kazdy region ustala czesc skali, wiec dokladne stawki, ktore placisz, zaleza od tego, gdzie mieszkasz. Z tego powodu nasz kalkulator stosuje reprezentatywna skale laczona, a nie dane konkretnego regionu. Zgodnie z ta reprezentatywna skala dochod jest opodatkowany stawka 19 percent do 12,450 euros, 24 percent od czesci od 12,450 do 20,200 euros, 30 percent od 20,200 do 35,200 euros, 37 percent od 35,200 do 60,000 euros, 45 percent od 60,000 do 300,000 euros oraz 47 percent od wszystkiego powyzej 300,000 euros. System jest progresywny, wiec kazda stawka ma zastosowanie wylacznie do dochodu mieszczacego sie w danym przedziale, a nie do calego wynagrodzenia.\n\nSystem uwzglednia rowniez minimum osobiste (personal minimum), czyli kwote dochodu uznawana za niezbedna do podstawowego utrzymania i traktowana ogolnie jako wolna od podatku. W naszym reprezentatywnym modelu to minimum osobiste wynosi okolo 5,550 euros. W praktyce dziala ono jak obnizenie zmniejszajace podatek nalezny od Twojego najnizszego dochodu, co pomaga utrzymac efektywna stawke podatkowa od skromnych wynagrodzen ponizej nominalnych wartosci procentowych ze skali.\n\nPoza podatkiem dochodowym pracownicy w Hiszpanii placa skladki na ubezpieczenie spoleczne (Seguridad Social), ktore finansuja emerytury, opieke zdrowotna, zasilki dla bezrobotnych i powiazane programy. Skladki te wynosza lacznie okolo 6.48 percent Twojej podstawy wymiaru skladek. Na te kwote skladaja sie ryzyka ogolne (common contingencies) w wysokosci 4.7 percent, ubezpieczenie na wypadek bezrobocia 1.55 percent, szkolenie zawodowe 0.1 percent oraz skladka solidarnosciowa MEI 0.13 percent. Istnieje gorny limit: skladki naliczane sa wylacznie do maksymalnej podstawy wymiaru skladek, ktora wynosi okolo 59,059 euros rocznie. Zarobki powyzej tego pulapu nie zwiekszaja Twoich skladek na ubezpieczenie spoleczne, choc pozostaja w pelni objete podatkiem dochodowym.\n\nKolejnosc, w jakiej te elementy sa stosowane, ma znaczenie dla Twojego ostatecznego wyniku. Skladki na ubezpieczenie spoleczne sa potracane przed obliczeniem podatku dochodowego, wiec zmniejszaja dochod, od ktorego naliczany jest IRPF. Dlatego te dwie kwoty nie sa po prostu sumowane. Po odjeciu skladek na ubezpieczenie spoleczne i zastosowaniu minimum osobistego do tego, co pozostaje, stosowana jest progresywna skala IRPF, a wynikiem jest czesc Twoich potracen przypadajaca na podatek dochodowy.\n\nPrzez caly rok Twoj pracodawca stosuje zaliczki, znane jako retenciones, na poczet Twojego IRPF. Sa to platnosci zaliczkowe na poczet Twojego ostatecznego zobowiazania podatkowego, szacowane na podstawie wynagrodzenia i sytuacji osobistej. Poniewaz sa to jedynie szacunki, wiekszosc pracownikow skalda pozniej roczne zeznanie podatkowe, declaracion de la Renta, zwykle wiosna roku nastepujacego po roku podatkowym. Zeznanie to porownuje to, co zostalo pobrane, z tym, co faktycznie jestes winien. Jesli pobrano zbyt duzo, mozesz otrzymac zwrot, a jesli pobrano zbyt malo, moze byc konieczna doplata roznicy.\n\nWarto powtorzyc, ze stawki regionalne roznia sie w poszczegolnych wspolnotach autonomicznych Hiszpanii. Dwie osoby zarabiajace identyczne wynagrodzenia moga otrzymac rozne kwoty netto tylko dlatego, ze mieszkaja w roznych regionach, a niektore regiony oferuja rowniez wlasne ulgi i korekty. Nasz kalkulator zaklada pojedynczego podatnika korzystajacego z reprezentatywnej skali laczonej, wiec nie moze odzwierciedlic kazdej regionalnej zasady, sytuacji rodzinnej czy szczegolnej ulgi, ktora moze Cie dotyczyc. Z wszystkich tych powodow liczby, ktore generuje nasz kalkulator, sa szacunkami na rok podatkowy 2026, a nie dokladnymi wartosciami. Stawki podatkowe, podstawy wymiaru skladek oraz minimum osobiste moga zmieniac sie z roku na rok, a Twoj rzeczywisty wynik zalezy od Twojego regionu i sytuacji osobistej. Potraktuj te wyniki jako pomocny punkt wyjscia do planowania i skonsultuj sie z wykwalifikowanym doradca podatkowym lub oficjalnym urzedem skarbowym w sprawie wskazowek dostosowanych do Twojej sytuacji.",
+    "faqs": [
+      {
+        "question": "Jak oszacowac moje wynagrodzenie netto w Hiszpanii na 2026 rok?",
+        "answer": "Wprowadz swoje wynagrodzenie roczne brutto, a kalkulator oszacuje Twoja wyplate netto, najpierw odejmujac skladki na ubezpieczenie spoleczne (Seguridad Social), a nastepnie stosujac reprezentatywna skale podatku dochodowego IRPF oraz minimum osobiste. Wynik jest szacunkiem na rok podatkowy 2026."
+      },
+      {
+        "question": "Czym jest IRPF i ile zaplace?",
+        "answer": "IRPF to hiszpanski podatek dochodowy od osob fizycznych. Jest progresywny, wiec nasza reprezentatywna skala siega od 19 percent dla dochodu do 12,450 euros do 47 percent powyzej 300,000 euros. Kazda stawka ma zastosowanie wylacznie do dochodu w swoim przedziale, wiec Twoja efektywna stawka jest zazwyczaj nizsza niz najwyzszy przedzial. Wszystkie wyniki sa szacunkami."
+      },
+      {
+        "question": "Ile wynosza skladki pracownika na ubezpieczenie spoleczne?",
+        "answer": "Skladki pracownika wynosza lacznie okolo 6.48 percent Twojej podstawy wymiaru skladek i obejmuja ryzyka ogolne (4.7 percent), ubezpieczenie na wypadek bezrobocia (1.55 percent), szkolenie zawodowe (0.1 percent) oraz skladke solidarnosciowa MEI (0.13 percent). Sa one potracane przed podatkiem dochodowym. To szacunek."
+      },
+      {
+        "question": "Czy istnieje limit skladek na ubezpieczenie spoleczne?",
+        "answer": "Tak. Skladki naliczane sa wylacznie do maksymalnej podstawy wymiaru skladek wynoszacej okolo 59,059 euros rocznie. Zarobki powyzej tego pulapu nie zwiekszaja Twoich skladek na ubezpieczenie spoleczne, choc nadal podlegaja podatkowi dochodowemu. Wartosci sa szacunkami."
+      },
+      {
+        "question": "Czym jest minimum osobiste?",
+        "answer": "Minimum osobiste to kwota dochodu, okolo 5,550 euros w naszym reprezentatywnym modelu, ktora jest ogolnie traktowana jako wolna od podatku. Zmniejsza ono podatek nalezny od Twojego najnizszego dochodu i pomaga obnizyc efektywna stawke od skromnych wynagrodzen. To szacunek."
+      },
+      {
+        "question": "Czy kalkulator moze pokazac wartosci godzinowe, miesieczne i roczne?",
+        "answer": "Kalkulator dziala na podstawie Twojego rocznego wynagrodzenia brutto, a oszacowany wynik netto mozesz podzielic, aby przyblizyc miesieczna lub godzinowa wyplate na reke. Te rozbicia sa szacunkami i nie uwzgledniaja zmiennej liczby godzin, premii ani dodatkowych wyplat powszechnych w Hiszpanii."
+      },
+      {
+        "question": "Dlaczego moja rzeczywista wyplata netto moze roznic sie od szacunku?",
+        "answer": "Hiszpanski IRPF jest dzielony miedzy panstwo a wspolnoty autonomiczne, wiec stawki roznia sie w zaleznosci od regionu. Nasz kalkulator stosuje reprezentatywna skale laczona dla pojedynczego podatnika i nie moze odzwierciedlic kazdej regionalnej zasady, sytuacji rodzinnej czy ulgi, wiec Twoja rzeczywista wyplata netto moze sie roznic."
+      },
+      {
+        "question": "Czy roznice regionalne naprawde zmieniaja moja wyplate na reke?",
+        "answer": "Tak. Poniewaz kazda wspolnota autonomiczna ustala czesc skali IRPF i moze oferowac wlasne ulgi, dwie osoby z tym samym wynagrodzeniem w roznych regionach moga otrzymac rozne kwoty netto. Nasz szacunek korzysta z jednej reprezentatywnej skali, a nie z konkretnego regionu."
+      },
+      {
+        "question": "Czym sa retenciones oraz declaracion de la Renta?",
+        "answer": "Retenciones to zaliczki, ktore Twoj pracodawca stosuje na poczet IRPF przez caly rok. Declaracion de la Renta to roczne zeznanie podatkowe, ktore porownuje to, co zostalo pobrane, z tym, co faktycznie jestes winien, co moze prowadzic do zwrotu lub doplaty."
+      },
+      {
+        "question": "Jak dokladny jest ten kalkulator?",
+        "answer": "To uproszczony szacunek dla pojedynczego podatnika korzystajacy z reprezentatywnej skali laczonej IRPF na rok podatkowy 2026. Rzeczywiste stawki regionalne, limity skladek oraz minimum osobiste zmieniaja sie w czasie, wiec potraktuj wynik jako szacunek do celow planowania i skonsultuj sie z wykwalifikowanym doradca podatkowym w sprawie Twojej konkretnej sytuacji."
+      }
+    ]
+  },
+  "IT": {
+    "displayName": "Włochy",
+    "title": "Kalkulator podatku od wynagrodzenia we Włoszech 2026 - Oblicz swój dochód netto",
+    "description": "Oszacuj swoje wynagrodzenie netto we Włoszech na 2026 rok. Darmowy kalkulator wykorzystujący progi IRPEF, składki INPS i lokalne podatki dodatkowe do oszacowania wynagrodzenia na rękę.",
+    "taxExplanation": "Włochy opodatkowują dochody pracowników będących rezydentami za pomocą krajowego podatku dochodowego od osób fizycznych zwanego IRPEF (Imposta sul Reddito delle Persone Fisiche), uzupełnionego o mniejsze lokalne podatki dodatkowe i obniżonego o składki na ubezpieczenie społeczne oraz zestaw ulg podatkowych. W przypadku większości pracowników podatek jest obliczany od rocznego wynagrodzenia brutto, przy czym najpierw odliczane są składki emerytalne, a następnie do pozostałej kwoty stosowane są progresywne stawki. Poniższe dane odzwierciedlają rok podatkowy 2026 i mają charakter ogólnych informacji edukacyjnych, które pomogą Ci z grubsza zrozumieć, jak Twoje wynagrodzenie brutto staje się wynagrodzeniem netto. Są to jedynie szacunki, a Twój rzeczywisty wynik będzie zależał od Twojej konkretnej sytuacji.\n\nIRPEF jest podatkiem progresywnym, co oznacza, że wyższe części dochodu są opodatkowane wyższymi stawkami, podczas gdy niższe części zachowują swoje niższe stawki. Na rok 2026 nasz kalkulator stosuje trzy progi: 23 procent od dochodu podlegającego opodatkowaniu do 28,000 EUR, 35 procent od części między 28,000 a 50,000 EUR oraz 43 procent od każdego dochodu powyżej 50,000 EUR. Opodatkowana jest tylko ta część dochodu, która mieści się w danym przedziale, według stawki tego przedziału, więc wejście w wyższy próg nie podnosi stawki od dochodu, który już zarobiłeś w niższych przedziałach.\n\nOprócz krajowego IRPEF Włochy dodają dwa lokalne podatki dodatkowe: regionalny podatek dodatkowy (addizionale regionale) ustalany przez każdy region oraz miejski podatek dodatkowy (addizionale comunale) ustalany przez każde miasto lub gminę. Różnią się one znacznie w zależności od miejsca zamieszkania, więc pracownik w jednej gminie może płacić inną łączną stawkę lokalną niż osoba o identycznym dochodzie w innym miejscu. Ponieważ nasz kalkulator nie może znać Twojego dokładnego adresu, przybliża te dwa podatki dodatkowe łącznie do około 2.5 procent dochodu podlegającego opodatkowaniu. Twoje rzeczywiste stawki lokalne mogą być wyższe lub niższe.\n\nWłoscy pracownicy korzystają również z ulg podatkowych zwanych detrazioni, które obniżają należny podatek i faktycznie tworzą strefę wolną od podatku dla osób o niższych dochodach. W praktyce oznacza to, że osoby poniżej określonego poziomu dochodu mogą być zobowiązane do zapłaty niewielkiego IRPEF lub nie płacić go wcale po zastosowaniu przysługujących im ulg. Wysokość detrazioni zależy od poziomu dochodu i czynników osobistych, więc różnią się one w zależności od pracownika. Nasz kalkulator przybliża tę korzyść za pomocą uproszczonej kwoty wolnej od podatku, zamiast modelować każdą ulgę indywidualnie, co utrzymuje przejrzystość szacunku, a jednocześnie odzwierciedla ogólną ulgę, jaką otrzymują osoby o niższych dochodach.\n\nZanim obliczony zostanie podatek dochodowy, pracownicy opłacają składki na ubezpieczenie społeczne do INPS, krajowego instytutu emerytalnego i opieki społecznej. Część obciążająca pracownika wynosi około 9.19 procent wynagrodzenia brutto i jest odliczana przed zastosowaniem IRPEF, więc obniża podstawę opodatkowania. Składki te obowiązują do pułapu składkowego wynoszącego około 120,607 EUR; dochód powyżej tego pułapu zasadniczo nie podlega dodatkowej składce emerytalnej. Ponieważ INPS jest odliczany w pierwszej kolejności, obniża zarówno Twoje wynagrodzenie na rękę, jak i kwotę dochodu, od której naliczane są IRPEF i lokalne podatki dodatkowe.\n\nWiększość włoskich pracowników nie płaci podatku bezpośrednio organom podatkowym w trakcie roku. Zamiast tego pracodawca działa jako płatnik zaliczek (sostituto d'imposta), odliczając IRPEF, lokalne podatki dodatkowe i składki INPS z każdej wypłaty i przekazując je w imieniu pracownika. Po zakończeniu roku wielu pracowników składa roczne zeznanie podatkowe, zazwyczaj Modello 730 lub formularz Redditi, aby uzgodnić to, co zostało potrącone, z tym, co jest faktycznie należne, ubiegać się o dodatkowe ulgi i otrzymać zwrot lub uregulować ewentualną niedopłatę.\n\nPamiętaj, że regionalne i miejskie podatki dodatkowe, detrazioni oraz indywidualne okoliczności wpływają na ostateczną kwotę, a nasze narzędzie jest uproszczonym szacunkiem stworzonym dla pojedynczego pracownika. Progi podatkowe, pułapy składkowe i stawki lokalne mogą zmieniać się z roku na rok, a wykorzystane tutaj dane na 2026 rok są przybliżeniami. W przypadku decyzji zależnych od dokładnych kwot lub aby zrozumieć, jak traktowana jest Twoja konkretna sytuacja, skonsultuj się z wykwalifikowanym doradcą podatkowym lub commercialista.",
+    "faqs": [
+      {
+        "question": "Jak działa kalkulator podatku od wynagrodzenia we Włoszech?",
+        "answer": "Pobiera Twoje wynagrodzenie brutto, odlicza szacunkową składkę pracownika INPS w wysokości około 9.19 procent, stosuje progi IRPEF na 2026 rok oraz przybliżony lokalny podatek dodatkowy, a także uwzględnia kwotę wolną od podatku, aby oszacować Twoje wynagrodzenie netto. Wszystkie wyniki są szacunkami."
+      },
+      {
+        "question": "Jakie są progi podatku dochodowego IRPEF we Włoszech na 2026 rok?",
+        "answer": "Na rok 2026 nasz kalkulator stosuje trzy progi: 23 procent od dochodu podlegającego opodatkowaniu do 28,000 EUR, 35 procent od 28,000 do 50,000 EUR oraz 43 procent powyżej 50,000 EUR. Każda stawka odnosi się wyłącznie do dochodu mieszczącego się w danym przedziale."
+      },
+      {
+        "question": "Czym są regionalne i miejskie podatki dodatkowe?",
+        "answer": "Oprócz IRPEF Włochy dodają regionalny podatek dodatkowy (addizionale regionale) oraz miejski podatek dodatkowy (addizionale comunale), które różnią się w zależności od lokalizacji. Ponieważ różnią się one w zależności od regionu i gminy, nasz kalkulator przybliża je łącznie do około 2.5 procent, więc Twój wynik lokalny może się różnić."
+      },
+      {
+        "question": "Czym jest INPS i ile wynosi odliczenie?",
+        "answer": "INPS to włoski krajowy instytut ubezpieczeń społecznych i emerytalnych. Składka pracownika wynosi około 9.19 procent wynagrodzenia brutto i jest odliczana przed podatkiem dochodowym, do pułapu składkowego wynoszącego około 120,607 EUR. Ten szacunek obniża zarówno Twoje wynagrodzenie na rękę, jak i podstawę opodatkowania."
+      },
+      {
+        "question": "Czym jest strefa wolna od podatku lub detrazioni?",
+        "answer": "Pracownicy otrzymują ulgi podatkowe zwane detrazioni, które tworzą faktyczną strefę wolną od podatku dla osób o niższych dochodach, co oznacza, że niektóre osoby płacą niewielki IRPEF lub nie płacą go wcale. Ulgi te różnią się w zależności od osoby, więc nasz kalkulator przybliża tę korzyść za pomocą uproszczonej kwoty wolnej od podatku."
+      },
+      {
+        "question": "Czy mogę oszacować wynagrodzenie netto godzinowe, miesięczne lub roczne?",
+        "answer": "Kalkulator opiera się na rocznej kwocie brutto, ale możesz przeliczyć ją na szacunek miesięczny lub godzinowy, dzieląc odpowiednio roczny wynik netto. Włoskie wynagrodzenia są często wypłacane w wielu ratach, więc traktuj wszelkie rozbicia jako przybliżony szacunek."
+      },
+      {
+        "question": "Jak dokładny jest kalkulator i jakie są jego ograniczenia?",
+        "answer": "Jest to uproszczony szacunek dla pojedynczego pracownika i nie uwzględnia każdej detrazione, sytuacji rodzinnej ani dokładnego lokalnego podatku dodatkowego. Stawki regionalne i miejskie różnią się w zależności od lokalizacji i indywidualnych okoliczności, więc Twoje rzeczywiste wynagrodzenie netto może być wyższe lub niższe niż pokazana kwota."
+      },
+      {
+        "question": "Czy muszę składać zeznanie podatkowe we Włoszech?",
+        "answer": "Wielu pracowników składa roczne zeznanie podatkowe, zazwyczaj Modello 730 lub formularz Redditi, aby uzgodnić potrącone kwoty, ubiegać się o ulgi oraz uregulować ewentualną niedopłatę lub otrzymać zwrot. Nasz kalkulator nie składa zeznań ani nie zastępuje tego procesu; dostarcza jedynie szacunek."
+      },
+      {
+        "question": "Kto faktycznie płaci moje podatki na rzecz państwa?",
+        "answer": "Twój pracodawca zwykle działa jako płatnik zaliczek (sostituto d'imposta), odliczając IRPEF, lokalne podatki dodatkowe oraz INPS z każdej wypłaty i przekazując je w Twoim imieniu. Roczne zeznanie podatkowe uzgadnia następnie to, co zostało potrącone, z tym, co jesteś winien."
+      },
+      {
+        "question": "Dlaczego moje rzeczywiste wynagrodzenie netto może różnić się od szacunku?",
+        "answer": "Lokalne stawki podatku dodatkowego, Twoje konkretne detrazioni, okoliczności osobiste i rodzinne oraz coroczne zmiany progów i pułapów wpływają na ostateczną kwotę. Dane na 2026 rok są tutaj przybliżeniami, więc w celu uzyskania dokładnych kwot skonsultuj się z wykwalifikowanym doradcą podatkowym."
+      }
+    ]
+  },
+  "SE": {
+    "displayName": "Szwecja",
+    "title": "Kalkulator podatku od wynagrodzenia w Szwecji 2026 - Oblicz swój dochód netto",
+    "description": "Oszacuj swoje wynagrodzenie netto w Szwecji na 2026 rok. Bezpłatny kalkulator pokazujący wynagrodzenie na rękę po podatku gminnym i państwowym od pensji brutto w koronach szwedzkich (SEK).",
+    "taxExplanation": "Szwedzki system podatku dochodowego opiera się przede wszystkim na opodatkowaniu lokalnym, co czyni go nieco innym niż w wielu innych krajach. Największą część podatku, jaki płaci większość pracowników, stanowi gminny podatek dochodowy, pobierany przez gminę (kommun) i region, w którym mieszkasz. Oprócz tego osobny państwowy podatek dochodowy dotyczy wyłącznie osób o wyższych dochodach. Ponieważ system opiera się na miejscu zamieszkania, a nie na jednej krajowej stawce, kwota podatku płaconego od tego samego wynagrodzenia może różnić się w zależności od gminy. Nasz kalkulator stosuje średnią stawkę gminną, aby dać Ci rozsądne oszacowanie Twojego dochodu netto, czyli wynagrodzenia na rękę, za rok podatkowy 2026.\n\nGminny podatek dochodowy jest głównym podatkiem dla zwykłych pracowników. Wynosi on średnio około 32 percent, choć dokładna wartość różni się w zależności od gminy. Podatek ten nie dotyczy całego wynagrodzenia brutto. Najpierw odejmowana jest kwota wolna od podatku znana jako grundavdrag, a opodatkowaniu podlega tylko dochód powyżej tej kwoty. Grundavdrag jest w rzeczywistości obliczany według skali ruchomej, ale nasz kalkulator stosuje jego uproszczoną wersję. W rezultacie efektywna stawka, jaką płacisz od całego wynagrodzenia, jest nieco niższa niż nominalny gminny procent, zwłaszcza przy niższych dochodach, gdzie kwota wolna ma większy proporcjonalny wpływ.\n\nPaństwowy podatek dochodowy to dodatkowa warstwa, która dotyczy tylko wyższych dochodów. Pobierany jest według jednolitej stawki 20 percent, ale wyłącznie od tej części Twojego dochodu podlegającego opodatkowaniu, która przekracza krajowy próg, wynoszący około 625,800 SEK na rok 2025. Jeśli Twój dochód jest poniżej tego progu, nie płacisz żadnego państwowego podatku dochodowego i obowiązuje wyłącznie podatek gminny. Jeśli zarabiasz powyżej, stawka 20 percent dotyczy jedynie kwoty ponad ten próg, a nie całego wynagrodzenia. Oznacza to, że większość pracowników w Szwecji jest opodatkowana wyłącznie na poziomie gminnym, a podatek państwowy staje się istotny przede wszystkim dla osób o ponadprzeciętnych zarobkach.\n\nPracownicy w Szwecji płacą również składkę na powszechną emeryturę, allman pensionsavgift, ustaloną na 7 percent dochodu z pracy. Na pierwszy rzut oka wygląda to jak znaczące potrącenie, ale w praktyce jest niemal w całości równoważone odpowiadającą jej obniżką podatku przyznawaną od tej samej kwoty. Ponieważ składka i odpowiadający jej kredyt podatkowy wzajemnie się znoszą dla większości osób, opłata emerytalna ma niewielki lub żaden wpływ netto na wynagrodzenie na rękę. Z tego powodu nasz kalkulator nie pokazuje jej jako osobnego potrącenia, ponieważ jej wykazanie zniekształciłoby obraz tego, co faktycznie zatrzymujesz.\n\nKwestią, która często zaskakuje osoby porównujące Szwecję z innymi krajami, jest traktowanie składek na ubezpieczenie społeczne. Szwecja ma wysokie obciążenia na ubezpieczenie społeczne, składki pracodawcy w wysokości około 31.42 percent, ale są one opłacane przez pracodawcę ponad Twoje wynagrodzenie brutto. Nie są potrącane z Twojej pensji i nie pomniejszają kwoty, która trafia na Twoje konto bankowe. Z tego powodu nasz kalkulator nie wykazuje żadnych pracowniczych składek społecznych w Twoich potrąceniach. Twoje wynagrodzenie brutto to uzgodniona kwota, a te koszty pracodawcy znajdują się poza nią, a nie są z niej potrącane.\n\nPrzez cały rok Twój pracodawca zajmuje się poborem podatku poprzez system zaliczek. Co miesiąc potrąca wstępny podatek, znany jako A-skatt, na podstawie tabel podatkowych i szacunku Twojego rocznego dochodu, i przekazuje go do szwedzkiego urzędu skarbowego, Skatteverket. Ponieważ jest to jedynie wstępny szacunek, po zakończeniu roku następuje roczne rozliczenie. Składasz lub potwierdzasz zeznanie podatkowe, a Skatteverket porównuje faktycznie należny podatek z tym, co zostało potrącone. Jeśli potrącono za dużo, otrzymujesz zwrot; jeśli za mało, dokonujesz dopłaty.\n\nWarto powtórzyć, że stawka gminna różni się w zależności od miejsca zamieszkania, a średnia, której używamy, nie będzie dokładnie odpowiadać Twojej gminie. W połączeniu z naszą uproszczoną kwotą wolną oznacza to, że liczby, które tu widzisz, są szacunkami, a nie dokładnymi wartościami. Mają one dać Ci jasny, realistyczny obraz Twojego dochodu netto, a nie precyzyjne zestawienie podatkowe. Stawki podatkowe, progi, kwoty wolne i przepisy zmieniają się z roku na rok, a indywidualne okoliczności, takie jak odliczenia, świadczenia i osobiste ulgi, mogą wpłynąć na Twój rzeczywisty wynik. Po poradę dostosowaną do Twojej sytuacji zwróć się do wykwalifikowanego doradcy podatkowego lub do Skatteverket.",
+    "faqs": [
+      {
+        "question": "Ile podatku zapłacę od mojego wynagrodzenia w Szwecji?",
+        "answer": "Większość pracowników płaci głównie gminny podatek dochodowy, który wynosi średnio około 32 percent, ale różni się w zależności od gminy, naliczany od dochodu po odliczeniu kwoty wolnej. Osoby o wyższych dochodach płacą dodatkowo 20 percent podatku państwowego powyżej progu. Nasz kalkulator daje Ci oszacowanie za rok podatkowy 2026."
+      },
+      {
+        "question": "Czym jest gminny podatek dochodowy w Szwecji?",
+        "answer": "To lokalny podatek pobierany przez Twoją gminę i region, będący głównym podatkiem dla większości pracowników. Wynosi średnio około 32 percent Twojego dochodu podlegającego opodatkowaniu po odliczeniu kwoty wolnej, choć dokładna stawka zależy od miejsca zamieszkania. Nasz kalkulator stosuje średnią stawkę, aby oszacować Twoje wynagrodzenie netto."
+      },
+      {
+        "question": "Kiedy płacę szwedzki państwowy podatek dochodowy?",
+        "answer": "Państwowy podatek dochodowy w wysokości 20 percent dotyczy wyłącznie tej części Twojego dochodu podlegającego opodatkowaniu, która przekracza krajowy próg, wynoszący około 625,800 SEK na rok 2025. Jeśli zarabiasz poniżej tego progu, nie płacisz żadnego podatku państwowego i do Twojego dochodu stosuje się wyłącznie podatek gminny."
+      },
+      {
+        "question": "Czym jest kwota wolna od podatku (grundavdrag)?",
+        "answer": "To kwota dochodu, która jest odliczana przed obliczeniem podatku gminnego, dzięki czemu nie jesteś opodatkowany od całego wynagrodzenia. Nasz kalkulator stosuje uproszczoną wersję tej kwoty wolnej, co jest jednym z powodów, dla których wyniki są szacunkami, a nie dokładnymi wartościami."
+      },
+      {
+        "question": "Dlaczego kalkulator nie pokazuje składki emerytalnej w wysokości 7 percent?",
+        "answer": "Pracownicy płacą opłatę na powszechną emeryturę w wysokości 7 percent (allman pensionsavgift), ale jest ona niemal dokładnie równoważona odpowiadającą jej obniżką podatku, więc jej wpływ netto na wynagrodzenie na rękę jest bliski zeru. Aby nie zniekształcać Twoich wyników, nasz kalkulator nie pokazuje jej jako osobnego potrącenia."
+      },
+      {
+        "question": "Dlaczego w moich wynikach nie ma pracowniczych składek na ubezpieczenie społeczne?",
+        "answer": "Wysokie szwedzkie składki na ubezpieczenie społeczne, około 31.42 percent, są składkami pracodawcy opłacanymi ponad Twoje wynagrodzenie brutto. Nie są potrącane z Twojej pensji, więc nie pomniejszają Twojej kwoty na rękę, a nasz kalkulator nie wykazuje żadnych pracowniczych składek społecznych."
+      },
+      {
+        "question": "Jak podatek jest pobierany z mojej pensji w trakcie roku?",
+        "answer": "Twój pracodawca potrąca wstępny podatek (A-skatt) co miesiąc i przekazuje go do Skatteverket. Ponieważ jest to jedynie szacunek, po zakończeniu roku następuje roczne rozliczenie, które może skutkować zwrotem lub dopłatą w zależności od tego, co było faktycznie należne."
+      },
+      {
+        "question": "Czy mogę oszacować moje wynagrodzenie netto godzinowe, miesięczne lub roczne?",
+        "answer": "Tak. Kalkulator wychodzi od Twojego wynagrodzenia brutto i szacuje Twój dochód netto, a Ty możesz go używać, aby zorientować się w wynagrodzeniu na rękę, niezależnie od tego, czy myślisz w ujęciu godzinowym, miesięcznym czy rocznym. Wszystkie liczby są szacunkami za rok podatkowy 2026 i powinny być traktowane jako wskazówka."
+      },
+      {
+        "question": "Jak dokładny jest ten kalkulator?",
+        "answer": "Podaje szacunki, a nie dokładne wartości. Ponieważ używamy średniej stawki gminnej i uproszczonej kwoty wolnej, Twój rzeczywisty wynik może różnić się od tego, co tu widzisz, zwłaszcza jeśli stawka w Twojej gminie jest wyższa lub niższa od średniej. Traktuj te liczby jako pomocne przybliżenie."
+      },
+      {
+        "question": "Dlaczego mój rzeczywisty podatek może różnić się od szacunku?",
+        "answer": "Twój rzeczywisty podatek zależy od stawki Twojej konkretnej gminy, Twoich dokładnych kwot wolnych oraz wszelkich osobistych odliczeń lub ulg, z których żadne nie są w pełni uwzględnione w uśrednionym szacunku. Stawki i progi również zmieniają się co roku, dlatego w sprawie Twojej sytuacji skonsultuj się z wykwalifikowanym doradcą podatkowym lub ze Skatteverket."
+      }
+    ]
+  },
+  "PT": {
+    "displayName": "Portugalia",
+    "title": "Kalkulator podatku od wynagrodzenia w Portugalii 2026 - Oblicz swój dochód netto",
+    "description": "Oszacuj swoje wynagrodzenie netto w Portugalii kontynentalnej na rok 2026. Bezpłatny kalkulator uwzględniający progi podatku dochodowego IRS oraz 11% składki na ubezpieczenie społeczne, aby pokazać Twoją pensję na rękę.",
+    "taxExplanation": "Portugalia opodatkowuje dochody swoich rezydentów za pomocą podatku dochodowego od osób fizycznych znanego jako IRS (Imposto sobre o Rendimento das Pessoas Singulares). W przypadku większości pracowników zatrudnionych w Portugalii kontynentalnej kwota, którą otrzymujesz co miesiąc na rękę, zależy od dwóch głównych obciążeń: samego IRS oraz składki na system ubezpieczeń społecznych. Razem zmniejszają one Twoje wynagrodzenie brutto do pensji netto, czyli pensji na rękę. Wartości pokazywane przez ten kalkulator są uproszczonymi szacunkami dla roku podatkowego 2026 i mają na celu pomóc Ci zrozumieć w przybliżeniu, jak rozkłada się Twoje wynagrodzenie, a nie służyć jako oficjalne rozliczenie.\n\nIRS w Portugalii kontynentalnej jest podatkiem progresywnym, co oznacza, że stawka rośnie stopniowo wraz ze wzrostem dochodu. Najniższy przedział jest opodatkowany stawką 13 procent, a stawki rosną przez kilka progów aż do najwyższej stawki wynoszącej 48 procent, która obowiązuje dla dochodów powyżej około 83,696 EUR. Częstym nieporozumieniem jest przekonanie, że przejście do wyższego progu powoduje opodatkowanie całego dochodu tą wyższą stawką. W praktyce tylko ta część Twojego dochodu, która mieści się w danym przedziale, jest opodatkowana stawką tego przedziału, więc wyższe stawki dotyczą jedynie części zarobków powyżej każdego progu, a nie całej Twojej pensji.\n\nZanim zostaną zastosowane progi, Twój dochód z pracy jest pomniejszany o standardowe odliczenie specyficzne wynoszące około 4,104 EUR. Jest to automatyczna ulga, która obniża kwotę dochodu podlegającego opodatkowaniu. Jeśli składki na ubezpieczenie społeczne faktycznie zapłacone w ciągu roku są wyższe niż ta standardowa kwota, zamiast niej stosowana jest ta wyższa wartość, więc odliczenie odzwierciedla to, co jest korzystniejsze w tym porównaniu. Jest to jeden z głównych mechanizmów, który zmniejsza Twoją podstawę opodatkowania, zanim zaczną obowiązywać stawki progresywne.\n\nNiezależnie od IRS, pracownicy odprowadzają składki na Seguranca Social, portugalski system ubezpieczeń społecznych. Dla pracowników ta składka wynosi stałe 11 procent zarobków brutto i w przeciwieństwie do niektórych innych krajów nie ma górnego limitu, więc te 11 procent obowiązuje od całej pensji niezależnie od tego, jak wysoka jest. Składka ta finansuje świadczenia takie jak emerytury, zasiłki chorobowe oraz wsparcie dla bezrobotnych i jest potrącana dodatkowo, oprócz IRS pobieranego z Twojego wynagrodzenia.\n\nW praktyce większość należnego podatku jest pobierana stopniowo w ciągu roku, a nie jednorazowo. Pracodawcy stosują system poboru zaliczek znany jako retencao na fonte, potrącając szacunkową kwotę IRS z każdej miesięcznej wypłaty i przekazując ją w Twoim imieniu organowi podatkowemu. Ponieważ jest to jedynie szacunek oparty na tabelach, miesięczna zaliczka może nie odpowiadać dokładnie Twojemu ostatecznemu zobowiązaniu. Każdego roku pracownicy składają następnie roczne zeznanie IRS, które rozlicza podatek faktycznie należny względem tego, co zostało pobrane, co może skutkować albo zwrotem, albo dopłatą.\n\nNależy zaznaczyć, że ten kalkulator szacuje podatek wyłącznie dla Portugalii kontynentalnej. Autonomiczne regiony Azorów i Madery stosują własne, ogólnie niższe, regionalne stawki IRS, które nie są odzwierciedlone w naszych wartościach dla części kontynentalnej. Jeśli mieszkasz lub pracujesz w jednym z tych regionów, Twój rzeczywisty IRS może być niższy niż pokazany tutaj szacunek, dlatego wartości dla części kontynentalnej należy traktować jako ogólny przewodnik, a nie precyzyjną wartość dla tych obszarów.\n\nTo narzędzie zostało stworzone jako uproszczony szacunek dla pojedynczego podatnika z części kontynentalnej. Nie uwzględnia ono wielu osobistych okoliczności, które mogą zmienić rzeczywistą kwotę podatku, takich jak sytuacja rodzinna, osoby na utrzymaniu, dodatkowe odliczenia szczegółowe, inne źródła dochodu czy szczególne regionalne i specjalne reżimy. Stawki podatkowe, progi, odliczenia oraz zasady dotyczące składek w Portugalii mogą się zmieniać z roku na rok, a wartości użyte tutaj są szacunkami dla roku podatkowego 2026. Niniejsza treść ma charakter wyłącznie informacyjny i edukacyjny i nie stanowi porady podatkowej, prawnej ani księgowej. W przypadku decyzji dotyczących Twojej własnej sytuacji lub w celu uzyskania dokładnego obliczenia skonsultuj się z wykwalifikowanym specjalistą lub z oficjalnym portugalskim organem podatkowym.",
+    "faqs": [
+      {
+        "question": "Ile podatku zapłacę od mojego wynagrodzenia w Portugalii?",
+        "answer": "Zależy to od tego, ile zarabiasz, ponieważ IRS jest progresywny: stawki zaczynają się od 13 procent w najniższym przedziale i rosną stopniowo do 48 procent dla dochodów powyżej około 83,696 EUR. Oprócz IRS pracownicy odprowadzają 11 procent na ubezpieczenie społeczne. Ten kalkulator łączy oba te obciążenia, aby podać Ci szacunkowe wynagrodzenie netto dla Portugalii kontynentalnej."
+      },
+      {
+        "question": "Czym jest IRS w Portugalii?",
+        "answer": "IRS (Imposto sobre o Rendimento das Pessoas Singulares) to portugalski podatek dochodowy od osób fizycznych. Stosuje się go progresywnie w kilku przedziałach, więc tylko ta część Twojego dochodu, która mieści się w danym przedziale, jest opodatkowana stawką tego przedziału, od 13 procent w najniższym przedziale do 48 procent w najwyższym."
+      },
+      {
+        "question": "Ile wynosi ubezpieczenie społeczne dla pracowników w Portugalii?",
+        "answer": "Pracownicy odprowadzają stałe 11 procent swoich zarobków brutto na Seguranca Social, system ubezpieczeń społecznych. Nie ma górnego limitu, więc te 11 procent obowiązuje od całej Twojej pensji. Jest to potrącane dodatkowo, oprócz wszelkiego IRS pobieranego z Twojego wynagrodzenia."
+      },
+      {
+        "question": "Czym jest odliczenie specyficzne od dochodu z pracy?",
+        "answer": "Dochód z pracy korzysta ze standardowego odliczenia specyficznego wynoszącego około 4,104 EUR, które obniża dochód podlegający IRS. Jeśli składki na ubezpieczenie społeczne faktycznie zapłacone w ciągu roku są wyższe niż ta kwota, zamiast niej stosowana jest ta wyższa wartość, w zależności od tego, co jest korzystniejsze."
+      },
+      {
+        "question": "Czy mogę oszacować moje wynagrodzenie netto godzinowe, miesięczne lub roczne?",
+        "answer": "Tak. Kalkulator wychodzi od Twojego wynagrodzenia brutto, aby oszacować pensję na rękę, i możesz go użyć, aby uzyskać przybliżone pojęcie o miesięcznym lub rocznym dochodzie netto. Pamiętaj, że są to szacunki; pracodawcy pobierają podatek co miesiąc poprzez retencao na fonte, a dokładna wartość miesięczna może różnić się od prostego podziału kwoty rocznej."
+      },
+      {
+        "question": "Jak dokładny jest ten kalkulator?",
+        "answer": "Jest to uproszczony szacunek dla pojedynczego podatnika z części kontynentalnej i ma służyć jako ogólny przewodnik, a nie oficjalne rozliczenie. Nie uwzględnia każdego osobistego czynnika, takiego jak osoby na utrzymaniu, sytuacja rodzinna, dodatkowe odliczenia czy inne dochody, więc Twój rzeczywisty wynik może się różnić. W celu uzyskania dokładnej wartości skonsultuj się ze specjalistą lub z organem podatkowym."
+      },
+      {
+        "question": "Czy Azory i Madera mają inne stawki podatkowe?",
+        "answer": "Tak. Autonomiczne regiony Azorów i Madery stosują własne, ogólnie niższe, regionalne stawki IRS. Ten kalkulator szacuje podatek wyłącznie dla Portugalii kontynentalnej i nie uwzględnia tych regionalnych stawek, więc rzeczywisty IRS w tych regionach może być niższy niż pokazano tutaj."
+      },
+      {
+        "question": "Dlaczego podatek jest pobierany z mojej wypłaty co miesiąc?",
+        "answer": "Portugalia stosuje system poboru zaliczek zwany retencao na fonte, w którym Twój pracodawca potrąca szacunkową kwotę IRS z każdej miesięcznej wypłaty i przekazuje ją organowi podatkowemu. Ponieważ opiera się to na tabelach szacunkowych, może nie odpowiadać dokładnie Twojemu ostatecznemu zobowiązaniu za rok."
+      },
+      {
+        "question": "Czy nadal muszę składać roczne zeznanie podatkowe?",
+        "answer": "Tak. Mimo że podatek jest pobierany co miesiąc, pracownicy składają roczne zeznanie IRS, które rozlicza podatek faktycznie należny względem tego, co zostało pobrane w ciągu roku. Może to skutkować zwrotem, jeśli pobrano za dużo, albo dopłatą, jeśli pobrano za mało."
+      },
+      {
+        "question": "Czy te wartości są ostateczne, czy tylko szacunkowe?",
+        "answer": "Są to szacunki dla roku podatkowego 2026. Stawki podatkowe, progi i zasady w Portugalii mogą się zmieniać z roku na rok, a to narzędzie jest uproszczonym szacunkiem dla części kontynentalnej, służącym wyłącznie celom edukacyjnym. Zawsze potwierdzaj swoją konkretną sytuację u wykwalifikowanego specjalisty lub w oficjalnym organie podatkowym."
+      }
+    ]
+  },
+  "hub": {
+    "faqs": [
+      {
+        "question": "Jak dokładne są te obliczenia podatku od wynagrodzenia?",
+        "answer": "Nasze kalkulatory korzystają z oficjalnych progów i stawek podatkowych na rok podatkowy 2026. Są to jednak szacunki, które mogą nie uwzględniać wszystkich odliczeń, ulg czy podatków lokalnych. W przypadku USA podatki stanowe i lokalne nie są uwzględniane. Zawsze konsultuj się z doradcą podatkowym w sprawie porad dotyczących Twojej konkretnej sytuacji."
+      },
+      {
+        "question": "Jaka jest różnica między dochodem brutto a netto?",
+        "answer": "Dochód brutto to Twoje całkowite zarobki przed potrąceniem jakichkolwiek podatków lub składek. Dochód netto (wynagrodzenie na rękę) to kwota, która pozostaje po odjęciu od dochodu brutto podatku dochodowego, składek na ubezpieczenia społeczne oraz innych obowiązkowych potrąceń."
+      },
+      {
+        "question": "Czy te kalkulatory uwzględniają podatki stanowe lub lokalne?",
+        "answer": "W przypadku Stanów Zjednoczonych nasz kalkulator uwzględnia wyłącznie podatki federalne. Stanowe i lokalne podatki dochodowe znacznie różnią się w zależności od lokalizacji i nie są uwzględniane. W przypadku Niemiec i Wielkiej Brytanii obliczenia obejmują krajowe systemy podatkowe, jednak mogą obowiązywać lokalne różnice."
+      },
+      {
+        "question": "Czy mogę użyć tego dla dochodu z samozatrudnienia?",
+        "answer": "Te kalkulatory są przeznaczone dla dochodu pracowniczego ze standardowymi potrąceniami z listy płac. Osoby samozatrudnione mają zazwyczaj inne obowiązki podatkowe, w tym podatek od samozatrudnienia w USA, i mogą być zobowiązane do dokonywania zaliczek na podatek. W przypadku scenariuszy samozatrudnienia skonsultuj się z doradcą podatkowym."
+      },
+      {
+        "question": "Jak przeliczyć dochód godzinowy, miesięczny i roczny?",
+        "answer": "Skorzystaj z naszego Konwertera ze stawki godzinowej na wynagrodzenie, aby szybko dokonać przeliczeń. Wzory są następujące: Rocznie = Stawka godzinowa × Liczba godzin tygodniowo × Liczba tygodni w roku; Miesięcznie = Rocznie ÷ 12; Godzinowo = Rocznie ÷ (Liczba godzin tygodniowo × Liczba tygodni w roku). Standardowe założenia to 40 godzin tygodniowo i 52 tygodnie w roku."
+      },
+      {
+        "question": "Które kraje są obsługiwane?",
+        "answer": "Obecnie obsługujemy szacunki podatkowe dla Stanów Zjednoczonych (wyłącznie podatki federalne), Niemiec, Wielkiej Brytanii, Polski, Francji, Hiszpanii, Włoch, Szwecji i Portugalii. Każda strona kraju wyjaśnia system podatkowy oraz składki na ubezpieczenia społeczne danego kraju."
+      },
+      {
+        "question": "Czy obliczenia są zaktualizowane na rok 2026?",
+        "answer": "Tak, wszystkie kalkulatory korzystają z progów, stawek i kwot granicznych podatkowych na rok 2026. Systemy podatkowe są aktualizowane co roku, a my dokładamy starań, aby nasze dane były aktualne. Przepisy podatkowe mogą jednak ulegać zmianom w trakcie roku, dlatego w celu uzyskania najbardziej aktualnych informacji należy je zweryfikować w oficjalnych źródłach."
+      },
+      {
+        "question": "Jakie informacje są potrzebne, aby skorzystać z kalkulatora?",
+        "answer": "Potrzebujesz swojego dochodu brutto (godzinowego, miesięcznego lub rocznego), kraju oraz roku podatkowego. W przypadku obliczeń godzinowych będziesz również potrzebować liczby godzin tygodniowo oraz liczby tygodni w roku. Kalkulator oszacuje następnie Twój dochód netto po podatkach i potrąceniach."
+      }
+    ]
+  }
+}
