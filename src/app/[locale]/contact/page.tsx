@@ -1,22 +1,33 @@
-import { siteConfig } from '@/config/site';
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
+import { siteConfig } from '@/config/site';
+import { getContact } from '@/lib/content';
 
-export const metadata: Metadata = {
-  title: 'Contact Us',
-  description:
-    'Get in touch with the IncomeTally team. Questions about our calculators, privacy, or feedback are welcome.',
-  alternates: { canonical: '/contact' },
-  openGraph: {
-    title: 'Contact IncomeTally',
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const contactPage = getContact(locale);
+  return {
+    title: contactPage.title,
     description:
       'Get in touch with the IncomeTally team. Questions about our calculators, privacy, or feedback are welcome.',
-    url: '/contact',
-    type: 'website',
-  },
-};
+    alternates: { canonical: '/contact' },
+    openGraph: {
+      title: contactPage.title,
+      description:
+        'Get in touch with the IncomeTally team. Questions about our calculators, privacy, or feedback are welcome.',
+      url: '/contact',
+      type: 'website',
+    },
+  };
+}
 
-export default function Contact() {
-  const { contactPage, contact } = siteConfig;
+export default async function Contact({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
+  const contactPage = getContact(locale);
+  const { contact } = siteConfig;
 
   return (
     <div className="bg-[#F5F5F0] min-h-screen pt-16">
@@ -54,10 +65,10 @@ export default function Contact() {
                   {contactPage.howToContact.email.label}
                 </span>
                 <a
-                  href={`mailto:${contactPage.howToContact.email.value}`}
+                  href={`mailto:${contact.email}`}
                   className="text-[#0066FF] hover:opacity-70 hover:underline"
                 >
-                  {contactPage.howToContact.email.value}
+                  {contact.email}
                 </a>
               </div>
               <p className="text-black text-sm mt-2 opacity-70">

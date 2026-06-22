@@ -1,23 +1,37 @@
-import { termsOfServiceConfig } from '@/config/terms';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTerms } from '@/lib/content';
 
-export const metadata: Metadata = {
-  title: 'Terms of Service',
-  description:
-    "The terms and conditions for using IncomeTally's income, salary, and tax calculators.",
-  alternates: { canonical: '/terms' },
-  openGraph: {
-    title: 'Terms of Service',
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { title } = getTerms(locale);
+  return {
+    title,
     description:
       "The terms and conditions for using IncomeTally's income, salary, and tax calculators.",
-    url: '/terms',
-    type: 'website',
-  },
-};
+    alternates: { canonical: '/terms' },
+    openGraph: {
+      title,
+      description:
+        "The terms and conditions for using IncomeTally's income, salary, and tax calculators.",
+      url: '/terms',
+      type: 'website',
+    },
+  };
+}
 
-export default function TermsOfService() {
-  const { title, lastUpdated, intro, sections } = termsOfServiceConfig;
+export default async function TermsOfService({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  setRequestLocale(locale);
+  const t = await getTranslations('common');
+  const { title, lastUpdated, intro, sections } = getTerms(locale);
 
   return (
     <div className="bg-[#F5F5F0] min-h-screen pt-16">
@@ -34,14 +48,16 @@ export default function TermsOfService() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          Back to Home
+          {t('backToHome')}
         </Link>
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">
             {title}
           </h1>
-          <div className="text-black text-base opacity-70">Last updated: {lastUpdated}</div>
+          <div className="text-black text-base opacity-70">
+            {t('lastUpdated')} {lastUpdated}
+          </div>
         </header>
 
         {intro && (

@@ -1,4 +1,8 @@
 {
+  "common": {
+    "lastUpdated": "Last updated:",
+    "backToHome": "Back to Home"
+  },
   "nav": {
     "salaryCalculator": "Salary Calculator",
     "getStarted": "Get Started",

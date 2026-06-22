@@ -1,25 +1,35 @@
-import { siteConfig } from '@/config/site';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import FAQAccordion from '@/components/FAQAccordion';
 import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAbout } from '@/lib/content';
 
-export const metadata: Metadata = {
-  title: 'About Us',
-  description:
-    'Learn about IncomeTally — an independent tool for calculating net salary, take-home pay, and country-specific tax estimates for informational purposes.',
-  alternates: { canonical: '/about-us' },
-  openGraph: {
-    title: 'About IncomeTally',
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const about = getAbout(locale);
+  return {
+    title: about.title,
     description:
-      'IncomeTally is an independent tool for calculating net salary, take-home pay, and country-specific tax estimates.',
-    url: '/about-us',
-    type: 'website',
-  },
-};
+      'Learn about IncomeTally — an independent tool for calculating net salary, take-home pay, and country-specific tax estimates for informational purposes.',
+    alternates: { canonical: '/about-us' },
+    openGraph: {
+      title: about.title,
+      description:
+        'IncomeTally is an independent tool for calculating net salary, take-home pay, and country-specific tax estimates.',
+      url: '/about-us',
+      type: 'website',
+    },
+  };
+}
 
-export default function AboutUs() {
-  const { aboutUs } = siteConfig;
+export default async function AboutUs({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
+  const t = await getTranslations('common');
+  const aboutUs = getAbout(locale);
 
   return (
     <div className="bg-[#F5F5F0] min-h-screen pt-16">
@@ -28,7 +38,9 @@ export default function AboutUs() {
           <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">
             {aboutUs.title}
           </h1>
-          <div className="text-black text-base opacity-70">Last updated: {aboutUs.lastUpdated}</div>
+          <div className="text-black text-base opacity-70">
+            {t('lastUpdated')} {aboutUs.lastUpdated}
+          </div>
         </header>
 
         <div className="prose prose-lg max-w-none prose-headings:text-black prose-p:text-black prose-p:opacity-80 prose-a:text-[#0066FF] prose-a:no-underline hover:prose-a:underline prose-strong:text-black prose-code:text-[#0066FF] prose-code:bg-[#F5F5F0] prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-black prose-pre:text-white mb-12">

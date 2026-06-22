@@ -1,23 +1,37 @@
-import { privacyPolicyConfig } from '@/config/privacy';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getPrivacy } from '@/lib/content';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description:
-    'How IncomeTally collects, uses, and protects your information, including cookies and Google AdSense advertising.',
-  alternates: { canonical: '/privacy' },
-  openGraph: {
-    title: 'Privacy Policy',
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { title } = getPrivacy(locale);
+  return {
+    title,
     description:
       'How IncomeTally collects, uses, and protects your information, including cookies and Google AdSense advertising.',
-    url: '/privacy',
-    type: 'website',
-  },
-};
+    alternates: { canonical: '/privacy' },
+    openGraph: {
+      title,
+      description:
+        'How IncomeTally collects, uses, and protects your information, including cookies and Google AdSense advertising.',
+      url: '/privacy',
+      type: 'website',
+    },
+  };
+}
 
-export default function PrivacyPolicy() {
-  const { title, lastUpdated, intro, sections } = privacyPolicyConfig;
+export default async function PrivacyPolicy({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  setRequestLocale(locale);
+  const t = await getTranslations('common');
+  const { title, lastUpdated, intro, sections } = getPrivacy(locale);
 
   return (
     <div className="bg-[#F5F5F0] min-h-screen pt-16">
@@ -34,14 +48,16 @@ export default function PrivacyPolicy() {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          Back to Home
+          {t('backToHome')}
         </Link>
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-normal text-black mb-4 tracking-[-0.02em]">
             {title}
           </h1>
-          <div className="text-black text-base opacity-70">Last updated: {lastUpdated}</div>
+          <div className="text-black text-base opacity-70">
+            {t('lastUpdated')} {lastUpdated}
+          </div>
         </header>
 
         {intro && (
