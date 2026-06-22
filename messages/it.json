@@ -142,5 +142,9 @@
         "answer": "I nostri dati provengono dalle autorità fiscali e previdenziali ufficiali di ciascun paese, come l'IRS e la SSA, l'HMRC e il Bundesfinanzministerium tedesco, e la pagina di ciascun paese rimanda alle fonti specifiche utilizzate. IncomeTally è solo uno strumento informativo: non fornisce consulenza finanziaria, fiscale o legale e non è affiliato ad alcun governo o autorità fiscale. Per le decisioni relative alle tue tasse o alle tue finanze, consulta un professionista qualificato."
       }
     ]
+  },
+  "common": {
+    "lastUpdated": "Ultimo aggiornamento:",
+    "backToHome": "Torna alla home"
   }
 }

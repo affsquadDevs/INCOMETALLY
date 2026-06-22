@@ -141,5 +141,9 @@
         "answer": "Våra siffror kommer från varje lands officiella skatte- och socialförsäkringsmyndigheter, såsom IRS och SSA, HMRC och tyska Bundesfinanzministerium, och varje lands sida länkar till de specifika källor vi använde. IncomeTally är endast ett informationsverktyg: det tillhandahåller inte ekonomisk, skattemässig eller juridisk rådgivning och är inte anslutet till någon myndighet eller skattemyndighet. För beslut om dina skatter eller din ekonomi, rådgör med en kvalificerad yrkesperson."
       }
     ]
+  },
+  "common": {
+    "lastUpdated": "Senast uppdaterad:",
+    "backToHome": "Tillbaka till startsidan"
   }
 }

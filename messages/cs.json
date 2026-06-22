@@ -142,5 +142,9 @@
         "answer": "Naše čísla pocházejí od oficiálních daňových orgánů a orgánů sociálního zabezpečení každé země, jako jsou IRS a SSA, HMRC a německé Bundesfinanzministerium, a každá stránka země odkazuje na konkrétní zdroje, které jsme použili. IncomeTally je pouze informační nástroj: neposkytuje finanční, daňové ani právní poradenství a není spojen s žádnou vládou ani daňovým úřadem. Pro rozhodnutí o svých daních nebo financích se obraťte na kvalifikovaného odborníka."
       }
     ]
+  },
+  "common": {
+    "lastUpdated": "Poslední aktualizace:",
+    "backToHome": "Zpět na domovskou stránku"
   }
 }

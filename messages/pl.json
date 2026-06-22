@@ -142,5 +142,9 @@
         "answer": "Nasze dane pochodzą od oficjalnych organów podatkowych i ubezpieczeń społecznych każdego kraju, takich jak IRS i SSA, HMRC oraz niemiecki Bundesfinanzministerium, a strona każdego kraju zawiera linki do konkretnych źródeł, których użyliśmy. IncomeTally jest wyłącznie narzędziem informacyjnym: nie świadczy doradztwa finansowego, podatkowego ani prawnego i nie jest powiązany z żadnym organem rządowym ani podatkowym. W sprawach dotyczących Twoich podatków lub finansów skonsultuj się z wykwalifikowanym specjalistą."
       }
     ]
+  },
+  "common": {
+    "lastUpdated": "Ostatnia aktualizacja:",
+    "backToHome": "Powrót do strony głównej"
   }
 }

@@ -140,5 +140,9 @@
         "answer": "Unsere Zahlen stammen von den offiziellen Steuer- und Sozialversicherungsbehörden jedes Landes, etwa dem IRS und der SSA, HMRC sowie dem deutschen Bundesfinanzministerium, und jede Länderseite verlinkt die spezifischen Quellen, die wir verwendet haben. IncomeTally ist ausschließlich ein Informationstool: Es bietet keine finanzielle, steuerliche oder rechtliche Beratung und ist mit keiner Regierung oder Steuerbehörde verbunden. Für Entscheidungen über Ihre Steuern oder Finanzen wenden Sie sich an eine qualifizierte Fachkraft."
       }
     ]
+  },
+  "common": {
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "backToHome": "Zurück zur Startseite"
   }
 }

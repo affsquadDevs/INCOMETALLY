@@ -141,5 +141,9 @@
       "disclaimerLabel": "Estimaciones, no asesoramiento.",
       "disclaimer": "IncomeTally ofrece calculadoras de ingresos e impuestos con fines exclusivamente informativos y educativos. Los resultados son estimaciones y pueden no reflejar tus obligaciones fiscales reales ni tus resultados financieros. Este sitio web no está afiliado a ningún gobierno ni autoridad tributaria y no ofrece asesoramiento financiero, fiscal ni jurídico. Consulta siempre a un profesional cualificado para obtener orientación personalizada."
     }
+  },
+  "common": {
+    "lastUpdated": "Última actualización:",
+    "backToHome": "Volver al inicio"
   }
 }
