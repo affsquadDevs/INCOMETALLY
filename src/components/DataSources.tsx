@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { getCountrySources } from '@/data/sources';
 
 interface DataSourcesProps {
@@ -12,18 +13,16 @@ interface DataSourcesProps {
  * against — a transparency and E-E-A-T signal.
  */
 export default function DataSources({ countryCode, countryName }: DataSourcesProps) {
+  const t = useTranslations('calculator');
   const sources = getCountrySources(countryCode);
   if (sources.length === 0) return null;
 
   return (
     <section className="mb-12">
       <div className="bg-white rounded-lg border border-black border-opacity-10 p-6 lg:p-8">
-        <h2 className="text-2xl font-normal text-black mb-3">Data sources</h2>
+        <h2 className="text-2xl font-normal text-black mb-3">{t('dataSources.heading')}</h2>
         <p className="text-sm text-black opacity-80 leading-relaxed mb-4">
-          Our {countryName} estimates are based on publicly available figures from official
-          government and tax-authority sources. Rates and thresholds change each tax year, so we
-          review them periodically. These results are estimates, not official tax assessments or
-          advice.
+          {t('dataSources.intro', { country: countryName })}
         </p>
         <ul className="list-disc list-inside space-y-2 text-sm mb-4">
           {sources.map((source) => (
@@ -40,11 +39,11 @@ export default function DataSources({ countryCode, countryName }: DataSourcesPro
           ))}
         </ul>
         <p className="text-sm text-black opacity-70">
-          See our{' '}
+          {t('dataSources.editorialPrefix')}{' '}
           <Link href="/about-us" className="text-[#0066FF] hover:underline">
-            editorial standards
+            {t('dataSources.editorialLink')}
           </Link>{' '}
-          for how we research and update this data.
+          {t('dataSources.editorialSuffix')}
         </p>
       </div>
     </section>

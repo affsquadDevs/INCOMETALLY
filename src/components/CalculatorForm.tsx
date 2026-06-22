@@ -5,6 +5,9 @@
  * When JS is enabled, the SalaryCalculator component enhances this form.
  */
 
+'use client';
+
+import { useTranslations } from 'next-intl';
 import { calculateSalary } from '@/app/actions/calculate';
 
 interface CalculatorFormProps {
@@ -20,6 +23,7 @@ export default function CalculatorForm({
   initialMode = 'yearly',
   initialValue = 50000,
 }: CalculatorFormProps) {
+  const t = useTranslations('calculator');
   // Wrapper to satisfy TypeScript form action type
   const handleSubmit = async (formData: FormData) => {
     await calculateSalary(formData);
@@ -31,7 +35,7 @@ export default function CalculatorForm({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="nojs-mode" className="block text-sm font-medium text-black mb-2">
-              Income Mode
+              {t('form.incomeMode')}
             </label>
             <select
               id="nojs-mode"
@@ -40,15 +44,15 @@ export default function CalculatorForm({
               className="w-full px-4 py-2 border border-black border-opacity-20 rounded-sm bg-white text-black"
               required
             >
-              <option value="hourly">Hourly</option>
-              <option value="monthly">Monthly</option>
-              <option value="yearly">Yearly</option>
+              <option value="hourly">{t('mode.hourly')}</option>
+              <option value="monthly">{t('mode.monthly')}</option>
+              <option value="yearly">{t('mode.yearly')}</option>
             </select>
           </div>
 
           <div>
             <label htmlFor="nojs-value" className="block text-sm font-medium text-black mb-2">
-              Gross Income
+              {t('form.grossIncome')}
             </label>
             <input
               id="nojs-value"
@@ -64,7 +68,7 @@ export default function CalculatorForm({
 
           <div>
             <label htmlFor="nojs-country" className="block text-sm font-medium text-black mb-2">
-              Country
+              {t('form.country')}
             </label>
             <select
               id="nojs-country"
@@ -73,21 +77,21 @@ export default function CalculatorForm({
               className="w-full px-4 py-2 border border-black border-opacity-20 rounded-sm bg-white text-black"
               required
             >
-              <option value="US">United States</option>
-              <option value="DE">Germany</option>
-              <option value="UK">United Kingdom</option>
-              <option value="PL">Poland</option>
-              <option value="FR">France</option>
-              <option value="ES">Spain</option>
-              <option value="IT">Italy</option>
-              <option value="SE">Sweden</option>
-              <option value="PT">Portugal</option>
+              <option value="US">{t('country.US')}</option>
+              <option value="DE">{t('country.DE')}</option>
+              <option value="UK">{t('country.UK')}</option>
+              <option value="PL">{t('country.PL')}</option>
+              <option value="FR">{t('country.FR')}</option>
+              <option value="ES">{t('country.ES')}</option>
+              <option value="IT">{t('country.IT')}</option>
+              <option value="SE">{t('country.SE')}</option>
+              <option value="PT">{t('country.PT')}</option>
             </select>
           </div>
 
           <div>
             <label htmlFor="nojs-year" className="block text-sm font-medium text-black mb-2">
-              Tax Year
+              {t('form.taxYear')}
             </label>
             <select
               id="nojs-year"
@@ -102,7 +106,7 @@ export default function CalculatorForm({
 
           <div>
             <label htmlFor="nojs-hours" className="block text-sm font-medium text-black mb-2">
-              Hours per Week
+              {t('form.hoursPerWeek')}
             </label>
             <input
               id="nojs-hours"
@@ -117,7 +121,7 @@ export default function CalculatorForm({
 
           <div>
             <label htmlFor="nojs-weeks" className="block text-sm font-medium text-black mb-2">
-              Weeks per Year
+              {t('form.weeksPerYear')}
             </label>
             <input
               id="nojs-weeks"
@@ -135,7 +139,7 @@ export default function CalculatorForm({
           type="submit"
           className="px-6 py-3 bg-black text-white rounded-sm hover:bg-opacity-90 transition-all"
         >
-          Calculate Net Income
+          {t('form.calculateNetIncome')}
         </button>
       </form>
     </noscript>

@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { computeNet, annualizeIncome, deannualizeIncome } from '@/lib/tax/calc';
 import { computeNetGermany } from '@/lib/tax/germany';
@@ -47,6 +48,7 @@ import CalculatorForm from './CalculatorForm';
 import CustomSelect from './CustomSelect';
 import { TaxData } from '@/types/tax';
 import { parseQueryParams, serializeToQueryParams, type CalculatorState } from '@/lib/urlState';
+import { contribKey } from '@/lib/contribKey';
 
 interface SalaryCalculatorProps {
   initialCountryCode?: string;
@@ -72,6 +74,7 @@ export default function SalaryCalculator({
   initialValue = 50000,
   hideCountrySelect = false,
 }: SalaryCalculatorProps) {
+  const t = useTranslations('calculator');
   // Track if component has mounted to avoid SSR issues
   const [isMounted, setIsMounted] = useState(false);
   const calcStartedFired = useRef(false);
@@ -436,26 +439,29 @@ export default function SalaryCalculator({
 
     // Validate income for current mode
     if (annualGross < 0) {
-      errors.income = 'Income must be a positive number';
+      errors.income = t('validation.incomePositive');
     } else {
       const bounds = VALIDATION_BOUNDS[incomeMode];
       if (currentValue > bounds.max) {
-        errors.income = `Income cannot exceed ${bounds.max.toLocaleString()} (${incomeMode})`;
+        errors.income = t('validation.incomeMax', {
+          max: bounds.max.toLocaleString(),
+          mode: incomeMode,
+        });
       }
     }
 
     // Validate hours per week
     if (isNaN(hours) || hours < VALIDATION_BOUNDS.hoursPerWeek.min) {
-      errors.hoursPerWeek = `Hours must be at least ${VALIDATION_BOUNDS.hoursPerWeek.min}`;
+      errors.hoursPerWeek = t('validation.hoursMin', { min: VALIDATION_BOUNDS.hoursPerWeek.min });
     } else if (hours > VALIDATION_BOUNDS.hoursPerWeek.max) {
-      errors.hoursPerWeek = `Hours cannot exceed ${VALIDATION_BOUNDS.hoursPerWeek.max}`;
+      errors.hoursPerWeek = t('validation.hoursMax', { max: VALIDATION_BOUNDS.hoursPerWeek.max });
     }
 
     // Validate weeks per year
     if (isNaN(weeks) || weeks < VALIDATION_BOUNDS.weeksPerYear.min) {
-      errors.weeksPerYear = `Weeks must be at least ${VALIDATION_BOUNDS.weeksPerYear.min}`;
+      errors.weeksPerYear = t('validation.weeksMin', { min: VALIDATION_BOUNDS.weeksPerYear.min });
     } else if (weeks > VALIDATION_BOUNDS.weeksPerYear.max) {
-      errors.weeksPerYear = `Weeks cannot exceed ${VALIDATION_BOUNDS.weeksPerYear.max}`;
+      errors.weeksPerYear = t('validation.weeksMax', { max: VALIDATION_BOUNDS.weeksPerYear.max });
     }
 
     setValidationErrors(errors);
@@ -737,7 +743,7 @@ export default function SalaryCalculator({
         const button = document.getElementById('share-link-button');
         if (button) {
           const originalText = button.textContent;
-          button.textContent = 'Copied!';
+          button.textContent = t('actions.copied');
           setTimeout(() => {
             if (button) button.textContent = originalText;
           }, 2000);
@@ -745,7 +751,7 @@ export default function SalaryCalculator({
       })
       .catch(() => {
         // Fallback: show URL in alert
-        alert(`Share link: ${shareUrl}`);
+        alert(`${t('actions.shareLinkPrefix')} ${shareUrl}`);
       });
   }, [countryCode, year, incomeMode, annualGross, hoursPerWeek, weeksPerYear]);
 
@@ -760,13 +766,21 @@ export default function SalaryCalculator({
   const getModeLabel = (mode: IncomeMode) => {
     switch (mode) {
       case 'hourly':
-        return 'Hourly';
+        return t('mode.hourly');
       case 'monthly':
-        return 'Monthly';
+        return t('mode.monthly');
       case 'yearly':
-        return 'Yearly';
+        return t('mode.yearly');
     }
   };
+
+  // Per-period suffix used in monetary input labels (monthly/hourly/annual).
+  const getPeriodLabel = () =>
+    incomeMode === 'monthly'
+      ? t('period.monthly')
+      : incomeMode === 'hourly'
+        ? t('period.hourly')
+        : t('period.annual');
 
   const availableModes: IncomeMode[] =
     countryCode === 'DE'
@@ -805,7 +819,7 @@ export default function SalaryCalculator({
                   d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              Select Country
+              {t('countrySelect.label')}
             </label>
             <CustomSelect
               id="country-select"
@@ -816,32 +830,32 @@ export default function SalaryCalculator({
                 trackCountryChange(newCountry);
               }}
               options={[
-                { value: 'US', label: '🇺🇸 United States (Federal Only)' },
-                { value: 'DE', label: '🇩🇪 Germany' },
-                { value: 'UK', label: '🇬🇧 United Kingdom' },
-                { value: 'PL', label: '🇵🇱 Poland' },
-                { value: 'FR', label: '🇫🇷 France' },
-                { value: 'ES', label: '🇪🇸 Spain' },
-                { value: 'IT', label: '🇮🇹 Italy' },
-                { value: 'SE', label: '🇸🇪 Sweden' },
-                { value: 'PT', label: '🇵🇹 Portugal' },
+                { value: 'US', label: `🇺🇸 ${t('country.USFederalOnly')}` },
+                { value: 'DE', label: `🇩🇪 ${t('country.DE')}` },
+                { value: 'UK', label: `🇬🇧 ${t('country.UK')}` },
+                { value: 'PL', label: `🇵🇱 ${t('country.PL')}` },
+                { value: 'FR', label: `🇫🇷 ${t('country.FR')}` },
+                { value: 'ES', label: `🇪🇸 ${t('country.ES')}` },
+                { value: 'IT', label: `🇮🇹 ${t('country.IT')}` },
+                { value: 'SE', label: `🇸🇪 ${t('country.SE')}` },
+                { value: 'PT', label: `🇵🇹 ${t('country.PT')}` },
               ]}
               buttonClassName="text-base py-3 font-medium border-2 border-[#0066FF] border-opacity-40 bg-white hover:border-opacity-60 shadow-sm"
             />
-            <p className="mt-2 text-sm text-gray-600">
-              Choose your country to calculate taxes accordingly
-            </p>
+            <p className="mt-2 text-sm text-gray-600">{t('countrySelect.helper')}</p>
           </div>
         </div>
       )}
 
       {/* Mode Toggle - Germany: Monthly/Yearly; others: Hourly/Monthly/Yearly */}
       <div>
-        <label className="block text-sm font-medium text-black mb-3">Salary Period</label>
+        <label className="block text-sm font-medium text-black mb-3">
+          {t('form.salaryPeriod')}
+        </label>
         <div
           className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
           role="tablist"
-          aria-label="Salary period selection"
+          aria-label={t('form.salaryPeriodAria')}
         >
           {availableModes.map((mode) => (
             <button
@@ -874,7 +888,8 @@ export default function SalaryCalculator({
         {/* Gross Income Input */}
         <div>
           <label htmlFor="income-input" className="block text-sm font-medium text-black mb-2">
-            Gross Income ({taxTable?.metadata.currency ?? (countryCode === 'DE' ? 'EUR' : 'USD')})
+            {t('form.grossIncome')} (
+            {taxTable?.metadata.currency ?? (countryCode === 'DE' ? 'EUR' : 'USD')})
           </label>
           <input
             id="income-input"
@@ -916,7 +931,7 @@ export default function SalaryCalculator({
         {countryCode !== 'DE' && incomeMode === 'hourly' && (
           <div>
             <label htmlFor="hours-input" className="block text-sm font-medium text-black mb-2">
-              Hours per Week
+              {t('form.hoursPerWeek')}
             </label>
             <input
               id="hours-input"
@@ -954,7 +969,7 @@ export default function SalaryCalculator({
         {countryCode !== 'DE' && incomeMode === 'hourly' && (
           <div>
             <label htmlFor="weeks-input" className="block text-sm font-medium text-black mb-2">
-              Weeks per Year
+              {t('form.weeksPerYear')}
             </label>
             <input
               id="weeks-input"
@@ -996,21 +1011,21 @@ export default function SalaryCalculator({
             {/* Tax Class */}
             <CustomSelect
               id="germany-tax-class"
-              label="Tax Class"
+              label={t('de.taxClass')}
               value={germanyTaxClass}
               onChange={(value) =>
                 setGermanyTaxClass(value.toString() as '1' | '2' | '3' | '4' | '5' | '6')
               }
               options={germanyOptions.taxClasses.map((tc) => ({
                 value: tc.id,
-                label: tc.name,
+                label: t.has(`opt.deTaxClass.${tc.id}`) ? t(`opt.deTaxClass.${tc.id}`) : tc.name,
               }))}
             />
 
             {/* Health Insurance */}
             <CustomSelect
               id="germany-health-insurance"
-              label="Health Insurance"
+              label={t('de.healthInsurance')}
               value={germanyHealthInsurance}
               onChange={(value) =>
                 setGermanyHealthInsurance(
@@ -1019,7 +1034,9 @@ export default function SalaryCalculator({
               }
               options={germanyOptions.healthInsuranceTypes.map((hi) => ({
                 value: hi.id,
-                label: hi.name,
+                label: t.has(`opt.deHealthInsurance.${hi.id}`)
+                  ? t(`opt.deHealthInsurance.${hi.id}`)
+                  : hi.name,
               }))}
             />
 
@@ -1028,9 +1045,7 @@ export default function SalaryCalculator({
               germanyHealthInsurance === 'private-with') && (
               <div className="bg-blue-50 border border-blue-200 rounded-sm p-3">
                 <p className="text-sm text-gray-700">
-                  <strong>Note:</strong> Private health insurance is paid separately and is not
-                  deducted from your salary. The net income shown above does not include private
-                  insurance costs, which you pay directly to your insurance provider.
+                  <strong>{t('de.privateNoteLabel')}</strong> {t('de.privateNoteBody')}
                 </p>
               </div>
             )}
@@ -1038,7 +1053,7 @@ export default function SalaryCalculator({
             {/* State */}
             <CustomSelect
               id="germany-state"
-              label="Your State"
+              label={t('de.state')}
               value={germanyState}
               onChange={(value) => setGermanyState(value.toString())}
               options={germanyOptions.states.map((s) => ({
@@ -1049,11 +1064,13 @@ export default function SalaryCalculator({
 
             {/* In Church */}
             <div>
-              <label className="block text-sm font-medium text-black mb-3">In the Church?</label>
+              <label className="block text-sm font-medium text-black mb-3">
+                {t('de.inChurch')}
+              </label>
               <div
                 className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
                 role="radiogroup"
-                aria-label="Church membership selection"
+                aria-label={t('de.churchAria')}
               >
                 <button
                   type="button"
@@ -1066,7 +1083,7 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  Yes
+                  {t('yesNo.yes')}
                 </button>
                 <button
                   type="button"
@@ -1079,18 +1096,20 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  No
+                  {t('yesNo.no')}
                 </button>
               </div>
             </div>
 
             {/* Children (affects Pflegeversicherung childless surcharge) */}
             <div>
-              <label className="block text-sm font-medium text-black mb-3">Have children?</label>
+              <label className="block text-sm font-medium text-black mb-3">
+                {t('de.haveChildren')}
+              </label>
               <div
                 className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
                 role="radiogroup"
-                aria-label="Children selection"
+                aria-label={t('de.childrenAria')}
               >
                 <button
                   type="button"
@@ -1106,7 +1125,7 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   } ${germanyTaxClass === '2' ? 'opacity-60 cursor-not-allowed' : ''}`}
                 >
-                  Yes
+                  {t('yesNo.yes')}
                 </button>
                 <button
                   type="button"
@@ -1120,14 +1139,10 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   } ${germanyTaxClass === '2' ? 'opacity-60 cursor-not-allowed' : ''}`}
                 >
-                  No
+                  {t('yesNo.no')}
                 </button>
               </div>
-              <p className="mt-2 text-xs text-gray-600">
-                Used for long-term care insurance (Pflegeversicherung). For 2026 this means: with
-                children ~1.80% employee share (most states), without children ~2.40% (includes the
-                childless surcharge). Saxony uses a different split.
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('de.childrenNote')}</p>
             </div>
           </>
         )}
@@ -1137,44 +1152,43 @@ export default function SalaryCalculator({
           <>
             <CustomSelect
               id="us-filing-status"
-              label="Filing Status"
+              label={t('us.filingStatus')}
               value={usFilingStatus}
               onChange={(value) => setUsFilingStatus(value.toString() as USFilingStatus)}
-              options={usOptions.filingStatuses.map((s) => ({ value: s.id, label: s.name }))}
+              options={usOptions.filingStatuses.map((s) => ({
+                value: s.id,
+                label: t.has(`opt.usFilingStatus.${s.id}`)
+                  ? t(`opt.usFilingStatus.${s.id}`)
+                  : s.name,
+              }))}
             />
 
             <CustomSelect
               id="us-employment-type"
-              label="Employment Type"
+              label={t('us.employmentType')}
               value={usEmploymentType}
               onChange={(value) => setUsEmploymentType(value.toString() as USEmploymentType)}
               options={[
-                { value: 'employee', label: 'Employee (W-2)' },
-                { value: 'selfEmployed', label: 'Self-employed (SE tax estimate)' },
+                { value: 'employee', label: t('opt.usEmploymentType.employee') },
+                { value: 'selfEmployed', label: t('opt.usEmploymentType.selfEmployed') },
               ]}
             />
 
             <CustomSelect
               id="us-deduction-method"
-              label="Deduction Method"
+              label={t('us.deductionMethod')}
               value={usDeductionMethod}
               onChange={(value) => setUsDeductionMethod(value.toString() as USDeductionMethod)}
               options={[
-                { value: 'auto', label: 'Auto (max of standard vs itemized)' },
-                { value: 'standard', label: 'Standard deduction' },
-                { value: 'itemized', label: 'Itemized deductions' },
+                { value: 'auto', label: t('opt.usDeductionMethod.auto') },
+                { value: 'standard', label: t('opt.usDeductionMethod.standard') },
+                { value: 'itemized', label: t('opt.usDeductionMethod.itemized') },
               ]}
             />
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Itemized Deductions (
-                {incomeMode === 'monthly'
-                  ? 'monthly'
-                  : incomeMode === 'hourly'
-                    ? 'hourly'
-                    : 'annual'}
-                )
+                {t('us.itemizedDeductions')} ({getPeriodLabel()})
               </label>
               <input
                 type="number"
@@ -1188,7 +1202,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Children (under 17)
+                {t('us.childrenUnder17')}
               </label>
               <input
                 type="number"
@@ -1201,7 +1215,9 @@ export default function SalaryCalculator({
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-black mb-2">Other Dependents</label>
+              <label className="block text-sm font-medium text-black mb-2">
+                {t('us.otherDependents')}
+              </label>
               <input
                 type="number"
                 value={usOtherDependents}
@@ -1219,7 +1235,7 @@ export default function SalaryCalculator({
                   checked={usTaxpayerOver65}
                   onChange={(e) => setUsTaxpayerOver65(e.target.checked)}
                 />
-                Taxpayer 65+
+                {t('us.taxpayerOver65')}
               </label>
               <label className="flex items-center gap-2 text-sm text-black">
                 <input
@@ -1227,7 +1243,7 @@ export default function SalaryCalculator({
                   checked={usTaxpayerBlind}
                   onChange={(e) => setUsTaxpayerBlind(e.target.checked)}
                 />
-                Taxpayer blind
+                {t('us.taxpayerBlind')}
               </label>
               {(usFilingStatus === 'mfj' || usFilingStatus === 'mfs') && (
                 <>
@@ -1237,7 +1253,7 @@ export default function SalaryCalculator({
                       checked={usSpouseOver65}
                       onChange={(e) => setUsSpouseOver65(e.target.checked)}
                     />
-                    Spouse 65+
+                    {t('us.spouseOver65')}
                   </label>
                   <label className="flex items-center gap-2 text-sm text-black">
                     <input
@@ -1245,7 +1261,7 @@ export default function SalaryCalculator({
                       checked={usSpouseBlind}
                       onChange={(e) => setUsSpouseBlind(e.target.checked)}
                     />
-                    Spouse blind
+                    {t('us.spouseBlind')}
                   </label>
                 </>
               )}
@@ -1253,13 +1269,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Pre-tax 401(k) / retirement (
-                {incomeMode === 'monthly'
-                  ? 'monthly'
-                  : incomeMode === 'hourly'
-                    ? 'hourly'
-                    : 'annual'}
-                )
+                {t('us.preTax401k')} ({getPeriodLabel()})
               </label>
               <input
                 type="number"
@@ -1273,13 +1283,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Pre-tax HSA (
-                {incomeMode === 'monthly'
-                  ? 'monthly'
-                  : incomeMode === 'hourly'
-                    ? 'hourly'
-                    : 'annual'}
-                )
+                {t('us.preTaxHSA')} ({getPeriodLabel()})
               </label>
               <input
                 type="number"
@@ -1293,13 +1297,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Other pre-tax deductions (
-                {incomeMode === 'monthly'
-                  ? 'monthly'
-                  : incomeMode === 'hourly'
-                    ? 'hourly'
-                    : 'annual'}
-                )
+                {t('us.otherPreTax')} ({getPeriodLabel()})
               </label>
               <input
                 type="number"
@@ -1313,7 +1311,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                State tax rate (estimate, %)
+                {t('us.stateTaxRate')}
               </label>
               <input
                 type="number"
@@ -1328,7 +1326,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Local tax rate (estimate, %)
+                {t('us.localTaxRate')}
               </label>
               <input
                 type="number"
@@ -1348,28 +1346,22 @@ export default function SalaryCalculator({
           <>
             <CustomSelect
               id="uk-region"
-              label="Region"
+              label={t('uk.region')}
               value={ukRegion}
               onChange={(value) =>
                 setUkRegion(value.toString() as 'england' | 'wales' | 'scotland' | 'ni')
               }
               options={[
-                { value: 'england', label: 'England' },
-                { value: 'wales', label: 'Wales' },
-                { value: 'ni', label: 'Northern Ireland' },
-                { value: 'scotland', label: 'Scotland (not yet supported)' },
+                { value: 'england', label: t('opt.ukRegion.england') },
+                { value: 'wales', label: t('opt.ukRegion.wales') },
+                { value: 'ni', label: t('opt.ukRegion.ni') },
+                { value: 'scotland', label: t('opt.ukRegion.scotland') },
               ]}
             />
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Pre-tax Pension Contributions (
-                {incomeMode === 'monthly'
-                  ? 'monthly'
-                  : incomeMode === 'hourly'
-                    ? 'hourly'
-                    : 'annual'}
-                )
+                {t('uk.preTaxPension')} ({getPeriodLabel()})
               </label>
               <input
                 type="number"
@@ -1383,13 +1375,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Other Pre-tax Deductions (
-                {incomeMode === 'monthly'
-                  ? 'monthly'
-                  : incomeMode === 'hourly'
-                    ? 'hourly'
-                    : 'annual'}
-                )
+                {t('uk.preTaxOther')} ({getPeriodLabel()})
               </label>
               <input
                 type="number"
@@ -1403,49 +1389,60 @@ export default function SalaryCalculator({
 
             <CustomSelect
               id="uk-student-loan"
-              label="Student Loan Plan"
+              label={t('uk.studentLoanPlan')}
               value={ukStudentLoanPlan}
               onChange={(value) =>
                 setUkStudentLoanPlan(value.toString() as 'none' | 'plan2' | 'plan4' | 'plan5')
               }
               options={[
-                { value: 'none', label: 'None' },
+                { value: 'none', label: t('opt.ukStudentLoan.none') },
                 ...(ukOptions
                   ? [
                       {
                         value: 'plan2',
-                        label: `Plan 2 (9% over £${ukOptions.studentLoan.plan2.threshold.toLocaleString('en-GB')})`,
+                        label: t('opt.ukStudentLoan.plan2', {
+                          threshold: ukOptions.studentLoan.plan2.threshold.toLocaleString('en-GB'),
+                        }),
                       },
                       {
                         value: 'plan4',
-                        label: `Plan 4 (9% over £${ukOptions.studentLoan.plan4.threshold.toLocaleString('en-GB')})`,
+                        label: t('opt.ukStudentLoan.plan4', {
+                          threshold: ukOptions.studentLoan.plan4.threshold.toLocaleString('en-GB'),
+                        }),
                       },
                       {
                         value: 'plan5',
-                        label: `Plan 5 (9% over £${ukOptions.studentLoan.plan5.threshold.toLocaleString('en-GB')})`,
+                        label: t('opt.ukStudentLoan.plan5', {
+                          threshold: ukOptions.studentLoan.plan5.threshold.toLocaleString('en-GB'),
+                        }),
                       },
                     ]
                   : [
-                      { value: 'plan2', label: 'Plan 2 (9% over £27,295)' },
-                      { value: 'plan4', label: 'Plan 4 (9% over £25,000)' },
-                      { value: 'plan5', label: 'Plan 5 (9% over £25,000)' },
+                      {
+                        value: 'plan2',
+                        label: t('opt.ukStudentLoan.plan2', { threshold: '27,295' }),
+                      },
+                      {
+                        value: 'plan4',
+                        label: t('opt.ukStudentLoan.plan4', { threshold: '25,000' }),
+                      },
+                      {
+                        value: 'plan5',
+                        label: t('opt.ukStudentLoan.plan5', { threshold: '25,000' }),
+                      },
                     ]),
               ]}
             />
-            {ukOptions && (
-              <p className="text-xs text-gray-600 mt-1">
-                Note: Plan depends on where/when you studied, not where you work.
-              </p>
-            )}
+            {ukOptions && <p className="text-xs text-gray-600 mt-1">{t('uk.studentLoanNote')}</p>}
 
             <div>
               <label className="block text-sm font-medium text-black mb-3">
-                Marriage Allowance?
+                {t('uk.marriageAllowance')}
               </label>
               <div
                 className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
                 role="radiogroup"
-                aria-label="Marriage Allowance selection"
+                aria-label={t('uk.marriageAllowanceAria')}
               >
                 <button
                   type="button"
@@ -1458,7 +1455,7 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  Yes
+                  {t('yesNo.yes')}
                 </button>
                 <button
                   type="button"
@@ -1471,18 +1468,15 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  No
+                  {t('yesNo.no')}
                 </button>
               </div>
-              <p className="mt-2 text-xs text-gray-600">
-                For a basic-rate taxpayer whose spouse/civil partner is a non-taxpayer (relief up to
-                £252).
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('uk.marriageAllowanceNote')}</p>
             </div>
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Children (for Child Benefit charge)
+                {t('uk.children')}
               </label>
               <input
                 type="number"
@@ -1492,9 +1486,7 @@ export default function SalaryCalculator({
                 step="1"
                 className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
               />
-              <p className="mt-2 text-xs text-gray-600">
-                Used for the High Income Child Benefit Charge (applies on incomes over £60,000).
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('uk.childrenNote')}</p>
             </div>
           </>
         )}
@@ -1504,18 +1496,18 @@ export default function SalaryCalculator({
           <>
             <CustomSelect
               id="pl-filing-status"
-              label="Filing Status"
+              label={t('pl.filingStatus')}
               value={plFilingStatus}
               onChange={(value) => setPlFilingStatus(value.toString() as 'single' | 'joint')}
               options={[
-                { value: 'single', label: 'Single' },
-                { value: 'joint', label: 'Married — joint assessment (sole earner)' },
+                { value: 'single', label: t('opt.plFilingStatus.single') },
+                { value: 'joint', label: t('opt.plFilingStatus.joint') },
               ]}
             />
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Children (for child relief)
+                {t('pl.children')}
               </label>
               <input
                 type="number"
@@ -1529,13 +1521,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Tax-deductible contributions (e.g. IKZE,{' '}
-                {incomeMode === 'monthly'
-                  ? 'monthly'
-                  : incomeMode === 'hourly'
-                    ? 'hourly'
-                    : 'annual'}
-                )
+                {t('pl.preTax')} ({getPeriodLabel()})
               </label>
               <input
                 type="number"
@@ -1548,13 +1534,11 @@ export default function SalaryCalculator({
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-black mb-3">
-                Relief for the young (under 26)?
-              </label>
+              <label className="block text-sm font-medium text-black mb-3">{t('pl.under26')}</label>
               <div
                 className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
                 role="radiogroup"
-                aria-label="Under-26 relief selection"
+                aria-label={t('pl.under26Aria')}
               >
                 <button
                   type="button"
@@ -1567,7 +1551,7 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  Yes
+                  {t('yesNo.yes')}
                 </button>
                 <button
                   type="button"
@@ -1580,13 +1564,10 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  No
+                  {t('yesNo.no')}
                 </button>
               </div>
-              <p className="mt-2 text-xs text-gray-600">
-                Exempts employment income up to 85,528 PLN from income tax (ZUS and health still
-                apply).
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('pl.under26Note')}</p>
             </div>
           </>
         )}
@@ -1596,31 +1577,33 @@ export default function SalaryCalculator({
           <>
             <CustomSelect
               id="pt-region"
-              label="Region"
+              label={t('pt.region')}
               value={ptRegion}
               onChange={(value) =>
                 setPtRegion(value.toString() as 'mainland' | 'azores' | 'madeira')
               }
               options={[
-                { value: 'mainland', label: 'Mainland (Continente)' },
-                { value: 'azores', label: 'Azores (Açores)' },
-                { value: 'madeira', label: 'Madeira' },
+                { value: 'mainland', label: t('opt.ptRegion.mainland') },
+                { value: 'azores', label: t('opt.ptRegion.azores') },
+                { value: 'madeira', label: t('opt.ptRegion.madeira') },
               ]}
             />
 
             <CustomSelect
               id="pt-filing-status"
-              label="Filing Status"
+              label={t('pt.filingStatus')}
               value={ptFilingStatus}
               onChange={(value) => setPtFilingStatus(value.toString() as 'single' | 'joint')}
               options={[
-                { value: 'single', label: 'Single' },
-                { value: 'joint', label: 'Married — joint taxation (sole earner)' },
+                { value: 'single', label: t('opt.ptFilingStatus.single') },
+                { value: 'joint', label: t('opt.ptFilingStatus.joint') },
               ]}
             />
 
             <div>
-              <label className="block text-sm font-medium text-black mb-2">Dependants</label>
+              <label className="block text-sm font-medium text-black mb-2">
+                {t('pt.dependants')}
+              </label>
               <input
                 type="number"
                 value={ptDependants}
@@ -1638,7 +1621,7 @@ export default function SalaryCalculator({
           <>
             <CustomSelect
               id="se-municipality"
-              label="Municipality"
+              label={t('se.municipality')}
               value={seMunicipality}
               onChange={(value) => setSeMunicipality(value.toString())}
               options={seOptions.municipalities.map((m) => ({ value: m.id, label: m.name }))}
@@ -1647,7 +1630,7 @@ export default function SalaryCalculator({
             {seMunicipality === 'custom' && (
               <div>
                 <label className="block text-sm font-medium text-black mb-2">
-                  Municipal tax rate (%)
+                  {t('se.customRate')}
                 </label>
                 <input
                   type="number"
@@ -1663,12 +1646,12 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-3">
-                Member of the Church of Sweden?
+                {t('se.churchMember')}
               </label>
               <div
                 className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
                 role="radiogroup"
-                aria-label="Church membership selection"
+                aria-label={t('se.churchAria')}
               >
                 <button
                   type="button"
@@ -1681,7 +1664,7 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  Yes
+                  {t('yesNo.yes')}
                 </button>
                 <button
                   type="button"
@@ -1694,13 +1677,10 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  No
+                  {t('yesNo.no')}
                 </button>
               </div>
-              <p className="mt-2 text-xs text-gray-600">
-                Adds the church fee (kyrkoavgift). Income tax already reflects the basic allowance
-                and the jobbskatteavdrag credit (under 66).
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('se.churchNote')}</p>
             </div>
           </>
         )}
@@ -1710,7 +1690,7 @@ export default function SalaryCalculator({
           <>
             <CustomSelect
               id="it-region"
-              label="Region (regional surtax)"
+              label={t('it.region')}
               value={itRegion}
               onChange={(value) => setItRegion(value.toString())}
               options={itOptions.regions.map((r) => ({ value: r.id, label: r.name }))}
@@ -1719,7 +1699,7 @@ export default function SalaryCalculator({
             {itRegion === 'custom' && (
               <div>
                 <label className="block text-sm font-medium text-black mb-2">
-                  Regional surtax rate (%)
+                  {t('it.customRegionalRate')}
                 </label>
                 <input
                   type="number"
@@ -1735,7 +1715,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Municipal surtax rate (%)
+                {t('it.municipalRate')}
               </label>
               <input
                 type="number"
@@ -1750,7 +1730,7 @@ export default function SalaryCalculator({
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Dependent children (aged 21–29)
+                {t('it.dependentChildren')}
               </label>
               <input
                 type="number"
@@ -1760,20 +1740,17 @@ export default function SalaryCalculator({
                 step="1"
                 className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
               />
-              <p className="mt-2 text-xs text-gray-600">
-                Children under 21 are covered by the Assegno Unico (not payroll). Regional and
-                municipal surtaxes vary by location.
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('it.dependentChildrenNote')}</p>
             </div>
 
             <div>
               <label className="block text-sm font-medium text-black mb-3">
-                Dependent spouse (coniuge a carico)?
+                {t('it.dependentSpouse')}
               </label>
               <div
                 className="inline-flex rounded-lg border border-black border-opacity-20 bg-white p-1"
                 role="radiogroup"
-                aria-label="Dependent spouse selection"
+                aria-label={t('it.dependentSpouseAria')}
               >
                 <button
                   type="button"
@@ -1786,7 +1763,7 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  Yes
+                  {t('yesNo.yes')}
                 </button>
                 <button
                   type="button"
@@ -1799,13 +1776,10 @@ export default function SalaryCalculator({
                       : 'text-black hover:bg-black hover:bg-opacity-5'
                   }`}
                 >
-                  No
+                  {t('yesNo.no')}
                 </button>
               </div>
-              <p className="mt-2 text-xs text-gray-600">
-                A spouse with little or no income (coniuge a carico) gives a tax credit of up to
-                €800.
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('it.dependentSpouseNote')}</p>
             </div>
           </>
         )}
@@ -1815,7 +1789,7 @@ export default function SalaryCalculator({
           <>
             <CustomSelect
               id="es-community"
-              label="Autonomous community"
+              label={t('es.community')}
               value={esCommunity}
               onChange={(value) => setEsCommunity(value.toString())}
               options={esOptions.communities.map((c) => ({ value: c.id, label: c.name }))}
@@ -1823,18 +1797,18 @@ export default function SalaryCalculator({
 
             <CustomSelect
               id="es-filing-status"
-              label="Filing Status"
+              label={t('es.filingStatus')}
               value={esFilingStatus}
               onChange={(value) => setEsFilingStatus(value.toString() as 'single' | 'joint')}
               options={[
-                { value: 'single', label: 'Individual' },
-                { value: 'joint', label: 'Joint return (declaración conjunta)' },
+                { value: 'single', label: t('opt.esFilingStatus.single') },
+                { value: 'joint', label: t('opt.esFilingStatus.joint') },
               ]}
             />
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Children (dependent descendants)
+                {t('es.children')}
               </label>
               <input
                 type="number"
@@ -1844,10 +1818,7 @@ export default function SalaryCalculator({
                 step="1"
                 className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
               />
-              <p className="mt-2 text-xs text-gray-600">
-                Regional rates vary by community; País Vasco and Navarra use separate foral systems
-                not covered here.
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('es.childrenNote')}</p>
             </div>
           </>
         )}
@@ -1857,18 +1828,18 @@ export default function SalaryCalculator({
           <>
             <CustomSelect
               id="fr-filing-status"
-              label="Household"
+              label={t('fr.household')}
               value={frFilingStatus}
               onChange={(value) => setFrFilingStatus(value.toString() as 'single' | 'married')}
               options={[
-                { value: 'single', label: 'Single (1 part)' },
-                { value: 'married', label: 'Married / PACS — joint (2 parts)' },
+                { value: 'single', label: t('opt.frFilingStatus.single') },
+                { value: 'married', label: t('opt.frFilingStatus.married') },
               ]}
             />
 
             <div>
               <label className="block text-sm font-medium text-black mb-2">
-                Dependent children
+                {t('fr.children')}
               </label>
               <input
                 type="number"
@@ -1878,11 +1849,7 @@ export default function SalaryCalculator({
                 step="1"
                 className="w-full px-4 py-2 border rounded-sm bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:border-transparent border-black border-opacity-20"
               />
-              <p className="mt-2 text-xs text-gray-600">
-                Adds family-quotient parts (+0.5 for each of the first two children, +1 from the
-                third), with the benefit capped (plafonnement). Estimate for a single household/sole
-                earner.
-              </p>
+              <p className="mt-2 text-xs text-gray-600">{t('fr.childrenNote')}</p>
             </div>
           </>
         )}
@@ -1896,7 +1863,7 @@ export default function SalaryCalculator({
           onClick={copyShareLink}
           className="px-4 py-2 bg-white border border-black border-opacity-20 rounded-sm text-black hover:bg-black hover:bg-opacity-5 transition-all focus:outline-none focus:ring-2 focus:ring-[#0066FF]"
         >
-          Copy Share Link
+          {t('actions.copyShareLink')}
         </button>
       </div>
 
@@ -1910,7 +1877,7 @@ export default function SalaryCalculator({
       {/* Loading State */}
       {isLoading && (
         <div className="p-8 text-center text-black opacity-70">
-          <p>Loading tax data...</p>
+          <p>{t('status.loading')}</p>
         </div>
       )}
 
@@ -1920,32 +1887,32 @@ export default function SalaryCalculator({
           className="space-y-6"
           role="region"
           aria-live="polite"
-          aria-label="Calculation results"
+          aria-label={t('results.regionAria')}
         >
           {/* Net Income Summary */}
           <div className="bg-[#0066FF] rounded-lg p-6 lg:p-8 text-white">
-            <h2 className="text-2xl font-normal mb-6">Net Income</h2>
+            <h2 className="text-2xl font-normal mb-6">{t('results.netIncome')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
                 <p className="text-sm opacity-90 mb-1">
                   {countryCode === 'UK' &&
                   result.breakdown.preTaxDeductions &&
                   result.breakdown.preTaxDeductions.applied > 0
-                    ? 'Net Hourly (after salary sacrifice)'
-                    : 'Net Hourly'}
+                    ? t('results.netHourlyAfterSacrifice')
+                    : t('results.netHourly')}
                 </p>
                 <p className="text-3xl font-normal">
                   {taxTable.metadata.currency} {formatCurrency(result.netHourly)}
                 </p>
               </div>
               <div>
-                <p className="text-sm opacity-90 mb-1">Net Monthly</p>
+                <p className="text-sm opacity-90 mb-1">{t('results.netMonthly')}</p>
                 <p className="text-3xl font-normal">
                   {taxTable.metadata.currency} {formatCurrency(result.netMonthly)}
                 </p>
               </div>
               <div>
-                <p className="text-sm opacity-90 mb-1">Net Yearly</p>
+                <p className="text-sm opacity-90 mb-1">{t('results.netYearly')}</p>
                 <p className="text-3xl font-normal">
                   {taxTable.metadata.currency} {formatCurrency(result.netAnnual)}
                 </p>
@@ -1959,13 +1926,13 @@ export default function SalaryCalculator({
                   {/* UK: Show 3 separate metrics when salary sacrifice exists */}
                   <div className="space-y-4">
                     <div>
-                      <p className="text-sm opacity-90 mb-1">Tax & NI Rate</p>
+                      <p className="text-sm opacity-90 mb-1">{t('results.taxAndNiRate')}</p>
                       <p className="text-2xl font-normal">
                         {(result.effectiveTaxRate * 100).toFixed(2)}%
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm opacity-90 mb-1">Salary Sacrifice Rate</p>
+                      <p className="text-sm opacity-90 mb-1">{t('results.salarySacrificeRate')}</p>
                       <p className="text-2xl font-normal">
                         {(
                           (result.breakdown.preTaxDeductions.applied /
@@ -1976,7 +1943,7 @@ export default function SalaryCalculator({
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm opacity-90 mb-1">Total Non-Cash Share</p>
+                      <p className="text-sm opacity-90 mb-1">{t('results.totalNonCashShare')}</p>
                       <p className="text-2xl font-normal">
                         {(
                           (1 - result.breakdown.netIncome / result.breakdown.grossIncome) *
@@ -1989,7 +1956,7 @@ export default function SalaryCalculator({
                 </>
               ) : (
                 <>
-                  <p className="text-sm opacity-90 mb-1">Effective Tax Rate</p>
+                  <p className="text-sm opacity-90 mb-1">{t('results.effectiveTaxRate')}</p>
                   <p className="text-2xl font-normal">
                     {(result.effectiveTaxRate * 100).toFixed(2)}%
                   </p>
@@ -2001,12 +1968,12 @@ export default function SalaryCalculator({
           {/* Breakdown Table */}
           <div className="bg-white rounded-lg border border-black border-opacity-10 overflow-hidden">
             <div className="p-6 lg:p-8">
-              <h2 className="text-2xl font-normal text-black mb-6">Breakdown</h2>
+              <h2 className="text-2xl font-normal text-black mb-6">{t('results.breakdown')}</h2>
 
               <div className="space-y-4">
                 {/* Gross Income */}
                 <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                  <span className="text-black">Gross Income</span>
+                  <span className="text-black">{t('results.grossIncome')}</span>
                   <span className="font-medium text-black">
                     {taxTable.metadata.currency} {formatCurrency(result.breakdown.grossIncome)}
                   </span>
@@ -2022,7 +1989,7 @@ export default function SalaryCalculator({
                         <>
                           <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                             <span className="text-sm text-black opacity-80">
-                              Pre-tax Deductions (entered)
+                              {t('results.preTaxDeductionsEntered')}
                             </span>
                             <span className="text-sm text-black opacity-80">
                               -{taxTable.metadata.currency}{' '}
@@ -2030,7 +1997,9 @@ export default function SalaryCalculator({
                             </span>
                           </div>
                           <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                            <span className="text-black">Pre-tax Deductions (applied, capped)</span>
+                            <span className="text-black">
+                              {t('results.preTaxDeductionsAppliedCapped')}
+                            </span>
                             <span className="text-black">
                               -{taxTable.metadata.currency}{' '}
                               {formatCurrency(result.breakdown.preTaxDeductions.applied)}
@@ -2039,7 +2008,7 @@ export default function SalaryCalculator({
                         </>
                       ) : (
                         <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                          <span className="text-black">Pre-tax Deductions</span>
+                          <span className="text-black">{t('results.preTaxDeductions')}</span>
                           <span className="text-black">
                             -{taxTable.metadata.currency}{' '}
                             {formatCurrency(result.breakdown.preTaxDeductions.applied)}
@@ -2052,7 +2021,7 @@ export default function SalaryCalculator({
                 {/* US: AGI (can be negative) */}
                 {countryCode === 'US' && result.breakdown.adjustedGrossIncome !== undefined && (
                   <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                    <span className="text-black">Adjusted Gross Income (AGI)</span>
+                    <span className="text-black">{t('results.adjustedGrossIncome')}</span>
                     <span
                       className={`text-black ${result.breakdown.adjustedGrossIncome < 0 ? 'opacity-70' : ''}`}
                     >
@@ -2067,7 +2036,7 @@ export default function SalaryCalculator({
                   result.breakdown.preTaxDeductions &&
                   result.breakdown.preTaxDeductions.applied > 0 && (
                     <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                      <span className="text-black">Salary Sacrifice (Pension & Pre-tax)</span>
+                      <span className="text-black">{t('results.salarySacrifice')}</span>
                       <span className="text-black">
                         -{taxTable.metadata.currency}{' '}
                         {formatCurrency(result.breakdown.preTaxDeductions.applied)}
@@ -2080,7 +2049,9 @@ export default function SalaryCalculator({
                   result.breakdown.adjustedGrossIncome !== undefined &&
                   result.breakdown.grossIncome > result.breakdown.adjustedGrossIncome && (
                     <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                      <span className="text-black">Adjusted Income (after salary sacrifice)</span>
+                      <span className="text-black">
+                        {t('results.adjustedIncomeAfterSacrifice')}
+                      </span>
                       <span className="text-black">
                         {taxTable.metadata.currency}{' '}
                         {formatCurrency(result.breakdown.adjustedGrossIncome)}
@@ -2095,7 +2066,7 @@ export default function SalaryCalculator({
                   result.breakdown.preTaxDeductions &&
                   result.breakdown.preTaxDeductions.applied > 0 && (
                     <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                      <span className="text-black">Pre-tax Contributions</span>
+                      <span className="text-black">{t('results.preTaxContributions')}</span>
                       <span className="text-black">
                         -{taxTable.metadata.currency}{' '}
                         {formatCurrency(result.breakdown.preTaxDeductions.applied)}
@@ -2109,9 +2080,9 @@ export default function SalaryCalculator({
                     <span className="text-black">
                       {countryCode === 'US'
                         ? result.breakdown.allowances.standardDeduction !== undefined
-                          ? 'Standard Deduction'
-                          : 'Itemized Deduction'
-                        : 'Allowances'}
+                          ? t('results.standardDeduction')
+                          : t('results.itemizedDeduction')
+                        : t('results.allowances')}
                     </span>
                     <span className="text-black">
                       -{taxTable.metadata.currency}{' '}
@@ -2122,7 +2093,7 @@ export default function SalaryCalculator({
 
                 {/* Taxable Income */}
                 <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
-                  <span className="text-black">Taxable Income</span>
+                  <span className="text-black">{t('results.taxableIncome')}</span>
                   <span className="text-black">
                     {taxTable.metadata.currency} {formatCurrency(result.breakdown.taxableIncome)}
                   </span>
@@ -2132,12 +2103,12 @@ export default function SalaryCalculator({
                 <div className="flex justify-between items-center py-3 border-b border-black border-opacity-10">
                   <span className="text-black font-medium">
                     {countryCode === 'DE'
-                      ? 'Total Income Tax (ESt + Soli + Church)'
+                      ? t('results.incomeTaxDE')
                       : countryCode === 'US'
-                        ? 'Income Tax (Federal + State + Local)'
+                        ? t('results.incomeTaxUS')
                         : countryCode === 'UK'
-                          ? 'Income Tax'
-                          : 'Income Tax'}
+                          ? t('results.incomeTax')
+                          : t('results.incomeTax')}
                   </span>
                   <span className="font-medium text-black">
                     -{taxTable.metadata.currency} {formatCurrency(result.breakdown.incomeTax)}
@@ -2150,12 +2121,12 @@ export default function SalaryCalculator({
                   result.breakdown.incomeTaxComponents.studentLoan > 0 && (
                     <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                       <span className="text-sm text-black opacity-80">
-                        Student Loan (
+                        {t('results.studentLoan')} (
                         {ukStudentLoanPlan === 'plan2'
-                          ? 'Plan 2'
+                          ? t('results.plan2')
                           : ukStudentLoanPlan === 'plan4'
-                            ? 'Plan 4'
-                            : 'Plan 5'}
+                            ? t('results.plan4')
+                            : t('results.plan5')}
                         )
                       </span>
                       <span className="text-sm text-black opacity-80">
@@ -2171,7 +2142,7 @@ export default function SalaryCalculator({
                   result.breakdown.incomeTaxComponents.marriageAllowance > 0 && (
                     <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                       <span className="text-sm text-black opacity-80">
-                        Marriage Allowance (relief)
+                        {t('results.marriageAllowanceRelief')}
                       </span>
                       <span className="text-sm text-black opacity-80">
                         +{taxTable.metadata.currency}{' '}
@@ -2186,9 +2157,7 @@ export default function SalaryCalculator({
                     undefined &&
                   result.breakdown.incomeTaxComponents.highIncomeChildBenefitCharge > 0 && (
                     <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                      <span className="text-sm text-black opacity-80">
-                        High Income Child Benefit Charge
-                      </span>
+                      <span className="text-sm text-black opacity-80">{t('results.hicbc')}</span>
                       <span className="text-sm text-black opacity-80">
                         -{taxTable.metadata.currency}{' '}
                         {formatCurrency(
@@ -2202,7 +2171,9 @@ export default function SalaryCalculator({
                 {countryCode === 'DE' && result.breakdown.incomeTaxComponents && (
                   <>
                     <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                      <span className="text-sm text-black opacity-80">Einkommensteuer (ESt)</span>
+                      <span className="text-sm text-black opacity-80">
+                        {t('results.einkommensteuer')}
+                      </span>
                       <span className="text-sm text-black opacity-80">
                         -{taxTable.metadata.currency}{' '}
                         {formatCurrency(result.breakdown.incomeTaxComponents.baseIncomeTax)}
@@ -2211,7 +2182,7 @@ export default function SalaryCalculator({
                     {(result.breakdown.incomeTaxComponents.solidaritySurcharge ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                         <span className="text-sm text-black opacity-80">
-                          Solidarity Surcharge (Soli)
+                          {t('results.solidaritySurcharge')}
                         </span>
                         <span className="text-sm text-black opacity-80">
                           -{taxTable.metadata.currency}{' '}
@@ -2224,7 +2195,7 @@ export default function SalaryCalculator({
                     {(result.breakdown.incomeTaxComponents.churchTax ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                         <span className="text-sm text-black opacity-80">
-                          Church Tax (Kirchensteuer)
+                          {t('results.churchTax')}
                         </span>
                         <span className="text-sm text-black opacity-80">
                           -{taxTable.metadata.currency}{' '}
@@ -2241,7 +2212,7 @@ export default function SalaryCalculator({
                       'number' && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                         <span className="text-sm text-black opacity-80">
-                          Federal income tax (before credits)
+                          {t('results.federalIncomeTaxBeforeCredits')}
                         </span>
                         <span className="text-sm text-black opacity-80">
                           -{taxTable.metadata.currency}{' '}
@@ -2253,7 +2224,9 @@ export default function SalaryCalculator({
                     )}
                     {(result.breakdown.incomeTaxComponents.taxCredits ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
-                        <span className="text-sm text-black opacity-80">Tax credits (applied)</span>
+                        <span className="text-sm text-black opacity-80">
+                          {t('results.taxCreditsApplied')}
+                        </span>
                         <span className="text-sm text-black opacity-80">
                           +{taxTable.metadata.currency}{' '}
                           {formatCurrency(result.breakdown.incomeTaxComponents.taxCredits!)}
@@ -2264,7 +2237,7 @@ export default function SalaryCalculator({
                       'number' && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                         <span className="text-sm text-black opacity-80">
-                          Federal income tax (after credits)
+                          {t('results.federalIncomeTaxAfterCredits')}
                         </span>
                         <span className="text-sm text-black opacity-80">
                           -{taxTable.metadata.currency}{' '}
@@ -2277,7 +2250,7 @@ export default function SalaryCalculator({
                     {(result.breakdown.incomeTaxComponents.stateIncomeTax ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                         <span className="text-sm text-black opacity-80">
-                          State income tax (estimate)
+                          {t('results.stateIncomeTax')}
                         </span>
                         <span className="text-sm text-black opacity-80">
                           -{taxTable.metadata.currency}{' '}
@@ -2288,7 +2261,7 @@ export default function SalaryCalculator({
                     {(result.breakdown.incomeTaxComponents.localIncomeTax ?? 0) > 0 && (
                       <div className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5">
                         <span className="text-sm text-black opacity-80">
-                          Local income tax (estimate)
+                          {t('results.localIncomeTax')}
                         </span>
                         <span className="text-sm text-black opacity-80">
                           -{taxTable.metadata.currency}{' '}
@@ -2309,20 +2282,23 @@ export default function SalaryCalculator({
                           className="flex justify-between items-center py-2 pl-4 border-b border-black border-opacity-5"
                         >
                           <span className="text-sm text-black opacity-80">
-                            {contrib.name}
+                            {t.has(`contrib.${contribKey(contrib.name)}`)
+                              ? t(`contrib.${contribKey(contrib.name)}`)
+                              : contrib.name}
                             {typeof contrib.rate === 'number' && (
                               <span className="text-xs opacity-60 ml-2">
                                 ({(contrib.rate * 100).toFixed(2)}%)
                                 {countryCode === 'DE' &&
                                 contrib.name === 'Long-term Care Insurance' &&
                                 germanyState === 'SN'
-                                  ? ' (Saxony split)'
+                                  ? ` ${t('results.saxonySplit')}`
                                   : ''}
                               </span>
                             )}
                             {contrib.cappedAmount && (
                               <span className="text-xs opacity-60 ml-2">
-                                (on {contrib.cappedAmount.toLocaleString('en-US')})
+                                ({t('results.cappedOn')}{' '}
+                                {contrib.cappedAmount.toLocaleString('en-US')})
                               </span>
                             )}
                           </span>
@@ -2333,7 +2309,7 @@ export default function SalaryCalculator({
                       )
                     )}
                     <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
-                      <span className="text-black">Total Social Contributions</span>
+                      <span className="text-black">{t('results.totalSocialContributions')}</span>
                       <span className="text-black">
                         -{taxTable.metadata.currency}{' '}
                         {formatCurrency(result.breakdown.socialContributions.totalAnnual)}
@@ -2344,7 +2320,7 @@ export default function SalaryCalculator({
 
                 {/* Taxes & NI */}
                 <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
-                  <span className="text-black">Taxes & NI</span>
+                  <span className="text-black">{t('results.taxesAndNi')}</span>
                   <span className="text-black">
                     -{taxTable.metadata.currency}{' '}
                     {formatCurrency(
@@ -2363,7 +2339,7 @@ export default function SalaryCalculator({
                   result.breakdown.preTaxDeductions &&
                   result.breakdown.preTaxDeductions.applied > 0 && (
                     <div className="flex justify-between items-center py-3 border-b-2 border-black border-opacity-20 font-medium">
-                      <span className="text-black">Cash in Hand</span>
+                      <span className="text-black">{t('results.cashInHand')}</span>
                       <span className="text-black font-bold">
                         {taxTable.metadata.currency} {formatCurrency(result.breakdown.netIncome)}
                       </span>
@@ -2372,7 +2348,7 @@ export default function SalaryCalculator({
 
                 {/* Net Income */}
                 <div className="flex justify-between items-center py-4 pt-6">
-                  <span className="text-lg font-medium text-black">Net Income</span>
+                  <span className="text-lg font-medium text-black">{t('results.netIncome')}</span>
                   <span className="text-lg font-medium text-black">
                     {taxTable.metadata.currency} {formatCurrency(result.breakdown.netIncome)}
                   </span>
@@ -2396,7 +2372,7 @@ export default function SalaryCalculator({
 
       {!result && !error && !isLoading && taxTable && (
         <div className="bg-white rounded-lg border border-black border-opacity-10 p-6 text-center">
-          <p className="text-black opacity-70">Enter your income to see calculations</p>
+          <p className="text-black opacity-70">{t('status.empty')}</p>
         </div>
       )}
     </div>

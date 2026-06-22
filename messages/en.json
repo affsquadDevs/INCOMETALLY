@@ -67,7 +67,11 @@
     },
     "hero": {
       "title": "Free Net Salary Calculator",
-      "highlightWords": ["Net", "Salary", "Calculator"],
+      "highlightWords": [
+        "Net",
+        "Salary",
+        "Calculator"
+      ],
       "subtitle": "Enter your gross pay and see your estimated take-home pay after income tax and social contributions — for the 2026 tax year, across 9 countries. No signup, and your inputs stay in your browser.",
       "getStarted": "Get Started",
       "browseGuides": "Browse Guides",
@@ -137,7 +141,12 @@
       "heading": "Where Our Numbers Come From",
       "body": "IncomeTally's calculators and guides are maintained by the IncomeTally Editorial Team. We build each country's tax logic from publicly available figures published by official tax and social-security authorities, explain the concepts in plain language with worked examples, and review the data against each year's official rates. Every country calculator shows its specific sources and the tax year it covers.",
       "standardsHeading": "Our standards",
-      "standards": ["Official sources", "Plain language", "Reviewed annually", "Estimates, not advice"],
+      "standards": [
+        "Official sources",
+        "Plain language",
+        "Reviewed annually",
+        "Estimates, not advice"
+      ],
       "aboutLink": "Read about us and our editorial standards →",
       "sourcesHeading": "Official sources by country",
       "sourcesNote": "Each country page links the specific sources we used for its figures.",
@@ -171,5 +180,313 @@
         "answer": "Our figures come from each country's official tax and social-security authorities, such as the IRS and SSA, HMRC, and the German Bundesfinanzministerium, and each country page links the specific sources we used. IncomeTally is an informational tool only: it does not provide financial, tax, or legal advice and is not affiliated with any government or tax authority. For decisions about your taxes or finances, consult a qualified professional."
       }
     ]
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Income Mode",
+      "grossIncome": "Gross Income",
+      "country": "Country",
+      "taxYear": "Tax Year",
+      "hoursPerWeek": "Hours per Week",
+      "weeksPerYear": "Weeks per Year",
+      "calculateNetIncome": "Calculate Net Income",
+      "salaryPeriod": "Salary Period",
+      "salaryPeriodAria": "Salary period selection"
+    },
+    "mode": {
+      "hourly": "Hourly",
+      "monthly": "Monthly",
+      "yearly": "Yearly"
+    },
+    "period": {
+      "hourly": "hourly",
+      "monthly": "monthly",
+      "annual": "annual"
+    },
+    "yesNo": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "country": {
+      "US": "United States",
+      "USFederalOnly": "United States (Federal Only)",
+      "DE": "Germany",
+      "UK": "United Kingdom",
+      "PL": "Poland",
+      "FR": "France",
+      "ES": "Spain",
+      "IT": "Italy",
+      "SE": "Sweden",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Select Country",
+      "helper": "Choose your country to calculate taxes accordingly"
+    },
+    "actions": {
+      "copyShareLink": "Copy Share Link",
+      "copied": "Copied!",
+      "shareLinkPrefix": "Share link:"
+    },
+    "status": {
+      "loading": "Loading tax data...",
+      "empty": "Enter your income to see calculations"
+    },
+    "validation": {
+      "incomePositive": "Income must be a positive number",
+      "incomeMax": "Income cannot exceed {max} ({mode})",
+      "hoursMin": "Hours must be at least {min}",
+      "hoursMax": "Hours cannot exceed {max}",
+      "weeksMin": "Weeks must be at least {min}",
+      "weeksMax": "Weeks cannot exceed {max}"
+    },
+    "de": {
+      "taxClass": "Tax Class",
+      "healthInsurance": "Health Insurance",
+      "privateNoteLabel": "Note:",
+      "privateNoteBody": "Private health insurance is paid separately and is not deducted from your salary. The net income shown above does not include private insurance costs, which you pay directly to your insurance provider.",
+      "state": "Your State",
+      "inChurch": "In the Church?",
+      "churchAria": "Church membership selection",
+      "haveChildren": "Have children?",
+      "childrenAria": "Children selection",
+      "childrenNote": "Used for long-term care insurance (Pflegeversicherung). For 2026 this means: with children ~1.80% employee share (most states), without children ~2.40% (includes the childless surcharge). Saxony uses a different split."
+    },
+    "us": {
+      "filingStatus": "Filing Status",
+      "employmentType": "Employment Type",
+      "deductionMethod": "Deduction Method",
+      "itemizedDeductions": "Itemized Deductions",
+      "childrenUnder17": "Children (under 17)",
+      "otherDependents": "Other Dependents",
+      "taxpayerOver65": "Taxpayer 65+",
+      "taxpayerBlind": "Taxpayer blind",
+      "spouseOver65": "Spouse 65+",
+      "spouseBlind": "Spouse blind",
+      "preTax401k": "Pre-tax 401(k) / retirement",
+      "preTaxHSA": "Pre-tax HSA",
+      "otherPreTax": "Other pre-tax deductions",
+      "stateTaxRate": "State tax rate (estimate, %)",
+      "localTaxRate": "Local tax rate (estimate, %)"
+    },
+    "uk": {
+      "region": "Region",
+      "preTaxPension": "Pre-tax Pension Contributions",
+      "preTaxOther": "Other Pre-tax Deductions",
+      "studentLoanPlan": "Student Loan Plan",
+      "studentLoanNote": "Note: Plan depends on where/when you studied, not where you work.",
+      "marriageAllowance": "Marriage Allowance?",
+      "marriageAllowanceAria": "Marriage Allowance selection",
+      "marriageAllowanceNote": "For a basic-rate taxpayer whose spouse/civil partner is a non-taxpayer (relief up to £252).",
+      "children": "Children (for Child Benefit charge)",
+      "childrenNote": "Used for the High Income Child Benefit Charge (applies on incomes over £60,000)."
+    },
+    "pl": {
+      "filingStatus": "Filing Status",
+      "children": "Children (for child relief)",
+      "preTax": "Tax-deductible contributions (e.g. IKZE,",
+      "under26": "Relief for the young (under 26)?",
+      "under26Aria": "Under-26 relief selection",
+      "under26Note": "Exempts employment income up to 85,528 PLN from income tax (ZUS and health still apply)."
+    },
+    "pt": {
+      "region": "Region",
+      "filingStatus": "Filing Status",
+      "dependants": "Dependants"
+    },
+    "se": {
+      "municipality": "Municipality",
+      "customRate": "Municipal tax rate (%)",
+      "churchMember": "Member of the Church of Sweden?",
+      "churchAria": "Church membership selection",
+      "churchNote": "Adds the church fee (kyrkoavgift). Income tax already reflects the basic allowance and the jobbskatteavdrag credit (under 66)."
+    },
+    "it": {
+      "region": "Region (regional surtax)",
+      "customRegionalRate": "Regional surtax rate (%)",
+      "municipalRate": "Municipal surtax rate (%)",
+      "dependentChildren": "Dependent children (aged 21–29)",
+      "dependentChildrenNote": "Children under 21 are covered by the Assegno Unico (not payroll). Regional and municipal surtaxes vary by location.",
+      "dependentSpouse": "Dependent spouse (coniuge a carico)?",
+      "dependentSpouseAria": "Dependent spouse selection",
+      "dependentSpouseNote": "A spouse with little or no income (coniuge a carico) gives a tax credit of up to €800."
+    },
+    "es": {
+      "community": "Autonomous community",
+      "filingStatus": "Filing Status",
+      "children": "Children (dependent descendants)",
+      "childrenNote": "Regional rates vary by community; País Vasco and Navarra use separate foral systems not covered here."
+    },
+    "fr": {
+      "household": "Household",
+      "children": "Dependent children",
+      "childrenNote": "Adds family-quotient parts (+0.5 for each of the first two children, +1 from the third), with the benefit capped (plafonnement). Estimate for a single household/sole earner."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Not married, no children",
+        "2": "Single parent",
+        "3": "Married (higher income than partner)",
+        "4": "Married (equal income earner)",
+        "5": "Married (lower income than partner)",
+        "6": "Secondary and additional income"
+      },
+      "deHealthInsurance": {
+        "public": "Public / Statutory (GKV)",
+        "private-without": "Private (without employer contribution)",
+        "private-with": "Private (with employer contribution)"
+      },
+      "usFilingStatus": {
+        "single": "Single",
+        "mfj": "Married Filing Jointly",
+        "mfs": "Married Filing Separately",
+        "hoh": "Head of Household"
+      },
+      "usEmploymentType": {
+        "employee": "Employee (W-2)",
+        "selfEmployed": "Self-employed (SE tax estimate)"
+      },
+      "usDeductionMethod": {
+        "auto": "Auto (max of standard vs itemized)",
+        "standard": "Standard deduction",
+        "itemized": "Itemized deductions"
+      },
+      "ukRegion": {
+        "england": "England",
+        "wales": "Wales",
+        "ni": "Northern Ireland",
+        "scotland": "Scotland (not yet supported)"
+      },
+      "ukStudentLoan": {
+        "none": "None",
+        "plan2": "Plan 2 (9% over £{threshold})",
+        "plan4": "Plan 4 (9% over £{threshold})",
+        "plan5": "Plan 5 (9% over £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Single",
+        "joint": "Married — joint assessment (sole earner)"
+      },
+      "ptRegion": {
+        "mainland": "Mainland (Continente)",
+        "azores": "Azores (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Single",
+        "joint": "Married — joint taxation (sole earner)"
+      },
+      "esFilingStatus": {
+        "single": "Individual",
+        "joint": "Joint return (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Single (1 part)",
+        "married": "Married / PACS — joint (2 parts)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Health Insurance",
+      "longTermCareInsurance": "Long-term Care Insurance",
+      "pensionInsurance": "Pension Insurance",
+      "unemploymentInsurance": "Unemployment Insurance",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Additional Medicare Tax",
+      "seTaxSocialSecurity": "Self-Employment Tax (Social Security)",
+      "seTaxMedicare": "Self-Employment Tax (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (Class 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (Class 1, Higher)",
+      "plPension": "Pension insurance (Emerytalne)",
+      "plDisability": "Disability insurance (Rentowe)",
+      "plSickness": "Sickness insurance (Chorobowe)",
+      "plHealth": "Health insurance (Zdrowotne)",
+      "ptSocialSecurity": "Social Security (Seguranca Social)",
+      "seChurchFee": "Church fee (kyrkoavgift)",
+      "itInps": "INPS pension contribution",
+      "itRegionalMunicipalSurtax": "Regional & municipal surtax (addizionali)",
+      "esCommonContingencies": "Common contingencies (Seguridad Social)",
+      "esMei": "MEI solidarity contribution",
+      "esTraining": "Training (Formacion profesional)",
+      "esUnemployment": "Unemployment (Desempleo)",
+      "esSocialSecurity": "Social Security (Seguridad Social)",
+      "frCsgDeductible": "CSG (deductible)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (non-deductible)",
+      "frSocialSecurityPension": "Social security & pension contributions",
+      "frPension": "Pension (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Calculation results",
+      "netIncome": "Net Income",
+      "netHourly": "Net Hourly",
+      "netHourlyAfterSacrifice": "Net Hourly (after salary sacrifice)",
+      "netMonthly": "Net Monthly",
+      "netYearly": "Net Yearly",
+      "effectiveTaxRate": "Effective Tax Rate",
+      "taxAndNiRate": "Tax & NI Rate",
+      "salarySacrificeRate": "Salary Sacrifice Rate",
+      "totalNonCashShare": "Total Non-Cash Share",
+      "breakdown": "Breakdown",
+      "grossIncome": "Gross Income",
+      "preTaxDeductionsEntered": "Pre-tax Deductions (entered)",
+      "preTaxDeductionsAppliedCapped": "Pre-tax Deductions (applied, capped)",
+      "preTaxDeductions": "Pre-tax Deductions",
+      "adjustedGrossIncome": "Adjusted Gross Income (AGI)",
+      "salarySacrifice": "Salary Sacrifice (Pension & Pre-tax)",
+      "adjustedIncomeAfterSacrifice": "Adjusted Income (after salary sacrifice)",
+      "preTaxContributions": "Pre-tax Contributions",
+      "standardDeduction": "Standard Deduction",
+      "itemizedDeduction": "Itemized Deduction",
+      "allowances": "Allowances",
+      "taxableIncome": "Taxable Income",
+      "incomeTax": "Income Tax",
+      "incomeTaxDE": "Total Income Tax (ESt + Soli + Church)",
+      "incomeTaxUS": "Income Tax (Federal + State + Local)",
+      "studentLoan": "Student Loan",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Marriage Allowance (relief)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Solidarity Surcharge (Soli)",
+      "churchTax": "Church Tax (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Federal income tax (before credits)",
+      "taxCreditsApplied": "Tax credits (applied)",
+      "federalIncomeTaxAfterCredits": "Federal income tax (after credits)",
+      "stateIncomeTax": "State income tax (estimate)",
+      "localIncomeTax": "Local income tax (estimate)",
+      "saxonySplit": "(Saxony split)",
+      "cappedOn": "on",
+      "totalSocialContributions": "Total Social Contributions",
+      "taxesAndNi": "Taxes & NI",
+      "cashInHand": "Cash in Hand"
+    },
+    "example": {
+      "heading": "Example Calculation",
+      "perHour": "per hour",
+      "perMonth": "per month",
+      "perYear": "per year",
+      "netIncomeAnnual": "Net Income (Annual)",
+      "basedOnPrefix": "Based on",
+      "hourlyNote": "({hours} hours/week, {weeks} weeks/year)",
+      "monthlyNote": "(12 months/year)",
+      "forTaxYear": "for {year} tax year."
+    },
+    "disclaimer": {
+      "title": "Tax Estimate Disclaimer",
+      "noteLabel": "Note:",
+      "us": "These calculations are estimates based on federal tax rates only. State and local taxes are not included and may significantly affect your total tax liability.",
+      "default": "These calculations are estimates and may not include local or regional taxes. Please consult official sources or a tax professional for accurate figures."
+    },
+    "dataSources": {
+      "heading": "Data sources",
+      "intro": "Our {country} estimates are based on publicly available figures from official government and tax-authority sources. Rates and thresholds change each tax year, so we review them periodically. These results are estimates, not official tax assessments or advice.",
+      "editorialPrefix": "See our",
+      "editorialLink": "editorial standards",
+      "editorialSuffix": "for how we research and update this data."
+    }
   }
 }
