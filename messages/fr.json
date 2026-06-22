@@ -180,5 +180,313 @@
     "linkHub": "Hub des calculateurs de salaire",
     "linkNet": "Calculateur de salaire net",
     "linkHourly": "Convertisseur taux horaire en salaire"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Mode de revenu",
+      "grossIncome": "Revenu brut",
+      "country": "Pays",
+      "taxYear": "Année fiscale",
+      "hoursPerWeek": "Heures par semaine",
+      "weeksPerYear": "Semaines par an",
+      "calculateNetIncome": "Calculer le revenu net",
+      "salaryPeriod": "Période de salaire",
+      "salaryPeriodAria": "Sélection de la période de salaire"
+    },
+    "mode": {
+      "hourly": "Horaire",
+      "monthly": "Mensuel",
+      "yearly": "Annuel"
+    },
+    "period": {
+      "hourly": "horaire",
+      "monthly": "mensuel",
+      "annual": "annuel"
+    },
+    "yesNo": {
+      "yes": "Oui",
+      "no": "Non"
+    },
+    "country": {
+      "US": "États-Unis",
+      "USFederalOnly": "États-Unis (fédéral uniquement)",
+      "DE": "Allemagne",
+      "UK": "Royaume-Uni",
+      "PL": "Pologne",
+      "FR": "France",
+      "ES": "Espagne",
+      "IT": "Italie",
+      "SE": "Suède",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Sélectionner le pays",
+      "helper": "Choisissez votre pays pour calculer les impôts en conséquence"
+    },
+    "actions": {
+      "copyShareLink": "Copier le lien de partage",
+      "copied": "Copié !",
+      "shareLinkPrefix": "Lien de partage :"
+    },
+    "status": {
+      "loading": "Chargement des données fiscales...",
+      "empty": "Saisissez votre revenu pour voir les calculs"
+    },
+    "validation": {
+      "incomePositive": "Le revenu doit être un nombre positif",
+      "incomeMax": "Le revenu ne peut pas dépasser {max} ({mode})",
+      "hoursMin": "Les heures doivent être au moins {min}",
+      "hoursMax": "Les heures ne peuvent pas dépasser {max}",
+      "weeksMin": "Les semaines doivent être au moins {min}",
+      "weeksMax": "Les semaines ne peuvent pas dépasser {max}"
+    },
+    "de": {
+      "taxClass": "Classe d'imposition",
+      "healthInsurance": "Assurance maladie",
+      "privateNoteLabel": "Remarque :",
+      "privateNoteBody": "L'assurance maladie privée est payée séparément et n'est pas déduite de votre salaire. Le revenu net indiqué ci-dessus ne comprend pas les coûts de l'assurance privée, que vous versez directement à votre assureur.",
+      "state": "Votre Land",
+      "inChurch": "Membre d'une Église ?",
+      "churchAria": "Sélection de l'appartenance religieuse",
+      "haveChildren": "Avez-vous des enfants ?",
+      "childrenAria": "Sélection des enfants",
+      "childrenNote": "Utilisé pour l'assurance dépendance (Pflegeversicherung). Pour 2026, cela signifie : avec enfants ~1,80 % de part salariale (la plupart des Länder), sans enfant ~2,40 % (inclut la surtaxe pour personnes sans enfant). La Saxe applique une répartition différente."
+    },
+    "us": {
+      "filingStatus": "Statut de déclaration",
+      "employmentType": "Type d'emploi",
+      "deductionMethod": "Méthode de déduction",
+      "itemizedDeductions": "Déductions détaillées",
+      "childrenUnder17": "Enfants (de moins de 17 ans)",
+      "otherDependents": "Autres personnes à charge",
+      "taxpayerOver65": "Contribuable 65 ans et plus",
+      "taxpayerBlind": "Contribuable aveugle",
+      "spouseOver65": "Conjoint 65 ans et plus",
+      "spouseBlind": "Conjoint aveugle",
+      "preTax401k": "401(k) / retraite avant impôt",
+      "preTaxHSA": "HSA avant impôt",
+      "otherPreTax": "Autres déductions avant impôt",
+      "stateTaxRate": "Taux d'impôt de l'État (estimation, %)",
+      "localTaxRate": "Taux d'impôt local (estimation, %)"
+    },
+    "uk": {
+      "region": "Région",
+      "preTaxPension": "Cotisations de retraite avant impôt",
+      "preTaxOther": "Autres déductions avant impôt",
+      "studentLoanPlan": "Plan de prêt étudiant",
+      "studentLoanNote": "Remarque : le plan dépend du lieu et de la date de vos études, pas de votre lieu de travail.",
+      "marriageAllowance": "Abattement de mariage ?",
+      "marriageAllowanceAria": "Sélection de l'abattement de mariage",
+      "marriageAllowanceNote": "Pour un contribuable au taux de base dont le conjoint/partenaire civil n'est pas imposable (avantage jusqu'à 252 £).",
+      "children": "Enfants (pour la charge Child Benefit)",
+      "childrenNote": "Utilisé pour la High Income Child Benefit Charge (s'applique aux revenus supérieurs à 60 000 £)."
+    },
+    "pl": {
+      "filingStatus": "Statut de déclaration",
+      "children": "Enfants (pour l'abattement pour enfants)",
+      "preTax": "Cotisations déductibles (par ex. IKZE,",
+      "under26": "Exonération pour les jeunes (moins de 26 ans) ?",
+      "under26Aria": "Sélection de l'exonération pour les moins de 26 ans",
+      "under26Note": "Exonère les revenus d'emploi jusqu'à 85 528 PLN de l'impôt sur le revenu (ZUS et assurance maladie restent applicables)."
+    },
+    "pt": {
+      "region": "Région",
+      "filingStatus": "Statut de déclaration",
+      "dependants": "Personnes à charge"
+    },
+    "se": {
+      "municipality": "Commune",
+      "customRate": "Taux d'impôt communal (%)",
+      "churchMember": "Membre de l'Église de Suède ?",
+      "churchAria": "Sélection de l'appartenance religieuse",
+      "churchNote": "Ajoute la redevance ecclésiastique (kyrkoavgift). L'impôt sur le revenu tient déjà compte de l'abattement de base et du crédit jobbskatteavdrag (moins de 66 ans)."
+    },
+    "it": {
+      "region": "Région (surtaxe régionale)",
+      "customRegionalRate": "Taux de surtaxe régionale (%)",
+      "municipalRate": "Taux de surtaxe communale (%)",
+      "dependentChildren": "Enfants à charge (âgés de 21 à 29 ans)",
+      "dependentChildrenNote": "Les enfants de moins de 21 ans sont couverts par l'Assegno Unico (hors paie). Les surtaxes régionales et communales varient selon le lieu.",
+      "dependentSpouse": "Conjoint à charge (coniuge a carico) ?",
+      "dependentSpouseAria": "Sélection du conjoint à charge",
+      "dependentSpouseNote": "Un conjoint avec peu ou pas de revenus (coniuge a carico) donne droit à un crédit d'impôt allant jusqu'à 800 €."
+    },
+    "es": {
+      "community": "Communauté autonome",
+      "filingStatus": "Statut de déclaration",
+      "children": "Enfants (descendants à charge)",
+      "childrenNote": "Les taux régionaux varient selon la communauté ; le País Vasco et la Navarre appliquent des régimes foraux distincts non couverts ici."
+    },
+    "fr": {
+      "household": "Foyer",
+      "children": "Enfants à charge",
+      "childrenNote": "Ajoute des parts de quotient familial (+0,5 pour chacun des deux premiers enfants, +1 à partir du troisième), avec un avantage plafonné (plafonnement). Estimation pour un foyer d'une personne / revenu unique."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Célibataire, sans enfant",
+        "2": "Parent isolé",
+        "3": "Marié (revenu supérieur à celui du partenaire)",
+        "4": "Marié (revenu égal)",
+        "5": "Marié (revenu inférieur à celui du partenaire)",
+        "6": "Revenu secondaire et complémentaire"
+      },
+      "deHealthInsurance": {
+        "public": "Public / légal (GKV)",
+        "private-without": "Privé (sans contribution de l'employeur)",
+        "private-with": "Privé (avec contribution de l'employeur)"
+      },
+      "usFilingStatus": {
+        "single": "Célibataire",
+        "mfj": "Marié, déclaration conjointe",
+        "mfs": "Marié, déclaration séparée",
+        "hoh": "Chef de famille"
+      },
+      "usEmploymentType": {
+        "employee": "Salarié (W-2)",
+        "selfEmployed": "Travailleur indépendant (estimation de la SE tax)"
+      },
+      "usDeductionMethod": {
+        "auto": "Auto (maximum entre standard et détaillée)",
+        "standard": "Déduction standard",
+        "itemized": "Déductions détaillées"
+      },
+      "ukRegion": {
+        "england": "Angleterre",
+        "wales": "Pays de Galles",
+        "ni": "Irlande du Nord",
+        "scotland": "Écosse (pas encore prise en charge)"
+      },
+      "ukStudentLoan": {
+        "none": "Aucun",
+        "plan2": "Plan 2 (9 % au-delà de {threshold} £)",
+        "plan4": "Plan 4 (9 % au-delà de {threshold} £)",
+        "plan5": "Plan 5 (9 % au-delà de {threshold} £)"
+      },
+      "plFilingStatus": {
+        "single": "Célibataire",
+        "joint": "Marié — imposition commune (revenu unique)"
+      },
+      "ptRegion": {
+        "mainland": "Continent (Continente)",
+        "azores": "Açores (Açores)",
+        "madeira": "Madère"
+      },
+      "ptFilingStatus": {
+        "single": "Célibataire",
+        "joint": "Marié — imposition commune (revenu unique)"
+      },
+      "esFilingStatus": {
+        "single": "Individuelle",
+        "joint": "Déclaration conjointe (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Célibataire (1 part)",
+        "married": "Marié / PACS — commune (2 parts)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Assurance maladie",
+      "longTermCareInsurance": "Assurance dépendance",
+      "pensionInsurance": "Assurance retraite",
+      "unemploymentInsurance": "Assurance chômage",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Medicare additionnel (Additional Medicare Tax)",
+      "seTaxSocialSecurity": "Cotisation des indépendants (Social Security)",
+      "seTaxMedicare": "Cotisation des indépendants (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (catégorie 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (catégorie 1, supérieure)",
+      "plPension": "Assurance retraite (Emerytalne)",
+      "plDisability": "Assurance invalidité (Rentowe)",
+      "plSickness": "Assurance maladie (Chorobowe)",
+      "plHealth": "Assurance santé (Zdrowotne)",
+      "ptSocialSecurity": "Sécurité sociale (Segurança Social)",
+      "seChurchFee": "Redevance ecclésiastique (kyrkoavgift)",
+      "itInps": "Cotisation de retraite INPS",
+      "itRegionalMunicipalSurtax": "Surtaxe régionale et communale (addizionali)",
+      "esCommonContingencies": "Risques communs (Seguridad Social)",
+      "esMei": "Cotisation de solidarité MEI",
+      "esTraining": "Formation (Formación profesional)",
+      "esUnemployment": "Chômage (Desempleo)",
+      "esSocialSecurity": "Sécurité sociale (Seguridad Social)",
+      "frCsgDeductible": "CSG (déductible)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (non déductible)",
+      "frSocialSecurityPension": "Cotisations sociales et de retraite",
+      "frPension": "Retraite (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Résultats du calcul",
+      "netIncome": "Revenu net",
+      "netHourly": "Net horaire",
+      "netHourlyAfterSacrifice": "Net horaire (après abandon de salaire)",
+      "netMonthly": "Net mensuel",
+      "netYearly": "Net annuel",
+      "effectiveTaxRate": "Taux d'imposition effectif",
+      "taxAndNiRate": "Taux d'impôt et NI",
+      "salarySacrificeRate": "Taux d'abandon de salaire",
+      "totalNonCashShare": "Part totale non monétaire",
+      "breakdown": "Détail",
+      "grossIncome": "Revenu brut",
+      "preTaxDeductionsEntered": "Déductions avant impôt (saisies)",
+      "preTaxDeductionsAppliedCapped": "Déductions avant impôt (appliquées, plafonnées)",
+      "preTaxDeductions": "Déductions avant impôt",
+      "adjustedGrossIncome": "Revenu brut ajusté (AGI)",
+      "salarySacrifice": "Abandon de salaire (retraite et avant impôt)",
+      "adjustedIncomeAfterSacrifice": "Revenu ajusté (après abandon de salaire)",
+      "preTaxContributions": "Cotisations avant impôt",
+      "standardDeduction": "Déduction standard",
+      "itemizedDeduction": "Déduction détaillée",
+      "allowances": "Abattements",
+      "taxableIncome": "Revenu imposable",
+      "incomeTax": "Impôt sur le revenu",
+      "incomeTaxDE": "Impôt sur le revenu total (ESt + Soli + Église)",
+      "incomeTaxUS": "Impôt sur le revenu (fédéral + État + local)",
+      "studentLoan": "Prêt étudiant",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Abattement de mariage (avantage)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Surtaxe de solidarité (Soli)",
+      "churchTax": "Impôt ecclésiastique (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Impôt fédéral sur le revenu (avant crédits)",
+      "taxCreditsApplied": "Crédits d'impôt (appliqués)",
+      "federalIncomeTaxAfterCredits": "Impôt fédéral sur le revenu (après crédits)",
+      "stateIncomeTax": "Impôt sur le revenu de l'État (estimation)",
+      "localIncomeTax": "Impôt sur le revenu local (estimation)",
+      "saxonySplit": "(répartition Saxe)",
+      "cappedOn": "sur",
+      "totalSocialContributions": "Total des cotisations sociales",
+      "taxesAndNi": "Impôts et NI",
+      "cashInHand": "Argent disponible"
+    },
+    "example": {
+      "heading": "Exemple de calcul",
+      "perHour": "par heure",
+      "perMonth": "par mois",
+      "perYear": "par an",
+      "netIncomeAnnual": "Revenu net (annuel)",
+      "basedOnPrefix": "Basé sur",
+      "hourlyNote": "({hours} heures/semaine, {weeks} semaines/an)",
+      "monthlyNote": "(12 mois/an)",
+      "forTaxYear": "pour l'année fiscale {year}."
+    },
+    "disclaimer": {
+      "title": "Avertissement sur l'estimation fiscale",
+      "noteLabel": "Remarque :",
+      "us": "Ces calculs sont des estimations basées uniquement sur les taux d'imposition fédéraux. Les impôts d'État et locaux ne sont pas inclus et peuvent affecter de manière significative votre charge fiscale totale.",
+      "default": "Ces calculs sont des estimations et peuvent ne pas inclure les impôts locaux ou régionaux. Veuillez consulter les sources officielles ou un fiscaliste pour des chiffres précis."
+    },
+    "dataSources": {
+      "heading": "Sources des données",
+      "intro": "Nos estimations pour {country} sont basées sur des chiffres publics provenant de sources officielles des autorités gouvernementales et fiscales. Les taux et les seuils changent à chaque année fiscale, c'est pourquoi nous les révisons périodiquement. Ces résultats sont des estimations, et non des avis ou des évaluations fiscales officielles.",
+      "editorialPrefix": "Consultez nos",
+      "editorialLink": "normes éditoriales",
+      "editorialSuffix": "pour savoir comment nous recherchons et mettons à jour ces données."
+    }
   }
 }

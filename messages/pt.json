@@ -180,5 +180,313 @@
     "linkHub": "Central de Calculadoras de Salário",
     "linkNet": "Calculadora de Salário Líquido",
     "linkHourly": "Conversor de Hora para Salário"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Modo de Rendimento",
+      "grossIncome": "Rendimento Bruto",
+      "country": "País",
+      "taxYear": "Ano Fiscal",
+      "hoursPerWeek": "Horas por Semana",
+      "weeksPerYear": "Semanas por Ano",
+      "calculateNetIncome": "Calcular Rendimento Líquido",
+      "salaryPeriod": "Período Salarial",
+      "salaryPeriodAria": "Seleção do período salarial"
+    },
+    "mode": {
+      "hourly": "Por Hora",
+      "monthly": "Mensal",
+      "yearly": "Anual"
+    },
+    "period": {
+      "hourly": "por hora",
+      "monthly": "mensal",
+      "annual": "anual"
+    },
+    "yesNo": {
+      "yes": "Sim",
+      "no": "Não"
+    },
+    "country": {
+      "US": "Estados Unidos",
+      "USFederalOnly": "Estados Unidos (Apenas Federal)",
+      "DE": "Alemanha",
+      "UK": "Reino Unido",
+      "PL": "Polónia",
+      "FR": "França",
+      "ES": "Espanha",
+      "IT": "Itália",
+      "SE": "Suécia",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Selecionar País",
+      "helper": "Escolha o seu país para calcular os impostos em conformidade"
+    },
+    "actions": {
+      "copyShareLink": "Copiar Link de Partilha",
+      "copied": "Copiado!",
+      "shareLinkPrefix": "Link de partilha:"
+    },
+    "status": {
+      "loading": "A carregar dados fiscais...",
+      "empty": "Introduza o seu rendimento para ver os cálculos"
+    },
+    "validation": {
+      "incomePositive": "O rendimento tem de ser um número positivo",
+      "incomeMax": "O rendimento não pode exceder {max} ({mode})",
+      "hoursMin": "As horas têm de ser no mínimo {min}",
+      "hoursMax": "As horas não podem exceder {max}",
+      "weeksMin": "As semanas têm de ser no mínimo {min}",
+      "weeksMax": "As semanas não podem exceder {max}"
+    },
+    "de": {
+      "taxClass": "Classe Fiscal",
+      "healthInsurance": "Seguro de Saúde",
+      "privateNoteLabel": "Nota:",
+      "privateNoteBody": "O seguro de saúde privado é pago separadamente e não é descontado do seu salário. O rendimento líquido apresentado acima não inclui os custos do seguro privado, que paga diretamente à sua seguradora.",
+      "state": "O Seu Estado",
+      "inChurch": "Pertence à Igreja?",
+      "churchAria": "Seleção de filiação na igreja",
+      "haveChildren": "Tem filhos?",
+      "childrenAria": "Seleção de filhos",
+      "childrenNote": "Usado para o seguro de cuidados de longa duração (Pflegeversicherung). Para 2026 isto significa: com filhos ~1,80% de quota do trabalhador (na maioria dos estados), sem filhos ~2,40% (inclui a sobretaxa para quem não tem filhos). A Saxónia usa uma repartição diferente."
+    },
+    "us": {
+      "filingStatus": "Estado Civil Fiscal",
+      "employmentType": "Tipo de Emprego",
+      "deductionMethod": "Método de Dedução",
+      "itemizedDeductions": "Deduções Discriminadas",
+      "childrenUnder17": "Filhos (menores de 17 anos)",
+      "otherDependents": "Outros Dependentes",
+      "taxpayerOver65": "Contribuinte com 65+ anos",
+      "taxpayerBlind": "Contribuinte invisual",
+      "spouseOver65": "Cônjuge com 65+ anos",
+      "spouseBlind": "Cônjuge invisual",
+      "preTax401k": "401(k) / reforma antes de impostos",
+      "preTaxHSA": "HSA antes de impostos",
+      "otherPreTax": "Outras deduções antes de impostos",
+      "stateTaxRate": "Taxa de imposto estadual (estimativa, %)",
+      "localTaxRate": "Taxa de imposto local (estimativa, %)"
+    },
+    "uk": {
+      "region": "Região",
+      "preTaxPension": "Contribuições para Pensão antes de impostos",
+      "preTaxOther": "Outras Deduções antes de impostos",
+      "studentLoanPlan": "Plano de Empréstimo Estudantil",
+      "studentLoanNote": "Nota: O plano depende de onde/quando estudou, não de onde trabalha.",
+      "marriageAllowance": "Abatimento por Casamento?",
+      "marriageAllowanceAria": "Seleção do Abatimento por Casamento",
+      "marriageAllowanceNote": "Para um contribuinte da taxa básica cujo cônjuge/parceiro civil não é contribuinte (desagravamento até £252).",
+      "children": "Filhos (para o encargo do Abono de Família)",
+      "childrenNote": "Usado para o High Income Child Benefit Charge (aplica-se a rendimentos superiores a £60.000)."
+    },
+    "pl": {
+      "filingStatus": "Estado Civil Fiscal",
+      "children": "Filhos (para desagravamento por filhos)",
+      "preTax": "Contribuições dedutíveis (ex.: IKZE,",
+      "under26": "Desagravamento para jovens (menores de 26 anos)?",
+      "under26Aria": "Seleção do desagravamento para menores de 26 anos",
+      "under26Note": "Isenta de imposto sobre o rendimento até 85.528 PLN de rendimentos do trabalho (ZUS e saúde continuam a aplicar-se)."
+    },
+    "pt": {
+      "region": "Região",
+      "filingStatus": "Estado Civil Fiscal",
+      "dependants": "Dependentes"
+    },
+    "se": {
+      "municipality": "Município",
+      "customRate": "Taxa de imposto municipal (%)",
+      "churchMember": "Membro da Igreja da Suécia?",
+      "churchAria": "Seleção de filiação na igreja",
+      "churchNote": "Adiciona a taxa eclesiástica (kyrkoavgift). O imposto sobre o rendimento já reflete o abatimento básico e o crédito jobbskatteavdrag (menores de 66 anos)."
+    },
+    "it": {
+      "region": "Região (sobretaxa regional)",
+      "customRegionalRate": "Taxa da sobretaxa regional (%)",
+      "municipalRate": "Taxa da sobretaxa municipal (%)",
+      "dependentChildren": "Filhos dependentes (com 21–29 anos)",
+      "dependentChildrenNote": "Os filhos menores de 21 anos são abrangidos pelo Assegno Unico (não pela folha de pagamento). As sobretaxas regionais e municipais variam consoante a localidade.",
+      "dependentSpouse": "Cônjuge dependente (coniuge a carico)?",
+      "dependentSpouseAria": "Seleção de cônjuge dependente",
+      "dependentSpouseNote": "Um cônjuge com pouco ou nenhum rendimento (coniuge a carico) dá um crédito fiscal até €800."
+    },
+    "es": {
+      "community": "Comunidade autónoma",
+      "filingStatus": "Estado Civil Fiscal",
+      "children": "Filhos (descendentes dependentes)",
+      "childrenNote": "As taxas regionais variam consoante a comunidade; o País Basco e Navarra usam sistemas forais separados que não estão aqui abrangidos."
+    },
+    "fr": {
+      "household": "Agregado familiar",
+      "children": "Filhos dependentes",
+      "childrenNote": "Adiciona partes do quociente familiar (+0,5 por cada um dos primeiros dois filhos, +1 a partir do terceiro), com o benefício limitado (plafonnement). Estimativa para um agregado individual/único titular de rendimentos."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Não casado, sem filhos",
+        "2": "Pai/mãe solteiro(a)",
+        "3": "Casado (rendimento superior ao do parceiro)",
+        "4": "Casado (rendimentos equivalentes)",
+        "5": "Casado (rendimento inferior ao do parceiro)",
+        "6": "Rendimento secundário e adicional"
+      },
+      "deHealthInsurance": {
+        "public": "Público / Obrigatório (GKV)",
+        "private-without": "Privado (sem contribuição da entidade patronal)",
+        "private-with": "Privado (com contribuição da entidade patronal)"
+      },
+      "usFilingStatus": {
+        "single": "Solteiro",
+        "mfj": "Casado em Conjunto",
+        "mfs": "Casado em Separado",
+        "hoh": "Chefe de Família"
+      },
+      "usEmploymentType": {
+        "employee": "Trabalhador por conta de outrem (W-2)",
+        "selfEmployed": "Trabalhador independente (estimativa de imposto SE)"
+      },
+      "usDeductionMethod": {
+        "auto": "Automático (máximo entre padrão e discriminada)",
+        "standard": "Dedução padrão",
+        "itemized": "Deduções discriminadas"
+      },
+      "ukRegion": {
+        "england": "Inglaterra",
+        "wales": "País de Gales",
+        "ni": "Irlanda do Norte",
+        "scotland": "Escócia (ainda não suportada)"
+      },
+      "ukStudentLoan": {
+        "none": "Nenhum",
+        "plan2": "Plano 2 (9% acima de £{threshold})",
+        "plan4": "Plano 4 (9% acima de £{threshold})",
+        "plan5": "Plano 5 (9% acima de £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Solteiro",
+        "joint": "Casado — tributação conjunta (único titular de rendimentos)"
+      },
+      "ptRegion": {
+        "mainland": "Continente",
+        "azores": "Açores",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Solteiro",
+        "joint": "Casado — tributação conjunta (único titular de rendimentos)"
+      },
+      "esFilingStatus": {
+        "single": "Individual",
+        "joint": "Declaração conjunta (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Solteiro (1 parte)",
+        "married": "Casado / PACS — conjunto (2 partes)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Seguro de Saúde",
+      "longTermCareInsurance": "Seguro de Cuidados de Longa Duração",
+      "pensionInsurance": "Seguro de Pensão",
+      "unemploymentInsurance": "Seguro de Desemprego",
+      "socialSecurity": "Segurança Social",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Imposto Medicare Adicional",
+      "seTaxSocialSecurity": "Imposto sobre Trabalho Independente (Segurança Social)",
+      "seTaxMedicare": "Imposto sobre Trabalho Independente (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (Classe 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (Classe 1, Superior)",
+      "plPension": "Seguro de pensão (Emerytalne)",
+      "plDisability": "Seguro de invalidez (Rentowe)",
+      "plSickness": "Seguro de doença (Chorobowe)",
+      "plHealth": "Seguro de saúde (Zdrowotne)",
+      "ptSocialSecurity": "Segurança Social",
+      "seChurchFee": "Taxa eclesiástica (kyrkoavgift)",
+      "itInps": "Contribuição para pensão do INPS",
+      "itRegionalMunicipalSurtax": "Sobretaxa regional e municipal (addizionali)",
+      "esCommonContingencies": "Contingências comuns (Seguridad Social)",
+      "esMei": "Contribuição de solidariedade MEI",
+      "esTraining": "Formação (Formación profesional)",
+      "esUnemployment": "Desemprego (Desempleo)",
+      "esSocialSecurity": "Segurança Social (Seguridad Social)",
+      "frCsgDeductible": "CSG (dedutível)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (não dedutível)",
+      "frSocialSecurityPension": "Contribuições para segurança social e pensão",
+      "frPension": "Pensão (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Resultados do cálculo",
+      "netIncome": "Rendimento Líquido",
+      "netHourly": "Líquido por Hora",
+      "netHourlyAfterSacrifice": "Líquido por Hora (após sacrifício salarial)",
+      "netMonthly": "Líquido Mensal",
+      "netYearly": "Líquido Anual",
+      "effectiveTaxRate": "Taxa Efetiva de Imposto",
+      "taxAndNiRate": "Taxa de Imposto e NI",
+      "salarySacrificeRate": "Taxa de Sacrifício Salarial",
+      "totalNonCashShare": "Quota Total Não Monetária",
+      "breakdown": "Detalhe",
+      "grossIncome": "Rendimento Bruto",
+      "preTaxDeductionsEntered": "Deduções antes de impostos (introduzidas)",
+      "preTaxDeductionsAppliedCapped": "Deduções antes de impostos (aplicadas, limitadas)",
+      "preTaxDeductions": "Deduções antes de impostos",
+      "adjustedGrossIncome": "Rendimento Bruto Ajustado (AGI)",
+      "salarySacrifice": "Sacrifício Salarial (Pensão e Antes de Impostos)",
+      "adjustedIncomeAfterSacrifice": "Rendimento Ajustado (após sacrifício salarial)",
+      "preTaxContributions": "Contribuições antes de impostos",
+      "standardDeduction": "Dedução Padrão",
+      "itemizedDeduction": "Dedução Discriminada",
+      "allowances": "Abatimentos",
+      "taxableIncome": "Rendimento Coletável",
+      "incomeTax": "Imposto sobre o Rendimento",
+      "incomeTaxDE": "Imposto Total sobre o Rendimento (ESt + Soli + Igreja)",
+      "incomeTaxUS": "Imposto sobre o Rendimento (Federal + Estadual + Local)",
+      "studentLoan": "Empréstimo Estudantil",
+      "plan2": "Plano 2",
+      "plan4": "Plano 4",
+      "plan5": "Plano 5",
+      "marriageAllowanceRelief": "Abatimento por Casamento (desagravamento)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Sobretaxa de Solidariedade (Soli)",
+      "churchTax": "Imposto Eclesiástico (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Imposto federal sobre o rendimento (antes de créditos)",
+      "taxCreditsApplied": "Créditos fiscais (aplicados)",
+      "federalIncomeTaxAfterCredits": "Imposto federal sobre o rendimento (após créditos)",
+      "stateIncomeTax": "Imposto estadual sobre o rendimento (estimativa)",
+      "localIncomeTax": "Imposto local sobre o rendimento (estimativa)",
+      "saxonySplit": "(repartição da Saxónia)",
+      "cappedOn": "sobre",
+      "totalSocialContributions": "Total de Contribuições Sociais",
+      "taxesAndNi": "Impostos e NI",
+      "cashInHand": "Dinheiro Disponível"
+    },
+    "example": {
+      "heading": "Exemplo de Cálculo",
+      "perHour": "por hora",
+      "perMonth": "por mês",
+      "perYear": "por ano",
+      "netIncomeAnnual": "Rendimento Líquido (Anual)",
+      "basedOnPrefix": "Com base em",
+      "hourlyNote": "({hours} horas/semana, {weeks} semanas/ano)",
+      "monthlyNote": "(12 meses/ano)",
+      "forTaxYear": "para o ano fiscal de {year}."
+    },
+    "disclaimer": {
+      "title": "Aviso Legal sobre a Estimativa Fiscal",
+      "noteLabel": "Nota:",
+      "us": "Estes cálculos são estimativas baseadas apenas nas taxas de imposto federais. Os impostos estaduais e locais não estão incluídos e podem afetar significativamente o total da sua carga fiscal.",
+      "default": "Estes cálculos são estimativas e podem não incluir impostos locais ou regionais. Consulte fontes oficiais ou um profissional fiscal para obter valores rigorosos."
+    },
+    "dataSources": {
+      "heading": "Fontes de dados",
+      "intro": "As nossas estimativas para {country} baseiam-se em valores publicamente disponíveis de fontes oficiais governamentais e das autoridades fiscais. As taxas e os limiares mudam a cada ano fiscal, pelo que os revemos periodicamente. Estes resultados são estimativas, não avaliações fiscais oficiais nem aconselhamento.",
+      "editorialPrefix": "Consulte as nossas",
+      "editorialLink": "normas editoriais",
+      "editorialSuffix": "para saber como pesquisamos e atualizamos estes dados."
+    }
   }
 }

@@ -179,5 +179,313 @@
     "linkHub": "Lönekalkylator-hubb",
     "linkNet": "Nettolönekalkylator",
     "linkHourly": "Omvandlare från timlön till månadslön"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Inkomstläge",
+      "grossIncome": "Bruttoinkomst",
+      "country": "Land",
+      "taxYear": "Beskattningsår",
+      "hoursPerWeek": "Timmar per vecka",
+      "weeksPerYear": "Veckor per år",
+      "calculateNetIncome": "Beräkna nettoinkomst",
+      "salaryPeriod": "Löneperiod",
+      "salaryPeriodAria": "Val av löneperiod"
+    },
+    "mode": {
+      "hourly": "Timlön",
+      "monthly": "Månadslön",
+      "yearly": "Årslön"
+    },
+    "period": {
+      "hourly": "per timme",
+      "monthly": "per månad",
+      "annual": "per år"
+    },
+    "yesNo": {
+      "yes": "Ja",
+      "no": "Nej"
+    },
+    "country": {
+      "US": "USA",
+      "USFederalOnly": "USA (endast federal)",
+      "DE": "Tyskland",
+      "UK": "Storbritannien",
+      "PL": "Polen",
+      "FR": "Frankrike",
+      "ES": "Spanien",
+      "IT": "Italien",
+      "SE": "Sverige",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Välj land",
+      "helper": "Välj ditt land för att beräkna skatten korrekt"
+    },
+    "actions": {
+      "copyShareLink": "Kopiera delningslänk",
+      "copied": "Kopierad!",
+      "shareLinkPrefix": "Delningslänk:"
+    },
+    "status": {
+      "loading": "Laddar skattedata...",
+      "empty": "Ange din inkomst för att se beräkningar"
+    },
+    "validation": {
+      "incomePositive": "Inkomsten måste vara ett positivt tal",
+      "incomeMax": "Inkomsten får inte överstiga {max} ({mode})",
+      "hoursMin": "Timmarna måste vara minst {min}",
+      "hoursMax": "Timmarna får inte överstiga {max}",
+      "weeksMin": "Veckorna måste vara minst {min}",
+      "weeksMax": "Veckorna får inte överstiga {max}"
+    },
+    "de": {
+      "taxClass": "Skatteklass",
+      "healthInsurance": "Sjukförsäkring",
+      "privateNoteLabel": "Obs:",
+      "privateNoteBody": "Privat sjukförsäkring betalas separat och dras inte av från din lön. Nettoinkomsten ovan inkluderar inte kostnader för privat försäkring, som du betalar direkt till ditt försäkringsbolag.",
+      "state": "Ditt förbundsland",
+      "inChurch": "Medlem i kyrkan?",
+      "churchAria": "Val av kyrkomedlemskap",
+      "haveChildren": "Har du barn?",
+      "childrenAria": "Val av barn",
+      "childrenNote": "Används för långtidsvårdsförsäkring (Pflegeversicherung). För 2026 innebär detta: med barn ~1,80 % arbetstagarandel (de flesta förbundsländer), utan barn ~2,40 % (inkluderar tillägget för barnlösa). Sachsen använder en annan fördelning."
+    },
+    "us": {
+      "filingStatus": "Deklarationsstatus",
+      "employmentType": "Anställningsform",
+      "deductionMethod": "Avdragsmetod",
+      "itemizedDeductions": "Specificerade avdrag",
+      "childrenUnder17": "Barn (under 17)",
+      "otherDependents": "Övriga försörjningsberoende",
+      "taxpayerOver65": "Skattebetalare 65+",
+      "taxpayerBlind": "Skattebetalare blind",
+      "spouseOver65": "Make/maka 65+",
+      "spouseBlind": "Make/maka blind",
+      "preTax401k": "Pensionssparande före skatt (401(k))",
+      "preTaxHSA": "HSA före skatt",
+      "otherPreTax": "Övriga avdrag före skatt",
+      "stateTaxRate": "Delstatlig skattesats (uppskattning, %)",
+      "localTaxRate": "Lokal skattesats (uppskattning, %)"
+    },
+    "uk": {
+      "region": "Region",
+      "preTaxPension": "Pensionsavsättningar före skatt",
+      "preTaxOther": "Övriga avdrag före skatt",
+      "studentLoanPlan": "Studielånsplan",
+      "studentLoanNote": "Obs: Planen beror på var/när du studerade, inte var du arbetar.",
+      "marriageAllowance": "Äktenskapsavdrag (Marriage Allowance)?",
+      "marriageAllowanceAria": "Val av äktenskapsavdrag",
+      "marriageAllowanceNote": "För en skattebetalare med grundskattesats vars make/maka eller registrerade partner inte är skattebetalare (avdrag upp till £252).",
+      "children": "Barn (för barnbidragsavgift)",
+      "childrenNote": "Används för High Income Child Benefit Charge (gäller inkomster över £60 000)."
+    },
+    "pl": {
+      "filingStatus": "Deklarationsstatus",
+      "children": "Barn (för barnavdrag)",
+      "preTax": "Avdragsgilla avsättningar (t.ex. IKZE,",
+      "under26": "Avdrag för unga (under 26)?",
+      "under26Aria": "Val av avdrag för under 26",
+      "under26Note": "Befriar anställningsinkomst upp till 85 528 PLN från inkomstskatt (ZUS och sjukförsäkring gäller fortfarande)."
+    },
+    "pt": {
+      "region": "Region",
+      "filingStatus": "Deklarationsstatus",
+      "dependants": "Försörjningsberoende"
+    },
+    "se": {
+      "municipality": "Kommun",
+      "customRate": "Kommunal skattesats (%)",
+      "churchMember": "Medlem i Svenska kyrkan?",
+      "churchAria": "Val av kyrkomedlemskap",
+      "churchNote": "Lägger till kyrkoavgiften. Inkomstskatten återspeglar redan grundavdraget och jobbskatteavdraget (under 66)."
+    },
+    "it": {
+      "region": "Region (regional tilläggsskatt)",
+      "customRegionalRate": "Regional tilläggsskattesats (%)",
+      "municipalRate": "Kommunal tilläggsskattesats (%)",
+      "dependentChildren": "Försörjningsberoende barn (21–29 år)",
+      "dependentChildrenNote": "Barn under 21 omfattas av Assegno Unico (ej via lönen). Regionala och kommunala tilläggsskatter varierar beroende på plats.",
+      "dependentSpouse": "Försörjningsberoende make/maka (coniuge a carico)?",
+      "dependentSpouseAria": "Val av försörjningsberoende make/maka",
+      "dependentSpouseNote": "En make/maka med liten eller ingen inkomst (coniuge a carico) ger ett skatteavdrag på upp till €800."
+    },
+    "es": {
+      "community": "Autonom region",
+      "filingStatus": "Deklarationsstatus",
+      "children": "Barn (försörjningsberoende efterkommande)",
+      "childrenNote": "Regionala skattesatser varierar mellan regioner; País Vasco och Navarra använder separata foral-system som inte omfattas här."
+    },
+    "fr": {
+      "household": "Hushåll",
+      "children": "Försörjningsberoende barn",
+      "childrenNote": "Lägger till familjekvotsandelar (+0,5 för vart och ett av de två första barnen, +1 från det tredje), med förmånen begränsad (plafonnement). Uppskattning för ett enpersonshushåll/ensamförsörjare."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Ogift, inga barn",
+        "2": "Ensamstående förälder",
+        "3": "Gift (högre inkomst än partnern)",
+        "4": "Gift (lika hög inkomst)",
+        "5": "Gift (lägre inkomst än partnern)",
+        "6": "Bi- och tilläggsinkomst"
+      },
+      "deHealthInsurance": {
+        "public": "Offentlig / lagstadgad (GKV)",
+        "private-without": "Privat (utan arbetsgivarbidrag)",
+        "private-with": "Privat (med arbetsgivarbidrag)"
+      },
+      "usFilingStatus": {
+        "single": "Ensamstående",
+        "mfj": "Gift, gemensam deklaration",
+        "mfs": "Gift, separat deklaration",
+        "hoh": "Hushållsföreståndare"
+      },
+      "usEmploymentType": {
+        "employee": "Anställd (W-2)",
+        "selfEmployed": "Egenföretagare (uppskattad SE-skatt)"
+      },
+      "usDeductionMethod": {
+        "auto": "Auto (högst av standard och specificerat)",
+        "standard": "Standardavdrag",
+        "itemized": "Specificerade avdrag"
+      },
+      "ukRegion": {
+        "england": "England",
+        "wales": "Wales",
+        "ni": "Nordirland",
+        "scotland": "Skottland (stöds ännu inte)"
+      },
+      "ukStudentLoan": {
+        "none": "Inget",
+        "plan2": "Plan 2 (9 % över £{threshold})",
+        "plan4": "Plan 4 (9 % över £{threshold})",
+        "plan5": "Plan 5 (9 % över £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Ensamstående",
+        "joint": "Gift – gemensam beskattning (ensamförsörjare)"
+      },
+      "ptRegion": {
+        "mainland": "Fastlandet (Continente)",
+        "azores": "Azorerna (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Ensamstående",
+        "joint": "Gift – gemensam beskattning (ensamförsörjare)"
+      },
+      "esFilingStatus": {
+        "single": "Individuell",
+        "joint": "Gemensam deklaration (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Ensamstående (1 part)",
+        "married": "Gift / PACS – gemensam (2 parts)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Sjukförsäkring",
+      "longTermCareInsurance": "Långtidsvårdsförsäkring",
+      "pensionInsurance": "Pensionsförsäkring",
+      "unemploymentInsurance": "Arbetslöshetsförsäkring",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Ytterligare Medicare-skatt",
+      "seTaxSocialSecurity": "Egenföretagarskatt (Social Security)",
+      "seTaxMedicare": "Egenföretagarskatt (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (klass 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (klass 1, högre)",
+      "plPension": "Pensionsförsäkring (Emerytalne)",
+      "plDisability": "Sjuk- och aktivitetsersättning (Rentowe)",
+      "plSickness": "Sjukförsäkring (Chorobowe)",
+      "plHealth": "Sjukförsäkring (Zdrowotne)",
+      "ptSocialSecurity": "Social Security (Segurança Social)",
+      "seChurchFee": "Kyrkoavgift",
+      "itInps": "INPS-pensionsavgift",
+      "itRegionalMunicipalSurtax": "Regional och kommunal tilläggsskatt (addizionali)",
+      "esCommonContingencies": "Allmänna risker (Seguridad Social)",
+      "esMei": "MEI-solidaritetsavgift",
+      "esTraining": "Utbildning (Formación profesional)",
+      "esUnemployment": "Arbetslöshet (Desempleo)",
+      "esSocialSecurity": "Social Security (Seguridad Social)",
+      "frCsgDeductible": "CSG (avdragsgill)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (ej avdragsgill)",
+      "frSocialSecurityPension": "Social- och pensionsavgifter",
+      "frPension": "Pension (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Beräkningsresultat",
+      "netIncome": "Nettoinkomst",
+      "netHourly": "Netto per timme",
+      "netHourlyAfterSacrifice": "Netto per timme (efter löneväxling)",
+      "netMonthly": "Netto per månad",
+      "netYearly": "Netto per år",
+      "effectiveTaxRate": "Effektiv skattesats",
+      "taxAndNiRate": "Skatt och NI-sats",
+      "salarySacrificeRate": "Löneväxlingssats",
+      "totalNonCashShare": "Total icke-kontant andel",
+      "breakdown": "Specifikation",
+      "grossIncome": "Bruttoinkomst",
+      "preTaxDeductionsEntered": "Avdrag före skatt (angivna)",
+      "preTaxDeductionsAppliedCapped": "Avdrag före skatt (tillämpade, med tak)",
+      "preTaxDeductions": "Avdrag före skatt",
+      "adjustedGrossIncome": "Justerad bruttoinkomst (AGI)",
+      "salarySacrifice": "Löneväxling (pension och före skatt)",
+      "adjustedIncomeAfterSacrifice": "Justerad inkomst (efter löneväxling)",
+      "preTaxContributions": "Avsättningar före skatt",
+      "standardDeduction": "Standardavdrag",
+      "itemizedDeduction": "Specificerat avdrag",
+      "allowances": "Avdrag",
+      "taxableIncome": "Beskattningsbar inkomst",
+      "incomeTax": "Inkomstskatt",
+      "incomeTaxDE": "Total inkomstskatt (ESt + Soli + kyrkoskatt)",
+      "incomeTaxUS": "Inkomstskatt (federal + delstatlig + lokal)",
+      "studentLoan": "Studielån",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Äktenskapsavdrag (Marriage Allowance)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Solidaritetstillägg (Soli)",
+      "churchTax": "Kyrkoskatt (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Federal inkomstskatt (före skattereduktioner)",
+      "taxCreditsApplied": "Skattereduktioner (tillämpade)",
+      "federalIncomeTaxAfterCredits": "Federal inkomstskatt (efter skattereduktioner)",
+      "stateIncomeTax": "Delstatlig inkomstskatt (uppskattning)",
+      "localIncomeTax": "Lokal inkomstskatt (uppskattning)",
+      "saxonySplit": "(Sachsen-fördelning)",
+      "cappedOn": "på",
+      "totalSocialContributions": "Totala sociala avgifter",
+      "taxesAndNi": "Skatter och NI",
+      "cashInHand": "Utbetalt belopp"
+    },
+    "example": {
+      "heading": "Exempelberäkning",
+      "perHour": "per timme",
+      "perMonth": "per månad",
+      "perYear": "per år",
+      "netIncomeAnnual": "Nettoinkomst (årlig)",
+      "basedOnPrefix": "Baserat på",
+      "hourlyNote": "({hours} timmar/vecka, {weeks} veckor/år)",
+      "monthlyNote": "(12 månader/år)",
+      "forTaxYear": "för beskattningsåret {year}."
+    },
+    "disclaimer": {
+      "title": "Ansvarsfriskrivning för skatteuppskattning",
+      "noteLabel": "Obs:",
+      "us": "Dessa beräkningar är uppskattningar baserade enbart på federala skattesatser. Delstatliga och lokala skatter ingår inte och kan väsentligt påverka din totala skatteskyldighet.",
+      "default": "Dessa beräkningar är uppskattningar och kanske inte inkluderar lokala eller regionala skatter. Rådfråga officiella källor eller en skatterådgivare för exakta uppgifter."
+    },
+    "dataSources": {
+      "heading": "Datakällor",
+      "intro": "Våra uppskattningar för {country} baseras på offentligt tillgängliga uppgifter från officiella myndigheter och skattemyndigheter. Skattesatser och tröskelvärden ändras varje beskattningsår, så vi granskar dem regelbundet. Dessa resultat är uppskattningar, inte officiella skattebeslut eller rådgivning.",
+      "editorialPrefix": "Se våra",
+      "editorialLink": "redaktionella riktlinjer",
+      "editorialSuffix": "för hur vi efterforskar och uppdaterar denna data."
+    }
   }
 }

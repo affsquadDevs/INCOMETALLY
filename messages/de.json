@@ -178,5 +178,313 @@
     "linkHub": "Gehaltsrechner-Hub",
     "linkNet": "Nettogehaltsrechner",
     "linkHourly": "Stundenlohn-zu-Gehalt-Umrechner"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Einkommensmodus",
+      "grossIncome": "Bruttoeinkommen",
+      "country": "Land",
+      "taxYear": "Steuerjahr",
+      "hoursPerWeek": "Stunden pro Woche",
+      "weeksPerYear": "Wochen pro Jahr",
+      "calculateNetIncome": "Nettoeinkommen berechnen",
+      "salaryPeriod": "Gehaltszeitraum",
+      "salaryPeriodAria": "Auswahl des Gehaltszeitraums"
+    },
+    "mode": {
+      "hourly": "Stündlich",
+      "monthly": "Monatlich",
+      "yearly": "Jährlich"
+    },
+    "period": {
+      "hourly": "stündlich",
+      "monthly": "monatlich",
+      "annual": "jährlich"
+    },
+    "yesNo": {
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "country": {
+      "US": "Vereinigte Staaten",
+      "USFederalOnly": "Vereinigte Staaten (nur Bundessteuer)",
+      "DE": "Deutschland",
+      "UK": "Vereinigtes Königreich",
+      "PL": "Polen",
+      "FR": "Frankreich",
+      "ES": "Spanien",
+      "IT": "Italien",
+      "SE": "Schweden",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Land auswählen",
+      "helper": "Wählen Sie Ihr Land, um die Steuern entsprechend zu berechnen"
+    },
+    "actions": {
+      "copyShareLink": "Freigabelink kopieren",
+      "copied": "Kopiert!",
+      "shareLinkPrefix": "Freigabelink:"
+    },
+    "status": {
+      "loading": "Steuerdaten werden geladen...",
+      "empty": "Geben Sie Ihr Einkommen ein, um Berechnungen zu sehen"
+    },
+    "validation": {
+      "incomePositive": "Das Einkommen muss eine positive Zahl sein",
+      "incomeMax": "Das Einkommen darf {max} nicht überschreiten ({mode})",
+      "hoursMin": "Die Stunden müssen mindestens {min} betragen",
+      "hoursMax": "Die Stunden dürfen {max} nicht überschreiten",
+      "weeksMin": "Die Wochen müssen mindestens {min} betragen",
+      "weeksMax": "Die Wochen dürfen {max} nicht überschreiten"
+    },
+    "de": {
+      "taxClass": "Steuerklasse",
+      "healthInsurance": "Krankenversicherung",
+      "privateNoteLabel": "Hinweis:",
+      "privateNoteBody": "Die private Krankenversicherung wird separat gezahlt und nicht vom Gehalt abgezogen. Das oben angezeigte Nettoeinkommen enthält keine privaten Versicherungskosten, die Sie direkt an Ihren Versicherer zahlen.",
+      "state": "Ihr Bundesland",
+      "inChurch": "In der Kirche?",
+      "churchAria": "Auswahl der Kirchenmitgliedschaft",
+      "haveChildren": "Kinder?",
+      "childrenAria": "Auswahl der Kinder",
+      "childrenNote": "Wird für die Pflegeversicherung verwendet. Für 2026 bedeutet das: mit Kindern ca. 1,80 % Arbeitnehmeranteil (in den meisten Bundesländern), ohne Kinder ca. 2,40 % (inkl. Kinderlosenzuschlag). Sachsen nutzt eine andere Aufteilung."
+    },
+    "us": {
+      "filingStatus": "Veranlagungsstatus",
+      "employmentType": "Beschäftigungsart",
+      "deductionMethod": "Abzugsmethode",
+      "itemizedDeductions": "Einzelaufgeführte Abzüge",
+      "childrenUnder17": "Kinder (unter 17)",
+      "otherDependents": "Sonstige Angehörige",
+      "taxpayerOver65": "Steuerzahler 65+",
+      "taxpayerBlind": "Steuerzahler blind",
+      "spouseOver65": "Ehepartner 65+",
+      "spouseBlind": "Ehepartner blind",
+      "preTax401k": "Vorsteuerliche 401(k) / Altersvorsorge",
+      "preTaxHSA": "Vorsteuerliches HSA",
+      "otherPreTax": "Sonstige vorsteuerliche Abzüge",
+      "stateTaxRate": "Bundesstaatssteuersatz (Schätzung, %)",
+      "localTaxRate": "Lokaler Steuersatz (Schätzung, %)"
+    },
+    "uk": {
+      "region": "Region",
+      "preTaxPension": "Vorsteuerliche Rentenbeiträge",
+      "preTaxOther": "Sonstige vorsteuerliche Abzüge",
+      "studentLoanPlan": "Studienkredit-Plan",
+      "studentLoanNote": "Hinweis: Der Plan hängt davon ab, wo/wann Sie studiert haben, nicht wo Sie arbeiten.",
+      "marriageAllowance": "Ehegattenfreibetrag?",
+      "marriageAllowanceAria": "Auswahl des Ehegattenfreibetrags",
+      "marriageAllowanceNote": "Für Steuerzahler im Basissatz, deren Ehe-/Lebenspartner kein Steuerzahler ist (Entlastung bis zu £252).",
+      "children": "Kinder (für die Kindergeldabgabe)",
+      "childrenNote": "Wird für die High Income Child Benefit Charge verwendet (gilt bei Einkommen über £60.000)."
+    },
+    "pl": {
+      "filingStatus": "Veranlagungsstatus",
+      "children": "Kinder (für Kinderfreibetrag)",
+      "preTax": "Steuerlich absetzbare Beiträge (z. B. IKZE,",
+      "under26": "Entlastung für junge Menschen (unter 26)?",
+      "under26Aria": "Auswahl der Entlastung für unter 26-Jährige",
+      "under26Note": "Befreit Arbeitseinkommen bis 85.528 PLN von der Einkommensteuer (ZUS und Krankenversicherung gelten weiterhin)."
+    },
+    "pt": {
+      "region": "Region",
+      "filingStatus": "Veranlagungsstatus",
+      "dependants": "Angehörige"
+    },
+    "se": {
+      "municipality": "Gemeinde",
+      "customRate": "Kommunaler Steuersatz (%)",
+      "churchMember": "Mitglied der Schwedischen Kirche?",
+      "churchAria": "Auswahl der Kirchenmitgliedschaft",
+      "churchNote": "Fügt die Kirchengebühr (kyrkoavgift) hinzu. Die Einkommensteuer berücksichtigt bereits den Grundfreibetrag und den jobbskatteavdrag-Freibetrag (unter 66)."
+    },
+    "it": {
+      "region": "Region (regionaler Zuschlag)",
+      "customRegionalRate": "Regionaler Zuschlagssatz (%)",
+      "municipalRate": "Kommunaler Zuschlagssatz (%)",
+      "dependentChildren": "Unterhaltsberechtigte Kinder (21–29 Jahre)",
+      "dependentChildrenNote": "Kinder unter 21 sind durch den Assegno Unico abgedeckt (nicht über die Lohnabrechnung). Regionale und kommunale Zuschläge variieren je nach Standort.",
+      "dependentSpouse": "Unterhaltsberechtigter Ehepartner (coniuge a carico)?",
+      "dependentSpouseAria": "Auswahl des unterhaltsberechtigten Ehepartners",
+      "dependentSpouseNote": "Ein Ehepartner mit wenig oder keinem Einkommen (coniuge a carico) gewährt einen Steuerbonus von bis zu 800 €."
+    },
+    "es": {
+      "community": "Autonome Gemeinschaft",
+      "filingStatus": "Veranlagungsstatus",
+      "children": "Kinder (unterhaltsberechtigte Nachkommen)",
+      "childrenNote": "Die regionalen Sätze variieren je nach Gemeinschaft; País Vasco und Navarra nutzen separate Foral-Systeme, die hier nicht abgedeckt sind."
+    },
+    "fr": {
+      "household": "Haushalt",
+      "children": "Unterhaltsberechtigte Kinder",
+      "childrenNote": "Fügt Anteile am Familienquotienten hinzu (+0,5 für jedes der ersten beiden Kinder, +1 ab dem dritten), wobei der Vorteil gedeckelt ist (plafonnement). Schätzung für einen Single-Haushalt/Alleinverdiener."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Nicht verheiratet, keine Kinder",
+        "2": "Alleinerziehend",
+        "3": "Verheiratet (höheres Einkommen als Partner)",
+        "4": "Verheiratet (gleiches Einkommen)",
+        "5": "Verheiratet (niedrigeres Einkommen als Partner)",
+        "6": "Neben- und Zusatzeinkommen"
+      },
+      "deHealthInsurance": {
+        "public": "Gesetzlich (GKV)",
+        "private-without": "Privat (ohne Arbeitgeberzuschuss)",
+        "private-with": "Privat (mit Arbeitgeberzuschuss)"
+      },
+      "usFilingStatus": {
+        "single": "Alleinstehend",
+        "mfj": "Verheiratet, gemeinsame Veranlagung",
+        "mfs": "Verheiratet, getrennte Veranlagung",
+        "hoh": "Haushaltsvorstand"
+      },
+      "usEmploymentType": {
+        "employee": "Arbeitnehmer (W-2)",
+        "selfEmployed": "Selbstständig (SE-Steuer-Schätzung)"
+      },
+      "usDeductionMethod": {
+        "auto": "Automatisch (max. aus Standard und Einzelaufstellung)",
+        "standard": "Standardabzug",
+        "itemized": "Einzelaufgeführte Abzüge"
+      },
+      "ukRegion": {
+        "england": "England",
+        "wales": "Wales",
+        "ni": "Nordirland",
+        "scotland": "Schottland (noch nicht unterstützt)"
+      },
+      "ukStudentLoan": {
+        "none": "Keiner",
+        "plan2": "Plan 2 (9 % über £{threshold})",
+        "plan4": "Plan 4 (9 % über £{threshold})",
+        "plan5": "Plan 5 (9 % über £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Alleinstehend",
+        "joint": "Verheiratet — gemeinsame Veranlagung (Alleinverdiener)"
+      },
+      "ptRegion": {
+        "mainland": "Festland (Continente)",
+        "azores": "Azoren (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Alleinstehend",
+        "joint": "Verheiratet — gemeinsame Besteuerung (Alleinverdiener)"
+      },
+      "esFilingStatus": {
+        "single": "Einzelveranlagung",
+        "joint": "Gemeinsame Erklärung (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Alleinstehend (1 Anteil)",
+        "married": "Verheiratet / PACS — gemeinsam (2 Anteile)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Krankenversicherung",
+      "longTermCareInsurance": "Pflegeversicherung",
+      "pensionInsurance": "Rentenversicherung",
+      "unemploymentInsurance": "Arbeitslosenversicherung",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Zusätzliche Medicare-Steuer",
+      "seTaxSocialSecurity": "Selbstständigensteuer (Social Security)",
+      "seTaxMedicare": "Selbstständigensteuer (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (Klasse 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (Klasse 1, höher)",
+      "plPension": "Rentenversicherung (Emerytalne)",
+      "plDisability": "Erwerbsunfähigkeitsversicherung (Rentowe)",
+      "plSickness": "Krankenversicherung (Chorobowe)",
+      "plHealth": "Gesundheitsversicherung (Zdrowotne)",
+      "ptSocialSecurity": "Social Security (Segurança Social)",
+      "seChurchFee": "Kirchengebühr (kyrkoavgift)",
+      "itInps": "INPS-Rentenbeitrag",
+      "itRegionalMunicipalSurtax": "Regionaler & kommunaler Zuschlag (addizionali)",
+      "esCommonContingencies": "Allgemeine Risiken (Seguridad Social)",
+      "esMei": "MEI-Solidaritätsbeitrag",
+      "esTraining": "Berufsausbildung (Formación profesional)",
+      "esUnemployment": "Arbeitslosigkeit (Desempleo)",
+      "esSocialSecurity": "Social Security (Seguridad Social)",
+      "frCsgDeductible": "CSG (absetzbar)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (nicht absetzbar)",
+      "frSocialSecurityPension": "Sozialversicherungs- & Rentenbeiträge",
+      "frPension": "Rente (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Berechnungsergebnisse",
+      "netIncome": "Nettoeinkommen",
+      "netHourly": "Netto stündlich",
+      "netHourlyAfterSacrifice": "Netto stündlich (nach Gehaltsumwandlung)",
+      "netMonthly": "Netto monatlich",
+      "netYearly": "Netto jährlich",
+      "effectiveTaxRate": "Effektiver Steuersatz",
+      "taxAndNiRate": "Steuer- & NI-Satz",
+      "salarySacrificeRate": "Gehaltsumwandlungssatz",
+      "totalNonCashShare": "Gesamter Sachleistungsanteil",
+      "breakdown": "Aufschlüsselung",
+      "grossIncome": "Bruttoeinkommen",
+      "preTaxDeductionsEntered": "Vorsteuerliche Abzüge (eingegeben)",
+      "preTaxDeductionsAppliedCapped": "Vorsteuerliche Abzüge (angewendet, gedeckelt)",
+      "preTaxDeductions": "Vorsteuerliche Abzüge",
+      "adjustedGrossIncome": "Bereinigtes Bruttoeinkommen (AGI)",
+      "salarySacrifice": "Gehaltsumwandlung (Rente & vorsteuerlich)",
+      "adjustedIncomeAfterSacrifice": "Bereinigtes Einkommen (nach Gehaltsumwandlung)",
+      "preTaxContributions": "Vorsteuerliche Beiträge",
+      "standardDeduction": "Standardabzug",
+      "itemizedDeduction": "Einzelaufgeführter Abzug",
+      "allowances": "Freibeträge",
+      "taxableIncome": "Zu versteuerndes Einkommen",
+      "incomeTax": "Einkommensteuer",
+      "incomeTaxDE": "Gesamte Einkommensteuer (ESt + Soli + Kirche)",
+      "incomeTaxUS": "Einkommensteuer (Bund + Bundesstaat + lokal)",
+      "studentLoan": "Studienkredit",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Ehegattenfreibetrag (Entlastung)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Solidaritätszuschlag (Soli)",
+      "churchTax": "Kirchensteuer",
+      "federalIncomeTaxBeforeCredits": "Bundeseinkommensteuer (vor Steuergutschriften)",
+      "taxCreditsApplied": "Steuergutschriften (angewendet)",
+      "federalIncomeTaxAfterCredits": "Bundeseinkommensteuer (nach Steuergutschriften)",
+      "stateIncomeTax": "Bundesstaatseinkommensteuer (Schätzung)",
+      "localIncomeTax": "Lokale Einkommensteuer (Schätzung)",
+      "saxonySplit": "(Sachsen-Aufteilung)",
+      "cappedOn": "auf",
+      "totalSocialContributions": "Gesamte Sozialabgaben",
+      "taxesAndNi": "Steuern & NI",
+      "cashInHand": "Verfügbares Einkommen"
+    },
+    "example": {
+      "heading": "Beispielberechnung",
+      "perHour": "pro Stunde",
+      "perMonth": "pro Monat",
+      "perYear": "pro Jahr",
+      "netIncomeAnnual": "Nettoeinkommen (jährlich)",
+      "basedOnPrefix": "Basierend auf",
+      "hourlyNote": "({hours} Stunden/Woche, {weeks} Wochen/Jahr)",
+      "monthlyNote": "(12 Monate/Jahr)",
+      "forTaxYear": "für das Steuerjahr {year}."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss zur Steuerschätzung",
+      "noteLabel": "Hinweis:",
+      "us": "Diese Berechnungen sind Schätzungen, die ausschließlich auf den Bundessteuersätzen basieren. Bundesstaats- und lokale Steuern sind nicht enthalten und können Ihre gesamte Steuerlast erheblich beeinflussen.",
+      "default": "Diese Berechnungen sind Schätzungen und enthalten möglicherweise keine lokalen oder regionalen Steuern. Bitte konsultieren Sie offizielle Quellen oder einen Steuerberater für genaue Zahlen."
+    },
+    "dataSources": {
+      "heading": "Datenquellen",
+      "intro": "Unsere Schätzungen für {country} basieren auf öffentlich verfügbaren Zahlen aus offiziellen behördlichen und steuerlichen Quellen. Sätze und Schwellenwerte ändern sich jedes Steuerjahr, daher überprüfen wir sie regelmäßig. Diese Ergebnisse sind Schätzungen, keine offiziellen Steuerbescheide oder Beratung.",
+      "editorialPrefix": "Siehe unsere",
+      "editorialLink": "redaktionellen Standards",
+      "editorialSuffix": "dazu, wie wir diese Daten recherchieren und aktualisieren."
+    }
   }
 }

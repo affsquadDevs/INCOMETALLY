@@ -180,5 +180,313 @@
     "linkHub": "Центр калькуляторів зарплати",
     "linkNet": "Калькулятор чистої зарплати",
     "linkHourly": "Конвертер погодинної оплати в зарплату"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Режим доходу",
+      "grossIncome": "Дохід до сплати податків",
+      "country": "Країна",
+      "taxYear": "Податковий рік",
+      "hoursPerWeek": "Годин на тиждень",
+      "weeksPerYear": "Тижнів на рік",
+      "calculateNetIncome": "Розрахувати чистий дохід",
+      "salaryPeriod": "Період зарплати",
+      "salaryPeriodAria": "Вибір періоду зарплати"
+    },
+    "mode": {
+      "hourly": "Погодинно",
+      "monthly": "Щомісяця",
+      "yearly": "Щороку"
+    },
+    "period": {
+      "hourly": "погодинний",
+      "monthly": "місячний",
+      "annual": "річний"
+    },
+    "yesNo": {
+      "yes": "Так",
+      "no": "Ні"
+    },
+    "country": {
+      "US": "США",
+      "USFederalOnly": "США (лише федеральний)",
+      "DE": "Німеччина",
+      "UK": "Велика Британія",
+      "PL": "Польща",
+      "FR": "Франція",
+      "ES": "Іспанія",
+      "IT": "Італія",
+      "SE": "Швеція",
+      "PT": "Португалія"
+    },
+    "countrySelect": {
+      "label": "Виберіть країну",
+      "helper": "Виберіть свою країну для відповідного розрахунку податків"
+    },
+    "actions": {
+      "copyShareLink": "Скопіювати посилання",
+      "copied": "Скопійовано!",
+      "shareLinkPrefix": "Посилання для поширення:"
+    },
+    "status": {
+      "loading": "Завантаження податкових даних...",
+      "empty": "Введіть свій дохід, щоб побачити розрахунки"
+    },
+    "validation": {
+      "incomePositive": "Дохід має бути додатним числом",
+      "incomeMax": "Дохід не може перевищувати {max} ({mode})",
+      "hoursMin": "Кількість годин має бути не менше {min}",
+      "hoursMax": "Кількість годин не може перевищувати {max}",
+      "weeksMin": "Кількість тижнів має бути не менше {min}",
+      "weeksMax": "Кількість тижнів не може перевищувати {max}"
+    },
+    "de": {
+      "taxClass": "Податковий клас",
+      "healthInsurance": "Медичне страхування",
+      "privateNoteLabel": "Примітка:",
+      "privateNoteBody": "Приватне медичне страхування сплачується окремо й не вираховується із зарплати. Чистий дохід, наведений вище, не включає витрат на приватне страхування, які ви сплачуєте безпосередньо своєму страховику.",
+      "state": "Ваша земля",
+      "inChurch": "Член церкви?",
+      "churchAria": "Вибір членства в церкві",
+      "haveChildren": "Маєте дітей?",
+      "childrenAria": "Вибір наявності дітей",
+      "childrenNote": "Використовується для страхування на випадок потреби в догляді (Pflegeversicherung). У 2026 році це означає: з дітьми ~1,80% частка працівника (у більшості земель), без дітей ~2,40% (включає надбавку для бездітних). Саксонія використовує інший розподіл."
+    },
+    "us": {
+      "filingStatus": "Статус подання декларації",
+      "employmentType": "Тип зайнятості",
+      "deductionMethod": "Метод відрахувань",
+      "itemizedDeductions": "Деталізовані відрахування",
+      "childrenUnder17": "Діти (до 17 років)",
+      "otherDependents": "Інші утриманці",
+      "taxpayerOver65": "Платник податків 65+",
+      "taxpayerBlind": "Платник податків незрячий",
+      "spouseOver65": "Дружина/чоловік 65+",
+      "spouseBlind": "Дружина/чоловік незрячий",
+      "preTax401k": "401(k) / пенсійні до сплати податків",
+      "preTaxHSA": "HSA до сплати податків",
+      "otherPreTax": "Інші відрахування до сплати податків",
+      "stateTaxRate": "Ставка податку штату (оцінка, %)",
+      "localTaxRate": "Місцева ставка податку (оцінка, %)"
+    },
+    "uk": {
+      "region": "Регіон",
+      "preTaxPension": "Пенсійні внески до сплати податків",
+      "preTaxOther": "Інші відрахування до сплати податків",
+      "studentLoanPlan": "План студентського кредиту",
+      "studentLoanNote": "Примітка: план залежить від того, де/коли ви навчалися, а не де працюєте.",
+      "marriageAllowance": "Подружня знижка (Marriage Allowance)?",
+      "marriageAllowanceAria": "Вибір подружньої знижки",
+      "marriageAllowanceNote": "Для платника податків за базовою ставкою, чия дружина/чоловік або цивільний партнер не сплачує податки (пільга до £252).",
+      "children": "Діти (для збору Child Benefit)",
+      "childrenNote": "Використовується для збору High Income Child Benefit Charge (застосовується при доходах понад £60 000)."
+    },
+    "pl": {
+      "filingStatus": "Статус подання декларації",
+      "children": "Діти (для дитячої пільги)",
+      "preTax": "Відрахування, що зменшують податок (напр. IKZE,",
+      "under26": "Пільга для молоді (до 26 років)?",
+      "under26Aria": "Вибір пільги для осіб до 26 років",
+      "under26Note": "Звільняє дохід від зайнятості до 85 528 PLN від податку на дохід (ZUS і медичне страхування все одно застосовуються)."
+    },
+    "pt": {
+      "region": "Регіон",
+      "filingStatus": "Статус подання декларації",
+      "dependants": "Утриманці"
+    },
+    "se": {
+      "municipality": "Муніципалітет",
+      "customRate": "Муніципальна ставка податку (%)",
+      "churchMember": "Член Церкви Швеції?",
+      "churchAria": "Вибір членства в церкві",
+      "churchNote": "Додає церковний збір (kyrkoavgift). Податок на дохід уже враховує базову знижку та податковий кредит jobbskatteavdrag (до 66 років)."
+    },
+    "it": {
+      "region": "Регіон (регіональна надбавка)",
+      "customRegionalRate": "Ставка регіональної надбавки (%)",
+      "municipalRate": "Ставка муніципальної надбавки (%)",
+      "dependentChildren": "Утриманці-діти (віком 21–29 років)",
+      "dependentChildrenNote": "Діти до 21 року охоплюються Assegno Unico (не через зарплату). Регіональні та муніципальні надбавки залежать від місцевості.",
+      "dependentSpouse": "Утриманець — дружина/чоловік (coniuge a carico)?",
+      "dependentSpouseAria": "Вибір утриманця — дружини/чоловіка",
+      "dependentSpouseNote": "Дружина/чоловік з невеликим доходом або без нього (coniuge a carico) дає податковий кредит до €800."
+    },
+    "es": {
+      "community": "Автономна спільнота",
+      "filingStatus": "Статус подання декларації",
+      "children": "Діти (утриманці-нащадки)",
+      "childrenNote": "Регіональні ставки відрізняються залежно від спільноти; País Vasco і Navarra використовують окремі форальні системи, які тут не охоплено."
+    },
+    "fr": {
+      "household": "Домогосподарство",
+      "children": "Утриманці-діти",
+      "childrenNote": "Додає частки сімейного коефіцієнта (+0,5 за кожну з перших двох дітей, +1 з третьої), з обмеженням пільги (plafonnement). Оцінка для одного домогосподарства/єдиного годувальника."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Не одружений/-а, без дітей",
+        "2": "Самотній батько/мати",
+        "3": "Одружений/-а (вищий дохід, ніж у партнера)",
+        "4": "Одружений/-а (однаковий дохід)",
+        "5": "Одружений/-а (нижчий дохід, ніж у партнера)",
+        "6": "Вторинний і додатковий дохід"
+      },
+      "deHealthInsurance": {
+        "public": "Державне / Обов'язкове (GKV)",
+        "private-without": "Приватне (без внеску роботодавця)",
+        "private-with": "Приватне (з внеском роботодавця)"
+      },
+      "usFilingStatus": {
+        "single": "Самотній/-я",
+        "mfj": "Подружжя, спільна декларація",
+        "mfs": "Подружжя, окремі декларації",
+        "hoh": "Глава домогосподарства"
+      },
+      "usEmploymentType": {
+        "employee": "Найманий працівник (W-2)",
+        "selfEmployed": "Самозайнятий (оцінка податку SE)"
+      },
+      "usDeductionMethod": {
+        "auto": "Авто (максимум зі стандартного чи деталізованого)",
+        "standard": "Стандартне відрахування",
+        "itemized": "Деталізовані відрахування"
+      },
+      "ukRegion": {
+        "england": "Англія",
+        "wales": "Уельс",
+        "ni": "Північна Ірландія",
+        "scotland": "Шотландія (поки не підтримується)"
+      },
+      "ukStudentLoan": {
+        "none": "Немає",
+        "plan2": "План 2 (9% понад £{threshold})",
+        "plan4": "План 4 (9% понад £{threshold})",
+        "plan5": "План 5 (9% понад £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Самотній/-я",
+        "joint": "Подружжя — спільне оподаткування (єдиний годувальник)"
+      },
+      "ptRegion": {
+        "mainland": "Материк (Continente)",
+        "azores": "Азорські острови (Açores)",
+        "madeira": "Мадейра"
+      },
+      "ptFilingStatus": {
+        "single": "Самотній/-я",
+        "joint": "Подружжя — спільне оподаткування (єдиний годувальник)"
+      },
+      "esFilingStatus": {
+        "single": "Індивідуальна",
+        "joint": "Спільна декларація (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Самотній/-я (1 частка)",
+        "married": "Подружжя / PACS — спільна (2 частки)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Медичне страхування",
+      "longTermCareInsurance": "Страхування довгострокового догляду",
+      "pensionInsurance": "Пенсійне страхування",
+      "unemploymentInsurance": "Страхування на випадок безробіття",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Додатковий податок Medicare",
+      "seTaxSocialSecurity": "Податок самозайнятості (Social Security)",
+      "seTaxMedicare": "Податок самозайнятості (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (клас 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (клас 1, вища ставка)",
+      "plPension": "Пенсійне страхування (Emerytalne)",
+      "plDisability": "Страхування на випадок непрацездатності (Rentowe)",
+      "plSickness": "Страхування на випадок хвороби (Chorobowe)",
+      "plHealth": "Медичне страхування (Zdrowotne)",
+      "ptSocialSecurity": "Соціальне страхування (Segurança Social)",
+      "seChurchFee": "Церковний збір (kyrkoavgift)",
+      "itInps": "Пенсійний внесок INPS",
+      "itRegionalMunicipalSurtax": "Регіональна та муніципальна надбавка (addizionali)",
+      "esCommonContingencies": "Загальні ризики (Seguridad Social)",
+      "esMei": "Солідарний внесок MEI",
+      "esTraining": "Навчання (Formación profesional)",
+      "esUnemployment": "Безробіття (Desempleo)",
+      "esSocialSecurity": "Соціальне страхування (Seguridad Social)",
+      "frCsgDeductible": "CSG (відраховується)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (не відраховується)",
+      "frSocialSecurityPension": "Соціальні та пенсійні внески",
+      "frPension": "Пенсія (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Результати розрахунку",
+      "netIncome": "Чистий дохід",
+      "netHourly": "Чистий погодинний",
+      "netHourlyAfterSacrifice": "Чистий погодинний (після salary sacrifice)",
+      "netMonthly": "Чистий місячний",
+      "netYearly": "Чистий річний",
+      "effectiveTaxRate": "Ефективна ставка податку",
+      "taxAndNiRate": "Ставка податку та NI",
+      "salarySacrificeRate": "Ставка salary sacrifice",
+      "totalNonCashShare": "Загальна негрошова частка",
+      "breakdown": "Деталізація",
+      "grossIncome": "Дохід до сплати податків",
+      "preTaxDeductionsEntered": "Відрахування до сплати податків (введено)",
+      "preTaxDeductionsAppliedCapped": "Відрахування до сплати податків (застосовано, з обмеженням)",
+      "preTaxDeductions": "Відрахування до сплати податків",
+      "adjustedGrossIncome": "Скоригований валовий дохід (AGI)",
+      "salarySacrifice": "Salary Sacrifice (пенсія та до сплати податків)",
+      "adjustedIncomeAfterSacrifice": "Скоригований дохід (після salary sacrifice)",
+      "preTaxContributions": "Внески до сплати податків",
+      "standardDeduction": "Стандартне відрахування",
+      "itemizedDeduction": "Деталізоване відрахування",
+      "allowances": "Знижки",
+      "taxableIncome": "Оподатковуваний дохід",
+      "incomeTax": "Податок на дохід",
+      "incomeTaxDE": "Загальний податок на дохід (ESt + Soli + церковний)",
+      "incomeTaxUS": "Податок на дохід (федеральний + штату + місцевий)",
+      "studentLoan": "Студентський кредит",
+      "plan2": "План 2",
+      "plan4": "План 4",
+      "plan5": "План 5",
+      "marriageAllowanceRelief": "Подружня знижка (пільга)",
+      "hicbc": "Збір High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Надбавка солідарності (Soli)",
+      "churchTax": "Церковний податок (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Федеральний податок на дохід (до кредитів)",
+      "taxCreditsApplied": "Податкові кредити (застосовано)",
+      "federalIncomeTaxAfterCredits": "Федеральний податок на дохід (після кредитів)",
+      "stateIncomeTax": "Податок на дохід штату (оцінка)",
+      "localIncomeTax": "Місцевий податок на дохід (оцінка)",
+      "saxonySplit": "(розподіл Саксонії)",
+      "cappedOn": "від",
+      "totalSocialContributions": "Загальні соціальні внески",
+      "taxesAndNi": "Податки та NI",
+      "cashInHand": "Готівка на руки"
+    },
+    "example": {
+      "heading": "Приклад розрахунку",
+      "perHour": "за годину",
+      "perMonth": "на місяць",
+      "perYear": "на рік",
+      "netIncomeAnnual": "Чистий дохід (річний)",
+      "basedOnPrefix": "На основі",
+      "hourlyNote": "({hours} год/тиждень, {weeks} тижнів/рік)",
+      "monthlyNote": "(12 місяців/рік)",
+      "forTaxYear": "за {year} податковий рік."
+    },
+    "disclaimer": {
+      "title": "Застереження щодо оцінки податків",
+      "noteLabel": "Примітка:",
+      "us": "Ці розрахунки є оцінками на основі лише федеральних податкових ставок. Податки штату та місцеві податки не включено, і вони можуть суттєво вплинути на вашу загальну податкову заборгованість.",
+      "default": "Ці розрахунки є оцінками й можуть не включати місцеві чи регіональні податки. Будь ласка, зверніться до офіційних джерел або до податкового фахівця для отримання точних цифр."
+    },
+    "dataSources": {
+      "heading": "Джерела даних",
+      "intro": "Наші оцінки для країни {country} ґрунтуються на загальнодоступних даних з офіційних державних та податкових джерел. Ставки й пороги змінюються щороку, тому ми періодично їх переглядаємо. Ці результати є оцінками, а не офіційними податковими нарахуваннями чи порадами.",
+      "editorialPrefix": "Дивіться наші",
+      "editorialLink": "редакційні стандарти",
+      "editorialSuffix": "щоб дізнатися, як ми досліджуємо та оновлюємо ці дані."
+    }
   }
 }

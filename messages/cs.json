@@ -180,5 +180,313 @@
     "linkHub": "Centrum mzdových kalkulaček",
     "linkNet": "Kalkulačka čisté mzdy",
     "linkHourly": "Převodník hodinové mzdy na plat"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Režim příjmu",
+      "grossIncome": "Hrubý příjem",
+      "country": "Země",
+      "taxYear": "Daňový rok",
+      "hoursPerWeek": "Hodin týdně",
+      "weeksPerYear": "Týdnů ročně",
+      "calculateNetIncome": "Vypočítat čistý příjem",
+      "salaryPeriod": "Mzdové období",
+      "salaryPeriodAria": "Výběr mzdového období"
+    },
+    "mode": {
+      "hourly": "Hodinově",
+      "monthly": "Měsíčně",
+      "yearly": "Ročně"
+    },
+    "period": {
+      "hourly": "hodinově",
+      "monthly": "měsíčně",
+      "annual": "ročně"
+    },
+    "yesNo": {
+      "yes": "Ano",
+      "no": "Ne"
+    },
+    "country": {
+      "US": "Spojené státy",
+      "USFederalOnly": "Spojené státy (pouze federální)",
+      "DE": "Německo",
+      "UK": "Spojené království",
+      "PL": "Polsko",
+      "FR": "Francie",
+      "ES": "Španělsko",
+      "IT": "Itálie",
+      "SE": "Švédsko",
+      "PT": "Portugalsko"
+    },
+    "countrySelect": {
+      "label": "Vyberte zemi",
+      "helper": "Vyberte svou zemi pro odpovídající výpočet daní"
+    },
+    "actions": {
+      "copyShareLink": "Kopírovat odkaz ke sdílení",
+      "copied": "Zkopírováno!",
+      "shareLinkPrefix": "Odkaz ke sdílení:"
+    },
+    "status": {
+      "loading": "Načítání daňových dat...",
+      "empty": "Zadejte svůj příjem a uvidíte výpočty"
+    },
+    "validation": {
+      "incomePositive": "Příjem musí být kladné číslo",
+      "incomeMax": "Příjem nesmí překročit {max} ({mode})",
+      "hoursMin": "Hodin musí být alespoň {min}",
+      "hoursMax": "Hodin nesmí překročit {max}",
+      "weeksMin": "Týdnů musí být alespoň {min}",
+      "weeksMax": "Týdnů nesmí překročit {max}"
+    },
+    "de": {
+      "taxClass": "Daňová třída",
+      "healthInsurance": "Zdravotní pojištění",
+      "privateNoteLabel": "Poznámka:",
+      "privateNoteBody": "Soukromé zdravotní pojištění se platí zvlášť a nestrhává se ze mzdy. Výše uvedený čistý příjem nezahrnuje náklady na soukromé pojištění, které platíte přímo svému pojistiteli.",
+      "state": "Vaše spolková země",
+      "inChurch": "Jste v církvi?",
+      "churchAria": "Výběr členství v církvi",
+      "haveChildren": "Máte děti?",
+      "childrenAria": "Výběr dětí",
+      "childrenNote": "Používá se pro pojištění dlouhodobé péče (Pflegeversicherung). Pro rok 2026 to znamená: s dětmi ~1,80 % podíl zaměstnance (většina spolkových zemí), bez dětí ~2,40 % (zahrnuje příplatek pro bezdětné). Sasko používá jiné rozdělení."
+    },
+    "us": {
+      "filingStatus": "Status podání",
+      "employmentType": "Typ zaměstnání",
+      "deductionMethod": "Metoda odpočtu",
+      "itemizedDeductions": "Položkové odpočty",
+      "childrenUnder17": "Děti (do 17 let)",
+      "otherDependents": "Ostatní vyživované osoby",
+      "taxpayerOver65": "Poplatník 65+",
+      "taxpayerBlind": "Poplatník nevidomý",
+      "spouseOver65": "Manžel/ka 65+",
+      "spouseBlind": "Manžel/ka nevidomý/á",
+      "preTax401k": "401(k) / důchodové (před zdaněním)",
+      "preTaxHSA": "HSA (před zdaněním)",
+      "otherPreTax": "Ostatní odpočty před zdaněním",
+      "stateTaxRate": "Sazba státní daně (odhad, %)",
+      "localTaxRate": "Sazba místní daně (odhad, %)"
+    },
+    "uk": {
+      "region": "Region",
+      "preTaxPension": "Důchodové příspěvky před zdaněním",
+      "preTaxOther": "Ostatní odpočty před zdaněním",
+      "studentLoanPlan": "Plán studentské půjčky",
+      "studentLoanNote": "Poznámka: Plán závisí na tom, kde/kdy jste studovali, nikoli na tom, kde pracujete.",
+      "marriageAllowance": "Manželská sleva?",
+      "marriageAllowanceAria": "Výběr manželské slevy",
+      "marriageAllowanceNote": "Pro poplatníka v základní sazbě, jehož manžel/ka nebo registrovaný partner neplatí daň (úleva až £252).",
+      "children": "Děti (pro odvod z přídavku na dítě)",
+      "childrenNote": "Používá se pro odvod z přídavku na dítě u vysokých příjmů (High Income Child Benefit Charge, platí u příjmů nad £60,000)."
+    },
+    "pl": {
+      "filingStatus": "Status podání",
+      "children": "Děti (pro slevu na dítě)",
+      "preTax": "Daňově uznatelné příspěvky (např. IKZE,",
+      "under26": "Úleva pro mladé (do 26 let)?",
+      "under26Aria": "Výběr úlevy pro osoby do 26 let",
+      "under26Note": "Osvobozuje příjem ze zaměstnání do 85 528 PLN od daně z příjmu (ZUS a zdravotní pojištění stále platí)."
+    },
+    "pt": {
+      "region": "Region",
+      "filingStatus": "Status podání",
+      "dependants": "Vyživované osoby"
+    },
+    "se": {
+      "municipality": "Obec",
+      "customRate": "Sazba obecní daně (%)",
+      "churchMember": "Člen Švédské církve?",
+      "churchAria": "Výběr členství v církvi",
+      "churchNote": "Přidává církevní poplatek (kyrkoavgift). Daň z příjmu již zohledňuje základní slevu a slevu jobbskatteavdrag (do 66 let)."
+    },
+    "it": {
+      "region": "Region (regionální přirážka)",
+      "customRegionalRate": "Sazba regionální přirážky (%)",
+      "municipalRate": "Sazba obecní přirážky (%)",
+      "dependentChildren": "Vyživované děti (ve věku 21–29 let)",
+      "dependentChildrenNote": "Děti do 21 let jsou kryty dávkou Assegno Unico (nikoli mzdou). Regionální a obecní přirážky se liší podle místa.",
+      "dependentSpouse": "Vyživovaný manžel/ka (coniuge a carico)?",
+      "dependentSpouseAria": "Výběr vyživovaného manžela/ky",
+      "dependentSpouseNote": "Manžel/ka s nízkým nebo žádným příjmem (coniuge a carico) poskytuje daňovou slevu až €800."
+    },
+    "es": {
+      "community": "Autonomní společenství",
+      "filingStatus": "Status podání",
+      "children": "Děti (vyživovaní potomci)",
+      "childrenNote": "Regionální sazby se liší podle společenství; País Vasco a Navarra používají samostatné foralní systémy, které zde nejsou zahrnuty."
+    },
+    "fr": {
+      "household": "Domácnost",
+      "children": "Vyživované děti",
+      "childrenNote": "Přidává díly rodinného kvocientu (+0,5 za každé z prvních dvou dětí, +1 od třetího), s omezením této výhody (plafonnement). Odhad pro jednočlennou domácnost / jediný příjem."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Svobodný/á, bez dětí",
+        "2": "Samoživitel/ka",
+        "3": "Ženatý/vdaná (vyšší příjem než partner)",
+        "4": "Ženatý/vdaná (stejný příjem jako partner)",
+        "5": "Ženatý/vdaná (nižší příjem než partner)",
+        "6": "Druhý a další příjem"
+      },
+      "deHealthInsurance": {
+        "public": "Veřejné / zákonné (GKV)",
+        "private-without": "Soukromé (bez příspěvku zaměstnavatele)",
+        "private-with": "Soukromé (s příspěvkem zaměstnavatele)"
+      },
+      "usFilingStatus": {
+        "single": "Svobodný/á",
+        "mfj": "Manželé podávající společně",
+        "mfs": "Manželé podávající odděleně",
+        "hoh": "Hlava domácnosti"
+      },
+      "usEmploymentType": {
+        "employee": "Zaměstnanec (W-2)",
+        "selfEmployed": "Samostatně výdělečně činný (odhad daně SE)"
+      },
+      "usDeductionMethod": {
+        "auto": "Automaticky (max. ze standardního a položkového)",
+        "standard": "Standardní odpočet",
+        "itemized": "Položkové odpočty"
+      },
+      "ukRegion": {
+        "england": "Anglie",
+        "wales": "Wales",
+        "ni": "Severní Irsko",
+        "scotland": "Skotsko (zatím není podporováno)"
+      },
+      "ukStudentLoan": {
+        "none": "Žádný",
+        "plan2": "Plán 2 (9 % nad £{threshold})",
+        "plan4": "Plán 4 (9 % nad £{threshold})",
+        "plan5": "Plán 5 (9 % nad £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Svobodný/á",
+        "joint": "Ženatý/vdaná — společné zdanění (jediný příjem)"
+      },
+      "ptRegion": {
+        "mainland": "Pevnina (Continente)",
+        "azores": "Azory (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Svobodný/á",
+        "joint": "Ženatý/vdaná — společné zdanění (jediný příjem)"
+      },
+      "esFilingStatus": {
+        "single": "Individuální",
+        "joint": "Společné přiznání (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Svobodný/á (1 díl)",
+        "married": "Ženatý/vdaná / PACS — společné (2 díly)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Zdravotní pojištění",
+      "longTermCareInsurance": "Pojištění dlouhodobé péče",
+      "pensionInsurance": "Důchodové pojištění",
+      "unemploymentInsurance": "Pojištění v nezaměstnanosti",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Dodatečná daň Medicare",
+      "seTaxSocialSecurity": "Daň OSVČ (Social Security)",
+      "seTaxMedicare": "Daň OSVČ (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (třída 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (třída 1, vyšší)",
+      "plPension": "Důchodové pojištění (Emerytalne)",
+      "plDisability": "Invalidní pojištění (Rentowe)",
+      "plSickness": "Nemocenské pojištění (Chorobowe)",
+      "plHealth": "Zdravotní pojištění (Zdrowotne)",
+      "ptSocialSecurity": "Sociální zabezpečení (Seguranca Social)",
+      "seChurchFee": "Církevní poplatek (kyrkoavgift)",
+      "itInps": "Důchodový příspěvek INPS",
+      "itRegionalMunicipalSurtax": "Regionální a obecní přirážka (addizionali)",
+      "esCommonContingencies": "Obecné pojistné události (Seguridad Social)",
+      "esMei": "Solidární příspěvek MEI",
+      "esTraining": "Vzdělávání (Formacion profesional)",
+      "esUnemployment": "Nezaměstnanost (Desempleo)",
+      "esSocialSecurity": "Sociální zabezpečení (Seguridad Social)",
+      "frCsgDeductible": "CSG (odpočitatelná)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (neodpočitatelná)",
+      "frSocialSecurityPension": "Příspěvky na sociální zabezpečení a důchod",
+      "frPension": "Důchod (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Výsledky výpočtu",
+      "netIncome": "Čistý příjem",
+      "netHourly": "Čistá hodinová mzda",
+      "netHourlyAfterSacrifice": "Čistá hodinová mzda (po salary sacrifice)",
+      "netMonthly": "Čistý měsíční příjem",
+      "netYearly": "Čistý roční příjem",
+      "effectiveTaxRate": "Efektivní daňová sazba",
+      "taxAndNiRate": "Sazba daně a NI",
+      "salarySacrificeRate": "Sazba salary sacrifice",
+      "totalNonCashShare": "Celkový nepeněžní podíl",
+      "breakdown": "Rozpis",
+      "grossIncome": "Hrubý příjem",
+      "preTaxDeductionsEntered": "Odpočty před zdaněním (zadané)",
+      "preTaxDeductionsAppliedCapped": "Odpočty před zdaněním (uplatněné, omezené)",
+      "preTaxDeductions": "Odpočty před zdaněním",
+      "adjustedGrossIncome": "Upravený hrubý příjem (AGI)",
+      "salarySacrifice": "Salary sacrifice (důchod a před zdaněním)",
+      "adjustedIncomeAfterSacrifice": "Upravený příjem (po salary sacrifice)",
+      "preTaxContributions": "Příspěvky před zdaněním",
+      "standardDeduction": "Standardní odpočet",
+      "itemizedDeduction": "Položkový odpočet",
+      "allowances": "Slevy a odpočty",
+      "taxableIncome": "Zdanitelný příjem",
+      "incomeTax": "Daň z příjmu",
+      "incomeTaxDE": "Celková daň z příjmu (ESt + Soli + církevní)",
+      "incomeTaxUS": "Daň z příjmu (federální + státní + místní)",
+      "studentLoan": "Studentská půjčka",
+      "plan2": "Plán 2",
+      "plan4": "Plán 4",
+      "plan5": "Plán 5",
+      "marriageAllowanceRelief": "Manželská sleva (úleva)",
+      "hicbc": "Odvod z přídavku na dítě u vysokých příjmů",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Solidární příplatek (Soli)",
+      "churchTax": "Církevní daň (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Federální daň z příjmu (před slevami)",
+      "taxCreditsApplied": "Daňové slevy (uplatněné)",
+      "federalIncomeTaxAfterCredits": "Federální daň z příjmu (po slevách)",
+      "stateIncomeTax": "Státní daň z příjmu (odhad)",
+      "localIncomeTax": "Místní daň z příjmu (odhad)",
+      "saxonySplit": "(rozdělení Sasko)",
+      "cappedOn": "z",
+      "totalSocialContributions": "Celkové sociální odvody",
+      "taxesAndNi": "Daně a NI",
+      "cashInHand": "Čistá hotovost"
+    },
+    "example": {
+      "heading": "Příklad výpočtu",
+      "perHour": "za hodinu",
+      "perMonth": "za měsíc",
+      "perYear": "za rok",
+      "netIncomeAnnual": "Čistý příjem (roční)",
+      "basedOnPrefix": "Na základě",
+      "hourlyNote": "({hours} hodin/týden, {weeks} týdnů/rok)",
+      "monthlyNote": "(12 měsíců/rok)",
+      "forTaxYear": "pro daňový rok {year}."
+    },
+    "disclaimer": {
+      "title": "Upozornění k daňovému odhadu",
+      "noteLabel": "Poznámka:",
+      "us": "Tyto výpočty jsou odhady založené pouze na federálních daňových sazbách. Státní a místní daně nejsou zahrnuty a mohou výrazně ovlivnit vaši celkovou daňovou povinnost.",
+      "default": "Tyto výpočty jsou odhady a nemusí zahrnovat místní nebo regionální daně. Pro přesné údaje se obraťte na oficiální zdroje nebo daňového poradce."
+    },
+    "dataSources": {
+      "heading": "Zdroje dat",
+      "intro": "Naše odhady pro {country} vycházejí z veřejně dostupných údajů z oficiálních vládních zdrojů a daňových úřadů. Sazby a hranice se každý daňový rok mění, proto je pravidelně kontrolujeme. Tyto výsledky jsou odhady, nikoli oficiální daňová vyměření nebo poradenství.",
+      "editorialPrefix": "Viz naše",
+      "editorialLink": "redakční standardy",
+      "editorialSuffix": "k tomu, jak tato data zkoumáme a aktualizujeme."
+    }
   }
 }
