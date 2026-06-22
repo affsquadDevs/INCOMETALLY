@@ -1,0 +1,667 @@
+{
+  "nav": {
+    "salaryCalculator": "Calculadora de salário",
+    "getStarted": "Começar",
+    "aboutUs": "Sobre nós",
+    "guides": "Guias",
+    "toggleMenu": "Alternar menu",
+    "selectLanguage": "Selecionar idioma"
+  },
+  "footer": {
+    "productTitle": "Produto",
+    "legalTitle": "Jurídico",
+    "resourcesTitle": "Recursos",
+    "home": "Início",
+    "calculator": "Calculadora",
+    "privacyPolicy": "Política de privacidade",
+    "termsOfService": "Termos de serviço",
+    "salaryCalculatorHub": "Centro de calculadoras de salário",
+    "hourlyToSalary": "De hora para salário",
+    "guides": "Guias",
+    "disclaimerLabel": "Aviso:",
+    "disclaimer": "A IncomeTally disponibiliza calculadoras de rendimentos e impostos apenas para fins informativos. Os resultados são estimativas e podem não refletir as obrigações fiscais reais nem os resultados financeiros. Este site não presta aconselhamento financeiro, fiscal ou jurídico. Consulte sempre um profissional qualificado para orientação personalizada.",
+    "rights": "Todos os direitos reservados."
+  },
+  "home": {
+    "meta": {
+      "title": "Calculadora de Salário Líquido — Vencimento Líquido Após Impostos em 9 Países | IncomeTally",
+      "description": "Calcule o seu salário líquido após o imposto sobre o rendimento e as contribuições para a segurança social. Gratuito, sem registo, com estimativas específicas por país para o ano fiscal de 2026 nos EUA, Alemanha, Reino Unido, Polónia, França, Espanha, Itália, Suécia e Portugal."
+    },
+    "hero": {
+      "title": "Calculadora de Salário Líquido Gratuita",
+      "highlightWords": [
+        "Calculadora",
+        "Salário",
+        "Líquido"
+      ],
+      "subtitle": "Introduza o seu salário bruto e veja a estimativa do seu vencimento líquido após o imposto sobre o rendimento e as contribuições para a segurança social — para o ano fiscal de 2026, em 9 países. Sem registo, e os seus dados permanecem no seu navegador.",
+      "getStarted": "Começar",
+      "browseGuides": "Explorar Guias",
+      "trustLine": "Gratuito · Sem registo · Os seus dados permanecem no seu navegador."
+    },
+    "about": {
+      "heading": "O Que Faz a IncomeTally",
+      "p1": "A IncomeTally é uma <calc>calculadora de salário líquido</calc> gratuita, baseada no navegador, que converte um salário bruto numa estimativa do seu vencimento líquido. Indica quanto ganha — à hora, ao mês ou ao ano — escolhe o seu país, e nós aplicamos os escalões do imposto sobre o rendimento de 2026 desse país e as contribuições obrigatórias para a segurança social para mostrar o que efetivamente entra na sua conta. Com o JavaScript ativado, o cálculo é feito no seu navegador e os seus valores de rendimento não são enviados para os nossos servidores — apenas o seu país e o ano fiscal são solicitados para carregar as taxas corretas. Não precisa de criar uma conta.",
+      "p2": "A diferença entre o seu <gross>salário bruto e o seu vencimento líquido</gross> raramente é óbvia. Os sistemas fiscais progressivos aplicam taxas mais elevadas apenas ao rendimento acima do limite de cada escalão, pelo que a sua taxa marginal — a taxa sobre o último euro ou dólar que ganhou — é quase sempre superior à sua taxa efetiva, a parcela de todo o seu salário que vai para impostos. Além do imposto sobre o rendimento, a maioria dos países deduz <social>contribuições para a segurança social</social> para pensões, saúde e cobertura de desemprego. A IncomeTally separa estas rubricas linha a linha, para que veja para onde vai o seu dinheiro, e não apenas o total final.",
+      "whoHeading": "Para quem é",
+      "whoBody": "Foi concebida para trabalhadores que querem verificar se o recibo de vencimento está correto, para quem procura emprego e quer comparar duas propostas em termos reais de vencimento líquido, para trabalhadores independentes que estimam quanto devem reservar e para qualquer pessoa que pondere mudar-se de país. Se alguma vez se perguntou por que razão um aumento pareceu menor do que o valor anunciado, esta é a ferramenta que o explica."
+    },
+    "howItWorks": {
+      "heading": "Como Funciona",
+      "steps": [
+        {
+          "title": "Escolha o seu país",
+          "body": "Selecione um dos nove países suportados para que a calculadora carregue os escalões fiscais, as deduções e as taxas de contribuição para a segurança social corretos de 2026."
+        },
+        {
+          "title": "Introduza o seu salário",
+          "body": "Escreva o seu rendimento bruto como valor horário, mensal ou anual. A calculadora converte entre os períodos de pagamento por si, e pode definir opções como o estado civil para efeitos fiscais ou a região, onde aplicável."
+        },
+        {
+          "title": "Veja a sua decomposição",
+          "body": "Obtenha a estimativa do seu vencimento líquido juntamente com uma decomposição, linha a linha, do imposto sobre o rendimento e das contribuições para a segurança social, além das suas taxas marginal e efetiva."
+        }
+      ],
+      "cta": "Abrir a Calculadora"
+    },
+    "calculators": {
+      "heading": "Calculadoras",
+      "intro": "Comece com uma ferramenta geral ou avance diretamente para o seu país abaixo.",
+      "tools": [
+        {
+          "title": "Calculadora de Salário Líquido",
+          "body": "Converta qualquer salário bruto numa estimativa do vencimento líquido, com uma decomposição completa de impostos e contribuições.",
+          "cta": "Calcular vencimento líquido →"
+        },
+        {
+          "title": "Central de Calculadoras de Salário",
+          "body": "Comece pelo seu país e explore as regras fiscais, os escalões e as contribuições para a segurança social de 2026.",
+          "cta": "Explorar por país →"
+        },
+        {
+          "title": "De Hora para Salário",
+          "body": "Transforme uma taxa horária em rendimento semanal, mensal e anual — e depois veja-o após impostos.",
+          "cta": "Converter taxa horária →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Calculadoras de Salário por País",
+      "subtitle": "Estimativas para o ano fiscal de 2026 utilizando os escalões oficiais do imposto sobre o rendimento e as contribuições para a segurança social de cada país.",
+      "cardSuffix": "Calculadora de Salário",
+      "cardMeta": "{currency} · ano fiscal de 2026",
+      "note": "A maioria das calculadoras permite definir opções como o estado civil para efeitos fiscais ou a região, onde aplicável; as opções disponíveis variam consoante o país. Consulte a página de cada país para conhecer os dados que oferece e as suas fontes oficiais.",
+      "seeAll": "Ver todas as calculadoras →"
+    },
+    "pillarsSection": {
+      "heading": "Saiba Como o Seu Salário é Calculado",
+      "intro": "Guias em linguagem clara sobre rendimento, impostos e planeamento salarial — redigidos e revistos internamente, com fontes e datas da última atualização.",
+      "viewAll": "Ver todos os guias →"
+    },
+    "trust": {
+      "badge": "Dados atualizados para o ano fiscal de 2026 · Última revisão em junho de 2026",
+      "heading": "De Onde Vêm os Nossos Números",
+      "body": "As calculadoras e os guias da IncomeTally são mantidos pela Equipa Editorial da IncomeTally. Construímos a lógica fiscal de cada país a partir de valores publicamente disponíveis publicados pelas autoridades oficiais de impostos e de segurança social, explicamos os conceitos em linguagem clara com exemplos práticos e revemos os dados face às taxas oficiais de cada ano. Cada calculadora por país apresenta as suas fontes específicas e o ano fiscal que abrange.",
+      "standardsHeading": "Os nossos padrões",
+      "standards": [
+        "Fontes oficiais",
+        "Linguagem clara",
+        "Revistos anualmente",
+        "Estimativas, não aconselhamento"
+      ],
+      "aboutLink": "Saiba mais sobre nós e os nossos padrões editoriais →",
+      "sourcesHeading": "Fontes oficiais por país",
+      "sourcesNote": "A página de cada país liga às fontes específicas que utilizámos para os seus valores.",
+      "disclaimerLabel": "Estimativas, não aconselhamento.",
+      "disclaimer": "A IncomeTally disponibiliza calculadoras de rendimento e impostos apenas para fins informativos e educativos. Os resultados são estimativas e podem não refletir as suas obrigações fiscais ou os seus resultados financeiros reais. Este sítio Web não está associado a qualquer governo ou autoridade tributária e não presta aconselhamento financeiro, fiscal ou jurídico. Consulte sempre um profissional qualificado para obter orientação personalizada."
+    },
+    "faqHeading": "Perguntas Frequentes",
+    "faqs": [
+      {
+        "question": "A IncomeTally é gratuita?",
+        "answer": "Sim. Todas as calculadoras e guias da IncomeTally são gratuitos e não precisa de criar uma conta. Os seus dados são processados no seu navegador e não são armazenados nos nossos servidores."
+      },
+      {
+        "question": "Que países e que ano fiscal abrange a calculadora?",
+        "answer": "A IncomeTally abrange nove países — os Estados Unidos, a Alemanha, o Reino Unido, a Polónia, a França, a Espanha, a Itália, a Suécia e Portugal — utilizando as regras de 2026 do imposto sobre o rendimento e das contribuições para a segurança social. O ano fiscal aplicável é apresentado em cada calculadora."
+      },
+      {
+        "question": "Qual é a diferença entre salário bruto e salário líquido?",
+        "answer": "O salário bruto é a sua remuneração total antes de quaisquer deduções. O salário líquido — o seu vencimento líquido — é o que resta depois de subtraídos o imposto sobre o rendimento e as contribuições obrigatórias para a segurança social. A IncomeTally mostra a decomposição completa para que veja exatamente o que é deduzido e porquê."
+      },
+      {
+        "question": "Qual é o rigor dos resultados?",
+        "answer": "As calculadoras utilizam os escalões, as deduções e as taxas de contribuição oficiais de 2026, mas são estimativas. O vencimento líquido real pode variar consoante as circunstâncias pessoais, tais como deduções adicionais, regras regionais, estado civil para efeitos fiscais, benefícios e deduções pontuais. Encare os resultados como uma estimativa bem fundamentada, e não como uma declaração fiscal."
+      },
+      {
+        "question": "Posso converter entre salário horário, mensal e anual?",
+        "answer": "Sim. Introduza o seu salário em qualquer um desses períodos e a calculadora converte-o entre todos eles, mostrando depois o valor líquido equivalente. A nossa ferramenta De Hora para Salário foca-se especificamente nas conversões de salário, caso seja só disso que precisa."
+      },
+      {
+        "question": "De onde vêm os vossos valores fiscais e a IncomeTally presta aconselhamento financeiro?",
+        "answer": "Os nossos valores provêm das autoridades oficiais de impostos e de segurança social de cada país, como o IRS e a SSA, o HMRC e o Bundesfinanzministerium alemão, e a página de cada país liga às fontes específicas que utilizámos. A IncomeTally é apenas uma ferramenta informativa: não presta aconselhamento financeiro, fiscal ou jurídico e não está associada a qualquer governo ou autoridade tributária. Para decisões sobre os seus impostos ou finanças, consulte um profissional qualificado."
+      }
+    ]
+  },
+  "common": {
+    "lastUpdated": "Última atualização:",
+    "backToHome": "Voltar à página inicial"
+  },
+  "country": {
+    "h1Suffix": "Calculadora de Impostos sobre o Salário",
+    "allCalculators": "← Todas as calculadoras",
+    "hourlyConverter": "Conversor de salário por hora",
+    "otherCountries": "Outros países:",
+    "howItWorksHeading": "Como funcionam os impostos sobre o salário em {country}",
+    "faqHeading": "Perguntas frequentes",
+    "relatedHeading": "Recursos relacionados",
+    "relatedHub": "Centro de calculadoras de salário",
+    "calculatorSuffix": "Calculadora de Salário"
+  },
+  "guides": {
+    "metaTitle": "Guias de Salários e Impostos - Artigos Especializados sobre Cálculos de Rendimentos",
+    "metaDescription": "Guias completos sobre cálculos salariais, escalões de IRS, deduções e rendimento líquido. Saiba como calcular o salário líquido e compreender os sistemas fiscais.",
+    "title": "Guias de Salários e Impostos",
+    "intro": "Artigos especializados sobre cálculos salariais, sistemas fiscais, deduções e a compreensão do seu salário líquido — organizados em três pilares temáticos.",
+    "startHere": "Comece aqui · Guia principal",
+    "published": "Publicado",
+    "updated": "Atualizado",
+    "by": "Por",
+    "faqHeading": "Perguntas Frequentes",
+    "sourcesHeading": "Fontes e leituras complementares",
+    "aboutAuthorHeading": "Sobre o autor",
+    "editorialStandards": "Consulte as nossas normas editoriais →",
+    "moreInPillar": "Mais em {pillar}",
+    "relatedGeneric": "Guias relacionados",
+    "tryCalculators": "Experimente as calculadoras",
+    "toc": "Índice",
+    "breadcrumbHome": "Início",
+    "breadcrumbGuides": "Guias",
+    "linkHub": "Central de Calculadoras de Salário",
+    "linkNet": "Calculadora de Salário Líquido",
+    "linkHourly": "Conversor de Hora para Salário"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Modo de Rendimento",
+      "grossIncome": "Rendimento Bruto",
+      "country": "País",
+      "taxYear": "Ano Fiscal",
+      "hoursPerWeek": "Horas por Semana",
+      "weeksPerYear": "Semanas por Ano",
+      "calculateNetIncome": "Calcular Rendimento Líquido",
+      "salaryPeriod": "Período Salarial",
+      "salaryPeriodAria": "Seleção do período salarial"
+    },
+    "mode": {
+      "hourly": "Por Hora",
+      "monthly": "Mensal",
+      "yearly": "Anual"
+    },
+    "period": {
+      "hourly": "por hora",
+      "monthly": "mensal",
+      "annual": "anual"
+    },
+    "yesNo": {
+      "yes": "Sim",
+      "no": "Não"
+    },
+    "country": {
+      "US": "Estados Unidos",
+      "USFederalOnly": "Estados Unidos (Apenas Federal)",
+      "DE": "Alemanha",
+      "UK": "Reino Unido",
+      "PL": "Polónia",
+      "FR": "França",
+      "ES": "Espanha",
+      "IT": "Itália",
+      "SE": "Suécia",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Selecionar País",
+      "helper": "Escolha o seu país para calcular os impostos em conformidade"
+    },
+    "actions": {
+      "copyShareLink": "Copiar Link de Partilha",
+      "copied": "Copiado!",
+      "shareLinkPrefix": "Link de partilha:"
+    },
+    "status": {
+      "loading": "A carregar dados fiscais...",
+      "empty": "Introduza o seu rendimento para ver os cálculos"
+    },
+    "validation": {
+      "incomePositive": "O rendimento tem de ser um número positivo",
+      "incomeMax": "O rendimento não pode exceder {max} ({mode})",
+      "hoursMin": "As horas têm de ser no mínimo {min}",
+      "hoursMax": "As horas não podem exceder {max}",
+      "weeksMin": "As semanas têm de ser no mínimo {min}",
+      "weeksMax": "As semanas não podem exceder {max}"
+    },
+    "de": {
+      "taxClass": "Classe Fiscal",
+      "healthInsurance": "Seguro de Saúde",
+      "privateNoteLabel": "Nota:",
+      "privateNoteBody": "O seguro de saúde privado é pago separadamente e não é descontado do seu salário. O rendimento líquido apresentado acima não inclui os custos do seguro privado, que paga diretamente à sua seguradora.",
+      "state": "O Seu Estado",
+      "inChurch": "Pertence à Igreja?",
+      "churchAria": "Seleção de filiação na igreja",
+      "haveChildren": "Tem filhos?",
+      "childrenAria": "Seleção de filhos",
+      "childrenNote": "Usado para o seguro de cuidados de longa duração (Pflegeversicherung). Para 2026 isto significa: com filhos ~1,80% de quota do trabalhador (na maioria dos estados), sem filhos ~2,40% (inclui a sobretaxa para quem não tem filhos). A Saxónia usa uma repartição diferente."
+    },
+    "us": {
+      "filingStatus": "Estado Civil Fiscal",
+      "employmentType": "Tipo de Emprego",
+      "deductionMethod": "Método de Dedução",
+      "itemizedDeductions": "Deduções Discriminadas",
+      "childrenUnder17": "Filhos (menores de 17 anos)",
+      "otherDependents": "Outros Dependentes",
+      "taxpayerOver65": "Contribuinte com 65+ anos",
+      "taxpayerBlind": "Contribuinte invisual",
+      "spouseOver65": "Cônjuge com 65+ anos",
+      "spouseBlind": "Cônjuge invisual",
+      "preTax401k": "401(k) / reforma antes de impostos",
+      "preTaxHSA": "HSA antes de impostos",
+      "otherPreTax": "Outras deduções antes de impostos",
+      "stateTaxRate": "Taxa de imposto estadual (estimativa, %)",
+      "localTaxRate": "Taxa de imposto local (estimativa, %)"
+    },
+    "uk": {
+      "region": "Região",
+      "preTaxPension": "Contribuições para Pensão antes de impostos",
+      "preTaxOther": "Outras Deduções antes de impostos",
+      "studentLoanPlan": "Plano de Empréstimo Estudantil",
+      "studentLoanNote": "Nota: O plano depende de onde/quando estudou, não de onde trabalha.",
+      "marriageAllowance": "Abatimento por Casamento?",
+      "marriageAllowanceAria": "Seleção do Abatimento por Casamento",
+      "marriageAllowanceNote": "Para um contribuinte da taxa básica cujo cônjuge/parceiro civil não é contribuinte (desagravamento até £252).",
+      "children": "Filhos (para o encargo do Abono de Família)",
+      "childrenNote": "Usado para o High Income Child Benefit Charge (aplica-se a rendimentos superiores a £60.000)."
+    },
+    "pl": {
+      "filingStatus": "Estado Civil Fiscal",
+      "children": "Filhos (para desagravamento por filhos)",
+      "preTax": "Contribuições dedutíveis (ex.: IKZE,",
+      "under26": "Desagravamento para jovens (menores de 26 anos)?",
+      "under26Aria": "Seleção do desagravamento para menores de 26 anos",
+      "under26Note": "Isenta de imposto sobre o rendimento até 85.528 PLN de rendimentos do trabalho (ZUS e saúde continuam a aplicar-se)."
+    },
+    "pt": {
+      "region": "Região",
+      "filingStatus": "Estado Civil Fiscal",
+      "dependants": "Dependentes"
+    },
+    "se": {
+      "municipality": "Município",
+      "customRate": "Taxa de imposto municipal (%)",
+      "churchMember": "Membro da Igreja da Suécia?",
+      "churchAria": "Seleção de filiação na igreja",
+      "churchNote": "Adiciona a taxa eclesiástica (kyrkoavgift). O imposto sobre o rendimento já reflete o abatimento básico e o crédito jobbskatteavdrag (menores de 66 anos)."
+    },
+    "it": {
+      "region": "Região (sobretaxa regional)",
+      "customRegionalRate": "Taxa da sobretaxa regional (%)",
+      "municipalRate": "Taxa da sobretaxa municipal (%)",
+      "dependentChildren": "Filhos dependentes (com 21–29 anos)",
+      "dependentChildrenNote": "Os filhos menores de 21 anos são abrangidos pelo Assegno Unico (não pela folha de pagamento). As sobretaxas regionais e municipais variam consoante a localidade.",
+      "dependentSpouse": "Cônjuge dependente (coniuge a carico)?",
+      "dependentSpouseAria": "Seleção de cônjuge dependente",
+      "dependentSpouseNote": "Um cônjuge com pouco ou nenhum rendimento (coniuge a carico) dá um crédito fiscal até €800."
+    },
+    "es": {
+      "community": "Comunidade autónoma",
+      "filingStatus": "Estado Civil Fiscal",
+      "children": "Filhos (descendentes dependentes)",
+      "childrenNote": "As taxas regionais variam consoante a comunidade; o País Basco e Navarra usam sistemas forais separados que não estão aqui abrangidos."
+    },
+    "fr": {
+      "household": "Agregado familiar",
+      "children": "Filhos dependentes",
+      "childrenNote": "Adiciona partes do quociente familiar (+0,5 por cada um dos primeiros dois filhos, +1 a partir do terceiro), com o benefício limitado (plafonnement). Estimativa para um agregado individual/único titular de rendimentos."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Não casado, sem filhos",
+        "2": "Pai/mãe solteiro(a)",
+        "3": "Casado (rendimento superior ao do parceiro)",
+        "4": "Casado (rendimentos equivalentes)",
+        "5": "Casado (rendimento inferior ao do parceiro)",
+        "6": "Rendimento secundário e adicional"
+      },
+      "deHealthInsurance": {
+        "public": "Público / Obrigatório (GKV)",
+        "private-without": "Privado (sem contribuição da entidade patronal)",
+        "private-with": "Privado (com contribuição da entidade patronal)"
+      },
+      "usFilingStatus": {
+        "single": "Solteiro",
+        "mfj": "Casado em Conjunto",
+        "mfs": "Casado em Separado",
+        "hoh": "Chefe de Família"
+      },
+      "usEmploymentType": {
+        "employee": "Trabalhador por conta de outrem (W-2)",
+        "selfEmployed": "Trabalhador independente (estimativa de imposto SE)"
+      },
+      "usDeductionMethod": {
+        "auto": "Automático (máximo entre padrão e discriminada)",
+        "standard": "Dedução padrão",
+        "itemized": "Deduções discriminadas"
+      },
+      "ukRegion": {
+        "england": "Inglaterra",
+        "wales": "País de Gales",
+        "ni": "Irlanda do Norte",
+        "scotland": "Escócia (ainda não suportada)"
+      },
+      "ukStudentLoan": {
+        "none": "Nenhum",
+        "plan2": "Plano 2 (9% acima de £{threshold})",
+        "plan4": "Plano 4 (9% acima de £{threshold})",
+        "plan5": "Plano 5 (9% acima de £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Solteiro",
+        "joint": "Casado — tributação conjunta (único titular de rendimentos)"
+      },
+      "ptRegion": {
+        "mainland": "Continente",
+        "azores": "Açores",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Solteiro",
+        "joint": "Casado — tributação conjunta (único titular de rendimentos)"
+      },
+      "esFilingStatus": {
+        "single": "Individual",
+        "joint": "Declaração conjunta (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Solteiro (1 parte)",
+        "married": "Casado / PACS — conjunto (2 partes)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Seguro de Saúde",
+      "longTermCareInsurance": "Seguro de Cuidados de Longa Duração",
+      "pensionInsurance": "Seguro de Pensão",
+      "unemploymentInsurance": "Seguro de Desemprego",
+      "socialSecurity": "Segurança Social",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Imposto Medicare Adicional",
+      "seTaxSocialSecurity": "Imposto sobre Trabalho Independente (Segurança Social)",
+      "seTaxMedicare": "Imposto sobre Trabalho Independente (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (Classe 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (Classe 1, Superior)",
+      "plPension": "Seguro de pensão (Emerytalne)",
+      "plDisability": "Seguro de invalidez (Rentowe)",
+      "plSickness": "Seguro de doença (Chorobowe)",
+      "plHealth": "Seguro de saúde (Zdrowotne)",
+      "ptSocialSecurity": "Segurança Social",
+      "seChurchFee": "Taxa eclesiástica (kyrkoavgift)",
+      "itInps": "Contribuição para pensão do INPS",
+      "itRegionalMunicipalSurtax": "Sobretaxa regional e municipal (addizionali)",
+      "esCommonContingencies": "Contingências comuns (Seguridad Social)",
+      "esMei": "Contribuição de solidariedade MEI",
+      "esTraining": "Formação (Formación profesional)",
+      "esUnemployment": "Desemprego (Desempleo)",
+      "esSocialSecurity": "Segurança Social (Seguridad Social)",
+      "frCsgDeductible": "CSG (dedutível)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (não dedutível)",
+      "frSocialSecurityPension": "Contribuições para segurança social e pensão",
+      "frPension": "Pensão (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Resultados do cálculo",
+      "netIncome": "Rendimento Líquido",
+      "netHourly": "Líquido por Hora",
+      "netHourlyAfterSacrifice": "Líquido por Hora (após sacrifício salarial)",
+      "netMonthly": "Líquido Mensal",
+      "netYearly": "Líquido Anual",
+      "effectiveTaxRate": "Taxa Efetiva de Imposto",
+      "taxAndNiRate": "Taxa de Imposto e NI",
+      "salarySacrificeRate": "Taxa de Sacrifício Salarial",
+      "totalNonCashShare": "Quota Total Não Monetária",
+      "breakdown": "Detalhe",
+      "grossIncome": "Rendimento Bruto",
+      "preTaxDeductionsEntered": "Deduções antes de impostos (introduzidas)",
+      "preTaxDeductionsAppliedCapped": "Deduções antes de impostos (aplicadas, limitadas)",
+      "preTaxDeductions": "Deduções antes de impostos",
+      "adjustedGrossIncome": "Rendimento Bruto Ajustado (AGI)",
+      "salarySacrifice": "Sacrifício Salarial (Pensão e Antes de Impostos)",
+      "adjustedIncomeAfterSacrifice": "Rendimento Ajustado (após sacrifício salarial)",
+      "preTaxContributions": "Contribuições antes de impostos",
+      "standardDeduction": "Dedução Padrão",
+      "itemizedDeduction": "Dedução Discriminada",
+      "allowances": "Abatimentos",
+      "taxableIncome": "Rendimento Coletável",
+      "incomeTax": "Imposto sobre o Rendimento",
+      "incomeTaxDE": "Imposto Total sobre o Rendimento (ESt + Soli + Igreja)",
+      "incomeTaxUS": "Imposto sobre o Rendimento (Federal + Estadual + Local)",
+      "studentLoan": "Empréstimo Estudantil",
+      "plan2": "Plano 2",
+      "plan4": "Plano 4",
+      "plan5": "Plano 5",
+      "marriageAllowanceRelief": "Abatimento por Casamento (desagravamento)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Sobretaxa de Solidariedade (Soli)",
+      "churchTax": "Imposto Eclesiástico (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Imposto federal sobre o rendimento (antes de créditos)",
+      "taxCreditsApplied": "Créditos fiscais (aplicados)",
+      "federalIncomeTaxAfterCredits": "Imposto federal sobre o rendimento (após créditos)",
+      "stateIncomeTax": "Imposto estadual sobre o rendimento (estimativa)",
+      "localIncomeTax": "Imposto local sobre o rendimento (estimativa)",
+      "saxonySplit": "(repartição da Saxónia)",
+      "cappedOn": "sobre",
+      "totalSocialContributions": "Total de Contribuições Sociais",
+      "taxesAndNi": "Impostos e NI",
+      "cashInHand": "Dinheiro Disponível"
+    },
+    "example": {
+      "heading": "Exemplo de Cálculo",
+      "perHour": "por hora",
+      "perMonth": "por mês",
+      "perYear": "por ano",
+      "netIncomeAnnual": "Rendimento Líquido (Anual)",
+      "basedOnPrefix": "Com base em",
+      "hourlyNote": "({hours} horas/semana, {weeks} semanas/ano)",
+      "monthlyNote": "(12 meses/ano)",
+      "forTaxYear": "para o ano fiscal de {year}."
+    },
+    "disclaimer": {
+      "title": "Aviso Legal sobre a Estimativa Fiscal",
+      "noteLabel": "Nota:",
+      "us": "Estes cálculos são estimativas baseadas apenas nas taxas de imposto federais. Os impostos estaduais e locais não estão incluídos e podem afetar significativamente o total da sua carga fiscal.",
+      "default": "Estes cálculos são estimativas e podem não incluir impostos locais ou regionais. Consulte fontes oficiais ou um profissional fiscal para obter valores rigorosos."
+    },
+    "dataSources": {
+      "heading": "Fontes de dados",
+      "intro": "As nossas estimativas para {country} baseiam-se em valores publicamente disponíveis de fontes oficiais governamentais e das autoridades fiscais. As taxas e os limiares mudam a cada ano fiscal, pelo que os revemos periodicamente. Estes resultados são estimativas, não avaliações fiscais oficiais nem aconselhamento.",
+      "editorialPrefix": "Consulte as nossas",
+      "editorialLink": "normas editoriais",
+      "editorialSuffix": "para saber como pesquisamos e atualizamos estes dados."
+    }
+  },
+  "hub": {
+    "metaTitle": "Central de Calculadoras de Impostos sobre o Salário - Calcule o Rendimento Líquido por País",
+    "metaDescription": "Calculadoras gratuitas de impostos sobre o salário para vários países. Calcule o seu rendimento líquido após impostos e contribuições sociais nos EUA, Alemanha, Reino Unido e mais.",
+    "title": "Central de Calculadoras de Impostos sobre o Salário",
+    "intro1": "Calcule o seu rendimento líquido após impostos e contribuições sociais. As nossas calculadoras gratuitas ajudam-no a perceber quanto vai receber em diferentes países, com discriminações detalhadas do imposto sobre o rendimento, das contribuições para a segurança social e de outras deduções.",
+    "intro2": "Selecione um país abaixo para começar ou escolha um modo de cálculo adequado às suas necessidades.",
+    "byCountryHeading": "Calcular por País",
+    "calculateCta": "Calcular →",
+    "hourlyTitle": "Calculadora de Rendimento à Hora",
+    "monthlyTitle": "Calculadora de Salário Mensal",
+    "yearlyTitle": "Calculadora de Salário Anual",
+    "chooseModeHeading": "Escolher o Modo de Cálculo",
+    "converterTitle": "Conversor de Valor à Hora para Salário",
+    "converterBody": "Converta o seu valor à hora em salário anual, mensal e semanal. Ideal para perceber a sua remuneração total ao negociar ou comparar propostas de emprego.",
+    "converterCta": "Converter Valor à Hora →",
+    "hourlyBody": "Calcule o rendimento líquido quando sabe o seu valor à hora. Inclui opções para horas por semana e semanas por ano personalizadas, de acordo com o seu horário de trabalho.",
+    "hourlyCta": "Calcular à Hora →",
+    "monthlyBody": "Calcule o seu rendimento líquido mensal após impostos. Ideal para fazer orçamentos e perceber o seu salário líquido mensal.",
+    "monthlyCta": "Calcular Mensalmente →",
+    "yearlyBody": "Calcule o seu rendimento líquido anual a partir do salário bruto anual. Veja a discriminação completa de impostos e deduções para o ano inteiro.",
+    "yearlyCta": "Calcular Anualmente →",
+    "faqHeading": "Perguntas Frequentes"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Calculadora de Salário e Impostos — Estime o Seu Rendimento Líquido",
+      "description": "Calculadora gratuita de impostos sobre o salário. Introduza o seu rendimento bruto para estimar o salário líquido, o imposto sobre o rendimento e as contribuições sociais para os EUA, Alemanha e Reino Unido em 2026.",
+      "ogDescription": "Calculadora gratuita de impostos sobre o salário. Estime o salário líquido, o imposto sobre o rendimento e as contribuições sociais para os EUA, Alemanha e Reino Unido."
+    },
+    "title": "Calculadora de Salário e Impostos",
+    "intro": "Estime o seu rendimento líquido (salário líquido) após o imposto sobre o rendimento e as contribuições sociais. Introduza o seu salário bruto, escolha o país e o período de pagamento e obtenha uma discriminação instantânea para o ano fiscal de 2026.",
+    "howItWorks": {
+      "heading": "Como Funciona a Calculadora",
+      "p1": "A nossa calculadora converte o seu rendimento bruto num salário líquido estimado utilizando escalões de imposto e taxas de contribuição social atualizados para cada país suportado. Pode introduzir o rendimento como valor à hora, salário mensal ou valor anual, e a calculadora anualiza-o antes de aplicar as regras fiscais relevantes.",
+      "p2": "A discriminação separa o imposto sobre o rendimento das contribuições sociais — como a Social Security e o Medicare nos Estados Unidos, as contribuições obrigatórias para os seguros na Alemanha e o National Insurance no Reino Unido — para que possa ver exatamente para onde vai o seu dinheiro e qual é a sua taxa de imposto efetiva.",
+      "p3": "Os resultados são estimativas apenas para fins informativos e de planeamento e não têm em conta todas as circunstâncias individuais, como os impostos estaduais e locais, os créditos fiscais ou os benefícios em espécie. Para aconselhamento específico para a sua situação, consulte um profissional de impostos qualificado."
+    },
+    "related": {
+      "heading": "Explore Calculadoras Específicas por País",
+      "hub": "Central de Calculadoras de Salário",
+      "us": "Calculadora de Salário dos Estados Unidos",
+      "de": "Calculadora de Salário da Alemanha",
+      "uk": "Calculadora de Salário do Reino Unido",
+      "hourly": "Conversor de Valor à Hora para Salário",
+      "guides": "Guias de Salário e Impostos"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Calculadora de Salário Líquido - Calcule o Seu Salário Líquido",
+      "description": "Calculadora gratuita de salário líquido. Calcule o seu salário líquido após o imposto sobre o rendimento e as contribuições sociais para os EUA, Alemanha e Reino Unido."
+    },
+    "title": "Calculadora de Salário Líquido",
+    "intro": "Calcule o seu rendimento líquido (salário líquido) após impostos e contribuições sociais. A nossa calculadora de salário abrangente ajuda-o a perceber exatamente quanto vai receber após todas as deduções.",
+    "cta": "Ir para a Central de Calculadoras de Salário →",
+    "breakdownIntro": "A nossa calculadora de salário fornece discriminações detalhadas de:",
+    "breakdown": {
+      "gross": "Rendimento bruto (antes de impostos)",
+      "incomeTax": "Cálculo do imposto sobre o rendimento",
+      "social": "Contribuições para a segurança social",
+      "net": "Rendimento líquido (salário líquido)",
+      "effectiveRate": "Taxas de imposto efetivas"
+    },
+    "availability": "Disponível para vários países, incluindo os Estados Unidos, a Alemanha e o Reino Unido. Selecione o seu país para começar com cálculos de impostos precisos e atualizados para 2026.",
+    "specialized": "Também pode aceder às nossas calculadoras especializadas:",
+    "links": {
+      "hourly": "Conversor de Valor à Hora para Salário",
+      "us": "Calculadora dos EUA",
+      "de": "Calculadora da Alemanha",
+      "uk": "Calculadora do Reino Unido"
+    },
+    "explainer": {
+      "heading": "O Que É o Salário Líquido?",
+      "p1": "O seu <b>salário líquido</b> — muitas vezes chamado de salário a receber — é o montante que chega efetivamente à sua conta bancária depois de removidas as deduções obrigatórias do seu salário bruto. O salário bruto é o valor principal no seu contrato de trabalho; o salário líquido é o que pode orçamentar e gastar.",
+      "p2": "A diferença entre os dois é composta pelo <b>imposto sobre o rendimento</b> e pelas <b>contribuições sociais</b>. O imposto sobre o rendimento é normalmente progressivo, o que significa que as parcelas mais elevadas do seu rendimento são tributadas a taxas mais altas. As contribuições sociais financiam programas como as pensões do Estado, os cuidados de saúde e o seguro de desemprego, e as taxas exatas dependem do local onde vive.",
+      "p3": "Como cada país calcula estas deduções de forma diferente, o mesmo salário bruto pode resultar em salários líquidos muito diferentes nos Estados Unidos, na Alemanha ou no Reino Unido. Escolha o seu país acima para ver uma discriminação detalhada e específica do país para o ano fiscal de 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Conversor de Valor à Hora para Salário - Calcule o Rendimento Anual, Mensal e Semanal",
+      "description": "Converta o valor à hora em salário anual, mensal e semanal. Calculadora gratuita com fórmulas e exemplos. Ideal para negociações de emprego e comparações de salários.",
+      "ogDescription": "Converta o valor à hora em salário anual, mensal e semanal. Calculadora gratuita com fórmulas e exemplos."
+    },
+    "title": "Conversor de Valor à Hora para Salário",
+    "intro": "Converta o seu valor à hora em salário anual, mensal, semanal e diário. Perceba a sua remuneração total ao negociar propostas de emprego ou comparar posições.",
+    "calc": {
+      "heading": "Calcule o Seu Rendimento Líquido",
+      "intro": "Introduza o seu valor à hora abaixo para calcular o seu rendimento bruto e líquido. A calculadora está predefinida para o modo à hora e mostrará o seu salário líquido após impostos."
+    },
+    "formulas": {
+      "heading": "Fórmulas de Conversão",
+      "annual": {
+        "title": "Salário Anual a partir do Valor à Hora",
+        "code": "Salário Anual = Valor à Hora × Horas por Semana × Semanas por Ano",
+        "note": "Cálculo padrão: Multiplique o seu valor à hora por 40 horas por semana e 52 semanas por ano."
+      },
+      "monthly": {
+        "title": "Salário Mensal",
+        "code": "Salário Mensal = Salário Anual ÷ 12",
+        "note": "Divida o salário anual por 12 meses. Nota: Isto dá um montante mensal médio; o salário mensal real pode variar se for pago quinzenalmente ou bimensalmente."
+      },
+      "weekly": {
+        "title": "Salário Semanal",
+        "code": "Salário Semanal = Valor à Hora × Horas por Semana",
+        "note": "Basta multiplicar o seu valor à hora pelo número de horas que trabalha por semana."
+      },
+      "daily": {
+        "title": "Salário Diário",
+        "code": "Salário Diário = Valor à Hora × Horas por Dia",
+        "note": "Para um dia de trabalho de 8 horas, multiplique o seu valor à hora por 8."
+      },
+      "grossNote": "<b>Nota:</b> Estas fórmulas calculam o rendimento bruto (antes de impostos). Utilize a calculadora abaixo para ver o seu salário líquido após impostos e deduções."
+    },
+    "examples": {
+      "heading": "Exemplos",
+      "annualGross": "Bruto Anual:",
+      "monthlyGross": "Bruto Mensal:",
+      "weeklyGross": "Bruto Semanal:",
+      "dailyGross": "Bruto Diário",
+      "ex1": {
+        "title": "Exemplo 1: $25 por hora, 40 horas/semana, 52 semanas/ano",
+        "annual": "<b>Bruto Anual:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Bruto Mensal:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Bruto Semanal:</b> $25 × 40 = $1,000",
+        "daily": "<b>Bruto Diário (8 horas):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Exemplo 2: $30 por hora, 35 horas/semana, 50 semanas/ano",
+        "annual": "<b>Bruto Anual:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Bruto Mensal:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Bruto Semanal:</b> $30 × 35 = $1,050",
+        "daily": "<b>Bruto Diário (7 horas):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Exemplo 3: $20 por hora, 40 horas/semana, 48 semanas/ano (com 4 semanas de tempo livre não remunerado)",
+        "annual": "<b>Bruto Anual:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Bruto Mensal:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Bruto Semanal:</b> $20 × 40 = $800",
+        "note": "Nota: Ajustar as semanas por ano tem em conta o tempo livre não remunerado, as férias ou o trabalho sazonal."
+      }
+    },
+    "faq": {
+      "heading": "Perguntas Frequentes",
+      "items": [
+        {
+          "question": "Qual é a diferença entre salário bruto e líquido?",
+          "answer": "O salário bruto são os seus rendimentos totais antes de impostos e deduções. O salário líquido (salário a receber) é o que recebe após subtraídos o imposto sobre o rendimento, a segurança social e outras deduções obrigatórias. A calculadora acima mostra tanto os montantes brutos como os líquidos."
+        },
+        {
+          "question": "Quantas semanas devo utilizar no cálculo?",
+          "answer": "O padrão é de 52 semanas por ano para trabalhadores a tempo inteiro. No entanto, se tiver tempo livre não remunerado, trabalhar sazonalmente ou tirar licença prolongada, ajuste em conformidade. Por exemplo, 2 semanas de férias não remuneradas significariam 50 semanas por ano."
+        },
+        {
+          "question": "Devo incluir as horas extraordinárias no meu valor à hora?",
+          "answer": "Para cálculos precisos do salário anual, utilize o seu valor à hora base e as horas padrão. Se trabalha regularmente horas extraordinárias, pode: (1) calcular o salário base em separado e adicionar as horas extraordinárias estimadas, ou (2) utilizar um valor à hora médio que tenha em conta as horas extraordinárias. A calculadora permite-lhe ajustar as horas por semana para refletir o seu horário real."
+        },
+        {
+          "question": "Como converto o salário de volta para valor à hora?",
+          "answer": "Para converter o salário anual em valor à hora: Valor à Hora = Salário Anual ÷ (Horas por Semana × Semanas por Ano). Por exemplo, $52,000 ÷ (40 × 52) = $25 por hora. Utilize a nossa calculadora ao contrário, introduzindo o seu salário anual e selecionando o modo anual."
+        }
+      ],
+      "countriesQuestion": "Estes cálculos são precisos para todos os países?",
+      "countriesAnswer": "As fórmulas de conversão (de valor à hora para anual, mensal, etc.) são universais. No entanto, os cálculos do rendimento líquido variam de país para país devido aos diferentes sistemas fiscais. Utilize as calculadoras específicas por país na nossa <link>Central de Calculadoras de Salário</link> para obter estimativas precisas do rendimento líquido.",
+      "partTimeQuestion": "E se trabalhar a tempo parcial ou tiver horários irregulares?",
+      "partTimeAnswer": "Para trabalho a tempo parcial, introduza as suas horas reais por semana. Para horários irregulares, calcule uma média de horas semanais ao longo de um período mais longo (por exemplo, 3 a 6 meses) e utilize esse valor. A calculadora permite horas por semana e semanas por ano personalizadas para se adaptar a qualquer horário de trabalho."
+    },
+    "related": {
+      "heading": "Recursos Relacionados",
+      "hub": "Central de Calculadoras de Salário",
+      "us": "Calculadora de Salário dos EUA",
+      "de": "Calculadora de Salário da Alemanha",
+      "uk": "Calculadora de Salário do Reino Unido"
+    }
+  }
+}

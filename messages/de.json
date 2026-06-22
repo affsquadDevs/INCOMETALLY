@@ -1,0 +1,665 @@
+{
+  "nav": {
+    "salaryCalculator": "Gehaltsrechner",
+    "getStarted": "Loslegen",
+    "aboutUs": "Über uns",
+    "guides": "Ratgeber",
+    "toggleMenu": "Menü umschalten",
+    "selectLanguage": "Sprache auswählen"
+  },
+  "footer": {
+    "productTitle": "Produkt",
+    "legalTitle": "Rechtliches",
+    "resourcesTitle": "Ressourcen",
+    "home": "Startseite",
+    "calculator": "Rechner",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen",
+    "salaryCalculatorHub": "Gehaltsrechner-Übersicht",
+    "hourlyToSalary": "Stundenlohn zu Gehalt",
+    "guides": "Ratgeber",
+    "disclaimerLabel": "Haftungsausschluss:",
+    "disclaimer": "IncomeTally stellt Einkommens- und Steuerrechner ausschließlich zu Informationszwecken bereit. Die Ergebnisse sind Schätzungen und spiegeln möglicherweise nicht die tatsächlichen Steuerpflichten oder finanziellen Ergebnisse wider. Diese Website bietet keine Finanz-, Steuer- oder Rechtsberatung. Wenden Sie sich für eine individuelle Beratung stets an eine qualifizierte Fachkraft.",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "home": {
+    "meta": {
+      "title": "Brutto-Netto-Rechner — Nettogehalt nach Steuern für 9 Länder | IncomeTally",
+      "description": "Berechnen Sie Ihr Nettogehalt nach Lohnsteuer und Sozialabgaben. Kostenlos, ohne Anmeldung, länderspezifische Schätzungen für das Steuerjahr 2026 für die USA, Deutschland, Großbritannien, Polen, Frankreich, Spanien, Italien, Schweden und Portugal."
+    },
+    "hero": {
+      "title": "Kostenloser Brutto-Netto-Rechner",
+      "highlightWords": [
+        "Brutto-Netto-Rechner"
+      ],
+      "subtitle": "Geben Sie Ihr Bruttogehalt ein und sehen Sie Ihr geschätztes Nettogehalt nach Lohnsteuer und Sozialabgaben — für das Steuerjahr 2026, in 9 Ländern. Ohne Anmeldung, und Ihre Eingaben bleiben in Ihrem Browser.",
+      "getStarted": "Jetzt starten",
+      "browseGuides": "Ratgeber durchsuchen",
+      "trustLine": "Kostenlos · Ohne Anmeldung · Ihre Eingaben bleiben in Ihrem Browser."
+    },
+    "about": {
+      "heading": "Was IncomeTally leistet",
+      "p1": "IncomeTally ist ein kostenloser, browserbasierter <calc>Brutto-Netto-Rechner</calc>, der aus einem Bruttogehalt eine Schätzung Ihres Nettogehalts macht. Sie geben ein, was Sie verdienen — pro Stunde, pro Monat oder pro Jahr —, wählen Ihr Land aus, und wir wenden die Steuerstufen 2026 und die gesetzlichen Sozialabgaben dieses Landes an, um zu zeigen, was tatsächlich auf Ihrem Konto landet. Bei aktiviertem JavaScript läuft die Berechnung in Ihrem Browser und Ihre Einkommensangaben werden nicht an unsere Server gesendet — nur Ihr Land und das Steuerjahr werden abgefragt, um die richtigen Sätze zu laden. Sie müssen kein Konto anlegen.",
+      "p2": "Der Unterschied zwischen Ihrem <gross>Bruttogehalt und Ihrem Nettogehalt</gross> ist selten offensichtlich. Progressive Steuersysteme wenden höhere Sätze nur auf Einkommen oberhalb der jeweiligen Stufengrenze an, sodass Ihr Grenzsteuersatz — der Satz auf den zuletzt verdienten Euro oder Dollar — fast immer höher ist als Ihr Durchschnittssteuersatz, also der Anteil Ihres gesamten Gehalts, der an Steuern geht. Zusätzlich zur Lohnsteuer ziehen die meisten Länder <social>Sozialabgaben</social> für Rente, Gesundheit und Arbeitslosenabsicherung ab. IncomeTally trennt diese Posten Zeile für Zeile auf, sodass Sie sehen, wohin Ihr Geld fließt, und nicht nur die Endsumme.",
+      "whoHeading": "Für wen es gedacht ist",
+      "whoBody": "Es ist gemacht für Arbeitnehmer, die prüfen möchten, ob eine Gehaltsabrechnung stimmt, für Stellensuchende, die zwei Angebote in echten Nettobeträgen vergleichen, für Freiberufler, die abschätzen wollen, wie viel sie zurücklegen sollten, und für alle, die einen Umzug zwischen Ländern erwägen. Wenn Sie sich je gefragt haben, warum sich eine Gehaltserhöhung kleiner anfühlte als die genannte Zahl, ist dies das Tool, das es erklärt."
+    },
+    "howItWorks": {
+      "heading": "So funktioniert es",
+      "steps": [
+        {
+          "title": "Wählen Sie Ihr Land",
+          "body": "Wählen Sie eines der neun unterstützten Länder aus, damit der Rechner die korrekten Steuerstufen, Freibeträge und Sozialabgabensätze für 2026 lädt."
+        },
+        {
+          "title": "Geben Sie Ihr Gehalt ein",
+          "body": "Tragen Sie Ihr Bruttoeinkommen als Stunden-, Monats- oder Jahresbetrag ein. Der Rechner rechnet zwischen den Lohnperioden um, und Sie können Optionen wie Steuerklasse oder Region festlegen, sofern zutreffend."
+        },
+        {
+          "title": "Sehen Sie Ihre Aufschlüsselung",
+          "body": "Erhalten Sie Ihr geschätztes Nettogehalt zusammen mit einer Zeile-für-Zeile-Aufschlüsselung von Lohnsteuer und Sozialabgaben sowie Ihrem Grenz- und Durchschnittssteuersatz."
+        }
+      ],
+      "cta": "Rechner öffnen"
+    },
+    "calculators": {
+      "heading": "Rechner",
+      "intro": "Beginnen Sie mit einem allgemeinen Tool oder springen Sie direkt zu Ihrem Land unten.",
+      "tools": [
+        {
+          "title": "Brutto-Netto-Rechner",
+          "body": "Wandeln Sie jedes Bruttogehalt in ein geschätztes Nettogehalt um — mit einer vollständigen Aufschlüsselung von Steuern und Abgaben.",
+          "cta": "Nettogehalt berechnen →"
+        },
+        {
+          "title": "Gehaltsrechner-Übersicht",
+          "body": "Starten Sie bei Ihrem Land und entdecken Sie die Steuerregeln, Stufen und Sozialabgaben für 2026.",
+          "cta": "Nach Land durchsuchen →"
+        },
+        {
+          "title": "Stundenlohn zu Gehalt",
+          "body": "Verwandeln Sie einen Stundenlohn in ein wöchentliches, monatliches und jährliches Einkommen — und sehen Sie es dann nach Steuern.",
+          "cta": "Stundenlohn umrechnen →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Gehaltsrechner nach Land",
+      "subtitle": "Schätzungen für das Steuerjahr 2026 auf Basis der offiziellen Steuerstufen und Sozialabgaben jedes Landes.",
+      "cardSuffix": "Gehaltsrechner",
+      "cardMeta": "{currency} · Steuerjahr 2026",
+      "note": "Bei den meisten Rechnern können Sie Optionen wie Steuerklasse oder Region festlegen, sofern zutreffend; die verfügbaren Optionen unterscheiden sich je nach Land. Auf der jeweiligen Länderseite finden Sie die angebotenen Eingaben und die offiziellen Quellen.",
+      "seeAll": "Alle Rechner ansehen →"
+    },
+    "pillarsSection": {
+      "heading": "Erfahren Sie, wie Ihr Gehalt berechnet wird",
+      "intro": "Verständliche Ratgeber zu Einkommen, Steuern und Gehaltsplanung — intern verfasst und geprüft, mit Quellen und Aktualisierungsdaten.",
+      "viewAll": "Alle Ratgeber ansehen →"
+    },
+    "trust": {
+      "badge": "Daten aktuell für das Steuerjahr 2026 · Zuletzt geprüft im Juni 2026",
+      "heading": "Woher unsere Zahlen stammen",
+      "body": "Die Rechner und Ratgeber von IncomeTally werden vom IncomeTally-Redaktionsteam gepflegt. Wir bauen die Steuerlogik jedes Landes aus öffentlich verfügbaren Angaben auf, die von offiziellen Steuer- und Sozialversicherungsbehörden veröffentlicht werden, erklären die Konzepte in verständlicher Sprache mit durchgerechneten Beispielen und gleichen die Daten mit den offiziellen Sätzen jedes Jahres ab. Jeder Länderrechner zeigt seine spezifischen Quellen und das Steuerjahr, das er abdeckt.",
+      "standardsHeading": "Unsere Standards",
+      "standards": [
+        "Offizielle Quellen",
+        "Verständliche Sprache",
+        "Jährlich geprüft",
+        "Schätzungen, keine Beratung"
+      ],
+      "aboutLink": "Mehr über uns und unsere redaktionellen Standards lesen →",
+      "sourcesHeading": "Offizielle Quellen nach Land",
+      "sourcesNote": "Jede Länderseite verlinkt die spezifischen Quellen, die wir für ihre Zahlen verwendet haben.",
+      "disclaimerLabel": "Schätzungen, keine Beratung.",
+      "disclaimer": "IncomeTally stellt Einkommens- und Steuerrechner ausschließlich zu Informations- und Bildungszwecken bereit. Die Ergebnisse sind Schätzungen und spiegeln möglicherweise nicht Ihre tatsächlichen Steuerpflichten oder finanziellen Ergebnisse wider. Diese Website ist mit keiner Regierung oder Steuerbehörde verbunden und bietet keine finanzielle, steuerliche oder rechtliche Beratung. Wenden Sie sich für eine persönliche Beratung stets an eine qualifizierte Fachkraft."
+    },
+    "faqHeading": "Häufig gestellte Fragen",
+    "faqs": [
+      {
+        "question": "Ist die Nutzung von IncomeTally kostenlos?",
+        "answer": "Ja. Jeder Rechner und jeder Ratgeber auf IncomeTally ist kostenlos, und Sie müssen kein Konto anlegen. Ihre Eingaben werden in Ihrem Browser verarbeitet und nicht auf unseren Servern gespeichert."
+      },
+      {
+        "question": "Welche Länder und welches Steuerjahr deckt der Rechner ab?",
+        "answer": "IncomeTally deckt neun Länder ab — die USA, Deutschland, Großbritannien, Polen, Frankreich, Spanien, Italien, Schweden und Portugal — auf Basis der Lohnsteuer- und Sozialabgabenregeln für 2026. Das jeweils geltende Steuerjahr wird bei jedem Rechner angezeigt."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Brutto- und Nettogehalt?",
+        "answer": "Das Bruttogehalt ist Ihr gesamtes Gehalt vor allen Abzügen. Das Nettogehalt — Ihr Auszahlungsbetrag — ist das, was nach Abzug von Lohnsteuer und gesetzlichen Sozialabgaben übrig bleibt. IncomeTally zeigt die vollständige Aufschlüsselung, sodass Sie genau sehen, was abgezogen wird und warum."
+      },
+      {
+        "question": "Wie genau sind die Ergebnisse?",
+        "answer": "Die Rechner verwenden offizielle Steuerstufen, Freibeträge und Abgabensätze für 2026, sind aber Schätzungen. Das tatsächliche Nettogehalt kann je nach persönlichen Umständen variieren, etwa durch zusätzliche Freibeträge, regionale Regeln, Steuerklasse, Sozialleistungen und einmalige Abzüge. Betrachten Sie die Ergebnisse als gut belegte Schätzung, nicht als Steuererklärung."
+      },
+      {
+        "question": "Kann ich zwischen Stunden-, Monats- und Jahreslohn umrechnen?",
+        "answer": "Ja. Geben Sie Ihr Gehalt in einer dieser Perioden ein, und der Rechner rechnet es in alle anderen um und zeigt dann den entsprechenden Nettobetrag an. Unser Tool „Stundenlohn zu Gehalt“ konzentriert sich speziell auf Lohnumrechnungen, falls Sie nur das benötigen."
+      },
+      {
+        "question": "Woher stammen Ihre Steuerzahlen, und gibt IncomeTally Finanzberatung?",
+        "answer": "Unsere Zahlen stammen von den offiziellen Steuer- und Sozialversicherungsbehörden jedes Landes, etwa dem IRS und der SSA, HMRC sowie dem deutschen Bundesfinanzministerium, und jede Länderseite verlinkt die spezifischen Quellen, die wir verwendet haben. IncomeTally ist ausschließlich ein Informationstool: Es bietet keine finanzielle, steuerliche oder rechtliche Beratung und ist mit keiner Regierung oder Steuerbehörde verbunden. Für Entscheidungen über Ihre Steuern oder Finanzen wenden Sie sich an eine qualifizierte Fachkraft."
+      }
+    ]
+  },
+  "common": {
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "country": {
+    "h1Suffix": "Gehalts- und Steuerrechner",
+    "allCalculators": "← Alle Rechner",
+    "hourlyConverter": "Stundenlohn-zu-Gehalt-Rechner",
+    "otherCountries": "Andere Länder:",
+    "howItWorksHeading": "Gehaltssteuern in {country}: So funktioniert es",
+    "faqHeading": "Häufig gestellte Fragen",
+    "relatedHeading": "Verwandte Ressourcen",
+    "relatedHub": "Gehaltsrechner-Übersicht",
+    "calculatorSuffix": "Gehaltsrechner"
+  },
+  "guides": {
+    "metaTitle": "Gehalts- & Steuer-Ratgeber - Expertenartikel zur Einkommensberechnung",
+    "metaDescription": "Umfassende Ratgeber zu Gehaltsberechnungen, Steuerklassen, Abzügen und Nettoeinkommen. Erfahren Sie, wie Sie Ihr Nettogehalt berechnen und Steuersysteme verstehen.",
+    "title": "Gehalts- & Steuer-Ratgeber",
+    "intro": "Expertenartikel zu Gehaltsberechnungen, Steuersystemen, Abzügen und dem Verständnis Ihres Nettogehalts – gegliedert in drei thematische Schwerpunkte.",
+    "startHere": "Hier starten · Übersichts-Ratgeber",
+    "published": "Veröffentlicht",
+    "updated": "Aktualisiert",
+    "by": "Von",
+    "faqHeading": "Häufig gestellte Fragen",
+    "sourcesHeading": "Quellen & weiterführende Literatur",
+    "aboutAuthorHeading": "Über den Autor",
+    "editorialStandards": "Lesen Sie unsere redaktionellen Standards →",
+    "moreInPillar": "Mehr zum Thema {pillar}",
+    "relatedGeneric": "Verwandte Ratgeber",
+    "tryCalculators": "Rechner ausprobieren",
+    "toc": "Inhaltsverzeichnis",
+    "breadcrumbHome": "Startseite",
+    "breadcrumbGuides": "Ratgeber",
+    "linkHub": "Gehaltsrechner-Hub",
+    "linkNet": "Nettogehaltsrechner",
+    "linkHourly": "Stundenlohn-zu-Gehalt-Umrechner"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Einkommensmodus",
+      "grossIncome": "Bruttoeinkommen",
+      "country": "Land",
+      "taxYear": "Steuerjahr",
+      "hoursPerWeek": "Stunden pro Woche",
+      "weeksPerYear": "Wochen pro Jahr",
+      "calculateNetIncome": "Nettoeinkommen berechnen",
+      "salaryPeriod": "Gehaltszeitraum",
+      "salaryPeriodAria": "Auswahl des Gehaltszeitraums"
+    },
+    "mode": {
+      "hourly": "Stündlich",
+      "monthly": "Monatlich",
+      "yearly": "Jährlich"
+    },
+    "period": {
+      "hourly": "stündlich",
+      "monthly": "monatlich",
+      "annual": "jährlich"
+    },
+    "yesNo": {
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "country": {
+      "US": "Vereinigte Staaten",
+      "USFederalOnly": "Vereinigte Staaten (nur Bundessteuer)",
+      "DE": "Deutschland",
+      "UK": "Vereinigtes Königreich",
+      "PL": "Polen",
+      "FR": "Frankreich",
+      "ES": "Spanien",
+      "IT": "Italien",
+      "SE": "Schweden",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Land auswählen",
+      "helper": "Wählen Sie Ihr Land, um die Steuern entsprechend zu berechnen"
+    },
+    "actions": {
+      "copyShareLink": "Freigabelink kopieren",
+      "copied": "Kopiert!",
+      "shareLinkPrefix": "Freigabelink:"
+    },
+    "status": {
+      "loading": "Steuerdaten werden geladen...",
+      "empty": "Geben Sie Ihr Einkommen ein, um Berechnungen zu sehen"
+    },
+    "validation": {
+      "incomePositive": "Das Einkommen muss eine positive Zahl sein",
+      "incomeMax": "Das Einkommen darf {max} nicht überschreiten ({mode})",
+      "hoursMin": "Die Stunden müssen mindestens {min} betragen",
+      "hoursMax": "Die Stunden dürfen {max} nicht überschreiten",
+      "weeksMin": "Die Wochen müssen mindestens {min} betragen",
+      "weeksMax": "Die Wochen dürfen {max} nicht überschreiten"
+    },
+    "de": {
+      "taxClass": "Steuerklasse",
+      "healthInsurance": "Krankenversicherung",
+      "privateNoteLabel": "Hinweis:",
+      "privateNoteBody": "Die private Krankenversicherung wird separat gezahlt und nicht vom Gehalt abgezogen. Das oben angezeigte Nettoeinkommen enthält keine privaten Versicherungskosten, die Sie direkt an Ihren Versicherer zahlen.",
+      "state": "Ihr Bundesland",
+      "inChurch": "In der Kirche?",
+      "churchAria": "Auswahl der Kirchenmitgliedschaft",
+      "haveChildren": "Kinder?",
+      "childrenAria": "Auswahl der Kinder",
+      "childrenNote": "Wird für die Pflegeversicherung verwendet. Für 2026 bedeutet das: mit Kindern ca. 1,80 % Arbeitnehmeranteil (in den meisten Bundesländern), ohne Kinder ca. 2,40 % (inkl. Kinderlosenzuschlag). Sachsen nutzt eine andere Aufteilung."
+    },
+    "us": {
+      "filingStatus": "Veranlagungsstatus",
+      "employmentType": "Beschäftigungsart",
+      "deductionMethod": "Abzugsmethode",
+      "itemizedDeductions": "Einzelaufgeführte Abzüge",
+      "childrenUnder17": "Kinder (unter 17)",
+      "otherDependents": "Sonstige Angehörige",
+      "taxpayerOver65": "Steuerzahler 65+",
+      "taxpayerBlind": "Steuerzahler blind",
+      "spouseOver65": "Ehepartner 65+",
+      "spouseBlind": "Ehepartner blind",
+      "preTax401k": "Vorsteuerliche 401(k) / Altersvorsorge",
+      "preTaxHSA": "Vorsteuerliches HSA",
+      "otherPreTax": "Sonstige vorsteuerliche Abzüge",
+      "stateTaxRate": "Bundesstaatssteuersatz (Schätzung, %)",
+      "localTaxRate": "Lokaler Steuersatz (Schätzung, %)"
+    },
+    "uk": {
+      "region": "Region",
+      "preTaxPension": "Vorsteuerliche Rentenbeiträge",
+      "preTaxOther": "Sonstige vorsteuerliche Abzüge",
+      "studentLoanPlan": "Studienkredit-Plan",
+      "studentLoanNote": "Hinweis: Der Plan hängt davon ab, wo/wann Sie studiert haben, nicht wo Sie arbeiten.",
+      "marriageAllowance": "Ehegattenfreibetrag?",
+      "marriageAllowanceAria": "Auswahl des Ehegattenfreibetrags",
+      "marriageAllowanceNote": "Für Steuerzahler im Basissatz, deren Ehe-/Lebenspartner kein Steuerzahler ist (Entlastung bis zu £252).",
+      "children": "Kinder (für die Kindergeldabgabe)",
+      "childrenNote": "Wird für die High Income Child Benefit Charge verwendet (gilt bei Einkommen über £60.000)."
+    },
+    "pl": {
+      "filingStatus": "Veranlagungsstatus",
+      "children": "Kinder (für Kinderfreibetrag)",
+      "preTax": "Steuerlich absetzbare Beiträge (z. B. IKZE,",
+      "under26": "Entlastung für junge Menschen (unter 26)?",
+      "under26Aria": "Auswahl der Entlastung für unter 26-Jährige",
+      "under26Note": "Befreit Arbeitseinkommen bis 85.528 PLN von der Einkommensteuer (ZUS und Krankenversicherung gelten weiterhin)."
+    },
+    "pt": {
+      "region": "Region",
+      "filingStatus": "Veranlagungsstatus",
+      "dependants": "Angehörige"
+    },
+    "se": {
+      "municipality": "Gemeinde",
+      "customRate": "Kommunaler Steuersatz (%)",
+      "churchMember": "Mitglied der Schwedischen Kirche?",
+      "churchAria": "Auswahl der Kirchenmitgliedschaft",
+      "churchNote": "Fügt die Kirchengebühr (kyrkoavgift) hinzu. Die Einkommensteuer berücksichtigt bereits den Grundfreibetrag und den jobbskatteavdrag-Freibetrag (unter 66)."
+    },
+    "it": {
+      "region": "Region (regionaler Zuschlag)",
+      "customRegionalRate": "Regionaler Zuschlagssatz (%)",
+      "municipalRate": "Kommunaler Zuschlagssatz (%)",
+      "dependentChildren": "Unterhaltsberechtigte Kinder (21–29 Jahre)",
+      "dependentChildrenNote": "Kinder unter 21 sind durch den Assegno Unico abgedeckt (nicht über die Lohnabrechnung). Regionale und kommunale Zuschläge variieren je nach Standort.",
+      "dependentSpouse": "Unterhaltsberechtigter Ehepartner (coniuge a carico)?",
+      "dependentSpouseAria": "Auswahl des unterhaltsberechtigten Ehepartners",
+      "dependentSpouseNote": "Ein Ehepartner mit wenig oder keinem Einkommen (coniuge a carico) gewährt einen Steuerbonus von bis zu 800 €."
+    },
+    "es": {
+      "community": "Autonome Gemeinschaft",
+      "filingStatus": "Veranlagungsstatus",
+      "children": "Kinder (unterhaltsberechtigte Nachkommen)",
+      "childrenNote": "Die regionalen Sätze variieren je nach Gemeinschaft; País Vasco und Navarra nutzen separate Foral-Systeme, die hier nicht abgedeckt sind."
+    },
+    "fr": {
+      "household": "Haushalt",
+      "children": "Unterhaltsberechtigte Kinder",
+      "childrenNote": "Fügt Anteile am Familienquotienten hinzu (+0,5 für jedes der ersten beiden Kinder, +1 ab dem dritten), wobei der Vorteil gedeckelt ist (plafonnement). Schätzung für einen Single-Haushalt/Alleinverdiener."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Nicht verheiratet, keine Kinder",
+        "2": "Alleinerziehend",
+        "3": "Verheiratet (höheres Einkommen als Partner)",
+        "4": "Verheiratet (gleiches Einkommen)",
+        "5": "Verheiratet (niedrigeres Einkommen als Partner)",
+        "6": "Neben- und Zusatzeinkommen"
+      },
+      "deHealthInsurance": {
+        "public": "Gesetzlich (GKV)",
+        "private-without": "Privat (ohne Arbeitgeberzuschuss)",
+        "private-with": "Privat (mit Arbeitgeberzuschuss)"
+      },
+      "usFilingStatus": {
+        "single": "Alleinstehend",
+        "mfj": "Verheiratet, gemeinsame Veranlagung",
+        "mfs": "Verheiratet, getrennte Veranlagung",
+        "hoh": "Haushaltsvorstand"
+      },
+      "usEmploymentType": {
+        "employee": "Arbeitnehmer (W-2)",
+        "selfEmployed": "Selbstständig (SE-Steuer-Schätzung)"
+      },
+      "usDeductionMethod": {
+        "auto": "Automatisch (max. aus Standard und Einzelaufstellung)",
+        "standard": "Standardabzug",
+        "itemized": "Einzelaufgeführte Abzüge"
+      },
+      "ukRegion": {
+        "england": "England",
+        "wales": "Wales",
+        "ni": "Nordirland",
+        "scotland": "Schottland (noch nicht unterstützt)"
+      },
+      "ukStudentLoan": {
+        "none": "Keiner",
+        "plan2": "Plan 2 (9 % über £{threshold})",
+        "plan4": "Plan 4 (9 % über £{threshold})",
+        "plan5": "Plan 5 (9 % über £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Alleinstehend",
+        "joint": "Verheiratet — gemeinsame Veranlagung (Alleinverdiener)"
+      },
+      "ptRegion": {
+        "mainland": "Festland (Continente)",
+        "azores": "Azoren (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Alleinstehend",
+        "joint": "Verheiratet — gemeinsame Besteuerung (Alleinverdiener)"
+      },
+      "esFilingStatus": {
+        "single": "Einzelveranlagung",
+        "joint": "Gemeinsame Erklärung (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Alleinstehend (1 Anteil)",
+        "married": "Verheiratet / PACS — gemeinsam (2 Anteile)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Krankenversicherung",
+      "longTermCareInsurance": "Pflegeversicherung",
+      "pensionInsurance": "Rentenversicherung",
+      "unemploymentInsurance": "Arbeitslosenversicherung",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Zusätzliche Medicare-Steuer",
+      "seTaxSocialSecurity": "Selbstständigensteuer (Social Security)",
+      "seTaxMedicare": "Selbstständigensteuer (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (Klasse 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (Klasse 1, höher)",
+      "plPension": "Rentenversicherung (Emerytalne)",
+      "plDisability": "Erwerbsunfähigkeitsversicherung (Rentowe)",
+      "plSickness": "Krankenversicherung (Chorobowe)",
+      "plHealth": "Gesundheitsversicherung (Zdrowotne)",
+      "ptSocialSecurity": "Social Security (Segurança Social)",
+      "seChurchFee": "Kirchengebühr (kyrkoavgift)",
+      "itInps": "INPS-Rentenbeitrag",
+      "itRegionalMunicipalSurtax": "Regionaler & kommunaler Zuschlag (addizionali)",
+      "esCommonContingencies": "Allgemeine Risiken (Seguridad Social)",
+      "esMei": "MEI-Solidaritätsbeitrag",
+      "esTraining": "Berufsausbildung (Formación profesional)",
+      "esUnemployment": "Arbeitslosigkeit (Desempleo)",
+      "esSocialSecurity": "Social Security (Seguridad Social)",
+      "frCsgDeductible": "CSG (absetzbar)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (nicht absetzbar)",
+      "frSocialSecurityPension": "Sozialversicherungs- & Rentenbeiträge",
+      "frPension": "Rente (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Berechnungsergebnisse",
+      "netIncome": "Nettoeinkommen",
+      "netHourly": "Netto stündlich",
+      "netHourlyAfterSacrifice": "Netto stündlich (nach Gehaltsumwandlung)",
+      "netMonthly": "Netto monatlich",
+      "netYearly": "Netto jährlich",
+      "effectiveTaxRate": "Effektiver Steuersatz",
+      "taxAndNiRate": "Steuer- & NI-Satz",
+      "salarySacrificeRate": "Gehaltsumwandlungssatz",
+      "totalNonCashShare": "Gesamter Sachleistungsanteil",
+      "breakdown": "Aufschlüsselung",
+      "grossIncome": "Bruttoeinkommen",
+      "preTaxDeductionsEntered": "Vorsteuerliche Abzüge (eingegeben)",
+      "preTaxDeductionsAppliedCapped": "Vorsteuerliche Abzüge (angewendet, gedeckelt)",
+      "preTaxDeductions": "Vorsteuerliche Abzüge",
+      "adjustedGrossIncome": "Bereinigtes Bruttoeinkommen (AGI)",
+      "salarySacrifice": "Gehaltsumwandlung (Rente & vorsteuerlich)",
+      "adjustedIncomeAfterSacrifice": "Bereinigtes Einkommen (nach Gehaltsumwandlung)",
+      "preTaxContributions": "Vorsteuerliche Beiträge",
+      "standardDeduction": "Standardabzug",
+      "itemizedDeduction": "Einzelaufgeführter Abzug",
+      "allowances": "Freibeträge",
+      "taxableIncome": "Zu versteuerndes Einkommen",
+      "incomeTax": "Einkommensteuer",
+      "incomeTaxDE": "Gesamte Einkommensteuer (ESt + Soli + Kirche)",
+      "incomeTaxUS": "Einkommensteuer (Bund + Bundesstaat + lokal)",
+      "studentLoan": "Studienkredit",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Ehegattenfreibetrag (Entlastung)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Solidaritätszuschlag (Soli)",
+      "churchTax": "Kirchensteuer",
+      "federalIncomeTaxBeforeCredits": "Bundeseinkommensteuer (vor Steuergutschriften)",
+      "taxCreditsApplied": "Steuergutschriften (angewendet)",
+      "federalIncomeTaxAfterCredits": "Bundeseinkommensteuer (nach Steuergutschriften)",
+      "stateIncomeTax": "Bundesstaatseinkommensteuer (Schätzung)",
+      "localIncomeTax": "Lokale Einkommensteuer (Schätzung)",
+      "saxonySplit": "(Sachsen-Aufteilung)",
+      "cappedOn": "auf",
+      "totalSocialContributions": "Gesamte Sozialabgaben",
+      "taxesAndNi": "Steuern & NI",
+      "cashInHand": "Verfügbares Einkommen"
+    },
+    "example": {
+      "heading": "Beispielberechnung",
+      "perHour": "pro Stunde",
+      "perMonth": "pro Monat",
+      "perYear": "pro Jahr",
+      "netIncomeAnnual": "Nettoeinkommen (jährlich)",
+      "basedOnPrefix": "Basierend auf",
+      "hourlyNote": "({hours} Stunden/Woche, {weeks} Wochen/Jahr)",
+      "monthlyNote": "(12 Monate/Jahr)",
+      "forTaxYear": "für das Steuerjahr {year}."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss zur Steuerschätzung",
+      "noteLabel": "Hinweis:",
+      "us": "Diese Berechnungen sind Schätzungen, die ausschließlich auf den Bundessteuersätzen basieren. Bundesstaats- und lokale Steuern sind nicht enthalten und können Ihre gesamte Steuerlast erheblich beeinflussen.",
+      "default": "Diese Berechnungen sind Schätzungen und enthalten möglicherweise keine lokalen oder regionalen Steuern. Bitte konsultieren Sie offizielle Quellen oder einen Steuerberater für genaue Zahlen."
+    },
+    "dataSources": {
+      "heading": "Datenquellen",
+      "intro": "Unsere Schätzungen für {country} basieren auf öffentlich verfügbaren Zahlen aus offiziellen behördlichen und steuerlichen Quellen. Sätze und Schwellenwerte ändern sich jedes Steuerjahr, daher überprüfen wir sie regelmäßig. Diese Ergebnisse sind Schätzungen, keine offiziellen Steuerbescheide oder Beratung.",
+      "editorialPrefix": "Siehe unsere",
+      "editorialLink": "redaktionellen Standards",
+      "editorialSuffix": "dazu, wie wir diese Daten recherchieren und aktualisieren."
+    }
+  },
+  "hub": {
+    "metaTitle": "Gehaltsrechner-Hub - Nettoeinkommen nach Land berechnen",
+    "metaDescription": "Kostenlose Gehaltsrechner fuer mehrere Laender. Berechnen Sie Ihr Nettoeinkommen nach Steuern und Sozialabgaben in den USA, Deutschland, Grossbritannien und mehr.",
+    "title": "Gehaltsrechner-Hub",
+    "intro1": "Berechnen Sie Ihr Nettoeinkommen nach Steuern und Sozialabgaben. Unsere kostenlosen Rechner helfen Ihnen zu verstehen, wie viel Ihnen in verschiedenen Laendern netto bleibt, mit detaillierten Aufschluesselungen von Einkommensteuer, Sozialversicherungsbeitraegen und weiteren Abzuegen.",
+    "intro2": "Waehlen Sie unten ein Land aus, um zu beginnen, oder waehlen Sie einen Berechnungsmodus, der zu Ihren Beduerfnissen passt.",
+    "byCountryHeading": "Nach Land berechnen",
+    "calculateCta": "Berechnen →",
+    "hourlyTitle": "Stundenlohn-Rechner",
+    "monthlyTitle": "Monatsgehalts-Rechner",
+    "yearlyTitle": "Jahresgehalts-Rechner",
+    "chooseModeHeading": "Berechnungsmodus waehlen",
+    "converterTitle": "Stundenlohn-in-Gehalt-Umrechner",
+    "converterBody": "Rechnen Sie Ihren Stundenlohn in Jahres-, Monats- und Wochengehalt um. Ideal, um Ihre Gesamtverguetung zu verstehen, wenn Sie verhandeln oder Stellenangebote vergleichen.",
+    "converterCta": "Stundenlohn umrechnen →",
+    "hourlyBody": "Berechnen Sie Ihr Nettoeinkommen, wenn Sie Ihren Stundenlohn kennen. Mit Optionen fuer individuelle Stunden pro Woche und Wochen pro Jahr, passend zu Ihrem Arbeitszeitplan.",
+    "hourlyCta": "Stundenlohn berechnen →",
+    "monthlyBody": "Berechnen Sie Ihr monatliches Nettoeinkommen nach Steuern. Ideal fuer die Budgetplanung und um Ihr monatliches Nettogehalt zu verstehen.",
+    "monthlyCta": "Monatlich berechnen →",
+    "yearlyBody": "Berechnen Sie Ihr jaehrliches Nettoeinkommen aus Ihrem Bruttojahresgehalt. Sehen Sie die vollstaendige Aufschluesselung der Steuern und Abzuege fuer das gesamte Jahr.",
+    "yearlyCta": "Jaehrlich berechnen →",
+    "faqHeading": "Haeufig gestellte Fragen"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Gehalts- & Steuerrechner — Schaetzen Sie Ihr Nettoeinkommen",
+      "description": "Kostenloser Gehalts- und Steuerrechner. Geben Sie Ihr Bruttoeinkommen ein, um Nettogehalt, Einkommensteuer und Sozialabgaben fuer die USA, Deutschland und Grossbritannien im Jahr 2026 zu schaetzen.",
+      "ogDescription": "Kostenloser Gehalts- und Steuerrechner. Schaetzen Sie Nettogehalt, Einkommensteuer und Sozialabgaben fuer die USA, Deutschland und Grossbritannien."
+    },
+    "title": "Gehalts- & Steuerrechner",
+    "intro": "Schaetzen Sie Ihr Nettoeinkommen (Nettogehalt) nach Einkommensteuer und Sozialabgaben. Geben Sie Ihr Bruttogehalt ein, waehlen Sie Ihr Land und Ihren Abrechnungszeitraum und erhalten Sie eine sofortige Aufschluesselung fuer das Steuerjahr 2026.",
+    "howItWorks": {
+      "heading": "So funktioniert der Rechner",
+      "p1": "Unser Rechner wandelt Ihr Bruttoeinkommen mithilfe aktueller Steuersaetze und Sozialabgaben fuer jedes unterstuetzte Land in ein geschaetztes Nettogehalt um. Sie koennen Ihr Einkommen als Stundenlohn, Monatsgehalt oder Jahresbetrag eingeben, und der Rechner rechnet es auf das Jahr hoch, bevor er die jeweiligen Steuerregeln anwendet.",
+      "p2": "Die Aufschluesselung trennt die Einkommensteuer von den Sozialabgaben — wie Social Security und Medicare in den USA, gesetzlichen Versicherungsbeitraegen in Deutschland und National Insurance in Grossbritannien — sodass Sie genau sehen, wohin Ihr Geld fliesst und wie hoch Ihr effektiver Steuersatz ist.",
+      "p3": "Die Ergebnisse sind Schaetzungen, die nur zu Informations- und Planungszwecken dienen, und beruecksichtigen nicht jede individuelle Situation, etwa bundesstaatliche und lokale Steuern, Steuergutschriften oder Sachbezuege. Fuer eine auf Ihre Situation zugeschnittene Beratung wenden Sie sich an einen qualifizierten Steuerberater."
+    },
+    "related": {
+      "heading": "Laenderspezifische Rechner entdecken",
+      "hub": "Gehaltsrechner-Hub",
+      "us": "Gehaltsrechner USA",
+      "de": "Gehaltsrechner Deutschland",
+      "uk": "Gehaltsrechner Grossbritannien",
+      "hourly": "Stundenlohn-in-Gehalt-Umrechner",
+      "guides": "Gehalts- & Steuer-Ratgeber"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Nettogehalt-Rechner - Berechnen Sie Ihr Nettogehalt",
+      "description": "Kostenloser Nettogehalt-Rechner. Ermitteln Sie Ihr Nettogehalt nach Einkommensteuer und Sozialabgaben fuer die USA, Deutschland und Grossbritannien."
+    },
+    "title": "Nettogehalt-Rechner",
+    "intro": "Berechnen Sie Ihr Nettoeinkommen (Nettogehalt) nach Steuern und Sozialabgaben. Unser umfassender Gehaltsrechner hilft Ihnen zu verstehen, wie viel Sie nach allen Abzuegen genau erhalten.",
+    "cta": "Zum Gehaltsrechner-Hub →",
+    "breakdownIntro": "Unser Gehaltsrechner liefert detaillierte Aufschluesselungen zu:",
+    "breakdown": {
+      "gross": "Bruttoeinkommen (vor Steuern)",
+      "incomeTax": "Einkommensteuer-Berechnungen",
+      "social": "Sozialversicherungsbeitraege",
+      "net": "Nettoeinkommen (Nettogehalt)",
+      "effectiveRate": "Effektive Steuersaetze"
+    },
+    "availability": "Verfuegbar fuer mehrere Laender, darunter die USA, Deutschland und Grossbritannien. Waehlen Sie Ihr Land aus, um mit genauen, aktuellen Steuerberechnungen fuer 2026 zu beginnen.",
+    "specialized": "Sie koennen auch auf unsere spezialisierten Rechner zugreifen:",
+    "links": {
+      "hourly": "Stundenlohn-in-Gehalt-Umrechner",
+      "us": "USA-Rechner",
+      "de": "Deutschland-Rechner",
+      "uk": "Grossbritannien-Rechner"
+    },
+    "explainer": {
+      "heading": "Was ist das Nettogehalt?",
+      "p1": "Ihr <b>Nettogehalt</b> — oft auch als Nettolohn bezeichnet — ist der Betrag, der nach Abzug der Pflichtabgaben von Ihrem Bruttogehalt tatsaechlich auf Ihrem Bankkonto landet. Das Bruttogehalt ist die Kennzahl in Ihrem Arbeitsvertrag; das Nettogehalt ist das, was Sie einplanen und ausgeben koennen.",
+      "p2": "Die Differenz zwischen beiden setzt sich aus <b>Einkommensteuer</b> und <b>Sozialabgaben</b> zusammen. Die Einkommensteuer ist in der Regel progressiv, das heisst, hoehere Einkommensteile werden mit hoeheren Saetzen besteuert. Sozialabgaben finanzieren Programme wie staatliche Renten, Gesundheitsversorgung und Arbeitslosenversicherung, und die genauen Saetze haengen von Ihrem Wohnort ab.",
+      "p3": "Da jedes Land diese Abzuege unterschiedlich berechnet, kann dasselbe Bruttogehalt in den USA, Deutschland oder Grossbritannien zu sehr unterschiedlichen Nettogehaeltern fuehren. Waehlen Sie oben Ihr Land aus, um eine detaillierte, laenderspezifische Aufschluesselung fuer das Steuerjahr 2026 zu sehen."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Stundenlohn-in-Gehalt-Umrechner - Jahres-, Monats- & Wocheneinkommen berechnen",
+      "description": "Rechnen Sie Ihren Stundenlohn in Jahres-, Monats- und Wochengehalt um. Kostenloser Rechner mit Formeln und Beispielen. Ideal fuer Gehaltsverhandlungen und Gehaltsvergleiche.",
+      "ogDescription": "Rechnen Sie Ihren Stundenlohn in Jahres-, Monats- und Wochengehalt um. Kostenloser Rechner mit Formeln und Beispielen."
+    },
+    "title": "Stundenlohn-in-Gehalt-Umrechner",
+    "intro": "Rechnen Sie Ihren Stundenlohn in Jahres-, Monats-, Wochen- und Tagesgehalt um. Verstehen Sie Ihre Gesamtverguetung, wenn Sie Stellenangebote verhandeln oder Positionen vergleichen.",
+    "calc": {
+      "heading": "Berechnen Sie Ihr Nettoeinkommen",
+      "intro": "Geben Sie unten Ihren Stundenlohn ein, um Ihr Brutto- und Nettoeinkommen zu berechnen. Der Rechner ist auf den Stundenmodus voreingestellt und zeigt Ihr Nettogehalt nach Steuern an."
+    },
+    "formulas": {
+      "heading": "Umrechnungsformeln",
+      "annual": {
+        "title": "Jahresgehalt aus dem Stundenlohn",
+        "code": "Jahresgehalt = Stundenlohn × Stunden pro Woche × Wochen pro Jahr",
+        "note": "Standardberechnung: Multiplizieren Sie Ihren Stundenlohn mit 40 Stunden pro Woche und 52 Wochen pro Jahr."
+      },
+      "monthly": {
+        "title": "Monatsgehalt",
+        "code": "Monatsgehalt = Jahresgehalt ÷ 12",
+        "note": "Teilen Sie das Jahresgehalt durch 12 Monate. Hinweis: Dies ergibt einen durchschnittlichen Monatsbetrag; das tatsaechliche Monatsgehalt kann abweichen, wenn zweiwoechentlich oder halbmonatlich gezahlt wird."
+      },
+      "weekly": {
+        "title": "Wochengehalt",
+        "code": "Wochengehalt = Stundenlohn × Stunden pro Woche",
+        "note": "Multiplizieren Sie einfach Ihren Stundenlohn mit der Anzahl der Stunden, die Sie pro Woche arbeiten."
+      },
+      "daily": {
+        "title": "Tagesgehalt",
+        "code": "Tagesgehalt = Stundenlohn × Stunden pro Tag",
+        "note": "Bei einem 8-Stunden-Arbeitstag multiplizieren Sie Ihren Stundenlohn mit 8."
+      },
+      "grossNote": "<b>Hinweis:</b> Diese Formeln berechnen das Brutto-Einkommen (vor Steuern). Verwenden Sie den Rechner unten, um Ihr Nettogehalt nach Steuern und Abzuegen zu sehen."
+    },
+    "examples": {
+      "heading": "Beispiele",
+      "annualGross": "Jahresbrutto:",
+      "monthlyGross": "Monatsbrutto:",
+      "weeklyGross": "Wochenbrutto:",
+      "dailyGross": "Tagesbrutto",
+      "ex1": {
+        "title": "Beispiel 1: $25 pro Stunde, 40 Stunden/Woche, 52 Wochen/Jahr",
+        "annual": "<b>Jahresbrutto:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Monatsbrutto:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Wochenbrutto:</b> $25 × 40 = $1,000",
+        "daily": "<b>Tagesbrutto (8 Stunden):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Beispiel 2: $30 pro Stunde, 35 Stunden/Woche, 50 Wochen/Jahr",
+        "annual": "<b>Jahresbrutto:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Monatsbrutto:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Wochenbrutto:</b> $30 × 35 = $1,050",
+        "daily": "<b>Tagesbrutto (7 Stunden):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Beispiel 3: $20 pro Stunde, 40 Stunden/Woche, 48 Wochen/Jahr (mit 4 Wochen unbezahltem Urlaub)",
+        "annual": "<b>Jahresbrutto:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Monatsbrutto:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Wochenbrutto:</b> $20 × 40 = $800",
+        "note": "Hinweis: Die Anpassung der Wochen pro Jahr beruecksichtigt unbezahlte Freistellungen, Urlaub oder saisonale Arbeit."
+      }
+    },
+    "faq": {
+      "heading": "Haeufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Was ist der Unterschied zwischen Brutto- und Nettogehalt?",
+          "answer": "Das Bruttogehalt ist Ihr Gesamtverdienst vor Steuern und Abzuegen. Das Nettogehalt (Nettolohn) ist das, was Sie nach Abzug von Einkommensteuer, Sozialversicherung und anderen Pflichtabgaben erhalten. Der Rechner oben zeigt sowohl Brutto- als auch Nettobetraege an."
+        },
+        {
+          "question": "Wie viele Wochen sollte ich in der Berechnung verwenden?",
+          "answer": "Der Standard sind 52 Wochen pro Jahr fuer Vollzeitbeschaeftigte. Wenn Sie jedoch unbezahlte Freistellungen haben, saisonal arbeiten oder laengeren Urlaub nehmen, passen Sie den Wert entsprechend an. Zum Beispiel wuerden 2 Wochen unbezahlter Urlaub 50 Wochen pro Jahr bedeuten."
+        },
+        {
+          "question": "Sollte ich Ueberstunden in meinen Stundenlohn einbeziehen?",
+          "answer": "Fuer genaue Jahresgehaltsberechnungen verwenden Sie Ihren Basis-Stundenlohn und Ihre Standardstunden. Wenn Sie regelmaessig Ueberstunden leisten, koennen Sie entweder: (1) das Basisgehalt separat berechnen und geschaetzte Ueberstunden hinzufuegen oder (2) einen durchschnittlichen Stundenlohn verwenden, der Ueberstunden beruecksichtigt. Der Rechner ermoeglicht es Ihnen, die Stunden pro Woche an Ihren tatsaechlichen Arbeitsplan anzupassen."
+        },
+        {
+          "question": "Wie rechne ich das Gehalt zurueck in einen Stundenlohn um?",
+          "answer": "Um das Jahresgehalt in einen Stundenlohn umzurechnen: Stundenlohn = Jahresgehalt ÷ (Stunden pro Woche × Wochen pro Jahr). Zum Beispiel: $52,000 ÷ (40 × 52) = $25 pro Stunde. Verwenden Sie unseren Rechner umgekehrt, indem Sie Ihr Jahresgehalt eingeben und den Jahresmodus waehlen."
+        }
+      ],
+      "countriesQuestion": "Sind diese Berechnungen fuer alle Laender genau?",
+      "countriesAnswer": "Die Umrechnungsformeln (Stunde zu Jahr, Monat usw.) sind universell gueltig. Die Nettoeinkommensberechnungen unterscheiden sich jedoch je nach Land aufgrund unterschiedlicher Steuersysteme. Verwenden Sie die laenderspezifischen Rechner in unserem <link>Gehaltsrechner-Hub</link> fuer genaue Nettoeinkommensschaetzungen.",
+      "partTimeQuestion": "Was, wenn ich in Teilzeit arbeite oder unregelmaessige Arbeitszeiten habe?",
+      "partTimeAnswer": "Geben Sie fuer Teilzeitarbeit Ihre tatsaechlichen Stunden pro Woche ein. Berechnen Sie bei unregelmaessigen Arbeitszeiten einen Durchschnitt der Wochenstunden ueber einen laengeren Zeitraum (z. B. 3-6 Monate) und verwenden Sie diesen. Der Rechner ermoeglicht individuelle Stunden pro Woche und Wochen pro Jahr, passend zu jedem Arbeitsplan."
+    },
+    "related": {
+      "heading": "Verwandte Ressourcen",
+      "hub": "Gehaltsrechner-Hub",
+      "us": "Gehaltsrechner USA",
+      "de": "Gehaltsrechner Deutschland",
+      "uk": "Gehaltsrechner Grossbritannien"
+    }
+  }
+}

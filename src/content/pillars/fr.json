@@ -1,0 +1,14 @@
+{
+  "income-basics": {
+    "title": "Comprendre vos revenus",
+    "description": "Salaire brut et net, salaire net à payer, et comment convertir un revenu entre montants horaires, mensuels et annuels."
+  },
+  "income-tax": {
+    "title": "Le fonctionnement de l'impôt sur le revenu",
+    "description": "Tranches d'imposition, déductions, cotisations sociales, et comment l'impôt sur le revenu influe sur votre salaire net dans différents pays."
+  },
+  "salary-career": {
+    "title": "Salaire, emploi et planification financière",
+    "description": "Évaluez votre rémunération, comparez les offres d'emploi, pesez le coût de la vie et comprenez la différence entre revenus de freelance et de salarié."
+  }
+}

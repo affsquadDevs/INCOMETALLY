@@ -1,0 +1,249 @@
+{
+  "about": {
+    "title": "Om oss",
+    "lastUpdated": "4 januari 2026",
+    "content": "IncomeTally är ett oberoende onlineverktyg som skapats för att hjälpa privatpersoner och yrkesverksamma att beräkna inkomst, lön och skatteberäkningar på ett tydligt, strukturerat och transparent sätt.\n\nFör att förstå din nettolön och dina skatteförpliktelser krävs korrekta beräkningar baserade på gällande skattelagar, skatteklasser och avdrag. I praktiken är löne- och skatteberäkningar ofta komplexa och varierar mellan länder, vilket gör det svårt att få fram korrekta uppskattningar. IncomeTally samlar dessa beräkningar på ett och samma ställe, vilket gör den ekonomiska planeringen mer enhetlig och lättare att hantera.\n\nPlattformen låter användare beräkna nettolön utifrån bruttoinkomst, omvandla mellan timlön och årslön samt uppskatta skatter baserat på landsspecifika skatteregler. IncomeTally är utformat som ett beräknings- och uppskattningsverktyg - som hjälper användare att förstå sin faktiska nettolön och planera sin ekonomi därefter.\n\nIncomeTally ger inte ekonomisk, skattemässig eller juridisk rådgivning. Alla beräkningar är uppskattningar baserade på offentligt tillgängliga skatteuppgifter och är endast avsedda för informations- och planeringsändamål.\n\nVårt mål är att erbjuda en enkel och praktisk upplevelse för ekonomisk planering och beslutsfattande. IncomeTally är en oberoende produkt och är inte ansluten till skattemyndigheter, finansinstitut eller tredjepartstjänsteleverantörer.\n\n## Våra redaktionella standarder\n\nIncomeTallys guider skrivs och granskas av IncomeTallys redaktion. Vi följer några enkla principer för att hålla vårt innehåll tillförlitligt:\n\n- **Officiella källor.** Våra skatte- och löneguider bygger på offentligt tillgängliga uppgifter från myndigheter såsom den amerikanska skattemyndigheten Internal Revenue Service (IRS), Storbritanniens HM Revenue & Customs (HMRC) och det tyska federala finansministeriet. Viktiga artiklar anger sina källor i slutet.\n- **Klarspråk.** Vi förklarar ämnen som inkomst, skatt och lön i tydliga ordalag, med praktiska exempel, så att de är användbara även för personer utan ekonomisk bakgrund.\n- **Hålls aktuellt.** Skattereglerna ändras varje år. Vi granskar våra guider och visar ett datum för \"Senast uppdaterad\" på var och en, så att du vet hur aktuell informationen är.\n- **Uppskattningar, inte rådgivning.** Våra kalkylatorer och guider ger allmänna uppskattningar i utbildningssyfte. De utgör inte ekonomisk, skattemässig eller juridisk rådgivning, och individuella omständigheter varierar. För beslut som påverkar din ekonomi bör du rådgöra med en kvalificerad expert.\n\nOm du upptäcker något som verkar vara inaktuellt eller felaktigt, vänligen [kontakta oss](/contact) — vi välkomnar rättelser.",
+    "faq": {
+      "title": "Vanliga frågor",
+      "items": [
+        {
+          "question": "Vad är IncomeTally?",
+          "answer": "IncomeTally är ett verktyg för inkomst- och skatteberäkning online. Det hjälper användare att beräkna nettolön, uppskatta skatter och omvandla mellan olika inkomstformat (timlön, månadslön, årslön) baserat på landsspecifika skatteregler."
+        },
+        {
+          "question": "Vem är IncomeTally till för?",
+          "answer": "IncomeTally är utformat för anställda, frilansare, arbetssökande och alla som vill förstå sin nettolön och sina skatteförpliktelser vid löneförhandlingar eller ekonomisk planering."
+        },
+        {
+          "question": "Måste jag skapa ett konto för att använda IncomeTally?",
+          "answer": "Nej. IncomeTally kan användas utan att du skapar ett konto. Alla uppgifter lämnas frivilligt av användaren."
+        },
+        {
+          "question": "Ger IncomeTally ekonomisk eller skattemässig rådgivning?",
+          "answer": "Nej. IncomeTally ger inte ekonomisk, skattemässig eller juridisk rådgivning. Det är uteslutande ett beräknings- och uppskattningsverktyg som endast är avsett för informationsändamål."
+        },
+        {
+          "question": "Är IncomeTally anslutet till skattemyndigheter eller finansinstitut?",
+          "answer": "Nej. IncomeTally drivs självständigt och har ingen anknytning till skattemyndigheter, finansinstitut eller tredjepartsplattformar."
+        },
+        {
+          "question": "Är IncomeTally gratis att använda?",
+          "answer": "IncomeTally erbjuder kostnadsfri tillgång till sina grundläggande beräkningsfunktioner. Ytterligare funktioner eller ändringar kan komma att införas i framtiden."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakta oss",
+    "subtitle": "Om du har frågor om IncomeTally, våra kalkylatorer eller hur webbplatsen fungerar kan du nå oss via kontaktuppgifterna nedan.",
+    "inquiryTypes": {
+      "title": "Vi välkomnar förfrågningar som rör:",
+      "items": [
+        "allmänna frågor om plattformen",
+        "hur kalkylatorerna och skatteberäkningarna fungerar",
+        "integritet och hantering av uppgifter",
+        "tekniska problem eller feedback",
+        "juridiska eller policyrelaterade frågor"
+      ]
+    },
+    "howToContact": {
+      "title": "Så kontaktar du oss",
+      "email": {
+        "label": "E-post:",
+        "note": "Vi strävar efter att besvara alla seriösa förfrågningar inom rimlig tid."
+      }
+    },
+    "aboutCommunication": {
+      "title": "Om kommunikation",
+      "description": "IncomeTally är en oberoende onlinetjänst som tillhandahåller kalkylatorer för inkomst, lön och skatt baserat på de uppgifter du anger.",
+      "notes": [
+        "Vi erbjuder inte kundsupport via sociala medier och tillhandahåller för närvarande inte telefonsupport.",
+        "Skicka inte känsliga personuppgifter via e-post om det inte är nödvändigt för att hantera din förfrågan."
+      ]
+    }
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "lastUpdated": "januari 2026",
+    "intro": "Välkommen till IncomeTally (\"vi\", \"vår\", \"oss\"). Din integritet är viktig för oss. Denna integritetspolicy förklarar hur vi samlar in, använder och skyddar information när du besöker https://incometally.com (\"webbplatsen\").",
+    "sections": [
+      {
+        "title": "1. Information vi samlar in",
+        "paragraphs": [
+          "Vi samlar in den minimala information som krävs för att driva och förbättra webbplatsen.",
+          "a) Icke-personlig information",
+          "När du besöker webbplatsen kan vi automatiskt samla in icke-identifierande information, såsom:"
+        ],
+        "listItems": [
+          "Webbläsartyp och version",
+          "Enhetstyp och operativsystem",
+          "Besökta sidor och tid som spenderats",
+          "Ungefärlig plats (endast på landsnivå)"
+        ],
+        "paragraphsAfterList": [
+          "Dessa uppgifter aggregeras och kan inte användas för att identifiera dig personligen.",
+          "b) Personlig information",
+          "Vi kräver ingen kontoregistrering och samlar inte medvetet in personuppgifter såsom namn, e-postadresser, telefonnummer eller betalningsinformation.",
+          "Om du kontaktar oss frivilligt (till exempel via e-post) använder vi endast din information för att besvara din förfrågan."
+        ]
+      },
+      {
+        "title": "2. Cookies och liknande tekniker",
+        "paragraphs": ["IncomeTally använder cookies och liknande tekniker för att:"],
+        "listItems": [
+          "Säkerställa korrekt funktionalitet på webbplatsen",
+          "Mäta trafik och användningsmönster",
+          "Visa relevanta annonser"
+        ],
+        "paragraphsAfterList": [
+          "Cookies ger oss inte tillgång till din dator eller dina personuppgifter.",
+          "Du kan när som helst inaktivera cookies i din webbläsares inställningar. Observera att vissa delar av webbplatsen kanske inte fungerar korrekt om cookies är inaktiverade."
+        ]
+      },
+      {
+        "title": "3. Annonsering (Google AdSense)",
+        "paragraphs": [
+          "Vi använder Google AdSense för att visa annonser.",
+          "Google och dess partner kan:"
+        ],
+        "listItems": [
+          "Använda cookies (inklusive DoubleClick-cookien)",
+          "Visa annonser baserat på dina besök på denna och andra webbplatser"
+        ],
+        "paragraphsAfterList": [
+          "Du kan läsa om hur Google använder data från webbplatser som använder dess tjänster här:",
+          "👉 https://policies.google.com/technologies/ads",
+          "Du kan välja bort personanpassad annonsering genom att besöka:",
+          "👉 https://adssettings.google.com"
+        ]
+      },
+      {
+        "title": "4. Hur vi använder information",
+        "paragraphs": ["Vi använder insamlad information för att:"],
+        "listItems": [
+          "Driva och underhålla webbplatsen",
+          "Förbättra kalkylatorns noggrannhet och användbarhet",
+          "Analysera trafik och prestanda",
+          "Uppfylla rättsliga förpliktelser"
+        ],
+        "paragraphsAfterList": ["Vi säljer, hyr ut eller byter inte användarinformation."]
+      },
+      {
+        "title": "5. Datasäkerhet",
+        "paragraphs": [
+          "Vi vidtar rimliga tekniska och organisatoriska åtgärder för att skydda information mot obehörig åtkomst, ändring eller förstörelse.",
+          "Ingen metod för överföring via internet är dock 100 % säker."
+        ]
+      },
+      {
+        "title": "6. Länkar till tredje part",
+        "paragraphs": [
+          "Webbplatsen kan innehålla länkar till tredjepartswebbplatser.",
+          "Vi ansvarar inte för integritetspraxis eller innehåll på dessa webbplatser."
+        ]
+      },
+      {
+        "title": "7. Information om barn",
+        "paragraphs": [
+          "IncomeTally riktar sig inte till barn under 13 år.",
+          "Vi samlar inte medvetet in personuppgifter från barn."
+        ]
+      },
+      {
+        "title": "8. Ändringar av denna policy",
+        "paragraphs": [
+          "Vi kan komma att uppdatera denna integritetspolicy då och då.",
+          "Eventuella ändringar publiceras på denna sida med ett uppdaterat datum för \"Senast uppdaterad\"."
+        ]
+      },
+      {
+        "title": "9. Kontakta oss",
+        "paragraphs": [
+          "Om du har frågor om denna integritetspolicy, vänligen kontakta oss på:",
+          "📧 hello@incometally.com"
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Användarvillkor",
+    "lastUpdated": "januari 2026",
+    "intro": "Genom att gå in på eller använda https://incometally.com (\"webbplatsen\") godkänner du att vara bunden av dessa användarvillkor. Om du inte godkänner dem ska du inte använda webbplatsen.",
+    "sections": [
+      {
+        "title": "1. Användning av webbplatsen",
+        "paragraphs": [
+          "IncomeTally tillhandahåller kalkylatorer för inkomst, lön och skatt enbart i informations- och utbildningssyfte.",
+          "Du samtycker till att använda webbplatsen:"
+        ],
+        "listItems": [
+          "Lagligt",
+          "För personliga, icke-kommersiella ändamål",
+          "Utan att försöka störa eller missbruka dess funktionalitet"
+        ]
+      },
+      {
+        "title": "2. Ingen professionell rådgivning",
+        "paragraphs": [
+          "Informationen och kalkylatorerna som tillhandahålls på IncomeTally utgör inte ekonomisk, skattemässig, juridisk eller redovisningsmässig rådgivning.",
+          "Beräkningarna är uppskattningar baserade på förenklade antaganden och offentligt tillgängliga uppgifter.",
+          "Du bör rådgöra med en kvalificerad expert innan du fattar ekonomiska eller skattemässiga beslut."
+        ]
+      },
+      {
+        "title": "3. Informationens noggrannhet",
+        "paragraphs": ["Även om vi strävar efter att hålla informationen korrekt och aktuell:"],
+        "listItems": [
+          "Garanterar vi inte fullständighet, noggrannhet eller tillförlitlighet",
+          "Skattelagar och regler ändras ofta",
+          "Resultaten kan skilja sig från officiella eller verkliga utfall"
+        ],
+        "paragraphsAfterList": ["Användning av webbplatsen sker på egen risk."]
+      },
+      {
+        "title": "4. Immateriella rättigheter",
+        "paragraphs": ["Allt innehåll på IncomeTally, inklusive:"],
+        "listItems": ["Text", "Design", "Kalkylatorlogik", "Varumärke"],
+        "paragraphsAfterList": [
+          "tillhör IncomeTally om inget annat anges och skyddas av tillämpliga immaterialrättsliga lagar.",
+          "Du får inte kopiera, reproducera eller distribuera innehåll utan föregående skriftligt tillstånd."
+        ]
+      },
+      {
+        "title": "5. Tredjepartstjänster",
+        "paragraphs": [
+          "Webbplatsen kan använda tredjepartstjänster (såsom analys- och annonsleverantörer).",
+          "Vi ansvarar inte för innehåll, policyer eller praxis hos tredjepartstjänster eller webbplatser."
+        ]
+      },
+      {
+        "title": "6. Ansvarsbegränsning",
+        "paragraphs": ["I den utsträckning som lagen tillåter:"],
+        "listItems": [
+          "Ska IncomeTally inte hållas ansvarigt för några direkta, indirekta eller följdskador",
+          "Inklusive ekonomisk förlust eller utfall av beslutsfattande",
+          "Som uppstår till följd av användning av eller tillit till webbplatsen"
+        ]
+      },
+      {
+        "title": "7. Ändringar av tjänsten",
+        "paragraphs": ["Vi förbehåller oss rätten att:"],
+        "listItems": [
+          "Ändra eller avveckla valfri del av webbplatsen",
+          "Uppdatera dessa villkor när som helst"
+        ],
+        "paragraphsAfterList": ["Ändringar träder i kraft när de publiceras."]
+      },
+      {
+        "title": "8. Tillämplig lag",
+        "paragraphs": [
+          "Dessa villkor ska regleras och tolkas i enlighet med tillämplig lagstiftning, utan hänsyn till lagvalsprinciper."
+        ]
+      },
+      {
+        "title": "9. Kontaktinformation",
+        "paragraphs": ["För frågor om dessa villkor, kontakta oss på:", "📧 hello@incometally.com"]
+      }
+    ]
+  }
+}

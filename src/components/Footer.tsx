@@ -1,10 +1,37 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { siteConfig } from '@/config/site';
 
+const sections = [
+  {
+    title: 'productTitle',
+    links: [
+      { href: '/', key: 'home' },
+      { href: '/calculator', key: 'calculator' },
+    ],
+  },
+  {
+    title: 'legalTitle',
+    links: [
+      { href: '/privacy', key: 'privacyPolicy' },
+      { href: '/terms', key: 'termsOfService' },
+    ],
+  },
+  {
+    title: 'resourcesTitle',
+    links: [
+      { href: '/salary-calculator', key: 'salaryCalculatorHub' },
+      { href: '/hourly-to-salary', key: 'hourlyToSalary' },
+      { href: '/guides', key: 'guides' },
+    ],
+  },
+] as const;
+
 export default function Footer() {
+  const t = useTranslations('footer');
   const currentYear = new Date().getFullYear();
-  const { footer, logo, name, contact } = siteConfig;
+  const { logo, name } = siteConfig;
 
   return (
     <footer className="bg-[#0066FF] text-white mx-4 mb-4 rounded-xl">
@@ -27,70 +54,33 @@ export default function Footer() {
 
         {/* Footer Links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-10">
-          {/* Product Section */}
-          <div>
-            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">
-              {footer.product.title}
-            </h3>
-            <ul className="space-y-2">
-              {footer.product.links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed"
-                  >
-                    {link.href === '/product' ? footer.calculatorLinkLabel : link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal Section */}
-          <div>
-            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">
-              {footer.legal.title}
-            </h3>
-            <ul className="space-y-2">
-              {footer.legal.links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources Section */}
-          <div>
-            <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">
-              {footer.resources.title}
-            </h3>
-            <ul className="space-y-2">
-              {footer.resources.links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {sections.map((section) => (
+            <div key={section.title}>
+              <h3 className="font-normal mb-4 text-white uppercase text-xs tracking-[0.05em]">
+                {t(section.title)}
+              </h3>
+              <ul className="space-y-2">
+                {section.links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-white hover:opacity-70 transition-opacity text-sm leading-relaxed"
+                    >
+                      {t(link.key)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Disclaimer Section */}
         <div className="mb-8">
           <div className="border-t border-white border-opacity-20 mb-6"></div>
           <div className="text-sm text-white opacity-90 leading-relaxed">
-            <span className="font-normal">Disclaimer: </span>
-            <span>{footer.disclaimer}</span>
+            <span className="font-normal">{t('disclaimerLabel')} </span>
+            <span>{t('disclaimer')}</span>
           </div>
         </div>
 
@@ -98,7 +88,7 @@ export default function Footer() {
         <div className="border-t border-white border-opacity-20 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white opacity-90">
-              © {currentYear} {name}. All rights reserved.
+              © {currentYear} {name}. {t('rights')}
             </p>
           </div>
         </div>

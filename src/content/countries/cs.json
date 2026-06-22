@@ -1,0 +1,482 @@
+{
+  "US": {
+    "displayName": "Spojené státy",
+    "title": "Kalkulačka daní z platu USA 2026 – Vypočítejte si čistý příjem",
+    "description": "Vypočítejte si čistý plat po federálních daních ve Spojených státech. Odhadněte si čistou mzdu pomocí naší bezplatné americké daňové kalkulačky IncomeTally pro rok 2026.",
+    "taxExplanation": "Spojené státy provozují progresivní systém federální daně z příjmu, kde se daňové sazby zvyšují s rostoucím příjmem. Daňový zákoník spravuje Internal Revenue Service (IRS) a pro daňový rok 2026 zahrnuje sedm daňových pásem v rozsahu od 10 % do 37 %. Tento systém je navržen tak, aby zajistil, že ti s vyššími příjmy přispívají větším procentem svých výdělků do federálních příjmů, přičemž domácnostem s nižšími příjmy poskytuje úlevu prostřednictvím nižších daňových sazeb a různých slev.\n\nFederální daň z příjmu se počítá pomocí marginálních daňových pásem, což znamená, že různé části vašeho příjmu jsou zdaněny různými sazbami. Pokud například vyděláte 75 000 USD ročně, první část vašeho příjmu spadá do nižších pásem a pouze částka přesahující práh každého pásma je zdaněna vyšší sazbou. Tato progresivní struktura zajišťuje, že lidé s nižšími příjmy platí na daních menší procento ze svého příjmu ve srovnání s lidmi s vyššími příjmy. Porozumění marginálním daňovým sazbám je zásadní, protože vaše efektivní daňová sazba – procento z vašeho celkového příjmu odvedené na daních – je obvykle nižší než vaše nejvyšší marginální sazba.\n\nKromě federální daně z příjmu většina zaměstnanců platí také daně na sociální zabezpečení a Medicare, běžně označované jako daně FICA. Daň na sociální zabezpečení se vyměřuje ve výši 6,2 % ze mzdy až do určitého stropu (vyměřovací základ sociálního zabezpečení), který se každoročně upravuje o inflaci. Tento strop znamená, že jakmile dosáhnete limitu vyměřovacího základu, po zbytek roku se již žádná další daň na sociální zabezpečení nesráží. Daň Medicare se účtuje ve výši 1,45 % ze všech mezd bez stropu, což znamená, že lidé s vysokými příjmy nadále platí daň Medicare z celého svého příjmu. Lidé s vysokými příjmy mohou rovněž podléhat dodatečné přirážce Medicare ve výši 0,9 % z příjmu nad určité prahy, která se vztahuje na mzdy, příjmy ze samostatné výdělečné činnosti a další odměny.\n\nStandardní odpočet je klíčovým prvkem amerického daňového systému, který poplatníkům umožňuje snížit jejich zdanitelný příjem bez nutnosti uplatňovat jednotlivé odpočty. Pro rok 2026 jsou částky standardního odpočtu upraveny o inflaci a liší se podle statusu pro podání přiznání – svobodný, manželé podávající společně, manželé podávající odděleně a hlava domácnosti, každý z nich má jinou částku. Tento odpočet fakticky osvobozuje část příjmu od zdanění, takže efektivní daňová sazba je pro mnoho poplatníků nižší než marginální sazba. Poplatníci si mohou vybrat mezi uplatněním standardního odpočtu nebo uplatněním jednotlivých odpočtů, jako jsou úroky z hypotéky, státní a místní daně a charitativní příspěvky, podle toho, co přináší větší daňovou výhodu.\n\nSrážka daně probíhá v průběhu roku prostřednictvím mzdových srážek, kdy zaměstnavatelé srážejí odhadované daně z každé výplaty na základě údajů uvedených ve formuláři W-4. Tento formulář umožňuje zaměstnancům uvést jejich status pro podání přiznání, počet vyživovaných osob a další faktory, které ovlivňují daňovou povinnost. Na konci daňového roku poplatníci podávají roční přiznání, aby sladili svou skutečnou daňovou povinnost s částkami, které byly sraženy. Pokud bylo sraženo příliš mnoho, poplatníci obdrží vratku; pokud příliš málo, musí doplatit rozdíl. Cílem je, aby srážka co nejvíce odpovídala skutečné daňové povinnosti a zabránilo se tak velkým vratkám nebo nečekaným daňovým doplatkům.\n\nAmerický daňový systém rovněž zahrnuje různé slevy a odpočty, které mohou daňovou povinnost dále snížit. Patří mezi ně sleva na dani z příjmu z výdělečné činnosti (Earned Income Tax Credit, EITC) pro pracovníky s nízkými až středními příjmy, slevy na dítě, slevy na vzdělávání a odpočty za příspěvky na důchodové spoření a další. Slevy na dani jsou obzvláště cenné, protože snižují daňovou povinnost dolar za dolar, zatímco odpočty snižují zdanitelný příjem. Tato kalkulačka se však zaměřuje na základní federální daň z příjmu a příspěvky FICA a poskytuje výchozí odhad ještě před zohledněním těchto dodatečných faktorů.\n\nJe důležité poznamenat, že státní a místní daně nejsou ve federálních výpočtech zahrnuty. Mnoho států uvaluje vlastní daně z příjmu, které mohou mít rozsah od rovných sazeb po progresivní struktury podobné federálnímu systému. Některé státy, jako Texas a Florida, žádnou státní daň z příjmu nemají, zatímco jiné, jako Kalifornie a New York, mají poměrně vysoké státní daňové sazby. Místní jurisdikce mohou rovněž uvalovat dodatečné daně z příjmu, zejména ve velkých metropolitních oblastech. Tyto státní a místní daně mohou významně ovlivnit celkové daňové zatížení a někdy přidat k efektivní daňové sazbě několik procentních bodů.\n\nDaňový zákoník prochází pravidelnými změnami prostřednictvím legislativy a sazby a pásma se každoročně upravují o inflaci pomocí indexu spotřebitelských cen. Poplatníci by se měli ohledně rad specifických pro jejich situaci řídit nejaktuálnějšími publikacemi IRS nebo se obrátit na kvalifikovaného daňového odborníka, protože individuální okolnosti se mohou výrazně lišit v závislosti na statusu pro podání přiznání, vyživovaných osobách, odpočtech a dalších faktorech. Složitost amerického daňového systému znamená, že dva jednotlivci se stejným hrubým příjmem mohou mít velmi odlišné čisté příjmy v závislosti na své konkrétní situaci.",
+    "faqs": [
+      {
+        "question": "Zahrnuje americká kalkulačka státní a místní daně?",
+        "answer": "Ne, naše americká kalkulačka zahrnuje pouze federální daň z příjmu a daně FICA (sociální zabezpečení a Medicare). Státní a místní daně z příjmu zahrnuty nejsou a mohou významně ovlivnit vaši celkovou daňovou povinnost, zejména ve státech s vysokými daněmi, jako jsou Kalifornie a New York."
+      },
+      {
+        "question": "Jaký je standardní odpočet pro rok 2026?",
+        "answer": "Částky standardního odpočtu pro rok 2026 jsou upraveny o inflaci a liší se podle statusu pro podání přiznání. Svobodní poplatníci, manželé podávající společně, manželé podávající odděleně a hlava domácnosti mají každý jinou částku. Standardní odpočet snižuje váš zdanitelný příjem, aniž byste museli uplatňovat jednotlivé odpočty."
+      },
+      {
+        "question": "Jak se počítají daně na sociální zabezpečení a Medicare?",
+        "answer": "Daň na sociální zabezpečení činí 6,2 % ze mzdy až do vyměřovacího základu sociálního zabezpečení (který se každoročně upravuje). Daň Medicare činí 1,45 % ze všech mezd bez stropu. Lidé s vysokými příjmy mohou rovněž platit dodatečnou přirážku Medicare ve výši 0,9 % z příjmu nad určité prahy. Tyto daně jsou oddělené od federální daně z příjmu."
+      },
+      {
+        "question": "Jaký je rozdíl mezi marginální a efektivní daňovou sazbou?",
+        "answer": "Vaše marginální daňová sazba je sazba uplatněná na vaše nejvyšší daňové pásmo. Vaše efektivní daňová sazba je procento z vašeho celkového příjmu odvedené na daních, které je obvykle nižší, protože různé části příjmu jsou zdaněny různými sazbami. Kalkulačka zobrazuje vaši efektivní daňovou sazbu."
+      },
+      {
+        "question": "Mohu vypočítat daně pro různé statusy pro podání přiznání?",
+        "answer": "Kalkulačka používá standardní předpoklady pro svobodného poplatníka. Různé statusy pro podání přiznání (manželé podávající společně, hlava domácnosti atd.) mají různé standardní odpočty a daňová pásma. Pro přesné výpočty pro váš konkrétní status pro podání přiznání se obraťte na daňového odborníka nebo použijte daňové tabulky IRS."
+      },
+      {
+        "question": "Jsou ve výpočtu zahrnuty slevy na dani a odpočty?",
+        "answer": "Kalkulačka zahrnuje standardní odpočet, ale nezahrnuje jednotlivé odpočty ani slevy na dani, jako je sleva na dani z příjmu z výdělečné činnosti (Earned Income Tax Credit), slevy na dítě nebo slevy na vzdělávání. Ty mohou významně snížit vaši daňovou povinnost, takže skutečná čistá mzda může být vyšší než odhadovaná."
+      },
+      {
+        "question": "Jak vypočítám svůj čistý příjem, pokud pracuji na hodinovou mzdu?",
+        "answer": "Zadejte svou hodinovou sazbu a vyberte hodinový režim. Kalkulačka se zeptá na počet hodin týdně (výchozí 40) a počet týdnů ročně (výchozí 52). Poté vypočítá váš roční hrubý příjem a uplatní federální daně a příspěvky FICA, aby zobrazila váš čistý hodinový, měsíční a roční příjem."
+      },
+      {
+        "question": "Co když mám více zaměstnání nebo další zdroje příjmu?",
+        "answer": "Kalkulačka odhaduje daně pro jediný zdroj příjmu. Pokud máte více zaměstnání nebo další příjem, vaše celková daňová povinnost se může lišit, protože kombinovaný příjem vás může posunout do vyšších pásem. V případě složitých příjmových situací se obraťte na daňového odborníka."
+      },
+      {
+        "question": "Jsou zahrnuty příspěvky na důchodové spoření (401k, IRA)?",
+        "answer": "Ne, příspěvky na důchodové spoření před zdaněním nejsou ve výpočtu zahrnuty. Příspěvky do plánů 401(k) a tradičních IRA snižují váš zdanitelný příjem, což by snížilo vaši daňovou povinnost. Pokud přispíváte na důchodové spoření, vaše skutečná čistá mzda a daňové úspory se mohou od odhadu lišit."
+      },
+      {
+        "question": "Jak přesný je odhad pro lidi s vysokými příjmy?",
+        "answer": "U lidí s vysokými příjmy může být odhad méně přesný, protože nezohledňuje alternativní minimální daň (Alternative Minimum Tax, AMT), dodatečnou daň Medicare ani omezení určitých odpočtů. Lidé s vysokými příjmy by se měli ohledně přesnějších odhadů obrátit na daňového odborníka."
+      }
+    ]
+  },
+  "DE": {
+    "displayName": "Německo",
+    "title": "Kalkulačka mzdové daně Německo 2026 - Vypočítejte si čistý příjem",
+    "description": "Vypočítejte si svou čistou mzdu po zdanění a odvodech na sociální pojištění v Německu. Odhadněte si svůj čistý příjem pomocí naší bezplatné německé daňové kalkulačky pro rok 2026.",
+    "taxExplanation": "Německo má komplexní systém daní a sociálního zabezpečení, který výrazně ovlivňuje čistou mzdu. Systém daně z příjmu je progresivní, se sazbami od 0 % do 45 % pro nejvyšší příjmové skupiny, a v některých regionech navíc zahrnuje solidární přirážku a církevní daň. Tento systém je navržen tak, aby financoval rozsáhlé sociální služby a zároveň udržel progresivní strukturu, která klade větší zátěž na osoby s vyššími příjmy.\n\nDaň z příjmu se v Německu počítá podle progresivní stupnice s několika daňovými pásmy. Nezdanitelná částka (Grundfreibetrag) zajišťuje, že osoby s nízkými příjmy neplatí žádnou daň z příjmu. Pro rok 2026 se tato částka každoročně upravuje s ohledem na inflaci a růst životních nákladů. S rostoucím příjmem jsou jednotlivé části zdaňovány rostoucími sazbami: 14 % pro nejnižší zdanitelné pásmo, přes střední sazby až po 42 % pro vysoké příjmy a 45 % pro nejvyšší příjmové pásmo. Progresivní povaha znamená, že vyšší sazbou je zdaněn pouze příjem nad každou hranicí, nikoli celý příjem.\n\nSolidární přirážka (Solidaritätszuschlag) je dodatečná daň původně zavedená na financování znovusjednocení Německa. Přestože byla pro většinu daňových poplatníků z velké části zrušena, může se stále vztahovat na osoby s velmi vysokými příjmy. Církevní daň (Kirchensteuer) se vybírá ve většině německých spolkových zemí od členů uznaných náboženských společenství a obvykle přidává 8-9 % k částce daně z příjmu. Tato daň je automaticky strhávána registrovaným členům církví a náboženských společenství, ačkoli jednotlivci se z ní mohou vyvázat formálním vystoupením ze svého náboženského společenství.\n\nOdvody na sociální zabezpečení představují v Německu významnou část srážek. Systém zahrnuje čtyři hlavní složky: zdravotní pojištění, pojištění dlouhodobé péče, pojištění pro případ nezaměstnanosti a důchodové pojištění. Tyto odvody jsou obvykle rozděleny mezi zaměstnavatele a zaměstnance, přičemž každá strana hradí přibližně polovinu celkového odvodu. Tento model sdílené odpovědnosti je navržen tak, aby rozložil náklady na sociální služby mezi pracovníky a zaměstnavatele, ačkoli část hrazená zaměstnancem přímo snižuje čistou mzdu.\n\nOdvody na zdravotní pojištění jsou povinné pro všechny zaměstnance s příjmem pod určitou hranicí (Versicherungspflichtgrenze). Nad touto hranicí si zaměstnanci mohou zvolit soukromé zdravotní pojištění, ačkoli mnozí zůstávají ve veřejném systému. Sazba odvodu je procentem z hrubého příjmu a je rovným dílem rozdělena mezi zaměstnavatele a zaměstnance. Pojištění dlouhodobé péče má podobnou strukturu, kdy se odvody počítají jako procento z příjmu. Oba systémy poskytují komplexní krytí, přičemž veřejné zdravotní pojištění pokrývá většinu lékařských výdajů a pojištění dlouhodobé péče poskytuje podporu pro ošetřovatelské a pečovatelské služby.\n\nPojištění pro případ nezaměstnanosti poskytuje finanční podporu v období ztráty zaměstnání a je financováno z odvodů zaměstnavatele i zaměstnance. Sazba odvodu se stanovuje každoročně a vztahuje se na příjem až do vyměřovacího stropu. Toto pojištění poskytuje podporu v nezaměstnanosti (Arbeitslosengeld) po omezenou dobu, obvykle na základě předchozích příjmů a historie odvodů. Odvody na důchodové pojištění financují státní důchodový systém, přičemž sazby stanovuje vláda a jsou rovněž rozděleny mezi zaměstnavatele a zaměstnance. Důchodový systém poskytuje důchodové dávky na základě celoživotních odvodů a je navržen tak, aby nahradil část příjmu před odchodem do důchodu.\n\nNěmecký daňový systém zahrnuje různé odpočty a slevy, které mohou snížit zdanitelný příjem. Patří mezi ně slevy na děti, zvláštní výdaje (Sonderausgaben) a mimořádné výdaje (außergewöhnliche Belastungen). Systém daňových tříd (Steuerklassen) určuje, kolik daně se strhává, přičemž existují různé třídy pro svobodné osoby, manželské páry a další situace. Daňová třída III poskytuje nejvýhodnější srážky pro jednoho z manželů v manželském páru, zatímco daňová třída V poskytuje méně výhodné srážky pro druhého z manželů, ačkoli celková daňová povinnost je stejná bez ohledu na zvolenou třídu.\n\nSrážky daně se v Německu provádějí prostřednictvím systému daně ze mzdy (Lohnsteuer), kdy zaměstnavatelé vypočítávají a strhávají daně a sociální odvody z každé výplaty na základě daňové třídy zaměstnance a předložených informací. Proces ročního daňového přiznání umožňuje daňovým poplatníkům uplatnit dodatečné odpočty a případně získat přeplatky, pokud došlo k vyšší srážce. Mnoho daňových poplatníků obdrží po podání ročního přiznání přeplatek, zejména ti, kteří mohou uplatnit dodatečné odpočty nebo kteří měli během roku významné zvláštní výdaje.\n\nSložitost německého systému daní a sociálního zabezpečení znamená, že efektivní daňové sazby se mohou výrazně lišit v závislosti na individuálních okolnostech, včetně rodinného stavu, počtu dětí, typu zdravotního pojištění a dalších faktorů. Manželské páry často profitují z rozdělení příjmů, které může snížit jejich celkovou daňovou zátěž. Rodiče dostávají slevy na děti a mohou mít nárok na další daňové výhody. Tato kalkulačka poskytuje odhady na základě standardních scénářů a měla by být používána spíše jako vodítko než jako definitivní výpočet, protože skutečná čistá mzda se může lišit v závislosti na mnoha individuálních faktorech.",
+    "faqs": [
+      {
+        "question": "Jaké daně a odvody se v Německu strhávají?",
+        "answer": "Němečtí zaměstnanci platí daň z příjmu (Einkommensteuer), solidární přirážku (pokud se vztahuje), církevní daň (pokud se vztahuje) a odvody na sociální zabezpečení zahrnující zdravotní pojištění, pojištění dlouhodobé péče, pojištění pro případ nezaměstnanosti a důchodové pojištění. Ty jsou obvykle rozděleny mezi zaměstnavatele a zaměstnance."
+      },
+      {
+        "question": "Co je nezdanitelná částka (Grundfreibetrag) v Německu?",
+        "answer": "Nezdanitelná částka je výše příjmu, kterou si můžete vydělat, aniž byste platili daň z příjmu. Pro rok 2026 se tato částka každoročně upravuje s ohledem na inflaci. Příjem nad touto částkou je zdaněn progresivně, se sazbami od 14 % do 45 % v závislosti na vaší příjmové úrovni."
+      },
+      {
+        "question": "Jak funguje systém daňových tříd (Steuerklassen)?",
+        "answer": "Německo používá daňové třídy k určení, kolik daně se z vaší výplaty strhne. Daňová třída I je pro svobodné osoby, třídy III a V jsou pro manželské páry (s odlišnými sazbami srážek) a třída IV je pro manželské páry s podobnými příjmy. Vaše roční daňová povinnost je stejná bez ohledu na třídu, ale srážky se liší."
+      },
+      {
+        "question": "Co jsou odvody na sociální zabezpečení v Německu?",
+        "answer": "Odvody na sociální zabezpečení zahrnují zdravotní pojištění (Krankenversicherung), pojištění dlouhodobé péče (Pflegeversicherung), pojištění pro případ nezaměstnanosti (Arbeitslosenversicherung) a důchodové pojištění (Rentenversicherung). Tyto se počítají jako procenta z vašeho hrubého příjmu, obvykle rozdělená 50/50 mezi zaměstnavatele a zaměstnance."
+      },
+      {
+        "question": "Potřebuji v Německu veřejné, nebo soukromé zdravotní pojištění?",
+        "answer": "Zaměstnanci s příjmem pod hranicí povinného pojištění (Versicherungspflichtgrenze) musí mít veřejné zdravotní pojištění. Nad touto hranicí si můžete zvolit soukromé pojištění, ačkoli mnozí zůstávají ve veřejném systému. Kalkulačka předpokládá sazby veřejného zdravotního pojištění."
+      },
+      {
+        "question": "Co je solidární přirážka (Solidaritätszuschlag)?",
+        "answer": "Solidární přirážka byla zavedena na financování znovusjednocení Německa. Pro většinu daňových poplatníků byla z velké části zrušena, ale stále se může vztahovat na osoby s velmi vysokými příjmy. Počítá se jako procento z vaší daně z příjmu a je zahrnuta do výpočtu, pokud se vztahuje."
+      },
+      {
+        "question": "Jak vypočítám čistý příjem pro hodinové pracovníky v Německu?",
+        "answer": "Zadejte svou hodinovou sazbu a zvolte hodinový režim. Uveďte počet hodin týdně a počet týdnů ročně. Kalkulačka přepočítá váš příjem na roční základ, použije německá daňová pásma a odečte odvody na sociální zabezpečení, aby zobrazila váš čistý hodinový, měsíční a roční příjem."
+      },
+      {
+        "question": "Jsou zahrnuty slevy na děti a daňové výhody?",
+        "answer": "Kalkulačka používá standardní scénáře a nemusí zahrnovat všechny slevy na děti (Kinderfreibetrag) ani další daňové výhody, na které můžete mít nárok. Rodiče obvykle dostávají dodatečné daňové výhody, které mohou snížit daňovou povinnost, takže skutečná čistá mzda může být vyšší, než se odhaduje."
+      },
+      {
+        "question": "Co když jsem ženatý/vdaná nebo mám děti?",
+        "answer": "Manželské páry mohou profitovat z rozdělení příjmů (Ehegattensplitting), které může snížit společnou daňovou povinnost. Rodiče dostávají slevy na děti a mohou mít nárok na další výhody. Kalkulačka poskytuje odhady na základě standardních scénářů; skutečné daně mohou být pro rodiny nižší."
+      },
+      {
+        "question": "Jak přesný je odhad pro pracovníky na částečný úvazek?",
+        "answer": "Odhad je pro pracovníky na částečný úvazek přesný, pokud zadáte svůj skutečný počet hodin týdně. Pracovníci na částečný úvazek s příjmem pod určitými hranicemi však mohou mít odlišné sazby odvodů na sociální zabezpečení nebo výjimky. Kalkulačka používá standardní sazby odvodů."
+      },
+      {
+        "question": "Jak je to s ročním daňovým přiznáním (Steuererklärung)?",
+        "answer": "Mnoho německých daňových poplatníků podává roční daňové přiznání, aby uplatnili dodatečné odpočty a případně získali přeplatky. Kalkulačka zobrazuje odhadované výše srážek, ale vaše konečná daňová povinnost po podání přiznání se může lišit, zejména pokud máte odpočitatelné výdaje nebo nárok na dodatečné slevy."
+      }
+    ]
+  },
+  "UK": {
+    "displayName": "Spojené království",
+    "title": "Kalkulačka mzdové daně pro Spojené království 2026 – Vypočítejte si čistý příjem",
+    "description": "Vypočítejte si čistou mzdu po dani z příjmu a příspěvcích National Insurance ve Spojeném království. Odhadněte si čistý příjem pomocí naší bezplatné britské daňové kalkulačky IncomeTally pro rok 2026.",
+    "taxExplanation": "Spojené království provozuje progresivní systém daně z příjmu spravovaný úřadem HM Revenue and Customs (HMRC). Systém zahrnuje daň z příjmu a příspěvky National Insurance, které společně určují celkové srážky z hrubé mzdy. Tyto dva systémy fungují paralelně, přičemž daň z příjmu představuje obecný příjem státního rozpočtu a National Insurance konkrétně financuje dávky sociálního zabezpečení a National Health Service.\n\nDaň z příjmu ve Spojeném království je postavena na osobní slevě (personal allowance), což je částka příjmu, kterou si jednotlivec může vydělat, než začne platit jakoukoli daň z příjmu. Pro daňový rok 2026 je tato sleva stanovena na konkrétní hranici a každoročně se upravuje, obvykle v souladu s inflací. Příjem nad osobní slevu je zdaněn různými sazbami v závislosti na tom, do kterého daňového pásma spadá. Osobní sleva se u velmi vysokopříjmových osob postupně odebírá, čímž pro osoby v pásmu odebírání vzniká efektivně vyšší daňová sazba.\n\nSpojené království má pro většinu poplatníků tři hlavní pásma daně z příjmu: základní sazbu, vyšší sazbu a dodatečnou sazbu. Základní sazba 20 % se vztahuje na příjem nad osobní slevu až do hranice základní sazby. Vyšší sazba 40 % se vztahuje na příjem nad hranicí základní sazby až po hranici dodatečné sazby. Dodatečná sazba 45 % se vztahuje na příjem nad hranicí dodatečné sazby. Tyto hranice se každoročně upravují a ve Skotsku mohou platit odlišné sazby v důsledku přenesených daňových pravomocí. Progresivní struktura zajišťuje, že každou sazbou je zdaněn pouze příjem v rámci daného pásma, nikoli celý příjem.\n\nNational Insurance (NI) je samostatný systém, který financuje státní dávky včetně státního důchodu, dávek v nezaměstnanosti a zdravotní péče prostřednictvím National Health Service. Zaměstnanci platí příspěvky National Insurance třídy Class 1, které se vypočítávají jako procento z výdělku nad primární hranicí (primary threshold). Hlavní sazba se vztahuje na výdělek mezi primární hranicí a horní hranicí výdělku (upper earnings limit), přičemž nad horní hranicí výdělku platí snížená sazba. Tím vzniká v celkovém daňovém systému regresivní prvek, neboť sazby National Insurance se u velmi vysokopříjmových osob snižují, ačkoli to kompenzuje dodatečná sazba daně z příjmu.\n\nPříspěvky National Insurance se vypočítávají na týdenním nebo měsíčním základě v závislosti na tom, jak je zaměstnanec vyplácen. Sazby a hranice se stanovují každoročně a mohou se měnit s každým oznámením rozpočtu. Na rozdíl od daně z příjmu má National Insurance týdenní nebo měsíční výpočetní období, což znamená, že hranice se uplatňují za výplatní období, nikoli ročně. To může vést k situacím, kdy zaměstnanci s nepravidelnou výplatou mohou platit různé částky National Insurance v závislosti na svém výplatním vzorci, i když je jejich roční příjem stejný.\n\nDaňový systém Spojeného království funguje na principu Pay As You Earn (PAYE), kdy zaměstnavatelé vypočítávají a srážejí daň z příjmu a National Insurance z každé výplaty. Systém daňového kódu (tax code) určuje, jakou výši nezdanitelné slevy jednotlivec obdrží, přičemž pro různé okolnosti, jako je více zaměstnání, příjem z důchodu nebo jiné zdroje příjmu, existují různé kódy. Na konci daňového roku HMRC zúčtuje zaplacené částky a vystaví daňové výpočty, podle potřeby s vrácením daně nebo dodatečnými platbami. Většina zaměstnanců obdrží svůj daňový kód automaticky, ale ti se složitějšími okolnostmi mohou potřebovat kontaktovat HMRC, aby zajistili správné zařazení.\n\nDaňovou povinnost mohou snížit různé slevy a úlevy, včetně osobní slevy, manželské slevy (marriage allowance) pro způsobilé páry a úlev na důchodové příspěvky. Důchodové příspěvky získávají daňovou úlevu, což znamená, že příspěvky se odvádějí z příjmu před zdaněním, čímž se efektivně snižuje zdanitelný příjem. Věk pro státní důchod a nárok na různé dávky jsou navázány na historii příspěvků National Insurance, přičemž pro plný nárok na státní důchod je vyžadován minimální počet kvalifikovaných let. To vytváří motivaci k pravidelnému placení příspěvků National Insurance po celou dobu pracovního života.\n\nDaňový systém Spojeného království rovněž zahrnuje různé odpočty a slevy, ačkoli osobní sleva je primárním mechanismem pro snížení daně u většiny zaměstnanců. Na poplatníky s vyšší sazbou se mohou vztahovat omezení určitých slev a osobní sleva se u velmi vysokopříjmových osob postupně odebírá. Spořicí účty osvobozené od daně (ISA) poskytují další daňové výhody a umožňují jednotlivcům spořit a investovat bez placení daně z úroků, dividend nebo kapitálových výnosů. Tyto účty mají roční limity příspěvků a mohou výrazně prospět dlouhodobým střadatelům.\n\nSkotsko má přenesené pravomoci nad sazbami a pásmy daně z příjmu, což znamená, že skotští poplatníci mohou čelit jiným sazbám a hranicím než ti ve zbytku Spojeného království. Skotská vláda může stanovit odlišné sazby a pásma, což vedlo k mírně odlišným daňovým strukturám, zejména u vysokopříjmových osob. Wales má rovněž některé přenesené daňové pravomoci, ačkoli v současnosti pro většinu poplatníků používá stejné sazby jako Anglie a Severní Irsko. Tato decentralizace znamená, že poplatníci v různých částech Spojeného království mohou mít různé efektivní daňové sazby i při stejném příjmu.\n\nJe důležité poznamenat, že tato kalkulačka poskytuje odhady založené na standardních scénářích a standardních daňových kódech. Individuální okolnosti, včetně důchodových příspěvků, naturálních požitků a dalších faktorů, mohou významně ovlivnit skutečný čistý příjem. Naturální požitky (benefits in kind), jako je služební vůz nebo soukromé zdravotní pojištění, podléhají dani z příjmu a National Insurance, což může snížit čistou mzdu. Poplatníci by se měli obrátit na pokyny HMRC nebo na kvalifikovaného daňového poradce ohledně rad specifických pro jejich situaci, zejména pokud mají více zdrojů příjmu, významné odpočty nebo složitá finanční uspořádání.",
+    "faqs": [
+      {
+        "question": "Jaké daně se srážejí z britských mezd?",
+        "answer": "Britští zaměstnanci platí daň z příjmu a příspěvky National Insurance. Daň z příjmu se vypočítává z příjmu nad osobní slevou, se sazbami 20 % (základní sazba), 40 % (vyšší sazba) a 45 % (dodatečná sazba). National Insurance financuje státní dávky a NHS."
+      },
+      {
+        "question": "Co je osobní sleva (personal allowance) ve Spojeném království?",
+        "answer": "Osobní sleva je částka příjmu, kterou si můžete vydělat, než začnete platit daň z příjmu. Pro rok 2026 je tato částka stanovena každoročně a může být upravena podle inflace. Příjem nad osobní slevu je zdaněn progresivními sazbami. U velmi vysokopříjmových osob se sleva postupně odebírá."
+      },
+      {
+        "question": "Jak se vypočítává National Insurance?",
+        "answer": "National Insurance se vypočítává na týdenním nebo měsíčním základě (podle frekvence výplaty) z výdělku nad primární hranicí (primary threshold). Hlavní sazba se vztahuje na výdělek mezi primární hranicí a horní hranicí výdělku (upper earnings limit), přičemž nad horní hranicí platí snížená sazba. Na rozdíl od daně z příjmu se hranice National Insurance uplatňují za výplatní období, nikoli ročně."
+      },
+      {
+        "question": "Jaký je rozdíl mezi daní z příjmu a National Insurance?",
+        "answer": "Daň z příjmu představuje obecný příjem státního rozpočtu a vypočítává se ročně. National Insurance konkrétně financuje státní dávky (důchod, nezaměstnanost, zdravotní péči) a vypočítává se za výplatní období. Obě se srážejí prostřednictvím PAYE, ale fungují podle odlišných pravidel a hranic."
+      },
+      {
+        "question": "Platí skotští poplatníci jiné sazby?",
+        "answer": "Ano, Skotsko má přenesené pravomoci nad sazbami a pásmy daně z příjmu. Skotští poplatníci mohou čelit jiným sazbám a hranicím než ti v Anglii, Walesu a Severním Irsku. Kalkulačka používá standardní britské sazby; skotští poplatníci by si měli ověřit své konkrétní sazby."
+      },
+      {
+        "question": "Jak vypočítám čistý příjem pro zaměstnance pracující na hodiny ve Spojeném království?",
+        "answer": "Zadejte svou hodinovou sazbu a vyberte hodinový režim. Uveďte počet hodin za týden (výchozí 40) a počet týdnů za rok (výchozí 52). Kalkulačka váš příjem přepočte na roční, uplatní britská pásma daně z příjmu a příspěvky National Insurance a zobrazí váš čistý hodinový, měsíční a roční příjem."
+      },
+      {
+        "question": "Co je manželská sleva (marriage allowance)?",
+        "answer": "Manželská sleva umožňuje způsobilým párům převést část osobní slevy z jednoho manžela na druhého, čímž lze potenciálně snížit daňovou povinnost. Kalkulačka tuto slevu nezahrnuje, takže manželské páry mohou platit méně daně, než je odhad."
+      },
+      {
+        "question": "Jsou ve výpočtu zahrnuty důchodové příspěvky?",
+        "answer": "Ne, důchodové příspěvky nejsou zahrnuty. Důchodové příspěvky získávají daňovou úlevu, což znamená, že se odvádějí z příjmu před zdaněním, čímž se snižuje váš zdanitelný příjem a daňová povinnost. Pokud platíte důchodové příspěvky, váš skutečný čistý příjem a daňové úspory se mohou od odhadu lišit."
+      },
+      {
+        "question": "Jak funguje systém PAYE?",
+        "answer": "PAYE (Pay As You Earn) je britský systém, kdy zaměstnavatelé vypočítávají a srážejí daň z příjmu a National Insurance z každé výplaty. Váš daňový kód (tax code) určuje vaši nezdanitelnou slevu. Na konci roku HMRC zúčtuje zaplacené částky a vystaví daňové výpočty s vrácením daně nebo dodatečnými platbami podle potřeby."
+      },
+      {
+        "question": "Co když mám více zaměstnání nebo dodatečný příjem?",
+        "answer": "Kalkulačka odhaduje daně pro jeden zdroj příjmu. Pokud máte více zaměstnání nebo dodatečný příjem, vaše celková daňová povinnost se může lišit, protože kombinovaný příjem by vás mohl posunout do vyšších daňových pásem. Na konci roku můžete muset doplatit daň nebo obdržet její vrácení."
+      },
+      {
+        "question": "Jsou ve výpočtu zahrnuty naturální požitky?",
+        "answer": "Ne, naturální požitky (benefits in kind) – jako služební vůz, soukromé zdravotní pojištění apod. – nejsou zahrnuty. Tyto požitky podléhají dani z příjmu a National Insurance, což by snížilo vaši čistou mzdu. Pokud naturální požitky pobíráte, váš skutečný čistý příjem může být nižší, než je odhad."
+      },
+      {
+        "question": "Jak přesný je odhad pro vysokopříjmové osoby?",
+        "answer": "U vysokopříjmových osob může být odhad méně přesný, protože nezohledňuje odebírání osobní slevy, omezení určitých slev ani případné dodatečné daňové povinnosti. Vysokopříjmové osoby by se měly obrátit na pokyny HMRC nebo na daňového poradce ohledně přesnějších odhadů."
+      }
+    ]
+  },
+  "PL": {
+    "displayName": "Polsko",
+    "title": "Polská kalkulačka mzdové daně 2026 - Vypočítejte si čistý příjem",
+    "description": "Odhadněte si svou čistou mzdu v Polsku pro rok 2026. Bezplatná kalkulačka IncomeTally zobrazí PIT, sociální a zdravotní příspěvky ZUS a čistou mzdu z vašeho hrubého příjmu.",
+    "taxExplanation": "Polsko používá progresivní systém daně z příjmu fyzických osob známý jako PIT (podatek dochodowy od osob fizycznych), který je vrstven nad povinnými sociálními a zdravotními příspěvky vybíranými prostřednictvím ZUS, národní instituce sociálního pojištění. U většiny zaměstnanců pracujících na pracovní smlouvu (umowa o prace) zahrnuje cesta od hrubé mzdy (brutto) k čisté mzdě (netto) několik srážek, které probíhají v určitém pořadí. Pochopení tohoto pořadí je klíčem k tomu, abyste viděli, proč je váš čistý příjem nižší než vaše uváděná hrubá částka, a přesně to tato kalkulačka modeluje pro daňový rok 2026.\n\nDaň z příjmu v Polsku používá dvě daňová pásma. Existuje nezdanitelná částka, kwota wolna, ve výši 30,000 PLN ročně, což znamená, že první část vašeho příjmu fakticky nepodléhá žádné dani. Nad touto hranicí se na daňový základ do 120,000 PLN uplatňuje sazba 12 procent. Jakákoli část daňového základu nad 120,000 PLN je zdaněna vyšší sazbou 32 procent. Protože vyšší sazbou se zdaňuje pouze částka nad každou hranicí, posun do vyššího pásma nepenalizuje celou vaši mzdu; ovlivňuje pouze příjem nad hraniční hodnotou.\n\nJeště před výpočtem daně z příjmu se z hrubé mzdy strhávají sociální příspěvky ZUS placené zaměstnancem. Ty pokrývají tři oblasti: důchodový příspěvek (emerytalne) ve výši 9.76 procenta, invalidní příspěvek (rentowe) ve výši 1.5 procenta a nemocenský příspěvek (chorobowe) ve výši 2.45 procenta. Důležitou vlastností je, že tyto sociální příspěvky jsou daňově odečitatelné, takže snižují základ, ze kterého se počítá vaše daň z příjmu. Důchodový a invalidní příspěvek rovněž podléhají ročnímu stropu, který se uplatní, jakmile váš kumulativní hrubý příjem dosáhne přibližně 260,190 PLN, načež se tyto dva příspěvky pro zbytek roku přestanou odvádět.\n\nVedle sociálních příspěvků stojí příspěvek na zdravotní pojištění (skladka zdrowotna) ve výši 9 procent. Tento se chová odlišně. Od roku 2022 už není zdravotní příspěvek daňově odečitatelný, což znamená, že snižuje vaši čistou mzdu, aniž by snižoval základ daně z příjmu. Pro zjednodušení tato kalkulačka počítá zdravotní příspěvek z vaší hrubé částky, což dává jasný a konzistentní odhad, ačkoli individuální okolnosti mohou způsobit drobné odchylky od přesné částky na výplatní pásce.\n\nV praxi tuto celou částku zřídka platíte jednorázově. Zaměstnavatelé vystupují jako srážkoví agenti, kteří z každé výplaty strhávají příspěvky ZUS a zálohu na daň z příjmu (zaliczka) a odvádějí je za vás úřadům. Tento přístup placení daně průběžně rozkládá vaši daň do celého roku. Po skončení roku zaměstnanci podávají roční přiznání, PIT-37, které slaďuje již zaplacené zálohy se skutečně dlužnou daní. V závislosti na vaší situaci může toto vyúčtování vést k přeplatku, nebo k doplatku.\n\nTato kalkulačka je určena pro běžné pracovníky, uchazeče o zaměstnání porovnávající nabídky a kohokoli, kdo si chce rychle udělat představu o tom, jak se hrubá mzda promítá do peněz v jeho kapse. Zadáním hrubé částky můžete vidět odhadovaný rozpis sociálních příspěvků, zdravotního příspěvku, daně z příjmu a výsledné čisté částky. Předpokládá jednoho poplatníka podle standardních pravidel a nemodeluje společné zdanění s manželem či manželkou, zvláštní úlevy, slevy pro mladé pracovníky ani jiné individuální úpravy, které by mohly změnit konečný výsledek.\n\nKvůli těmto zjednodušujícím předpokladům by čísla, která vidíte, měla být považována za odhady, nikoli za přesné vyjádření vaší daňové situace. Údaje zde odrážejí pravidla a hranice pro daňový rok 2026 a polské daňové sazby, procenta příspěvků a hranice se přezkoumávají a mohou se rok od roku měnit. Váš skutečný výsledek se může lišit podle typu smlouvy, úlev, na které máte nárok, a dalších osobních faktorů. Pro přesnou částku u důležitého rozhodnutí, nebo pokud vaše situace zahrnuje cokoli nad rámec standardního zaměstnaneckého uspořádání s jedním poplatníkem, je moudré poradit se s kvalifikovaným daňovým odborníkem nebo účetním, který může posoudit vaše konkrétní okolnosti.",
+    "faqs": [
+      {
+        "question": "Jak si vypočítám čistou mzdu v Polsku pro rok 2026?",
+        "answer": "Zadejte svou hrubou mzdu a kalkulačka odhadne vaše sociální příspěvky ZUS, 9procentní zdravotní příspěvek a daň z příjmu PIT, poté je odečte a zobrazí vaši odhadovanou čistou mzdu pro daňový rok 2026."
+      },
+      {
+        "question": "Jaká je nezdanitelná částka (kwota wolna) v Polsku?",
+        "answer": "Pro rok 2026 činí nezdanitelná částka 30,000 PLN ročně. Příjem do této úrovně fakticky nepodléhá žádné dani z příjmu a částky nad ní jsou zdaněny příslušnou sazbou daňového pásma. Kalkulačka toto zohledňuje ve svém odhadu."
+      },
+      {
+        "question": "Jaká jsou daňová pásma daně z příjmu v Polsku?",
+        "answer": "Polsko používá dvě pásma PIT. Sazba 12 procent se uplatňuje na daňový základ do 120,000 PLN a sazba 32 procent na část nad 120,000 PLN. Vyšší sazbou se zdaňuje pouze příjem nad touto hranicí."
+      },
+      {
+        "question": "Jaké příspěvky ZUS se mi strhávají ze mzdy?",
+        "answer": "Zaměstnanci platí důchodový příspěvek (emerytalne) ve výši 9.76 procenta, invalidní příspěvek (rentowe) ve výši 1.5 procenta a nemocenský příspěvek (chorobowe) ve výši 2.45 procenta. Tyto sociální příspěvky se odečítají před daní z příjmu a v tomto odhadu snižují váš daňový základ."
+      },
+      {
+        "question": "Je příspěvek na zdravotní pojištění daňově odečitatelný?",
+        "answer": "Ne. Od roku 2022 není 9procentní zdravotní příspěvek (skladka zdrowotna) daňově odečitatelný, takže snižuje vaši čistou mzdu, aniž by snižoval základ daně z příjmu. Kalkulačka to ve svém odhadu zohledňuje."
+      },
+      {
+        "question": "Umí kalkulačka odhadnout hodinovou, měsíční nebo roční čistou mzdu?",
+        "answer": "Nástroj vychází z vaší hrubé částky a vytváří odhadovanou čistou částku, kterou si můžete prohlédnout na roční bázi nebo rozčlenit na měsíční. Jakékoli hodinové, měsíční nebo roční údaje jsou odhady a závisí na hrubé částce, kterou zadáte."
+      },
+      {
+        "question": "Jak přesná je tato polská mzdová kalkulačka?",
+        "answer": "Poskytuje blízký odhad na základě standardních pravidel roku 2026 pro jednoho poplatníka, ale není přesná. Pro zjednodušení počítá zdravotní příspěvek z hrubé mzdy a nezahrnuje společné zdanění ani zvláštní úlevy, takže váš skutečný výsledek se může lišit."
+      },
+      {
+        "question": "Jaká jsou omezení této kalkulačky?",
+        "answer": "Předpokládá jednoho poplatníka podle standardních pravidel a nezahrnuje společné zdanění s manželem či manželkou, slevy pro mladé pracovníky, zvláštní úlevy ani nestandardní typy smluv. Tyto faktory mohou změnit váš skutečný výsledek, proto považujte výsledek za odhad."
+      },
+      {
+        "question": "Co je roční přiznání PIT-37?",
+        "answer": "PIT-37 je roční přiznání k dani z příjmu, které v Polsku podává většina zaměstnanců. Zaměstnavatelé během roku strhávají měsíční zálohy na daň (zaliczka) a přiznání slaďuje tyto zálohy se skutečně dlužnou daní, což může vést k přeplatku, nebo k doplatku."
+      },
+      {
+        "question": "Mají důchodové a invalidní příspěvky strop?",
+        "answer": "Ano. Důchodové a invalidní příspěvky se uplatňují, dokud váš kumulativní roční hrubý příjem nedosáhne přibližně 260,190 PLN, načež se pro zbytek roku přestanou odvádět. Nemocenský a zdravotní příspěvek tomuto ročnímu stropu nepodléhají."
+      }
+    ]
+  },
+  "FR": {
+    "faqs": [
+      {
+        "question": "Jak se ve Francii vypočítává čistý plat?",
+        "answer": "Čistý plat je vaše hrubá mzda minus sociální odvody (zhruba 21 až 22 procent, včetně CSG a CRDS) a daň z příjmu sražená u zdroje. Naše kalkulačka každou z těchto položek odhadne a ukáže přibližnou čistou mzdu pro samostatnou osobu v roce 2026."
+      },
+      {
+        "question": "Jaké sazby daně z příjmu platí ve Francii pro rok 2026?",
+        "answer": "Pro samostatnou osobu je progresivní bareme 0 procent až do přibližně 11,497 EUR, 11 procent do přibližně 29,315, 30 procent do přibližně 83,823, 41 procent do přibližně 180,294 a 45 procent nad tuto částku. Každá sazba se vztahuje pouze na příjem v rámci svého pásma."
+      },
+      {
+        "question": "Co jsou CSG a CRDS?",
+        "answer": "CSG (contribution sociale generalisee) je 9.2procentní sociální dávka z příjmu ze zaměstnání, z níž je 6.8 procentního bodu odpočitatelných pro daň z příjmu a 2.4 nikoli. CRDS je 0.5procentní dávka, která odpočitatelná není. Obě snižují vaši čistou mzdu."
+      },
+      {
+        "question": "Kolik sociálních odvodů se mi strhne z platu?",
+        "answer": "Zaměstnanecké sociální odvody činí zhruba 21 až 22 procent hrubého platu. To zahrnuje přibližně 11.31 procenta na sociální zabezpečení a důchody, plus 9.2 procenta CSG a 0.5 procenta CRDS. Všechno jsou to odhady a mohou se podle situace lišit."
+      },
+      {
+        "question": "Mohu si odhadnout hodinovou, měsíční nebo roční čistou mzdu?",
+        "answer": "Ano. Zadejte svůj plat na jakémkoli základě, který používáte, a kalkulačka odhadne čistý příjem na konzistentním základě. Pamatujte, že jde o přibližné údaje určené k porovnávání platů, nikoli o přesné částky z výplatní pásky."
+      },
+      {
+        "question": "Co znamená srážka u zdroje (prelevement a la source)?",
+        "answer": "Od roku 2019 strhává daň z příjmu z každé výplaty váš zaměstnavatel pomocí sazby stanovené daňovými úřady, takže daň se platí v průběhu roku. Stále podáváte roční přiznání, které sladí to, co bylo sraženo, s tím, co skutečně dlužíte."
+      },
+      {
+        "question": "Musím stále podávat daňové přiznání, když je daň sražena u zdroje?",
+        "answer": "Ano. Srážka u zdroje vybírá daň během roku, ale stále musíte podat roční přiznání k dani z příjmu. Přiznání zohledňuje vaše úplné okolnosti a může vést k vrácení daně nebo k doplatku."
+      },
+      {
+        "question": "Jak přesná je tato kalkulačka?",
+        "answer": "Poskytuje zjednodušený odhad pro samostatnou osobu počítanou jako jeden díl. Vynechává 10procentní odpočet na profesní výdaje a systém rodinného kvocientu (parts), takže vaše skutečná daň z příjmu může být nižší. Výsledky berte pouze jako hrubé vodítko."
+      },
+      {
+        "question": "Proč může být moje skutečná daň nižší než odhad?",
+        "answer": "Náš odhad vynechává standardní 10procentní odpočet na profesní výdaje a rodinný kvocient, které oba v reálném životě obvykle snižují daň z příjmu. Odpočitatelná část CSG rovněž snižuje váš daňový základ. Tyto faktory mohou způsobit, že vaše skutečná daň bude nižší."
+      },
+      {
+        "question": "Jsou tyto údaje oficiální nebo zaručené?",
+        "answer": "Ne. Všechny výsledky jsou odhady pro daňový rok 2026 poskytované pro vzdělávací účely. Daňová pásma a sazby se mění každý rok a individuální situace se liší, takže pro přesná čísla se obraťte na kvalifikovaného daňového odborníka nebo na oficiální francouzskou daňovou správu."
+      }
+    ],
+    "displayName": "Francie",
+    "title": "Kalkulačka daně z platu pro Francii 2026 - Vypočítejte si svůj čistý příjem",
+    "description": "Odhadněte si svůj čistý plat ve Francii pro rok 2026. Bezplatná kalkulačka uplatňuje progresivní sazebník daně z příjmu (bareme), sociální odvody, CSG a CRDS a ukáže vám čistou mzdu.",
+    "taxExplanation": "Francie funguje na komplexním systému daně z příjmu a sociálních odvodů, které společně určují, kolik z vašeho hrubého platu si nakonec odnesete domů. Dvěma hlavními složkami jsou daň z příjmu (impot sur le revenu) a soubor povinných sociálních odvodů strhávaných přímo z vaší mzdy. Pochopení toho, jak do sebe tyto prvky zapadají, vám pomůže odhadnout váš čistý příjem a naplánovat si finance, ať už porovnáváte pracovní nabídky, vyjednáváte plat, nebo se prostě snažíte porozumět své výplatní pásce. Níže uvedené údaje odpovídají daňovému roku 2026 a platí pro samostatně posuzovanou osobu.\n\nDaň z příjmu se řídí progresivní stupnicí známou jako bareme, což znamená, že různé části vašeho příjmu jsou zdaněny různými sazbami. U samostatné osoby počítané jako jeden díl je prvních zhruba 11,497 EUR zdanitelného příjmu zdaněno 0 procenty. Příjem mezi přibližně 11,497 a 29,315 EUR je zdaněn 11 procenty, pásmo od přibližně 29,315 do 83,823 EUR sazbou 30 procent, pásmo od přibližně 83,823 do 180,294 EUR sazbou 41 procent a cokoli nad přibližně 180,294 EUR sazbou 45 procent. Častým omylem je domněnka, že posun do vyššího pásma zdaní celý váš příjem vyšší sazbou. Ve skutečnosti je sazbou daného pásma zdaněna pouze ta část příjmu, která do něj spadá, takže vaše celková efektivní sazba je vždy nižší než nejvyšší sazba, která se na vás vztahuje.\n\nPřed výpočtem daně z příjmu platí zaměstnanci sociální odvody, které financují sociální zabezpečení, zdravotní péči a důchody. Tyto odvody činí zhruba 21 až 22 procent hrubého platu. První skupina, zahrnující odvody na sociální zabezpečení a důchody, představuje přibližně 11.31 procenta a je strhávána před vyměřením daně z příjmu. Nad rámec toho stojí dvě specifické dávky: CSG (contribution sociale generalisee) ve výši 9.2 procenta a CRDS (contribution au remboursement de la dette sociale) ve výši 0.5 procenta. Tyto dvě jsou plošné sociální dávky uplatňované na příjem ze zaměstnání a tvoří významnou část rozdílu mezi hrubou a čistou mzdou.\n\nZacházení s těmito odvody pro účely daně z příjmu se liší. Z 9.2 procenta CSG je 6.8 procentního bodu odpočitatelných, což znamená, že tato část snižuje příjem, z něhož se počítá vaše daň z příjmu, zatímco zbývajících 2.4 procentního bodu odpočitatelných není. Odvod CRDS ve výši 0.5 procenta odpočitatelný není. Odvody na sociální zabezpečení a důchody ve výši přibližně 11.31 procenta jsou strhávány před daní z příjmu. Tyto rozdíly mají význam, protože odpočitatelné odvody snižují váš daňový základ, což následně snižuje daň z příjmu, kterou nakonec dlužíte.\n\nOd roku 2019 se daň z příjmu ve Francii vybírá srážkou u zdroje, známou jako prelevement a la source (PAS). To znamená, že váš zaměstnavatel z každé výplaty strhne odhadovanou částku daně z příjmu na základě sazby poskytnuté daňovými úřady, takže daň se platí postupně v průběhu roku, nikoli jednorázově. Srážka u zdroje nenahrazuje roční daňové přiznání. Každý rok stále podáváte přiznání, které sladí sražené částky s tím, co skutečně dlužíte, s ohledem na vaše úplné okolnosti. To může vést buď k vrácení daně, nebo k doplatku.\n\nNaše kalkulačka je navržena tak, aby vám poskytla rychlý, zjednodušený odhad, nikoli přesné vyměření daně. Předpokládá samostatnou osobu počítanou jako jeden díl a uplatňuje sazebník bareme a sazby sociálních odvodů popsané výše. Pro zachování jednoduchosti vynechává dva důležité prvky reálného systému. Zaprvé neuplatňuje standardní 10procentní odpočet na profesní výdaje, který běžně snižuje zdanitelný příjem ze mzdy u většiny zaměstnanců. Zadruhé nepoužívá rodinný kvocient neboli systém dílů (parts), který upravuje zdanitelný příjem podle složení domácnosti, jako je manžel nebo manželka nebo vyživované děti. Oba tyto prvky v reálném životě obecně snižují výši splatné daně z příjmu.\n\nVzhledem k těmto zjednodušením může být vaše skutečná daň z příjmu nižší než odhad, který tato kalkulačka vytvoří, zejména po zohlednění 10procentního odpočtu a případných rodinných dílů. Odhad je nejužitečnější jako hrubé vodítko k rozsahu daní a odvodů u daného platu a pro vzájemné porovnávání platů na konzistentním základě. Všechny výsledky prosím považujte pouze za odhady pro vzdělávací účely. Daňová pásma, sazby odvodů a pravidla upravující odpočty jsou přezkoumávány a mohou se každý rok měnit, přičemž individuální situace se značně liší. Pro rozhodnutí, která závisí na přesných číslech, nebo pro poradenství ohledně vaší konkrétní situace se obraťte na kvalifikovaného daňového odborníka nebo na oficiální francouzskou daňovou správu.</taxExplanation>\n</invoke>\n"
+  },
+  "ES": {
+    "displayName": "Španělsko",
+    "title": "Kalkulačka daně ze mzdy ve Španělsku 2026 – Vypočítejte si čistý příjem",
+    "description": "Odhadněte si čistou mzdu ve Španělsku pro rok 2026. Bezplatná kalkulačka zahrnující daňová pásma IRPF, příspěvky na sociální zabezpečení a regionální rozdíly v sazbách.",
+    "taxExplanation": "Španělsko zdaňuje příjmy svých rezidentů prostřednictvím daně Impuesto sobre la Renta de las Personas Fisicas, běžně známé jako IRPF. U většiny zaměstnanců jsou největšími srážkami z hrubé mzdy právě tato daň z příjmů fyzických osob a povinné příspěvky na sociální zabezpečení. Obojí obvykle vyřizuje váš zaměstnavatel, který v průběhu roku sráží částky z každé výplaty a odvádí je daňovým úřadům a systému sociálního zabezpečení. Níže uvedené údaje popisují zjednodušený, reprezentativní obraz pro daňový rok 2026 a mají vám pomoci odhadnout vaši čistou mzdu, nikoli nahradit oficiální výpočty.\n\nJedním z rysů, který činí španělský systém výjimečným, je skutečnost, že IRPF je sdílena mezi centrálním státem a autonomními společenstvími. Každý region stanovuje část sazby, takže přesné sazby, které platíte, závisí na tom, kde žijete. Z tohoto důvodu naše kalkulačka používá reprezentativní kombinovanou sazbu, nikoli údaje jednoho konkrétního regionu. Podle této reprezentativní sazby je příjem zdaněn 19 procenty do 12,450 eur, 24 procenty na části od 12,450 do 20,200 eur, 30 procenty od 20,200 do 35,200 eur, 37 procenty od 35,200 do 60,000 eur, 45 procenty od 60,000 do 300,000 eur a 47 procenty na čemkoli nad 300,000 eur. Systém je progresivní, takže každá sazba se vztahuje pouze na příjem, který spadá do jejího pásma, nikoli na celou vaši mzdu.\n\nSystém rovněž uznává osobní minimum, tedy částku příjmu považovanou za nezbytnou pro základní živobytí a obecně považovanou za osvobozenou od daně. V našem reprezentativním modelu činí toto osobní minimum přibližně 5,550 eur. V praxi funguje jako sleva, která snižuje daň splatnou z vašeho nejnižšího příjmu, což pomáhá udržet efektivní daňovou sazbu u skromných mezd pod hlavními procentními hodnotami v sazebníku.\n\nKromě daně z příjmů platí zaměstnanci ve Španělsku příspěvky na sociální zabezpečení, které financují důchody, zdravotní péči, dávky v nezaměstnanosti a související programy. Tyto příspěvky činí zhruba 6.48 procenta vašeho vyměřovacího základu. Tato částka se skládá z běžných rizik ve výši 4.7 procenta, nezaměstnanosti ve výši 1.55 procenta, odborného vzdělávání ve výši 0.1 procenta a solidárního příspěvku MEI ve výši 0.13 procenta. Existuje horní hranice: příspěvky se počítají pouze do maximálního vyměřovacího základu, který činí přibližně 59,059 eur ročně. Příjmy nad tímto stropem vaše příspěvky na sociální zabezpečení nezvyšují, ačkoli nadále plně podléhají dani z příjmů.\n\nPořadí, v jakém se tyto položky uplatňují, je pro váš konečný výsledek důležité. Příspěvky na sociální zabezpečení se odečítají před výpočtem daně z příjmů, takže snižují příjem, ze kterého se IRPF vyměřuje. Proto se tyto dvě částky jednoduše nesčítají. Po odečtení příspěvků na sociální zabezpečení a uplatnění osobního minima se na zbytek aplikuje progresivní sazba IRPF a výsledkem je daňová část vašich srážek.\n\nV průběhu roku váš zaměstnavatel uplatňuje srážky, známé jako retenciones, na účet vaší IRPF. Jedná se o zálohové platby na váš konečný daňový účet, odhadnuté z vaší mzdy a osobních poměrů. Protože se jedná pouze o odhady, většina pracovníků později podává roční daňové přiznání, declaracion de la Renta, obvykle na jaře následujícím po daňovém roce. Toto přiznání slaďuje to, co bylo sraženo, s tím, co skutečně dlužíte. Pokud bylo sraženo příliš mnoho, můžete obdržet vrácení daně, a pokud bylo sraženo příliš málo, můžete být povinni doplatit rozdíl.\n\nStojí za zopakování, že regionální sazby se napříč autonomními společenstvími Španělska liší. Dva lidé pobírající stejnou mzdu mohou skončit s odlišnou čistou mzdou jen proto, že žijí v různých regionech, a některé regiony rovněž nabízejí vlastní odpočty a úpravy. Naše kalkulačka předpokládá jednoho poplatníka používajícího reprezentativní kombinovanou sazbu, takže nemůže zohlednit každé regionální pravidlo, rodinnou situaci nebo zvláštní odpočet, který by se na vás mohl vztahovat. Ze všech těchto důvodů jsou čísla, která naše kalkulačka vytváří, odhady pro daňový rok 2026, nikoli přesné údaje. Daňové sazby, vyměřovací základy a osobní minimum se mohou rok od roku měnit a váš skutečný výsledek závisí na vašem regionu a osobních poměrech. Tyto výsledky používejte jako užitečný výchozí bod pro plánování a pro radu specifickou pro vaši situaci se obraťte na kvalifikovaného daňového odborníka nebo na oficiální daňovou agenturu.",
+    "faqs": [
+      {
+        "question": "Jak si mám odhadnout čistou mzdu ve Španělsku pro rok 2026?",
+        "answer": "Zadejte svou hrubou roční mzdu a kalkulačka odhadne vaši čistou mzdu tak, že nejprve odečte příspěvky na sociální zabezpečení a poté aplikuje reprezentativní sazbu daně z příjmů IRPF a osobní minimum. Výsledek je odhad pro daňový rok 2026."
+      },
+      {
+        "question": "Co je IRPF a kolik zaplatím?",
+        "answer": "IRPF je španělská daň z příjmů fyzických osob. Je progresivní, takže naše reprezentativní sazba se pohybuje od 19 procent z příjmu do 12,450 eur až po 47 procent nad 300,000 eur. Každá sazba se vztahuje pouze na příjem v rámci svého pásma, takže vaše efektivní sazba je obvykle nižší než vaše nejvyšší pásmo. Všechny výsledky jsou odhady."
+      },
+      {
+        "question": "Jak vysoké jsou příspěvky zaměstnanců na sociální zabezpečení?",
+        "answer": "Příspěvky zaměstnanců činí přibližně 6.48 procenta vašeho vyměřovacího základu a kombinují běžná rizika (4.7 procenta), nezaměstnanost (1.55 procenta), odborné vzdělávání (0.1 procenta) a solidární příspěvek MEI (0.13 procenta). Odečítají se před daní z příjmů. Jedná se o odhad."
+      },
+      {
+        "question": "Existuje strop pro příspěvky na sociální zabezpečení?",
+        "answer": "Ano. Příspěvky se počítají pouze do maximálního vyměřovacího základu ve výši přibližně 59,059 eur ročně. Příjmy nad tímto stropem vaše příspěvky na sociální zabezpečení nezvyšují, i když stále podléhají dani z příjmů. Údaje jsou odhady."
+      },
+      {
+        "question": "Co je osobní minimum?",
+        "answer": "Osobní minimum je částka příjmu, v našem reprezentativním modelu přibližně 5,550 eur, která je obecně považována za osvobozenou od daně. Snižuje daň splatnou z vašeho nejnižšího příjmu a pomáhá snižovat efektivní sazbu u skromných mezd. Jedná se o odhad."
+      },
+      {
+        "question": "Může kalkulačka zobrazit hodinové, měsíční a roční částky?",
+        "answer": "Kalkulačka pracuje s vaší hrubou roční mzdou a odhadovaný čistý výsledek můžete vydělit a získat tak přibližnou měsíční nebo hodinovou čistou mzdu. Tato rozdělení jsou odhady a nezohledňují proměnlivou pracovní dobu, prémie ani mimořádné platby ve Španělsku běžné."
+      },
+      {
+        "question": "Proč se moje skutečná čistá mzda může lišit od odhadu?",
+        "answer": "Španělská IRPF je sdílena mezi státem a autonomními společenstvími, takže sazby se podle regionu liší. Naše kalkulačka používá reprezentativní kombinovanou sazbu pro jednoho poplatníka a nemůže zohlednit každé regionální pravidlo, rodinnou situaci nebo odpočet, takže vaše skutečná čistá mzda se může lišit."
+      },
+      {
+        "question": "Mění regionální rozdíly skutečně moji čistou mzdu?",
+        "answer": "Ano. Protože každé autonomní společenství stanovuje část sazby IRPF a může nabízet vlastní odpočty, mohou mít dva lidé se stejnou mzdou v různých regionech odlišnou čistou mzdu. Náš odhad používá jednu reprezentativní sazbu, nikoli žádný konkrétní region."
+      },
+      {
+        "question": "Co jsou retenciones a declaracion de la Renta?",
+        "answer": "Retenciones jsou srážky, které váš zaměstnavatel uplatňuje na účet IRPF v průběhu roku. Declaracion de la Renta je roční daňové přiznání, které slaďuje to, co bylo sraženo, s tím, co skutečně dlužíte, což může vést k vrácení daně nebo k doplatku."
+      },
+      {
+        "question": "Jak přesná je tato kalkulačka?",
+        "answer": "Jedná se o zjednodušený odhad pro jednoho poplatníka používající reprezentativní kombinovanou sazbu IRPF pro daňový rok 2026. Skutečné regionální sazby, limity příspěvků a osobní minimum se v čase mění, proto výstup berte jako plánovací odhad a pro svou konkrétní situaci se obraťte na kvalifikovaného daňového odborníka."
+      }
+    ]
+  },
+  "IT": {
+    "displayName": "Itálie",
+    "title": "Kalkulačka daně ze mzdy v Itálii 2026 - Vypočítejte si čistý příjem",
+    "description": "Odhadněte svou čistou mzdu v Itálii pro rok 2026. Bezplatná kalkulačka využívající daňová pásma IRPEF, příspěvky INPS a místní přirážky k odhadu vaší čisté výplaty.",
+    "taxExplanation": "Itálie zdaňuje příjmy zaměstnanců s daňovým rezidentstvím prostřednictvím celostátní daně z příjmu fyzických osob zvané IRPEF (Imposta sul Reddito delle Persone Fisiche), doplněné menšími místními přirážkami a sníženou o příspěvky na sociální zabezpečení a soubor daňových slev. U většiny zaměstnanců se daň počítá z roční hrubé mzdy, přičemž se nejprve odečtou důchodové příspěvky a poté se na zbytek uplatní progresivní sazby. Níže uvedené údaje odrážejí daňový rok 2026 a jsou zamýšleny jako obecné, vzdělávací informace, které vám pomohou zhruba pochopit, jak se z vaší hrubé mzdy stává mzda čistá. Jedná se pouze o odhady a váš skutečný výsledek bude záviset na vašich konkrétních okolnostech.\n\nIRPEF je progresivní, což znamená, že vyšší části příjmu jsou zdaněny vyššími sazbami, zatímco nižší části si zachovávají své nižší sazby. Pro rok 2026 naše kalkulačka uplatňuje tři pásma: 23 procent na zdanitelný příjem do 28,000 EUR, 35 procent na část mezi 28,000 a 50,000 EUR a 43 procent na jakýkoli příjem nad 50,000 EUR. Sazbou daného pásma je zdaněna pouze část příjmu spadající do tohoto pásma, takže postup do vyššího pásma nezvyšuje sazbu na příjem, který jste již vydělali v nižších pásmech.\n\nKromě celostátní IRPEF přidává Itálie dvě místní přirážky: regionální přirážku (addizionale regionale) stanovenou každým regionem a obecní přirážku (addizionale comunale) stanovenou každým městem nebo obcí. Ty se znatelně liší podle toho, kde žijete, takže zaměstnanec v jedné obci může platit jinou kombinovanou místní sazbu než někdo se stejným příjmem jinde. Protože naše kalkulačka nemůže znát vaši přesnou adresu, odhaduje tyto dvě přirážky dohromady na zhruba 2.5 procenta zdanitelného příjmu. Vaše skutečné místní sazby mohou být vyšší nebo nižší.\n\nItalští zaměstnanci rovněž využívají daňové slevy známé jako detrazioni, které snižují splatnou daň a fakticky vytvářejí beztoké pásmo pro osoby s nižšími příjmy. V praxi to znamená, že lidé pod určitou úrovní příjmu mohou po uplatnění svých slev platit malou nebo žádnou IRPEF. Detrazioni závisí na úrovni příjmu a osobních faktorech, takže se u jednotlivých zaměstnanců liší. Naše kalkulačka tuto výhodu aproximuje zjednodušenou nezdanitelnou částkou, místo aby modelovala každou slevu jednotlivě, což udržuje odhad přímočarý a zároveň stále odráží obecnou úlevu, kterou osoby s nižšími příjmy dostávají.\n\nPřed výpočtem daně z příjmu platí zaměstnanci příspěvky na sociální zabezpečení do INPS, celostátního důchodového a sociálního institutu. Podíl zaměstnance činí přibližně 9.19 procenta hrubé mzdy a odečítá se před uplatněním IRPEF, takže snižuje daňový základ. Tyto příspěvky se uplatňují až do stropu příspěvků ve výši zhruba 120,607 EUR; příjem nad tímto stropem obecně nepodléhá dodatečnému důchodovému příspěvku. Protože se INPS odečítá jako první, snižuje jak vaši čistou výplatu, tak i částku příjmu, ze které se účtuje IRPEF a místní přirážky.\n\nVětšina italských zaměstnanců neplatí daň úřadům přímo v průběhu roku. Místo toho zaměstnavatel vystupuje jako plátce daně (sostituto d'imposta) a z každé výplaty strhává IRPEF, místní přirážky a příspěvky INPS a odvádí je jménem zaměstnance. Po skončení roku mnoho pracovníků podává roční přiznání, obvykle Modello 730 nebo formulář Redditi, aby sladili sraženou částku se skutečně splatnou daní, uplatnili dodatečné slevy a obdrželi vratku nebo doplatili případný rozdíl.\n\nMějte na paměti, že regionální a obecní přirážky, detrazioni a individuální okolnosti všechny ovlivňují konečné číslo a náš nástroj je zjednodušený odhad sestavený pro jednoho zaměstnance. Daňová pásma, stropy příspěvků a místní sazby se mohou rok od roku měnit a údaje pro rok 2026 použité zde jsou aproximace. Pro rozhodnutí, která závisí na přesných částkách, nebo pro pochopení toho, jak je nakládáno s vaší konkrétní situací, se obraťte na kvalifikovaného daňového odborníka nebo commercialistu.",
+    "faqs": [
+      {
+        "question": "Jak funguje kalkulačka daně ze mzdy v Itálii?",
+        "answer": "Vezme vaši hrubou mzdu, odečte odhadovaný příspěvek zaměstnance INPS ve výši přibližně 9.19 procenta, uplatní daňová pásma IRPEF pro rok 2026 a přibližnou místní přirážku a zohlední nezdanitelnou částku, aby odhadla vaši čistou výplatu. Všechny výsledky jsou odhady."
+      },
+      {
+        "question": "Jaká jsou daňová pásma IRPEF pro rok 2026 v Itálii?",
+        "answer": "Pro rok 2026 naše kalkulačka používá tři pásma: 23 procent na zdanitelný příjem do 28,000 EUR, 35 procent od 28,000 do 50,000 EUR a 43 procent nad 50,000 EUR. Každá sazba se uplatňuje pouze na příjem v rámci daného pásma."
+      },
+      {
+        "question": "Co jsou regionální a obecní přirážky?",
+        "answer": "Kromě IRPEF přidává Itálie regionální přirážku (addizionale regionale) a obecní přirážku (addizionale comunale), které se liší podle místa. Protože se liší podle regionu a obce, naše kalkulačka je dohromady odhaduje na přibližně 2.5 procenta, takže váš místní výsledek se může lišit."
+      },
+      {
+        "question": "Co je INPS a kolik se odečítá?",
+        "answer": "INPS je italský celostátní institut sociálního zabezpečení a důchodů. Příspěvek zaměstnance činí přibližně 9.19 procenta hrubé mzdy, odečítá se před daní z příjmu, a to až do stropu příspěvků ve výši zhruba 120,607 EUR. Tento odhad snižuje jak vaši čistou výplatu, tak i váš daňový základ."
+      },
+      {
+        "question": "Co je beztoké pásmo neboli detrazioni?",
+        "answer": "Zaměstnanci dostávají daňové slevy zvané detrazioni, které vytvářejí fakticky beztoké pásmo pro osoby s nižšími příjmy, což znamená, že někteří platí malou nebo žádnou IRPEF. Tyto slevy se u jednotlivých osob liší, takže naše kalkulačka tuto výhodu aproximuje zjednodušenou nezdanitelnou částkou."
+      },
+      {
+        "question": "Mohu odhadnout čistou výplatu za hodinu, měsíc nebo rok?",
+        "answer": "Kalkulačka pracuje z roční hrubé částky, ale můžete ji převést na měsíční nebo hodinový odhad odpovídajícím vydělením ročního čistého výsledku. Italské mzdy se často vyplácejí v několika splátkách, takže jakékoli rozdělení berte jako hrubý odhad."
+      },
+      {
+        "question": "Jak přesná je kalkulačka a jaká jsou její omezení?",
+        "answer": "Jedná se o zjednodušený odhad pro jednoho zaměstnance, který nezachycuje každou detrazione, rodinnou situaci ani přesnou místní přirážku. Regionální a obecní sazby se liší podle místa a individuálních okolností, takže vaše skutečná čistá výplata může být vyšší nebo nižší než zobrazené číslo."
+      },
+      {
+        "question": "Musím v Itálii podávat daňové přiznání?",
+        "answer": "Mnoho zaměstnanců podává roční přiznání, obvykle Modello 730 nebo formulář Redditi, aby sladili sražené částky, uplatnili slevy a vyrovnali případný rozdíl či vratku. Naše kalkulačka přiznání nepodává ani tento proces nenahrazuje; pouze poskytuje odhad."
+      },
+      {
+        "question": "Kdo vlastně odvádí mé daně státu?",
+        "answer": "Váš zaměstnavatel obvykle vystupuje jako plátce daně (sostituto d'imposta) a z každé výplaty strhává IRPEF, místní přirážky a INPS a odvádí je vaším jménem. Roční přiznání poté sladí to, co bylo sraženo, s tím, co dlužíte."
+      },
+      {
+        "question": "Proč se moje skutečná čistá mzda může lišit od odhadu?",
+        "answer": "Sazby místních přirážek, vaše konkrétní detrazioni, osobní a rodinné okolnosti a roční změny pásem a stropů, to vše ovlivňuje konečné číslo. Údaje pro rok 2026 zde jsou aproximace, takže pro přesné částky se obraťte na kvalifikovaného daňového odborníka."
+      }
+    ]
+  },
+  "SE": {
+    "displayName": "Švédsko",
+    "title": "Kalkulačka mzdové daně pro Švédsko 2026 - Vypočítejte si čistý příjem",
+    "description": "Odhadněte si čistou mzdu ve Švédsku pro rok 2026. Bezplatná kalkulačka zobrazuje čistý příjem po obecní a státní dani z příjmu z hrubé mzdy ve švédských korunách (SEK).",
+    "taxExplanation": "Švédský systém daně z příjmu je založen především na místním zdanění, což jej činí poněkud odlišným od mnoha jiných zemí. Největší část daně, kterou většina pracujících platí, tvoří obecní daň z příjmu, vybíraná obcí (kommun) a regionem, kde žijete. Nad rámec toho se na osoby s vyššími příjmy vztahuje samostatná státní daň z příjmu. Protože systém závisí spíše na tom, kde žijete, než na jediné celostátní sazbě, může se výše daně, kterou ze stejné mzdy zaplatíte, lišit podle vaší obce. Naše kalkulačka používá průměrnou obecní sazbu, aby vám poskytla rozumný odhad vašeho čistého příjmu pro daňový rok 2026.\n\nObecní daň z příjmu je hlavní daní pro běžné výdělečně činné osoby. V průměru činí zhruba 32 procent, i když přesná hodnota se liší obec od obce. Tato daň se nevztahuje na celou vaši hrubou mzdu. Nejprve se odečte základní odpočet známý jako grundavdrag a zdaňuje se pouze příjem nad tímto odpočtem. Grundavdrag se ve skutečnosti vypočítává podle klouzavé stupnice, naše kalkulačka však používá jeho zjednodušenou verzi. Výsledkem je, že efektivní sazba, kterou platíte z celé své mzdy, je poněkud nižší než nominální obecní procento, zejména u nižších příjmů, kde má odpočet větší poměrný účinek.\n\nStátní daň z příjmu představuje dodatečnou vrstvu, která se týká pouze vyšších příjmů. Vybírá se pevnou sazbou 20 procent, avšak pouze z té části vašeho zdanitelného příjmu, která přesahuje celostátní hranici, jež pro rok 2025 činí přibližně 625,800 SEK. Pokud váš příjem leží pod touto hranicí, neplatíte žádnou státní daň z příjmu a uplatní se pouze obecní daň. Pokud vyděláváte více, sazba 20 procent se vztahuje výhradně na částku nad touto hranicí, nikoli na celou vaši mzdu. To znamená, že většina pracujících ve Švédsku je zdaněna pouze na obecní úrovni a státní daň se stává relevantní především pro ty, kdo mají nadprůměrné příjmy.\n\nZaměstnanci ve Švédsku platí také příspěvek na veřejné důchodové pojištění, allman pensionsavgift, stanovený na 7 procent z výdělku. Na první pohled to vypadá jako významný odpočet, v praxi je však téměř zcela kompenzován odpovídajícím snížením daně poskytnutým z téže částky. Protože se příspěvek a odpovídající daňová úleva u většiny lidí vzájemně vyruší, má tento důchodový poplatek malý až žádný čistý vliv na čistou mzdu. Z tohoto důvodu jej naše kalkulačka nezobrazuje jako samostatný odpočet, neboť jeho uvedení by zkreslilo představu o tom, co si skutečně ponecháte.\n\nBod, který lidi při srovnávání Švédska s jinými zeměmi často překvapí, je zacházení s příspěvky na sociální zabezpečení. Švédsko má vysoké odvody na sociální zabezpečení, příspěvky zaměstnavatele ve výši zhruba 31.42 procent, ty však platí zaměstnavatel nad rámec vaší hrubé mzdy. Nestrhávají se z vaší výplaty a nesnižují částku, která dorazí na váš bankovní účet. Z tohoto důvodu naše kalkulačka nezobrazuje ve vašich odpočtech žádné zaměstnanecké sociální příspěvky. Vaše hrubá mzda je dohodnutá částka a tyto náklady zaměstnavatele stojí mimo ni, místo aby se z ní strhávaly.\n\nV průběhu roku vyřizuje výběr daně váš zaměstnavatel prostřednictvím systému srážek. Každý měsíc strhává předběžnou daň, známou jako A-skatt, na základě daňových tabulek a odhadu vašeho ročního příjmu, a odvádí ji švédskému daňovému úřadu, Skatteverket. Protože jde pouze o předběžný odhad, po skončení roku probíhá roční vyúčtování. Podáte nebo potvrdíte daňové přiznání a Skatteverket porovná skutečně dlužnou daň s tím, co bylo sraženo. Pokud bylo sraženo příliš mnoho, dostanete vratku; pokud příliš málo, doplatíte rozdíl.\n\nStojí za to znovu zdůraznit, že obecní sazba se liší podle toho, kde žijete, a průměr, který používáme, nebude přesně odpovídat vaší vlastní obci. Ve spojení s naším zjednodušeným základním odpočtem to znamená, že čísla, která zde vidíte, jsou odhady, nikoli přesné hodnoty. Jejich účelem je poskytnout vám jasnou, realistickou představu o vašem čistém příjmu, nikoli přesné daňové vyúčtování. Daňové sazby, hranice, odpočty a pravidla se rok od roku mění a individuální okolnosti, jako jsou odpočty, dávky a osobní úlevy, mohou ovlivnit váš skutečný výsledek. Pro radu přizpůsobenou vaší situaci se obraťte na kvalifikovaného daňového odborníka nebo nahlédněte na Skatteverket.",
+    "faqs": [
+      {
+        "question": "Kolik daně zaplatím ze své mzdy ve Švédsku?",
+        "answer": "Většina pracujících platí především obecní daň z příjmu, která v průměru činí kolem 32 procent, ale liší se podle obce, a vybírá se z příjmu po základním odpočtu. Osoby s vyššími příjmy platí navíc 20 procent státní daně nad hranicí. Naše kalkulačka vám poskytne odhad pro daňový rok 2026."
+      },
+      {
+        "question": "Co je obecní daň z příjmu ve Švédsku?",
+        "answer": "Jde o místní daň vybíranou vaší obcí a regionem a je to hlavní daň pro většinu výdělečně činných osob. V průměru činí asi 32 procent vašeho zdanitelného příjmu po základním odpočtu, přesná sazba však závisí na tom, kde žijete. Naše kalkulačka používá k odhadu vaší čisté mzdy průměrnou sazbu."
+      },
+      {
+        "question": "Kdy platím švédskou státní daň z příjmu?",
+        "answer": "Státní daň z příjmu ve výši 20 procent se vztahuje pouze na tu část vašeho zdanitelného příjmu, která přesahuje celostátní hranici, asi 625,800 SEK pro rok 2025. Pokud vyděláváte méně než tato hranice, neplatíte žádnou státní daň a na váš příjem se vztahuje pouze obecní daň."
+      },
+      {
+        "question": "Co je základní odpočet (grundavdrag)?",
+        "answer": "Jde o částku příjmu, která se odečte před výpočtem obecní daně, takže nejste zdaněni z celé své mzdy. Naše kalkulačka uplatňuje zjednodušenou verzi tohoto odpočtu, což je jeden z důvodů, proč jsou výsledky spíše odhady než přesné hodnoty."
+      },
+      {
+        "question": "Proč kalkulačka nezobrazuje 7procentní důchodový příspěvek?",
+        "answer": "Zaměstnanci platí 7procentní poplatek na veřejné důchodové pojištění (allman pensionsavgift), ten je však téměř přesně kompenzován odpovídajícím snížením daně, takže jeho čistý vliv na čistou mzdu je blízký nule. Aby se předešlo zkreslení vašich výsledků, naše kalkulačka jej nezobrazuje jako samostatný odpočet."
+      },
+      {
+        "question": "Proč v mých výsledcích nejsou žádné zaměstnanecké příspěvky na sociální zabezpečení?",
+        "answer": "Vysoké švédské příspěvky na sociální zabezpečení, zhruba 31.42 procent, jsou příspěvky zaměstnavatele placené nad rámec vaší hrubé mzdy. Nestrhávají se z vaší výplaty, takže nesnižují vaši čistou částku, a naše kalkulačka nezobrazuje žádné zaměstnanecké sociální příspěvky."
+      },
+      {
+        "question": "Jak se během roku vybírá daň z mé výplaty?",
+        "answer": "Váš zaměstnavatel strhává každý měsíc předběžnou daň (A-skatt) a odvádí ji úřadu Skatteverket. Protože jde pouze o odhad, po skončení roku následuje roční vyúčtování, které může vést k vratce nebo k doplatku podle toho, kolik bylo skutečně dlužno."
+      },
+      {
+        "question": "Mohu si odhadnout hodinovou, měsíční nebo roční čistou mzdu?",
+        "answer": "Ano. Kalkulačka vychází z vaší hrubé mzdy a odhaduje váš čistý příjem, takže ji můžete použít k získání představy o čisté mzdě, ať už uvažujete v hodinových, měsíčních nebo ročních hodnotách. Všechny údaje jsou odhady pro daňový rok 2026 a měly by být používány jako vodítko."
+      },
+      {
+        "question": "Jak přesná je tato kalkulačka?",
+        "answer": "Poskytuje odhady, nikoli přesné hodnoty. Protože používáme průměrnou obecní sazbu a zjednodušený základní odpočet, váš skutečný výsledek se může lišit od toho, co zde vidíte, zejména pokud je sazba vaší obce vyšší nebo nižší než průměr. Berte tato čísla jako užitečné přiblížení."
+      },
+      {
+        "question": "Proč se moje skutečná daň může lišit od odhadu?",
+        "answer": "Vaše skutečná daň závisí na sazbě vaší konkrétní obce, vašich přesných odpočtech a jakýchkoli osobních odpočtech či úlevách, z nichž žádné nejsou plně zachyceny zprůměrovaným odhadem. Sazby a hranice se také rok od roku mění, takže pro vaši situaci se obraťte na kvalifikovaného daňového odborníka nebo na Skatteverket."
+      }
+    ]
+  },
+  "PT": {
+    "displayName": "Portugalsko",
+    "title": "Kalkulačka daně ze mzdy pro Portugalsko 2026 - Vypočítejte si čistý příjem",
+    "description": "Odhadněte si čistou mzdu v kontinentálním Portugalsku pro rok 2026. Bezplatná kalkulačka zahrnující daňová pásma IRS a 11% sociální pojištění, která vám ukáže čistý příjem.",
+    "taxExplanation": "Portugalsko zdaňuje příjmy svých rezidentů prostřednictvím daně z příjmu fyzických osob známé jako IRS (Imposto sobre o Rendimento das Pessoas Singulares). U většiny zaměstnaných pracovníků v kontinentálním Portugalsku závisí částka, kterou si každý měsíc odnesete domů, na dvou hlavních odvodech: na samotném IRS a na příspěvku do systému sociálního zabezpečení. Společně snižují vaši hrubou mzdu na čistou, tedy na výplatu, kterou si odnesete domů. Údaje zobrazené touto kalkulačkou jsou zjednodušené odhady pro daňový rok 2026 a jejich cílem je pomoci vám zhruba pochopit, jak se vaše mzda rozkládá, nikoli sloužit jako oficiální vyměření.\n\nIRS v kontinentálním Portugalsku je progresivní daň, což znamená, že sazba stoupá po stupních, jak roste váš příjem. Nejnižší pásmo je zdaněno sazbou 13 procent a sazby se zvyšují přes několik pásem až po nejvyšší sazbu 48 procent, která se vztahuje na příjmy nad zhruba 83,696 EUR. Častým zdrojem nedorozumění je domněnka, že posun do vyššího pásma zdaní veškerý váš příjem touto vyšší sazbou. Ve skutečnosti je sazbou daného pásma zdaněna pouze ta část vašeho příjmu, která do tohoto pásma spadá, takže vyšší sazby se vztahují jen na část výdělku nad každou hranicí, nikoli na celou vaši mzdu.\n\nNež se pásma uplatní, váš příjem ze zaměstnání se sníží o standardní zvláštní odpočet ve výši přibližně 4,104 EUR. Jde o automatickou úlevu, která snižuje výši příjmu podléhajícího dani. Pokud jsou příspěvky na sociální zabezpečení, které jste během roku skutečně zaplatili, vyšší než tato standardní částka, použije se místo ní vyšší hodnota, takže odpočet odráží to, co je v tomto srovnání výhodnější. Toto je jeden z hlavních mechanismů, který snižuje váš daňový základ ještě před uplatněním progresivních sazeb.\n\nOdděleně od IRS odvádějí zaměstnanci do Seguranca Social, portugalského systému sociálního zabezpečení. Pro pracovníky činí tento příspěvek rovných 11 procent z hrubého výdělku, a na rozdíl od některých jiných zemí zde není žádný horní strop, takže 11 procent se uplatňuje na celou mzdu bez ohledu na to, jak vysoká je. Tento příspěvek financuje dávky jako důchody, nemocenskou a podporu v nezaměstnanosti a odvádí se navíc k IRS sraženému z vaší výplaty.\n\nV praxi se většina daně, kterou dlužíte, vybírá postupně v průběhu roku, nikoli najednou v jedné částce. Zaměstnavatelé provozují systém srážek známý jako retencao na fonte, kdy z každé měsíční výplaty odečítají odhadovanou částku IRS a odvádějí ji za vás daňovému úřadu. Protože jde pouze o odhad založený na tabulkách, nemusí měsíční srážka přesně odpovídat vaší konečné daňové povinnosti. Každý rok pak pracovníci podávají roční přiznání k IRS, které sladí skutečně dlužnou daň s tím, co bylo sraženo, což může vést buď k vrácení daně, nebo k doplatku.\n\nJe důležité poznamenat, že tato kalkulačka odhaduje daň pouze pro kontinentální Portugalsko. Autonomní regiony Azory a Madeira uplatňují vlastní, obecně nižší, regionální sazby IRS, které se v našich kontinentálních údajích neodrážejí. Pokud žijete nebo pracujete v některém z těchto regionů, vaše skutečná daň IRS by mohla být nižší než zde zobrazený odhad, takže s kontinentálními čísly by se mělo zacházet spíše jako s obecným vodítkem než jako s přesnou hodnotou pro tyto oblasti.\n\nTento nástroj je sestaven jako zjednodušený odhad pro jednoho poplatníka v kontinentálním Portugalsku. Nezohledňuje mnohé osobní okolnosti, které mohou skutečný daňový výměr změnit, jako je rodinná situace, vyživované osoby, další položkové odpočty, jiné zdroje příjmů nebo specifické regionální a zvláštní režimy. Daňové sazby, pásma, odpočty a pravidla pro příspěvky se v Portugalsku mohou rok od roku měnit a zde použité hodnoty jsou odhady pro daňový rok 2026. Tento obsah je pouze vzdělávací informací a nepředstavuje daňové, právní ani účetní poradenství. Pro rozhodnutí o vaší vlastní situaci nebo pro přesný výpočet se obraťte na kvalifikovaného odborníka nebo na oficiální portugalský daňový úřad.",
+    "faqs": [
+      {
+        "question": "Kolik daně zaplatím ze své mzdy v Portugalsku?",
+        "answer": "Záleží na tom, kolik vyděláváte, protože IRS je progresivní: sazby začínají na 13 procentech u nejnižšího pásma a po stupních rostou až na 48 procent u příjmů nad zhruba 83,696 EUR. K IRS navíc zaměstnanci odvádějí 11 procent na sociální zabezpečení. Tato kalkulačka oba odvody kombinuje, aby vám poskytla odhad čisté mzdy pro kontinentální Portugalsko."
+      },
+      {
+        "question": "Co je IRS v Portugalsku?",
+        "answer": "IRS (Imposto sobre o Rendimento das Pessoas Singulares) je portugalská daň z příjmu fyzických osob. Uplatňuje se progresivně přes několik pásem, takže sazbou daného pásma je zdaněna pouze ta část vašeho příjmu, která do něj spadá, od 13 procent u nejnižšího pásma až po 48 procent u nejvyššího."
+      },
+      {
+        "question": "Kolik činí sociální zabezpečení pro zaměstnance v Portugalsku?",
+        "answer": "Zaměstnanci odvádějí rovných 11 procent ze svého hrubého výdělku do Seguranca Social, systému sociálního zabezpečení. Není zde žádný horní strop, takže 11 procent se vztahuje na celou vaši mzdu. Tento odvod se sráží navíc k jakémukoli IRS sraženému z vaší výplaty."
+      },
+      {
+        "question": "Co je zvláštní odpočet pro příjem ze zaměstnání?",
+        "answer": "Příjem ze zaměstnání má nárok na standardní zvláštní odpočet ve výši přibližně 4,104 EUR, který snižuje příjem podléhající dani IRS. Pokud je sociální zabezpečení, které jste během roku skutečně zaplatili, vyšší než tato částka, použije se místo ní vyšší hodnota, podle toho, co je výhodnější."
+      },
+      {
+        "question": "Mohu si odhadnout hodinovou, měsíční nebo roční čistou mzdu?",
+        "answer": "Ano. Kalkulačka vychází z vaší hrubé mzdy a odhaduje čistý příjem, který si odnesete domů, a můžete ji použít k získání hrubé představy o měsíčním nebo ročním čistém příjmu. Mějte na paměti, že jde o odhady; zaměstnavatelé srážejí daň měsíčně prostřednictvím retencao na fonte a přesná měsíční částka se může lišit od prostého ročního dělení."
+      },
+      {
+        "question": "Jak přesná je tato kalkulačka?",
+        "answer": "Jde o zjednodušený odhad pro jednoho poplatníka v kontinentálním Portugalsku a je míněn jako obecné vodítko, nikoli jako oficiální vyměření. Nezachycuje každý osobní faktor, jako jsou vyživované osoby, rodinná situace, další odpočty nebo jiné příjmy, takže váš skutečný výsledek se může lišit. Pro přesnou hodnotu se obraťte na odborníka nebo na daňový úřad."
+      },
+      {
+        "question": "Mají Azory a Madeira odlišné daňové sazby?",
+        "answer": "Ano. Autonomní regiony Azory a Madeira uplatňují vlastní, obecně nižší, regionální sazby IRS. Tato kalkulačka odhaduje daň pouze pro kontinentální Portugalsko a tyto regionální sazby nezahrnuje, takže skutečná daň IRS v těchto regionech může být nižší, než je zde zobrazeno."
+      },
+      {
+        "question": "Proč je mi daň strhávána z výplaty každý měsíc?",
+        "answer": "Portugalsko používá systém srážek nazývaný retencao na fonte, kdy váš zaměstnavatel z každé měsíční výplaty odečítá odhadovanou částku IRS a odesílá ji daňovému úřadu. Protože je založen na odhadových tabulkách, nemusí přesně odpovídat vaší konečné daňové povinnosti za rok."
+      },
+      {
+        "question": "Musím i tak podávat roční daňové přiznání?",
+        "answer": "Ano. I když je daň srážena měsíčně, pracovníci podávají roční přiznání k IRS, které sladí skutečně dlužnou daň s tím, co bylo během roku sraženo. To může vést k vrácení daně, pokud bylo sraženo příliš mnoho, nebo k doplatku, pokud bylo sraženo příliš málo."
+      },
+      {
+        "question": "Jsou tato čísla konečná, nebo jen odhadová?",
+        "answer": "Jsou to odhady pro daňový rok 2026. Daňové sazby, pásma a pravidla se v Portugalsku mohou rok od roku měnit a tento nástroj je zjednodušený odhad pro kontinentální Portugalsko určený pouze pro vzdělávací účely. Svou konkrétní situaci si vždy ověřte u kvalifikovaného odborníka nebo na oficiálním daňovém úřadu."
+      }
+    ]
+  },
+  "hub": {
+    "faqs": [
+      {
+        "question": "Jak přesné jsou tyto výpočty daní ze mzdy?",
+        "answer": "Naše kalkulačky používají oficiální daňová pásma a sazby pro daňový rok 2026. Jedná se však o odhady, které nemusí zahrnovat všechny odpočty, slevy nebo místní daně. V případě USA nejsou zahrnuty státní a místní daně. Vždy se poraďte s daňovým odborníkem ohledně rady specifické pro vaši situaci."
+      },
+      {
+        "question": "Jaký je rozdíl mezi hrubým a čistým příjmem?",
+        "answer": "Hrubý příjem je váš celkový výdělek před zdaněním a odpočty. Čistý příjem (mzda na ruku) je to, co zbyde po odečtení daně z příjmu, příspěvků na sociální zabezpečení a dalších povinných odvodů z vašeho hrubého příjmu."
+      },
+      {
+        "question": "Zahrnují tyto kalkulačky státní nebo místní daně?",
+        "answer": "V případě Spojených států naše kalkulačka zahrnuje pouze federální daně. Státní a místní daně z příjmu se výrazně liší podle lokality a nejsou zahrnuty. U Německa a Velké Británie zahrnují výpočty národní daňové systémy, ale mohou platit místní odchylky."
+      },
+      {
+        "question": "Mohu to použít pro příjem ze samostatné výdělečné činnosti?",
+        "answer": "Tyto kalkulačky jsou určeny pro příjem zaměstnanců se standardními mzdovými odvody. Osoby samostatně výdělečně činné mají obvykle odlišné daňové povinnosti, včetně daně ze samostatné výdělečné činnosti v USA, a mohou být povinny platit zálohy na daň. U scénářů samostatné výdělečné činnosti se poraďte s daňovým odborníkem."
+      },
+      {
+        "question": "Jak převedu příjem mezi hodinovým, měsíčním a ročním?",
+        "answer": "Pro rychlé převody použijte náš převodník z hodinové sazby na mzdu. Vzorce jsou: Roční = Hodinová × Počet hodin týdně × Počet týdnů za rok; Měsíční = Roční ÷ 12; Hodinová = Roční ÷ (Počet hodin týdně × Počet týdnů za rok). Standardní předpoklady jsou 40 hodin týdně a 52 týdnů za rok."
+      },
+      {
+        "question": "Které země jsou podporovány?",
+        "answer": "V současné době podporujeme odhady daní pro Spojené státy (pouze federální daně), Německo, Velkou Británii, Polsko, Francii, Španělsko, Itálii, Švédsko a Portugalsko. Stránka každé země vysvětluje daňový systém a sociální odvody dané země."
+      },
+      {
+        "question": "Jsou výpočty aktualizovány pro rok 2026?",
+        "answer": "Ano, všechny kalkulačky používají daňová pásma, sazby a prahové hodnoty roku 2026. Daňové systémy se aktualizují každoročně a snažíme se udržovat naše údaje aktuální. Daňové zákony se však mohou během roku měnit, proto si nejaktuálnější informace ověřte u oficiálních zdrojů."
+      },
+      {
+        "question": "Jaké informace potřebuji k použití kalkulačky?",
+        "answer": "Potřebujete svůj hrubý příjem (hodinový, měsíční nebo roční), svou zemi a daňový rok. U hodinových výpočtů budete potřebovat také počet hodin týdně a počet týdnů za rok. Kalkulačka poté odhadne váš čistý příjem po zdanění a odvodech."
+      }
+    ]
+  }
+}

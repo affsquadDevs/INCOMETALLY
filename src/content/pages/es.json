@@ -1,0 +1,254 @@
+{
+  "about": {
+    "title": "Sobre nosotros",
+    "lastUpdated": "4 de enero de 2026",
+    "content": "IncomeTally es una herramienta independiente en línea creada para ayudar a particulares y profesionales a calcular ingresos, salarios y estimaciones de impuestos de forma clara, estructurada y transparente.\n\nEntender tu salario neto y tus obligaciones fiscales requiere cálculos precisos basados en la legislación tributaria, los tramos impositivos y las deducciones vigentes. En la práctica, los cálculos de salario e impuestos suelen ser complejos y varían según el país, lo que dificulta obtener estimaciones precisas. IncomeTally reúne todos estos cálculos en un único lugar, haciendo que la planificación financiera sea más coherente y fácil de gestionar.\n\nLa plataforma permite a los usuarios calcular el salario neto a partir del salario bruto, convertir entre tarifas por hora y anuales, y estimar impuestos según las normas tributarias específicas de cada país. IncomeTally está diseñado como una herramienta de cálculo y estimación, que ayuda a los usuarios a comprender su salario neto real y a planificar sus finanzas en consecuencia.\n\nIncomeTally no ofrece asesoramiento financiero, fiscal ni legal. Todos los cálculos son estimaciones basadas en datos fiscales de acceso público y están destinados únicamente a fines informativos y de planificación.\n\nNuestro objetivo es ofrecer una experiencia sencilla y práctica para la planificación financiera y la toma de decisiones. IncomeTally es un producto independiente y no está afiliado a autoridades fiscales, instituciones financieras ni proveedores de servicios externos.\n\n## Nuestros estándares editoriales\n\nLas guías de IncomeTally están redactadas y revisadas por el Equipo Editorial de IncomeTally. Seguimos algunos principios sencillos para que nuestro contenido sea fiable:\n\n- **Fuentes oficiales.** Nuestras guías sobre impuestos y salarios se basan en datos de acceso público procedentes de autoridades como el Servicio de Impuestos Internos de EE. UU. (IRS), la Agencia Tributaria del Reino Unido (HMRC) y el Ministerio Federal de Hacienda de Alemania. Los artículos clave indican sus fuentes al final.\n- **Lenguaje sencillo.** Explicamos temas de ingresos, impuestos y salarios en términos claros, con ejemplos prácticos, para que resulten útiles a personas sin formación financiera.\n- **Información actualizada.** Las normas fiscales cambian cada año. Revisamos nuestras guías y mostramos una fecha de \"Última actualización\" en cada una para que sepas cómo de reciente es la información.\n- **Estimaciones, no asesoramiento.** Nuestras calculadoras y guías ofrecen estimaciones generales con fines educativos. No constituyen asesoramiento financiero, fiscal ni legal, y las circunstancias individuales varían. Para decisiones que afecten a tu dinero, consulta a un profesional cualificado.\n\nSi detectas algo que parezca desactualizado o incorrecto, [contáctanos](/contact) — agradecemos las correcciones.",
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Qué es IncomeTally?",
+          "answer": "IncomeTally es una herramienta en línea de cálculo de ingresos e impuestos. Ayuda a los usuarios a calcular el salario neto, estimar impuestos y convertir entre distintos formatos de ingresos (por hora, mensual, anual) según las normas tributarias específicas de cada país."
+        },
+        {
+          "question": "¿Para quién es IncomeTally?",
+          "answer": "IncomeTally está diseñado para empleados, autónomos, personas en búsqueda de empleo y cualquier persona que quiera entender su salario neto y sus obligaciones fiscales durante negociaciones salariales o la planificación financiera."
+        },
+        {
+          "question": "¿Necesito crear una cuenta para usar IncomeTally?",
+          "answer": "No. IncomeTally se puede utilizar sin crear una cuenta. Todos los datos los proporciona el usuario de forma voluntaria."
+        },
+        {
+          "question": "¿IncomeTally ofrece asesoramiento financiero o fiscal?",
+          "answer": "No. IncomeTally no ofrece asesoramiento financiero, fiscal ni legal. Es estrictamente una herramienta de cálculo y estimación con fines exclusivamente informativos."
+        },
+        {
+          "question": "¿IncomeTally está afiliado a autoridades fiscales o instituciones financieras?",
+          "answer": "No. IncomeTally opera de forma independiente y no tiene ninguna afiliación con autoridades fiscales, instituciones financieras ni plataformas externas."
+        },
+        {
+          "question": "¿Es gratuito usar IncomeTally?",
+          "answer": "IncomeTally ofrece acceso gratuito a sus funciones principales de cálculo. En el futuro podrían incorporarse funciones adicionales o cambios."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Si tienes preguntas sobre IncomeTally, nuestras calculadoras o cómo funciona el sitio web, puedes ponerte en contacto con nosotros utilizando la información de contacto que aparece a continuación.",
+    "inquiryTypes": {
+      "title": "Damos la bienvenida a consultas relacionadas con:",
+      "items": [
+        "preguntas generales sobre la plataforma",
+        "cómo funcionan las calculadoras y las estimaciones de impuestos",
+        "privacidad y tratamiento de datos",
+        "problemas técnicos o comentarios",
+        "cuestiones legales o relacionadas con políticas"
+      ]
+    },
+    "howToContact": {
+      "title": "Cómo contactarnos",
+      "email": {
+        "label": "Correo electrónico:",
+        "note": "Procuramos responder a todas las consultas legítimas en un plazo razonable."
+      }
+    },
+    "aboutCommunication": {
+      "title": "Sobre la comunicación",
+      "description": "IncomeTally es un servicio en línea independiente que ofrece calculadoras de ingresos, salarios e impuestos basadas en la información que introduces.",
+      "notes": [
+        "No ofrecemos atención al cliente a través de redes sociales y, por el momento, no proporcionamos soporte telefónico.",
+        "Por favor, no envíes información personal sensible por correo electrónico a menos que sea necesario para atender tu solicitud."
+      ]
+    }
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdated": "enero de 2026",
+    "intro": "Bienvenido a IncomeTally (\"nosotros\", \"nuestro\", \"nos\"). Tu privacidad es importante para nosotros. Esta Política de privacidad explica cómo recopilamos, utilizamos y protegemos la información cuando visitas https://incometally.com (el \"Sitio web\").",
+    "sections": [
+      {
+        "title": "1. Información que recopilamos",
+        "paragraphs": [
+          "Recopilamos la información mínima necesaria para operar y mejorar el Sitio web.",
+          "a) Información no personal",
+          "Cuando visitas el Sitio web, podemos recopilar automáticamente información no identificativa, como:"
+        ],
+        "listItems": [
+          "Tipo y versión del navegador",
+          "Tipo de dispositivo y sistema operativo",
+          "Páginas visitadas y tiempo de permanencia",
+          "Ubicación aproximada (solo a nivel de país)"
+        ],
+        "paragraphsAfterList": [
+          "Estos datos se agregan y no pueden utilizarse para identificarte personalmente.",
+          "b) Información personal",
+          "No exigimos el registro de una cuenta y no recopilamos a sabiendas datos personales como nombres, direcciones de correo electrónico, números de teléfono o información de pago.",
+          "Si te pones en contacto con nosotros de forma voluntaria (por ejemplo, por correo electrónico), solo utilizaremos tu información para responder a tu consulta."
+        ]
+      },
+      {
+        "title": "2. Cookies y tecnologías similares",
+        "paragraphs": ["IncomeTally utiliza cookies y tecnologías similares para:"],
+        "listItems": [
+          "Garantizar el correcto funcionamiento del sitio web",
+          "Medir el tráfico y los patrones de uso",
+          "Mostrar publicidad relevante"
+        ],
+        "paragraphsAfterList": [
+          "Las cookies no nos dan acceso a tu ordenador ni a tus datos personales.",
+          "Puedes desactivar las cookies en la configuración de tu navegador en cualquier momento. Ten en cuenta que algunas partes del Sitio web pueden no funcionar correctamente si las cookies están desactivadas."
+        ]
+      },
+      {
+        "title": "3. Publicidad (Google AdSense)",
+        "paragraphs": [
+          "Utilizamos Google AdSense para mostrar publicidad.",
+          "Google y sus socios pueden:"
+        ],
+        "listItems": [
+          "Utilizar cookies (incluida la cookie de DoubleClick)",
+          "Mostrar anuncios basados en tus visitas a este y otros sitios web"
+        ],
+        "paragraphsAfterList": [
+          "Puedes informarte sobre cómo utiliza Google los datos de los sitios que usan sus servicios aquí:",
+          "👉 https://policies.google.com/technologies/ads",
+          "Puedes excluirte de la publicidad personalizada visitando:",
+          "👉 https://adssettings.google.com"
+        ]
+      },
+      {
+        "title": "4. Cómo utilizamos la información",
+        "paragraphs": ["Utilizamos la información recopilada para:"],
+        "listItems": [
+          "Operar y mantener el Sitio web",
+          "Mejorar la precisión y la usabilidad de la calculadora",
+          "Analizar el tráfico y el rendimiento",
+          "Cumplir con las obligaciones legales"
+        ],
+        "paragraphsAfterList": [
+          "No vendemos, alquilamos ni comercializamos la información de los usuarios."
+        ]
+      },
+      {
+        "title": "5. Seguridad de los datos",
+        "paragraphs": [
+          "Aplicamos medidas técnicas y organizativas razonables para proteger la información frente a accesos no autorizados, alteraciones o destrucción.",
+          "Sin embargo, ningún método de transmisión por Internet es 100 % seguro."
+        ]
+      },
+      {
+        "title": "6. Enlaces a terceros",
+        "paragraphs": [
+          "El Sitio web puede contener enlaces a sitios web de terceros.",
+          "No somos responsables de las prácticas de privacidad ni del contenido de dichos sitios web."
+        ]
+      },
+      {
+        "title": "7. Información de menores",
+        "paragraphs": [
+          "IncomeTally no está dirigido a menores de 13 años.",
+          "No recopilamos a sabiendas datos personales de menores."
+        ]
+      },
+      {
+        "title": "8. Cambios en esta política",
+        "paragraphs": [
+          "Podemos actualizar esta Política de privacidad de vez en cuando.",
+          "Cualquier cambio se publicará en esta página con una fecha de \"Última actualización\" actualizada."
+        ]
+      },
+      {
+        "title": "9. Contáctanos",
+        "paragraphs": [
+          "Si tienes preguntas sobre esta Política de privacidad, contáctanos en:",
+          "📧 hello@incometally.com"
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Términos del servicio",
+    "lastUpdated": "enero de 2026",
+    "intro": "Al acceder o utilizar https://incometally.com (\"Sitio web\"), aceptas quedar vinculado por estos Términos del servicio. Si no estás de acuerdo, te rogamos que no utilices el Sitio web.",
+    "sections": [
+      {
+        "title": "1. Uso del Sitio web",
+        "paragraphs": [
+          "IncomeTally proporciona calculadoras de ingresos, salarios e impuestos únicamente con fines informativos y educativos.",
+          "Aceptas utilizar el Sitio web:"
+        ],
+        "listItems": [
+          "De forma lícita",
+          "Con fines personales y no comerciales",
+          "Sin intentar interrumpir ni hacer un uso indebido de su funcionalidad"
+        ]
+      },
+      {
+        "title": "2. Sin asesoramiento profesional",
+        "paragraphs": [
+          "La información y las calculadoras proporcionadas en IncomeTally no constituyen asesoramiento financiero, fiscal, legal ni contable.",
+          "Los cálculos son estimaciones basadas en supuestos simplificados y datos de acceso público.",
+          "Debes consultar a un profesional cualificado antes de tomar decisiones financieras o fiscales."
+        ]
+      },
+      {
+        "title": "3. Exactitud de la información",
+        "paragraphs": ["Aunque nos esforzamos por mantener la información exacta y actualizada:"],
+        "listItems": [
+          "No garantizamos la integridad, exactitud ni fiabilidad",
+          "Las leyes y normativas fiscales cambian con frecuencia",
+          "Los resultados pueden diferir de los resultados oficiales o reales"
+        ],
+        "paragraphsAfterList": ["El uso del Sitio web es bajo tu propia responsabilidad."]
+      },
+      {
+        "title": "4. Propiedad intelectual",
+        "paragraphs": ["Todo el contenido de IncomeTally, incluyendo:"],
+        "listItems": ["Texto", "Diseño", "Lógica de la calculadora", "Marca"],
+        "paragraphsAfterList": [
+          "es propiedad de IncomeTally salvo que se indique lo contrario y está protegido por las leyes de propiedad intelectual aplicables.",
+          "No puedes copiar, reproducir ni redistribuir el contenido sin autorización previa por escrito."
+        ]
+      },
+      {
+        "title": "5. Servicios de terceros",
+        "paragraphs": [
+          "El Sitio web puede utilizar servicios de terceros (como proveedores de análisis y publicidad).",
+          "No somos responsables del contenido, las políticas ni las prácticas de los servicios o sitios web de terceros."
+        ]
+      },
+      {
+        "title": "6. Limitación de responsabilidad",
+        "paragraphs": ["En la máxima medida permitida por la ley:"],
+        "listItems": [
+          "IncomeTally no será responsable de ningún daño directo, indirecto o consecuente",
+          "Incluidas las pérdidas financieras o los resultados de la toma de decisiones",
+          "Derivados del uso o de la confianza en el Sitio web"
+        ]
+      },
+      {
+        "title": "7. Modificaciones del servicio",
+        "paragraphs": ["Nos reservamos el derecho a:"],
+        "listItems": [
+          "Modificar o suspender cualquier parte del Sitio web",
+          "Actualizar estos Términos en cualquier momento"
+        ],
+        "paragraphsAfterList": ["Los cambios entran en vigor en el momento de su publicación."]
+      },
+      {
+        "title": "8. Legislación aplicable",
+        "paragraphs": [
+          "Estos Términos se regirán e interpretarán de conformidad con la legislación aplicable, sin tener en cuenta los principios sobre conflicto de leyes."
+        ]
+      },
+      {
+        "title": "9. Información de contacto",
+        "paragraphs": [
+          "Para cualquier pregunta sobre estos Términos, contáctanos en:",
+          "📧 hello@incometally.com"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,667 @@
+{
+  "nav": {
+    "salaryCalculator": "Calculateur de salaire",
+    "getStarted": "Commencer",
+    "aboutUs": "À propos",
+    "guides": "Guides",
+    "toggleMenu": "Basculer le menu",
+    "selectLanguage": "Choisir la langue"
+  },
+  "footer": {
+    "productTitle": "Produit",
+    "legalTitle": "Mentions légales",
+    "resourcesTitle": "Ressources",
+    "home": "Accueil",
+    "calculator": "Calculateur",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "salaryCalculatorHub": "Centre des calculateurs de salaire",
+    "hourlyToSalary": "Taux horaire au salaire",
+    "guides": "Guides",
+    "disclaimerLabel": "Avertissement :",
+    "disclaimer": "IncomeTally propose des calculateurs de revenus et d'impôts à titre informatif uniquement. Les résultats sont des estimations et peuvent ne pas refléter vos obligations fiscales réelles ni votre situation financière. Ce site ne fournit aucun conseil financier, fiscal ou juridique. Consultez toujours un professionnel qualifié pour des conseils personnalisés.",
+    "rights": "Tous droits réservés."
+  },
+  "home": {
+    "meta": {
+      "title": "Calculateur de salaire net — Salaire après impôt pour 9 pays | IncomeTally",
+      "description": "Calculez votre salaire net après impôt sur le revenu et cotisations sociales. Gratuit, sans inscription, avec des estimations propres à chaque pays pour l'année fiscale 2026 aux États-Unis, en Allemagne, au Royaume-Uni, en Pologne, en France, en Espagne, en Italie, en Suède et au Portugal."
+    },
+    "hero": {
+      "title": "Calculateur de salaire net gratuit",
+      "highlightWords": [
+        "Calculateur",
+        "salaire",
+        "net"
+      ],
+      "subtitle": "Saisissez votre salaire brut et découvrez une estimation de votre salaire net après impôt sur le revenu et cotisations sociales — pour l'année fiscale 2026, dans 9 pays. Sans inscription, et vos données restent dans votre navigateur.",
+      "getStarted": "Commencer",
+      "browseGuides": "Parcourir les guides",
+      "trustLine": "Gratuit · Sans inscription · Vos données restent dans votre navigateur."
+    },
+    "about": {
+      "heading": "Ce que fait IncomeTally",
+      "p1": "IncomeTally est un <calc>calculateur de salaire net</calc> gratuit, fonctionnant dans votre navigateur, qui transforme un salaire brut en une estimation de votre salaire net, celui que vous touchez réellement. Vous saisissez ce que vous gagnez — par heure, par mois ou par an — vous choisissez votre pays, et nous appliquons les tranches d'impôt sur le revenu et les cotisations sociales obligatoires de ce pays pour l'année 2026 afin de montrer ce qui arrive vraiment sur votre compte. Avec JavaScript activé, le calcul s'exécute dans votre navigateur et vos données de revenu ne sont pas envoyées à nos serveurs — seuls votre pays et l'année fiscale sont demandés pour charger les bons taux. Vous n'avez pas besoin de créer de compte.",
+      "p2": "L'écart entre votre <gross>salaire brut et votre salaire net</gross> est rarement évident. Les systèmes d'imposition progressive n'appliquent des taux plus élevés qu'aux revenus dépassant le seuil de chaque tranche : votre taux marginal — le taux sur le dernier euro ou dollar gagné — est donc presque toujours supérieur à votre taux effectif, c'est-à-dire la part de l'ensemble de votre salaire consacrée à l'impôt. En plus de l'impôt sur le revenu, la plupart des pays prélèvent des <social>cotisations sociales</social> pour la retraite, la santé et l'assurance chômage. IncomeTally détaille chacun de ces postes ligne par ligne, pour que vous voyiez où va votre argent, et pas seulement le total final.",
+      "whoHeading": "À qui cela s'adresse",
+      "whoBody": "Il est conçu pour les salariés qui vérifient si une fiche de paie semble correcte, les chercheurs d'emploi qui comparent deux offres en termes de salaire net réel, les indépendants qui estiment ce qu'ils doivent mettre de côté, et toute personne qui envisage un changement de pays. Si vous vous êtes déjà demandé pourquoi une augmentation semblait plus modeste que le montant annoncé, voici l'outil qui vous l'explique."
+    },
+    "howItWorks": {
+      "heading": "Comment ça marche",
+      "steps": [
+        {
+          "title": "Choisissez votre pays",
+          "body": "Sélectionnez l'un des neuf pays pris en charge pour que le calculateur charge les tranches d'imposition, les abattements et les taux de cotisations sociales corrects pour 2026."
+        },
+        {
+          "title": "Saisissez votre salaire",
+          "body": "Indiquez votre revenu brut sous forme de montant horaire, mensuel ou annuel. Le calculateur effectue la conversion entre les périodes de paie pour vous, et vous pouvez définir des options telles que la situation fiscale ou la région lorsqu'elles s'appliquent."
+        },
+        {
+          "title": "Consultez votre décomposition",
+          "body": "Obtenez l'estimation de votre salaire net accompagnée d'une décomposition ligne par ligne de l'impôt sur le revenu et des cotisations sociales, ainsi que de vos taux marginal et effectif."
+        }
+      ],
+      "cta": "Ouvrir le calculateur"
+    },
+    "calculators": {
+      "heading": "Calculateurs",
+      "intro": "Commencez avec un outil général, ou accédez directement à votre pays ci-dessous.",
+      "tools": [
+        {
+          "title": "Calculateur de salaire net",
+          "body": "Convertissez n'importe quel salaire brut en une estimation du salaire net, avec une décomposition complète de l'impôt et des cotisations.",
+          "cta": "Calculer le salaire net →"
+        },
+        {
+          "title": "Hub des calculateurs de salaire",
+          "body": "Partez de votre pays et explorez les règles fiscales, les tranches et les cotisations sociales de 2026.",
+          "cta": "Parcourir par pays →"
+        },
+        {
+          "title": "Du taux horaire au salaire",
+          "body": "Transformez un taux horaire en revenu hebdomadaire, mensuel et annuel — puis voyez le résultat après impôt.",
+          "cta": "Convertir le taux horaire →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Calculateurs de salaire par pays",
+      "subtitle": "Estimations pour l'année fiscale 2026 utilisant les tranches officielles d'impôt sur le revenu et les cotisations sociales de chaque pays.",
+      "cardSuffix": "Calculateur de salaire",
+      "cardMeta": "{currency} · année fiscale 2026",
+      "note": "La plupart des calculateurs vous permettent de définir des options telles que la situation fiscale ou la région lorsqu'elles s'appliquent ; les options disponibles varient selon le pays. Consultez la page de chaque pays pour connaître les champs de saisie proposés et ses sources officielles.",
+      "seeAll": "Voir tous les calculateurs →"
+    },
+    "pillarsSection": {
+      "heading": "Comprenez comment votre salaire est calculé",
+      "intro": "Des guides en langage clair sur le revenu, l'impôt et la planification salariale — rédigés et vérifiés en interne, avec sources et dates de dernière mise à jour.",
+      "viewAll": "Voir tous les guides →"
+    },
+    "trust": {
+      "badge": "Données à jour pour l'année fiscale 2026 · Dernière vérification en juin 2026",
+      "heading": "D'où viennent nos chiffres",
+      "body": "Les calculateurs et les guides d'IncomeTally sont gérés par l'équipe éditoriale d'IncomeTally. Nous construisons la logique fiscale de chaque pays à partir de chiffres accessibles au public publiés par les autorités fiscales et de sécurité sociale officielles, nous expliquons les concepts en langage clair à l'aide d'exemples concrets, et nous vérifions les données par rapport aux taux officiels de chaque année. Chaque calculateur de pays indique ses sources spécifiques ainsi que l'année fiscale qu'il couvre.",
+      "standardsHeading": "Nos exigences",
+      "standards": [
+        "Sources officielles",
+        "Langage clair",
+        "Vérifié chaque année",
+        "Des estimations, pas des conseils"
+      ],
+      "aboutLink": "En savoir plus sur nous et sur nos standards éditoriaux →",
+      "sourcesHeading": "Sources officielles par pays",
+      "sourcesNote": "La page de chaque pays renvoie aux sources spécifiques que nous avons utilisées pour ses chiffres.",
+      "disclaimerLabel": "Des estimations, pas des conseils.",
+      "disclaimer": "IncomeTally propose des calculateurs de revenu et d'impôt à des fins purement informatives et éducatives. Les résultats sont des estimations et peuvent ne pas refléter vos obligations fiscales ou vos résultats financiers réels. Ce site web n'est affilié à aucun gouvernement ni à aucune autorité fiscale et ne fournit pas de conseils financiers, fiscaux ou juridiques. Consultez toujours un professionnel qualifié pour des conseils personnalisés."
+    },
+    "faqHeading": "Foire aux questions",
+    "faqs": [
+      {
+        "question": "IncomeTally est-il gratuit ?",
+        "answer": "Oui. Chaque calculateur et chaque guide d'IncomeTally est gratuit, et vous n'avez pas besoin de créer de compte. Vos données sont traitées dans votre navigateur et ne sont pas stockées sur nos serveurs."
+      },
+      {
+        "question": "Quels pays et quelle année fiscale le calculateur couvre-t-il ?",
+        "answer": "IncomeTally couvre neuf pays — les États-Unis, l'Allemagne, le Royaume-Uni, la Pologne, la France, l'Espagne, l'Italie, la Suède et le Portugal — en utilisant les règles de l'impôt sur le revenu et des cotisations sociales de 2026. L'année fiscale applicable est indiquée sur chaque calculateur."
+      },
+      {
+        "question": "Quelle est la différence entre salaire brut et salaire net ?",
+        "answer": "Le salaire brut correspond à votre rémunération totale avant tout prélèvement. Le salaire net — celui que vous touchez réellement — est ce qu'il reste après déduction de l'impôt sur le revenu et des cotisations sociales obligatoires. IncomeTally affiche la décomposition complète pour que vous voyiez exactement ce qui est prélevé et pourquoi."
+      },
+      {
+        "question": "Quelle est la précision des résultats ?",
+        "answer": "Les calculateurs utilisent les tranches, abattements et taux de cotisations officiels de 2026, mais il s'agit d'estimations. Le salaire net réel peut varier selon votre situation personnelle, par exemple des abattements supplémentaires, des règles régionales, votre situation fiscale, des avantages ou des déductions ponctuelles. Considérez les résultats comme une estimation bien documentée, et non comme une déclaration fiscale."
+      },
+      {
+        "question": "Puis-je convertir entre salaire horaire, mensuel et annuel ?",
+        "answer": "Oui. Saisissez votre salaire dans l'une de ces périodes et le calculateur le convertit dans toutes les autres, puis affiche l'équivalent net. Notre outil Du taux horaire au salaire se concentre spécifiquement sur la conversion des rémunérations si c'est tout ce dont vous avez besoin."
+      },
+      {
+        "question": "D'où proviennent vos chiffres fiscaux, et IncomeTally donne-t-il des conseils financiers ?",
+        "answer": "Nos chiffres proviennent des autorités fiscales et de sécurité sociale officielles de chaque pays, telles que l'IRS et la SSA, HMRC et le Bundesfinanzministerium allemand, et la page de chaque pays renvoie aux sources spécifiques que nous avons utilisées. IncomeTally est un outil purement informatif : il ne fournit pas de conseils financiers, fiscaux ou juridiques et n'est affilié à aucun gouvernement ni à aucune autorité fiscale. Pour vos décisions concernant vos impôts ou vos finances, consultez un professionnel qualifié."
+      }
+    ]
+  },
+  "common": {
+    "lastUpdated": "Dernière mise à jour :",
+    "backToHome": "Retour à l'accueil"
+  },
+  "country": {
+    "h1Suffix": "Calculateur d'impôt sur le salaire",
+    "allCalculators": "← Tous les calculateurs",
+    "hourlyConverter": "Convertisseur taux horaire en salaire",
+    "otherCountries": "Autres pays :",
+    "howItWorksHeading": "{country} : comment fonctionne l'imposition des salaires",
+    "faqHeading": "Questions fréquentes",
+    "relatedHeading": "Ressources connexes",
+    "relatedHub": "Centre des calculateurs de salaire",
+    "calculatorSuffix": "Calculateur de salaire"
+  },
+  "guides": {
+    "metaTitle": "Guides salaire et impôts - Articles d'experts sur le calcul des revenus",
+    "metaDescription": "Guides complets sur le calcul du salaire, les tranches d'imposition, les déductions et le revenu net. Apprenez à calculer votre salaire net et à comprendre les systèmes fiscaux.",
+    "title": "Guides salaire et impôts",
+    "intro": "Articles d'experts sur le calcul du salaire, les systèmes fiscaux, les déductions et la compréhension de votre salaire net — organisés en trois piliers thématiques.",
+    "startHere": "Commencez ici · Guide pilier",
+    "published": "Publié le",
+    "updated": "Mis à jour le",
+    "by": "Par",
+    "faqHeading": "Foire aux questions",
+    "sourcesHeading": "Sources et lectures complémentaires",
+    "aboutAuthorHeading": "À propos de l'auteur",
+    "editorialStandards": "Consultez notre charte éditoriale →",
+    "moreInPillar": "Plus d'articles dans {pillar}",
+    "relatedGeneric": "Guides associés",
+    "tryCalculators": "Essayez les calculateurs",
+    "toc": "Table des matières",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbGuides": "Guides",
+    "linkHub": "Hub des calculateurs de salaire",
+    "linkNet": "Calculateur de salaire net",
+    "linkHourly": "Convertisseur taux horaire en salaire"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Mode de revenu",
+      "grossIncome": "Revenu brut",
+      "country": "Pays",
+      "taxYear": "Année fiscale",
+      "hoursPerWeek": "Heures par semaine",
+      "weeksPerYear": "Semaines par an",
+      "calculateNetIncome": "Calculer le revenu net",
+      "salaryPeriod": "Période de salaire",
+      "salaryPeriodAria": "Sélection de la période de salaire"
+    },
+    "mode": {
+      "hourly": "Horaire",
+      "monthly": "Mensuel",
+      "yearly": "Annuel"
+    },
+    "period": {
+      "hourly": "horaire",
+      "monthly": "mensuel",
+      "annual": "annuel"
+    },
+    "yesNo": {
+      "yes": "Oui",
+      "no": "Non"
+    },
+    "country": {
+      "US": "États-Unis",
+      "USFederalOnly": "États-Unis (fédéral uniquement)",
+      "DE": "Allemagne",
+      "UK": "Royaume-Uni",
+      "PL": "Pologne",
+      "FR": "France",
+      "ES": "Espagne",
+      "IT": "Italie",
+      "SE": "Suède",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Sélectionner le pays",
+      "helper": "Choisissez votre pays pour calculer les impôts en conséquence"
+    },
+    "actions": {
+      "copyShareLink": "Copier le lien de partage",
+      "copied": "Copié !",
+      "shareLinkPrefix": "Lien de partage :"
+    },
+    "status": {
+      "loading": "Chargement des données fiscales...",
+      "empty": "Saisissez votre revenu pour voir les calculs"
+    },
+    "validation": {
+      "incomePositive": "Le revenu doit être un nombre positif",
+      "incomeMax": "Le revenu ne peut pas dépasser {max} ({mode})",
+      "hoursMin": "Les heures doivent être au moins {min}",
+      "hoursMax": "Les heures ne peuvent pas dépasser {max}",
+      "weeksMin": "Les semaines doivent être au moins {min}",
+      "weeksMax": "Les semaines ne peuvent pas dépasser {max}"
+    },
+    "de": {
+      "taxClass": "Classe d'imposition",
+      "healthInsurance": "Assurance maladie",
+      "privateNoteLabel": "Remarque :",
+      "privateNoteBody": "L'assurance maladie privée est payée séparément et n'est pas déduite de votre salaire. Le revenu net indiqué ci-dessus ne comprend pas les coûts de l'assurance privée, que vous versez directement à votre assureur.",
+      "state": "Votre Land",
+      "inChurch": "Membre d'une Église ?",
+      "churchAria": "Sélection de l'appartenance religieuse",
+      "haveChildren": "Avez-vous des enfants ?",
+      "childrenAria": "Sélection des enfants",
+      "childrenNote": "Utilisé pour l'assurance dépendance (Pflegeversicherung). Pour 2026, cela signifie : avec enfants ~1,80 % de part salariale (la plupart des Länder), sans enfant ~2,40 % (inclut la surtaxe pour personnes sans enfant). La Saxe applique une répartition différente."
+    },
+    "us": {
+      "filingStatus": "Statut de déclaration",
+      "employmentType": "Type d'emploi",
+      "deductionMethod": "Méthode de déduction",
+      "itemizedDeductions": "Déductions détaillées",
+      "childrenUnder17": "Enfants (de moins de 17 ans)",
+      "otherDependents": "Autres personnes à charge",
+      "taxpayerOver65": "Contribuable 65 ans et plus",
+      "taxpayerBlind": "Contribuable aveugle",
+      "spouseOver65": "Conjoint 65 ans et plus",
+      "spouseBlind": "Conjoint aveugle",
+      "preTax401k": "401(k) / retraite avant impôt",
+      "preTaxHSA": "HSA avant impôt",
+      "otherPreTax": "Autres déductions avant impôt",
+      "stateTaxRate": "Taux d'impôt de l'État (estimation, %)",
+      "localTaxRate": "Taux d'impôt local (estimation, %)"
+    },
+    "uk": {
+      "region": "Région",
+      "preTaxPension": "Cotisations de retraite avant impôt",
+      "preTaxOther": "Autres déductions avant impôt",
+      "studentLoanPlan": "Plan de prêt étudiant",
+      "studentLoanNote": "Remarque : le plan dépend du lieu et de la date de vos études, pas de votre lieu de travail.",
+      "marriageAllowance": "Abattement de mariage ?",
+      "marriageAllowanceAria": "Sélection de l'abattement de mariage",
+      "marriageAllowanceNote": "Pour un contribuable au taux de base dont le conjoint/partenaire civil n'est pas imposable (avantage jusqu'à 252 £).",
+      "children": "Enfants (pour la charge Child Benefit)",
+      "childrenNote": "Utilisé pour la High Income Child Benefit Charge (s'applique aux revenus supérieurs à 60 000 £)."
+    },
+    "pl": {
+      "filingStatus": "Statut de déclaration",
+      "children": "Enfants (pour l'abattement pour enfants)",
+      "preTax": "Cotisations déductibles (par ex. IKZE,",
+      "under26": "Exonération pour les jeunes (moins de 26 ans) ?",
+      "under26Aria": "Sélection de l'exonération pour les moins de 26 ans",
+      "under26Note": "Exonère les revenus d'emploi jusqu'à 85 528 PLN de l'impôt sur le revenu (ZUS et assurance maladie restent applicables)."
+    },
+    "pt": {
+      "region": "Région",
+      "filingStatus": "Statut de déclaration",
+      "dependants": "Personnes à charge"
+    },
+    "se": {
+      "municipality": "Commune",
+      "customRate": "Taux d'impôt communal (%)",
+      "churchMember": "Membre de l'Église de Suède ?",
+      "churchAria": "Sélection de l'appartenance religieuse",
+      "churchNote": "Ajoute la redevance ecclésiastique (kyrkoavgift). L'impôt sur le revenu tient déjà compte de l'abattement de base et du crédit jobbskatteavdrag (moins de 66 ans)."
+    },
+    "it": {
+      "region": "Région (surtaxe régionale)",
+      "customRegionalRate": "Taux de surtaxe régionale (%)",
+      "municipalRate": "Taux de surtaxe communale (%)",
+      "dependentChildren": "Enfants à charge (âgés de 21 à 29 ans)",
+      "dependentChildrenNote": "Les enfants de moins de 21 ans sont couverts par l'Assegno Unico (hors paie). Les surtaxes régionales et communales varient selon le lieu.",
+      "dependentSpouse": "Conjoint à charge (coniuge a carico) ?",
+      "dependentSpouseAria": "Sélection du conjoint à charge",
+      "dependentSpouseNote": "Un conjoint avec peu ou pas de revenus (coniuge a carico) donne droit à un crédit d'impôt allant jusqu'à 800 €."
+    },
+    "es": {
+      "community": "Communauté autonome",
+      "filingStatus": "Statut de déclaration",
+      "children": "Enfants (descendants à charge)",
+      "childrenNote": "Les taux régionaux varient selon la communauté ; le País Vasco et la Navarre appliquent des régimes foraux distincts non couverts ici."
+    },
+    "fr": {
+      "household": "Foyer",
+      "children": "Enfants à charge",
+      "childrenNote": "Ajoute des parts de quotient familial (+0,5 pour chacun des deux premiers enfants, +1 à partir du troisième), avec un avantage plafonné (plafonnement). Estimation pour un foyer d'une personne / revenu unique."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Célibataire, sans enfant",
+        "2": "Parent isolé",
+        "3": "Marié (revenu supérieur à celui du partenaire)",
+        "4": "Marié (revenu égal)",
+        "5": "Marié (revenu inférieur à celui du partenaire)",
+        "6": "Revenu secondaire et complémentaire"
+      },
+      "deHealthInsurance": {
+        "public": "Public / légal (GKV)",
+        "private-without": "Privé (sans contribution de l'employeur)",
+        "private-with": "Privé (avec contribution de l'employeur)"
+      },
+      "usFilingStatus": {
+        "single": "Célibataire",
+        "mfj": "Marié, déclaration conjointe",
+        "mfs": "Marié, déclaration séparée",
+        "hoh": "Chef de famille"
+      },
+      "usEmploymentType": {
+        "employee": "Salarié (W-2)",
+        "selfEmployed": "Travailleur indépendant (estimation de la SE tax)"
+      },
+      "usDeductionMethod": {
+        "auto": "Auto (maximum entre standard et détaillée)",
+        "standard": "Déduction standard",
+        "itemized": "Déductions détaillées"
+      },
+      "ukRegion": {
+        "england": "Angleterre",
+        "wales": "Pays de Galles",
+        "ni": "Irlande du Nord",
+        "scotland": "Écosse (pas encore prise en charge)"
+      },
+      "ukStudentLoan": {
+        "none": "Aucun",
+        "plan2": "Plan 2 (9 % au-delà de {threshold} £)",
+        "plan4": "Plan 4 (9 % au-delà de {threshold} £)",
+        "plan5": "Plan 5 (9 % au-delà de {threshold} £)"
+      },
+      "plFilingStatus": {
+        "single": "Célibataire",
+        "joint": "Marié — imposition commune (revenu unique)"
+      },
+      "ptRegion": {
+        "mainland": "Continent (Continente)",
+        "azores": "Açores (Açores)",
+        "madeira": "Madère"
+      },
+      "ptFilingStatus": {
+        "single": "Célibataire",
+        "joint": "Marié — imposition commune (revenu unique)"
+      },
+      "esFilingStatus": {
+        "single": "Individuelle",
+        "joint": "Déclaration conjointe (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Célibataire (1 part)",
+        "married": "Marié / PACS — commune (2 parts)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Assurance maladie",
+      "longTermCareInsurance": "Assurance dépendance",
+      "pensionInsurance": "Assurance retraite",
+      "unemploymentInsurance": "Assurance chômage",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Medicare additionnel (Additional Medicare Tax)",
+      "seTaxSocialSecurity": "Cotisation des indépendants (Social Security)",
+      "seTaxMedicare": "Cotisation des indépendants (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (catégorie 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (catégorie 1, supérieure)",
+      "plPension": "Assurance retraite (Emerytalne)",
+      "plDisability": "Assurance invalidité (Rentowe)",
+      "plSickness": "Assurance maladie (Chorobowe)",
+      "plHealth": "Assurance santé (Zdrowotne)",
+      "ptSocialSecurity": "Sécurité sociale (Segurança Social)",
+      "seChurchFee": "Redevance ecclésiastique (kyrkoavgift)",
+      "itInps": "Cotisation de retraite INPS",
+      "itRegionalMunicipalSurtax": "Surtaxe régionale et communale (addizionali)",
+      "esCommonContingencies": "Risques communs (Seguridad Social)",
+      "esMei": "Cotisation de solidarité MEI",
+      "esTraining": "Formation (Formación profesional)",
+      "esUnemployment": "Chômage (Desempleo)",
+      "esSocialSecurity": "Sécurité sociale (Seguridad Social)",
+      "frCsgDeductible": "CSG (déductible)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (non déductible)",
+      "frSocialSecurityPension": "Cotisations sociales et de retraite",
+      "frPension": "Retraite (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Résultats du calcul",
+      "netIncome": "Revenu net",
+      "netHourly": "Net horaire",
+      "netHourlyAfterSacrifice": "Net horaire (après abandon de salaire)",
+      "netMonthly": "Net mensuel",
+      "netYearly": "Net annuel",
+      "effectiveTaxRate": "Taux d'imposition effectif",
+      "taxAndNiRate": "Taux d'impôt et NI",
+      "salarySacrificeRate": "Taux d'abandon de salaire",
+      "totalNonCashShare": "Part totale non monétaire",
+      "breakdown": "Détail",
+      "grossIncome": "Revenu brut",
+      "preTaxDeductionsEntered": "Déductions avant impôt (saisies)",
+      "preTaxDeductionsAppliedCapped": "Déductions avant impôt (appliquées, plafonnées)",
+      "preTaxDeductions": "Déductions avant impôt",
+      "adjustedGrossIncome": "Revenu brut ajusté (AGI)",
+      "salarySacrifice": "Abandon de salaire (retraite et avant impôt)",
+      "adjustedIncomeAfterSacrifice": "Revenu ajusté (après abandon de salaire)",
+      "preTaxContributions": "Cotisations avant impôt",
+      "standardDeduction": "Déduction standard",
+      "itemizedDeduction": "Déduction détaillée",
+      "allowances": "Abattements",
+      "taxableIncome": "Revenu imposable",
+      "incomeTax": "Impôt sur le revenu",
+      "incomeTaxDE": "Impôt sur le revenu total (ESt + Soli + Église)",
+      "incomeTaxUS": "Impôt sur le revenu (fédéral + État + local)",
+      "studentLoan": "Prêt étudiant",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Abattement de mariage (avantage)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Surtaxe de solidarité (Soli)",
+      "churchTax": "Impôt ecclésiastique (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Impôt fédéral sur le revenu (avant crédits)",
+      "taxCreditsApplied": "Crédits d'impôt (appliqués)",
+      "federalIncomeTaxAfterCredits": "Impôt fédéral sur le revenu (après crédits)",
+      "stateIncomeTax": "Impôt sur le revenu de l'État (estimation)",
+      "localIncomeTax": "Impôt sur le revenu local (estimation)",
+      "saxonySplit": "(répartition Saxe)",
+      "cappedOn": "sur",
+      "totalSocialContributions": "Total des cotisations sociales",
+      "taxesAndNi": "Impôts et NI",
+      "cashInHand": "Argent disponible"
+    },
+    "example": {
+      "heading": "Exemple de calcul",
+      "perHour": "par heure",
+      "perMonth": "par mois",
+      "perYear": "par an",
+      "netIncomeAnnual": "Revenu net (annuel)",
+      "basedOnPrefix": "Basé sur",
+      "hourlyNote": "({hours} heures/semaine, {weeks} semaines/an)",
+      "monthlyNote": "(12 mois/an)",
+      "forTaxYear": "pour l'année fiscale {year}."
+    },
+    "disclaimer": {
+      "title": "Avertissement sur l'estimation fiscale",
+      "noteLabel": "Remarque :",
+      "us": "Ces calculs sont des estimations basées uniquement sur les taux d'imposition fédéraux. Les impôts d'État et locaux ne sont pas inclus et peuvent affecter de manière significative votre charge fiscale totale.",
+      "default": "Ces calculs sont des estimations et peuvent ne pas inclure les impôts locaux ou régionaux. Veuillez consulter les sources officielles ou un fiscaliste pour des chiffres précis."
+    },
+    "dataSources": {
+      "heading": "Sources des données",
+      "intro": "Nos estimations pour {country} sont basées sur des chiffres publics provenant de sources officielles des autorités gouvernementales et fiscales. Les taux et les seuils changent à chaque année fiscale, c'est pourquoi nous les révisons périodiquement. Ces résultats sont des estimations, et non des avis ou des évaluations fiscales officielles.",
+      "editorialPrefix": "Consultez nos",
+      "editorialLink": "normes éditoriales",
+      "editorialSuffix": "pour savoir comment nous recherchons et mettons à jour ces données."
+    }
+  },
+  "hub": {
+    "metaTitle": "Hub de calculateurs de salaire net - Calculez votre revenu net par pays",
+    "metaDescription": "Calculateurs de salaire net gratuits pour plusieurs pays. Calculez votre revenu net après impôts et cotisations sociales aux États-Unis, en Allemagne, au Royaume-Uni et ailleurs.",
+    "title": "Hub de calculateurs de salaire net",
+    "intro1": "Calculez votre revenu net après impôts et cotisations sociales. Nos calculateurs gratuits vous aident à comprendre combien il vous restera dans différents pays, avec des décompositions détaillées de l'impôt sur le revenu, des cotisations sociales et des autres prélèvements.",
+    "intro2": "Sélectionnez un pays ci-dessous pour commencer, ou choisissez un mode de calcul adapté à vos besoins.",
+    "byCountryHeading": "Calculer par pays",
+    "calculateCta": "Calculer →",
+    "hourlyTitle": "Calculateur de revenu horaire",
+    "monthlyTitle": "Calculateur de salaire mensuel",
+    "yearlyTitle": "Calculateur de salaire annuel",
+    "chooseModeHeading": "Choisir le mode de calcul",
+    "converterTitle": "Convertisseur salaire horaire en annuel",
+    "converterBody": "Convertissez votre taux horaire en salaire annuel, mensuel et hebdomadaire. Idéal pour comprendre votre rémunération totale lors d'une négociation ou de la comparaison d'offres d'emploi.",
+    "converterCta": "Convertir le taux horaire →",
+    "hourlyBody": "Calculez votre revenu net lorsque vous connaissez votre taux horaire. Inclut des options pour personnaliser les heures par semaine et les semaines par an selon votre rythme de travail.",
+    "hourlyCta": "Calculer à l'heure →",
+    "monthlyBody": "Calculez votre revenu mensuel net après impôts. Idéal pour établir un budget et comprendre votre salaire net mensuel.",
+    "monthlyCta": "Calculer au mois →",
+    "yearlyBody": "Calculez votre revenu annuel net à partir de votre salaire brut annuel. Voyez la décomposition complète des impôts et prélèvements pour toute l'année.",
+    "yearlyCta": "Calculer à l'année →",
+    "faqHeading": "Foire aux questions"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Calculateur de salaire et d'impôts — Estimez votre revenu net",
+      "description": "Calculateur de salaire net gratuit. Saisissez votre revenu brut pour estimer votre salaire net, l'impôt sur le revenu et les cotisations sociales aux États-Unis, en Allemagne et au Royaume-Uni en 2026.",
+      "ogDescription": "Calculateur de salaire net gratuit. Estimez votre salaire net, l'impôt sur le revenu et les cotisations sociales aux États-Unis, en Allemagne et au Royaume-Uni."
+    },
+    "title": "Calculateur de salaire et d'impôts",
+    "intro": "Estimez votre revenu net (salaire net) après l'impôt sur le revenu et les cotisations sociales. Saisissez votre salaire brut, choisissez votre pays et votre période de paie, et obtenez une décomposition instantanée pour l'année fiscale 2026.",
+    "howItWorks": {
+      "heading": "Comment fonctionne le calculateur",
+      "p1": "Notre calculateur convertit votre revenu brut en salaire net estimé à l'aide des tranches d'imposition et des taux de cotisations sociales à jour pour chaque pays pris en charge. Vous pouvez saisir votre revenu sous forme de taux horaire, de salaire mensuel ou de montant annuel, et le calculateur le ramène en base annuelle avant d'appliquer les règles fiscales pertinentes.",
+      "p2": "La décomposition sépare l'impôt sur le revenu des cotisations sociales — telles que la Social Security et Medicare aux États-Unis, les cotisations d'assurance obligatoires en Allemagne et la National Insurance au Royaume-Uni — afin que vous puissiez voir exactement où va votre argent et quel est votre taux d'imposition effectif.",
+      "p3": "Les résultats sont des estimations fournies à des fins d'information et de planification uniquement et ne tiennent pas compte de chaque situation individuelle, comme les impôts régionaux et locaux, les crédits d'impôt ou les avantages en nature. Pour des conseils adaptés à votre situation, consultez un professionnel de la fiscalité qualifié."
+    },
+    "related": {
+      "heading": "Découvrir les calculateurs par pays",
+      "hub": "Hub de calculateurs de salaire",
+      "us": "Calculateur de salaire des États-Unis",
+      "de": "Calculateur de salaire de l'Allemagne",
+      "uk": "Calculateur de salaire du Royaume-Uni",
+      "hourly": "Convertisseur salaire horaire en annuel",
+      "guides": "Guides salaire et impôts"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Calculateur de salaire net - Calculez votre salaire net",
+      "description": "Calculateur de salaire net gratuit. Déterminez votre salaire net après l'impôt sur le revenu et les cotisations sociales aux États-Unis, en Allemagne et au Royaume-Uni."
+    },
+    "title": "Calculateur de salaire net",
+    "intro": "Calculez votre revenu net (salaire net) après impôts et cotisations sociales. Notre calculateur de salaire complet vous aide à comprendre exactement combien vous percevrez après tous les prélèvements.",
+    "cta": "Accéder au hub de calculateurs de salaire →",
+    "breakdownIntro": "Notre calculateur de salaire fournit des décompositions détaillées de :",
+    "breakdown": {
+      "gross": "Revenu brut (avant impôts)",
+      "incomeTax": "Calcul de l'impôt sur le revenu",
+      "social": "Cotisations sociales",
+      "net": "Revenu net (salaire net)",
+      "effectiveRate": "Taux d'imposition effectifs"
+    },
+    "availability": "Disponible pour plusieurs pays, dont les États-Unis, l'Allemagne et le Royaume-Uni. Sélectionnez votre pays pour commencer avec des calculs d'impôts précis et à jour pour 2026.",
+    "specialized": "Vous pouvez également accéder à nos calculateurs spécialisés :",
+    "links": {
+      "hourly": "Convertisseur salaire horaire en annuel",
+      "us": "Calculateur États-Unis",
+      "de": "Calculateur Allemagne",
+      "uk": "Calculateur Royaume-Uni"
+    },
+    "explainer": {
+      "heading": "Qu'est-ce que le salaire net ?",
+      "p1": "Votre <b>salaire net</b> — souvent appelé salaire net à payer — est le montant qui arrive réellement sur votre compte bancaire une fois les prélèvements obligatoires retirés de votre salaire brut. Le salaire brut est le montant phare de votre contrat de travail ; le salaire net est ce que vous pouvez budgétiser et dépenser.",
+      "p2": "L'écart entre les deux se compose de l'<b>impôt sur le revenu</b> et des <b>cotisations sociales</b>. L'impôt sur le revenu est généralement progressif, ce qui signifie que des parts plus élevées de votre revenu sont imposées à des taux plus élevés. Les cotisations sociales financent des programmes tels que les retraites publiques, la santé et l'assurance chômage, et les taux exacts dépendent de votre lieu de résidence.",
+      "p3": "Comme chaque pays calcule ces prélèvements différemment, un même salaire brut peut donner un salaire net très différent aux États-Unis, en Allemagne ou au Royaume-Uni. Choisissez votre pays ci-dessus pour voir une décomposition détaillée et propre à chaque pays pour l'année fiscale 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Convertisseur salaire horaire en annuel - Calculez le revenu annuel, mensuel et hebdomadaire",
+      "description": "Convertissez un salaire horaire en salaire annuel, mensuel et hebdomadaire. Calculateur gratuit avec formules et exemples. Idéal pour les négociations salariales et les comparaisons de salaires.",
+      "ogDescription": "Convertissez un salaire horaire en salaire annuel, mensuel et hebdomadaire. Calculateur gratuit avec formules et exemples."
+    },
+    "title": "Convertisseur salaire horaire en annuel",
+    "intro": "Convertissez votre salaire horaire en salaire annuel, mensuel, hebdomadaire et journalier. Comprenez votre rémunération totale lors de la négociation d'offres d'emploi ou de la comparaison de postes.",
+    "calc": {
+      "heading": "Calculez votre revenu net",
+      "intro": "Saisissez votre taux horaire ci-dessous pour calculer votre revenu brut et net. Le calculateur est préréglé en mode horaire et affichera votre salaire net après impôts."
+    },
+    "formulas": {
+      "heading": "Formules de conversion",
+      "annual": {
+        "title": "Salaire annuel à partir du taux horaire",
+        "code": "Salaire annuel = Taux horaire × Heures par semaine × Semaines par an",
+        "note": "Calcul standard : multipliez votre taux horaire par 40 heures par semaine et 52 semaines par an."
+      },
+      "monthly": {
+        "title": "Salaire mensuel",
+        "code": "Salaire mensuel = Salaire annuel ÷ 12",
+        "note": "Divisez le salaire annuel par 12 mois. Remarque : cela donne un montant mensuel moyen ; la paie mensuelle réelle peut varier en cas de versement bimensuel ou semi-mensuel."
+      },
+      "weekly": {
+        "title": "Salaire hebdomadaire",
+        "code": "Salaire hebdomadaire = Taux horaire × Heures par semaine",
+        "note": "Multipliez simplement votre taux horaire par le nombre d'heures que vous travaillez par semaine."
+      },
+      "daily": {
+        "title": "Salaire journalier",
+        "code": "Salaire journalier = Taux horaire × Heures par jour",
+        "note": "Pour une journée de travail de 8 heures, multipliez votre taux horaire par 8."
+      },
+      "grossNote": "<b>Remarque :</b> ces formules calculent le revenu brut (avant impôts). Utilisez le calculateur ci-dessous pour voir votre salaire net après impôts et prélèvements."
+    },
+    "examples": {
+      "heading": "Exemples",
+      "annualGross": "Brut annuel :",
+      "monthlyGross": "Brut mensuel :",
+      "weeklyGross": "Brut hebdomadaire :",
+      "dailyGross": "Brut journalier",
+      "ex1": {
+        "title": "Exemple 1 : 25 $ de l'heure, 40 heures/semaine, 52 semaines/an",
+        "annual": "<b>Brut annuel :</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Brut mensuel :</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Brut hebdomadaire :</b> $25 × 40 = $1,000",
+        "daily": "<b>Brut journalier (8 heures) :</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Exemple 2 : 30 $ de l'heure, 35 heures/semaine, 50 semaines/an",
+        "annual": "<b>Brut annuel :</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Brut mensuel :</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Brut hebdomadaire :</b> $30 × 35 = $1,050",
+        "daily": "<b>Brut journalier (7 heures) :</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Exemple 3 : 20 $ de l'heure, 40 heures/semaine, 48 semaines/an (avec 4 semaines de congé non payé)",
+        "annual": "<b>Brut annuel :</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Brut mensuel :</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Brut hebdomadaire :</b> $20 × 40 = $800",
+        "note": "Remarque : ajuster le nombre de semaines par an permet de tenir compte des congés non payés, des vacances ou du travail saisonnier."
+      }
+    },
+    "faq": {
+      "heading": "Foire aux questions",
+      "items": [
+        {
+          "question": "Quelle est la différence entre le salaire brut et le salaire net ?",
+          "answer": "Le salaire brut correspond à l'ensemble de vos gains avant impôts et prélèvements. Le salaire net (salaire net à payer) est ce que vous percevez après déduction de l'impôt sur le revenu, des cotisations sociales et des autres prélèvements obligatoires. Le calculateur ci-dessus affiche à la fois les montants bruts et nets."
+        },
+        {
+          "question": "Combien de semaines dois-je utiliser dans le calcul ?",
+          "answer": "La norme est de 52 semaines par an pour les salariés à temps plein. Toutefois, si vous avez des congés non payés, travaillez de façon saisonnière ou prenez un congé prolongé, ajustez en conséquence. Par exemple, 2 semaines de congé non payé correspondraient à 50 semaines par an."
+        },
+        {
+          "question": "Dois-je inclure les heures supplémentaires dans mon taux horaire ?",
+          "answer": "Pour des calculs de salaire annuel précis, utilisez votre taux horaire de base et vos heures standard. Si vous faites régulièrement des heures supplémentaires, vous pouvez soit : (1) calculer le salaire de base séparément et y ajouter une estimation des heures supplémentaires, soit (2) utiliser un taux horaire moyen qui tient compte des heures supplémentaires. Le calculateur vous permet d'ajuster les heures par semaine pour refléter votre véritable rythme de travail."
+        },
+        {
+          "question": "Comment reconvertir un salaire en taux horaire ?",
+          "answer": "Pour convertir un salaire annuel en taux horaire : Taux horaire = Salaire annuel ÷ (Heures par semaine × Semaines par an). Par exemple, $52,000 ÷ (40 × 52) = $25 de l'heure. Utilisez notre calculateur à l'envers en saisissant votre salaire annuel et en sélectionnant le mode annuel."
+        }
+      ],
+      "countriesQuestion": "Ces calculs sont-ils exacts pour tous les pays ?",
+      "countriesAnswer": "Les formules de conversion (horaire vers annuel, mensuel, etc.) sont universelles. Cependant, les calculs de revenu net varient selon les pays en raison des différents systèmes fiscaux. Utilisez les calculateurs propres à chaque pays sur notre <link>Hub de calculateurs de salaire</link> pour obtenir des estimations précises de votre revenu net.",
+      "partTimeQuestion": "Et si je travaille à temps partiel ou si j'ai des horaires irréguliers ?",
+      "partTimeAnswer": "Pour le travail à temps partiel, saisissez vos heures réelles par semaine. Pour des horaires irréguliers, calculez une moyenne d'heures hebdomadaires sur une période plus longue (par exemple 3 à 6 mois) et utilisez-la. Le calculateur permet de personnaliser les heures par semaine et les semaines par an pour s'adapter à n'importe quel rythme de travail."
+    },
+    "related": {
+      "heading": "Ressources connexes",
+      "hub": "Hub de calculateurs de salaire",
+      "us": "Calculateur de salaire des États-Unis",
+      "de": "Calculateur de salaire de l'Allemagne",
+      "uk": "Calculateur de salaire du Royaume-Uni"
+    }
+  }
+}

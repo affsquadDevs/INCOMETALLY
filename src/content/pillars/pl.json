@@ -1,0 +1,14 @@
+{
+  "income-basics": {
+    "title": "Zrozumieć swoje dochody",
+    "description": "Wynagrodzenie brutto a netto, kwota na rękę oraz jak przeliczać dochód między stawkami godzinowymi, miesięcznymi i rocznymi."
+  },
+  "income-tax": {
+    "title": "Jak działa podatek dochodowy",
+    "description": "Progi podatkowe, odliczenia, składki na ubezpieczenia społeczne oraz wpływ podatku dochodowego na Twoje wynagrodzenie na rękę w różnych krajach."
+  },
+  "salary-career": {
+    "title": "Wynagrodzenie, praca i planowanie finansów",
+    "description": "Porównaj swoje zarobki z rynkiem, zestaw oferty pracy, uwzględnij koszty życia i zrozum różnicę między dochodem freelancera a pracownika."
+  }
+}

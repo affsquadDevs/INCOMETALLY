@@ -1,0 +1,667 @@
+{
+  "nav": {
+    "salaryCalculator": "Calcolatore dello stipendio",
+    "getStarted": "Inizia",
+    "aboutUs": "Chi siamo",
+    "guides": "Guide",
+    "toggleMenu": "Apri/chiudi menu",
+    "selectLanguage": "Seleziona lingua"
+  },
+  "footer": {
+    "productTitle": "Prodotto",
+    "legalTitle": "Note legali",
+    "resourcesTitle": "Risorse",
+    "home": "Home",
+    "calculator": "Calcolatore",
+    "privacyPolicy": "Informativa sulla privacy",
+    "termsOfService": "Termini di servizio",
+    "salaryCalculatorHub": "Centro calcolatori dello stipendio",
+    "hourlyToSalary": "Da oraria a stipendio",
+    "guides": "Guide",
+    "disclaimerLabel": "Avvertenza:",
+    "disclaimer": "IncomeTally fornisce calcolatori di reddito e imposte solo a scopo informativo. I risultati sono stime e potrebbero non riflettere gli obblighi fiscali reali o i risultati finanziari. Questo sito non fornisce consulenza finanziaria, fiscale o legale. Consulta sempre un professionista qualificato per indicazioni personalizzate.",
+    "rights": "Tutti i diritti riservati."
+  },
+  "home": {
+    "meta": {
+      "title": "Calcolatore Stipendio Netto — Retribuzione Netta dopo le Tasse per 9 Paesi | IncomeTally",
+      "description": "Calcola il tuo stipendio netto dopo l'imposta sul reddito e i contributi previdenziali. Gratuito, senza registrazione, stime specifiche per paese per l'anno fiscale 2026 in Stati Uniti, Germania, Regno Unito, Polonia, Francia, Spagna, Italia, Svezia e Portogallo."
+    },
+    "hero": {
+      "title": "Calcolatore Stipendio Netto Gratuito",
+      "highlightWords": [
+        "Calcolatore",
+        "Stipendio",
+        "Netto"
+      ],
+      "subtitle": "Inserisci la tua retribuzione lorda e scopri lo stipendio netto stimato dopo l'imposta sul reddito e i contributi previdenziali — per l'anno fiscale 2026, in 9 paesi. Nessuna registrazione e i tuoi dati restano nel tuo browser.",
+      "getStarted": "Inizia ora",
+      "browseGuides": "Sfoglia le guide",
+      "trustLine": "Gratuito · Senza registrazione · I tuoi dati restano nel tuo browser."
+    },
+    "about": {
+      "heading": "Cosa fa IncomeTally",
+      "p1": "IncomeTally è un <calc>calcolatore di stipendio netto</calc> gratuito basato sul browser che trasforma uno stipendio lordo in una stima del tuo stipendio netto, ovvero la retribuzione che ti resta in tasca. Inserisci quanto guadagni — su base oraria, mensile o annuale — scegli il tuo paese e noi applichiamo gli scaglioni dell'imposta sul reddito 2026 di quel paese e i contributi previdenziali obbligatori per mostrarti ciò che arriva davvero sul tuo conto. Con JavaScript abilitato, il calcolo viene eseguito nel tuo browser e le cifre del tuo reddito non vengono inviate ai nostri server — vengono richiesti solo il tuo paese e l'anno fiscale per caricare le aliquote corrette. Non è necessario creare un account.",
+      "p2": "La differenza tra il tuo <gross>stipendio lordo e il tuo stipendio netto</gross> raramente è evidente. I sistemi fiscali progressivi applicano aliquote più elevate solo al reddito che supera la soglia di ciascuno scaglione, quindi la tua aliquota marginale — l'aliquota sull'ultimo euro o dollaro guadagnato — è quasi sempre più alta della tua aliquota effettiva, ovvero la quota dell'intero stipendio destinata alle tasse. Oltre all'imposta sul reddito, la maggior parte dei paesi trattiene <social>contributi previdenziali</social> per pensioni, sanità e copertura contro la disoccupazione. IncomeTally separa queste voci una per una, così vedi dove vanno i tuoi soldi, non solo il totale finale.",
+      "whoHeading": "A chi è rivolto",
+      "whoBody": "È pensato per i dipendenti che vogliono verificare se una busta paga è corretta, per chi cerca lavoro e confronta due offerte in termini di retribuzione netta reale, per i liberi professionisti che stimano quanto accantonare e per chiunque stia valutando un trasferimento tra paesi. Se ti sei mai chiesto perché un aumento è sembrato più piccolo della cifra dichiarata, questo è lo strumento che te lo spiega."
+    },
+    "howItWorks": {
+      "heading": "Come funziona",
+      "steps": [
+        {
+          "title": "Scegli il tuo paese",
+          "body": "Seleziona uno dei nove paesi supportati affinché il calcolatore carichi i corretti scaglioni fiscali 2026, le detrazioni e le aliquote dei contributi previdenziali."
+        },
+        {
+          "title": "Inserisci la tua retribuzione",
+          "body": "Digita il tuo reddito lordo come cifra oraria, mensile o annuale. Il calcolatore converte automaticamente tra i diversi periodi di paga e puoi impostare opzioni come lo stato civile o la regione dove applicabili."
+        },
+        {
+          "title": "Visualizza il dettaglio",
+          "body": "Ottieni il tuo stipendio netto stimato insieme a un dettaglio voce per voce dell'imposta sul reddito e dei contributi previdenziali, oltre alle tue aliquote marginale ed effettiva."
+        }
+      ],
+      "cta": "Apri il calcolatore"
+    },
+    "calculators": {
+      "heading": "Calcolatori",
+      "intro": "Inizia con uno strumento generale, oppure vai direttamente al tuo paese qui sotto.",
+      "tools": [
+        {
+          "title": "Calcolatore Stipendio Netto",
+          "body": "Converti qualsiasi stipendio lordo in retribuzione netta stimata con un dettaglio completo di tasse e contributi.",
+          "cta": "Calcola lo stipendio netto →"
+        },
+        {
+          "title": "Hub Calcolatori Stipendio",
+          "body": "Parti dal tuo paese ed esplora le regole fiscali 2026, gli scaglioni e i contributi previdenziali.",
+          "cta": "Sfoglia per paese →"
+        },
+        {
+          "title": "Da Orario a Stipendio",
+          "body": "Trasforma una tariffa oraria in reddito settimanale, mensile e annuale — poi scoprilo al netto delle tasse.",
+          "cta": "Converti la tariffa oraria →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Calcolatori di stipendio per paese",
+      "subtitle": "Stime per l'anno fiscale 2026 basate sugli scaglioni ufficiali dell'imposta sul reddito e sui contributi previdenziali di ciascun paese.",
+      "cardSuffix": "Calcolatore Stipendio",
+      "cardMeta": "{currency} · anno fiscale 2026",
+      "note": "La maggior parte dei calcolatori consente di impostare opzioni come lo stato civile o la regione dove applicabili; le opzioni disponibili variano da paese a paese. Consulta la pagina di ciascun paese per i dati richiesti e le sue fonti ufficiali.",
+      "seeAll": "Vedi tutti i calcolatori →"
+    },
+    "pillarsSection": {
+      "heading": "Scopri come viene calcolata la tua retribuzione",
+      "intro": "Guide in linguaggio semplice su reddito, tasse e pianificazione dello stipendio — redatte e verificate internamente, con fonti e date di ultimo aggiornamento.",
+      "viewAll": "Vedi tutte le guide →"
+    },
+    "trust": {
+      "badge": "Dati aggiornati all'anno fiscale 2026 · Ultima revisione giugno 2026",
+      "heading": "Da dove provengono i nostri dati",
+      "body": "I calcolatori e le guide di IncomeTally sono gestiti dal Team Editoriale di IncomeTally. Costruiamo la logica fiscale di ciascun paese a partire dai dati pubblicamente disponibili pubblicati dalle autorità fiscali e previdenziali ufficiali, spieghiamo i concetti in linguaggio semplice con esempi pratici e verifichiamo i dati rispetto alle aliquote ufficiali di ogni anno. Ogni calcolatore per paese mostra le sue fonti specifiche e l'anno fiscale a cui si riferisce.",
+      "standardsHeading": "I nostri standard",
+      "standards": [
+        "Fonti ufficiali",
+        "Linguaggio semplice",
+        "Revisione annuale",
+        "Stime, non consulenza"
+      ],
+      "aboutLink": "Scopri di più su di noi e sui nostri standard editoriali →",
+      "sourcesHeading": "Fonti ufficiali per paese",
+      "sourcesNote": "La pagina di ciascun paese rimanda alle fonti specifiche utilizzate per i suoi dati.",
+      "disclaimerLabel": "Stime, non consulenza.",
+      "disclaimer": "IncomeTally fornisce calcolatori di reddito e tasse solo a scopo informativo ed educativo. I risultati sono stime e potrebbero non riflettere i tuoi effettivi obblighi fiscali o i tuoi risultati finanziari. Questo sito web non è affiliato ad alcun governo o autorità fiscale e non fornisce consulenza finanziaria, fiscale o legale. Consulta sempre un professionista qualificato per una guida personalizzata."
+    },
+    "faqHeading": "Domande frequenti",
+    "faqs": [
+      {
+        "question": "IncomeTally è gratuito?",
+        "answer": "Sì. Ogni calcolatore e guida su IncomeTally è gratuito e non è necessario creare un account. I tuoi dati vengono elaborati nel tuo browser e non vengono memorizzati sui nostri server."
+      },
+      {
+        "question": "Quali paesi e quale anno fiscale copre il calcolatore?",
+        "answer": "IncomeTally copre nove paesi — Stati Uniti, Germania, Regno Unito, Polonia, Francia, Spagna, Italia, Svezia e Portogallo — utilizzando le regole 2026 dell'imposta sul reddito e dei contributi previdenziali. L'anno fiscale applicabile è indicato su ciascun calcolatore."
+      },
+      {
+        "question": "Qual è la differenza tra stipendio lordo e netto?",
+        "answer": "Lo stipendio lordo è la tua retribuzione totale prima di qualsiasi trattenuta. Lo stipendio netto — la retribuzione che ti resta in tasca — è ciò che rimane dopo aver sottratto l'imposta sul reddito e i contributi previdenziali obbligatori. IncomeTally mostra il dettaglio completo così puoi vedere esattamente cosa viene trattenuto e perché."
+      },
+      {
+        "question": "Quanto sono accurati i risultati?",
+        "answer": "I calcolatori utilizzano gli scaglioni, le detrazioni e le aliquote contributive ufficiali del 2026, ma si tratta di stime. La retribuzione netta reale può variare in base a circostanze personali come detrazioni aggiuntive, regole regionali, stato civile, benefit e trattenute una tantum. Considera i risultati come una stima ben documentata, non come una dichiarazione dei redditi."
+      },
+      {
+        "question": "Posso convertire tra retribuzione oraria, mensile e annuale?",
+        "answer": "Sì. Inserisci la tua retribuzione in uno qualsiasi di questi periodi e il calcolatore la converte in tutti gli altri, mostrando poi l'equivalente al netto. Il nostro strumento Da Orario a Stipendio si concentra specificamente sulle conversioni salariali, se è tutto ciò di cui hai bisogno."
+      },
+      {
+        "question": "Da dove provengono i vostri dati fiscali e IncomeTally fornisce consulenza finanziaria?",
+        "answer": "I nostri dati provengono dalle autorità fiscali e previdenziali ufficiali di ciascun paese, come l'IRS e la SSA, l'HMRC e il Bundesfinanzministerium tedesco, e la pagina di ciascun paese rimanda alle fonti specifiche utilizzate. IncomeTally è solo uno strumento informativo: non fornisce consulenza finanziaria, fiscale o legale e non è affiliato ad alcun governo o autorità fiscale. Per le decisioni relative alle tue tasse o alle tue finanze, consulta un professionista qualificato."
+      }
+    ]
+  },
+  "common": {
+    "lastUpdated": "Ultimo aggiornamento:",
+    "backToHome": "Torna alla home"
+  },
+  "country": {
+    "h1Suffix": "Calcolatore delle Tasse sullo Stipendio",
+    "allCalculators": "← Tutti i Calcolatori",
+    "hourlyConverter": "Convertitore da Paga Oraria a Stipendio",
+    "otherCountries": "Altri Paesi:",
+    "howItWorksHeading": "Come Funzionano le Tasse sullo Stipendio in {country}",
+    "faqHeading": "Domande Frequenti",
+    "relatedHeading": "Risorse Correlate",
+    "relatedHub": "Hub dei Calcolatori di Stipendio",
+    "calculatorSuffix": "Calcolatore di Stipendio"
+  },
+  "guides": {
+    "metaTitle": "Guide su Stipendio e Tasse - Articoli di esperti sul calcolo del reddito",
+    "metaDescription": "Guide complete sul calcolo dello stipendio, scaglioni fiscali, detrazioni e reddito netto. Scopri come calcolare lo stipendio netto e comprendere i sistemi fiscali.",
+    "title": "Guide su Stipendio e Tasse",
+    "intro": "Articoli di esperti sul calcolo dello stipendio, sui sistemi fiscali, sulle detrazioni e su come capire il tuo stipendio netto, organizzati in tre pilastri tematici.",
+    "startHere": "Inizia da qui · Guida principale",
+    "published": "Pubblicato",
+    "updated": "Aggiornato",
+    "by": "Di",
+    "faqHeading": "Domande frequenti",
+    "sourcesHeading": "Fonti e approfondimenti",
+    "aboutAuthorHeading": "Informazioni sull'autore",
+    "editorialStandards": "Leggi i nostri standard editoriali →",
+    "moreInPillar": "Altri contenuti in {pillar}",
+    "relatedGeneric": "Guide correlate",
+    "tryCalculators": "Prova i calcolatori",
+    "toc": "Indice",
+    "breadcrumbHome": "Home",
+    "breadcrumbGuides": "Guide",
+    "linkHub": "Hub Calcolatore Stipendio",
+    "linkNet": "Calcolatore Stipendio Netto",
+    "linkHourly": "Convertitore da Orario a Stipendio"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Modalità di reddito",
+      "grossIncome": "Reddito lordo",
+      "country": "Paese",
+      "taxYear": "Anno fiscale",
+      "hoursPerWeek": "Ore a settimana",
+      "weeksPerYear": "Settimane all'anno",
+      "calculateNetIncome": "Calcola reddito netto",
+      "salaryPeriod": "Periodo di retribuzione",
+      "salaryPeriodAria": "Selezione del periodo di retribuzione"
+    },
+    "mode": {
+      "hourly": "Oraria",
+      "monthly": "Mensile",
+      "yearly": "Annuale"
+    },
+    "period": {
+      "hourly": "oraria",
+      "monthly": "mensile",
+      "annual": "annuale"
+    },
+    "yesNo": {
+      "yes": "Sì",
+      "no": "No"
+    },
+    "country": {
+      "US": "Stati Uniti",
+      "USFederalOnly": "Stati Uniti (solo federale)",
+      "DE": "Germania",
+      "UK": "Regno Unito",
+      "PL": "Polonia",
+      "FR": "Francia",
+      "ES": "Spagna",
+      "IT": "Italia",
+      "SE": "Svezia",
+      "PT": "Portogallo"
+    },
+    "countrySelect": {
+      "label": "Seleziona il paese",
+      "helper": "Scegli il tuo paese per calcolare le imposte di conseguenza"
+    },
+    "actions": {
+      "copyShareLink": "Copia link di condivisione",
+      "copied": "Copiato!",
+      "shareLinkPrefix": "Link di condivisione:"
+    },
+    "status": {
+      "loading": "Caricamento dei dati fiscali...",
+      "empty": "Inserisci il tuo reddito per vedere i calcoli"
+    },
+    "validation": {
+      "incomePositive": "Il reddito deve essere un numero positivo",
+      "incomeMax": "Il reddito non può superare {max} ({mode})",
+      "hoursMin": "Le ore devono essere almeno {min}",
+      "hoursMax": "Le ore non possono superare {max}",
+      "weeksMin": "Le settimane devono essere almeno {min}",
+      "weeksMax": "Le settimane non possono superare {max}"
+    },
+    "de": {
+      "taxClass": "Classe fiscale",
+      "healthInsurance": "Assicurazione sanitaria",
+      "privateNoteLabel": "Nota:",
+      "privateNoteBody": "L'assicurazione sanitaria privata si paga separatamente e non viene detratta dallo stipendio. Il reddito netto mostrato sopra non include i costi dell'assicurazione privata, che paghi direttamente al tuo assicuratore.",
+      "state": "Il tuo Land",
+      "inChurch": "Iscritto alla Chiesa?",
+      "churchAria": "Selezione dell'appartenenza religiosa",
+      "haveChildren": "Hai figli?",
+      "childrenAria": "Selezione dei figli",
+      "childrenNote": "Usato per l'assicurazione per l'assistenza a lungo termine (Pflegeversicherung). Per il 2026 significa: con figli ~1,80% a carico del dipendente (nella maggior parte dei Land), senza figli ~2,40% (include il supplemento per chi non ha figli). La Sassonia usa una ripartizione diversa."
+    },
+    "us": {
+      "filingStatus": "Stato di dichiarazione",
+      "employmentType": "Tipo di impiego",
+      "deductionMethod": "Metodo di detrazione",
+      "itemizedDeductions": "Detrazioni analitiche",
+      "childrenUnder17": "Figli (sotto i 17 anni)",
+      "otherDependents": "Altre persone a carico",
+      "taxpayerOver65": "Contribuente 65+",
+      "taxpayerBlind": "Contribuente non vedente",
+      "spouseOver65": "Coniuge 65+",
+      "spouseBlind": "Coniuge non vedente",
+      "preTax401k": "401(k) / previdenza al lordo delle imposte",
+      "preTaxHSA": "HSA al lordo delle imposte",
+      "otherPreTax": "Altre detrazioni al lordo delle imposte",
+      "stateTaxRate": "Aliquota fiscale statale (stima, %)",
+      "localTaxRate": "Aliquota fiscale locale (stima, %)"
+    },
+    "uk": {
+      "region": "Regione",
+      "preTaxPension": "Contributi pensionistici al lordo delle imposte",
+      "preTaxOther": "Altre detrazioni al lordo delle imposte",
+      "studentLoanPlan": "Piano di prestito studentesco",
+      "studentLoanNote": "Nota: il piano dipende da dove/quando hai studiato, non da dove lavori.",
+      "marriageAllowance": "Detrazione coniugale (Marriage Allowance)?",
+      "marriageAllowanceAria": "Selezione della detrazione coniugale",
+      "marriageAllowanceNote": "Per un contribuente con aliquota base il cui coniuge/partner civile non è contribuente (sgravio fino a £252).",
+      "children": "Figli (per l'addebito Child Benefit)",
+      "childrenNote": "Usato per l'High Income Child Benefit Charge (si applica sui redditi superiori a £60.000)."
+    },
+    "pl": {
+      "filingStatus": "Stato di dichiarazione",
+      "children": "Figli (per lo sgravio per figli)",
+      "preTax": "Contributi deducibili (es. IKZE,",
+      "under26": "Sgravio per i giovani (sotto i 26 anni)?",
+      "under26Aria": "Selezione dello sgravio under 26",
+      "under26Note": "Esenta il reddito da lavoro fino a 85.528 PLN dall'imposta sul reddito (ZUS e contributi sanitari restano dovuti)."
+    },
+    "pt": {
+      "region": "Regione",
+      "filingStatus": "Stato di dichiarazione",
+      "dependants": "Persone a carico"
+    },
+    "se": {
+      "municipality": "Comune",
+      "customRate": "Aliquota fiscale comunale (%)",
+      "churchMember": "Membro della Chiesa di Svezia?",
+      "churchAria": "Selezione dell'appartenenza religiosa",
+      "churchNote": "Aggiunge la quota ecclesiastica (kyrkoavgift). L'imposta sul reddito riflette già la deduzione di base e il credito jobbskatteavdrag (sotto i 66 anni)."
+    },
+    "it": {
+      "region": "Regione (addizionale regionale)",
+      "customRegionalRate": "Aliquota addizionale regionale (%)",
+      "municipalRate": "Aliquota addizionale comunale (%)",
+      "dependentChildren": "Figli a carico (età 21–29)",
+      "dependentChildrenNote": "I figli sotto i 21 anni sono coperti dall'Assegno Unico (non in busta paga). Le addizionali regionali e comunali variano in base alla località.",
+      "dependentSpouse": "Coniuge a carico?",
+      "dependentSpouseAria": "Selezione del coniuge a carico",
+      "dependentSpouseNote": "Un coniuge con reddito scarso o nullo (coniuge a carico) dà un credito d'imposta fino a €800."
+    },
+    "es": {
+      "community": "Comunità autonoma",
+      "filingStatus": "Stato di dichiarazione",
+      "children": "Figli (discendenti a carico)",
+      "childrenNote": "Le aliquote regionali variano in base alla comunità; País Vasco e Navarra usano sistemi forali separati non trattati qui."
+    },
+    "fr": {
+      "household": "Nucleo familiare",
+      "children": "Figli a carico",
+      "childrenNote": "Aggiunge parti del quoziente familiare (+0,5 per ciascuno dei primi due figli, +1 dal terzo), con il beneficio limitato (plafonnement). Stima per un nucleo familiare singolo/unico percettore di reddito."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Non sposato, senza figli",
+        "2": "Genitore single",
+        "3": "Sposato (reddito più alto del partner)",
+        "4": "Sposato (reddito uguale al partner)",
+        "5": "Sposato (reddito più basso del partner)",
+        "6": "Reddito secondario e aggiuntivo"
+      },
+      "deHealthInsurance": {
+        "public": "Pubblica / Obbligatoria (GKV)",
+        "private-without": "Privata (senza contributo del datore di lavoro)",
+        "private-with": "Privata (con contributo del datore di lavoro)"
+      },
+      "usFilingStatus": {
+        "single": "Single",
+        "mfj": "Coniugi con dichiarazione congiunta",
+        "mfs": "Coniugi con dichiarazione separata",
+        "hoh": "Capofamiglia"
+      },
+      "usEmploymentType": {
+        "employee": "Dipendente (W-2)",
+        "selfEmployed": "Lavoratore autonomo (stima imposta SE)"
+      },
+      "usDeductionMethod": {
+        "auto": "Auto (max tra standard e analitica)",
+        "standard": "Detrazione standard",
+        "itemized": "Detrazioni analitiche"
+      },
+      "ukRegion": {
+        "england": "Inghilterra",
+        "wales": "Galles",
+        "ni": "Irlanda del Nord",
+        "scotland": "Scozia (non ancora supportata)"
+      },
+      "ukStudentLoan": {
+        "none": "Nessuno",
+        "plan2": "Piano 2 (9% oltre £{threshold})",
+        "plan4": "Piano 4 (9% oltre £{threshold})",
+        "plan5": "Piano 5 (9% oltre £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Single",
+        "joint": "Sposato — dichiarazione congiunta (unico percettore)"
+      },
+      "ptRegion": {
+        "mainland": "Continente (Continente)",
+        "azores": "Azzorre (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Single",
+        "joint": "Sposato — tassazione congiunta (unico percettore)"
+      },
+      "esFilingStatus": {
+        "single": "Individuale",
+        "joint": "Dichiarazione congiunta (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Single (1 parte)",
+        "married": "Sposato / PACS — congiunta (2 parti)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Assicurazione sanitaria",
+      "longTermCareInsurance": "Assicurazione per l'assistenza a lungo termine",
+      "pensionInsurance": "Assicurazione pensionistica",
+      "unemploymentInsurance": "Assicurazione contro la disoccupazione",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Imposta Medicare aggiuntiva",
+      "seTaxSocialSecurity": "Imposta sul lavoro autonomo (Social Security)",
+      "seTaxMedicare": "Imposta sul lavoro autonomo (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (Classe 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (Classe 1, superiore)",
+      "plPension": "Assicurazione pensionistica (Emerytalne)",
+      "plDisability": "Assicurazione di invalidità (Rentowe)",
+      "plSickness": "Assicurazione contro le malattie (Chorobowe)",
+      "plHealth": "Assicurazione sanitaria (Zdrowotne)",
+      "ptSocialSecurity": "Previdenza sociale (Segurança Social)",
+      "seChurchFee": "Quota ecclesiastica (kyrkoavgift)",
+      "itInps": "Contributo pensionistico INPS",
+      "itRegionalMunicipalSurtax": "Addizionali regionale e comunale (addizionali)",
+      "esCommonContingencies": "Contingenze comuni (Seguridad Social)",
+      "esMei": "Contributo di solidarietà MEI",
+      "esTraining": "Formazione (Formación profesional)",
+      "esUnemployment": "Disoccupazione (Desempleo)",
+      "esSocialSecurity": "Previdenza sociale (Seguridad Social)",
+      "frCsgDeductible": "CSG (deducibile)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (non deducibile)",
+      "frSocialSecurityPension": "Contributi previdenziali e pensionistici",
+      "frPension": "Pensione (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Risultati del calcolo",
+      "netIncome": "Reddito netto",
+      "netHourly": "Netto orario",
+      "netHourlyAfterSacrifice": "Netto orario (dopo salary sacrifice)",
+      "netMonthly": "Netto mensile",
+      "netYearly": "Netto annuale",
+      "effectiveTaxRate": "Aliquota fiscale effettiva",
+      "taxAndNiRate": "Aliquota imposte e NI",
+      "salarySacrificeRate": "Aliquota salary sacrifice",
+      "totalNonCashShare": "Quota totale non monetaria",
+      "breakdown": "Dettaglio",
+      "grossIncome": "Reddito lordo",
+      "preTaxDeductionsEntered": "Detrazioni al lordo delle imposte (inserite)",
+      "preTaxDeductionsAppliedCapped": "Detrazioni al lordo delle imposte (applicate, con tetto)",
+      "preTaxDeductions": "Detrazioni al lordo delle imposte",
+      "adjustedGrossIncome": "Reddito lordo rettificato (AGI)",
+      "salarySacrifice": "Salary sacrifice (pensione e al lordo delle imposte)",
+      "adjustedIncomeAfterSacrifice": "Reddito rettificato (dopo salary sacrifice)",
+      "preTaxContributions": "Contributi al lordo delle imposte",
+      "standardDeduction": "Detrazione standard",
+      "itemizedDeduction": "Detrazione analitica",
+      "allowances": "Detrazioni/franchigie",
+      "taxableIncome": "Reddito imponibile",
+      "incomeTax": "Imposta sul reddito",
+      "incomeTaxDE": "Imposta sul reddito totale (ESt + Soli + Chiesa)",
+      "incomeTaxUS": "Imposta sul reddito (federale + statale + locale)",
+      "studentLoan": "Prestito studentesco",
+      "plan2": "Piano 2",
+      "plan4": "Piano 4",
+      "plan5": "Piano 5",
+      "marriageAllowanceRelief": "Detrazione coniugale (sgravio)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Supplemento di solidarietà (Soli)",
+      "churchTax": "Imposta ecclesiastica (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Imposta federale sul reddito (prima dei crediti)",
+      "taxCreditsApplied": "Crediti d'imposta (applicati)",
+      "federalIncomeTaxAfterCredits": "Imposta federale sul reddito (dopo i crediti)",
+      "stateIncomeTax": "Imposta statale sul reddito (stima)",
+      "localIncomeTax": "Imposta locale sul reddito (stima)",
+      "saxonySplit": "(ripartizione Sassonia)",
+      "cappedOn": "su",
+      "totalSocialContributions": "Contributi sociali totali",
+      "taxesAndNi": "Imposte e NI",
+      "cashInHand": "Importo netto in mano"
+    },
+    "example": {
+      "heading": "Esempio di calcolo",
+      "perHour": "all'ora",
+      "perMonth": "al mese",
+      "perYear": "all'anno",
+      "netIncomeAnnual": "Reddito netto (annuale)",
+      "basedOnPrefix": "Basato su",
+      "hourlyNote": "({hours} ore/settimana, {weeks} settimane/anno)",
+      "monthlyNote": "(12 mesi/anno)",
+      "forTaxYear": "per l'anno fiscale {year}."
+    },
+    "disclaimer": {
+      "title": "Avvertenza sulla stima fiscale",
+      "noteLabel": "Nota:",
+      "us": "Questi calcoli sono stime basate solo sulle aliquote fiscali federali. Le imposte statali e locali non sono incluse e possono influire significativamente sul tuo carico fiscale totale.",
+      "default": "Questi calcoli sono stime e potrebbero non includere le imposte locali o regionali. Consulta le fonti ufficiali o un professionista fiscale per cifre accurate."
+    },
+    "dataSources": {
+      "heading": "Fonti dei dati",
+      "intro": "Le nostre stime per {country} si basano su cifre disponibili pubblicamente provenienti da fonti ufficiali governative e delle autorità fiscali. Le aliquote e le soglie cambiano ogni anno fiscale, quindi le rivediamo periodicamente. Questi risultati sono stime, non accertamenti fiscali ufficiali né consulenza.",
+      "editorialPrefix": "Consulta i nostri",
+      "editorialLink": "standard editoriali",
+      "editorialSuffix": "per sapere come ricerchiamo e aggiorniamo questi dati."
+    }
+  },
+  "hub": {
+    "metaTitle": "Hub Calcolatore Tasse sullo Stipendio - Calcola il Reddito Netto per Paese",
+    "metaDescription": "Calcolatori gratuiti delle tasse sullo stipendio per diversi paesi. Calcola il tuo reddito netto dopo tasse e contributi sociali negli USA, in Germania, nel Regno Unito e altro.",
+    "title": "Hub Calcolatore Tasse sullo Stipendio",
+    "intro1": "Calcola il tuo reddito netto dopo tasse e contributi sociali. I nostri calcolatori gratuiti ti aiutano a capire quanto porterai a casa nei diversi paesi, con suddivisioni dettagliate di imposta sul reddito, contributi previdenziali e altre trattenute.",
+    "intro2": "Seleziona un paese qui sotto per iniziare, oppure scegli una modalità di calcolo adatta alle tue esigenze.",
+    "byCountryHeading": "Calcola per Paese",
+    "calculateCta": "Calcola →",
+    "hourlyTitle": "Calcolatore Reddito Orario",
+    "monthlyTitle": "Calcolatore Stipendio Mensile",
+    "yearlyTitle": "Calcolatore Stipendio Annuale",
+    "chooseModeHeading": "Scegli la Modalità di Calcolo",
+    "converterTitle": "Convertitore da Paga Oraria a Stipendio",
+    "converterBody": "Converti la tua paga oraria in stipendio annuale, mensile e settimanale. Perfetto per comprendere la tua retribuzione totale durante una trattativa o nel confronto tra offerte di lavoro.",
+    "converterCta": "Converti la Paga Oraria →",
+    "hourlyBody": "Calcola il reddito netto quando conosci la tua paga oraria. Include opzioni per ore settimanali e settimane annuali personalizzate, in base al tuo orario di lavoro.",
+    "hourlyCta": "Calcola la Paga Oraria →",
+    "monthlyBody": "Calcola il tuo reddito netto mensile dopo le tasse. Ideale per pianificare il budget e capire quanto porti a casa ogni mese.",
+    "monthlyCta": "Calcola Mensile →",
+    "yearlyBody": "Calcola il tuo reddito netto annuale partendo dallo stipendio lordo annuo. Visualizza la suddivisione completa di tasse e trattenute per l'intero anno.",
+    "yearlyCta": "Calcola Annuale →",
+    "faqHeading": "Domande Frequenti"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Calcolatore Stipendio e Tasse — Stima il Tuo Reddito Netto",
+      "description": "Calcolatore gratuito delle tasse sullo stipendio. Inserisci il tuo reddito lordo per stimare la retribuzione netta, l'imposta sul reddito e i contributi sociali per USA, Germania e Regno Unito nel 2026.",
+      "ogDescription": "Calcolatore gratuito delle tasse sullo stipendio. Stima la retribuzione netta, l'imposta sul reddito e i contributi sociali per USA, Germania e Regno Unito."
+    },
+    "title": "Calcolatore Stipendio e Tasse",
+    "intro": "Stima il tuo reddito netto (quanto porti a casa) dopo l'imposta sul reddito e i contributi sociali. Inserisci il tuo stipendio lordo, scegli il paese e il periodo di paga e ottieni una suddivisione immediata per l'anno fiscale 2026.",
+    "howItWorks": {
+      "heading": "Come Funziona il Calcolatore",
+      "p1": "Il nostro calcolatore converte il tuo reddito lordo in una stima di quanto porti a casa, utilizzando scaglioni fiscali e aliquote dei contributi sociali aggiornati per ciascun paese supportato. Puoi inserire il reddito come paga oraria, stipendio mensile o importo annuale, e il calcolatore lo annualizza prima di applicare le regole fiscali pertinenti.",
+      "p2": "La suddivisione separa l'imposta sul reddito dai contributi sociali — come Social Security e Medicare negli Stati Uniti, i contributi assicurativi obbligatori in Germania e la National Insurance nel Regno Unito — così puoi vedere esattamente dove vanno i tuoi soldi e qual è la tua aliquota fiscale effettiva.",
+      "p3": "I risultati sono stime a scopo puramente informativo e di pianificazione e non tengono conto di ogni singola circostanza, come tasse statali e locali, crediti d'imposta o benefit in natura. Per consigli specifici sulla tua situazione, consulta un professionista fiscale qualificato."
+    },
+    "related": {
+      "heading": "Esplora i Calcolatori Specifici per Paese",
+      "hub": "Hub Calcolatore Stipendio",
+      "us": "Calcolatore Stipendio Stati Uniti",
+      "de": "Calcolatore Stipendio Germania",
+      "uk": "Calcolatore Stipendio Regno Unito",
+      "hourly": "Convertitore da Paga Oraria a Stipendio",
+      "guides": "Guide su Stipendio e Tasse"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Calcolatore Stipendio Netto - Calcola Quanto Porti a Casa",
+      "description": "Calcolatore gratuito dello stipendio netto. Calcola quanto porti a casa dopo l'imposta sul reddito e i contributi sociali per USA, Germania e Regno Unito."
+    },
+    "title": "Calcolatore Stipendio Netto",
+    "intro": "Calcola il tuo reddito netto (quanto porti a casa) dopo tasse e contributi sociali. Il nostro calcolatore completo dello stipendio ti aiuta a capire esattamente quanto riceverai dopo tutte le trattenute.",
+    "cta": "Vai all'Hub Calcolatore Stipendio →",
+    "breakdownIntro": "Il nostro calcolatore dello stipendio fornisce suddivisioni dettagliate di:",
+    "breakdown": {
+      "gross": "Reddito lordo (prima delle tasse)",
+      "incomeTax": "Calcoli dell'imposta sul reddito",
+      "social": "Contributi previdenziali",
+      "net": "Reddito netto (quanto porti a casa)",
+      "effectiveRate": "Aliquote fiscali effettive"
+    },
+    "availability": "Disponibile per diversi paesi, tra cui Stati Uniti, Germania e Regno Unito. Seleziona il tuo paese per iniziare con calcoli fiscali accurati e aggiornati per il 2026.",
+    "specialized": "Puoi anche accedere ai nostri calcolatori specializzati:",
+    "links": {
+      "hourly": "Convertitore da Paga Oraria a Stipendio",
+      "us": "Calcolatore USA",
+      "de": "Calcolatore Germania",
+      "uk": "Calcolatore Regno Unito"
+    },
+    "explainer": {
+      "heading": "Cos'è lo Stipendio Netto?",
+      "p1": "Il tuo <b>stipendio netto</b> — spesso chiamato quanto porti a casa — è l'importo che arriva effettivamente sul tuo conto bancario dopo che le trattenute obbligatorie sono state sottratte dal tuo stipendio lordo. Lo stipendio lordo è la cifra principale indicata nel tuo contratto di lavoro; lo stipendio netto è ciò che puoi gestire come budget e spendere.",
+      "p2": "La differenza tra i due è composta da <b>imposta sul reddito</b> e <b>contributi sociali</b>. L'imposta sul reddito è solitamente progressiva, il che significa che le porzioni più alte del tuo reddito sono tassate ad aliquote più elevate. I contributi sociali finanziano programmi come le pensioni statali, la sanità e l'assicurazione contro la disoccupazione, e le aliquote esatte dipendono da dove vivi.",
+      "p3": "Poiché ogni paese calcola queste trattenute in modo diverso, lo stesso stipendio lordo può tradursi in importi netti molto diversi negli Stati Uniti, in Germania o nel Regno Unito. Scegli il tuo paese qui sopra per vedere una suddivisione dettagliata e specifica per paese relativa all'anno fiscale 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Convertitore da Paga Oraria a Stipendio - Calcola il Reddito Annuale, Mensile e Settimanale",
+      "description": "Converti la paga oraria in stipendio annuale, mensile e settimanale. Calcolatore gratuito con formule ed esempi. Perfetto per trattative di lavoro e confronti salariali.",
+      "ogDescription": "Converti la paga oraria in stipendio annuale, mensile e settimanale. Calcolatore gratuito con formule ed esempi."
+    },
+    "title": "Convertitore da Paga Oraria a Stipendio",
+    "intro": "Converti la tua paga oraria in stipendio annuale, mensile, settimanale e giornaliero. Comprendi la tua retribuzione totale durante le trattative per un'offerta di lavoro o nel confronto tra posizioni.",
+    "calc": {
+      "heading": "Calcola il Tuo Reddito Netto",
+      "intro": "Inserisci la tua paga oraria qui sotto per calcolare il tuo reddito lordo e netto. Il calcolatore è preimpostato in modalità oraria e mostrerà quanto porti a casa dopo le tasse."
+    },
+    "formulas": {
+      "heading": "Formule di Conversione",
+      "annual": {
+        "title": "Stipendio Annuale dalla Paga Oraria",
+        "code": "Stipendio Annuale = Paga Oraria × Ore a Settimana × Settimane all'Anno",
+        "note": "Calcolo standard: moltiplica la tua paga oraria per 40 ore a settimana e 52 settimane all'anno."
+      },
+      "monthly": {
+        "title": "Stipendio Mensile",
+        "code": "Stipendio Mensile = Stipendio Annuale ÷ 12",
+        "note": "Dividi lo stipendio annuale per 12 mesi. Nota: questo fornisce un importo mensile medio; la paga mensile effettiva può variare in caso di pagamento bisettimanale o quindicinale."
+      },
+      "weekly": {
+        "title": "Stipendio Settimanale",
+        "code": "Stipendio Settimanale = Paga Oraria × Ore a Settimana",
+        "note": "Moltiplica semplicemente la tua paga oraria per il numero di ore che lavori a settimana."
+      },
+      "daily": {
+        "title": "Stipendio Giornaliero",
+        "code": "Stipendio Giornaliero = Paga Oraria × Ore al Giorno",
+        "note": "Per una giornata lavorativa di 8 ore, moltiplica la tua paga oraria per 8."
+      },
+      "grossNote": "<b>Nota:</b> queste formule calcolano il reddito lordo (al lordo delle tasse). Usa il calcolatore qui sotto per vedere quanto porti a casa al netto di tasse e trattenute."
+    },
+    "examples": {
+      "heading": "Esempi",
+      "annualGross": "Lordo Annuale:",
+      "monthlyGross": "Lordo Mensile:",
+      "weeklyGross": "Lordo Settimanale:",
+      "dailyGross": "Lordo Giornaliero",
+      "ex1": {
+        "title": "Esempio 1: $25 all'ora, 40 ore/settimana, 52 settimane/anno",
+        "annual": "<b>Lordo Annuale:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Lordo Mensile:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Lordo Settimanale:</b> $25 × 40 = $1,000",
+        "daily": "<b>Lordo Giornaliero (8 ore):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Esempio 2: $30 all'ora, 35 ore/settimana, 50 settimane/anno",
+        "annual": "<b>Lordo Annuale:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Lordo Mensile:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Lordo Settimanale:</b> $30 × 35 = $1,050",
+        "daily": "<b>Lordo Giornaliero (7 ore):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Esempio 3: $20 all'ora, 40 ore/settimana, 48 settimane/anno (con 4 settimane di permesso non retribuito)",
+        "annual": "<b>Lordo Annuale:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Lordo Mensile:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Lordo Settimanale:</b> $20 × 40 = $800",
+        "note": "Nota: modificare le settimane all'anno tiene conto di permessi non retribuiti, ferie o lavoro stagionale."
+      }
+    },
+    "faq": {
+      "heading": "Domande Frequenti",
+      "items": [
+        {
+          "question": "Qual è la differenza tra stipendio lordo e netto?",
+          "answer": "Lo stipendio lordo è il tuo guadagno totale prima di tasse e trattenute. Lo stipendio netto (quanto porti a casa) è ciò che ricevi dopo che sono stati sottratti l'imposta sul reddito, i contributi previdenziali e altre trattenute obbligatorie. Il calcolatore qui sopra mostra sia gli importi lordi sia quelli netti."
+        },
+        {
+          "question": "Quante settimane dovrei usare nel calcolo?",
+          "answer": "Lo standard è di 52 settimane all'anno per i dipendenti a tempo pieno. Tuttavia, se hai permessi non retribuiti, lavori stagionalmente o prendi congedi prolungati, adegua di conseguenza. Ad esempio, 2 settimane di ferie non retribuite significherebbero 50 settimane all'anno."
+        },
+        {
+          "question": "Dovrei includere gli straordinari nella mia paga oraria?",
+          "answer": "Per calcoli accurati dello stipendio annuale, usa la tua paga oraria base e le ore standard. Se fai regolarmente straordinari, puoi: (1) calcolare lo stipendio base separatamente e aggiungere gli straordinari stimati, oppure (2) usare una paga oraria media che tenga conto degli straordinari. Il calcolatore ti permette di modificare le ore a settimana per riflettere il tuo orario effettivo."
+        },
+        {
+          "question": "Come converto lo stipendio nuovamente in paga oraria?",
+          "answer": "Per convertire lo stipendio annuale in paga oraria: Paga Oraria = Stipendio Annuale ÷ (Ore a Settimana × Settimane all'Anno). Ad esempio, $52,000 ÷ (40 × 52) = $25 all'ora. Usa il nostro calcolatore al contrario inserendo il tuo stipendio annuale e selezionando la modalità annuale."
+        }
+      ],
+      "countriesQuestion": "Questi calcoli sono accurati per tutti i paesi?",
+      "countriesAnswer": "Le formule di conversione (da oraria ad annuale, mensile, ecc.) sono universali. Tuttavia, i calcoli del reddito netto variano da paese a paese a causa dei diversi sistemi fiscali. Usa i calcolatori specifici per paese sul nostro <link>Hub Calcolatore Stipendio</link> per stime accurate del reddito netto.",
+      "partTimeQuestion": "E se lavoro part-time o ho orari irregolari?",
+      "partTimeAnswer": "Per il lavoro part-time, inserisci le tue ore effettive a settimana. Per orari irregolari, calcola una media delle ore settimanali su un periodo più lungo (ad es. 3-6 mesi) e usa quella. Il calcolatore consente di personalizzare le ore a settimana e le settimane all'anno per adattarsi a qualsiasi orario di lavoro."
+    },
+    "related": {
+      "heading": "Risorse Correlate",
+      "hub": "Hub Calcolatore Stipendio",
+      "us": "Calcolatore Stipendio USA",
+      "de": "Calcolatore Stipendio Germania",
+      "uk": "Calcolatore Stipendio Regno Unito"
+    }
+  }
+}

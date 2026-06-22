@@ -1,0 +1,667 @@
+{
+  "nav": {
+    "salaryCalculator": "Mzdová kalkulačka",
+    "getStarted": "Začít",
+    "aboutUs": "O nás",
+    "guides": "Průvodci",
+    "toggleMenu": "Přepnout menu",
+    "selectLanguage": "Vybrat jazyk"
+  },
+  "footer": {
+    "productTitle": "Produkt",
+    "legalTitle": "Právní informace",
+    "resourcesTitle": "Zdroje",
+    "home": "Domů",
+    "calculator": "Kalkulačka",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "termsOfService": "Podmínky služby",
+    "salaryCalculatorHub": "Centrum mzdových kalkulaček",
+    "hourlyToSalary": "Z hodinové mzdy na plat",
+    "guides": "Průvodci",
+    "disclaimerLabel": "Upozornění:",
+    "disclaimer": "IncomeTally poskytuje kalkulačky příjmů a daní pouze pro informační účely. Výsledky jsou odhady a nemusí odpovídat skutečným daňovým povinnostem ani finančním výsledkům. Tento web neposkytuje finanční, daňové ani právní poradenství. Pro radu na míru se vždy obraťte na kvalifikovaného odborníka.",
+    "rights": "Všechna práva vyhrazena."
+  },
+  "home": {
+    "meta": {
+      "title": "Kalkulačka čisté mzdy — čistý příjem po zdanění pro 9 zemí | IncomeTally",
+      "description": "Spočítejte si čistou mzdu po dani z příjmu a sociálních odvodech. Zdarma, bez registrace, odhady specifické pro jednotlivé země za daňový rok 2026 pro USA, Německo, Velkou Británii, Polsko, Francii, Španělsko, Itálii, Švédsko a Portugalsko."
+    },
+    "hero": {
+      "title": "Kalkulačka čisté mzdy zdarma",
+      "highlightWords": [
+        "Kalkulačka",
+        "čisté",
+        "mzdy"
+      ],
+      "subtitle": "Zadejte svou hrubou mzdu a uvidíte odhad svého čistého příjmu po dani z příjmu a sociálních odvodech — pro daňový rok 2026 a napříč 9 zeměmi. Bez registrace a vaše zadané údaje zůstávají ve vašem prohlížeči.",
+      "getStarted": "Začít",
+      "browseGuides": "Procházet průvodce",
+      "trustLine": "Zdarma · Bez registrace · Vaše údaje zůstávají ve vašem prohlížeči."
+    },
+    "about": {
+      "heading": "Co IncomeTally dělá",
+      "p1": "IncomeTally je bezplatná <calc>kalkulačka čisté mzdy</calc> běžící v prohlížeči, která z hrubé mzdy spočítá odhad vašeho čistého příjmu. Zadáte, kolik vyděláte — hodinově, měsíčně nebo ročně — vyberete svou zemi a my použijeme daňová pásma pro daň z příjmu za rok 2026 a povinné sociální odvody dané země, abychom ukázali, kolik vám skutečně přistane na účtu. Se zapnutým JavaScriptem probíhá výpočet ve vašem prohlížeči a vaše příjmové údaje se neodesílají na naše servery — pro načtení správných sazeb se vyžaduje pouze vaše země a daňový rok. Nemusíte si vytvářet účet.",
+      "p2": "Rozdíl mezi vaší <gross>hrubou mzdou a čistým příjmem</gross> je málokdy zřejmý. Progresivní daňové systémy uplatňují vyšší sazby pouze na příjem nad hranicí každého pásma, takže vaše marginální sazba — sazba na poslední vydělané euro nebo dolar — je téměř vždy vyšší než vaše efektivní sazba, tedy podíl celé vaší mzdy, který jde na daň. Kromě daně z příjmu většina zemí strhává <social>sociální odvody</social> na důchodové, zdravotní a pojištění v nezaměstnanosti. IncomeTally tyto položky rozděluje řádek po řádku, takže vidíte, kam vaše peníze jdou, nejen konečný součet.",
+      "whoHeading": "Pro koho je určena",
+      "whoBody": "Je vytvořena pro zaměstnance, kteří si ověřují, zda výplatní páska vypadá správně, pro uchazeče o práci porovnávající dvě nabídky podle skutečného čistého příjmu, pro freelancery odhadující, kolik si odložit stranou, i pro kohokoli, kdo zvažuje přesun mezi zeměmi. Pokud jste se někdy divili, proč vám zvýšení platu připadalo menší než částka v titulku, je tohle nástroj, který to vysvětlí."
+    },
+    "howItWorks": {
+      "heading": "Jak to funguje",
+      "steps": [
+        {
+          "title": "Vyberte svou zemi",
+          "body": "Zvolte jednu z devíti podporovaných zemí, aby kalkulačka načetla správná daňová pásma, slevy a sazby sociálních odvodů pro rok 2026."
+        },
+        {
+          "title": "Zadejte svou mzdu",
+          "body": "Zadejte svůj hrubý příjem jako hodinovou, měsíční nebo roční částku. Kalkulačka za vás převede mezi jednotlivými obdobími a tam, kde to lze, můžete nastavit možnosti jako typ zdanění nebo region."
+        },
+        {
+          "title": "Zobrazte si rozpis",
+          "body": "Získejte odhad svého čistého příjmu spolu s podrobným rozpisem daně z příjmu a sociálních odvodů řádek po řádku, a navíc svou marginální a efektivní sazbu."
+        }
+      ],
+      "cta": "Otevřít kalkulačku"
+    },
+    "calculators": {
+      "heading": "Kalkulačky",
+      "intro": "Začněte obecným nástrojem nebo přejděte rovnou ke své zemi níže.",
+      "tools": [
+        {
+          "title": "Kalkulačka čisté mzdy",
+          "body": "Převeďte jakoukoli hrubou mzdu na odhad čistého příjmu s úplným rozpisem daní a odvodů.",
+          "cta": "Spočítat čistý příjem →"
+        },
+        {
+          "title": "Rozcestník mzdových kalkulaček",
+          "body": "Začněte u své země a prozkoumejte daňová pravidla, pásma a sociální odvody pro rok 2026.",
+          "cta": "Procházet podle země →"
+        },
+        {
+          "title": "Z hodinové sazby na mzdu",
+          "body": "Převeďte hodinovou sazbu na týdenní, měsíční a roční příjem — a pak si jej zobrazte po zdanění.",
+          "cta": "Převést hodinovou sazbu →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Mzdové kalkulačky podle země",
+      "subtitle": "Odhady pro daňový rok 2026 využívající oficiální daňová pásma pro daň z příjmu a sociální odvody každé země.",
+      "cardSuffix": "Mzdová kalkulačka",
+      "cardMeta": "{currency} · daňový rok 2026",
+      "note": "Většina kalkulaček vám umožňuje nastavit možnosti jako typ zdanění nebo region tam, kde to lze; dostupné možnosti se liší podle země. Vstupy, které jednotlivé kalkulačky nabízejí, a jejich oficiální zdroje najdete na stránce dané země.",
+      "seeAll": "Zobrazit všechny kalkulačky →"
+    },
+    "pillarsSection": {
+      "heading": "Zjistěte, jak se počítá vaše mzda",
+      "intro": "Srozumitelné průvodce o příjmu, daních a plánování mzdy — psané a kontrolované interně, se zdroji a daty poslední aktualizace.",
+      "viewAll": "Zobrazit všechny průvodce →"
+    },
+    "trust": {
+      "badge": "Data aktuální pro daňový rok 2026 · Naposledy zkontrolováno v červnu 2026",
+      "heading": "Odkud naše čísla pocházejí",
+      "body": "Kalkulačky a průvodce IncomeTally spravuje redakční tým IncomeTally. Daňovou logiku každé země sestavujeme z veřejně dostupných údajů zveřejněných oficiálními daňovými orgány a orgány sociálního zabezpečení, vysvětlujeme koncepty srozumitelným jazykem na propočítaných příkladech a porovnáváme data s oficiálními sazbami pro každý rok. Každá kalkulačka pro danou zemi uvádí své konkrétní zdroje a daňový rok, který pokrývá.",
+      "standardsHeading": "Naše standardy",
+      "standards": [
+        "Oficiální zdroje",
+        "Srozumitelný jazyk",
+        "Každoroční kontrola",
+        "Odhady, nikoli rady"
+      ],
+      "aboutLink": "Přečtěte si o nás a našich redakčních standardech →",
+      "sourcesHeading": "Oficiální zdroje podle země",
+      "sourcesNote": "Každá stránka země odkazuje na konkrétní zdroje, které jsme pro její čísla použili.",
+      "disclaimerLabel": "Odhady, nikoli rady.",
+      "disclaimer": "IncomeTally poskytuje kalkulačky příjmu a daní pouze pro informační a vzdělávací účely. Výsledky jsou odhady a nemusí odpovídat vašim skutečným daňovým povinnostem nebo finančním výsledkům. Tento web není spojen s žádnou vládou ani daňovým úřadem a neposkytuje finanční, daňové ani právní poradenství. Pro personalizované rady se vždy obraťte na kvalifikovaného odborníka."
+    },
+    "faqHeading": "Často kladené otázky",
+    "faqs": [
+      {
+        "question": "Je IncomeTally zdarma?",
+        "answer": "Ano. Každá kalkulačka a průvodce na IncomeTally jsou zdarma a nemusíte si vytvářet účet. Vaše zadané údaje se zpracovávají ve vašem prohlížeči a neukládají se na našich serverech."
+      },
+      {
+        "question": "Které země a daňový rok kalkulačka pokrývá?",
+        "answer": "IncomeTally pokrývá devět zemí — Spojené státy, Německo, Velkou Británii, Polsko, Francii, Španělsko, Itálii, Švédsko a Portugalsko — s využitím pravidel pro daň z příjmu a sociální odvody pro rok 2026. Příslušný daňový rok je uveden u každé kalkulačky."
+      },
+      {
+        "question": "Jaký je rozdíl mezi hrubou a čistou mzdou?",
+        "answer": "Hrubá mzda je váš celkový příjem před jakýmikoli srážkami. Čistá mzda — váš čistý příjem — je to, co zůstane po odečtení daně z příjmu a povinných sociálních odvodů. IncomeTally zobrazuje úplný rozpis, takže přesně vidíte, co se sráží a proč."
+      },
+      {
+        "question": "Jak přesné jsou výsledky?",
+        "answer": "Kalkulačky používají oficiální daňová pásma, slevy a sazby odvodů pro rok 2026, ale jde o odhady. Skutečný čistý příjem se může lišit podle osobních okolností, jako jsou dodatečné slevy, regionální pravidla, typ zdanění, benefity a jednorázové srážky. Berte výsledky jako dobře podložený odhad, nikoli jako daňové přiznání."
+      },
+      {
+        "question": "Mohu převádět mezi hodinovou, měsíční a roční mzdou?",
+        "answer": "Ano. Zadejte svou mzdu v kterémkoli z těchto období a kalkulačka ji převede mezi všemi, poté zobrazí odpovídající čistý příjem. Náš nástroj Z hodinové sazby na mzdu se zaměřuje konkrétně na převody mezd, pokud potřebujete jen to."
+      },
+      {
+        "question": "Odkud pocházejí vaše daňová čísla a poskytuje IncomeTally finanční poradenství?",
+        "answer": "Naše čísla pocházejí od oficiálních daňových orgánů a orgánů sociálního zabezpečení každé země, jako jsou IRS a SSA, HMRC a německé Bundesfinanzministerium, a každá stránka země odkazuje na konkrétní zdroje, které jsme použili. IncomeTally je pouze informační nástroj: neposkytuje finanční, daňové ani právní poradenství a není spojen s žádnou vládou ani daňovým úřadem. Pro rozhodnutí o svých daních nebo financích se obraťte na kvalifikovaného odborníka."
+      }
+    ]
+  },
+  "common": {
+    "lastUpdated": "Poslední aktualizace:",
+    "backToHome": "Zpět na domovskou stránku"
+  },
+  "country": {
+    "h1Suffix": "kalkulačka daně z platu",
+    "allCalculators": "← Všechny kalkulačky",
+    "hourlyConverter": "Převodník hodinové mzdy na plat",
+    "otherCountries": "Další země:",
+    "howItWorksHeading": "{country}: Jak funguje zdanění platů",
+    "faqHeading": "Často kladené otázky",
+    "relatedHeading": "Související zdroje",
+    "relatedHub": "Centrum platových kalkulaček",
+    "calculatorSuffix": "platová kalkulačka"
+  },
+  "guides": {
+    "metaTitle": "Průvodci mzdou a daněmi – odborné články o výpočtech příjmů",
+    "metaDescription": "Komplexní průvodci výpočty mezd, daňovými pásmy, odpočty a čistým příjmem. Naučte se počítat čistou mzdu a porozumět daňovým systémům.",
+    "title": "Průvodci mzdou a daněmi",
+    "intro": "Odborné články o výpočtech mezd, daňových systémech, odpočtech a porozumění vaší čisté mzdě – rozdělené do tří tematických pilířů.",
+    "startHere": "Začněte zde · Pilířový průvodce",
+    "published": "Publikováno",
+    "updated": "Aktualizováno",
+    "by": "Autor",
+    "faqHeading": "Často kladené otázky",
+    "sourcesHeading": "Zdroje a další četba",
+    "aboutAuthorHeading": "O autorovi",
+    "editorialStandards": "Přečtěte si naše redakční zásady →",
+    "moreInPillar": "Více v pilíři {pillar}",
+    "relatedGeneric": "Související průvodci",
+    "tryCalculators": "Vyzkoušejte kalkulačky",
+    "toc": "Obsah",
+    "breadcrumbHome": "Domů",
+    "breadcrumbGuides": "Průvodci",
+    "linkHub": "Centrum mzdových kalkulaček",
+    "linkNet": "Kalkulačka čisté mzdy",
+    "linkHourly": "Převodník hodinové mzdy na plat"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Režim příjmu",
+      "grossIncome": "Hrubý příjem",
+      "country": "Země",
+      "taxYear": "Daňový rok",
+      "hoursPerWeek": "Hodin týdně",
+      "weeksPerYear": "Týdnů ročně",
+      "calculateNetIncome": "Vypočítat čistý příjem",
+      "salaryPeriod": "Mzdové období",
+      "salaryPeriodAria": "Výběr mzdového období"
+    },
+    "mode": {
+      "hourly": "Hodinově",
+      "monthly": "Měsíčně",
+      "yearly": "Ročně"
+    },
+    "period": {
+      "hourly": "hodinově",
+      "monthly": "měsíčně",
+      "annual": "ročně"
+    },
+    "yesNo": {
+      "yes": "Ano",
+      "no": "Ne"
+    },
+    "country": {
+      "US": "Spojené státy",
+      "USFederalOnly": "Spojené státy (pouze federální)",
+      "DE": "Německo",
+      "UK": "Spojené království",
+      "PL": "Polsko",
+      "FR": "Francie",
+      "ES": "Španělsko",
+      "IT": "Itálie",
+      "SE": "Švédsko",
+      "PT": "Portugalsko"
+    },
+    "countrySelect": {
+      "label": "Vyberte zemi",
+      "helper": "Vyberte svou zemi pro odpovídající výpočet daní"
+    },
+    "actions": {
+      "copyShareLink": "Kopírovat odkaz ke sdílení",
+      "copied": "Zkopírováno!",
+      "shareLinkPrefix": "Odkaz ke sdílení:"
+    },
+    "status": {
+      "loading": "Načítání daňových dat...",
+      "empty": "Zadejte svůj příjem a uvidíte výpočty"
+    },
+    "validation": {
+      "incomePositive": "Příjem musí být kladné číslo",
+      "incomeMax": "Příjem nesmí překročit {max} ({mode})",
+      "hoursMin": "Hodin musí být alespoň {min}",
+      "hoursMax": "Hodin nesmí překročit {max}",
+      "weeksMin": "Týdnů musí být alespoň {min}",
+      "weeksMax": "Týdnů nesmí překročit {max}"
+    },
+    "de": {
+      "taxClass": "Daňová třída",
+      "healthInsurance": "Zdravotní pojištění",
+      "privateNoteLabel": "Poznámka:",
+      "privateNoteBody": "Soukromé zdravotní pojištění se platí zvlášť a nestrhává se ze mzdy. Výše uvedený čistý příjem nezahrnuje náklady na soukromé pojištění, které platíte přímo svému pojistiteli.",
+      "state": "Vaše spolková země",
+      "inChurch": "Jste v církvi?",
+      "churchAria": "Výběr členství v církvi",
+      "haveChildren": "Máte děti?",
+      "childrenAria": "Výběr dětí",
+      "childrenNote": "Používá se pro pojištění dlouhodobé péče (Pflegeversicherung). Pro rok 2026 to znamená: s dětmi ~1,80 % podíl zaměstnance (většina spolkových zemí), bez dětí ~2,40 % (zahrnuje příplatek pro bezdětné). Sasko používá jiné rozdělení."
+    },
+    "us": {
+      "filingStatus": "Status podání",
+      "employmentType": "Typ zaměstnání",
+      "deductionMethod": "Metoda odpočtu",
+      "itemizedDeductions": "Položkové odpočty",
+      "childrenUnder17": "Děti (do 17 let)",
+      "otherDependents": "Ostatní vyživované osoby",
+      "taxpayerOver65": "Poplatník 65+",
+      "taxpayerBlind": "Poplatník nevidomý",
+      "spouseOver65": "Manžel/ka 65+",
+      "spouseBlind": "Manžel/ka nevidomý/á",
+      "preTax401k": "401(k) / důchodové (před zdaněním)",
+      "preTaxHSA": "HSA (před zdaněním)",
+      "otherPreTax": "Ostatní odpočty před zdaněním",
+      "stateTaxRate": "Sazba státní daně (odhad, %)",
+      "localTaxRate": "Sazba místní daně (odhad, %)"
+    },
+    "uk": {
+      "region": "Region",
+      "preTaxPension": "Důchodové příspěvky před zdaněním",
+      "preTaxOther": "Ostatní odpočty před zdaněním",
+      "studentLoanPlan": "Plán studentské půjčky",
+      "studentLoanNote": "Poznámka: Plán závisí na tom, kde/kdy jste studovali, nikoli na tom, kde pracujete.",
+      "marriageAllowance": "Manželská sleva?",
+      "marriageAllowanceAria": "Výběr manželské slevy",
+      "marriageAllowanceNote": "Pro poplatníka v základní sazbě, jehož manžel/ka nebo registrovaný partner neplatí daň (úleva až £252).",
+      "children": "Děti (pro odvod z přídavku na dítě)",
+      "childrenNote": "Používá se pro odvod z přídavku na dítě u vysokých příjmů (High Income Child Benefit Charge, platí u příjmů nad £60,000)."
+    },
+    "pl": {
+      "filingStatus": "Status podání",
+      "children": "Děti (pro slevu na dítě)",
+      "preTax": "Daňově uznatelné příspěvky (např. IKZE,",
+      "under26": "Úleva pro mladé (do 26 let)?",
+      "under26Aria": "Výběr úlevy pro osoby do 26 let",
+      "under26Note": "Osvobozuje příjem ze zaměstnání do 85 528 PLN od daně z příjmu (ZUS a zdravotní pojištění stále platí)."
+    },
+    "pt": {
+      "region": "Region",
+      "filingStatus": "Status podání",
+      "dependants": "Vyživované osoby"
+    },
+    "se": {
+      "municipality": "Obec",
+      "customRate": "Sazba obecní daně (%)",
+      "churchMember": "Člen Švédské církve?",
+      "churchAria": "Výběr členství v církvi",
+      "churchNote": "Přidává církevní poplatek (kyrkoavgift). Daň z příjmu již zohledňuje základní slevu a slevu jobbskatteavdrag (do 66 let)."
+    },
+    "it": {
+      "region": "Region (regionální přirážka)",
+      "customRegionalRate": "Sazba regionální přirážky (%)",
+      "municipalRate": "Sazba obecní přirážky (%)",
+      "dependentChildren": "Vyživované děti (ve věku 21–29 let)",
+      "dependentChildrenNote": "Děti do 21 let jsou kryty dávkou Assegno Unico (nikoli mzdou). Regionální a obecní přirážky se liší podle místa.",
+      "dependentSpouse": "Vyživovaný manžel/ka (coniuge a carico)?",
+      "dependentSpouseAria": "Výběr vyživovaného manžela/ky",
+      "dependentSpouseNote": "Manžel/ka s nízkým nebo žádným příjmem (coniuge a carico) poskytuje daňovou slevu až €800."
+    },
+    "es": {
+      "community": "Autonomní společenství",
+      "filingStatus": "Status podání",
+      "children": "Děti (vyživovaní potomci)",
+      "childrenNote": "Regionální sazby se liší podle společenství; País Vasco a Navarra používají samostatné foralní systémy, které zde nejsou zahrnuty."
+    },
+    "fr": {
+      "household": "Domácnost",
+      "children": "Vyživované děti",
+      "childrenNote": "Přidává díly rodinného kvocientu (+0,5 za každé z prvních dvou dětí, +1 od třetího), s omezením této výhody (plafonnement). Odhad pro jednočlennou domácnost / jediný příjem."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Svobodný/á, bez dětí",
+        "2": "Samoživitel/ka",
+        "3": "Ženatý/vdaná (vyšší příjem než partner)",
+        "4": "Ženatý/vdaná (stejný příjem jako partner)",
+        "5": "Ženatý/vdaná (nižší příjem než partner)",
+        "6": "Druhý a další příjem"
+      },
+      "deHealthInsurance": {
+        "public": "Veřejné / zákonné (GKV)",
+        "private-without": "Soukromé (bez příspěvku zaměstnavatele)",
+        "private-with": "Soukromé (s příspěvkem zaměstnavatele)"
+      },
+      "usFilingStatus": {
+        "single": "Svobodný/á",
+        "mfj": "Manželé podávající společně",
+        "mfs": "Manželé podávající odděleně",
+        "hoh": "Hlava domácnosti"
+      },
+      "usEmploymentType": {
+        "employee": "Zaměstnanec (W-2)",
+        "selfEmployed": "Samostatně výdělečně činný (odhad daně SE)"
+      },
+      "usDeductionMethod": {
+        "auto": "Automaticky (max. ze standardního a položkového)",
+        "standard": "Standardní odpočet",
+        "itemized": "Položkové odpočty"
+      },
+      "ukRegion": {
+        "england": "Anglie",
+        "wales": "Wales",
+        "ni": "Severní Irsko",
+        "scotland": "Skotsko (zatím není podporováno)"
+      },
+      "ukStudentLoan": {
+        "none": "Žádný",
+        "plan2": "Plán 2 (9 % nad £{threshold})",
+        "plan4": "Plán 4 (9 % nad £{threshold})",
+        "plan5": "Plán 5 (9 % nad £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Svobodný/á",
+        "joint": "Ženatý/vdaná — společné zdanění (jediný příjem)"
+      },
+      "ptRegion": {
+        "mainland": "Pevnina (Continente)",
+        "azores": "Azory (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Svobodný/á",
+        "joint": "Ženatý/vdaná — společné zdanění (jediný příjem)"
+      },
+      "esFilingStatus": {
+        "single": "Individuální",
+        "joint": "Společné přiznání (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Svobodný/á (1 díl)",
+        "married": "Ženatý/vdaná / PACS — společné (2 díly)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Zdravotní pojištění",
+      "longTermCareInsurance": "Pojištění dlouhodobé péče",
+      "pensionInsurance": "Důchodové pojištění",
+      "unemploymentInsurance": "Pojištění v nezaměstnanosti",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Dodatečná daň Medicare",
+      "seTaxSocialSecurity": "Daň OSVČ (Social Security)",
+      "seTaxMedicare": "Daň OSVČ (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (třída 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (třída 1, vyšší)",
+      "plPension": "Důchodové pojištění (Emerytalne)",
+      "plDisability": "Invalidní pojištění (Rentowe)",
+      "plSickness": "Nemocenské pojištění (Chorobowe)",
+      "plHealth": "Zdravotní pojištění (Zdrowotne)",
+      "ptSocialSecurity": "Sociální zabezpečení (Seguranca Social)",
+      "seChurchFee": "Církevní poplatek (kyrkoavgift)",
+      "itInps": "Důchodový příspěvek INPS",
+      "itRegionalMunicipalSurtax": "Regionální a obecní přirážka (addizionali)",
+      "esCommonContingencies": "Obecné pojistné události (Seguridad Social)",
+      "esMei": "Solidární příspěvek MEI",
+      "esTraining": "Vzdělávání (Formacion profesional)",
+      "esUnemployment": "Nezaměstnanost (Desempleo)",
+      "esSocialSecurity": "Sociální zabezpečení (Seguridad Social)",
+      "frCsgDeductible": "CSG (odpočitatelná)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (neodpočitatelná)",
+      "frSocialSecurityPension": "Příspěvky na sociální zabezpečení a důchod",
+      "frPension": "Důchod (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Výsledky výpočtu",
+      "netIncome": "Čistý příjem",
+      "netHourly": "Čistá hodinová mzda",
+      "netHourlyAfterSacrifice": "Čistá hodinová mzda (po salary sacrifice)",
+      "netMonthly": "Čistý měsíční příjem",
+      "netYearly": "Čistý roční příjem",
+      "effectiveTaxRate": "Efektivní daňová sazba",
+      "taxAndNiRate": "Sazba daně a NI",
+      "salarySacrificeRate": "Sazba salary sacrifice",
+      "totalNonCashShare": "Celkový nepeněžní podíl",
+      "breakdown": "Rozpis",
+      "grossIncome": "Hrubý příjem",
+      "preTaxDeductionsEntered": "Odpočty před zdaněním (zadané)",
+      "preTaxDeductionsAppliedCapped": "Odpočty před zdaněním (uplatněné, omezené)",
+      "preTaxDeductions": "Odpočty před zdaněním",
+      "adjustedGrossIncome": "Upravený hrubý příjem (AGI)",
+      "salarySacrifice": "Salary sacrifice (důchod a před zdaněním)",
+      "adjustedIncomeAfterSacrifice": "Upravený příjem (po salary sacrifice)",
+      "preTaxContributions": "Příspěvky před zdaněním",
+      "standardDeduction": "Standardní odpočet",
+      "itemizedDeduction": "Položkový odpočet",
+      "allowances": "Slevy a odpočty",
+      "taxableIncome": "Zdanitelný příjem",
+      "incomeTax": "Daň z příjmu",
+      "incomeTaxDE": "Celková daň z příjmu (ESt + Soli + církevní)",
+      "incomeTaxUS": "Daň z příjmu (federální + státní + místní)",
+      "studentLoan": "Studentská půjčka",
+      "plan2": "Plán 2",
+      "plan4": "Plán 4",
+      "plan5": "Plán 5",
+      "marriageAllowanceRelief": "Manželská sleva (úleva)",
+      "hicbc": "Odvod z přídavku na dítě u vysokých příjmů",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Solidární příplatek (Soli)",
+      "churchTax": "Církevní daň (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Federální daň z příjmu (před slevami)",
+      "taxCreditsApplied": "Daňové slevy (uplatněné)",
+      "federalIncomeTaxAfterCredits": "Federální daň z příjmu (po slevách)",
+      "stateIncomeTax": "Státní daň z příjmu (odhad)",
+      "localIncomeTax": "Místní daň z příjmu (odhad)",
+      "saxonySplit": "(rozdělení Sasko)",
+      "cappedOn": "z",
+      "totalSocialContributions": "Celkové sociální odvody",
+      "taxesAndNi": "Daně a NI",
+      "cashInHand": "Čistá hotovost"
+    },
+    "example": {
+      "heading": "Příklad výpočtu",
+      "perHour": "za hodinu",
+      "perMonth": "za měsíc",
+      "perYear": "za rok",
+      "netIncomeAnnual": "Čistý příjem (roční)",
+      "basedOnPrefix": "Na základě",
+      "hourlyNote": "({hours} hodin/týden, {weeks} týdnů/rok)",
+      "monthlyNote": "(12 měsíců/rok)",
+      "forTaxYear": "pro daňový rok {year}."
+    },
+    "disclaimer": {
+      "title": "Upozornění k daňovému odhadu",
+      "noteLabel": "Poznámka:",
+      "us": "Tyto výpočty jsou odhady založené pouze na federálních daňových sazbách. Státní a místní daně nejsou zahrnuty a mohou výrazně ovlivnit vaši celkovou daňovou povinnost.",
+      "default": "Tyto výpočty jsou odhady a nemusí zahrnovat místní nebo regionální daně. Pro přesné údaje se obraťte na oficiální zdroje nebo daňového poradce."
+    },
+    "dataSources": {
+      "heading": "Zdroje dat",
+      "intro": "Naše odhady pro {country} vycházejí z veřejně dostupných údajů z oficiálních vládních zdrojů a daňových úřadů. Sazby a hranice se každý daňový rok mění, proto je pravidelně kontrolujeme. Tyto výsledky jsou odhady, nikoli oficiální daňová vyměření nebo poradenství.",
+      "editorialPrefix": "Viz naše",
+      "editorialLink": "redakční standardy",
+      "editorialSuffix": "k tomu, jak tato data zkoumáme a aktualizujeme."
+    }
+  },
+  "hub": {
+    "metaTitle": "Centrum kalkulaček daně z mzdy – Vypočítejte čistý příjem podle země",
+    "metaDescription": "Bezplatné kalkulačky daně z mzdy pro různé země. Vypočítejte si čistý příjem po odečtení daní a sociálních odvodů v USA, Německu, Velké Británii a dalších zemích.",
+    "title": "Centrum kalkulaček daně z mzdy",
+    "intro1": "Vypočítejte si čistý příjem po odečtení daní a sociálních odvodů. Naše bezplatné kalkulačky vám pomohou pochopit, kolik si odnesete domů v různých zemích, s podrobným rozpisem daně z příjmu, sociálních odvodů a dalších srážek.",
+    "intro2": "Začněte výběrem země níže nebo zvolte režim výpočtu, který vyhovuje vašim potřebám.",
+    "byCountryHeading": "Vypočítat podle země",
+    "calculateCta": "Vypočítat →",
+    "hourlyTitle": "Kalkulačka hodinového příjmu",
+    "monthlyTitle": "Kalkulačka měsíční mzdy",
+    "yearlyTitle": "Kalkulačka roční mzdy",
+    "chooseModeHeading": "Zvolte režim výpočtu",
+    "converterTitle": "Převodník z hodinové sazby na mzdu",
+    "converterBody": "Převeďte svou hodinovou sazbu na roční, měsíční a týdenní mzdu. Ideální pro pochopení celkové odměny při vyjednávání nebo porovnávání pracovních nabídek.",
+    "converterCta": "Převést hodinovou sazbu →",
+    "hourlyBody": "Vypočítejte čistý příjem, pokud znáte svou hodinovou sazbu. Zahrnuje možnosti pro vlastní počet hodin týdně a týdnů za rok, aby odpovídaly vašemu pracovnímu rozvrhu.",
+    "hourlyCta": "Vypočítat hodinově →",
+    "monthlyBody": "Vypočítejte si čistý měsíční příjem po zdanění. Ideální pro sestavení rozpočtu a pochopení toho, kolik si měsíčně odnesete domů.",
+    "monthlyCta": "Vypočítat měsíčně →",
+    "yearlyBody": "Vypočítejte si čistý roční příjem z hrubé roční mzdy. Zobrazte si úplný rozpis daní a srážek za celý rok.",
+    "yearlyCta": "Vypočítat ročně →",
+    "faqHeading": "Často kladené otázky"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Kalkulačka mzdy a daně – Odhadněte svůj čistý příjem",
+      "description": "Bezplatná kalkulačka daně z mzdy. Zadejte svůj hrubý příjem a odhadněte čistou mzdu, daň z příjmu a sociální odvody pro USA, Německo a Velkou Británii v roce 2026.",
+      "ogDescription": "Bezplatná kalkulačka daně z mzdy. Odhadněte čistou mzdu, daň z příjmu a sociální odvody pro USA, Německo a Velkou Británii."
+    },
+    "title": "Kalkulačka mzdy a daně",
+    "intro": "Odhadněte si čistý příjem (mzdu, kterou si odnesete domů) po odečtení daně z příjmu a sociálních odvodů. Zadejte hrubou mzdu, zvolte zemi a výplatní období a získejte okamžitý rozpis pro daňový rok 2026.",
+    "howItWorks": {
+      "heading": "Jak kalkulačka funguje",
+      "p1": "Naše kalkulačka převádí váš hrubý příjem na odhadovanou čistou mzdu pomocí aktuálních daňových pásem a sazeb sociálních odvodů pro každou podporovanou zemi. Příjem můžete zadat jako hodinovou sazbu, měsíční mzdu nebo roční částku a kalkulačka jej před uplatněním příslušných daňových pravidel přepočítá na roční základ.",
+      "p2": "Rozpis odděluje daň z příjmu od sociálních odvodů – jako jsou Social Security a Medicare ve Spojených státech, zákonné pojistné v Německu a National Insurance ve Velké Británii – takže přesně vidíte, kam vaše peníze putují a jaká je vaše efektivní daňová sazba.",
+      "p3": "Výsledky jsou odhady určené pouze pro informační a plánovací účely a nezohledňují každou individuální okolnost, jako jsou státní a místní daně, daňové slevy nebo nepeněžní plnění. Pro radu specifickou pro vaši situaci se obraťte na kvalifikovaného daňového odborníka."
+    },
+    "related": {
+      "heading": "Prozkoumejte kalkulačky pro konkrétní země",
+      "hub": "Centrum kalkulaček mzdy",
+      "us": "Kalkulačka mzdy pro Spojené státy",
+      "de": "Kalkulačka mzdy pro Německo",
+      "uk": "Kalkulačka mzdy pro Velkou Británii",
+      "hourly": "Převodník z hodinové sazby na mzdu",
+      "guides": "Průvodci mzdou a daněmi"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Kalkulačka čisté mzdy – Vypočítejte svou čistou výplatu",
+      "description": "Bezplatná kalkulačka čisté mzdy. Spočítejte si čistou výplatu po odečtení daně z příjmu a sociálních odvodů pro USA, Německo a Velkou Británii."
+    },
+    "title": "Kalkulačka čisté mzdy",
+    "intro": "Vypočítejte si čistý příjem (mzdu, kterou si odnesete domů) po odečtení daní a sociálních odvodů. Naše komplexní kalkulačka mzdy vám pomůže přesně pochopit, kolik dostanete po všech srážkách.",
+    "cta": "Přejít do Centra kalkulaček mzdy →",
+    "breakdownIntro": "Naše kalkulačka mzdy poskytuje podrobné rozpisy pro:",
+    "breakdown": {
+      "gross": "Hrubý příjem (před zdaněním)",
+      "incomeTax": "Výpočty daně z příjmu",
+      "social": "Sociální odvody",
+      "net": "Čistý příjem (mzda, kterou si odnesete domů)",
+      "effectiveRate": "Efektivní daňové sazby"
+    },
+    "availability": "Dostupné pro více zemí včetně Spojených států, Německa a Velké Británie. Vyberte si zemi a začněte s přesnými, aktuálními výpočty daní pro rok 2026.",
+    "specialized": "Můžete také využít naše specializované kalkulačky:",
+    "links": {
+      "hourly": "Převodník z hodinové sazby na mzdu",
+      "us": "Kalkulačka pro USA",
+      "de": "Kalkulačka pro Německo",
+      "uk": "Kalkulačka pro Velkou Británii"
+    },
+    "explainer": {
+      "heading": "Co je čistá mzda?",
+      "p1": "Vaše <b>čistá mzda</b> – často nazývaná mzda, kterou si odnesete domů – je částka, která skutečně dorazí na váš bankovní účet po odečtení povinných srážek z hrubé mzdy. Hrubá mzda je hlavní údaj ve vaší pracovní smlouvě; čistá mzda je to, s čím můžete plánovat rozpočet a utrácet.",
+      "p2": "Rozdíl mezi nimi tvoří <b>daň z příjmu</b> a <b>sociální odvody</b>. Daň z příjmu je obvykle progresivní, což znamená, že vyšší části vašeho příjmu jsou zdaněny vyššími sazbami. Sociální odvody financují programy jako státní důchody, zdravotní péči a pojištění v nezaměstnanosti a přesné sazby závisí na tom, kde žijete.",
+      "p3": "Protože každá země počítá tyto srážky jinak, stejná hrubá mzda může vést k velmi rozdílné čisté výplatě ve Spojených státech, Německu nebo Velké Británii. Vyberte si zemi výše a zobrazte podrobný rozpis pro konkrétní zemi pro daňový rok 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Převodník z hodinové sazby na mzdu – Vypočítejte roční, měsíční a týdenní příjem",
+      "description": "Převeďte hodinovou mzdu na roční, měsíční a týdenní mzdu. Bezplatná kalkulačka se vzorci a příklady. Ideální pro vyjednávání o práci a porovnávání mezd.",
+      "ogDescription": "Převeďte hodinovou mzdu na roční, měsíční a týdenní mzdu. Bezplatná kalkulačka se vzorci a příklady."
+    },
+    "title": "Převodník z hodinové sazby na mzdu",
+    "intro": "Převeďte svou hodinovou mzdu na roční, měsíční, týdenní a denní mzdu. Pochopte svou celkovou odměnu při vyjednávání pracovních nabídek nebo porovnávání pozic.",
+    "calc": {
+      "heading": "Vypočítejte si čistý příjem",
+      "intro": "Zadejte níže svou hodinovou sazbu a vypočítejte si hrubý a čistý příjem. Kalkulačka je přednastavena na hodinový režim a zobrazí vám mzdu, kterou si odnesete domů po zdanění."
+    },
+    "formulas": {
+      "heading": "Vzorce pro převod",
+      "annual": {
+        "title": "Roční mzda z hodinové sazby",
+        "code": "Roční mzda = Hodinová sazba × Hodiny za týden × Týdny za rok",
+        "note": "Standardní výpočet: Vynásobte svou hodinovou sazbu 40 hodinami za týden a 52 týdny za rok."
+      },
+      "monthly": {
+        "title": "Měsíční mzda",
+        "code": "Měsíční mzda = Roční mzda ÷ 12",
+        "note": "Vydělte roční mzdu 12 měsíci. Poznámka: Tím získáte průměrnou měsíční částku; skutečná měsíční výplata se může lišit, pokud je vyplácena každé dva týdny nebo dvakrát měsíčně."
+      },
+      "weekly": {
+        "title": "Týdenní mzda",
+        "code": "Týdenní mzda = Hodinová sazba × Hodiny za týden",
+        "note": "Jednoduše vynásobte svou hodinovou sazbu počtem hodin, které odpracujete za týden."
+      },
+      "daily": {
+        "title": "Denní mzda",
+        "code": "Denní mzda = Hodinová sazba × Hodiny za den",
+        "note": "Pro osmihodinový pracovní den vynásobte svou hodinovou sazbu 8."
+      },
+      "grossNote": "<b>Poznámka:</b> Tyto vzorce počítají hrubý příjem (před zdaněním). Pomocí kalkulačky níže si zobrazte čistou mzdu (kterou si odnesete domů) po zdanění a srážkách."
+    },
+    "examples": {
+      "heading": "Příklady",
+      "annualGross": "Roční hrubý:",
+      "monthlyGross": "Měsíční hrubý:",
+      "weeklyGross": "Týdenní hrubý:",
+      "dailyGross": "Denní hrubý",
+      "ex1": {
+        "title": "Příklad 1: 25 $ za hodinu, 40 hodin/týden, 52 týdnů/rok",
+        "annual": "<b>Roční hrubý:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Měsíční hrubý:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Týdenní hrubý:</b> $25 × 40 = $1,000",
+        "daily": "<b>Denní hrubý (8 hodin):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Příklad 2: 30 $ za hodinu, 35 hodin/týden, 50 týdnů/rok",
+        "annual": "<b>Roční hrubý:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Měsíční hrubý:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Týdenní hrubý:</b> $30 × 35 = $1,050",
+        "daily": "<b>Denní hrubý (7 hodin):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Příklad 3: 20 $ za hodinu, 40 hodin/týden, 48 týdnů/rok (se 4 týdny neplaceného volna)",
+        "annual": "<b>Roční hrubý:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Měsíční hrubý:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Týdenní hrubý:</b> $20 × 40 = $800",
+        "note": "Poznámka: Úprava počtu týdnů za rok zohledňuje neplacené volno, dovolenou nebo sezónní práci."
+      }
+    },
+    "faq": {
+      "heading": "Často kladené otázky",
+      "items": [
+        {
+          "question": "Jaký je rozdíl mezi hrubou a čistou mzdou?",
+          "answer": "Hrubá mzda je váš celkový výdělek před zdaněním a srážkami. Čistá mzda (kterou si odnesete domů) je to, co dostanete po odečtení daně z příjmu, sociálního pojištění a dalších povinných srážek. Kalkulačka výše zobrazuje hrubé i čisté částky."
+        },
+        {
+          "question": "Kolik týdnů mám použít ve výpočtu?",
+          "answer": "Standardem je 52 týdnů za rok pro zaměstnance na plný úvazek. Pokud však máte neplacené volno, pracujete sezónně nebo čerpáte dlouhodobou dovolenou, upravte to odpovídajícím způsobem. Například 2 týdny neplacené dovolené by znamenaly 50 týdnů za rok."
+        },
+        {
+          "question": "Mám do hodinové sazby zahrnout přesčasy?",
+          "answer": "Pro přesné výpočty roční mzdy použijte svou základní hodinovou sazbu a standardní počet hodin. Pokud pravidelně pracujete přesčas, můžete buď: (1) vypočítat základní mzdu zvlášť a přidat odhadované přesčasy, nebo (2) použít průměrnou hodinovou sazbu, která přesčasy zohledňuje. Kalkulačka vám umožňuje upravit počet hodin za týden tak, aby odpovídal vašemu skutečnému rozvrhu."
+        },
+        {
+          "question": "Jak převedu mzdu zpět na hodinovou sazbu?",
+          "answer": "Pro převod roční mzdy na hodinovou: Hodinová sazba = Roční mzda ÷ (Hodiny za týden × Týdny za rok). Například $52,000 ÷ (40 × 52) = $25 za hodinu. Použijte naši kalkulačku opačně tak, že zadáte roční mzdu a zvolíte roční režim."
+        }
+      ],
+      "countriesQuestion": "Jsou tyto výpočty přesné pro všechny země?",
+      "countriesAnswer": "Vzorce pro převod (z hodinové sazby na roční, měsíční atd.) jsou univerzální. Výpočty čistého příjmu se však v jednotlivých zemích liší kvůli odlišným daňovým systémům. Pro přesné odhady čistého příjmu použijte kalkulačky pro konkrétní země v našem <link>Centru kalkulaček mzdy</link>.",
+      "partTimeQuestion": "Co když pracuji na částečný úvazek nebo mám nepravidelnou pracovní dobu?",
+      "partTimeAnswer": "Pro práci na částečný úvazek zadejte svůj skutečný počet hodin za týden. U nepravidelné pracovní doby vypočítejte průměrný týdenní počet hodin za delší období (např. 3–6 měsíců) a ten použijte. Kalkulačka umožňuje vlastní počet hodin za týden a týdnů za rok tak, aby odpovídaly jakémukoli pracovnímu rozvrhu."
+    },
+    "related": {
+      "heading": "Související zdroje",
+      "hub": "Centrum kalkulaček mzdy",
+      "us": "Kalkulačka mzdy pro USA",
+      "de": "Kalkulačka mzdy pro Německo",
+      "uk": "Kalkulačka mzdy pro Velkou Británii"
+    }
+  }
+}

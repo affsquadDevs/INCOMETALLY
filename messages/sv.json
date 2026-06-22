@@ -1,0 +1,666 @@
+{
+  "nav": {
+    "salaryCalculator": "Lönekalkylator",
+    "getStarted": "Kom igång",
+    "aboutUs": "Om oss",
+    "guides": "Guider",
+    "toggleMenu": "Växla meny",
+    "selectLanguage": "Välj språk"
+  },
+  "footer": {
+    "productTitle": "Produkt",
+    "legalTitle": "Juridik",
+    "resourcesTitle": "Resurser",
+    "home": "Hem",
+    "calculator": "Kalkylator",
+    "privacyPolicy": "Integritetspolicy",
+    "termsOfService": "Användarvillkor",
+    "salaryCalculatorHub": "Lönekalkylatorcenter",
+    "hourlyToSalary": "Timlön till årslön",
+    "guides": "Guider",
+    "disclaimerLabel": "Friskrivning:",
+    "disclaimer": "IncomeTally tillhandahåller inkomst- och skattekalkylatorer endast i informationssyfte. Resultaten är uppskattningar och återspeglar kanske inte faktiska skatteförpliktelser eller ekonomiska utfall. Den här webbplatsen ger inte finansiell, skattemässig eller juridisk rådgivning. Rådgör alltid med en kvalificerad expert för personlig vägledning.",
+    "rights": "Med ensamrätt."
+  },
+  "home": {
+    "meta": {
+      "title": "Nettolönekalkylator — Lön efter skatt för 9 länder | IncomeTally",
+      "description": "Beräkna din nettolön efter inkomstskatt och sociala avgifter. Gratis, ingen registrering, landsspecifika uppskattningar för skatteåret 2026 i USA, Tyskland, Storbritannien, Polen, Frankrike, Spanien, Italien, Sverige och Portugal."
+    },
+    "hero": {
+      "title": "Gratis nettolönekalkylator",
+      "highlightWords": [
+        "Gratis",
+        "nettolönekalkylator"
+      ],
+      "subtitle": "Ange din bruttolön och se din uppskattade nettolön efter inkomstskatt och sociala avgifter — för skatteåret 2026, i 9 länder. Ingen registrering, och dina uppgifter stannar i din webbläsare.",
+      "getStarted": "Kom igång",
+      "browseGuides": "Bläddra bland guider",
+      "trustLine": "Gratis · Ingen registrering · Dina uppgifter stannar i din webbläsare."
+    },
+    "about": {
+      "heading": "Vad IncomeTally gör",
+      "p1": "IncomeTally är en gratis, webbläsarbaserad <calc>nettolönekalkylator</calc> som omvandlar en bruttolön till en uppskattning av din nettolön. Du anger vad du tjänar — per timme, månad eller år — väljer ditt land, och vi tillämpar landets inkomstskatteskikt och obligatoriska sociala avgifter för 2026 för att visa vad som faktiskt landar på ditt konto. Med JavaScript aktiverat körs beräkningen i din webbläsare och dina inkomstuppgifter skickas inte till våra servrar — endast ditt land och skatteåret efterfrågas för att ladda rätt satser. Du behöver inte skapa något konto.",
+      "p2": "Skillnaden mellan din <gross>bruttolön och din nettolön</gross> är sällan självklar. Progressiva skattesystem tillämpar högre satser endast på inkomst över varje skiktgräns, så din marginalskatt — satsen på din sist intjänade krona eller euro — är nästan alltid högre än din effektiva skattesats, den andel av hela din lön som går till skatt. Utöver inkomstskatt drar de flesta länder <social>sociala avgifter</social> för pension, sjukvård och arbetslöshetsförsäkring. IncomeTally separerar dessa post för post, så att du ser vart dina pengar tar vägen, inte bara slutsumman.",
+      "whoHeading": "Vem den är till för",
+      "whoBody": "Den är gjord för anställda som vill kontrollera om en lönespecifikation ser rätt ut, jobbsökande som jämför två erbjudanden i faktiska nettotermer, frilansare som uppskattar vad de bör sätta undan, och alla som överväger en flytt mellan länder. Om du någonsin undrat varför en löneförhöjning kändes mindre än den utlovade siffran, är det här verktyget som förklarar det."
+    },
+    "howItWorks": {
+      "heading": "Så fungerar det",
+      "steps": [
+        {
+          "title": "Välj ditt land",
+          "body": "Välj ett av nio länder som stöds så att kalkylatorn laddar rätt skatteskikt, avdrag och satser för sociala avgifter för 2026."
+        },
+        {
+          "title": "Ange din lön",
+          "body": "Skriv in din bruttoinkomst som ett tim-, månads- eller årsbelopp. Kalkylatorn räknar om mellan löneperioder åt dig, och du kan ställa in alternativ som civilstånd eller region där de är tillämpliga."
+        },
+        {
+          "title": "Se din uppdelning",
+          "body": "Få din uppskattade nettolön tillsammans med en post-för-post-uppdelning av inkomstskatt och sociala avgifter, plus din marginalskatt och effektiva skattesats."
+        }
+      ],
+      "cta": "Öppna kalkylatorn"
+    },
+    "calculators": {
+      "heading": "Kalkylatorer",
+      "intro": "Börja med ett allmänt verktyg, eller hoppa direkt till ditt land nedan.",
+      "tools": [
+        {
+          "title": "Nettolönekalkylator",
+          "body": "Omvandla vilken bruttolön som helst till uppskattad nettolön med en fullständig uppdelning av skatt och avgifter.",
+          "cta": "Beräkna nettolön →"
+        },
+        {
+          "title": "Lönekalkylatornav",
+          "body": "Utgå från ditt land och utforska skatteregler, skatteskikt och sociala avgifter för 2026.",
+          "cta": "Bläddra efter land →"
+        },
+        {
+          "title": "Timlön till årslön",
+          "body": "Omvandla en timlön till vecko-, månads- och årsinkomst — och se den sedan efter skatt.",
+          "cta": "Omvandla timlön →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Lönekalkylatorer per land",
+      "subtitle": "Uppskattningar för skatteåret 2026 med varje lands officiella inkomstskatteskikt och sociala avgifter.",
+      "cardSuffix": "Lönekalkylator",
+      "cardMeta": "{currency} · skatteåret 2026",
+      "note": "De flesta kalkylatorer låter dig ställa in alternativ som civilstånd eller region där de är tillämpliga; de tillgängliga alternativen skiljer sig åt mellan länder. Se varje lands sida för vilka uppgifter den efterfrågar och dess officiella källor.",
+      "seeAll": "Se alla kalkylatorer →"
+    },
+    "pillarsSection": {
+      "heading": "Lär dig hur din lön beräknas",
+      "intro": "Guider på vanligt språk om inkomst, skatt och löneplanering — skrivna och granskade internt, med källor och datum för senaste uppdatering.",
+      "viewAll": "Visa alla guider →"
+    },
+    "trust": {
+      "badge": "Uppgifter aktuella för skatteåret 2026 · Senast granskad juni 2026",
+      "heading": "Varifrån våra siffror kommer",
+      "body": "IncomeTallys kalkylatorer och guider underhålls av IncomeTallys redaktion. Vi bygger varje lands skattelogik utifrån offentligt tillgängliga siffror publicerade av officiella skatte- och socialförsäkringsmyndigheter, förklarar begreppen på vanligt språk med genomräknade exempel, och granskar uppgifterna mot varje års officiella satser. Varje landskalkylator visar sina specifika källor och vilket skatteår den omfattar.",
+      "standardsHeading": "Våra principer",
+      "standards": [
+        "Officiella källor",
+        "Vanligt språk",
+        "Granskas årligen",
+        "Uppskattningar, inte rådgivning"
+      ],
+      "aboutLink": "Läs om oss och våra redaktionella principer →",
+      "sourcesHeading": "Officiella källor per land",
+      "sourcesNote": "Varje lands sida länkar till de specifika källor vi använde för dess siffror.",
+      "disclaimerLabel": "Uppskattningar, inte rådgivning.",
+      "disclaimer": "IncomeTally tillhandahåller inkomst- och skattekalkylatorer endast i informations- och utbildningssyfte. Resultaten är uppskattningar och kanske inte återspeglar dina faktiska skatteskyldigheter eller ekonomiska utfall. Den här webbplatsen är inte ansluten till någon myndighet eller skattemyndighet och tillhandahåller inte ekonomisk, skattemässig eller juridisk rådgivning. Rådgör alltid med en kvalificerad yrkesperson för personlig vägledning."
+    },
+    "faqHeading": "Vanliga frågor",
+    "faqs": [
+      {
+        "question": "Är IncomeTally gratis att använda?",
+        "answer": "Ja. Varje kalkylator och guide på IncomeTally är gratis, och du behöver inte skapa något konto. Dina uppgifter behandlas i din webbläsare och lagras inte på våra servrar."
+      },
+      {
+        "question": "Vilka länder och vilket skatteår omfattar kalkylatorn?",
+        "answer": "IncomeTally omfattar nio länder — USA, Tyskland, Storbritannien, Polen, Frankrike, Spanien, Italien, Sverige och Portugal — med regler för inkomstskatt och sociala avgifter för 2026. Det tillämpliga skatteåret visas på varje kalkylator."
+      },
+      {
+        "question": "Vad är skillnaden mellan bruttolön och nettolön?",
+        "answer": "Bruttolön är din totala lön före eventuella avdrag. Nettolön — din lön efter skatt — är vad som återstår när inkomstskatt och obligatoriska sociala avgifter har dragits av. IncomeTally visar hela uppdelningen så att du kan se exakt vad som dras av och varför."
+      },
+      {
+        "question": "Hur exakta är resultaten?",
+        "answer": "Kalkylatorerna använder officiella skatteskikt, avdrag och avgiftssatser för 2026, men de är uppskattningar. Den faktiska nettolönen kan variera med personliga omständigheter som ytterligare avdrag, regionala regler, civilstånd, förmåner och engångsavdrag. Behandla resultaten som en välunderbyggd uppskattning, inte som en skattedeklaration."
+      },
+      {
+        "question": "Kan jag räkna om mellan timlön, månadslön och årslön?",
+        "answer": "Ja. Ange din lön i någon av dessa perioder så räknar kalkylatorn om den mellan alla, och visar sedan motsvarigheten efter skatt. Vårt verktyg Timlön till årslön fokuserar specifikt på löneomvandlingar om det är allt du behöver."
+      },
+      {
+        "question": "Varifrån kommer era skattesiffror, och ger IncomeTally ekonomisk rådgivning?",
+        "answer": "Våra siffror kommer från varje lands officiella skatte- och socialförsäkringsmyndigheter, såsom IRS och SSA, HMRC och tyska Bundesfinanzministerium, och varje lands sida länkar till de specifika källor vi använde. IncomeTally är endast ett informationsverktyg: det tillhandahåller inte ekonomisk, skattemässig eller juridisk rådgivning och är inte anslutet till någon myndighet eller skattemyndighet. För beslut om dina skatter eller din ekonomi, rådgör med en kvalificerad yrkesperson."
+      }
+    ]
+  },
+  "common": {
+    "lastUpdated": "Senast uppdaterad:",
+    "backToHome": "Tillbaka till startsidan"
+  },
+  "country": {
+    "h1Suffix": "lönekalkylator för skatt",
+    "allCalculators": "← Alla kalkylatorer",
+    "hourlyConverter": "Omvandla timlön till årslön",
+    "otherCountries": "Andra länder:",
+    "howItWorksHeading": "Så fungerar löneskatter i {country}",
+    "faqHeading": "Vanliga frågor",
+    "relatedHeading": "Relaterade resurser",
+    "relatedHub": "Lönekalkylator-hubb",
+    "calculatorSuffix": "lönekalkylator"
+  },
+  "guides": {
+    "metaTitle": "Löne- och skatteguider - Expertartiklar om inkomstberäkningar",
+    "metaDescription": "Heltäckande guider om löneberäkningar, skatteklasser, avdrag och nettoinkomst. Lär dig att beräkna din nettolön och förstå skattesystem.",
+    "title": "Löne- och skatteguider",
+    "intro": "Expertartiklar om löneberäkningar, skattesystem, avdrag och hur du förstår din nettolön — organiserade i tre ämnespelare.",
+    "startHere": "Börja här · Pelarguide",
+    "published": "Publicerad",
+    "updated": "Uppdaterad",
+    "by": "Av",
+    "faqHeading": "Vanliga frågor",
+    "sourcesHeading": "Källor och vidare läsning",
+    "aboutAuthorHeading": "Om författaren",
+    "editorialStandards": "Läs våra redaktionella riktlinjer →",
+    "moreInPillar": "Mer inom {pillar}",
+    "relatedGeneric": "Relaterade guider",
+    "tryCalculators": "Prova kalkylatorerna",
+    "toc": "Innehållsförteckning",
+    "breadcrumbHome": "Hem",
+    "breadcrumbGuides": "Guider",
+    "linkHub": "Lönekalkylator-hubb",
+    "linkNet": "Nettolönekalkylator",
+    "linkHourly": "Omvandlare från timlön till månadslön"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Inkomstläge",
+      "grossIncome": "Bruttoinkomst",
+      "country": "Land",
+      "taxYear": "Beskattningsår",
+      "hoursPerWeek": "Timmar per vecka",
+      "weeksPerYear": "Veckor per år",
+      "calculateNetIncome": "Beräkna nettoinkomst",
+      "salaryPeriod": "Löneperiod",
+      "salaryPeriodAria": "Val av löneperiod"
+    },
+    "mode": {
+      "hourly": "Timlön",
+      "monthly": "Månadslön",
+      "yearly": "Årslön"
+    },
+    "period": {
+      "hourly": "per timme",
+      "monthly": "per månad",
+      "annual": "per år"
+    },
+    "yesNo": {
+      "yes": "Ja",
+      "no": "Nej"
+    },
+    "country": {
+      "US": "USA",
+      "USFederalOnly": "USA (endast federal)",
+      "DE": "Tyskland",
+      "UK": "Storbritannien",
+      "PL": "Polen",
+      "FR": "Frankrike",
+      "ES": "Spanien",
+      "IT": "Italien",
+      "SE": "Sverige",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Välj land",
+      "helper": "Välj ditt land för att beräkna skatten korrekt"
+    },
+    "actions": {
+      "copyShareLink": "Kopiera delningslänk",
+      "copied": "Kopierad!",
+      "shareLinkPrefix": "Delningslänk:"
+    },
+    "status": {
+      "loading": "Laddar skattedata...",
+      "empty": "Ange din inkomst för att se beräkningar"
+    },
+    "validation": {
+      "incomePositive": "Inkomsten måste vara ett positivt tal",
+      "incomeMax": "Inkomsten får inte överstiga {max} ({mode})",
+      "hoursMin": "Timmarna måste vara minst {min}",
+      "hoursMax": "Timmarna får inte överstiga {max}",
+      "weeksMin": "Veckorna måste vara minst {min}",
+      "weeksMax": "Veckorna får inte överstiga {max}"
+    },
+    "de": {
+      "taxClass": "Skatteklass",
+      "healthInsurance": "Sjukförsäkring",
+      "privateNoteLabel": "Obs:",
+      "privateNoteBody": "Privat sjukförsäkring betalas separat och dras inte av från din lön. Nettoinkomsten ovan inkluderar inte kostnader för privat försäkring, som du betalar direkt till ditt försäkringsbolag.",
+      "state": "Ditt förbundsland",
+      "inChurch": "Medlem i kyrkan?",
+      "churchAria": "Val av kyrkomedlemskap",
+      "haveChildren": "Har du barn?",
+      "childrenAria": "Val av barn",
+      "childrenNote": "Används för långtidsvårdsförsäkring (Pflegeversicherung). För 2026 innebär detta: med barn ~1,80 % arbetstagarandel (de flesta förbundsländer), utan barn ~2,40 % (inkluderar tillägget för barnlösa). Sachsen använder en annan fördelning."
+    },
+    "us": {
+      "filingStatus": "Deklarationsstatus",
+      "employmentType": "Anställningsform",
+      "deductionMethod": "Avdragsmetod",
+      "itemizedDeductions": "Specificerade avdrag",
+      "childrenUnder17": "Barn (under 17)",
+      "otherDependents": "Övriga försörjningsberoende",
+      "taxpayerOver65": "Skattebetalare 65+",
+      "taxpayerBlind": "Skattebetalare blind",
+      "spouseOver65": "Make/maka 65+",
+      "spouseBlind": "Make/maka blind",
+      "preTax401k": "Pensionssparande före skatt (401(k))",
+      "preTaxHSA": "HSA före skatt",
+      "otherPreTax": "Övriga avdrag före skatt",
+      "stateTaxRate": "Delstatlig skattesats (uppskattning, %)",
+      "localTaxRate": "Lokal skattesats (uppskattning, %)"
+    },
+    "uk": {
+      "region": "Region",
+      "preTaxPension": "Pensionsavsättningar före skatt",
+      "preTaxOther": "Övriga avdrag före skatt",
+      "studentLoanPlan": "Studielånsplan",
+      "studentLoanNote": "Obs: Planen beror på var/när du studerade, inte var du arbetar.",
+      "marriageAllowance": "Äktenskapsavdrag (Marriage Allowance)?",
+      "marriageAllowanceAria": "Val av äktenskapsavdrag",
+      "marriageAllowanceNote": "För en skattebetalare med grundskattesats vars make/maka eller registrerade partner inte är skattebetalare (avdrag upp till £252).",
+      "children": "Barn (för barnbidragsavgift)",
+      "childrenNote": "Används för High Income Child Benefit Charge (gäller inkomster över £60 000)."
+    },
+    "pl": {
+      "filingStatus": "Deklarationsstatus",
+      "children": "Barn (för barnavdrag)",
+      "preTax": "Avdragsgilla avsättningar (t.ex. IKZE,",
+      "under26": "Avdrag för unga (under 26)?",
+      "under26Aria": "Val av avdrag för under 26",
+      "under26Note": "Befriar anställningsinkomst upp till 85 528 PLN från inkomstskatt (ZUS och sjukförsäkring gäller fortfarande)."
+    },
+    "pt": {
+      "region": "Region",
+      "filingStatus": "Deklarationsstatus",
+      "dependants": "Försörjningsberoende"
+    },
+    "se": {
+      "municipality": "Kommun",
+      "customRate": "Kommunal skattesats (%)",
+      "churchMember": "Medlem i Svenska kyrkan?",
+      "churchAria": "Val av kyrkomedlemskap",
+      "churchNote": "Lägger till kyrkoavgiften. Inkomstskatten återspeglar redan grundavdraget och jobbskatteavdraget (under 66)."
+    },
+    "it": {
+      "region": "Region (regional tilläggsskatt)",
+      "customRegionalRate": "Regional tilläggsskattesats (%)",
+      "municipalRate": "Kommunal tilläggsskattesats (%)",
+      "dependentChildren": "Försörjningsberoende barn (21–29 år)",
+      "dependentChildrenNote": "Barn under 21 omfattas av Assegno Unico (ej via lönen). Regionala och kommunala tilläggsskatter varierar beroende på plats.",
+      "dependentSpouse": "Försörjningsberoende make/maka (coniuge a carico)?",
+      "dependentSpouseAria": "Val av försörjningsberoende make/maka",
+      "dependentSpouseNote": "En make/maka med liten eller ingen inkomst (coniuge a carico) ger ett skatteavdrag på upp till €800."
+    },
+    "es": {
+      "community": "Autonom region",
+      "filingStatus": "Deklarationsstatus",
+      "children": "Barn (försörjningsberoende efterkommande)",
+      "childrenNote": "Regionala skattesatser varierar mellan regioner; País Vasco och Navarra använder separata foral-system som inte omfattas här."
+    },
+    "fr": {
+      "household": "Hushåll",
+      "children": "Försörjningsberoende barn",
+      "childrenNote": "Lägger till familjekvotsandelar (+0,5 för vart och ett av de två första barnen, +1 från det tredje), med förmånen begränsad (plafonnement). Uppskattning för ett enpersonshushåll/ensamförsörjare."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Ogift, inga barn",
+        "2": "Ensamstående förälder",
+        "3": "Gift (högre inkomst än partnern)",
+        "4": "Gift (lika hög inkomst)",
+        "5": "Gift (lägre inkomst än partnern)",
+        "6": "Bi- och tilläggsinkomst"
+      },
+      "deHealthInsurance": {
+        "public": "Offentlig / lagstadgad (GKV)",
+        "private-without": "Privat (utan arbetsgivarbidrag)",
+        "private-with": "Privat (med arbetsgivarbidrag)"
+      },
+      "usFilingStatus": {
+        "single": "Ensamstående",
+        "mfj": "Gift, gemensam deklaration",
+        "mfs": "Gift, separat deklaration",
+        "hoh": "Hushållsföreståndare"
+      },
+      "usEmploymentType": {
+        "employee": "Anställd (W-2)",
+        "selfEmployed": "Egenföretagare (uppskattad SE-skatt)"
+      },
+      "usDeductionMethod": {
+        "auto": "Auto (högst av standard och specificerat)",
+        "standard": "Standardavdrag",
+        "itemized": "Specificerade avdrag"
+      },
+      "ukRegion": {
+        "england": "England",
+        "wales": "Wales",
+        "ni": "Nordirland",
+        "scotland": "Skottland (stöds ännu inte)"
+      },
+      "ukStudentLoan": {
+        "none": "Inget",
+        "plan2": "Plan 2 (9 % över £{threshold})",
+        "plan4": "Plan 4 (9 % över £{threshold})",
+        "plan5": "Plan 5 (9 % över £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Ensamstående",
+        "joint": "Gift – gemensam beskattning (ensamförsörjare)"
+      },
+      "ptRegion": {
+        "mainland": "Fastlandet (Continente)",
+        "azores": "Azorerna (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Ensamstående",
+        "joint": "Gift – gemensam beskattning (ensamförsörjare)"
+      },
+      "esFilingStatus": {
+        "single": "Individuell",
+        "joint": "Gemensam deklaration (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Ensamstående (1 part)",
+        "married": "Gift / PACS – gemensam (2 parts)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Sjukförsäkring",
+      "longTermCareInsurance": "Långtidsvårdsförsäkring",
+      "pensionInsurance": "Pensionsförsäkring",
+      "unemploymentInsurance": "Arbetslöshetsförsäkring",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Ytterligare Medicare-skatt",
+      "seTaxSocialSecurity": "Egenföretagarskatt (Social Security)",
+      "seTaxMedicare": "Egenföretagarskatt (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (klass 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (klass 1, högre)",
+      "plPension": "Pensionsförsäkring (Emerytalne)",
+      "plDisability": "Sjuk- och aktivitetsersättning (Rentowe)",
+      "plSickness": "Sjukförsäkring (Chorobowe)",
+      "plHealth": "Sjukförsäkring (Zdrowotne)",
+      "ptSocialSecurity": "Social Security (Segurança Social)",
+      "seChurchFee": "Kyrkoavgift",
+      "itInps": "INPS-pensionsavgift",
+      "itRegionalMunicipalSurtax": "Regional och kommunal tilläggsskatt (addizionali)",
+      "esCommonContingencies": "Allmänna risker (Seguridad Social)",
+      "esMei": "MEI-solidaritetsavgift",
+      "esTraining": "Utbildning (Formación profesional)",
+      "esUnemployment": "Arbetslöshet (Desempleo)",
+      "esSocialSecurity": "Social Security (Seguridad Social)",
+      "frCsgDeductible": "CSG (avdragsgill)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (ej avdragsgill)",
+      "frSocialSecurityPension": "Social- och pensionsavgifter",
+      "frPension": "Pension (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Beräkningsresultat",
+      "netIncome": "Nettoinkomst",
+      "netHourly": "Netto per timme",
+      "netHourlyAfterSacrifice": "Netto per timme (efter löneväxling)",
+      "netMonthly": "Netto per månad",
+      "netYearly": "Netto per år",
+      "effectiveTaxRate": "Effektiv skattesats",
+      "taxAndNiRate": "Skatt och NI-sats",
+      "salarySacrificeRate": "Löneväxlingssats",
+      "totalNonCashShare": "Total icke-kontant andel",
+      "breakdown": "Specifikation",
+      "grossIncome": "Bruttoinkomst",
+      "preTaxDeductionsEntered": "Avdrag före skatt (angivna)",
+      "preTaxDeductionsAppliedCapped": "Avdrag före skatt (tillämpade, med tak)",
+      "preTaxDeductions": "Avdrag före skatt",
+      "adjustedGrossIncome": "Justerad bruttoinkomst (AGI)",
+      "salarySacrifice": "Löneväxling (pension och före skatt)",
+      "adjustedIncomeAfterSacrifice": "Justerad inkomst (efter löneväxling)",
+      "preTaxContributions": "Avsättningar före skatt",
+      "standardDeduction": "Standardavdrag",
+      "itemizedDeduction": "Specificerat avdrag",
+      "allowances": "Avdrag",
+      "taxableIncome": "Beskattningsbar inkomst",
+      "incomeTax": "Inkomstskatt",
+      "incomeTaxDE": "Total inkomstskatt (ESt + Soli + kyrkoskatt)",
+      "incomeTaxUS": "Inkomstskatt (federal + delstatlig + lokal)",
+      "studentLoan": "Studielån",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Äktenskapsavdrag (Marriage Allowance)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Solidaritetstillägg (Soli)",
+      "churchTax": "Kyrkoskatt (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Federal inkomstskatt (före skattereduktioner)",
+      "taxCreditsApplied": "Skattereduktioner (tillämpade)",
+      "federalIncomeTaxAfterCredits": "Federal inkomstskatt (efter skattereduktioner)",
+      "stateIncomeTax": "Delstatlig inkomstskatt (uppskattning)",
+      "localIncomeTax": "Lokal inkomstskatt (uppskattning)",
+      "saxonySplit": "(Sachsen-fördelning)",
+      "cappedOn": "på",
+      "totalSocialContributions": "Totala sociala avgifter",
+      "taxesAndNi": "Skatter och NI",
+      "cashInHand": "Utbetalt belopp"
+    },
+    "example": {
+      "heading": "Exempelberäkning",
+      "perHour": "per timme",
+      "perMonth": "per månad",
+      "perYear": "per år",
+      "netIncomeAnnual": "Nettoinkomst (årlig)",
+      "basedOnPrefix": "Baserat på",
+      "hourlyNote": "({hours} timmar/vecka, {weeks} veckor/år)",
+      "monthlyNote": "(12 månader/år)",
+      "forTaxYear": "för beskattningsåret {year}."
+    },
+    "disclaimer": {
+      "title": "Ansvarsfriskrivning för skatteuppskattning",
+      "noteLabel": "Obs:",
+      "us": "Dessa beräkningar är uppskattningar baserade enbart på federala skattesatser. Delstatliga och lokala skatter ingår inte och kan väsentligt påverka din totala skatteskyldighet.",
+      "default": "Dessa beräkningar är uppskattningar och kanske inte inkluderar lokala eller regionala skatter. Rådfråga officiella källor eller en skatterådgivare för exakta uppgifter."
+    },
+    "dataSources": {
+      "heading": "Datakällor",
+      "intro": "Våra uppskattningar för {country} baseras på offentligt tillgängliga uppgifter från officiella myndigheter och skattemyndigheter. Skattesatser och tröskelvärden ändras varje beskattningsår, så vi granskar dem regelbundet. Dessa resultat är uppskattningar, inte officiella skattebeslut eller rådgivning.",
+      "editorialPrefix": "Se våra",
+      "editorialLink": "redaktionella riktlinjer",
+      "editorialSuffix": "för hur vi efterforskar och uppdaterar denna data."
+    }
+  },
+  "hub": {
+    "metaTitle": "Lönekalkylator-hubb - Beräkna nettoinkomst per land",
+    "metaDescription": "Gratis lönekalkylatorer för flera länder. Beräkna din nettoinkomst efter skatt och sociala avgifter i USA, Tyskland, Storbritannien och fler.",
+    "title": "Lönekalkylator-hubb",
+    "intro1": "Beräkna din nettoinkomst efter skatt och sociala avgifter. Våra gratis kalkylatorer hjälper dig att förstå hur mycket du får behålla i olika länder, med detaljerade uppdelningar av inkomstskatt, sociala avgifter och andra avdrag.",
+    "intro2": "Välj ett land nedan för att komma igång, eller välj ett beräkningsläge som passar dina behov.",
+    "byCountryHeading": "Beräkna per land",
+    "calculateCta": "Beräkna →",
+    "hourlyTitle": "Kalkylator för timinkomst",
+    "monthlyTitle": "Kalkylator för månadslön",
+    "yearlyTitle": "Kalkylator för årslön",
+    "chooseModeHeading": "Välj beräkningsläge",
+    "converterTitle": "Omvandlare från timlön till lön",
+    "converterBody": "Omvandla din timlön till års-, månads- och veckolön. Perfekt för att förstå din totala ersättning vid förhandling eller jämförelse av jobberbjudanden.",
+    "converterCta": "Omvandla timlön →",
+    "hourlyBody": "Beräkna nettoinkomst när du känner till din timlön. Inkluderar alternativ för anpassade timmar per vecka och veckor per år för att matcha ditt arbetsschema.",
+    "hourlyCta": "Beräkna timlön →",
+    "monthlyBody": "Beräkna din månatliga nettoinkomst efter skatt. Idealiskt för budgetering och för att förstå din månatliga nettolön.",
+    "monthlyCta": "Beräkna månadsvis →",
+    "yearlyBody": "Beräkna din årliga nettoinkomst utifrån din årliga bruttolön. Se den fullständiga uppdelningen av skatter och avdrag för hela året.",
+    "yearlyCta": "Beräkna årsvis →",
+    "faqHeading": "Vanliga frågor"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Löne- och skattekalkylator — Uppskatta din nettoinkomst",
+      "description": "Gratis lönekalkylator. Ange din bruttoinkomst för att uppskatta nettolön, inkomstskatt och sociala avgifter för USA, Tyskland och Storbritannien 2026.",
+      "ogDescription": "Gratis lönekalkylator. Uppskatta nettolön, inkomstskatt och sociala avgifter för USA, Tyskland och Storbritannien."
+    },
+    "title": "Löne- och skattekalkylator",
+    "intro": "Uppskatta din nettoinkomst (nettolön) efter inkomstskatt och sociala avgifter. Ange din bruttolön, välj land och löneperiod och få en omedelbar uppdelning för skatteåret 2026.",
+    "howItWorks": {
+      "heading": "Så fungerar kalkylatorn",
+      "p1": "Vår kalkylator omvandlar din bruttoinkomst till uppskattad nettolön med hjälp av aktuella skatteskikt och sociala avgifter för varje land som stöds. Du kan ange inkomst som en timlön, en månadslön eller en årssumma, och kalkylatorn räknar om den till årsbasis innan de relevanta skattereglerna tillämpas.",
+      "p2": "Uppdelningen separerar inkomstskatt från sociala avgifter — såsom Social Security och Medicare i USA, lagstadgade försäkringsavgifter i Tyskland och National Insurance i Storbritannien — så att du kan se exakt vart dina pengar tar vägen och vad din effektiva skattesats är.",
+      "p3": "Resultaten är uppskattningar enbart för informations- och planeringsändamål och tar inte hänsyn till varje individuell omständighet, såsom delstatliga och lokala skatter, skattereduktioner eller naturaförmåner. För råd som är specifika för din situation, rådfråga en kvalificerad skatteexpert."
+    },
+    "related": {
+      "heading": "Utforska landsspecifika kalkylatorer",
+      "hub": "Lönekalkylator-hubb",
+      "us": "Lönekalkylator för USA",
+      "de": "Lönekalkylator för Tyskland",
+      "uk": "Lönekalkylator för Storbritannien",
+      "hourly": "Omvandlare från timlön till lön",
+      "guides": "Löne- och skatteguider"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Nettolönekalkylator - Beräkna din nettolön",
+      "description": "Gratis nettolönekalkylator. Räkna ut din nettolön efter inkomstskatt och sociala avgifter för USA, Tyskland och Storbritannien."
+    },
+    "title": "Nettolönekalkylator",
+    "intro": "Beräkna din nettoinkomst (nettolön) efter skatt och sociala avgifter. Vår omfattande lönekalkylator hjälper dig att förstå exakt hur mycket du får ut efter alla avdrag.",
+    "cta": "Gå till Lönekalkylator-hubben →",
+    "breakdownIntro": "Vår lönekalkylator ger detaljerade uppdelningar av:",
+    "breakdown": {
+      "gross": "Bruttoinkomst (före skatt)",
+      "incomeTax": "Beräkningar av inkomstskatt",
+      "social": "Sociala avgifter",
+      "net": "Nettoinkomst (nettolön)",
+      "effectiveRate": "Effektiva skattesatser"
+    },
+    "availability": "Tillgänglig för flera länder, däribland USA, Tyskland och Storbritannien. Välj ditt land för att komma igång med korrekta och aktuella skatteberäkningar för 2026.",
+    "specialized": "Du kan även använda våra specialiserade kalkylatorer:",
+    "links": {
+      "hourly": "Omvandlare från timlön till lön",
+      "us": "USA-kalkylator",
+      "de": "Tysklands-kalkylator",
+      "uk": "Storbritannien-kalkylator"
+    },
+    "explainer": {
+      "heading": "Vad är nettolön?",
+      "p1": "Din <b>nettolön</b> — ofta kallad nettolön eller utbetald lön — är det belopp som faktiskt landar på ditt bankkonto efter att obligatoriska avdrag dragits från din bruttolön. Bruttolönen är huvudbeloppet i ditt anställningsavtal; nettolönen är det du kan budgetera och spendera.",
+      "p2": "Skillnaden mellan de två består av <b>inkomstskatt</b> och <b>sociala avgifter</b>. Inkomstskatten är vanligtvis progressiv, vilket innebär att högre delar av din inkomst beskattas med högre skattesatser. Sociala avgifter finansierar program som statlig pension, sjukvård och arbetslöshetsförsäkring, och de exakta satserna beror på var du bor.",
+      "p3": "Eftersom varje land beräknar dessa avdrag olika kan samma bruttolön ge mycket olika nettolön i USA, Tyskland eller Storbritannien. Välj ditt land ovan för att se en detaljerad, landsspecifik uppdelning för skatteåret 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Omvandlare från timlön till lön - Beräkna års-, månads- och veckoinkomst",
+      "description": "Omvandla timlön till års-, månads- och veckolön. Gratis kalkylator med formler och exempel. Perfekt för löneförhandlingar och lönejämförelser.",
+      "ogDescription": "Omvandla timlön till års-, månads- och veckolön. Gratis kalkylator med formler och exempel."
+    },
+    "title": "Omvandlare från timlön till lön",
+    "intro": "Omvandla din timlön till års-, månads-, vecko- och dagslön. Förstå din totala ersättning när du förhandlar om jobberbjudanden eller jämför tjänster.",
+    "calc": {
+      "heading": "Beräkna din nettoinkomst",
+      "intro": "Ange din timlön nedan för att beräkna din brutto- och nettoinkomst. Kalkylatorn är förinställd på timläge och visar din nettolön efter skatt."
+    },
+    "formulas": {
+      "heading": "Omvandlingsformler",
+      "annual": {
+        "title": "Årslön utifrån timlön",
+        "code": "Årslön = Timlön × Timmar per vecka × Veckor per år",
+        "note": "Standardberäkning: Multiplicera din timlön med 40 timmar per vecka och 52 veckor per år."
+      },
+      "monthly": {
+        "title": "Månadslön",
+        "code": "Månadslön = Årslön ÷ 12",
+        "note": "Dela årslönen med 12 månader. Obs: Detta ger ett genomsnittligt månadsbelopp; den faktiska månadslönen kan variera om utbetalning sker varannan vecka eller två gånger i månaden."
+      },
+      "weekly": {
+        "title": "Veckolön",
+        "code": "Veckolön = Timlön × Timmar per vecka",
+        "note": "Multiplicera helt enkelt din timlön med antalet timmar du arbetar per vecka."
+      },
+      "daily": {
+        "title": "Dagslön",
+        "code": "Dagslön = Timlön × Timmar per dag",
+        "note": "För en 8-timmars arbetsdag, multiplicera din timlön med 8."
+      },
+      "grossNote": "<b>Obs:</b> Dessa formler beräknar bruttoinkomst (före skatt). Använd kalkylatorn nedan för att se din nettolön efter skatt och avdrag."
+    },
+    "examples": {
+      "heading": "Exempel",
+      "annualGross": "Bruttoårslön:",
+      "monthlyGross": "Bruttomånadslön:",
+      "weeklyGross": "Bruttoveckolön:",
+      "dailyGross": "Bruttodagslön",
+      "ex1": {
+        "title": "Exempel 1: $25 per timme, 40 timmar/vecka, 52 veckor/år",
+        "annual": "<b>Bruttoårslön:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Bruttomånadslön:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Bruttoveckolön:</b> $25 × 40 = $1,000",
+        "daily": "<b>Bruttodagslön (8 timmar):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Exempel 2: $30 per timme, 35 timmar/vecka, 50 veckor/år",
+        "annual": "<b>Bruttoårslön:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Bruttomånadslön:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Bruttoveckolön:</b> $30 × 35 = $1,050",
+        "daily": "<b>Bruttodagslön (7 timmar):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Exempel 3: $20 per timme, 40 timmar/vecka, 48 veckor/år (med 4 veckors obetald ledighet)",
+        "annual": "<b>Bruttoårslön:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Bruttomånadslön:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Bruttoveckolön:</b> $20 × 40 = $800",
+        "note": "Obs: Att justera antalet veckor per år tar hänsyn till obetald ledighet, semester eller säsongsarbete."
+      }
+    },
+    "faq": {
+      "heading": "Vanliga frågor",
+      "items": [
+        {
+          "question": "Vad är skillnaden mellan brutto- och nettolön?",
+          "answer": "Bruttolön är din totala inkomst före skatt och avdrag. Nettolön (utbetald lön) är det du får efter att inkomstskatt, sociala avgifter och andra obligatoriska avdrag har dragits av. Kalkylatorn ovan visar både brutto- och nettobelopp."
+        },
+        {
+          "question": "Hur många veckor bör jag använda i beräkningen?",
+          "answer": "Standarden är 52 veckor per år för heltidsanställda. Om du dock har obetald ledighet, arbetar säsongsbetonat eller tar längre ledighet bör du justera därefter. Till exempel innebär 2 veckors obetald semester 50 veckor per år."
+        },
+        {
+          "question": "Bör jag inkludera övertid i min timlön?",
+          "answer": "För korrekta årslöneberäkningar, använd din grundtimlön och standardtimmar. Om du regelbundet arbetar övertid kan du antingen: (1) beräkna grundlönen separat och lägga till uppskattad övertid, eller (2) använda en genomsnittlig timlön som tar hänsyn till övertid. Kalkylatorn låter dig justera timmar per vecka för att återspegla ditt faktiska schema."
+        },
+        {
+          "question": "Hur omvandlar jag lön tillbaka till timlön?",
+          "answer": "För att omvandla årslön till timlön: Timlön = Årslön ÷ (Timmar per vecka × Veckor per år). Till exempel $52,000 ÷ (40 × 52) = $25 per timme. Använd vår kalkylator omvänt genom att ange din årslön och välja årsläge."
+        }
+      ],
+      "countriesQuestion": "Är dessa beräkningar korrekta för alla länder?",
+      "countriesAnswer": "Omvandlingsformlerna (timlön till årslön, månadslön osv.) är universella. Nettoinkomstberäkningar varierar dock mellan länder på grund av olika skattesystem. Använd de landsspecifika kalkylatorerna på vår <link>Lönekalkylator-hubb</link> för korrekta uppskattningar av nettoinkomst.",
+      "partTimeQuestion": "Vad händer om jag arbetar deltid eller har oregelbundna timmar?",
+      "partTimeAnswer": "För deltidsarbete, ange dina faktiska timmar per vecka. För oregelbundna timmar, beräkna ett genomsnitt av veckotimmarna över en längre period (t.ex. 3–6 månader) och använd det. Kalkylatorn tillåter anpassade timmar per vecka och veckor per år för att matcha vilket arbetsschema som helst."
+    },
+    "related": {
+      "heading": "Relaterade resurser",
+      "hub": "Lönekalkylator-hubb",
+      "us": "Lönekalkylator för USA",
+      "de": "Lönekalkylator för Tyskland",
+      "uk": "Lönekalkylator för Storbritannien"
+    }
+  }
+}

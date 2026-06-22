@@ -4,6 +4,10 @@
  * and may not include local/regional taxes (especially for US)
  */
 
+'use client';
+
+import { useTranslations } from 'next-intl';
+
 interface TaxDisclaimerProps {
   countryCode?: string;
   className?: string;
@@ -15,12 +19,13 @@ export default function TaxDisclaimer({
   className = '',
   variant = 'default',
 }: TaxDisclaimerProps) {
+  const t = useTranslations('calculator');
   // Customize message based on country
   const getDisclaimerText = () => {
     if (countryCode?.toUpperCase() === 'US') {
-      return 'These calculations are estimates based on federal tax rates only. State and local taxes are not included and may significantly affect your total tax liability.';
+      return t('disclaimer.us');
     }
-    return 'These calculations are estimates and may not include local or regional taxes. Please consult official sources or a tax professional for accurate figures.';
+    return t('disclaimer.default');
   };
 
   if (variant === 'inline') {
@@ -47,7 +52,7 @@ export default function TaxDisclaimer({
             />
           </svg>
           <p className="text-sm text-amber-900 leading-relaxed">
-            <span className="font-medium">Note: </span>
+            <span className="font-medium">{t('disclaimer.noteLabel')} </span>
             {getDisclaimerText()}
           </p>
         </div>
@@ -73,7 +78,7 @@ export default function TaxDisclaimer({
           />
         </svg>
         <div className="flex-1">
-          <h3 className="text-base font-medium text-amber-900 mb-1">Tax Estimate Disclaimer</h3>
+          <h3 className="text-base font-medium text-amber-900 mb-1">{t('disclaimer.title')}</h3>
           <p className="text-sm text-amber-800 leading-relaxed">{getDisclaimerText()}</p>
         </div>
       </div>

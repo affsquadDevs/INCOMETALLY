@@ -1,0 +1,482 @@
+{
+  "US": {
+    "displayName": "USA",
+    "title": "Skatteberäknare för lön i USA 2026 - Beräkna din nettoinkomst",
+    "description": "Beräkna din nettolön efter federala skatter i USA. Uppskatta din lön efter skatt med vår kostnadsfria amerikanska skatteberäknare för 2026.",
+    "taxExplanation": "USA tillämpar ett progressivt federalt inkomstskattesystem där skattesatserna ökar i takt med att inkomsten stiger. Internal Revenue Service (IRS) administrerar skattelagstiftningen, som innehåller sju skatteskikt som sträcker sig från 10% till 37% för skatteåret 2026. Systemet är utformat för att säkerställa att de med högre inkomster bidrar med en större andel av sina inkomster till federala intäkter, samtidigt som det ger lättnad för låginkomsthushåll genom lägre skattesatser och olika skattereduktioner.\n\nFederal inkomstskatt beräknas med hjälp av marginella skatteskikt, vilket innebär att olika delar av din inkomst beskattas med olika satser. Om du till exempel tjänar $75,000 per år hamnar den första delen av din inkomst i lägre skikt, och endast det belopp som överstiger varje skiktgräns beskattas med den högre satsen. Denna progressiva struktur säkerställer att låginkomsttagare betalar en mindre andel av sin inkomst i skatt jämfört med höginkomsttagare. Att förstå de marginella skattesatserna är avgörande eftersom din effektiva skattesats—den andel av din totala inkomst som betalas i skatt—vanligtvis är lägre än din högsta marginella sats.\n\nUtöver federal inkomstskatt betalar de flesta anställda även skatt till Social Security och Medicare, vanligtvis kallade FICA-skatter. Skatt till Social Security tas ut med 6.2% på löner upp till ett visst tak (Social Securitys lönebas), som justeras årligen för inflation. Detta tak innebär att när du väl når lönebasgränsen dras ingen ytterligare Social Security-skatt under resten av året. Medicare-skatt tas ut med 1.45% på alla löner utan tak, vilket innebär att höginkomsttagare fortsätter att betala Medicare-skatt på hela sin inkomst. Höginkomsttagare kan också omfattas av en ytterligare Medicare-tilläggsskatt på 0.9% på inkomst över specifika trösklar, vilken gäller löner, inkomst av egen verksamhet och annan ersättning.\n\nStandardavdraget (standard deduction) är en central del av det amerikanska skattesystemet, som gör det möjligt för skattebetalare att minska sin beskattningsbara inkomst utan att specificera avdrag. För 2026 justeras standardavdragsbeloppen för inflation och varierar beroende på deklarationsstatus—ensamstående, gifta som deklarerar gemensamt, gifta som deklarerar var för sig samt hushållsföreståndare har alla olika belopp. Detta avdrag undantar i praktiken en del av inkomsten från beskattning, vilket gör den effektiva skattesatsen lägre än marginalskattesatsen för många skattebetalare. Skattebetalare kan välja mellan att ta standardavdraget eller att specificera avdrag som bostadslåneränta, delstatliga och lokala skatter samt välgörenhetsgåvor, beroende på vilket som ger störst skattefördel.\n\nSkatteavdrag sker löpande under året via löneavdrag, där arbetsgivare drar av uppskattad skatt från varje lönecheck baserat på de uppgifter som lämnats på blankett W-4. Denna blankett gör det möjligt för anställda att ange sin deklarationsstatus, antal försörjningsberoende och andra faktorer som påverkar skattskyldigheten. Vid skatteårets slut lämnar skattebetalare in en årlig deklaration för att stämma av sin faktiska skattskyldighet mot de belopp som dragits av. Om för mycket dragits av får skattebetalaren tillbaka pengar; om för lite dragits av måste mellanskillnaden betalas. Målet är att avdraget ska motsvara den faktiska skattskyldigheten så nära som möjligt för att undvika stora återbetalningar eller oväntade skatteräkningar.\n\nDet amerikanska skattesystemet innehåller även olika skattereduktioner och avdrag som ytterligare kan minska skattskyldigheten. Dessa inkluderar bland annat Earned Income Tax Credit (EITC) för låg- och medelinkomsttagare, barnskattereduktioner, utbildningsreduktioner och avdrag för pensionsavsättningar. Skattereduktioner är särskilt värdefulla eftersom de minskar skattskyldigheten krona för krona, medan avdrag minskar den beskattningsbara inkomsten. Den här beräknaren fokuserar dock på den grundläggande federala inkomstskatten och FICA-avgifterna och ger en grunduppskattning innan dessa ytterligare faktorer beaktas.\n\nDet är viktigt att notera att delstatliga och lokala skatter inte ingår i de federala beräkningarna. Många delstater tar ut sina egna inkomstskatter, vilka kan variera från fasta satser till progressiva strukturer liknande det federala systemet. Vissa delstater, som Texas och Florida, har ingen delstatlig inkomstskatt, medan andra som Kalifornien och New York har relativt höga delstatliga skattesatser. Lokala jurisdiktioner kan också ta ut ytterligare inkomstskatter, särskilt i större storstadsområden. Dessa delstatliga och lokala skatter kan påverka den totala skattebördan avsevärt och ibland lägga till flera procentenheter till den effektiva skattesatsen.\n\nSkattelagstiftningen genomgår regelbundna förändringar genom lagstiftning, och satser och skikt justeras årligen för inflation med hjälp av konsumentprisindex. Skattebetalare bör konsultera de senaste IRS-publikationerna eller en kvalificerad skatteexpert för råd som är specifika för deras situation, eftersom individuella omständigheter kan variera avsevärt beroende på deklarationsstatus, försörjningsberoende, avdrag och andra faktorer. Det amerikanska skattesystemets komplexitet innebär att två personer med samma bruttoinkomst kan ha mycket olika nettoinkomster beroende på sin specifika situation.",
+    "faqs": [
+      {
+        "question": "Inkluderar den amerikanska beräknaren delstatliga och lokala skatter?",
+        "answer": "Nej, vår amerikanska beräknare inkluderar endast federal inkomstskatt och FICA-skatter (Social Security och Medicare). Delstatliga och lokala inkomstskatter ingår inte och kan påverka din totala skattskyldighet avsevärt, särskilt i delstater med höga skatter som Kalifornien och New York."
+      },
+      {
+        "question": "Vad är standardavdraget för 2026?",
+        "answer": "Standardavdragsbeloppen för 2026 justeras för inflation och varierar beroende på deklarationsstatus. Ensamstående, gifta som deklarerar gemensamt, gifta som deklarerar var för sig samt hushållsföreståndare har alla olika belopp. Standardavdraget minskar din beskattningsbara inkomst utan att du behöver specificera avdrag."
+      },
+      {
+        "question": "Hur beräknas skatterna till Social Security och Medicare?",
+        "answer": "Skatt till Social Security är 6.2% på löner upp till Social Securitys lönebas (som justeras årligen). Medicare-skatt är 1.45% på alla löner utan tak. Höginkomsttagare kan även betala en ytterligare Medicare-tilläggsskatt på 0.9% på inkomst över vissa trösklar. Dessa är separata från federal inkomstskatt."
+      },
+      {
+        "question": "Vad är skillnaden mellan marginell och effektiv skattesats?",
+        "answer": "Din marginella skattesats är den sats som tillämpas på ditt högsta inkomstskikt. Din effektiva skattesats är den andel av din totala inkomst som betalas i skatt, vilken vanligtvis är lägre eftersom olika delar av inkomsten beskattas med olika satser. Beräknaren visar din effektiva skattesats."
+      },
+      {
+        "question": "Kan jag beräkna skatter för olika deklarationsstatusar?",
+        "answer": "Beräknaren utgår från standardantaganden för en ensamstående deklarant. Olika deklarationsstatusar (gifta som deklarerar gemensamt, hushållsföreståndare osv.) har olika standardavdrag och skatteskikt. För korrekta beräkningar för din specifika deklarationsstatus bör du konsultera en skatteexpert eller använda IRS skattetabeller."
+      },
+      {
+        "question": "Ingår skattereduktioner och avdrag i beräkningen?",
+        "answer": "Beräknaren inkluderar standardavdraget men inkluderar inte specificerade avdrag eller skattereduktioner som Earned Income Tax Credit, barnskattereduktioner eller utbildningsreduktioner. Dessa kan minska din skattskyldighet avsevärt, så din faktiska lön efter skatt kan vara högre än vad som uppskattats."
+      },
+      {
+        "question": "Hur beräknar jag min nettoinkomst om jag arbetar på timbasis?",
+        "answer": "Ange din timlön och välj timläge. Beräknaren frågar efter antal timmar per vecka (standard 40) och veckor per år (standard 52). Den beräknar sedan din årliga bruttoinkomst och tillämpar federala skatter och FICA-avgifter för att visa din nettoinkomst per timme, månad och år."
+      },
+      {
+        "question": "Vad händer om jag har flera anställningar eller ytterligare inkomstkällor?",
+        "answer": "Beräknaren uppskattar skatter för en enda inkomstkälla. Om du har flera anställningar eller ytterligare inkomst kan din totala skattskyldighet bli annorlunda eftersom den sammanlagda inkomsten kan föra dig in i högre skikt. Konsultera en skatteexpert för komplexa inkomstsituationer."
+      },
+      {
+        "question": "Ingår pensionsavsättningar (401k, IRA)?",
+        "answer": "Nej, pensionsavsättningar före skatt ingår inte i beräkningen. Avsättningar till 401(k)-planer och traditionella IRA minskar din beskattningsbara inkomst, vilket skulle sänka din skattskyldighet. Om du gör pensionsavsättningar kan din faktiska lön efter skatt och dina skattebesparingar skilja sig från uppskattningen."
+      },
+      {
+        "question": "Hur korrekt är uppskattningen för höginkomsttagare?",
+        "answer": "För höginkomsttagare kan uppskattningen vara mindre korrekt eftersom den inte tar hänsyn till Alternative Minimum Tax (AMT), ytterligare Medicare-skatt eller begränsningar av vissa avdrag. Höginkomsttagare bör konsultera en skatteexpert för mer korrekta uppskattningar."
+      }
+    ]
+  },
+  "DE": {
+    "displayName": "Tyskland",
+    "title": "Skattekalkylator för löner i Tyskland 2026 - Beräkna din nettoinkomst",
+    "description": "Beräkna din nettolön efter skatter och sociala avgifter i Tyskland. Uppskatta din nettolön med vår kostnadsfria tyska skattekalkylator för 2026.",
+    "taxExplanation": "Tyskland har ett omfattande skatte- och socialförsäkringssystem som i betydande grad påverkar nettolönen. Inkomstskattesystemet är progressivt, med skattesatser som sträcker sig från 0% till 45% för de högsta inkomsttagarna, plus ett solidaritetstillägg och kyrkoskatt i vissa regioner. Detta system är utformat för att finansiera omfattande samhällstjänster samtidigt som man bibehåller en progressiv struktur som lägger en större börda på höginkomsttagare.\n\nInkomstskatten i Tyskland beräknas med hjälp av en progressiv skala med flera skattesteg. Det skattefria grundavdraget (Grundfreibetrag) säkerställer att låginkomsttagare inte betalar någon inkomstskatt. För 2026 justeras detta avdrag årligen för att ta hänsyn till inflation och ökade levnadskostnader. När inkomsten stiger beskattas olika delar med stigande skattesatser: 14% för det lägsta beskattningsbara steget, stigande genom mellanliggande satser till 42% för höginkomsttagare, och 45% för det högsta inkomststeget. Den progressiva karaktären innebär att endast inkomst över varje tröskel beskattas med den högre satsen, inte hela inkomsten.\n\nSolidaritetstillägget (Solidaritätszuschlag) är en extra skatt som ursprungligen infördes för att finansiera den tyska återföreningen. Även om den till stor del har avskaffats för de flesta skattebetalare kan den fortfarande gälla för mycket höga inkomsttagare. Kyrkoskatt (Kirchensteuer) tas ut i de flesta tyska delstater för medlemmar i erkända religiösa samfund och innebär vanligtvis ett tillägg på 8-9% till inkomstskattebeloppet. Denna skatt dras automatiskt för registrerade medlemmar i kyrkor och religiösa samfund, även om man kan avstå genom att formellt lämna sitt religiösa samfund.\n\nSociala avgifter utgör en betydande del av avdragen i Tyskland. Systemet omfattar fyra huvudkomponenter: sjukförsäkring, vårdförsäkring för långtidsvård, arbetslöshetsförsäkring och pensionsförsäkring. Dessa avgifter delas vanligtvis mellan arbetsgivare och arbetstagare, där varje part betalar ungefär hälften av den totala avgiften. Denna modell med delat ansvar är utformad för att fördela kostnaden för samhällstjänster mellan arbetstagare och arbetsgivare, även om arbetstagarens del direkt minskar nettolönen.\n\nSjukförsäkringsavgifter är obligatoriska för alla arbetstagare som tjänar under en viss tröskel (Versicherungspflichtgrenze). Över denna tröskel kan arbetstagare välja privat sjukförsäkring, även om många stannar kvar i det offentliga systemet. Avgiftssatsen är en procentandel av bruttoinkomsten och delas lika mellan arbetsgivare och arbetstagare. Vårdförsäkringen för långtidsvård följer en liknande struktur, där avgifterna beräknas som en procentandel av inkomsten. Båda systemen ger ett omfattande skydd, där den offentliga sjukförsäkringen täcker de flesta medicinska utgifter och vårdförsäkringen ger stöd för omvårdnads- och vårdtjänster.\n\nArbetslöshetsförsäkringen ger ekonomiskt stöd under perioder av arbetslöshet och finansieras genom avgifter från både arbetsgivare och arbetstagare. Avgiftssatsen fastställs årligen och gäller för inkomst upp till ett avgiftstak. Denna försäkring ger arbetslöshetsersättning (Arbeitslosengeld) under en begränsad period, vanligtvis baserat på tidigare inkomster och avgiftshistorik. Pensionsförsäkringsavgifter finansierar det statliga pensionssystemet, med satser som fastställs av staten och som också delas mellan arbetsgivare och arbetstagare. Pensionssystemet ger pensionsförmåner baserade på livstidsavgifter och är utformat för att ersätta en del av inkomsten före pensionering.\n\nDet tyska skattesystemet omfattar olika avdrag och bidrag som kan minska den beskattningsbara inkomsten. Dessa inkluderar bidrag för barn, särskilda utgifter (Sonderausgaben) och extraordinära utgifter (außergewöhnliche Belastungen). Skatteklasssystemet (Steuerklassen) avgör hur mycket skatt som dras, med olika klasser för ensamstående personer, gifta par och andra situationer. Skatteklass III ger den mest förmånliga skatteavdragen för den ena maken i ett gift par, medan skatteklass V ger en mindre förmånlig skatteavdrag för den andra maken, även om den totala skatteskulden är densamma oavsett vald klass.\n\nSkatteavdrag i Tyskland sker genom systemet med löneskatt (Lohnsteuer), där arbetsgivare beräknar och drar skatter och sociala avgifter från varje lönebesked baserat på arbetstagarens skatteklass och inlämnade uppgifter. Den årliga skattedeklarationsprocessen gör det möjligt för skattebetalare att göra ytterligare avdrag och eventuellt få återbetalning om för mycket skatt har dragits. Många skattebetalare får återbetalning efter att ha lämnat in sin årliga deklaration, särskilt de som kan göra ytterligare avdrag eller som hade betydande särskilda utgifter under året.\n\nKomplexiteten i det tyska skatte- och socialförsäkringssystemet innebär att effektiva skattesatser kan variera avsevärt beroende på individuella omständigheter, inklusive civilstånd, antal barn, typ av sjukförsäkring och andra faktorer. Gifta par drar ofta nytta av inkomstuppdelning, vilket kan minska deras sammanlagda skattebörda. Föräldrar får barnbidrag och kan vara berättigade till ytterligare skatteförmåner. Denna kalkylator ger uppskattningar baserade på standardscenarier och bör användas som en vägledning snarare än en definitiv beräkning, eftersom den faktiska nettolönen kan variera beroende på många individuella faktorer.",
+    "faqs": [
+      {
+        "question": "Vilka skatter och avgifter dras i Tyskland?",
+        "answer": "Tyska arbetstagare betalar inkomstskatt (Einkommensteuer), solidaritetstillägg (om tillämpligt), kyrkoskatt (om tillämpligt) och sociala avgifter inklusive sjukförsäkring, vårdförsäkring för långtidsvård, arbetslöshetsförsäkring och pensionsförsäkring. Dessa delas vanligtvis mellan arbetsgivare och arbetstagare."
+      },
+      {
+        "question": "Vad är det skattefria grundavdraget (Grundfreibetrag) i Tyskland?",
+        "answer": "Det skattefria grundavdraget är det inkomstbelopp du kan tjäna utan att betala inkomstskatt. För 2026 justeras detta belopp årligen för inflation. Inkomst över detta avdrag beskattas progressivt, med satser som sträcker sig från 14% till 45% beroende på din inkomstnivå."
+      },
+      {
+        "question": "Hur fungerar skatteklasssystemet (Steuerklassen)?",
+        "answer": "Tyskland använder skatteklasser för att avgöra hur mycket skatt som dras från din lön. Skatteklass I är för ensamstående personer, klasserna III och V är för gifta par (med olika skatteavdragssatser) och klass IV är för gifta par med liknande inkomster. Din årliga skatteskuld är densamma oavsett klass, men skatteavdraget varierar."
+      },
+      {
+        "question": "Vad är sociala avgifter i Tyskland?",
+        "answer": "Sociala avgifter inkluderar sjukförsäkring (Krankenversicherung), vårdförsäkring för långtidsvård (Pflegeversicherung), arbetslöshetsförsäkring (Arbeitslosenversicherung) och pensionsförsäkring (Rentenversicherung). Dessa beräknas som procentandelar av din bruttoinkomst och delas vanligtvis 50/50 mellan arbetsgivare och arbetstagare."
+      },
+      {
+        "question": "Behöver jag offentlig eller privat sjukförsäkring i Tyskland?",
+        "answer": "Arbetstagare som tjänar under tröskeln för försäkringsplikt (Versicherungspflichtgrenze) måste ha offentlig sjukförsäkring. Över denna tröskel kan du välja privat försäkring, även om många stannar kvar i det offentliga systemet. Kalkylatorn utgår från satser för offentlig sjukförsäkring."
+      },
+      {
+        "question": "Vad är solidaritetstillägget (Solidaritätszuschlag)?",
+        "answer": "Solidaritetstillägget infördes för att finansiera den tyska återföreningen. Det har till stor del avskaffats för de flesta skattebetalare men kan fortfarande gälla för mycket höga inkomsttagare. Det beräknas som en procentandel av din inkomstskatt och ingår i beräkningen om det är tillämpligt."
+      },
+      {
+        "question": "Hur beräknar jag nettoinkomsten för timanställda i Tyskland?",
+        "answer": "Ange din timlön och välj timläge. Ange ditt antal timmar per vecka och veckor per år. Kalkylatorn räknar om din inkomst till årsbasis, tillämpar tyska inkomstskattesteg och drar sociala avgifter för att visa din netto-timlön, månadslön och årslön."
+      },
+      {
+        "question": "Ingår barnbidrag och skatteförmåner?",
+        "answer": "Kalkylatorn använder standardscenarier och inkluderar kanske inte alla barnbidrag (Kinderfreibetrag) eller andra skatteförmåner som du kan vara berättigad till. Föräldrar får vanligtvis ytterligare skatteförmåner som kan minska skatteskulden, så den faktiska nettolönen kan vara högre än uppskattat."
+      },
+      {
+        "question": "Vad gäller om jag är gift eller har barn?",
+        "answer": "Gifta par kan dra nytta av inkomstuppdelning (Ehegattensplitting), vilket kan minska den sammanlagda skatteskulden. Föräldrar får barnbidrag och kan vara berättigade till ytterligare förmåner. Kalkylatorn ger uppskattningar baserade på standardscenarier; den faktiska skatten kan vara lägre för familjer."
+      },
+      {
+        "question": "Hur exakt är uppskattningen för deltidsarbetande?",
+        "answer": "Uppskattningen är exakt för deltidsarbetande så länge du anger dina faktiska timmar per vecka. Deltidsarbetande som tjänar under vissa trösklar kan dock ha andra satser för sociala avgifter eller undantag. Kalkylatorn använder standardavgiftssatser."
+      },
+      {
+        "question": "Hur är det med den årliga skattedeklarationen (Steuererklärung)?",
+        "answer": "Många tyska skattebetalare lämnar in en årlig skattedeklaration för att göra ytterligare avdrag och eventuellt få återbetalning. Kalkylatorn visar uppskattade skatteavdragsbelopp, men din slutliga skatteskuld efter att deklarationen lämnats in kan skilja sig, särskilt om du har avdragsgilla utgifter eller är berättigad till ytterligare bidrag."
+      }
+    ]
+  },
+  "UK": {
+    "displayName": "Storbritannien",
+    "title": "Brittisk lonebeskattningskalkylator 2026 - Berakna din nettoinkomst",
+    "description": "Berakna din nettolon efter inkomstskatt och National Insurance i Storbritannien. Uppskatta din nettolon med var kostnadsfria brittiska skattekalkylator for 2026.",
+    "taxExplanation": "Storbritannien tillampar ett progressivt inkomstskattesystem som administreras av HM Revenue and Customs (HMRC). Systemet omfattar inkomstskatt och National Insurance-avgifter, som tillsammans avgor de totala avdragen fran bruttolonen. Dessa tva system fungerar parallellt, dar inkomstskatten ger generella statsintakter och National Insurance specifikt finansierar sociala formaner och National Health Service.\n\nInkomstskatten i Storbritannien ar uppbyggd kring ett personligt grundavdrag (personal allowance), vilket ar det belopp en person kan tjana innan nagon inkomstskatt betalas. For skattearet 2026 ar detta grundavdrag faststallt vid ett specifikt troskelvarde och justeras arligen, vanligtvis i takt med inflationen. Inkomst over det personliga grundavdraget beskattas med olika satser beroende pa vilket skatteskikt den hamnar i. Det personliga grundavdraget trappas gradvis ner for mycket hoginkomsttagare, vilket skapar en effektivt hogre skattesats for dem inom nedtrappningsintervallet.\n\nStorbritannien har tre huvudsakliga inkomstskatteskikt for de flesta skattebetalare: grundsatsen (basic rate), den hogre satsen (higher rate) och tillaggssatsen (additional rate). Grundsatsen pa 20% galler for inkomst over det personliga grundavdraget upp till grundsatsgransen. Den hogre satsen pa 40% galler for inkomst over grundsatsgransen upp till troskeln for tillaggssatsen. Tillaggssatsen pa 45% galler for inkomst over troskeln for tillaggssatsen. Dessa troskelvarden justeras arligen, och olika satser kan galla i Skottland pa grund av decentraliserade skattebefogenheter. Den progressiva strukturen sakerstaller att endast inkomst inom varje skikt beskattas med den satsen, inte hela inkomsten.\n\nNational Insurance (NI) ar ett separat system som finansierar statliga formaner inklusive statlig pension, arbetsloshetsersattning och sjukvard genom National Health Service. Anstallda betalar National Insurance-avgifter av klass 1, som beraknas som en procentandel av inkomster over en primar troskel. Huvudsatsen galler for inkomster mellan den primara troskeln och den ovre inkomstgransen, med en reducerad sats som galler over den ovre inkomstgransen. Detta skapar ett regressivt inslag i det overgripande skattesystemet, eftersom National Insurance-satserna minskar for mycket hoginkomsttagare, aven om tillaggssatsen for inkomstskatt kompenserar for detta.\n\nNational Insurance-avgifter beraknas pa vecko- eller manadsbasis, beroende pa hur den anstallde far sin lon. Satserna och troskelvardena faststalls arligen och kan andras vid varje budgetbesked. Till skillnad fran inkomstskatten har National Insurance en berakningsperiod pa vecko- eller manadsbasis, vilket innebar att troskelvardena tillampas per loneperiod snarare an arligen. Detta kan skapa situationer dar anstallda med oregelbunden lon kan betala olika belopp i National Insurance beroende pa sitt lonemonster, aven om deras arsinkomst ar densamma.\n\nDet brittiska skattesystemet fungerar enligt principen Pay As You Earn (PAYE), dar arbetsgivare beraknar och drar av inkomstskatt och National Insurance fran varje loneutbetalning. Skattekodsystemet avgor hur stort skattefritt grundavdrag en person far, med olika koder for olika omstandigheter sasom flera anstallningar, pensionsinkomst eller andra inkomstkallor. I slutet av skattearet stammer HMRC av de belopp som betalats och utfardar skatteberakningar, med aterbetalningar eller ytterligare betalningar vid behov. De flesta anstallda far sin skattekod automatiskt, men de med komplicerade omstandigheter kan behova kontakta HMRC for att sakerstalla korrekt kodning.\n\nOlika grundavdrag och avdrag kan minska skatteskulden, inklusive det personliga grundavdraget, makeavdraget (marriage allowance) for berattigade par och avdrag for pensionsinbetalningar. Pensionsinbetalningar far skattelattnad, vilket innebar att inbetalningarna gors fran inkomst fore skatt och darmed effektivt minskar den beskattningsbara inkomsten. Aldern for statlig pension och berattigande till olika formaner ar kopplade till historiken over National Insurance-avgifter, dar ett minsta antal kvalificerande ar kravs for fullstandig ratt till statlig pension. Detta skapar ett incitament for kontinuerliga National Insurance-avgifter genom hela arbetslivet.\n\nDet brittiska skattesystemet omfattar ocksa olika avdrag och skattelattnader, aven om det personliga grundavdraget ar den primara mekanismen for att minska skatten for de flesta anstallda. Hoginkomsttagare kan omfattas av begransningar av vissa grundavdrag, och det personliga grundavdraget trappas gradvis ner for mycket hoginkomsttagare. Skattefria sparkonton (ISA) ger ytterligare skattefordelar och later individer spara och investera utan att betala skatt pa ranta, utdelningar eller kapitalvinster. Dessa konton har arliga insattningsgranser och kan vara till stor fordel for langsiktiga sparare.\n\nSkottland har decentraliserade befogenheter over inkomstskattesatser och skatteskikt, vilket innebar att skotska skattebetalare kan mota andra satser och troskelvarden an de i ovriga Storbritannien. Den skotska regeringen kan faststalla olika satser och skikt, vilket har resulterat i nagot olika skattestrukturer, sarskilt for hoginkomsttagare. Wales har ocksa vissa decentraliserade skattebefogenheter, men anvander for narvarande samma satser som England och Nordirland for de flesta skattebetalare. Denna decentralisering innebar att skattebetalare i olika delar av Storbritannien kan ha olika effektiva skattesatser aven med samma inkomst.\n\nDet ar viktigt att notera att denna kalkylator ger uppskattningar baserade pa standardscenarier och standardskattekoder. Individuella omstandigheter, inklusive pensionsinbetalningar, naturaformaner och andra faktorer, kan paverka den faktiska nettolonen avsevart. Naturaformaner, sasom tjanstebil eller privat sjukforsakring, ar foremal for inkomstskatt och National Insurance, vilket kan minska nettolonen. Skattebetalare bor radgora med HMRC:s vagledning eller en kvalificerad skatteradgivare for rad som ar specifika for deras situation, sarskilt om de har flera inkomstkallor, betydande avdrag eller komplicerade ekonomiska arrangemang.",
+    "faqs": [
+      {
+        "question": "Vilka skatter dras av fran brittiska loner?",
+        "answer": "Brittiska anstallda betalar inkomstskatt och National Insurance-avgifter. Inkomstskatten beraknas pa inkomst over det personliga grundavdraget, med satser pa 20% (grundsats), 40% (hogre sats) och 45% (tillaggssats). National Insurance finansierar statliga formaner och NHS."
+      },
+      {
+        "question": "Vad ar det personliga grundavdraget i Storbritannien?",
+        "answer": "Det personliga grundavdraget ar det belopp du kan tjana innan du betalar inkomstskatt. For 2026 faststalls detta belopp arligen och kan justeras for inflation. Inkomst over det personliga grundavdraget beskattas med progressiva satser. Grundavdraget trappas gradvis ner for mycket hoginkomsttagare."
+      },
+      {
+        "question": "Hur beraknas National Insurance?",
+        "answer": "National Insurance beraknas pa vecko- eller manadsbasis (beroende pa loneutbetalningsfrekvens) pa inkomster over den primara troskeln. Huvudsatsen galler mellan den primara troskeln och den ovre inkomstgransen, med en reducerad sats over den ovre gransen. Till skillnad fran inkomstskatten tillampas NI-troskelvardena per loneperiod, inte arligen."
+      },
+      {
+        "question": "Vad ar skillnaden mellan inkomstskatt och National Insurance?",
+        "answer": "Inkomstskatten ger generella statsintakter och beraknas arligen. National Insurance finansierar specifikt statliga formaner (pension, arbetsloshet, sjukvard) och beraknas per loneperiod. Bada dras av via PAYE, men de fungerar enligt olika regler och troskelvarden."
+      },
+      {
+        "question": "Betalar skotska skattebetalare olika satser?",
+        "answer": "Ja, Skottland har decentraliserade befogenheter over inkomstskattesatser och skatteskikt. Skotska skattebetalare kan mota andra satser och troskelvarden an de i England, Wales och Nordirland. Kalkylatorn anvander brittiska standardsatser; skotska skattebetalare bor verifiera sina specifika satser."
+      },
+      {
+        "question": "Hur beraknar jag nettoinkomst for timanstallda i Storbritannien?",
+        "answer": "Ange din timlon och valj timlage. Ange dina timmar per vecka (standard 40) och veckor per ar (standard 52). Kalkylatorn raknar om din inkomst till arsbasis och tillampar brittiska inkomstskatteskikt och National Insurance-avgifter for att visa din netto-tim-, manads- och arsinkomst."
+      },
+      {
+        "question": "Vad ar makeavdraget (marriage allowance)?",
+        "answer": "Makeavdraget later berattigade par overfora en del av det personliga grundavdraget fran en make till den andra, vilket potentiellt kan minska skatteskulden. Kalkylatorn inkluderar inte detta avdrag, sa gifta par kan betala mindre skatt an uppskattat."
+      },
+      {
+        "question": "Ingar pensionsinbetalningar i berakningen?",
+        "answer": "Nej, pensionsinbetalningar ingar inte. Pensionsinbetalningar far skattelattnad, vilket innebar att de gors fran inkomst fore skatt, vilket minskar din beskattningsbara inkomst och skatteskuld. Om du gor pensionsinbetalningar kan din faktiska nettolon och dina skattebesparingar skilja sig fran uppskattningen."
+      },
+      {
+        "question": "Hur fungerar PAYE-systemet?",
+        "answer": "PAYE (Pay As You Earn) ar det brittiska systemet dar arbetsgivare beraknar och drar av inkomstskatt och National Insurance fran varje loneutbetalning. Din skattekod avgor ditt skattefria grundavdrag. Vid arets slut stammer HMRC av de belopp som betalats och utfardar skatteberakningar med aterbetalningar eller ytterligare betalningar vid behov."
+      },
+      {
+        "question": "Vad hander om jag har flera anstallningar eller ytterligare inkomst?",
+        "answer": "Kalkylatorn uppskattar skatter for en enda inkomstkalla. Om du har flera anstallningar eller ytterligare inkomst kan din totala skatteskuld bli annorlunda eftersom den sammanlagda inkomsten kan fora dig in i hogre skatteskikt. Du kan behova betala ytterligare skatt eller fa en aterbetalning vid arets slut."
+      },
+      {
+        "question": "Ingar naturaformaner i berakningen?",
+        "answer": "Nej, naturaformaner (tjanstebil, privat sjukforsakring osv.) ingar inte. Dessa ar foremal for inkomstskatt och National Insurance, vilket skulle minska din nettolon. Om du far naturaformaner kan din faktiska nettolon vara lagre an uppskattat."
+      },
+      {
+        "question": "Hur exakt ar uppskattningen for hoginkomsttagare?",
+        "answer": "For hoginkomsttagare kan uppskattningen vara mindre exakt eftersom den inte tar hansyn till nedtrappningen av det personliga grundavdraget, begransningar av vissa grundavdrag eller potentiella ytterligare skatteforpliktelser. Hoginkomsttagare bor radgora med HMRC:s vagledning eller en skatteradgivare for mer exakta uppskattningar."
+      }
+    ]
+  },
+  "PL": {
+    "displayName": "Polen",
+    "title": "Polen löneskattekalkylator 2026 - Beräkna din nettoinkomst",
+    "description": "Uppskatta din nettolön i Polen för 2026. Gratis kalkylator visar PIT, ZUS sociala avgifter och sjukvårdsavgifter samt nettolön utifrån din bruttoinkomst.",
+    "taxExplanation": "Polen tillämpar ett progressivt system för personlig inkomstskatt som kallas PIT (podatek dochodowy od osob fizycznych), vilket läggs ovanpå obligatoriska sociala avgifter och sjukvårdsavgifter som tas ut genom ZUS, den nationella socialförsäkringsmyndigheten. För de flesta anställda som arbetar enligt ett anställningsavtal (umowa o prace) innebär vägen från en bruttolön (brutto) till nettolön (netto) flera avdrag som sker i en bestämd ordning. Att förstå den ordningen är nyckeln till att se varför din nettoinkomst är lägre än din angivna bruttosiffra, och det är precis vad denna kalkylator modellerar för skatteåret 2026.\n\nInkomstskatten i Polen använder två skiktgränser. Det finns ett skattefritt belopp, kwota wolna, på 30,000 PLN per år, vilket innebär att den första delen av din inkomst i praktiken inte beskattas. Över den gränsen tillämpas en skattesats på 12 procent på skatteunderlaget upp till 120,000 PLN. Den del av skatteunderlaget som överstiger 120,000 PLN beskattas med den högre satsen på 32 procent. Eftersom endast beloppet över varje gräns beskattas med den högre siffran, bestraffar inte ett steg upp i det övre skiktet hela din lön; det påverkar endast inkomsten över brytpunkten.\n\nInnan inkomstskatten ens beräknas dras de anställdas ZUS sociala avgifter av från bruttolönen. Dessa täcker tre områden: pensionsavgiften (emerytalne) på 9.76 procent, sjukpensionsavgiften (rentowe) på 1.5 procent och sjukförsäkringsavgiften (chorobowe) på 2.45 procent. En viktig egenskap är att dessa sociala avgifter är avdragsgilla, så de minskar det underlag på vilket din inkomstskatt beräknas. Pensions- och sjukpensionsavgifterna omfattas också av ett årligt tak, som tillämpas när din ackumulerade bruttoinkomst når ungefär 260,190 PLN, varefter dessa två avgifter upphör för resten av året.\n\nVid sidan av de sociala avgifterna finns sjukvårdsavgiften (skladka zdrowotna) på 9 procent. Denna fungerar annorlunda. Sedan 2022 är sjukvårdsavgiften inte längre avdragsgill, vilket innebär att den minskar din nettolön utan att sänka ditt underlag för inkomstskatt. För enkelhetens skull beräknar denna kalkylator sjukvårdsavgiften på din bruttosiffra, vilket ger en tydlig och konsekvent uppskattning, även om individuella omständigheter kan ge små avvikelser från det exakta beloppet på en lönespecifikation.\n\nI praktiken betalar du sällan allt detta i en enda klumpsumma. Arbetsgivare fungerar som skatteombud och drar av ZUS-avgifter och ett förskott på inkomstskatten (zaliczka) från varje lön och betalar in dem till myndigheterna för din räkning. Detta synsätt med skatt vid källan fördelar din skatt över året. När året är slut lämnar de anställda in en årlig deklaration, PIT-37, som stämmer av de förskott som redan betalats mot den faktiska skatt som ska betalas. Beroende på din situation kan denna avstämning resultera i en återbetalning eller ett ytterligare belopp att betala.\n\nDenna kalkylator är byggd för vanliga arbetstagare, arbetssökande som jämför erbjudanden och alla som vill få en snabb uppfattning om hur en bruttolön omvandlas till pengar i fickan. Genom att ange en bruttosiffra kan du se en uppskattad fördelning av sociala avgifter, sjukvårdsavgiften, inkomstskatten och det resulterande nettobeloppet. Den utgår från en ensamstående skattebetalare enligt standardregler och modellerar inte gemensam deklaration med en make eller maka, särskilda skattelättnader, avdrag för unga arbetstagare eller andra individuella justeringar som kan förändra slutresultatet.\n\nPå grund av dessa förenklande antaganden bör de siffror du ser betraktas som uppskattningar snarare än ett exakt uttalande om din skattesituation. Siffrorna här återspeglar reglerna och gränserna för skatteåret 2026, och polska skattesatser, avgiftsprocent och gränser ses över och kan ändras från ett år till nästa. Ditt verkliga resultat kan skilja sig beroende på avtalstyp, skattelättnader du kvalificerar dig för och andra personliga faktorer. För en exakt siffra inför ett viktigt beslut, eller om din situation omfattar något utöver ett standardarrangemang för en ensamstående skattebetalares anställning, är det klokt att rådfråga en kvalificerad skatteexpert eller revisor som kan granska dina specifika omständigheter.",
+    "faqs": [
+      {
+        "question": "Hur beräknar jag min nettolön i Polen för 2026?",
+        "answer": "Ange din bruttolön så uppskattar kalkylatorn dina ZUS sociala avgifter, sjukvårdsavgiften på 9 procent och PIT inkomstskatt, och drar sedan av dem för att visa din uppskattade nettolön för skatteåret 2026."
+      },
+      {
+        "question": "Vad är det skattefria beloppet (kwota wolna) i Polen?",
+        "answer": "För 2026 är det skattefria beloppet 30,000 PLN per år. Inkomst upp till den nivån bär i praktiken ingen inkomstskatt, och belopp över den beskattas med den tillämpliga skiktsatsen. Kalkylatorn tar med detta i sin uppskattning."
+      },
+      {
+        "question": "Vilka är skiktgränserna för inkomstskatt i Polen?",
+        "answer": "Polen använder två PIT-skikt. En sats på 12 procent tillämpas på skatteunderlaget upp till 120,000 PLN, och en sats på 32 procent tillämpas på den del som överstiger 120,000 PLN. Endast inkomst över gränsen beskattas med den högre satsen."
+      },
+      {
+        "question": "Vilka ZUS-avgifter dras av från min lön?",
+        "answer": "Anställda betalar pension (emerytalne) på 9.76 procent, sjukpension (rentowe) på 1.5 procent och sjukförsäkring (chorobowe) på 2.45 procent. Dessa sociala avgifter dras av före inkomstskatten och minskar ditt skatteunderlag i denna uppskattning."
+      },
+      {
+        "question": "Är sjukvårdsavgiften avdragsgill?",
+        "answer": "Nej. Sedan 2022 är sjukvårdsavgiften på 9 procent (skladka zdrowotna) inte avdragsgill, så den sänker din nettolön utan att minska ditt underlag för inkomstskatt. Kalkylatorn återspeglar detta i sin uppskattning."
+      },
+      {
+        "question": "Kan kalkylatorn uppskatta nettolön per timme, månad eller år?",
+        "answer": "Verktyget utgår från din bruttosiffra för att ta fram ett uppskattat nettobelopp, som du kan se på årsbasis eller bryta ner till månad. Alla siffror per timme, månad eller år är uppskattningar och beror på den bruttoinmatning du anger."
+      },
+      {
+        "question": "Hur exakt är denna löneskattekalkylator för Polen?",
+        "answer": "Den ger en nära uppskattning baserad på standardregler för 2026 för en ensamstående skattebetalare, men den är inte exakt. Den beräknar sjukvårdsavgiften på brutto för enkelhetens skull och utesluter gemensam deklaration och särskilda skattelättnader, så ditt verkliga resultat kan skilja sig."
+      },
+      {
+        "question": "Vilka är begränsningarna med denna kalkylator?",
+        "answer": "Den utgår från en ensamstående skattebetalare enligt standardregler och inkluderar inte gemensam deklaration med en make eller maka, avdrag för unga arbetstagare, särskilda skattelättnader eller icke-standardiserade avtalstyper. Dessa faktorer kan förändra ditt faktiska resultat, så behandla resultatet som en uppskattning."
+      },
+      {
+        "question": "Vad är den årliga deklarationen PIT-37?",
+        "answer": "PIT-37 är den årliga inkomstdeklaration som de flesta anställda lämnar in i Polen. Arbetsgivare drar av månatliga skatteförskott (zaliczka) under året, och deklarationen stämmer av dessa förskott mot den faktiska skatt som ska betalas, vilket kan leda till en återbetalning eller en extra inbetalning."
+      },
+      {
+        "question": "Har pensions- och sjukpensionsavgifterna ett tak?",
+        "answer": "Ja. Pensions- och sjukpensionsavgifter tillämpas tills din ackumulerade årliga bruttoinkomst når ungefär 260,190 PLN, varefter de upphör för resten av året. Sjukförsäkrings- och sjukvårdsavgifter omfattas inte av det årliga taket."
+      }
+    ]
+  },
+  "FR": {
+    "displayName": "Frankrike",
+    "title": "Frankrike löneskattekalkylator 2026 - Beräkna din nettoinkomst",
+    "description": "Uppskatta din nettolön i Frankrike för 2026. Gratis kalkylator som tillämpar inkomstskattens bareme, sociala avgifter, CSG och CRDS för att visa din nettolön.",
+    "taxExplanation": "Frankrike har ett omfattande system med inkomstskatt och sociala avgifter som tillsammans avgör hur stor del av din bruttolön du får behålla. De två huvudkomponenterna är inkomstskatten (impot sur le revenu) och en uppsättning obligatoriska sociala avgifter som dras direkt från din lön. Att förstå hur dessa hänger ihop hjälper dig att uppskatta din nettoinkomst och planera din ekonomi, oavsett om du jämför jobberbjudanden, förhandlar om lön eller bara försöker förstå din lönespecifikation. Siffrorna nedan avser skatteåret 2026 och gäller en ensamstående person.\n\nInkomstskatten följer en progressiv skala som kallas bareme, vilket innebär att olika delar av din inkomst beskattas med olika satser. För en ensamstående person som räknas som en del beskattas de första cirka 11,497 EUR av den beskattningsbara inkomsten med 0 procent. Inkomst mellan cirka 11,497 och 29,315 EUR beskattas med 11 procent, skiktet från cirka 29,315 till 83,823 EUR med 30 procent, skiktet från cirka 83,823 till 180,294 EUR med 41 procent, och allt över cirka 180,294 EUR med 45 procent. Ett vanligt missförstånd är att en förflyttning till ett högre skikt beskattar hela din inkomst med den högre satsen. I verkligheten beskattas endast den del av inkomsten som faller inom varje skikt med det skiktets sats, så din totala effektiva skattesats är alltid lägre än den högsta sats som gäller för dig.\n\nInnan inkomstskatten beräknas betalar anställda sociala avgifter som finansierar socialförsäkring, sjukvård och pensioner. Dessa avgifter uppgår till ungefär 21 till 22 procent av bruttolönen. En första grupp, som omfattar socialförsäkrings- och pensionsavgifter, uppgår till cirka 11.31 procent och dras av innan inkomstskatten fastställs. Utöver detta tillkommer två specifika avgifter: CSG (contribution sociale generalisee) på 9.2 procent och CRDS (contribution au remboursement de la dette sociale) på 0.5 procent. Dessa två är breda sociala avgifter som tas ut på förvärvsinkomst och utgör en viktig del av skillnaden mellan brutto- och nettolön.\n\nBehandlingen av dessa avgifter i inkomstskattehänseende varierar. Av de 9.2 procent CSG är 6.8 procentenheter avdragsgilla, vilket innebär att den delen minskar den inkomst på vilken din inkomstskatt beräknas, medan de återstående 2.4 procentenheterna inte är avdragsgilla. CRDS på 0.5 procent är inte avdragsgill. Socialförsäkrings- och pensionsavgifterna på cirka 11.31 procent dras av innan inkomstskatten. Dessa skillnader spelar roll eftersom avdragsgilla avgifter sänker din beskattningsbara bas, vilket i sin tur sänker den inkomstskatt du till slut är skyldig.\n\nSedan 2019 tas inkomstskatten i Frankrike ut genom källskatt, känd som prelevement a la source (PAS). Detta innebär att din arbetsgivare drar av ett uppskattat belopp av inkomstskatten från varje lön baserat på en sats som tillhandahålls av skattemyndigheterna, så att skatten betalas gradvis under året i stället för i ett enda belopp. Källskatt ersätter inte den årliga inkomstdeklarationen. Du lämnar fortfarande en deklaration varje år, som stämmer av de belopp som dragits mot vad du faktiskt är skyldig, med hänsyn till hela din situation. Detta kan resultera i antingen en återbetalning eller en tilläggsbetalning.\n\nVår kalkylator är utformad för att ge dig en snabb, förenklad uppskattning snarare än en exakt skatteberäkning. Den utgår från en ensamstående person som räknas som en del och tillämpar baremet och de satser för sociala avgifter som beskrivs ovan. För att hålla det enkelt utesluter den två viktiga inslag i det verkliga systemet. För det första tillämpar den inte standardavdraget på 10 procent för yrkeskostnader, som normalt minskar den beskattningsbara löneinkomsten för de flesta anställda. För det andra använder den inte familjekvoten, eller parts-systemet, som justerar den beskattningsbara inkomsten baserat på hushållets sammansättning såsom make/maka eller barn som försörjs. Båda dessa inslag minskar i allmänhet den inkomstskatt som ska betalas i verkligheten.\n\nPå grund av dessa förenklingar kan din faktiska inkomstskatt vara lägre än den uppskattning som denna kalkylator ger, särskilt när 10-procentsavdraget och eventuella familjedelar tas med i beräkningen. Uppskattningen är mest användbar som en grov vägledning om storleksordningen på skatter och avgifter för en viss lön, och för att jämföra löner med varandra på en enhetlig grund. Behandla alla resultat som uppskattningar enbart i utbildningssyfte. Skatteskikt, avgiftssatser och de regler som styr avdrag ses över och kan ändras varje år, och individuella situationer varierar kraftigt. För beslut som är beroende av exakta siffror, eller för vägledning om din specifika situation, rådfråga en kvalificerad skatteexpert eller den officiella franska skatteförvaltningen.",
+    "faqs": [
+      {
+        "question": "Hur beräknas nettolönen i Frankrike?",
+        "answer": "Nettolönen är din bruttolön minus sociala avgifter (ungefär 21 till 22 procent, inklusive CSG och CRDS) och inkomstskatt som dras vid källan. Vår kalkylator uppskattar var och en av dessa för att visa ett ungefärligt nettobelopp för en ensamstående person 2026."
+      },
+      {
+        "question": "Vilka inkomstskattesatser gäller i Frankrike för 2026?",
+        "answer": "För en ensamstående person är den progressiva baremen 0 procent upp till cirka 11,497 EUR, 11 procent till cirka 29,315, 30 procent till cirka 83,823, 41 procent till cirka 180,294, och 45 procent över det. Varje sats gäller endast den inkomst som faller inom sitt skikt."
+      },
+      {
+        "question": "Vad är CSG och CRDS?",
+        "answer": "CSG (contribution sociale generalisee) är en social avgift på 9.2 procent på förvärvsinkomst, varav 6.8 procentenheter är avdragsgilla för inkomstskatt och 2.4 inte är det. CRDS är en avgift på 0.5 procent som inte är avdragsgill. Båda minskar din nettolön."
+      },
+      {
+        "question": "Hur mycket sociala avgifter dras från min lön?",
+        "answer": "Anställdas sociala avgifter uppgår till ungefär 21 till 22 procent av bruttolönen. Detta inkluderar cirka 11.31 procent för socialförsäkring och pensioner, plus 9.2 procent CSG och 0.5 procent CRDS. Dessa är alla uppskattningar och kan variera beroende på situation."
+      },
+      {
+        "question": "Kan jag uppskatta nettolön per timme, månad eller år?",
+        "answer": "Ja. Ange din lön på den grund du använder, så uppskattar kalkylatorn nettoinkomsten på en enhetlig grund. Kom ihåg att dessa är ungefärliga siffror avsedda att hjälpa dig jämföra löner, inte exakta belopp från lönespecifikationen."
+      },
+      {
+        "question": "Vad innebär källskatt (prelevement a la source)?",
+        "answer": "Sedan 2019 dras inkomstskatten från varje lön av din arbetsgivare med en sats som fastställs av skattemyndigheterna, så att skatten betalas under hela året. Du lämnar fortfarande en årlig deklaration som stämmer av vad som dragits mot vad du faktiskt är skyldig."
+      },
+      {
+        "question": "Måste jag fortfarande lämna en deklaration om skatten dras vid källan?",
+        "answer": "Ja. Källskatt tar ut skatt under året, men du måste fortfarande lämna en årlig inkomstdeklaration. Deklarationen tar hänsyn till hela din situation och kan ge en återbetalning eller ett tilläggsbelopp att betala."
+      },
+      {
+        "question": "Hur exakt är denna kalkylator?",
+        "answer": "Den ger en förenklad uppskattning för en ensamstående person som räknas som en del. Den utesluter avdraget på 10 procent för yrkeskostnader och familjekvotens (parts) system, så din verkliga inkomstskatt kan vara lägre. Behandla resultaten endast som en grov vägledning."
+      },
+      {
+        "question": "Varför kan min faktiska skatt vara lägre än uppskattningen?",
+        "answer": "Vår uppskattning utelämnar standardavdraget på 10 procent för yrkeskostnader och familjekvoten, som båda vanligtvis minskar inkomstskatten i verkligheten. Avdragsgill CSG sänker också din beskattningsbara bas. Dessa faktorer kan göra din faktiska skatt lägre."
+      },
+      {
+        "question": "Är dessa siffror officiella eller garanterade?",
+        "answer": "Nej. Alla resultat är uppskattningar för skatteåret 2026 och tillhandahålls i utbildningssyfte. Skatteskikt och satser ändras årligen och individuella situationer skiljer sig åt, så för exakta siffror rådfråga en kvalificerad skatteexpert eller den officiella franska skatteförvaltningen."
+      }
+    ]
+  },
+  "ES": {
+    "displayName": "Spanien",
+    "title": "Skatteberäknare för lön i Spanien 2026 - Beräkna din nettoinkomst",
+    "description": "Uppskatta din nettolön i Spanien för 2026. Gratis kalkylator som täcker IRPF inkomstskatteskikt, socialförsäkringsavgifter och regional variation i skattesatser.",
+    "taxExplanation": "Spanien beskattar sina invånares inkomster genom Impuesto sobre la Renta de las Personas Fisicas, allmänt känd som IRPF. För de flesta anställda är de största avdragen från en bruttolön denna personliga inkomstskatt och obligatoriska socialförsäkringsavgifter. Din arbetsgivare hanterar vanligtvis båda, drar belopp från varje lönecheck under året och vidarebefordrar dem till skattemyndigheterna och socialförsäkringssystemet. Siffrorna nedan beskriver en förenklad, representativ bild för skatteåret 2026 och är avsedda att hjälpa dig uppskatta din nettolön, inte att ersätta officiella beräkningar.\n\nEn egenskap som gör det spanska systemet särskilt är att IRPF delas mellan den centrala staten och de autonoma regionerna. Varje region fastställer en del av skalan, så de exakta satser du betalar beror på var du bor. På grund av detta använder vår kalkylator en representativ kombinerad skala snarare än någon enskild regions siffror. Enligt den representativa skalan beskattas inkomst med 19 procent upp till 12,450 euros, 24 procent på den del som ligger mellan 12,450 och 20,200 euros, 30 procent från 20,200 till 35,200 euros, 37 procent från 35,200 till 60,000 euros, 45 procent från 60,000 till 300,000 euros och 47 procent på allt över 300,000 euros. Systemet är progressivt, så varje sats tillämpas endast på den inkomst som faller inom dess skikt, inte på hela din lön.\n\nSystemet erkänner även ett personligt minimum, ett inkomstbelopp som anses nödvändigt för en grundläggande levnadsstandard och som i stort sett behandlas som skattefritt. I vår representativa modell är detta personliga minimum cirka 5,550 euros. I praktiken fungerar det som en reduktion som sänker den skatt som ska betalas på din lägsta inkomst, vilket hjälper till att hålla den effektiva skattesatsen på blygsamma löner under de procentsatser som anges i skalan.\n\nUtöver inkomstskatten betalar anställda i Spanien socialförsäkringsavgifter som finansierar pensioner, sjukvård, arbetslöshetsersättning och relaterade program. Dessa avgifter uppgår till ungefär 6.48 procent av din avgiftsbas. Den siffran utgörs av gemensamma kontingenser på 4.7 procent, arbetslöshet på 1.55 procent, yrkesutbildning på 0.1 procent och MEI-solidaritetsavgiften på 0.13 procent. Det finns en övre gräns: avgifterna beräknas endast upp till den maximala avgiftsbasen, som är cirka 59,059 euros per år. Inkomster över det taket ökar inte dina socialförsäkringsavgifter, även om de fortfarande är fullt skattepliktiga för inkomstskatt.\n\nDen ordning i vilken dessa tillämpas spelar roll för ditt slutresultat. Socialförsäkringsavgifterna dras av innan inkomstskatten beräknas, så de minskar den inkomst på vilken IRPF beräknas. Det är därför de två beloppen inte helt enkelt läggs samman. Efter att socialförsäkringsavgifterna dragits av och det personliga minimumet tillämpats appliceras den progressiva IRPF-skalan på det som återstår, och resultatet är inkomstskattedelen av dina avdrag.\n\nUnder året tillämpar din arbetsgivare innehållningar, kända som retenciones, på konto av din IRPF. Dessa är förskottsbetalningar mot din slutliga skatteräkning, uppskattade utifrån din lön och dina personliga förhållanden. Eftersom de endast är uppskattningar lämnar de flesta arbetstagare senare in en årlig inkomstdeklaration, declaracion de la Renta, vanligtvis på våren efter skatteåret. Denna deklaration stämmer av vad som hållits inne mot vad du faktiskt är skyldig. Om för mycket hållits inne kan du få en återbetalning, och om för lite hållits inne kan du behöva betala mellanskillnaden.\n\nDet är värt att upprepa att de regionala satserna varierar mellan Spaniens autonoma regioner. Två personer som tjänar identiska löner kan sluta med olika nettolön bara för att de bor i olika regioner, och vissa regioner erbjuder också sina egna avdrag och justeringar. Vår kalkylator utgår från en ensamstående skattebetalare som använder en representativ kombinerad skala, så den kan inte återspegla varje regional regel, familjesituation eller särskilt avdrag som kan gälla för dig. Av alla dessa skäl är de siffror som vår kalkylator producerar uppskattningar för skatteåret 2026, inte exakta siffror. Skattesatser, avgiftsbaser och det personliga minimumet kan ändras från år till år, och ditt verkliga resultat beror på din region och dina personliga förhållanden. Använd dessa resultat som en användbar utgångspunkt för planering, och rådfråga en kvalificerad skatteexpert eller den officiella skattemyndigheten för vägledning som är specifik för din situation.",
+    "faqs": [
+      {
+        "question": "Hur uppskattar jag min nettolön i Spanien för 2026?",
+        "answer": "Ange din årliga bruttolön så uppskattar kalkylatorn din nettolön genom att först dra av socialförsäkringsavgifter, och därefter tillämpa den representativa IRPF inkomstskatteskalan och det personliga minimumet. Resultatet är en uppskattning för skatteåret 2026."
+      },
+      {
+        "question": "Vad är IRPF och hur mycket kommer jag att betala?",
+        "answer": "IRPF är Spaniens personliga inkomstskatt. Den är progressiv, så vår representativa skala löper från 19 procent på inkomst upp till 12,450 euros till 47 procent över 300,000 euros. Varje sats tillämpas endast på inkomst inom dess skikt, så din effektiva sats är vanligtvis lägre än ditt högsta skikt. Alla resultat är uppskattningar."
+      },
+      {
+        "question": "Hur höga är de anställdas socialförsäkringsavgifter?",
+        "answer": "De anställdas avgifter uppgår till cirka 6.48 procent av din avgiftsbas och kombinerar gemensamma kontingenser (4.7 procent), arbetslöshet (1.55 procent), yrkesutbildning (0.1 procent) och MEI-solidaritetsavgiften (0.13 procent). De dras av innan inkomstskatten. Detta är en uppskattning."
+      },
+      {
+        "question": "Finns det ett tak för socialförsäkringsavgifterna?",
+        "answer": "Ja. Avgifterna beräknas endast upp till den maximala avgiftsbasen på cirka 59,059 euros per år. Inkomster över det taket höjer inte dina socialförsäkringsavgifter, även om de fortfarande är skattepliktiga för inkomstskatt. Siffrorna är uppskattningar."
+      },
+      {
+        "question": "Vad är det personliga minimumet?",
+        "answer": "Det personliga minimumet är ett inkomstbelopp, cirka 5,550 euros i vår representativa modell, som i stort sett behandlas som skattefritt. Det minskar den skatt som ska betalas på din lägsta inkomst och hjälper till att sänka den effektiva satsen på blygsamma löner. Detta är en uppskattning."
+      },
+      {
+        "question": "Kan kalkylatorn visa siffror per timme, månad och år?",
+        "answer": "Kalkylatorn utgår från din årliga bruttolön, och du kan dela det uppskattade nettoresultatet för att approximera nettolön per månad eller timme. Dessa uppdelningar är uppskattningar och tar inte hänsyn till varierande arbetstider, bonusar eller extra utbetalningar som är vanliga i Spanien."
+      },
+      {
+        "question": "Varför kan min faktiska nettolön skilja sig från uppskattningen?",
+        "answer": "Spansk IRPF delas mellan staten och de autonoma regionerna, så satserna varierar beroende på region. Vår kalkylator använder en representativ kombinerad skala för en ensamstående skattebetalare och kan inte återspegla varje regional regel, familjesituation eller avdrag, så din verkliga nettolön kan skilja sig."
+      },
+      {
+        "question": "Förändrar regionala skillnader verkligen min nettolön?",
+        "answer": "Ja. Eftersom varje autonom region fastställer en del av IRPF-skalan och kan erbjuda sina egna avdrag, kan två personer med samma lön i olika regioner ha olika nettolön. Vår uppskattning använder en representativ skala snarare än någon specifik region."
+      },
+      {
+        "question": "Vad är retenciones och declaracion de la Renta?",
+        "answer": "Retenciones är de innehållningar som din arbetsgivare tillämpar på konto av IRPF under året. Declaracion de la Renta är den årliga inkomstdeklaration som stämmer av vad som hållits inne mot vad du faktiskt är skyldig, vilket kan leda till en återbetalning eller en tilläggsbetalning."
+      },
+      {
+        "question": "Hur exakt är denna kalkylator?",
+        "answer": "Den är en förenklad uppskattning för en ensamstående skattebetalare som använder en representativ kombinerad IRPF-skala för skatteåret 2026. Faktiska regionala satser, avgiftsgränser och det personliga minimumet förändras över tid, så behandla resultatet som en planeringsuppskattning och rådfråga en kvalificerad skatteexpert för din specifika situation."
+      }
+    ]
+  },
+  "IT": {
+    "displayName": "Italien",
+    "title": "Italien lönekalkylator för skatt 2026 - Beräkna din nettoinkomst",
+    "description": "Uppskatta din nettolön i Italien för 2026. Gratis kalkylator som använder IRPEF-skatteskikt, INPS-avgifter och lokala tilläggsskatter för att uppskatta din nettolön.",
+    "taxExplanation": "Italien beskattar inkomsten för bosatta arbetstagare genom en nationell personlig inkomstskatt som kallas IRPEF (Imposta sul Reddito delle Persone Fisiche), kompletterad med mindre lokala tilläggsskatter och minskad med sociala avgifter och en uppsättning skatteavdrag. För de flesta anställda beräknas skatten på den årliga bruttolönen, där pensionsavgifter dras av först och därefter tillämpas progressiva skattesatser på det som återstår. Siffrorna nedan återspeglar skatteåret 2026 och är avsedda som allmän, utbildande information för att hjälpa dig att förstå ungefär hur din bruttolön blir nettolön. De är endast uppskattningar, och ditt faktiska resultat beror på dina specifika omständigheter.\n\nIRPEF är progressiv, vilket innebär att högre delar av inkomsten beskattas med högre skattesatser medan lägre delar behåller sina lägre skattesatser. För 2026 tillämpar vår kalkylator tre skatteskikt: 23 procent på beskattningsbar inkomst upp till 28,000 EUR, 35 procent på den del som ligger mellan 28,000 och 50,000 EUR, och 43 procent på all inkomst över 50,000 EUR. Endast den del av inkomsten som ligger inom varje skikt beskattas med det skiktets skattesats, så att flytta in i ett högre skikt höjer inte skattesatsen på den inkomst du redan tjänat i de lägre skikten.\n\nUtöver nationell IRPEF lägger Italien till två lokala tilläggsskatter: en regional tilläggsskatt (addizionale regionale) som fastställs av varje region och en kommunal tilläggsskatt (addizionale comunale) som fastställs av varje stad eller ort. Dessa varierar märkbart beroende på var du bor, så en arbetstagare i en kommun kan betala en annan kombinerad lokal skattesats än någon med identisk inkomst någon annanstans. Eftersom vår kalkylator inte kan känna till din exakta adress, approximerar den dessa två tilläggsskatter tillsammans till ungefär 2.5 procent av beskattningsbar inkomst. Dina verkliga lokala skattesatser kan vara högre eller lägre.\n\nItalienska anställda gynnas också av skatteavdrag som kallas detrazioni, vilka minskar den skatt som ska betalas och i praktiken skapar ett skattefritt område för låginkomsttagare. I praktiken innebär detta att personer under en viss inkomstnivå kan vara skyldiga lite eller ingen IRPEF när deras avdrag har tillämpats. Avdragen (detrazioni) beror på inkomstnivå och personliga faktorer, så de skiljer sig från en arbetstagare till en annan. Vår kalkylator approximerar denna förmån med ett förenklat skattefritt avdrag snarare än att modellera varje avdrag individuellt, vilket håller uppskattningen okomplicerad samtidigt som den fortfarande återspeglar den allmänna lättnad som låginkomsttagare får.\n\nInnan inkomstskatten beräknas betalar anställda sociala avgifter till INPS, det nationella pensions- och välfärdsinstitutet. Arbetstagarens andel är ungefär 9.19 procent av bruttolönen och dras av innan IRPEF tillämpas, så den sänker det beskattningsbara underlaget. Dessa avgifter gäller upp till ett avgiftstak på ungefär 120,607 EUR; inkomst över det taket är i allmänhet inte föremål för den ytterligare pensionsavgiften. Eftersom INPS dras av först minskar den både din nettolön och det inkomstbelopp som IRPEF och de lokala tilläggsskatterna tas ut på.\n\nDe flesta italienska anställda betalar inte skatt direkt till myndigheterna under året. I stället agerar arbetsgivaren som skatteindrivare (sostituto d'imposta), och drar av IRPEF, de lokala tilläggsskatterna och INPS-avgifterna från varje lönecheck och vidarebefordrar dem på arbetstagarens vägnar. När året är slut lämnar många arbetstagare in en årlig deklaration, vanligtvis Modello 730 eller Redditi-formuläret, för att stämma av det som hållits inne mot det som faktiskt ska betalas, begära ytterligare avdrag och få en återbetalning eller reglera eventuellt saldo.\n\nTänk på att regionala och kommunala tilläggsskatter, detrazioni och individuella omständigheter alla påverkar det slutliga beloppet, och vårt verktyg är en förenklad uppskattning byggd för en ensam anställd. Skatteskikt, avgiftstak och lokala skattesatser kan ändras från år till år, och 2026 års siffror som används här är approximationer. För beslut som beror på exakta belopp, eller för att förstå hur din specifika situation behandlas, rådfråga en kvalificerad skatteexpert eller commercialista.",
+    "faqs": [
+      {
+        "question": "Hur fungerar Italiens lönekalkylator för skatt?",
+        "answer": "Den tar din bruttolön, drar av en uppskattad INPS-arbetstagaravgift på cirka 9.19 procent, tillämpar 2026 års IRPEF-skatteskikt och en ungefärlig lokal tilläggsskatt, och tar hänsyn till ett skattefritt avdrag för att uppskatta din nettolön. Alla resultat är uppskattningar."
+      },
+      {
+        "question": "Vilka är 2026 års IRPEF-skatteskikt för inkomstskatt i Italien?",
+        "answer": "För 2026 använder vår kalkylator tre skatteskikt: 23 procent på beskattningsbar inkomst upp till 28,000 EUR, 35 procent från 28,000 till 50,000 EUR, och 43 procent över 50,000 EUR. Varje skattesats gäller endast för den inkomst som ligger inom det skiktet."
+      },
+      {
+        "question": "Vad är de regionala och kommunala tilläggsskatterna?",
+        "answer": "Utöver IRPEF lägger Italien till en regional tilläggsskatt (addizionale regionale) och en kommunal tilläggsskatt (addizionale comunale) som varierar beroende på plats. Eftersom dessa skiljer sig åt mellan region och ort approximerar vår kalkylator dem tillsammans till cirka 2.5 procent, så ditt lokala resultat kan skilja sig."
+      },
+      {
+        "question": "Vad är INPS och hur mycket dras av?",
+        "answer": "INPS är Italiens nationella institut för social trygghet och pension. Arbetstagaravgiften är ungefär 9.19 procent av bruttolönen, som dras av innan inkomstskatten, upp till ett avgiftstak på ungefär 120,607 EUR. Denna uppskattning sänker både din nettolön och ditt beskattningsbara underlag."
+      },
+      {
+        "question": "Vad är det skattefria området eller detrazioni?",
+        "answer": "Anställda får skatteavdrag som kallas detrazioni och som skapar ett effektivt skattefritt område för låginkomsttagare, vilket innebär att vissa betalar lite eller ingen IRPEF. Dessa avdrag varierar från person till person, så vår kalkylator approximerar förmånen med ett förenklat skattefritt avdrag."
+      },
+      {
+        "question": "Kan jag uppskatta nettolön per timme, månad eller år?",
+        "answer": "Kalkylatorn utgår från en årlig bruttolön, men du kan omvandla den till en månads- eller timuppskattning genom att dela det årliga nettoresultatet i enlighet med det. Italienska löner betalas ofta ut i flera delbetalningar, så behandla varje uppdelning som en grov uppskattning."
+      },
+      {
+        "question": "Hur noggrann är kalkylatorn, och vilka är dess begränsningar?",
+        "answer": "Det är en förenklad uppskattning för en ensam anställd och fångar inte varje detrazione, familjesituation eller exakt lokal tilläggsskatt. Regionala och kommunala skattesatser varierar beroende på plats och individuella omständigheter, så din faktiska nettolön kan vara högre eller lägre än den siffra som visas."
+      },
+      {
+        "question": "Måste jag lämna in en skattedeklaration i Italien?",
+        "answer": "Många anställda lämnar in en årlig deklaration, vanligtvis Modello 730 eller Redditi-formuläret, för att stämma av innehållna belopp, begära avdrag och reglera eventuellt saldo eller återbetalning. Vår kalkylator lämnar inte in deklarationer eller ersätter denna process; den ger endast en uppskattning."
+      },
+      {
+        "question": "Vem betalar egentligen mina skatter till staten?",
+        "answer": "Din arbetsgivare agerar normalt som skatteindrivare (sostituto d'imposta), och drar av IRPEF, lokala tilläggsskatter och INPS från varje lönecheck och vidarebefordrar dem på dina vägnar. Den årliga deklarationen stämmer sedan av det som hållits inne mot det du är skyldig."
+      },
+      {
+        "question": "Varför kan min verkliga nettolön skilja sig från uppskattningen?",
+        "answer": "Lokala tilläggsskattesatser, dina specifika detrazioni, personliga och familjemässiga omständigheter samt årliga ändringar av skatteskikt och tak påverkar alla det slutliga beloppet. 2026 års siffror här är approximationer, så för exakta belopp rådfråga en kvalificerad skatteexpert."
+      }
+    ]
+  },
+  "SE": {
+    "displayName": "Sverige",
+    "title": "Skattekalkylator för lön i Sverige 2026 - Beräkna din nettoinkomst",
+    "description": "Uppskatta din nettolön i Sverige för 2026. Gratis kalkylator som visar nettolön efter kommunal och statlig inkomstskatt utifrån bruttolön i svenska kronor (SEK).",
+    "taxExplanation": "Sveriges inkomstskattesystem är i första hand uppbyggt kring lokal beskattning, vilket gör det något annorlunda än många andra länder. Den största delen av den skatt som de flesta arbetstagare betalar är den kommunala inkomstskatten, som tas ut av den kommun och region där du bor. Utöver detta tillkommer en separat statlig inkomstskatt som endast gäller för höginkomsttagare. Eftersom systemet bygger på var du bor snarare än en enda nationell skattesats kan den skatt du betalar på samma lön skilja sig åt beroende på din kommun. Vår kalkylator använder en genomsnittlig kommunalskattesats för att ge dig en rimlig uppskattning av din nettolön för beskattningsåret 2026.\n\nKommunal inkomstskatt är den huvudsakliga skatten för vanliga inkomsttagare. Den ligger i genomsnitt på ungefär 32 procent, även om den exakta siffran varierar från kommun till kommun. Denna skatt gäller inte hela din bruttolön. Först dras ett grundavdrag av, och endast inkomsten över detta avdrag beskattas. Grundavdraget beräknas i verkligheten enligt en glidande skala, men vår kalkylator tillämpar en förenklad version av det. Som ett resultat blir den effektiva skattesats du betalar på hela din lön något lägre än den angivna kommunala procentsatsen, särskilt vid lägre inkomstnivåer där avdraget har en större proportionell effekt.\n\nStatlig inkomstskatt är ett ytterligare skikt som endast påverkar högre inkomster. Den tas ut med en fast skattesats på 20 procent, men endast på den del av din beskattningsbara inkomst som överstiger en nationell brytpunkt, vilken är cirka 625,800 SEK för 2025. Om din inkomst ligger under detta tröskelvärde betalar du ingen statlig inkomstskatt alls och endast kommunalskatt gäller. Om du tjänar över den gäller skattesatsen på 20 procent enbart för beloppet över brytpunkten, inte för hela din lön. Detta innebär att de flesta arbetstagare i Sverige endast beskattas på kommunal nivå, och den statliga skatten blir främst relevant för dem med inkomster över genomsnittet.\n\nAnställda i Sverige betalar även en allmän pensionsavgift, som är satt till 7 procent av förvärvsinkomsten. Vid första anblicken ser detta ut som ett betydande avdrag, men i praktiken kompenseras det nästan helt av en motsvarande skattereduktion som beviljas på samma belopp. Eftersom avgiften och den motsvarande skattereduktionen tar ut varandra för de flesta människor har pensionsavgiften liten eller ingen nettoeffekt på nettolönen. Av denna anledning visar vår kalkylator den inte som ett separat avdrag, eftersom det skulle förvränga bilden av vad du faktiskt får behålla.\n\nEn punkt som ofta överraskar människor som jämför Sverige med andra länder är behandlingen av sociala avgifter. Sverige har höga sociala avgifter, arbetsgivaravgifter på ungefär 31.42 procent, men dessa betalas av arbetsgivaren utöver din bruttolön. De dras inte från din lön och minskar inte det belopp som hamnar på ditt bankkonto. Av denna anledning visar vår kalkylator inga sociala avgifter för anställda i dina avdrag. Din bruttolön är det överenskomna beloppet, och dessa arbetsgivarkostnader ligger utanför den snarare än att dras från den.\n\nUnder året sköter din arbetsgivare skatteuppbörden genom ett källskattesystem. Varje månad drar de av preliminär skatt, känd som A-skatt, baserat på skattetabeller och en uppskattning av din årsinkomst, och betalar in den till Skatteverket. Eftersom detta endast är en preliminär uppskattning sker en årlig avstämning efter årets slut. Du lämnar in eller godkänner en deklaration, och Skatteverket jämför den skatt som faktiskt ska betalas med det som dragits av. Om för mycket har dragits av får du tillbaka pengar; om för lite, gör du en tilläggsbetalning.\n\nDet är värt att upprepa att den kommunala skattesatsen varierar beroende på var du bor, och det genomsnitt vi använder kommer inte att exakt stämma med din egen kommun. I kombination med vårt förenklade grundavdrag innebär detta att siffrorna du ser här är uppskattningar snarare än exakta belopp. De är avsedda att ge dig en tydlig, realistisk uppfattning om din nettoinkomst, inte en exakt skatteuppgift. Skattesatser, brytpunkter, avdrag och regler ändras från år till år, och individuella omständigheter såsom avdrag, förmåner och personliga skattereduktioner kan påverka ditt verkliga resultat. För råd anpassade till din situation, rådfråga en kvalificerad skatteexpert eller vänd dig till Skatteverket.",
+    "faqs": [
+      {
+        "question": "Hur mycket skatt betalar jag på min lön i Sverige?",
+        "answer": "De flesta arbetstagare betalar främst kommunal inkomstskatt, som i genomsnitt ligger på omkring 32 procent men varierar mellan kommuner, och tas ut på inkomsten efter grundavdraget. Höginkomsttagare betalar även 20 procent statlig skatt över brytpunkten. Vår kalkylator ger dig en uppskattning för beskattningsåret 2026."
+      },
+      {
+        "question": "Vad är kommunal inkomstskatt i Sverige?",
+        "answer": "Det är den lokala skatt som tas ut av din kommun och region, och den är den huvudsakliga skatten för de flesta inkomsttagare. Den ligger i genomsnitt på ungefär 32 procent av din beskattningsbara inkomst efter grundavdraget, även om den exakta skattesatsen beror på var du bor. Vår kalkylator använder en genomsnittlig skattesats för att uppskatta din nettolön."
+      },
+      {
+        "question": "När betalar jag svensk statlig inkomstskatt?",
+        "answer": "Statlig inkomstskatt på 20 procent gäller endast den del av din beskattningsbara inkomst som överstiger en nationell brytpunkt, cirka 625,800 SEK för 2025. Om du tjänar under detta tröskelvärde betalar du ingen statlig skatt och endast kommunalskatt gäller för din inkomst."
+      },
+      {
+        "question": "Vad är grundavdraget?",
+        "answer": "Det är ett inkomstbelopp som dras av innan kommunalskatten beräknas, så att du inte beskattas på hela din lön. Vår kalkylator tillämpar en förenklad version av detta avdrag, vilket är en anledning till att resultaten är uppskattningar snarare än exakta belopp."
+      },
+      {
+        "question": "Varför visar kalkylatorn inte pensionsavgiften på 7 procent?",
+        "answer": "Anställda betalar en allmän pensionsavgift på 7 procent, men den kompenseras nästan exakt av en motsvarande skattereduktion, så dess nettoeffekt på nettolönen är nära noll. För att undvika att förvränga dina resultat visar vår kalkylator den inte som ett separat avdrag."
+      },
+      {
+        "question": "Varför finns det inga sociala avgifter för anställda i mina resultat?",
+        "answer": "Sveriges höga sociala avgifter, ungefär 31.42 procent, är arbetsgivaravgifter som betalas utöver din bruttolön. De dras inte från din lön, så de minskar inte ditt nettobelopp, och vår kalkylator visar inga sociala avgifter för anställda."
+      },
+      {
+        "question": "Hur tas skatten ut från min lön under året?",
+        "answer": "Din arbetsgivare drar av preliminär skatt (A-skatt) varje månad och betalar in den till Skatteverket. Eftersom det endast är en uppskattning följer en årlig avstämning efter årets slut, vilket kan resultera i återbetalning eller en tilläggsbetalning beroende på vad som faktiskt skulle betalas."
+      },
+      {
+        "question": "Kan jag uppskatta min nettolön per timme, månad eller år?",
+        "answer": "Ja. Kalkylatorn utgår från din bruttolön och uppskattar din nettoinkomst, och du kan använda den för att få en uppfattning om nettolönen oavsett om du tänker i termer av timme, månad eller år. Alla siffror är uppskattningar för beskattningsåret 2026 och bör användas som vägledning."
+      },
+      {
+        "question": "Hur exakt är den här kalkylatorn?",
+        "answer": "Den ger uppskattningar, inte exakta belopp. Eftersom vi använder en genomsnittlig kommunalskattesats och ett förenklat grundavdrag kan ditt verkliga resultat skilja sig från det du ser här, särskilt om din kommuns skattesats är högre eller lägre än genomsnittet. Betrakta siffrorna som en användbar uppskattning."
+      },
+      {
+        "question": "Varför kan min faktiska skatt skilja sig från uppskattningen?",
+        "answer": "Din verkliga skatt beror på din specifika kommuns skattesats, dina exakta avdrag och eventuella personliga avdrag eller skattereduktioner, vilka inte fullt ut fångas av en genomsnittlig uppskattning. Skattesatser och brytpunkter ändras också årligen, så för din situation bör du rådfråga en kvalificerad skatteexpert eller Skatteverket."
+      }
+    ]
+  },
+  "PT": {
+    "displayName": "Portugal",
+    "title": "Portugal löneskattekalkylator 2026 - Beräkna din nettoinkomst",
+    "description": "Uppskatta din nettolön i fastlands-Portugal för 2026. Gratis kalkylator som täcker IRS inkomstskatteskikt och 11% social trygghet för att visa din nettolön.",
+    "taxExplanation": "Portugal beskattar sina invånares inkomst genom en personlig inkomstskatt som kallas IRS (Imposto sobre o Rendimento das Pessoas Singulares). För de flesta anställda arbetare på fastlands-Portugal beror beloppet du får behålla varje månad på två huvudsakliga avgifter: själva IRS och en avgift till det sociala trygghetssystemet. Tillsammans minskar dessa din bruttolön till din netto-, eller utbetalda, lön. Siffrorna som visas av denna kalkylator är förenklade uppskattningar för skatteåret 2026 och är avsedda att hjälpa dig att ungefärligt förstå hur din lön fördelas, inte att fungera som en officiell bedömning.\n\nIRS i fastlands-Portugal är en progressiv skatt, vilket innebär att skattesatsen stiger i steg när din inkomst ökar. Det lägsta skiktet beskattas med 13 percent, och satserna ökar genom flera skikt upp till en högsta sats på 48 percent som tillämpas på inkomst över ungefär 83,696 EUR. En vanlig missuppfattning är tron att om du går in i ett högre skikt beskattas hela din inkomst med den högre satsen. I praktiken beskattas endast den del av din inkomst som faller inom varje skikt med det skiktets sats, så de högre satserna gäller endast den del av inkomsten som överstiger varje tröskel, inte hela din lön.\n\nInnan skikten tillämpas minskas din anställningsinkomst med ett standardiserat specifikt avdrag på cirka 4,104 EUR. Detta är ett automatiskt fribelopp som sänker det inkomstbelopp som är föremål för skatt. Om de socialavgifter du faktiskt betalat under året är högre än detta standardbelopp används istället det större beloppet, så avdraget speglar det som är mest fördelaktigt i den jämförelsen. Detta är en av de viktigaste mekanismerna som minskar din beskattningsbara bas innan de progressiva satserna träder i kraft.\n\nSeparat från IRS betalar anställda in till Seguranca Social, det portugisiska sociala trygghetssystemet. För arbetare är denna avgift en fast 11 percent av bruttoinkomsten, och till skillnad från vissa andra länder finns det inget övre tak, så de 11 percent gäller hela lönen oavsett hur hög den är. Denna avgift finansierar förmåner som pensioner, sjukdom och arbetslöshetsstöd, och den dras av utöver den IRS som hålls inne från din lön.\n\nI praktiken samlas det mesta av den skatt du är skyldig in gradvis under året istället för i ett enda klumpbelopp. Arbetsgivare driver ett innehållandesystem som kallas retencao na fonte, där de drar av ett uppskattat belopp av IRS från varje månadslön och vidarebefordrar det till skattemyndigheten för din räkning. Eftersom detta endast är en uppskattning baserad på tabeller kanske den månatliga innehållningen inte exakt motsvarar din slutliga skatteskuld. Varje år lämnar arbetare sedan in en årlig IRS-deklaration som stämmer av den skatt som faktiskt ska betalas mot vad som hölls inne, vilket kan resultera i antingen en återbetalning eller en ytterligare inbetalning.\n\nDet är viktigt att notera att denna kalkylator endast uppskattar skatt för fastlands-Portugal. De autonoma regionerna Azorerna och Madeira tillämpar sina egna, i allmänhet lägre, regionala IRS-satser, vilka inte återspeglas i våra siffror för fastlandet. Om du bor eller arbetar i en av dessa regioner kan din faktiska IRS vara lägre än den uppskattning som visas här, så siffrorna för fastlandet bör behandlas som en allmän vägledning snarare än en exakt siffra för dessa områden.\n\nDetta verktyg är byggt som en förenklad uppskattning för en enskild skattebetalare på fastlandet. Det tar inte hänsyn till de många personliga omständigheter som kan förändra en verklig skatteskuld, såsom familjesituation, försörjningsberoende, ytterligare specificerade avdrag, andra inkomstkällor eller särskilda regionala och speciella regimer. Skattesatser, skikt, avdrag och avgiftsregler i Portugal kan ändras från ett år till nästa, och värdena som används här är uppskattningar för skatteåret 2026. Detta innehåll är endast utbildningsinformation och utgör inte skatte-, juridisk- eller redovisningsrådgivning. För beslut om din egen situation, eller för en korrekt beräkning, rådgör med en kvalificerad yrkesperson eller den officiella portugisiska skattemyndigheten.",
+    "faqs": [
+      {
+        "question": "Hur mycket skatt betalar jag på min lön i Portugal?",
+        "answer": "Det beror på hur mycket du tjänar, eftersom IRS är progressiv: satserna börjar på 13 percent på det lägsta skiktet och stiger i steg till 48 percent på inkomst över cirka 83,696 EUR. Utöver IRS betalar anställda 11 percent till social trygghet. Denna kalkylator kombinerar båda för att ge dig en uppskattad nettolön för fastlands-Portugal."
+      },
+      {
+        "question": "Vad är IRS i Portugal?",
+        "answer": "IRS (Imposto sobre o Rendimento das Pessoas Singulares) är Portugals personliga inkomstskatt. Den tillämpas progressivt över flera skikt, så endast den del av din inkomst som ligger inom varje skikt beskattas med det skiktets sats, från 13 percent på det lägsta skiktet upp till 48 percent på det högsta."
+      },
+      {
+        "question": "Hur mycket är social trygghet för anställda i Portugal?",
+        "answer": "Anställda bidrar med en fast 11 percent av sin bruttoinkomst till Seguranca Social, det sociala trygghetssystemet. Det finns inget övre tak, så de 11 percent gäller hela din lön. Detta dras av utöver eventuell IRS som hålls inne från din lön."
+      },
+      {
+        "question": "Vad är det specifika avdraget för anställningsinkomst?",
+        "answer": "Anställningsinkomst gynnas av ett standardiserat specifikt avdrag på cirka 4,104 EUR, vilket sänker den inkomst som är föremål för IRS. Om den social trygghet du faktiskt betalat under året är högre än detta belopp används istället det större beloppet, det som är mest fördelaktigt."
+      },
+      {
+        "question": "Kan jag uppskatta min netto-lön per timme, månad eller år?",
+        "answer": "Ja. Kalkylatorn utgår från din bruttolön för att uppskatta utbetald lön, och du kan använda den för att få en ungefärlig uppfattning om månads- eller årsnettoinkomst. Tänk på att detta är uppskattningar; arbetsgivare håller inne skatt månadsvis genom retencao na fonte, och den exakta månadssiffran kan variera från en enkel årsdivision."
+      },
+      {
+        "question": "Hur exakt är denna kalkylator?",
+        "answer": "Det är en förenklad uppskattning för en enskild skattebetalare på fastlandet och är avsedd som en allmän vägledning, inte en officiell bedömning. Den fångar inte varje personlig faktor såsom försörjningsberoende, familjesituation, extra avdrag eller andra inkomster, så ditt verkliga resultat kan skilja sig. För en korrekt siffra, rådgör med en yrkesperson eller skattemyndigheten."
+      },
+      {
+        "question": "Har Azorerna och Madeira andra skattesatser?",
+        "answer": "Ja. De autonoma regionerna Azorerna och Madeira tillämpar sina egna, i allmänhet lägre, regionala IRS-satser. Denna kalkylator uppskattar endast skatt för fastlands-Portugal och inkluderar inte dessa regionala satser, så den faktiska IRS i dessa regioner kan vara lägre än vad som visas här."
+      },
+      {
+        "question": "Varför dras skatt från min lön varje månad?",
+        "answer": "Portugal använder ett innehållandesystem som kallas retencao na fonte, där din arbetsgivare drar av ett uppskattat belopp av IRS från varje månadslön och skickar det till skattemyndigheten. Eftersom det baseras på uppskattningstabeller kanske det inte exakt motsvarar din slutliga skatteskuld för året."
+      },
+      {
+        "question": "Behöver jag fortfarande lämna in en årlig skattedeklaration?",
+        "answer": "Ja. Även om skatt hålls inne månadsvis lämnar arbetare in en årlig IRS-deklaration som stämmer av den skatt som faktiskt ska betalas mot vad som hölls inne under året. Detta kan resultera i en återbetalning om för mycket hölls inne, eller en ytterligare inbetalning om för lite hölls inne."
+      },
+      {
+        "question": "Är dessa siffror slutgiltiga eller bara uppskattningar?",
+        "answer": "De är uppskattningar för skatteåret 2026. Skattesatser, skikt och regler i Portugal kan ändras från år till år, och detta verktyg är en förenklad uppskattning för fastlandet endast i utbildningssyfte. Bekräfta alltid din specifika situation med en kvalificerad yrkesperson eller den officiella skattemyndigheten."
+      }
+    ]
+  },
+  "hub": {
+    "faqs": [
+      {
+        "question": "Hur exakta är dessa beräkningar av lönesatt skatt?",
+        "answer": "Våra kalkylatorer använder officiella skatteskikt och skattesatser för beskattningsåret 2026. Detta är dock uppskattningar och inkluderar kanske inte alla avdrag, skattereduktioner eller lokala skatter. För USA ingår inte delstatliga och lokala skatter. Rådfråga alltid en skatteexpert för råd som är specifika för din situation."
+      },
+      {
+        "question": "Vad är skillnaden mellan bruttoinkomst och nettoinkomst?",
+        "answer": "Bruttoinkomst är dina totala intäkter före eventuella skatter eller avdrag. Nettoinkomst (lön efter skatt) är det som återstår efter att inkomstskatt, socialförsäkringsavgifter och andra obligatoriska avdrag har dragits från din bruttoinkomst."
+      },
+      {
+        "question": "Inkluderar dessa kalkylatorer delstatliga eller lokala skatter?",
+        "answer": "För USA inkluderar vår kalkylator endast federala skatter. Delstatliga och lokala inkomstskatter varierar avsevärt beroende på plats och ingår inte. För Tyskland och Storbritannien inkluderar beräkningarna de nationella skattesystemen, men lokala variationer kan förekomma."
+      },
+      {
+        "question": "Kan jag använda detta för inkomst från egenföretagande?",
+        "answer": "Dessa kalkylatorer är utformade för anställdas inkomst med vanliga löneavdrag. Egenföretagare har vanligtvis andra skatteförpliktelser, inklusive egenföretagarskatt i USA, och kan behöva göra preliminära skatteinbetalningar. Rådfråga en skatteexpert för scenarier med egenföretagande."
+      },
+      {
+        "question": "Hur omvandlar jag mellan tim-, månads- och årsinkomst?",
+        "answer": "Använd vår omvandlare från timlön till årslön för snabba omvandlingar. Formlerna är: Årslön = Timlön × Timmar per vecka × Veckor per år; Månadslön = Årslön ÷ 12; Timlön = Årslön ÷ (Timmar per vecka × Veckor per år). Standardantaganden är 40 timmar per vecka och 52 veckor per år."
+      },
+      {
+        "question": "Vilka länder stöds?",
+        "answer": "Vi stöder för närvarande skatteuppskattningar för USA (endast federala skatter), Tyskland, Storbritannien, Polen, Frankrike, Spanien, Italien, Sverige och Portugal. Varje landssida förklarar landets skattesystem och socialförsäkringsavgifter."
+      },
+      {
+        "question": "Är beräkningarna uppdaterade för 2026?",
+        "answer": "Ja, alla kalkylatorer använder skatteskikt, skattesatser och tröskelvärden för 2026. Skattesystem uppdateras årligen och vi strävar efter att hålla våra data aktuella. Skattelagar kan dock ändras under året, så verifiera med officiella källor för den mest uppdaterade informationen."
+      },
+      {
+        "question": "Vilken information behöver jag för att använda kalkylatorn?",
+        "answer": "Du behöver din bruttoinkomst (per timme, månad eller år), ditt land och beskattningsåret. För timberäkningar behöver du även dina timmar per vecka och veckor per år. Kalkylatorn uppskattar sedan din nettoinkomst efter skatter och avdrag."
+      }
+    ]
+  }
+}

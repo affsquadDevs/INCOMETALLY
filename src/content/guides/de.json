@@ -1,0 +1,602 @@
+{
+  "how-to-calculate-net-salary": {
+    "title": "So berechnen Sie Ihr Nettogehalt: Ein vollständiger Leitfaden",
+    "description": "Erfahren Sie, wie Sie Ihr Nettogehalt aus dem Bruttoeinkommen berechnen. Verstehen Sie Abzüge, Steuern und die Berechnung des Nettolohns für eine genaue Budgetplanung.",
+    "content": "# So berechnen Sie Ihr Nettogehalt: Ein vollständiger Leitfaden\n\nDie Berechnung Ihres Nettogehalts ist entscheidend, um Ihren tatsächlichen Nettolohn zu verstehen. Dieser Leitfaden erklärt den Vorgang Schritt für Schritt.\n\n## Brutto- vs. Nettogehalt verstehen\n\n**Bruttogehalt** ist Ihr Gesamtverdienst vor allen Abzügen. Dies ist der in Ihrem Arbeitsvertrag vereinbarte Betrag.\n\n**Nettogehalt** (auch Nettolohn genannt) ist das, was Sie nach allen Abzügen erhalten, darunter:\n- Einkommensteuer\n- Sozialversicherungsbeiträge\n- Krankenversicherung\n- Sonstige Pflichtabzüge\n\n## Schritt-für-Schritt-Berechnung\n\n### Schritt 1: Bestimmen Sie Ihr Bruttoeinkommen\n\nBeginnen Sie mit Ihrem jährlichen, monatlichen oder stündlichen Bruttoeinkommen. Dies ist Ihr Ausgangspunkt.\n\n### Schritt 2: Berechnen Sie das zu versteuernde Einkommen\n\nZiehen Sie alle Freibeträge oder Abzüge von Ihrem Bruttoeinkommen ab:\n- Standardabzug oder persönlicher Freibetrag\n- Beiträge vor Steuern (401(k), Krankenversicherungsprämien)\n\n### Schritt 3: Wenden Sie die Einkommensteuer an\n\nBerechnen Sie die Einkommensteuer auf Grundlage der progressiven Steuerklassen. Unterschiedliche Teile Ihres Einkommens werden mit unterschiedlichen Sätzen besteuert.\n\n### Schritt 4: Ziehen Sie die Sozialversicherungsbeiträge ab\n\nZiehen Sie die Sozialversicherungsbeiträge ab, die je nach Land unterschiedlich sind:\n- **USA**: Social Security (6,2 %) und Medicare (1,45 %)\n- **Deutschland**: Kranken-, Renten-, Arbeitslosen- und Pflegeversicherung\n- **Vereinigtes Königreich**: National-Insurance-Beiträge\n\n### Schritt 5: Berechnen Sie das Nettoeinkommen\n\nNettoeinkommen = Bruttoeinkommen - Einkommensteuer - Sozialversicherungsbeiträge\n\n## So nutzen Sie unseren Rechner\n\nUnser Gehaltsrechner automatisiert diesen Vorgang. Geben Sie einfach Ihr Bruttoeinkommen ein, wählen Sie Ihr Land aus und erhalten Sie sofort eine Schätzung Ihres Nettoeinkommens.\n\n## Wichtige Hinweise\n\n- Diese Berechnungen sind Schätzungen, die auf Standardszenarien beruhen\n- Der tatsächliche Nettolohn kann je nach individuellen Umständen abweichen\n- Wenden Sie sich für eine persönliche Beratung an einen Steuerexperten",
+    "keywords": [
+      "Nettogehalt",
+      "Nettolohn",
+      "Gehaltsberechnung",
+      "Brutto vs. Netto",
+      "Steuerabzüge"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Was ist der Unterschied zwischen Brutto- und Nettogehalt?",
+        "answer": "Das Bruttogehalt ist Ihr Gesamtverdienst vor Abzügen. Das Nettogehalt ist Ihr Nettolohn, nachdem Einkommensteuer, Sozialversicherung und sonstige Pflichtabzüge abgezogen wurden."
+      },
+      {
+        "question": "Wie genau sind die Nettogehaltsberechnungen?",
+        "answer": "Unsere Berechnungen sind Schätzungen, die auf Standardsteuersätzen und -klassen beruhen. Der tatsächliche Nettolohn kann je nach individuellen Umständen, Abzügen, Steuergutschriften und lokalen Steuern abweichen."
+      },
+      {
+        "question": "Kann ich das Nettogehalt für verschiedene Einkommensarten berechnen?",
+        "answer": "Ja, Sie können das Nettogehalt aus stündlichem, monatlichem oder jährlichem Bruttoeinkommen berechnen. Der Rechner rechnet Ihr Einkommen auf das Jahr hoch und wendet die entsprechenden Steuerberechnungen an."
+      }
+    ]
+  },
+  "understanding-tax-brackets": {
+    "title": "Steuerklassen verstehen: Wie progressive Besteuerung funktioniert",
+    "description": "Erfahren Sie, wie progressive Steuerstufen funktionieren und wie sie sich auf Ihr Nettogehalt auswirken. Verstehen Sie den Unterschied zwischen Grenzsteuersatz und Durchschnittssteuersatz.",
+    "content": "# Steuerklassen verstehen: Wie progressive Besteuerung funktioniert\n\nSteuerstufen sind ein grundlegender Bestandteil der Einkommensteuersysteme in den meisten Ländern. Dieser Leitfaden erklärt, wie sie funktionieren.\n\n## Was sind Steuerstufen?\n\nSteuerstufen sind Einkommensbereiche, die mit unterschiedlichen Sätzen besteuert werden. Mit steigendem Einkommen werden verschiedene Teile zu progressiv höheren Sätzen besteuert.\n\n## Wie progressive Besteuerung funktioniert\n\nIn einem progressiven Steuersystem gilt:\n- Niedrigeres Einkommen wird zu niedrigeren Sätzen besteuert\n- Höheres Einkommen wird zu höheren Sätzen besteuert\n- Nur das Einkommen innerhalb der jeweiligen Stufe wird zum Satz dieser Stufe besteuert\n\n## Beispielberechnung\n\nWenn Sie 75.000 $ verdienen und die Stufen wie folgt aussehen:\n- 10 % auf Einkommen bis 10.000 $\n- 20 % auf Einkommen von 10.001 $ bis 40.000 $\n- 30 % auf Einkommen über 40.000 $\n\nWürde Ihre Steuer betragen:\n- 10.000 $ × 10 % = 1.000 $\n- 30.000 $ × 20 % = 6.000 $\n- 35.000 $ × 30 % = 10.500 $\n- Gesamt: 17.500 $\n\n## Grenzsteuersatz vs. Durchschnittssteuersatz\n\nDer **Grenzsteuersatz** ist der Satz für Ihre höchste Einkommensstufe (30 % im obigen Beispiel).\n\nDer **Durchschnittssteuersatz** ist Ihre gesamte Steuer geteilt durch Ihr Gesamteinkommen (17.500 $ ÷ 75.000 $ = 23,3 % im Beispiel).\n\n## Länderspezifische Informationen\n\nSteuerstufen variieren je nach Land:\n- **USA**: 7 Bundessteuerstufen von 10 % bis 37 %\n- **Deutschland**: Progressive Sätze von 14 % bis 45 %\n- **Großbritannien**: Basissatz (20 %), höherer Satz (40 %), Zusatzsatz (45 %)\n\nNutzen Sie unsere länderspezifischen Rechner, um zu sehen, wie die Stufen auf Ihr Einkommen angewendet werden.",
+    "keywords": [
+      "Steuerstufen",
+      "progressive Steuer",
+      "Grenzsteuersatz",
+      "Durchschnittssteuersatz",
+      "Einkommensteuer"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Was ist ein Grenzsteuersatz?",
+        "answer": "Ihr Grenzsteuersatz ist der Satz, der auf Ihre höchste Einkommensstufe angewendet wird. Er stellt den Steuersatz auf Ihren nächsten verdienten Dollar dar."
+      },
+      {
+        "question": "Was ist ein Durchschnittssteuersatz?",
+        "answer": "Ihr Durchschnittssteuersatz ist der Prozentsatz Ihres Gesamteinkommens, der an Steuern gezahlt wird. Er wird berechnet als gesamte Steuer geteilt durch das Gesamteinkommen und liegt in der Regel niedriger als Ihr Grenzsteuersatz."
+      },
+      {
+        "question": "Zahle ich den höchsten Steuersatz auf mein gesamtes Einkommen?",
+        "answer": "Nein. In progressiven Steuersystemen wird nur das Einkommen innerhalb der jeweiligen Stufe zum Satz dieser Stufe besteuert. Niedrigere Teile Ihres Einkommens werden zu niedrigeren Sätzen besteuert."
+      }
+    ]
+  },
+  "hourly-to-salary-conversion": {
+    "title": "Umrechnung von Stundenlohn in Gehalt: Der vollständige Leitfaden",
+    "description": "Rechnen Sie Stundenlöhne in Jahres-, Monats- und Wochengehalt um. Lernen Sie die Formeln kennen und nutzen Sie unseren kostenlosen Rechner.",
+    "content": "# Umrechnung von Stundenlohn in Gehalt: Der vollständige Leitfaden\n\nDie Umrechnung von Stundenlöhnen in ein Gehalt hilft Ihnen, Ihre Gesamtvergütung zu verstehen und Stellenangebote zu vergleichen.\n\n## Grundlegende Umrechnungsformeln\n\n### Jahresgehalt aus dem Stundenlohn\n\n```\nJahresgehalt = Stundenlohn × Stunden pro Woche × Wochen pro Jahr\n```\n\n**Standardberechnung**: 25 $/Stunde × 40 Stunden/Woche × 52 Wochen/Jahr = 52.000 $/Jahr\n\n### Monatsgehalt\n\n```\nMonatsgehalt = Jahresgehalt ÷ 12\n```\n\n**Beispiel**: 52.000 $ ÷ 12 = 4.333,33 $/Monat\n\n### Wochengehalt\n\n```\nWochengehalt = Stundenlohn × Stunden pro Woche\n```\n\n**Beispiel**: 25 $/Stunde × 40 Stunden = 1.000 $/Woche\n\n## Anpassung bei Teilzeitarbeit\n\nBei Teilzeit oder unregelmäßigen Arbeitszeiten passen Sie die Berechnung an:\n\n**Beispiel**: 30 $/Stunde × 35 Stunden/Woche × 50 Wochen/Jahr = 52.500 $/Jahr\n\nDies berücksichtigt:\n- Weniger Stunden pro Woche\n- Unbezahlte freie Zeit oder Urlaub\n\n## Zu berücksichtigende Faktoren\n\n### Stunden pro Woche\n- Vollzeit: Typischerweise 40 Stunden\n- Teilzeit: Variiert (oft 20–30 Stunden)\n- Überstunden: Können eine separate Berechnung erfordern\n\n### Wochen pro Jahr\n- Standard: 52 Wochen\n- Mit Urlaub: 50–51 Wochen (unbezahlte freie Zeit)\n- Saisonarbeit: Variiert je nach Branche\n\n### Überlegungen zu Überstunden\n\nWenn Sie regelmäßig Überstunden leisten:\n1. Berechnen Sie das Grundgehalt separat\n2. Addieren Sie die geschätzten Überstundeneinkünfte\n3. Oder verwenden Sie einen durchschnittlichen Stundenlohn, der Überstunden einschließt\n\n## Unseren Rechner verwenden\n\nUnser Rechner für die Umrechnung von Stundenlohn in Gehalt automatisiert diese Berechnungen und zeigt sowohl das Brutto- als auch das Nettoeinkommen nach Steuern an.",
+    "keywords": [
+      "Stundenlohn in Gehalt",
+      "Lohnumrechnung",
+      "Stundensatz",
+      "Jahresgehalt",
+      "Gehaltsrechner"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Wie rechne ich einen Stundenlohn in ein Jahresgehalt um?",
+        "answer": "Multiplizieren Sie Ihren Stundenlohn mit den Stunden pro Woche und anschließend mit den Wochen pro Jahr. Standardberechnung: Stundenlohn × 40 × 52 = Jahresgehalt."
+      },
+      {
+        "question": "Sollte ich Überstunden in meinen Stundenlohn einrechnen?",
+        "answer": "Für ein genaues Grundgehalt verwenden Sie Ihren Basisstundenlohn. Wenn Sie regelmäßig Überstunden leisten, berechnen Sie diese separat oder verwenden Sie einen Durchschnittssatz, der die Überstunden berücksichtigt."
+      },
+      {
+        "question": "Wie viele Wochen sollte ich in der Berechnung verwenden?",
+        "answer": "Verwenden Sie 52 Wochen für Vollzeitbeschäftigte. Passen Sie auf 50–51 Wochen an, wenn Sie unbezahlten Urlaub haben, oder auf weniger Wochen bei Saisonarbeit."
+      }
+    ]
+  },
+  "tax-deductions-explained": {
+    "title": "Steuerliche Abzüge erklärt: Was Ihr zu versteuerndes Einkommen senkt",
+    "description": "Verstehen Sie steuerliche Abzüge, Freibeträge und wie sie Ihr zu versteuerndes Einkommen senken. Erfahren Sie mehr über Standardabzug und Einzelabzüge (itemized deductions).",
+    "content": "# Steuerliche Abzüge erklärt: Was Ihr zu versteuerndes Einkommen senkt\n\nSteuerliche Abzüge verringern Ihr zu versteuerndes Einkommen, was Ihre Steuerlast senken kann. Dieser Leitfaden erklärt, wie sie funktionieren.\n\n## Was sind steuerliche Abzüge?\n\nSteuerliche Abzüge sind Ausgaben oder Freibeträge, die Ihr zu versteuerndes Einkommen verringern. Ein niedrigeres zu versteuerndes Einkommen bedeutet weniger Steuern.\n\n## Arten von Abzügen\n\n### Standardabzug (Standard Deduction)\n\nEin fester Betrag, der das zu versteuernde Einkommen senkt, ohne dass Sie einzelne Ausgaben aufschlüsseln müssen. Steht allen Steuerzahlern zur Verfügung.\n\n**Vorteile**:\n- Einfach geltend zu machen\n- Keine Nachweise erforderlich\n- Garantierte Steuerermäßigung\n\n### Einzelabzüge (Itemized Deductions)\n\nBestimmte Ausgaben, die Sie abziehen können, wenn sie den Betrag des Standardabzugs übersteigen.\n\n**Häufige Einzelabzüge**:\n- Hypothekenzinsen\n- Bundesstaatliche und kommunale Steuern\n- Spenden für gemeinnützige Zwecke\n- Krankheitskosten (oberhalb einer Schwelle)\n- Grundsteuern\n\n## Wie Abzüge funktionieren\n\n**Beispiel**:\n- Bruttoeinkommen: 75.000 $\n- Standardabzug: 14.600 $\n- Zu versteuerndes Einkommen: 75.000 $ - 14.600 $ = 60.400 $\n\nSie zahlen Steuern auf 60.400 $, nicht auf 75.000 $.\n\n## Länderspezifische Informationen\n\n### Vereinigte Staaten\n- Der Standardabzug variiert je nach Veranlagungsstatus\n- Wahl zwischen Standardabzug oder Einzelabzügen (je nachdem, was höher ist)\n- Viele Abzüge werden für Spitzenverdiener stufenweise abgebaut\n\n### Deutschland\n- Grundfreibetrag für alle Steuerzahler\n- Zusätzliche Abzüge für Kinder und Sonderausgaben\n- Die Steuerklasse beeinflusst den Lohnsteuerabzug, nicht die endgültige Steuerschuld\n\n### Vereinigtes Königreich\n- Persönlicher Freibetrag (Personal Allowance) für alle Steuerzahler\n- Ehegattenfreibetrag (Marriage Allowance) für berechtigte Paare\n- Rentenbeiträge werden steuerlich begünstigt\n\n## So holen Sie das Maximum aus Ihren Abzügen heraus\n\n1. **Kennen Sie Ihre Optionen**: Verstehen Sie den Unterschied zwischen Standardabzug und Einzelabzügen\n2. **Erfassen Sie Ausgaben**: Bewahren Sie Belege über abzugsfähige Ausgaben auf\n3. **Planen Sie das Timing**: Berücksichtigen Sie den Zeitpunkt abzugsfähiger Zahlungen\n4. **Ziehen Sie Fachleute zurate**: Steuerberater können zusätzliche Abzüge ermitteln\n\n## Wichtige Hinweise\n\n- Abzüge verringern das zu versteuernde Einkommen, nicht die Steuer direkt\n- Steuergutschriften (Tax Credits, anders als Abzüge) verringern die Steuer Euro für Euro\n- Die Regeln unterscheiden sich von Land zu Land und ändern sich jährlich\n- Wenden Sie sich für eine individuelle Beratung an einen Steuerfachmann",
+    "keywords": [
+      "steuerliche Abzüge",
+      "Standardabzug",
+      "zu versteuerndes Einkommen",
+      "Freibeträge",
+      "Steuerersparnis"
+    ],
+    "faqs": [
+      {
+        "question": "Was ist der Unterschied zwischen einem Abzug und einer Steuergutschrift?",
+        "answer": "Ein Abzug verringert Ihr zu versteuerndes Einkommen, während eine Steuergutschrift (Credit) Ihre Steuerschuld direkt verringert. Steuergutschriften sind in der Regel wertvoller als Abzüge."
+      },
+      {
+        "question": "Sollte ich den Standardabzug nehmen oder Einzelabzüge geltend machen?",
+        "answer": "Nehmen Sie den jeweils höheren Betrag. Wenn Ihre Einzelabzüge den Standardabzug übersteigen, machen Sie die Einzelabzüge geltend. Andernfalls nehmen Sie den Standardabzug."
+      },
+      {
+        "question": "Gelten Abzüge in allen Ländern?",
+        "answer": "Ja, aber die konkreten Abzüge und Freibeträge unterscheiden sich von Land zu Land. Jedes Land hat sein eigenes System zur Verringerung des zu versteuernden Einkommens."
+      }
+    ],
+    "sources": []
+  },
+  "social-security-contributions-guide": {
+    "title": "Sozialversicherungsbeiträge: Was Sie wissen müssen",
+    "description": "Verstehen Sie Sozialversicherungsbeiträge in verschiedenen Ländern. Erfahren Sie, wie sie Ihr Nettoeinkommen beeinflussen und welche Leistungen sie bieten.",
+    "content": "# Sozialversicherungsbeiträge: Was Sie wissen müssen\n\nSozialversicherungsbeiträge finanzieren staatliche Leistungen wie Renten, Gesundheitsversorgung und Arbeitslosenversicherung. Dieser Leitfaden erklärt, wie sie funktionieren.\n\n## Was sind Sozialversicherungsbeiträge?\n\nSozialversicherungsbeiträge sind verpflichtende Zahlungen, die staatliche Leistungen finanzieren. Sie sind von der Einkommensteuer getrennt und werden in der Regel zwischen Arbeitgeber und Arbeitnehmer aufgeteilt.\n\n## Vereinigte Staaten: FICA-Abgaben\n\n### Social-Security-Abgabe\n- Satz: 6,2 % des Arbeitslohns\n- Obergrenze: Gilt nur bis zur Beitragsbemessungsgrenze von Social Security (Social Security wage base)\n- Zweck: Finanziert Renten- und Erwerbsminderungsleistungen\n\n### Medicare-Abgabe\n- Satz: 1,45 % des gesamten Arbeitslohns (keine Obergrenze)\n- Zusätzlich: 0,9 % Zuschlag für Besserverdienende\n- Zweck: Finanziert die Gesundheitsversorgung für Senioren\n\n**FICA gesamt**: 7,65 % für die meisten Arbeitnehmer (6,2 % + 1,45 %)\n\n## Deutschland: Das Sozialversicherungssystem\n\n### Bestandteile\n1. **Krankenversicherung** (Krankenversicherung)\n   - Verpflichtend für Arbeitnehmer unterhalb der Einkommensgrenze\n   - 50/50 mit dem Arbeitgeber geteilt\n\n2. **Rentenversicherung** (Rentenversicherung)\n   - Finanziert das gesetzliche Rentensystem\n   - 50/50 mit dem Arbeitgeber geteilt\n\n3. **Arbeitslosenversicherung** (Arbeitslosenversicherung)\n   - Bietet Arbeitslosengeld\n   - 50/50 mit dem Arbeitgeber geteilt\n\n4. **Pflegeversicherung** (Pflegeversicherung)\n   - Deckt Pflege- und Betreuungsleistungen ab\n   - 50/50 mit dem Arbeitgeber geteilt\n\n## Vereinigtes Königreich: National Insurance\n\n### Class-1-Beiträge (Arbeitnehmer)\n- Berechnet pro Abrechnungszeitraum (wöchentlich/monatlich)\n- Hauptsatz zwischen dem Primärschwellenwert (primary threshold) und der oberen Verdienstgrenze (upper earnings limit)\n- Reduzierter Satz oberhalb der oberen Grenze\n- Finanziert: Staatliche Rente, NHS, Arbeitslosengeld\n\n## Wie sich Beiträge auf das Nettogehalt auswirken\n\nSozialversicherungsbeiträge verringern Ihr Nettoeinkommen unmittelbar:\n\n**Beispiel (USA)**:\n- Brutto: 75.000 $\n- FICA (7,65 %): -5.737,50 $\n- Netto vor Einkommensteuer: 69.262,50 $\n\n## Bereitgestellte Leistungen\n\nBeiträge finanzieren:\n- Altersrenten\n- Gesundheitssysteme\n- Arbeitslosengeld\n- Erwerbsminderungsleistungen\n- Langzeitpflege (in einigen Ländern)\n\n## Wichtige Hinweise\n\n- Beiträge sind für Arbeitnehmer verpflichtend\n- Sätze und Schwellenwerte ändern sich jährlich\n- Der Arbeitgeber gleicht die Arbeitnehmerbeiträge in der Regel an\n- Die Anspruchsberechtigung auf Leistungen hängt von der Beitragshistorie ab\n- Selbstständige zahlen höhere Sätze",
+    "keywords": [
+      "Sozialversicherung",
+      "Sozialbeiträge",
+      "FICA",
+      "National Insurance",
+      "Rentenbeiträge"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Sind Sozialversicherungsbeiträge dasselbe wie die Einkommensteuer?",
+        "answer": "Nein. Sozialversicherungsbeiträge sind von der Einkommensteuer getrennt und finanzieren bestimmte staatliche Leistungen wie Renten und Gesundheitsversorgung. Sie werden anders berechnet und haben unterschiedliche Sätze."
+      },
+      {
+        "question": "Bekomme ich das Geld aus den Sozialversicherungsbeiträgen zurück?",
+        "answer": "Nicht direkt. Beiträge finanzieren staatliche Leistungen, die Sie später erhalten können, etwa Altersrenten, Gesundheitsversorgung und Arbeitslosengeld. Die Anspruchsberechtigung hängt von Ihrer Beitragshistorie ab."
+      },
+      {
+        "question": "Wie stark verringern Sozialversicherungsbeiträge mein Nettogehalt?",
+        "answer": "Das hängt vom Land ab. In den USA betragen die FICA-Abgaben 7,65 % des Arbeitslohns (bis zur Obergrenze von Social Security). In Deutschland und im Vereinigten Königreich variieren die Sätze je nach Einkommen und werden in der Regel mit dem Arbeitgeber geteilt."
+      }
+    ]
+  },
+  "salary-negotiation-tips": {
+    "title": "Tipps zur Gehaltsverhandlung: Nettoeinkommen richtig berechnen",
+    "description": "Erfahren Sie, wie Sie Nettogehaltsberechnungen in Gehaltsverhandlungen nutzen. Verstehen Sie Ihr tatsächliches Nettoeinkommen, bevor Sie ein Angebot annehmen.",
+    "content": "# Tipps zur Gehaltsverhandlung: Nettoeinkommen richtig berechnen\n\nIhr Nettoeinkommen zu verstehen ist entscheidend für erfolgreiche Gehaltsverhandlungen. Dieser Leitfaden zeigt Ihnen, wie Sie Berechnungen zu Ihrem Vorteil nutzen.\n\n## Warum das Nettoeinkommen wichtig ist\n\nBruttogehaltszahlen können irreführend sein. Ein Unterschied von 5.000 $ beim Bruttogehalt entspricht nach Steuern möglicherweise nur 3.500 $ beim Nettoeinkommen.\n\n## Vor der Verhandlung\n\n### 1. Berechnen Sie Ihr aktuelles Nettoeinkommen\n\nNutzen Sie unseren Rechner, um Ihr aktuelles Nettoeinkommen zu ermitteln. Dies ist Ihre Ausgangsbasis.\n\n### 2. Berechnen Sie das Nettoeinkommen für das Angebot\n\nGeben Sie das angebotene Bruttogehalt ein, um Ihr tatsächliches Nettoeinkommen zu sehen. Vergleichen Sie dies mit Ihrer aktuellen Situation.\n\n### 3. Berücksichtigen Sie alle Faktoren\n\n- Steuerliche Unterschiede zwischen Standorten\n- Anpassungen an die Lebenshaltungskosten\n- Wert der Zusatzleistungen (Krankenversicherung, Altersvorsorge)\n- Pendelkosten\n- Work-Life-Balance\n\n## Verhandlungsstrategien\n\n### Nutzen Sie das Nettoeinkommen in Gesprächen\n\nStatt: „Ich brauche 10.000 $ mehr\"\nSagen Sie: „Nach Steuern würde mir dieses Angebot ein Nettoeinkommen von X $ einbringen, das sind Y $ weniger als in meiner aktuellen Situation\"\n\n### Berücksichtigen Sie steuerliche Unterschiede\n\nEin Umzug in einen anderen Bundesstaat oder ein anderes Land kann das Nettoeinkommen erheblich beeinflussen:\n- Bundesstaaten mit hohen Steuern reduzieren das Nettoeinkommen\n- Einige Bundesstaaten erheben keine Einkommensteuer\n- Internationale Umzüge bringen andere Steuersysteme mit sich\n\n### Beziehen Sie Zusatzleistungen ein\n\nZusatzleistungen können Tausende wert sein:\n- Beiträge zur Krankenversicherung\n- Beiträge zur Altersvorsorge\n- Bezahlter Urlaub\n- Berufliche Weiterbildung\n\n## Häufige Fehler, die Sie vermeiden sollten\n\n1. **Sich nur auf das Bruttogehalt konzentrieren**\n   - Berechnen Sie immer das Nettoeinkommen\n\n2. **Standortunterschiede ignorieren**\n   - Gleiches Bruttogehalt ≠ gleiches Nettoeinkommen an verschiedenen Standorten\n\n3. **Die Gesamtvergütung nicht berücksichtigen**\n   - Zusatzleistungen und Vergünstigungen haben einen realen Wert\n\n4. **Das erste Angebot annehmen**\n   - Die meisten Arbeitgeber erwarten eine Verhandlung\n\n## Unsere Tools nutzen\n\nUnsere Rechner helfen Ihnen dabei:\n- Brutto- und Nettoeinkommen zu vergleichen\n- Steuerliche Auswirkungen zu verstehen\n- Fundierte Entscheidungen zu treffen\n- Aus einer Position des Wissens heraus zu verhandeln\n\n## Nach der Verhandlung\n\nSobald Sie sich auf die Konditionen geeinigt haben:\n1. Lassen Sie sich das Angebot schriftlich bestätigen\n2. Bestätigen Sie alle Zusatzleistungen und Vergünstigungen\n3. Beachten Sie, dass Ihre erste Gehaltsabrechnung abweichen wird (anteilig, andere Abzüge)\n4. Planen Sie Ihr Budget auf Basis des Nettoeinkommens\n\nDenken Sie daran: Wissen ist Macht bei Verhandlungen. Wenn Sie Ihr tatsächliches Nettoeinkommen kennen, können Sie bessere Entscheidungen treffen.",
+    "keywords": [
+      "Gehaltsverhandlung",
+      "Nettoeinkommen",
+      "Stellenangebot",
+      "Vergütung",
+      "Nettogehalt"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Sollte ich auf Basis des Brutto- oder des Nettogehalts verhandeln?",
+        "answer": "Berücksichtigen Sie beides, konzentrieren Sie sich aber für Ihre tatsächliche finanzielle Situation auf das Nettoeinkommen. Das Bruttogehalt ist das, worüber Arbeitgeber sprechen, aber das Nettoeinkommen ist das, was Sie tatsächlich erhalten."
+      },
+      {
+        "question": "Wie berücksichtige ich steuerliche Unterschiede bei der Verhandlung?",
+        "answer": "Nutzen Sie unsere Rechner, um das Nettoeinkommen an verschiedenen Standorten zu vergleichen. Beziehen Sie bundesstaatliche und lokale Steuern, Lebenshaltungskosten und andere standortspezifische Kosten mit ein."
+      },
+      {
+        "question": "Was tun, wenn der Arbeitgeber das Bruttogehalt nicht erhöhen will?",
+        "answer": "Erwägen Sie, andere Zusatzleistungen auszuhandeln: zusätzliche Urlaubstage, flexible Arbeitsmodelle, Möglichkeiten zur beruflichen Weiterbildung oder einen Antrittsbonus, der unter Umständen andere steuerliche Auswirkungen hat."
+      }
+    ]
+  },
+  "gross-income-vs-net-income": {
+    "title": "Bruttoeinkommen vs. Nettoeinkommen: Was ist der Unterschied?",
+    "description": "Verstehen Sie den Unterschied zwischen Bruttoeinkommen und Nettoeinkommen, warum Ihr Nettolohn niedriger ist als Ihr Gehalt und wie Steuern Ihr Einkommen beeinflussen.",
+    "content": "Einkommen ist einer der häufigsten Finanzbegriffe – und einer der am meisten missverstandenen. Viele Menschen gehen davon aus, dass ihr Gehalt, ihr Stundenlohn oder ihr Vertragssatz das ist, was sie tatsächlich verdienen. In Wirklichkeit unterscheidet sich der Betrag, der auf Ihrem Bankkonto landet, meist deutlich von der Zahl, die in Ihrem Vertrag steht.\n\nDieser Leitfaden erklärt, was Einkommen ist, den Unterschied zwischen Bruttoeinkommen und Nettoeinkommen und warum es entscheidend ist, diesen Unterschied zu verstehen, wenn Sie Jobs vergleichen, Ausgaben planen oder Steuern schätzen.\n\n## Was ist Einkommen?\n\nEinkommen ist das Geld, das Sie im Austausch für Arbeit, Dienstleistungen oder geschäftliche Tätigkeiten über einen bestimmten Zeitraum verdienen. Es kann stündlich, wöchentlich, monatlich oder jährlich erhalten werden und kann aus folgenden Quellen stammen:\n\n- Gehalt oder Lohn aus einer Anstellung\n- freiberufliche Tätigkeit oder Auftragsarbeit\n- Selbstständigkeit oder geschäftliche Tätigkeit\n- Boni, Provisionen oder Zulagen\n\nAllerdings wird nicht jedes Einkommen gleich behandelt, sobald Steuern und Pflichtbeiträge angewendet werden.\n\n## Was ist Bruttoeinkommen?\n\nBruttoeinkommen ist der Gesamtbetrag, den Sie verdienen, bevor irgendwelche Abzüge vorgenommen werden. Es ist die Zahl, die Sie üblicherweise in Stellenangeboten, in Arbeitsverträgen, auf Rechnungen von Freiberuflern und in Diskussionen über das Jahresgehalt sehen.\n\nDas Bruttoeinkommen spiegelt nicht wider, was Sie tatsächlich nach Hause bringen. Zum Beispiel:\n\n- Bruttojahresgehalt: 60.000\n- Bruttomonatsgehalt: 5.000\n\nIn diesem Stadium wurden noch keine Steuern oder Beiträge abgezogen.\n\n## Was ist Nettoeinkommen?\n\nNettoeinkommen – auch Nettolohn genannt – ist der Betrag, den Sie nach Abzügen tatsächlich erhalten. Diese Abzüge umfassen in der Regel die Einkommensteuer, Sozialversicherungsbeiträge, die Krankenversicherung sowie lokale oder regionale Steuern, je nach Land.\n\nNettoeinkommen ist das Geld, das Sie tatsächlich ausgeben, sparen oder investieren können. Zum Beispiel:\n\n- Bruttomonatseinkommen: 5.000\n- Gesamtabzüge: 1.600\n- Nettomonatseinkommen: 3.400\n\nEinen genaueren Blick auf den Nettolohn selbst finden Sie in unserem Leitfaden zum [Nettolohn](/guides/what-is-take-home-pay).\n\n## Brutto- vs. Nettoeinkommen: im direkten Vergleich\n\n| | Bruttoeinkommen | Nettoeinkommen |\n|---|---|---|\n| Was es bedeutet | Verdienst vor Steuern und Abzügen | Geld nach Abzügen erhalten |\n| Wo Sie es sehen | Verträge, Stellenangebote, Vergleiche | Ihr Bankkonto und Budget |\n| Am besten genutzt für | Vergleich von Rollen und ausgewiesenem Gehalt | Lebenshaltungskosten, Ersparnisse, Planung |\n\nDieser Unterschied erklärt, warum zwei Personen mit demselben Bruttogehalt einen sehr unterschiedlichen Nettolohn haben können.\n\n## Warum das Bruttoeinkommen oft irreführend ist\n\nDas Bruttoeinkommen ist nützlich für Standardvergleiche, kann aber irreführend sein, weil sich die Steuersätze von Land zu Land unterscheiden, die Sozialbeiträge variieren, der Familienstand eine Rolle spielt und Leistungen sowie Abzüge das Ergebnis verändern. Deshalb ist das Nettoeinkommen die praktischere Zahl für Entscheidungen im echten Leben.\n\n## Wie Steuern Ihr Einkommen beeinflussen\n\nSteuern sind der Hauptgrund, warum sich Bruttoeinkommen und Nettoeinkommen unterscheiden. Die meisten Steuersysteme wenden progressive Steuerstufen an (höheres Einkommen wird mit höheren Sätzen besteuert), verpflichtende Sozialbeiträge sowie feste oder gedeckelte Abzüge. Aus diesem Grund erhöht eine Steigerung Ihres Bruttoeinkommens nicht immer Ihr Nettoeinkommen um denselben Prozentsatz. Unser Leitfaden dazu, [wie die Einkommensteuer funktioniert](/guides/how-income-tax-works), erklärt dies in verständlichen Worten.\n\n## So berechnen Sie Brutto- und Nettoeinkommen\n\nSie können das Einkommen manuell berechnen, aber das wird schnell kompliziert, sobald Steuern ins Spiel kommen. Ein einfacherer Ansatz ist:\n\n1. Beginnen Sie mit Ihrem Bruttoeinkommen.\n2. Wenden Sie die länderspezifischen Steuerregeln an.\n3. Ziehen Sie Beiträge und Abzüge ab.\n4. So erhalten Sie Ihr Nettoeinkommen.\n\nGenau dafür ist der [Gehaltsrechner](/salary-calculator) von IncomeTally konzipiert – um das Einkommen über verschiedene Abrechnungszeiträume und Länder hinweg anhand transparenter Annahmen zu schätzen. Wenn Sie stundenweise bezahlt werden oder zwischen Abrechnungszeiträumen wechseln möchten, lesen Sie [wie man stündliches, monatliches und jährliches Einkommen umrechnet](/guides/how-to-convert-income-pay-periods).\n\n## Warum das Verständnis von Einkommen wichtig ist\n\nDen Unterschied zwischen Brutto- und Nettoeinkommen zu kennen, hilft Ihnen dabei, Stellenangebote genau zu vergleichen, Gehaltsenttäuschungen zu vermeiden, Ihr monatliches Budget zu planen, Ihre tatsächliche Kaufkraft zu verstehen und Steuern realistischer einzuschätzen. Das ist besonders wichtig für Freiberufler, Remote-Arbeitende und Menschen, die zwischen Ländern umziehen.\n\n## Schlussgedanken\n\nEinkommen ist mehr als eine Zahl in einem Vertrag. Das Verständnis von Bruttoeinkommen gegenüber Nettoeinkommen verschafft Ihnen ein klareres Bild davon, was Sie wirklich verdienen und was Sie sich realistisch leisten können. Bevor Sie finanzielle Entscheidungen treffen, schauen Sie immer über das ausgewiesene Gehalt hinaus und konzentrieren Sie sich auf den Nettolohn. Sätze und Regeln ändern sich im Laufe der Zeit und variieren je nach Land. Behandeln Sie Schätzungen daher als Orientierung und ziehen Sie eine qualifizierte Fachkraft hinzu, wenn es darauf ankommt.",
+    "keywords": [
+      "Bruttoeinkommen",
+      "Nettoeinkommen",
+      "brutto vs. netto",
+      "Nettolohn",
+      "Einkommensteuer",
+      "Abzüge"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Income Tax",
+        "url": "https://www.gov.uk/income-tax"
+      },
+      {
+        "label": "IRS — Tax Topic 751 (Einbehaltung von Social Security und Medicare)",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "GOV.UK — National Insurance",
+        "url": "https://www.gov.uk/national-insurance"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Was ist der Unterschied zwischen Brutto- und Nettoeinkommen?",
+        "answer": "Das Bruttoeinkommen ist Ihr Verdienst vor Abzügen. Das Nettoeinkommen ist das, was Sie tatsächlich erhalten, nachdem Steuern und Beiträge abgezogen wurden."
+      },
+      {
+        "question": "Warum ist mein Nettoeinkommen viel niedriger als mein Bruttogehalt?",
+        "answer": "Steuern, Sozialversicherung und andere Pflichtbeiträge reduzieren das Bruttoeinkommen – je nach Land und Einkommenshöhe manchmal erheblich."
+      },
+      {
+        "question": "Welches Einkommen sollte ich für die Budgetplanung verwenden?",
+        "answer": "Das Nettoeinkommen, denn es spiegelt das Geld wider, das Ihnen tatsächlich zum Ausgeben, Sparen oder Investieren zur Verfügung steht."
+      },
+      {
+        "question": "Ist das Nettoeinkommen in jedem Land gleich?",
+        "answer": "Nein. Die Steuersysteme unterscheiden sich stark, weshalb das Nettoeinkommen selbst bei gleichem Bruttogehalt variiert."
+      }
+    ]
+  },
+  "how-to-convert-income-pay-periods": {
+    "title": "So rechnen Sie Stunden-, Monats- und Jahreseinkommen korrekt um",
+    "description": "Erfahren Sie, wie Sie Stunden-, Wochen-, Monats- und Jahreseinkommen korrekt umrechnen — die Standardformeln, die zugrunde liegenden Annahmen und die Fehler, die Sie vermeiden sollten.",
+    "content": "Einkommen tritt in verschiedenen Formen auf — stündlich, wöchentlich, monatlich und jährlich — und irgendwann werden Sie zwischen ihnen umrechnen müssen. Vielleicht vergleichen Sie einen Stundenvertrag mit einem Gehaltsangebot oder rechnen aus, was ein Monatslohn über ein Jahr ergibt. Die Rechnung sieht einfach aus, aber ein paar verbreitete Annahmen können Ihre Zahlen verfälschen.\n\nDieser Leitfaden erklärt die Standardformeln, die dahinterstehenden Annahmen und die Fehler, die Sie vermeiden sollten.\n\n## Übliche Einkommens-Zahlungsperioden\n\nEinkommen wird in der Regel auf eine von vier Arten angegeben:\n\n- Stündlich: ein Betrag pro geleisteter Arbeitsstunde, üblich bei Teilzeit-, Schicht- und Vertragsarbeit.\n- Wöchentlich: ein wöchentlich gezahlter Gesamtbetrag, häufig bei befristeten Tätigkeiten.\n- Monatlich: üblich bei Angestellten mit festem Gehalt.\n- Jährlich: wird in Verträgen und Stellenangeboten verwendet.\n\n## Warum die Einkommensumrechnung nicht immer einfach ist\n\nDie Annahme, dass Stundensatz mal Stunden mal Wochen gleich Gehalt ist, vereinfacht die Sache zu sehr. In der Praxis:\n\n- schwanken die Arbeitsstunden\n- unterscheiden sich bezahlte und unbezahlte Zeit\n- variieren Urlaub und Krankheitstage\n- haben Freiberufler unregelmäßige Arbeitspläne\n- unterscheiden sich die Gepflogenheiten zwischen den Ländern\n\n## Standardannahmen bei der Umrechnung\n\nSofern nicht anders angegeben, gehen die meisten Rechner von Folgendem aus:\n\n- 40 Arbeitsstunden pro Woche\n- 5 Arbeitstage pro Woche\n- 52 Wochen pro Jahr\n- 12 Monate pro Jahr\n\nDiese Annahmen sorgen für einheitliche Umrechnungen, doch Ihre tatsächliche Situation kann davon abweichen.\n\n## So rechnen Sie Stundeneinkommen in ein Jahresgehalt um\n\nMultiplizieren Sie Ihren Stundensatz mit den Stunden pro Woche und dann mit den Wochen pro Jahr:\n\n- Stundensatz x Stunden pro Woche x Wochen pro Jahr = Jahresgehalt\n- Beispiel: 25 pro Stunde x 40 Stunden x 52 Wochen = 52.000 pro Jahr\n\nFür ein fertiges Werkzeug nutzen Sie unseren [Stundenlohn-zu-Gehalt-Rechner](/hourly-to-salary), und für weitere durchgerechnete Beispiele siehe den [Leitfaden zur Umrechnung von Stundenlohn in Gehalt](/guides/hourly-to-salary-conversion).\n\n## So rechnen Sie Monatseinkommen in ein Jahresgehalt um\n\nMultiplizieren Sie Ihr Monatseinkommen mit 12:\n\n- Monatseinkommen x 12 = Jahreseinkommen\n- Beispiel: 4.000 pro Monat x 12 = 48.000 pro Jahr\n\nDies setzt gleichbleibende monatliche Zahlungen ohne zusätzliche oder fehlende Monate voraus.\n\n## Umrechnungen von Wöchentlich in Monatlich und Jährlich\n\nWochenlohn, der häufig bei befristeter Arbeit verwendet wird, rechnet sich so um:\n\n- Wöchentlich x 52 = jährlich\n- Jährlich geteilt durch 12 = monatlich\n- Beispiel: 1.000 pro Woche = 52.000 pro Jahr, oder etwa 4.333 pro Monat\n\n## Stundenlohn vs. Gehalt: Was ist besser?\n\nKeine der beiden Formen ist generell besser. Stundenarbeit eignet sich für flexible Arbeitsmodelle und kann zusätzliche Stunden belohnen, während ein Gehalt Stabilität und planbare Bezahlung bietet. Die richtige Wahl hängt von Ihren Prioritäten ab.\n\n## Häufige Fehler bei der Einkommensumrechnung\n\n- unbezahlten Urlaub übersehen\n- für alle exakt 52 Arbeitswochen annehmen\n- Teilzeitmodelle ignorieren\n- Brutto-Stundenlohn mit Netto-Gehalt verwechseln\n- Steuern völlig außer Acht lassen\n\nDer letzte Punkt ist am wichtigsten: Eine Umrechnung liefert Ihnen einen Bruttobetrag, nicht Ihr [Nettoeinkommen](/guides/what-is-take-home-pay).\n\n## So vergleichen Sie Stellenangebote mit unterschiedlichen Zahlungsperioden\n\nRechnen Sie jedes Angebot mit identischen Annahmen in ein jährliches Bruttoeinkommen um, schätzen Sie dann das Nettoeinkommen, wo möglich, und gewichten Sie schließlich Zusatzleistungen und Arbeitsplatzsicherheit. Unser Leitfaden zum Thema [Stellenangebote vergleichen](/guides/how-to-compare-job-offers) führt durch den gesamten Prozess.\n\n## Wann Sie sich stattdessen auf das Nettoeinkommen konzentrieren sollten\n\nBruttoumrechnungen sind nützlich, aber für das echte Leben zählt das Nettoeinkommen mehr. Steuersysteme, die arbeitsrechtliche Einstufung und der Wohnort beeinflussen allesamt Ihr tatsächliches Nettoeinkommen. Um die Lücke deutlich zu erkennen, lesen Sie [Bruttoeinkommen vs. Nettoeinkommen](/guides/gross-income-vs-net-income) und geben Sie dann Ihre Zahlen in den [Gehaltsrechner](/salary-calculator) ein.\n\n## Abschließende Gedanken\n\nEinkommensumrechnung ist mehr als Arithmetik. Arbeitsstunden, unbezahlte Zeiträume und Unterschiede in der Arbeitsplanung verändern alle den Endbetrag, und Steuern verändern ihn nochmals. Nutzen Sie Standardannahmen als Ausgangspunkt, passen Sie sie an Ihre Situation an und prüfen Sie stets das Nettoeinkommen, bevor Sie eine Entscheidung treffen.",
+    "keywords": [
+      "Einkommensumrechnung",
+      "Stundenlohn in Gehalt",
+      "Monatseinkommen in Jahreseinkommen",
+      "Zahlungsperiode",
+      "Jahresgehalt",
+      "Bruttoeinkommen"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Income Tax",
+        "url": "https://www.gov.uk/income-tax"
+      },
+      {
+        "label": "U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics",
+        "url": "https://www.bls.gov/oes/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Welche Stundenzahl sollte ich bei der Umrechnung des Lohns annehmen?",
+        "answer": "Die meisten Rechner gehen von 40 Stunden pro Woche, 52 Wochen pro Jahr und 12 Monaten pro Jahr aus. Passen Sie diese an Ihren tatsächlichen Arbeitsplan an, besonders bei Teilzeit- oder Saisonarbeit."
+      },
+      {
+        "question": "Ist Stundenlohn oder Festgehalt besser?",
+        "answer": "Keines ist generell besser. Stundenarbeit bietet Flexibilität und kann zusätzliche Stunden belohnen; ein Festgehalt bietet Stabilität, planbare Bezahlung und oft mehr Zusatzleistungen."
+      },
+      {
+        "question": "Kann ich mein Einkommen umrechnen, ohne meine Steuern zu kennen?",
+        "answer": "Ja, für eine Bruttoschätzung. Aber um Ihr tatsächliches Nettoeinkommen zu kennen, müssen Sie Einkommensteuer und Sozialabgaben berücksichtigen, die je nach Land unterschiedlich sind."
+      },
+      {
+        "question": "Warum stimmt mein Monatslohn mal 12 nicht mit meinem Jahresbetrag überein?",
+        "answer": "Unterschiede entstehen durch schwankende Arbeitsstunden, unbezahlte Zeit, Boni und die verwendeten Annahmen. Unregelmäßige Arbeitspläne und Einmalzahlungen können die einfache Formel ungenau machen."
+      }
+    ]
+  },
+  "what-is-take-home-pay": {
+    "title": "Übersetzung des Leitfadens „what-is-take-home-pay\" ins Deutsche",
+    "description": "Deutsche Übersetzung des IncomeTally-Leitfadenartikels mit Slug „what-is-take-home-pay\" (Felder: title, description, content, keywords, sources, faqs).",
+    "content": "Die übersetzten Felder sind im strukturierten Objekt unten enthalten. Quelldatei: /Users/illiachukin/incometally-repo/src/data/guides.ts (Eintrag bei Zeile 836).\n\ntitle: Was ist das Nettogehalt und wie wird es berechnet?\n\ndescription: Erfahren Sie, was das Nettogehalt ist, wie es aus Ihrem Bruttogehalt berechnet wird, was abgezogen wird, und sehen Sie einfache Beispiele für die USA, Großbritannien und Deutschland.\n\nkeywords: [Nettogehalt, Nettolohn, Nettogehalt berechnen, Brutto vs. Netto, Lohnsteuerabzüge, Gehaltsabzüge]\n\ncontent (Markdown):\n\n# Was ist das Nettogehalt und wie wird es berechnet?\n\nDas Nettogehalt ist das Geld, das tatsächlich auf Ihrem Bankkonto landet, nachdem alle Abzüge von Ihrem Gehalt abgezogen wurden. Es ist die Zahl, die für die Budgetplanung am wichtigsten ist, und doch ist sie fast immer kleiner als der Betrag in Ihrem Jobangebot. Zu verstehen, wie es berechnet wird, hilft Ihnen, zu planen, Jobs fair zu vergleichen und böse Überraschungen am Zahltag zu vermeiden.\n\n## Bruttogehalt vs. Nettogehalt\n\nIhr Bruttogehalt ist Ihr volles Gehalt, bevor irgendetwas abgezogen wird. Das Nettogehalt (oft auch Nettolohn genannt) ist das, was nach Steuern und anderen Einbehalten übrig bleibt. Die Lücke zwischen beiden kann erheblich sein. Wenn Sie eine ausführlichere Aufschlüsselung dieser beiden Zahlen wünschen, lesen Sie unseren Leitfaden zu [Brutto- vs. Nettoeinkommen](/guides/gross-income-vs-net-income).\n\nSo sieht der grundlegende Ablauf aus:\n\n- Beginnen Sie mit dem Bruttogehalt (Ihrem angegebenen Gehalt oder Stundenlohn)\n- Ziehen Sie die Einkommensteuer ab\n- Ziehen Sie die Sozialversicherungsbeiträge ab\n- Ziehen Sie alle weiteren Abzüge ab (Altersvorsorge, Krankenversicherung, Rückzahlung von Studienkrediten)\n- Was übrig bleibt, ist Ihr Nettogehalt\n\n## Was abgezogen wird\n\nDie genauen Abzüge hängen davon ab, wo Sie leben und arbeiten, aber die meisten fallen in einige wenige Kategorien.\n\n### Einkommensteuer\n\nDie Einkommensteuer ist in der Regel der größte Einzelabzug. Die meisten Länder verwenden ein progressives System, das heißt, höhere Teile Ihres Einkommens werden mit höheren Sätzen besteuert. Um zu sehen, wie die Steuerstufen aufgebaut sind, lesen Sie [wie die Einkommensteuer funktioniert](/guides/how-income-tax-works).\n\n### Sozialversicherungsbeiträge\n\nDiese finanzieren öffentliche Programme wie Renten, Gesundheitsversorgung und Arbeitslosenunterstützung. In den USA sind dies Social Security und Medicare, in Großbritannien ist es National Insurance, und in Deutschland decken sie die Renten-, Kranken-, Pflege- und Arbeitslosenversicherung ab. Unser Leitfaden zu den [Sozialversicherungsbeiträgen](/guides/social-security-contributions-guide) erklärt jedes System.\n\n### Weitere Abzüge\n\nJe nach Ihrer Situation können auch betriebliche Rentenbeiträge, private Krankenversicherungsbeiträge, Gewerkschaftsbeiträge oder Rückzahlungen von Studienkrediten anfallen.\n\n## Ein einfaches Beispiel\n\nStellen Sie sich ein jährliches Bruttogehalt von 50.000 in drei Ländern vor. Die folgenden Zahlen dienen nur zur Veranschaulichung und sind zur besseren Übersicht gerundet.\n\n| Land | Brutto | Einkommensteuer | Sozialbeiträge | Netto (ca.) |\n|---|---|---|---|---|\n| USA | 50.000 USD | 4.300 USD | 3.825 USD | 41.875 USD |\n| Großbritannien | 50.000 GBP | 7.486 GBP | 2.494 GBP | 40.020 GBP |\n| Deutschland | 50.000 EUR | 8.200 EUR | 10.000 EUR | 31.800 EUR |\n\nWie Sie sehen, können zwei Personen, die denselben Bruttobetrag verdienen, sehr unterschiedliche Beträge nach Hause nehmen. Landes-, Regional- oder Kommunalsteuern können diese Ergebnisse weiter verändern.\n\n## Selbst berechnen\n\nDie einfachste manuelle Methode ist:\n\n1. Ermitteln Sie Ihr jährliches Bruttogehalt.\n2. Schätzen Sie die Einkommensteuer anhand der Steuerstufen und des Grundfreibetrags Ihres Landes.\n3. Addieren Sie die Sozialversicherungsbeiträge.\n4. Ziehen Sie beides vom Bruttogehalt ab.\n5. Teilen Sie durch 12 für einen monatlichen Betrag oder durch die Anzahl Ihrer Lohnzahlungszeiträume.\n\nDa sich Steuerstufen, Schwellenwerte und Sätze jedes Steuerjahr ändern, ist die manuelle Berechnung umständlich und fehleranfällig. Ein Tool sorgt für Genauigkeit. Probieren Sie unseren [Nettogehaltsrechner](/net-salary-calculator) oder den vollständigen [Gehaltsrechner](/calculator) aus, um in Sekundenschnelle eine maßgeschneiderte Schätzung zu erhalten.\n\n## Warum das Nettogehalt wichtig ist\n\n- Budgetplanung: Miete, Rechnungen und Ersparnisse kommen aus dem Nettogehalt, nicht aus dem Brutto.\n- Jobvergleiche: Ein höheres Gehalt in einem Umfeld mit hoher Steuerbelastung kann Ihnen weniger übrig lassen.\n- Verhandlung: Wenn Sie Ihre Nettozahl kennen, können Sie Gehaltserhöhungen und Zusatzleistungen besser einschätzen.\n\n## Schlussgedanken\n\nDas Nettogehalt ist Ihr tatsächlich verfügbares Einkommen, geprägt von Einkommensteuer, Sozialbeiträgen und persönlichen Abzügen. Das Bruttogehalt ist nur der Ausgangspunkt. Da sich Sätze und Schwellenwerte jährlich ändern und je nach Standort variieren, verwenden Sie diese Zahlen als Orientierung und konsultieren Sie eine qualifizierte Steuerfachkraft für Entscheidungen, die Ihre Finanzen betreffen.\n\nsources: 3 (siehe strukturiertes Objekt). faqs: 4 (siehe strukturiertes Objekt).",
+    "keywords": [
+      "Nettogehalt",
+      "Nettolohn",
+      "Nettogehalt berechnen",
+      "Brutto vs. Netto",
+      "Lohnsteuerabzüge",
+      "Gehaltsabzüge"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Tax Topic 751 (Einbehalt für Social Security und Medicare)",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "GOV.UK — National Insurance",
+        "url": "https://www.gov.uk/national-insurance"
+      },
+      {
+        "label": "GOV.UK — Einkommensteuersätze und Freibeträge",
+        "url": "https://www.gov.uk/income-tax-rates"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Ist das Nettogehalt dasselbe wie der Nettolohn?",
+        "answer": "Ja. Nettogehalt und Nettolohn bezeichnen beide den Betrag, der nach Abzug aller Steuern und Abzüge von Ihrem Bruttogehalt übrig bleibt. Es ist das Geld, das tatsächlich auf Ihrem Bankkonto ankommt."
+      },
+      {
+        "question": "Warum ist mein Nettogehalt niedriger als erwartet?",
+        "answer": "Häufige Gründe sind Einkommensteuer, Sozialversicherungsbeiträge, die Teilnahme an einer Altersvorsorge, Rückzahlungen von Studienkrediten und Beiträge für Zusatzleistungen. Auch Kommunal- oder Regionalsteuern und eine höhere Steuerstufe können es stärker mindern, als Sie erwartet haben."
+      },
+      {
+        "question": "Ändert sich das Nettogehalt im Laufe des Jahres?",
+        "answer": "Das kann sein. Das Erreichen bestimmter Einkommensschwellen, Änderungen der Steuerklasse, einmalige Boni oder Anpassungen bei Renten- und Zusatzleistungsbeiträgen können Ihr Nettogehalt von einem Lohnzahlungszeitraum zum nächsten verändern."
+      },
+      {
+        "question": "Kann ich mein Nettogehalt erhöhen?",
+        "answer": "Manchmal. Steuerbegünstigte Rentenbeiträge, die Geltendmachung zustehender Freibeträge und die Sicherstellung, dass Ihre Steuerklasse oder Ihr Einbehalt korrekt ist, können helfen. Eine Steuerfachkraft kann Sie dazu beraten, was auf Ihre Situation zutrifft."
+      }
+    ]
+  },
+  "how-to-read-your-payslip": {
+    "title": "So lesen Sie Ihre Gehaltsabrechnung (Lohnabrechnung) Zeile für Zeile",
+    "description": "Erfahren Sie, wie Sie Ihre Gehaltsabrechnung oder Lohnabrechnung Zeile für Zeile lesen. Verstehen Sie Bruttolohn, Steuern, Abzüge und Nettolohn in den USA, im Vereinigten Königreich und in Deutschland.",
+    "content": "Die erste eigene Gehaltsabrechnung zu öffnen, kann sich anfühlen, als würde man eine Fremdsprache lesen. Abkürzungen, Abzüge und zwei verschiedene Summen für denselben Monat sorgen bei vielen Menschen für Verwirrung. Dieser Leitfaden führt durch die gängigen Bestandteile einer Gehaltsabrechnung oder Lohnabrechnung, erklärt, was jede Zeile bedeutet, und zeigt auf, wie sich die Begriffe zwischen den USA, dem Vereinigten Königreich und Deutschland unterscheiden.\n\nBeachten Sie, dass sich die genauen Steuersätze und Beitragsgrenzen jedes Jahr ändern und je nach persönlicher Situation variieren. Bestätigen Sie Details immer mit Ihrem Arbeitgeber oder einer qualifizierten Fachkraft.\n\n## Die zwei wichtigsten Zahlen\n\nJede Gehaltsabrechnung dreht sich um zwei Werte: den Bruttolohn und den Nettolohn.\n\n- Der Bruttolohn ist Ihr Gesamtverdienst, bevor irgendetwas abgezogen wird.\n- Der Nettolohn ist das, was tatsächlich auf Ihrem Bankkonto landet, auch [Nettogehalt](/guides/what-is-take-home-pay) genannt.\n\nDie Differenz zwischen beiden setzt sich aus Steuern, Sozial- oder Versicherungsbeiträgen und etwaigen weiteren Abzügen zusammen. Diese Differenz zu verstehen, ist der eigentliche Sinn, Ihre Gehaltsabrechnung genau zu lesen.\n\n## Gängige Bestandteile, Zeile für Zeile\n\nAuch wenn das Layout zwischen Ländern und Arbeitgebern variiert, enthalten die meisten Gehaltsabrechnungen dieselben Grundbausteine.\n\n### Einnahmen\n\nIn diesem Abschnitt stehen Ihr Grundgehalt oder Ihr Stundenlohn sowie etwaige Zusätze wie Überstunden, Boni, Provisionen oder Trinkgeldeinnahmen. Zählen Sie diese zusammen, erhalten Sie Ihren Bruttolohn für den Zeitraum.\n\n### Einbehaltene Steuern\n\nIn der Regel zieht Ihr Arbeitgeber die Einkommensteuer ab, bevor er Sie auszahlt. In den USA umfasst dies die föderale Einkommensteuer und in den meisten Bundesstaaten die bundesstaatliche Einkommensteuer. Im Vereinigten Königreich handelt es sich um die PAYE-Einkommensteuer. In Deutschland ist es die Lohnsteuer, manchmal mit Kirchensteuer und einem Solidaritätszuschlag.\n\n### Sozial- und Versicherungsbeiträge\n\nDiese finanzieren Renten, das Gesundheitswesen und andere öffentliche Programme. Sie sind häufig verpflichtend und werden zwischen Ihnen und Ihrem Arbeitgeber aufgeteilt. Weitere Einzelheiten finden Sie in unserem Leitfaden zu den [Sozialversicherungsbeiträgen](/guides/social-security-contributions-guide).\n\n### Abzüge vor und nach Steuern\n\nEinige Beträge werden abgezogen, bevor die Steuer berechnet wird, was Ihr zu versteuerndes Einkommen senken kann. Gängige Beispiele sind Beiträge zur Altersvorsorge und bestimmte Gesundheits- oder Pendlerleistungen. Mehr dazu erfahren Sie in unserer Übersicht zu den [Steuerabzügen](/guides/tax-deductions-explained). Andere Abzüge, etwa Gewerkschaftsbeiträge, können nach Steuern erfolgen.\n\n### Nettolohn\n\nWas nach allen Abzügen übrig bleibt, ist Ihr Nettolohn. Dies ist die Zahl, die Sie mit Ihrem Budget abgleichen sollten.\n\n### Jahressummen (Year-to-Date)\n\nDie meisten Gehaltsabrechnungen weisen laufende Summen aus, in den USA als YTD bezeichnet, für das bisherige Kalender- oder Steuerjahr. Diese helfen Ihnen, die gesamten Einkünfte und die gesamte gezahlte Steuer zu verfolgen, was bei der Steuererklärung nützlich ist.\n\n## Eine beispielhafte Aufschlüsselung\n\nHier ein vereinfachtes Monatsbeispiel für eine Arbeitnehmerin oder einen Arbeitnehmer mit einem Verdienst von 5.000 in der jeweiligen Landeswährung. Die Zahlen dienen nur der Veranschaulichung.\n\n| Position | Betrag |\n|---|---|\n| Bruttolohn | 5.000 |\n| Beitrag zur Altersvorsorge vor Steuern | -300 |\n| Einkommensteuer | -750 |\n| Sozial- oder Versicherungsbeiträge | -450 |\n| Abzug nach Steuern (Gewerkschaftsbeiträge) | -25 |\n| Nettolohn | 3.475 |\n\nIn diesem Beispiel verdient die Person 5.000 brutto, nimmt aber 3.475 mit nach Hause. Die Differenz von rund 1.525 ist genau das, was Ihnen das Verständnis einer Gehaltsabrechnung verständlich macht.\n\n## Länderterminologie auf einen Blick\n\nDie Struktur ist überall ähnlich, aber die Bezeichnungen ändern sich.\n\n- Vereinigte Staaten: häufig als pay stub oder paycheck bezeichnet. Achten Sie auf FICA, das Social Security und Medicare abdeckt, sowie auf die föderale und bundesstaatliche Quellensteuer.\n- Vereinigtes Königreich: payslip genannt. Achten Sie auf die PAYE-Einkommensteuer und die National-Insurance-Beiträge sowie auf Ihren Steuercode (tax code).\n- Deutschland: Lohnabrechnung oder Gehaltsabrechnung genannt. Erwarten Sie die Lohnsteuer sowie Sozialbeiträge für Renten-, Kranken-, Arbeitslosen- und Pflegeversicherung.\n\n## Tipps zur Prüfung Ihrer Gehaltsabrechnung\n\nEine kurze monatliche Kontrolle kann kostspielige Fehler aufdecken.\n\n- Prüfen Sie, ob Ihr Bruttolohn mit Ihrem vereinbarten Gehalt oder Ihren Stunden übereinstimmt.\n- Kontrollieren Sie, ob Ihr Steuercode oder Ihre Angaben zur Veranlagung korrekt aussehen.\n- Achten Sie auf plötzliche Veränderungen bei den Abzügen von Monat zu Monat.\n- Bewahren Sie Gehaltsabrechnungen für die Steuererklärung, Kreditanträge und Mietnachweise auf.\n\nUm zu sehen, wie sich Brutto in Ihrer eigenen Situation in Netto umrechnet, probieren Sie unseren kostenlosen [Nettolohnrechner](/net-salary-calculator) aus.\n\n## Abschließende Gedanken\n\nEine Gehaltsabrechnung ist mehr als eine Quittung. Sie ist ein Nachweis Ihrer Einkünfte, der Steuern, die Sie beitragen, und der Leistungen, die Sie finanzieren. Sobald Sie die Kernbereiche Bruttolohn, Abzüge und Nettolohn erkennen, wirkt das Dokument in keinem Land mehr einschüchternd. Prüfen Sie Ihre Abrechnung regelmäßig, bewahren Sie Kopien auf und wenden Sie sich an eine Fachkraft, wann immer etwas nicht aufgeht.",
+    "keywords": [
+      "wie man eine Gehaltsabrechnung liest",
+      "Gehaltsabrechnung erklärt",
+      "Lohnabrechnung aufgeschlüsselt",
+      "Brutto- vs. Nettolohn",
+      "Abzüge auf der Gehaltsabrechnung",
+      "Leitfaden zur Lohnabrechnung"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Understanding your pay",
+        "url": "https://www.gov.uk/understanding-your-pay"
+      },
+      {
+        "label": "IRS — Tax withholding",
+        "url": "https://www.irs.gov/individuals/employees/tax-withholding"
+      },
+      {
+        "label": "SSA — Social Security & Medicare tax rates",
+        "url": "https://www.ssa.gov/oact/cola/cbb.html"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Warum ist mein Nettolohn so viel niedriger als mein Bruttolohn?",
+        "answer": "Der Unterschied ergibt sich aus der Einkommensteuer, den verpflichtenden Sozial- oder Versicherungsbeiträgen sowie etwaigen freiwilligen Abzügen wie Beiträgen zur Altersvorsorge. Die genaue Aufteilung hängt von Ihrem Land, Ihrer Einkommenshöhe und Ihren persönlichen Umständen ab."
+      },
+      {
+        "question": "Was bedeutet „Jahr bis heute“ (Year-to-Date, YTD) auf einer Gehaltsabrechnung?",
+        "answer": "Die Jahressummen (Year-to-Date) zeigen Ihre kumulierten Einkünfte und Abzüge vom Beginn des Kalender- oder Steuerjahres bis zur aktuellen Abrechnungsperiode an. Sie helfen Ihnen, die Gesamtwerte für die Budgetplanung und die Steuererklärung im Blick zu behalten."
+      },
+      {
+        "question": "Sind Gehaltsabrechnungen in den USA, im Vereinigten Königreich und in Deutschland gleich?",
+        "answer": "Die grundlegende Struktur ist ähnlich, aber die Terminologie unterscheidet sich. In den USA spricht man von einem pay stub, im Vereinigten Königreich von einem payslip und in Deutschland von einer Lohnabrechnung. Jedes Land hat zudem seine eigenen Steuerbezeichnungen und Beitragssysteme."
+      },
+      {
+        "question": "Was sollte ich tun, wenn ich einen Fehler auf meiner Gehaltsabrechnung entdecke?",
+        "answer": "Wenden Sie sich zuerst an Ihren Arbeitgeber oder die Lohnbuchhaltung, da sich die meisten Fehler leicht korrigieren lassen. Wenn es um Steuern oder Beiträge geht, kann ein qualifizierter Steuerberater oder eine Steuerfachkraft bei der Klärung helfen."
+      }
+    ]
+  },
+  "how-income-tax-works": {
+    "title": "Wie die Einkommensteuer funktioniert: Ein Leitfaden für Einsteiger",
+    "description": "Ein einsteigerfreundlicher Leitfaden dazu, wie die Einkommensteuer funktioniert: zu versteuerndes Einkommen, progressive Steuerstufen, Grenz- vs. Effektivsteuersatz, Abzüge und Nettolohn.",
+    "content": "Die Einkommensteuer ist einer der größten Gründe dafür, dass die Zahl auf Ihrem Jobangebot nicht die Zahl ist, die auf Ihrem Bankkonto landet. Wenn Sie jemals auf eine Lohnabrechnung geschaut und sich gefragt haben, wohin ein Teil Ihres Gehalts verschwunden ist, dann ist dieser Leitfaden für Sie. Wir gehen Schritt für Schritt und in verständlicher Sprache durch, wie die Einkommensteuer funktioniert, und nutzen dabei Beispiele aus den USA, dem Vereinigten Königreich und Deutschland.\n\nDies sind allgemeine Bildungsinformationen, keine Steuer- oder Finanzberatung. Sätze und Schwellenwerte ändern sich jedes Jahr, prüfen Sie daher stets offizielle Quellen oder sprechen Sie für Ihre persönliche Situation mit einer qualifizierten Fachperson.\n\n## Was ist die Einkommensteuer?\n\nDie Einkommensteuer ist Geld, das Sie auf Grundlage Ihres Verdienstes an den Staat zahlen. Sie finanziert öffentliche Leistungen wie Gesundheitsversorgung, Schulen, Straßen und Renten. In den meisten Ländern gilt: Je mehr Sie verdienen, desto höher ist der Prozentsatz, den Sie zahlen, zumindest auf die oberste Scheibe Ihres Einkommens.\n\nBei Angestellten wird die Einkommensteuer in der Regel automatisch von jeder Gehaltszahlung einbehalten, bevor Sie ausgezahlt werden. In den USA nennt man das Withholding, im Vereinigten Königreich PAYE und in Deutschland Lohnsteuer. Freiberufler und Selbstständige berechnen und zahlen sie üblicherweise selbst, häufig in Vorauszahlungen.\n\n## Bruttoeinkommen vs. zu versteuerndes Einkommen\n\nDiese beiden Begriffe bringen fast jeden durcheinander, deshalb trennen wir sie klar voneinander.\n\n- **Bruttoeinkommen** ist Ihr gesamtes Gehalt, bevor etwas abgezogen wird. Wenn in Ihrem Jobangebot 50.000 pro Jahr stehen, dann ist das brutto.\n- **Zu versteuerndes Einkommen** ist das, was übrig bleibt, nachdem Sie etwaige Freibeträge und Abzüge abgezogen haben. Diese kleinere Zahl ist es, auf die Ihre Steuer tatsächlich berechnet wird.\n\nSie werden nicht auf jeden Cent besteuert, den Sie verdienen. Die meisten Länder gewähren Ihnen zunächst eine steuerfreie Scheibe. Das Vereinigte Königreich hat zum Beispiel die Personal Allowance, und Deutschland hat einen steuerfreien Grundbetrag (Grundfreibetrag). Unterhalb dieser Schwellen zahlen Sie überhaupt keine Einkommensteuer. Für das größere Bild siehe [Bruttoeinkommen vs. Nettoeinkommen](/guides/gross-income-vs-net-income).\n\n## Progressive Steuerstufen\n\nDie meisten Einkommensteuersysteme sind progressiv. Ihr Einkommen wird in Stufen unterteilt, und jede Stufe wird mit ihrem eigenen Satz besteuert. Ein verbreiteter Irrtum ist, dass ein höherer Verdienst Ihr gesamtes Einkommen in einen höheren Satz schieben kann. So funktioniert das nicht. Nur der Teil des Einkommens innerhalb jeder Stufe wird mit dem Satz dieser Stufe besteuert.\n\nHier ist eine vereinfachte Veranschaulichung (keine echten aktuellen Sätze):\n\n| Einkommensstufe | Steuersatz | Steuer auf diese Stufe |\n|---|---|---|\n| Erste 12.000 | 0 % | 0 |\n| 12.001 bis 40.000 | 20 % | 5.600 |\n| 40.001 bis 50.000 | 40 % | 4.000 |\n\nIn diesem Beispiel zahlt jemand, der 50.000 verdient, insgesamt 9.600 und nicht 40 % von allem. Um zu verstehen, wie sich die Stufen in echten Systemen aufeinander stapeln, siehe unseren ausführlicheren Leitfaden zu den [Steuerstufen](/guides/understanding-tax-brackets).\n\n### Grenz- vs. Effektivsteuersatz\n\nZwei kurze Definitionen, die sich aus den Stufen ergeben:\n\n- **Grenzsteuersatz** ist der Satz auf Ihren nächsten verdienten Dollar, Pfund oder Euro. In der obigen Tabelle sind das 40 %.\n- **Effektivsteuersatz** ist der Durchschnittssatz über Ihr gesamtes Einkommen. Hier sind das 9.600 geteilt durch 50.000, also etwa 19 %.\n\nIhr Effektivsteuersatz ist fast immer niedriger als Ihr höchster Grenzsteuersatz. Menschen verwechseln die beiden oft und überschätzen, wie viel Steuer sie tatsächlich zahlen.\n\n## Freibeträge und Abzüge\n\nFreibeträge und Abzüge verringern Ihr zu versteuerndes Einkommen, wodurch Ihre Steuerlast sinkt. Sie variieren stark von Land zu Land, aber gängige Beispiele sind:\n\n- Ein steuerfreier persönlicher Freibetrag oder Grundbetrag.\n- Berufsbedingte Ausgaben wie Arbeitsmittel, Fahrten oder ein häusliches Arbeitszimmer.\n- Beiträge zur Renten- oder Altersvorsorge.\n- Bestimmte Versicherungsprämien oder Spenden für wohltätige Zwecke.\n\nZu wissen, was Sie geltend machen können, ist eine der einfachsten Möglichkeiten, mehr von Ihrem Geld zu behalten. Unser Leitfaden zu den [Steuerabzügen](/guides/tax-deductions-explained) erläutert die wichtigsten Kategorien.\n\n## Einkommensteuer vs. Sozialabgaben\n\nHier ist ein Punkt, der viele Menschen überrascht: Die Einkommensteuer ist nicht das Einzige, was von Ihrem Gehalt abgezogen wird. Daneben gibt es Sozial- oder Lohnabgaben.\n\n- In den **USA** sind das Social Security und Medicare (oft als FICA bezeichnet).\n- Im **Vereinigten Königreich** ist das National Insurance.\n- In **Deutschland** decken diese die Renten-, Kranken-, Arbeitslosen- und Pflegeversicherung ab.\n\nDiese Beiträge finanzieren Renten, Gesundheitsversorgung und Unterstützung bei Arbeitslosigkeit. Sie werden anders als die Einkommensteuer berechnet und haben oft eigene Schwellenwerte und Beitragsbemessungsgrenzen. Da sie einen erheblichen Anteil Ihres Gehalts ausmachen können, ergibt sich ein irreführendes Bild Ihres tatsächlichen Nettolohns, wenn man sie ignoriert. Mehr erfahren Sie in unserem Überblick zu den [Sozialversicherungsbeiträgen](/guides/social-security-contributions-guide).\n\n## Wie aus all dem der Nettolohn wird\n\nWenn man die Teile zusammensetzt, sieht Ihr Nettolohn (auch Nettogehalt genannt) im Allgemeinen so aus:\n\n1. Beginnen Sie mit dem **Bruttoeinkommen**.\n2. Ziehen Sie **Freibeträge und Abzüge** ab, um das zu versteuernde Einkommen zu ermitteln.\n3. Wenden Sie die **progressiven Steuerstufen** an, um die Einkommensteuer zu berechnen.\n4. Ziehen Sie die **Sozialabgaben** ab.\n5. Was übrig bleibt, ist Ihr **Netto-, Ihr Nettolohn**.\n\nEin Arbeitnehmer, der in den USA, dem Vereinigten Königreich und Deutschland das gleiche Bruttogehalt verdient, kann mit sehr unterschiedlichen Nettobeträgen enden, weil jedes Land Steuern und Abgaben unterschiedlich kombiniert. Wir vergleichen die drei nebeneinander in unserem Leitfaden zum [Nettolohn im Ländervergleich](/guides/take-home-pay-us-uk-germany).\n\nMöchten Sie eine Zahl für Ihre eigene Situation? Probieren Sie unseren kostenlosen [Gehaltsrechner](/salary-calculator) aus, um Ihren Nettolohn in Sekunden zu schätzen.\n\n## Abschließende Gedanken\n\nDie Einkommensteuer kann einschüchternd wirken, aber der Kerngedanke ist einfach: Sie werden in Scheiben besteuert, nur auf das, was nach Ihrem steuerfreien Freibetrag und Ihren Abzügen übrig bleibt, und diese Steuer steht neben separaten Sozialabgaben. Sobald Sie verstehen, wie aus dem Bruttoeinkommen Schritt für Schritt der Nettolohn wird, hört Ihre Lohnabrechnung auf, ein Rätsel zu sein. Da sich Sätze und Schwellenwerte jedes Jahr verschieben, nutzen Sie für wichtige Entscheidungen offizielle Quellen und eine qualifizierte Fachperson.",
+    "keywords": [
+      "wie die Einkommensteuer funktioniert",
+      "Grundlagen der Einkommensteuer",
+      "zu versteuerndes Einkommen",
+      "Steuerstufen erklärt",
+      "Grenz- vs. Effektivsteuersatz",
+      "Nettolohn"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Bundeseinkommensteuersätze und Steuerstufen",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      },
+      {
+        "label": "GOV.UK — Einkommensteuersätze und persönliche Freibeträge",
+        "url": "https://www.gov.uk/income-tax-rates"
+      },
+      {
+        "label": "Deutsches Bundesministerium der Finanzen",
+        "url": "https://www.bundesfinanzministerium.de"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Kann mich ein höherer Verdienst jemals schlechter stellen?",
+        "answer": "In einem normalen progressiven System nicht. Nur das Einkommen innerhalb einer höheren Stufe wird mit dem höheren Satz besteuert, sodass eine Gehaltserhöhung Ihren Nettolohn immer erhöht. Bestimmte Abbruchkanten bei Sozialleistungen sind eine separate Frage und gehören nicht dazu, wie die Steuerstufen der Einkommensteuer funktionieren."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Einkommensteuer und Sozialabgaben?",
+        "answer": "Die Einkommensteuer ist eine allgemeine Steuer auf Einkünfte, die öffentliche Leistungen finanziert. Sozialabgaben (wie National Insurance, FICA oder die deutsche Sozialversicherung) sind separate Zahlungen, die Renten, Gesundheitsversorgung und Unterstützung bei Arbeitslosigkeit finanzieren, und sie werden nach ihren eigenen Regeln berechnet."
+      },
+      {
+        "question": "Warum ist mein Nettolohn niedriger als erwartet?",
+        "answer": "Von Ihrem Bruttogehalt werden sowohl die Einkommensteuer als auch die Sozialabgaben abgezogen, und manchmal auch Renten- oder andere Einbehalte. Der kombinierte Effekt kann größer sein, als die Menschen erwarten, weshalb eine Schätzung mit einem Rechner hilft, realistische Erwartungen zu setzen."
+      },
+      {
+        "question": "Zahlen Freiberufler die Einkommensteuer anders als Angestellte?",
+        "answer": "Die Sätze sind in der Regel dieselben, aber das Verfahren unterscheidet sich. Bei Angestellten wird die Steuer an jedem Zahltag automatisch einbehalten, während Freiberufler sie üblicherweise selbst berechnen und zahlen, häufig in Vorauszahlungen, und möglicherweise mehr Betriebsausgaben geltend machen können."
+      }
+    ]
+  },
+  "take-home-pay-us-uk-germany": {
+    "title": "Nettolohn im Vergleich: USA vs. Deutschland vs. Großbritannien",
+    "description": "Vergleichen Sie den Nettolohn in den USA, Deutschland und Großbritannien. Sehen Sie, wie Einkommensteuer und Sozialabgaben den Nettolohn prägen – mit einer anschaulichen Ländertabelle.",
+    "content": "## Warum sich dasselbe Gehalt in jedem Land anders anfühlt\n\nStellen Sie sich drei Arbeitnehmer vor, die jeweils das Äquivalent eines soliden mittleren Einkommens verdienen und in den Vereinigten Staaten, in Deutschland und im Vereinigten Königreich leben. Sie könnten sich auf denselben Bruttolohn einigen, und doch kann der Betrag, der tatsächlich auf ihrem Konto landet, überraschend unterschiedlich aussehen. Der Grund ist nicht nur der Einkommensteuersatz. Es ist der gesamte Stapel an Abzügen, einschließlich der Sozialabgaben, den jedes Land zusätzlich zur (oder neben der) Einkommensteuer auflegt.\n\nDiese Unterschiede zu verstehen hilft Ihnen, Stellenangebote zu vergleichen, einen Umzug ins Ausland zu planen oder einfach Ihre eigene Lohnabrechnung zu durchschauen. Wenn Sie zunächst sehen möchten, wie die Teile zusammenpassen, ist unser Leitfaden dazu, [wie die Einkommensteuer funktioniert](/guides/how-income-tax-works), ein hilfreicher Ausgangspunkt, ebenso wie der Unterschied zwischen [Brutto- und Nettoeinkommen](/guides/gross-income-vs-net-income).\n\n## Die Bausteine des Nettolohns\n\nJedes Land in diesem Vergleich verwendet eine progressive Einkommensteuer, das heißt, höhere Einkommensanteile werden mit höheren Sätzen besteuert. Doch jedes fügt seine eigene Besonderheit hinzu.\n\n### Vereinigte Staaten\n\nIn den USA verwendet die föderale Einkommensteuer gestaffelte Tarifstufen, und die meisten Bundesstaaten erheben zusätzlich ihre eigene Einkommensteuer (einige erheben gar keine). Darüber hinaus zahlen Arbeitnehmer FICA, das Social Security und Medicare finanziert. FICA ist eine pauschale Lohnabgabe, die zwischen Arbeitnehmer und Arbeitgeber aufgeteilt wird, sodass sie auch für Geringverdiener gilt, die möglicherweise wenig föderale Einkommensteuer schulden.\n\n### Deutschland\n\nDeutschland kombiniert eine progressive Einkommensteuer mit dem Solidaritätszuschlag (dem Soli), der heute hauptsächlich Besserverdiener betrifft. Die größere Geschichte ist jedoch die gesetzliche Sozialversicherung. Deutsche Arbeitnehmer zahlen Beiträge zur gesetzlichen Krankenversicherung, Rentenversicherung, Pflegeversicherung und Arbeitslosenversicherung. Diese Beiträge sind beträchtlich und ein wesentlicher Grund dafür, dass der deutsche Nettolohn bei einem ähnlichen Bruttobetrag oft niedriger ausfällt als in den USA oder in Großbritannien.\n\n### Vereinigtes Königreich\n\nDas Vereinigte Königreich wendet eine progressive Einkommensteuer mit einem steuerfreien Personal Allowance an – einem Betrag, den Sie verdienen können, bevor überhaupt Einkommensteuer anfällt. Neben der Einkommensteuer zahlen Arbeitnehmer National-Insurance-Beiträge, die die staatliche Rente und andere Leistungen finanzieren. Die kombinierte Belastung liegt für viele Verdiener typischerweise zwischen den USA und Deutschland.\n\n## Ein anschaulicher Vergleich\n\nDie folgende Tabelle ist eine grobe, vereinfachte Veranschaulichung für einen alleinstehenden Arbeitnehmer ohne Angehörige, unter Verwendung eines ungefähren Bruttogehalts von 60.000 in der jeweiligen Landeswährung. Diese Zahlen sind ausschließlich zu Lernzwecken geschätzt. Sie sind nicht exakt, spiegeln nicht jede persönliche Situation wider und sollten nicht für eine echte Planung verwendet werden. Die Währungen werden nicht umgerechnet, lesen Sie sie also nicht als gleichwertigen Wechselkurs quer.\n\n| Posten | Vereinigte Staaten | Deutschland | Vereinigtes Königreich |\n|---|---|---|---|\n| Währung | USD | EUR | GBP |\n| Ungefähr brutto | 60.000 | 60.000 | 60.000 |\n| Einkommensteuer | Mittel | Höher | Mittel |\n| Sozialabgaben | FICA (niedriger) | Kranken-, Renten-, Pflege-, Arbeitslosenversicherung (höher) | National Insurance (mittel) |\n| Ungefährer Nettolohnanteil | Etwa 70–78 % | Etwa 58–65 % | Etwa 68–74 % |\n\nBetrachten Sie diese Nettolohnprozentsätze als grobe, veranschaulichende Spannen, nicht als Versprechen. Bundesstaatliche oder lokale Steuern, Familienstand, Kinder, Rentenentscheidungen und Details der Krankenversicherung können sie erheblich verschieben.\n\n## Warum Deutschland oft mehr abzieht\n\nDer Hauptgrund ist die Sozialversicherung. Deutschland finanziert ein umfassendes System aus gesetzlicher Kranken-, Renten-, Pflege- und Arbeitslosenversicherung größtenteils über verpflichtende Lohnabgaben. In den USA ist die Gesundheitsversorgung üblicherweise eher an private oder arbeitgeberbasierte Pläne gebunden als an einen einzigen gesetzlichen Abzug, und in Großbritannien wird ein Großteil der Gesundheitsversorgung über allgemeine Steuern statt über einen separaten großen Beitrag finanziert. Eine deutsche Lohnabrechnung bündelt also mehr Leistungen in sichtbaren Abzügen, was den Nettolohn senkt, aber auch die Leistungen widerspiegelt, die der Arbeitnehmer im Gegenzug erhält.\n\nDeshalb kann es irreführend sein, nur den Einkommensteuersatz zu vergleichen. Ein Land mit einem niedrigeren Einkommensteuersatz kann Ihnen am Ende dennoch weniger Nettolohn lassen, sobald die Sozialabgaben einbezogen sind, und was wie ein höherer Abzug aussieht, kann mit umfassenderen öffentlichen Leistungen einhergehen.\n\n## Berechnen Sie die echten Zahlen für Ihre Situation\n\nDa sich Sätze, Schwellenwerte und Freibeträge jedes Jahr ändern und stark von Ihren persönlichen Umständen abhängen, ist die einzig zuverlässige Methode, Ihren Betrag zu ermitteln, die Berechnung. Sie können den [US-Gehaltsrechner](/salary-calculator/us), den [Deutschland-Gehaltsrechner](/salary-calculator/de) und den [UK-Gehaltsrechner](/salary-calculator/uk) ausprobieren, um Ihren eigenen Nettolohn in jedem Land zu schätzen.\n\n## Schlussgedanken\n\nDer Nettolohn wird von weit mehr als nur einem einzigen Steuersatz geprägt. In den USA, in Deutschland und in Großbritannien erzählt das Zusammenspiel aus progressiver Einkommensteuer und Sozialabgaben die eigentliche Geschichte, und Deutschlands höhere Abzüge spiegeln größtenteils sein umfassendes gesetzliches Versicherungssystem wider. Nutzen Sie die hier genannten veranschaulichenden Spannen, um ein Gespür zu entwickeln, aber lassen Sie für aktuelle Schätzungen stets die Rechner laufen und ziehen Sie für Entscheidungen, die Ihre Finanzen betreffen, eine qualifizierte Steuerfachkraft zu Rate. Sätze und Schwellenwerte variieren je nach Jahr und individueller Situation.",
+    "keywords": [
+      "Nettolohn-Vergleich",
+      "Gehalt USA vs. Deutschland vs. Großbritannien",
+      "Nettolohn nach Land",
+      "Sozialabgaben",
+      "Einkommensteuervergleich",
+      "Lohnabzüge"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Föderale Einkommensteuersätze und Tarifstufen",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      },
+      {
+        "label": "GOV.UK — Einkommensteuersätze",
+        "url": "https://www.gov.uk/income-tax-rates"
+      },
+      {
+        "label": "Bundesministerium der Finanzen",
+        "url": "https://www.bundesfinanzministerium.de"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Warum ist mein Nettolohn in Deutschland bei gleichem Bruttogehalt niedriger als in den USA?",
+        "answer": "Deutschland finanziert die gesetzliche Kranken-, Renten-, Pflege- und Arbeitslosenversicherung über beträchtliche verpflichtende Lohnabgaben. Diese Sozialabzüge sind, mehr noch als die Einkommensteuer allein, der Hauptgrund dafür, dass der deutsche Nettolohn bei einem ähnlichen Bruttobetrag oft niedriger ausfällt."
+      },
+      {
+        "question": "Bedeutet ein niedrigerer Einkommensteuersatz immer einen höheren Nettolohn?",
+        "answer": "Nein. Sozialabgaben wie FICA in den USA, National Insurance in Großbritannien und die gesetzliche Versicherung in Deutschland können das Bild erheblich verändern. Ein Land mit einem niedrigeren Einkommensteuersatz kann Ihnen am Ende dennoch weniger Nettolohn lassen, sobald diese Beiträge hinzugerechnet werden."
+      },
+      {
+        "question": "Sind die Prozentsätze in der Vergleichstabelle exakt?",
+        "answer": "Nein. Es sind veranschaulichende Spannen für einen alleinstehenden Arbeitnehmer ohne Angehörige, die ausschließlich dem Aufbau eines Gespürs dienen. Ihr tatsächlicher Betrag hängt von Ihrem Bundesstaat oder Ihrer Region, Ihrem Familienstand, Ihren Kindern, Ihren Rentenentscheidungen und den Sätzen des laufenden Jahres ab. Nutzen Sie die Rechner für eine Schätzung."
+      },
+      {
+        "question": "Kann ich die drei Länder vergleichen, indem ich die Tabelle quer lese?",
+        "answer": "Nicht direkt. Jede Spalte verwendet ihre eigene Landeswährung ohne Wechselkursumrechnung, sodass die Zahlen nicht gleichwertig sind. Die Tabelle soll Muster bei den Abzügen aufzeigen, nicht Gehälter zwischen Ländern umrechnen."
+      }
+    ]
+  },
+  "what-is-a-good-salary": {
+    "title": "Was ist ein gutes Gehalt? So vergleichen Sie Ihre Bezahlung mit Marktdaten",
+    "description": "Was ist ein gutes Gehalt? Erfahren Sie, wie Sie Ihre Bezahlung anhand von Medianlöhnen, Perzentilen, Brutto und Netto sowie Kaufkraft in den USA, Großbritannien und Deutschland einordnen.",
+    "content": "## Was zählt als gutes Gehalt?\n\nFragen Sie zehn Menschen, was ein gutes Gehalt ist, und Sie erhalten zehn verschiedene Antworten. Das liegt daran, dass Bezahlung relativ ist. Eine Zahl, die sich für einen frischgebackenen Absolventen in einer Kleinstadt großzügig anfühlt, kann für einen dreifachen Elternteil in einer teuren Stadt knapp wirken. Statt einer einzigen magischen Zahl hinterherzujagen, hilft es zu lernen, wie Sie Ihre Bezahlung an echten Daten und Ihrer eigenen Situation messen.\n\nDieser Leitfaden zeigt die wichtigsten Wege auf, ein Gehalt zu beurteilen, welchen Statistiken Sie trauen können und warum die plakative Zahl nur die halbe Wahrheit ist.\n\n## Warum es keine einzige gute Zahl gibt\n\nMehrere Faktoren verschieben, was gut für Sie bedeutet:\n\n- **Standort.** Löhne und Preise unterscheiden sich nach Land, Region und sogar Stadtviertel.\n- **Rolle und Branche.** Ein Handwerksberuf, eine Lehrkraft und ein Softwareentwickler liegen an sehr unterschiedlichen Punkten der Gehaltsskala.\n- **Erfahrung.** Einstiegsgehalt und Seniorgehalt für denselben Jobtitel können stark voneinander abweichen.\n- **Haushaltsgröße.** Ein Einkommen, das vier Personen versorgt, reicht anders weit als ein Einkommen, das eine Person versorgt.\n- **Lebenshaltungskosten.** Miete, Lebensmittel, Verkehr und Steuern zehren an jedem Gehalt, bevor es bei Ihren Ersparnissen ankommt.\n\nDeshalb ist die klügste Frage nicht, ob ein Gehalt abstrakt gut ist, sondern ob es gut ist für Ihre Rolle, in Ihrer Region, in Ihrer Karrierephase. Für einen tieferen Blick darauf, wie Preise Ihre Bezahlung verändern, lesen Sie unseren Leitfaden zu [Lebenshaltungskosten vs. Gehalt](/guides/cost-of-living-vs-salary).\n\n## Einordnung mit Median, Durchschnitt und Perzentilen\n\nUm Ihre Bezahlung fair zu vergleichen, brauchen Sie einen Referenzpunkt. Offizielle Lohnstatistiken bieten Ihnen drei nützliche Werkzeuge.\n\n- **Median:** der mittlere Wert. Die Hälfte der Beschäftigten verdient mehr, die Hälfte weniger. Der Median ist meist der ehrlichste Maßstab, weil er nicht von einer Handvoll Spitzenverdiener verzerrt wird.\n- **Durchschnitt (Mittelwert):** Sie addieren alle Gehälter und teilen durch die Zahl der Beschäftigten. Wenige enorme Gehälter können den Durchschnitt weit über das ziehen, was eine typische Person verdient.\n- **Perzentile:** Sie zeigen, wo Sie im Feld stehen. Liegen Sie im 75. Perzentil, verdienen Sie mehr als 75 Prozent der Beschäftigten in dieser Gruppe.\n\nHier ein vereinfachtes Beispiel für einen fiktiven Beruf. Die Zahlen ändern sich im Laufe der Zeit und variieren nach Region, betrachten Sie dies daher nur als Veranschaulichung.\n\n| Kennzahl | Jahresbetrag | Was sie aussagt |\n|---|---|---|\n| 25. Perzentil | 38.000 | Unteres Ende der typischen Bezahlung |\n| Median (50.) | 52.000 | Eine typische Arbeitskraft in dieser Rolle |\n| Durchschnitt (Mittelwert) | 57.000 | Durch Spitzenverdiener nach oben gezogen |\n| 75. Perzentil | 68.000 | Starke Bezahlung für die Rolle |\n\nWenn Sie nahe am Median für Ihren Beruf und Ihre Region verdienen, liegen Sie ungefähr im Einklang mit Ihren Kollegen. Nahe am 75. Perzentil zu liegen deutet auf eine starke Bezahlung hin, während das 25. Perzentil ein Signal sein kann, eine [Gehaltsverhandlung](/guides/salary-negotiation-tips) zu planen.\n\n## Brutto vs. Netto: Beurteilen Sie das Geld, das Sie behalten\n\nEin Stellenangebot nennt fast immer einen Bruttobetrag, also den Betrag vor Steuern und Abzügen. Was auf Ihrem Bankkonto landet, ist Ihr Nettolohn, und die Lücke zwischen beiden kann groß sein.\n\n- Einkommensteuer, Sozialversicherung und Krankenversicherungsbeiträge werden zuerst abgezogen.\n- Zwei Angebote mit demselben Bruttogehalt können je nach Land oder Steuersituation sehr unterschiedliches Nettogehalt liefern.\n- Ein höherer Bruttobetrag in einem Hochsteuerumfeld kann Ihnen weniger lassen als ein niedrigerer Bruttobetrag anderswo.\n\nWenn Sie also Zahlen vergleichen, vergleichen Sie nach Möglichkeit netto. Lassen Sie jedes Angebot durch unseren kostenlosen [Gehaltsrechner](/salary-calculator) laufen, um das Nettoeinkommen in den USA, Deutschland oder Großbritannien zu schätzen, bevor Sie sich entscheiden.\n\n## Offizielle Lohnstatistiken nutzen\n\nBehörden veröffentlichen verlässliche, regelmäßig aktualisierte Lohndaten. Sie sind kostenlos und weit vertrauenswürdiger als anonyme Forenbeiträge.\n\n- **Vereinigte Staaten:** das Bureau of Labor Statistics veröffentlicht Bezahlung nach Beruf und Region.\n- **Vereinigtes Königreich:** das Office for National Statistics berichtet über Verdienste und Arbeitsstunden.\n- **Europäische Union und Deutschland:** Eurostat erfasst Löhne und Arbeitskosten in den Mitgliedstaaten.\n\nWenn Sie diese lesen, achten Sie auf das Datum, die Region und darauf, ob die Zahl brutto oder netto ist. Schlagen Sie Ihren konkreten Beruf nach statt einen nationalen Durchschnitt, da Jobtitel enorm variieren.\n\n## Warum die Kaufkraft die plakative Zahl schlägt\n\nZwei Menschen können dasselbe Gehalt verdienen und sehr unterschiedlich leben. Der Grund ist die Kaufkraft, also wie viel Ihr Geld dort, wo Sie leben, tatsächlich kauft.\n\nBetrachten Sie diesen einfachen Vergleich. Die Zahlen dienen der Veranschaulichung.\n\n| Stadt | Bruttogehalt | Typische Monatsmiete | Ungefähr verbleibendes Geld nach Miete |\n|---|---|---|---|\n| Stadt mit niedrigeren Kosten | 50.000 | 900 | Mehr finanzieller Spielraum |\n| Stadt mit höheren Kosten | 60.000 | 1.800 | Weniger finanzieller Spielraum |\n\nDas Gehalt von 60.000 sieht größer aus, doch nach einer deutlich höheren Miete spart die Arbeitskraft in der günstigeren Stadt womöglich jeden Monat mehr. Deshalb ist eine Gehaltserhöhung, die mit einem Umzug in eine teure Stadt einhergeht, nicht immer ein echter Gewinn.\n\nEin paar Gewohnheiten helfen Ihnen, sich auf die Kaufkraft zu konzentrieren:\n\n- Vergleichen Sie das Nettogehalt, nicht das Brutto, mit den lokalen Preisen.\n- Berücksichtigen Sie Miete, Verkehr, Steuern und Kinderbetreuung, nicht nur das Gehalt.\n- Wägen Sie Leistungen wie Rentenbeiträge, bezahlten Urlaub und Krankenversicherung ab.\n\nWenn Sie zwei Rollen nebeneinander abwägen, führt unser Leitfaden zum Thema [Stellenangebote vergleichen](/guides/how-to-compare-job-offers) Sie durch die vollständige Checkliste.\n\n## Schlussgedanken\n\nEin gutes Gehalt ist keine feste Zahl, die Sie einmal nachschlagen können. Es ist eine Zahl, die zu Ihrer Rolle, Ihrem Standort, Ihrer Erfahrung und Ihren Lebenshaltungskosten passt und Ihnen ein gesundes Nettoeinkommen lässt. Nutzen Sie Median- und Perzentildaten, um zu sehen, wo Sie stehen, prüfen Sie immer netto statt brutto und beurteilen Sie jedes Angebot danach, was es tatsächlich kauft.",
+    "keywords": [
+      "was ist ein gutes Gehalt",
+      "Gehaltsvergleich mit Marktdaten",
+      "Median- vs. Durchschnittsgehalt",
+      "Brutto- vs. Nettolohn",
+      "Gehaltsperzentile",
+      "Kaufkraft"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics",
+        "url": "https://www.bls.gov/oes/"
+      },
+      {
+        "label": "UK Office for National Statistics — Verdienste und Arbeitsstunden",
+        "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours"
+      },
+      {
+        "label": "Eurostat — Löhne und Arbeitskosten",
+        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Wages_and_labour_costs"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Sollte ich beim Vergleich den Median oder das Durchschnittsgehalt betrachten?",
+        "answer": "Der Median ist meist verlässlicher, weil er die mittlere Arbeitskraft zeigt und nicht von einigen wenigen Spitzenverdienern verzerrt wird. Der Durchschnitt kann höher wirken als das, was die meisten Menschen tatsächlich verdienen. Prüfen Sie nach Möglichkeit beides, dazu Perzentile für Ihre konkrete Rolle und Region."
+      },
+      {
+        "question": "Ist ein höheres Bruttogehalt immer besser?",
+        "answer": "Nicht unbedingt. Nach Einkommensteuer, Sozialversicherung und anderen Abzügen kann ein höherer Bruttobetrag in einer Hochsteuerregion Ihnen weniger Nettogehalt lassen als ein niedrigerer Bruttobetrag anderswo. Vergleichen Sie immer das Nettoeinkommen und wägen Sie die lokalen Lebenshaltungskosten ab, bevor Sie sich entscheiden."
+      },
+      {
+        "question": "Wo finde ich vertrauenswürdige Gehaltsdaten?",
+        "answer": "Behördliche Statistikämter sind ein guter Ausgangspunkt: das U.S. Bureau of Labor Statistics, das UK Office for National Statistics und Eurostat für die EU und Deutschland. Schlagen Sie Ihren konkreten Beruf und Ihre Region nach und achten Sie auf das Datum sowie darauf, ob die Zahlen brutto oder netto sind."
+      },
+      {
+        "question": "Wie verändern Lebenshaltungskosten, was als gutes Gehalt zählt?",
+        "answer": "Ein höheres Gehalt in einer teuren Stadt kann Ihnen weniger übrig lassen als ein kleineres Gehalt in einer günstigeren Region, sobald Miete, Steuern und tägliche Kosten bezahlt sind. Kaufkraft, also was Ihr Nettogehalt vor Ort tatsächlich kauft, ist oft wichtiger als die plakative Zahl."
+      }
+    ]
+  },
+  "how-to-compare-job-offers": {
+    "title": "So vergleichen Sie Jobangebote (über das Gehalt hinaus)",
+    "description": "Erfahren Sie, wie Sie Jobangebote über das Gehalt hinaus vergleichen: auf Jahresbrutto und -netto umrechnen, Zusatzleistungen bewerten und Steuern, Arbeitsweg sowie nicht-finanzielle Vorteile berücksichtigen.",
+    "content": "# So vergleichen Sie Jobangebote (über das Gehalt hinaus)\n\nEine höhere Zahl im Angebotsschreiben bedeutet nicht immer mehr Geld in Ihrer Tasche. Zwei Jobs mit demselben Bruttogehalt können Ihnen sehr unterschiedliche Beträge übrig lassen, sobald Steuern, Zusatzleistungen und Pendelkosten berücksichtigt werden. Angebote gut zu vergleichen bedeutet, das Gesamtbild zu betrachten und nicht nur die plakative Zahl.\n\n## Bringen Sie zuerst jedes Angebot auf dieselbe Grundlage\n\nAngebote kommen in unterschiedlichen Formen. Eines wird pro Jahr angegeben, ein anderes pro Monat, ein weiteres pro Stunde. Bevor Sie überhaupt etwas vergleichen können, rechnen Sie jedes auf das Jahresbruttogehalt um.\n\n- Stunde auf Jahr: Multiplizieren Sie den Stundensatz mit den Wochenstunden und dann mit 52. Ein Satz von 25 pro Stunde bei 40 Stunden pro Woche ergibt etwa 52.000 pro Jahr.\n- Monat auf Jahr: Multiplizieren Sie mit 12. Ein Gehalt von 4.500 EUR pro Monat sind 54.000 EUR pro Jahr.\n\nSobald jedes Angebot als Jahresbrutto vorliegt, gehen Sie den nächsten Schritt, den die meisten Menschen überspringen: Schätzen Sie das [Nettogehalt](/guides/what-is-take-home-pay). Brutto ist das, was Ihnen versprochen wird; netto ist das, was nach Einkommensteuer und Sozialabgaben tatsächlich auf Ihrem Konto landet. Sie können jede Zahl durch unseren [Gehaltsrechner](/calculator) oder den [Nettogehaltsrechner](/net-salary-calculator) laufen lassen, um die Nettobeträge nebeneinander zu vergleichen.\n\n## Beziffern Sie die Zusatzleistungen\n\nZusatzleistungen sind echtes Geld, auch wenn sie nie als Gehalt erscheinen. Laut dem U.S. Bureau of Labor Statistics machen Zusatzleistungen einen beträchtlichen Anteil der gesamten Mitarbeitervergütung aus, sodass deren Vernachlässigung eine große Lücke verbergen kann.\n\nDinge, die es sich zu bewerten lohnt:\n\n- Krankenversicherung: Wie hoch ist der Beitrag, und wie viel übernimmt der Arbeitgeber?\n- Renten- oder Altersvorsorgezuschuss: Ein Zuschuss von 5 Prozent auf ein Gehalt von 60.000 sind 3.000 pro Jahr an quasi kostenlosem Geld.\n- Bezahlter Urlaub: Eine zusätzliche Urlaubswoche hat einen Geldwert, der ungefähr einer Wochengehalt entspricht.\n- Boni: Klären Sie, ob sie garantiert oder freiwillig sind, und verwenden Sie eine konservative Schätzung.\n\n## Berücksichtigen Sie Standort und Steuern\n\nWo ein Job angesiedelt ist, verändert Ihr Nettogehalt und Ihre Kosten. Steuerregeln unterscheiden sich von Land zu Land und manchmal von Region zu Region, und dasselbe Bruttogehalt ergibt in den USA, Deutschland und Großbritannien unterschiedliche Nettobeträge. Sehen Sie, wie sich die drei vergleichen, in [Nettogehalt im Ländervergleich](/guides/take-home-pay-us-uk-germany).\n\nEin Gehalt, das in einer teuren Stadt größer aussieht, reicht möglicherweise weniger weit als ein kleineres in einer günstigeren Gegend. Wägen Sie das Angebot anhand der lokalen Preise mit unserem Leitfaden zu den [Lebenshaltungskosten](/guides/cost-of-living-vs-salary) ab, bevor Sie sich entscheiden.\n\n## Zwei Angebote im direkten Vergleich\n\nHier ein vereinfachtes Beispiel, das zwei Angebote mit identischem Bruttogehalt vergleicht.\n\n| Faktor | Angebot A | Angebot B |\n| --- | --- | --- |\n| Jahresbrutto | 60.000 | 60.000 |\n| Geschätztes Netto | 45.000 | 44.000 |\n| Altersvorsorgezuschuss | 0 | 3.000 |\n| Bezahlter Urlaub | 20 Tage | 28 Tage |\n| Pendelkosten (jährlich) | 2.400 | 0 (remote) |\n| Grober Gesamtwert | 42.600 | 47.000 |\n\nAuf dem Papier waren sie gleichauf. Sobald Zusatzleistungen und Pendeln einbezogen werden, liegt Angebot B klar vorn.\n\n### Arbeitsweg und Homeoffice\n\nPendeln kostet Geld und Zeit. Ein Arbeitsweg von 2.400 pro Jahr ist faktisch eine Gehaltskürzung. Remote- oder Hybrid-Stellen können außerdem Geld für Mittagessen, Parken und Arbeitskleidung sparen und geben Ihnen jede Woche Stunden zurück.\n\n## Vergessen Sie die nicht-finanziellen Faktoren nicht\n\nZahlen sind wichtig, aber der Rest des Jobs ist es ebenso:\n\n- Wachstum: Weiterbildung, Aufstiegsmöglichkeiten und Fähigkeiten, die Sie aufbauen werden.\n- Stabilität: die Gesundheit des Unternehmens und wie sicher sich die Stelle anfühlt.\n- Flexibilität: Kontrolle über den Zeitplan und Remote-Optionen.\n- Kultur und Vorgesetzter: oft der größte Faktor für das tägliche Wohlbefinden.\n\nWenn zwei Angebote beim Geld nah beieinander liegen, sollten diese Faktoren den Ausschlag geben. Und wenn das Geld nah, aber nicht gleich ist, denken Sie daran, dass Sie oft mehr verlangen können. Sehen Sie sich unsere Tipps zur [Gehaltsverhandlung](/guides/salary-negotiation-tips) an, bevor Sie zusagen.\n\n## Abschließende Gedanken\n\nDas beste Angebot ist selten dasjenige mit der größten Bruttozahl. Rechnen Sie alles auf dieselbe Grundlage um, vergleichen Sie das Nettogehalt, addieren Sie den Geldwert der Zusatzleistungen und ziehen Sie die Pendelkosten ab. Legen Sie dann die nicht-finanziellen Faktoren darüber, die Ihren Alltag prägen. Steuer- und Leistungsregeln variieren je nach Land und persönlicher Situation, betrachten Sie diese Beispiele daher als Ausgangspunkt und konsultieren Sie eine qualifizierte Fachkraft, bevor Sie eine endgültige Entscheidung treffen.",
+    "keywords": [
+      "Jobangebote vergleichen",
+      "Gesamtvergütung",
+      "Nettogehalt-Vergleich",
+      "Wert von Mitarbeiterleistungen",
+      "Jobangebote bewerten",
+      "Nettogehalt"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Mitarbeiterleistungen",
+        "url": "https://www.bls.gov/ebs/"
+      },
+      {
+        "label": "GOV.UK — Einkommensteuer",
+        "url": "https://www.gov.uk/income-tax"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Sollte ich Jobangebote nach Brutto- oder Nettogehalt vergleichen?",
+        "answer": "Vergleichen Sie das Nettogehalt, also den Betrag, den Sie nach Steuern und Abgaben tatsächlich nach Hause nehmen. Zwei Angebote mit demselben Brutto können je nach Standort und Abzügen unterschiedliche Nettobeträge ergeben, daher liefert das Netto ein wahrheitsgetreueres Bild."
+      },
+      {
+        "question": "Wie beziffere ich Zusatzleistungen wie zusätzliche Urlaubstage?",
+        "answer": "Schätzen Sie den Geldwert. Eine zusätzliche Woche bezahlten Urlaubs ist ungefähr eine Wochengehalt wert, und ein Altersvorsorgezuschuss ist echtes Geld, zum Beispiel entspricht ein Zuschuss von 5 Prozent auf 60.000 einem Betrag von 3.000 pro Jahr."
+      },
+      {
+        "question": "Lohnt sich ein höheres Gehalt in einer teuren Stadt?",
+        "answer": "Nicht immer. Ein höheres Gehalt kann weniger kaufen, wenn Miete, Verkehr und tägliche Kosten deutlich höher sind. Vergleichen Sie das Angebot mit den lokalen Lebenshaltungskosten und Ihrem geschätzten Nettogehalt, bevor Sie sich entscheiden."
+      },
+      {
+        "question": "Wie stark wirkt sich das Pendeln wirklich auf ein Jobangebot aus?",
+        "answer": "Stärker, als die meisten erwarten. Fahrtkosten wirken wie eine Gehaltskürzung, und die verlorene Zeit hat ebenfalls einen Wert. Eine Remote-Stelle, die einen Arbeitsweg von 2.400 pro Jahr beseitigt, kann ein etwas höheres Bruttogehalt aufwiegen."
+      }
+    ]
+  },
+  "cost-of-living-vs-salary": {
+    "title": "Lebenshaltungskosten vs. Gehalt: Ihr reales Einkommen verstehen",
+    "description": "Erfahren Sie, wie die Lebenshaltungskosten Ihr reales Einkommen prägen. Vergleichen Sie nominales und reales Einkommen, Kaufkraft und Nettogehalt über Städte hinweg, um zu sehen, was Sie wirklich verdienen.",
+    "content": "## Was Ihr Gehalt wirklich wert ist\n\nEin Jobangebot mit einer höheren Zahl darauf kann sich wie ein automatischer Gewinn anfühlen. Doch die Höhe Ihres Gehaltsschecks erzählt nur die halbe Geschichte. Worauf es wirklich ankommt, ist, wie viel dieses Geld dort kaufen kann, wo Sie leben. Das ist der Unterschied zwischen nominalem Einkommen und realem Einkommen, und ihn zu verstehen kann verändern, wie Sie jedes Jobangebot beurteilen.\n\n## Nominales Einkommen vs. reales Einkommen\n\nDas nominale Einkommen ist der reine Betrag, den Sie verdienen, gemessen in reiner Währung. Das reale Einkommen passt diese Zahl an die Kosten der Dinge an, die Sie tatsächlich kaufen.\n\n- Nominales Einkommen: die Zahl in Ihrem Vertrag, zum Beispiel 60.000 USD pro Jahr.\n- Reales Einkommen: was diese 60.000 abdecken können, nachdem Sie Miete, Lebensmittel, Transport und Steuern berücksichtigt haben.\n\nZwei Personen können dasselbe nominale Gehalt verdienen und je nach den lokalen Preisen sehr unterschiedlich leben.\n\n## Kaufkraft und Inflation\n\nKaufkraft ist, wie viel eine Währungseinheit kauft. Sie schrumpft, wenn die Preise steigen. Wenn Ihr Gehalt unverändert bleibt, während die Preise innerhalb eines Jahres um 4 Prozent klettern, haben Sie faktisch eine Gehaltskürzung hingenommen, weil Ihr Geld weniger kauft.\n\nDie Inflation wird durch offizielle Preisindizes wie den Verbraucherpreisindex (Consumer Price Index) gemessen. Beachten Sie, dass sich Preise und Inflationsraten ständig ändern, sodass jede Zahl, die Sie sehen, eine Momentaufnahme ist und keine dauerhafte Regel.\n\n## Die Kosten, die Ihr Gehalt aufzehren\n\nEinige wenige große Ausgaben prägen Ihren Lebensstandard mehr als alles andere:\n\n- Wohnen: in der Regel der größte Kostenpunkt und derjenige, der zwischen Standorten am stärksten variiert.\n- Transport: Autobesitz, Kraftstoff oder Tickets für den öffentlichen Nahverkehr.\n- Lebensmittel und Einkäufe: alltägliche Ausgaben, die sich schnell summieren.\n- Steuern und Beiträge: Diese verringern das Bruttogehalt, bevor Sie auch nur einen Cent ausgeben, weshalb [Brutto- vs. Nettoeinkommen](/guides/gross-income-vs-net-income) so wichtig ist.\n\n## Gleiches Gehalt, andere Realität\n\nStellen Sie sich zwei Personen vor, die beide 70.000 pro Jahr in Landeswährung verdienen. Die folgende Tabelle verwendet beispielhafte Zahlen, um zu zeigen, wie weit dasselbe Gehalt sehr unterschiedlich reichen kann.\n\n| Kostenpunkt (pro Jahr) | Teure Stadt | Günstigere Stadt |\n| --- | --- | --- |\n| Miete | 24.000 | 12.000 |\n| Transport | 4.000 | 2.500 |\n| Lebensmittel | 8.000 | 6.000 |\n| Geschätzte Steuern | 18.000 | 18.000 |\n| Übrig gebliebenes Geld | 16.000 | 31.500 |\n\nGleiches Bruttogehalt, fast das Doppelte an übrig gebliebenem Geld. Die günstigere Stadt bietet ein höheres reales Einkommen, obwohl der Gehaltsscheck identisch ist.\n\n## Warum ein höheres Bruttogehalt weniger bedeuten kann\n\nDas ist die Falle, die viele Jobsuchende übersehen. Eine Stelle, die 90.000 in einer teuren Metropolregion zahlt, kann Ihnen weniger Kaufkraft lassen als eine Stelle mit 65.000 in einer günstigeren Region. Höhere Miete, teurerer Transport und manchmal höhere lokale Steuern können den Unterschied leise zunichtemachen und sogar darüber hinaus.\n\nWenn Sie Angebote abwägen, blicken Sie über die Schlagzeilenzahl hinaus und fragen Sie sich, was Ihr Leben tatsächlich kosten wird. Um einzuschätzen, ob ein Angebot überhaupt wettbewerbsfähig ist, lesen Sie [was ist ein gutes Gehalt](/guides/what-is-a-good-salary).\n\n## Vergleiche über Städte und Länder hinweg\n\nDer Ländervergleich fügt zusätzliche Ebenen hinzu: unterschiedliche Steuersysteme, Gesundheitsmodelle und Währungen. Ein Gehalt in Deutschland, im Vereinigten Königreich und in den USA kann auf sehr unterschiedliche Nettobeträge und Lebenshaltungskosten hinauslaufen. Unser Leitfaden zum [Nettogehalt im Vergleich](/guides/take-home-pay-us-uk-germany) erläutert diese Unterschiede.\n\nEin einfacher, praktischer Ansatz:\n\n1. Beginnen Sie mit dem Nettogehalt, nicht mit dem Brutto. Verwenden Sie einen [Gehaltsrechner](/salary-calculator), um zu schätzen, was tatsächlich auf Ihrem Konto landet.\n2. Ziehen Sie Ihre wichtigsten lokalen Kosten ab, insbesondere das Wohnen.\n3. Vergleichen Sie das übrig gebliebene Geld, nicht die Schlagzeilengehälter.\n\nSo bleiben Sie auf das reale Einkommen fokussiert und nicht auf eine beeindruckende, aber irreführende Bruttozahl.\n\n## Abschließende Gedanken\n\nEin Gehalt ist nur so gut wie das, was es Ihnen leisten lässt. Indem Sie in Begriffen von realem Einkommen, Kaufkraft und lokalen Kosten denken, können Sie Möglichkeiten weitaus genauer vergleichen. Beginnen Sie bei Ihrem Nettogehalt, berücksichtigen Sie Wohnen und alltägliche Ausgaben, und Sie haben ein klares, ehrliches Bild von jedem Angebot. Denken Sie daran, dass sich Preise und Steuerregeln im Laufe der Zeit verschieben, also behandeln Sie jeden Vergleich als aktuelle Schätzung und nicht als feststehende Wahrheit.",
+    "keywords": [
+      "Lebenshaltungskosten vs. Gehalt",
+      "reales Einkommen",
+      "Kaufkraft",
+      "nominales vs. reales Einkommen",
+      "Nettogehaltsvergleich",
+      "Gehalt nach Stadt"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Verbraucherpreisindex (Consumer Price Index)",
+        "url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "label": "UK Office for National Statistics — Inflation und Preisindizes",
+        "url": "https://www.ons.gov.uk/economy/inflationandpriceindices"
+      },
+      {
+        "label": "Eurostat — Harmonisierter Verbraucherpreisindex (HVPI)",
+        "url": "https://ec.europa.eu/eurostat/web/hicp"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Was ist der Unterschied zwischen nominalem und realem Einkommen?",
+        "answer": "Das nominale Einkommen ist der reine Betrag, den Sie in Währung verdienen, während das reale Einkommen widerspiegelt, was dieses Geld tatsächlich kaufen kann, nachdem Preise und Inflation berücksichtigt wurden. Das reale Einkommen ist der bessere Maßstab für Ihren Lebensstandard."
+      },
+      {
+        "question": "Warum kann mich ein höheres Gehalt schlechter dastehen lassen?",
+        "answer": "Ein höheres Bruttogehalt in einer teuren Gegend kann durch hohe Wohn-, Transport- und Steuerkosten aufgewogen werden. Nach diesen Ausgaben bleibt Ihnen möglicherweise weniger Geld übrig als jemandem, der an einem günstigeren Ort weniger verdient."
+      },
+      {
+        "question": "Wie vergleiche ich Gehälter zwischen zwei Städten oder Ländern?",
+        "answer": "Beginnen Sie mit Ihrem geschätzten Nettogehalt statt mit dem Brutto, ziehen Sie wichtige lokale Kosten wie Miete und Transport ab und vergleichen Sie dann das übrig gebliebene Geld. Das spiegelt die reale Kaufkraft wider statt der Schlagzeilenzahlen."
+      },
+      {
+        "question": "Beeinflusst die Inflation, was mein Gehalt wert ist?",
+        "answer": "Ja. Wenn die Preise schneller steigen als Ihr Gehalt, sinkt Ihre Kaufkraft, was bedeutet, dass dasselbe Gehalt im Laufe der Zeit weniger kauft. Die Inflationsraten ändern sich regelmäßig, sodass jede Zahl nur eine aktuelle Momentaufnahme ist."
+      }
+    ]
+  },
+  "freelance-vs-employee-income": {
+    "title": "Freiberuflich vs. Angestellt: So unterscheidet sich das Nettoeinkommen",
+    "description": "Das Nettoeinkommen von Freiberuflern und Angestellten unterscheidet sich stärker, als es die Stundensätze vermuten lassen. Erfahren Sie mehr über Sozialabgaben für Selbstständige, wegfallende Leistungen und wie Sie einen fairen Freelancer-Satz festlegen.",
+    "content": "# Freiberuflich vs. Angestellt: So unterscheidet sich das Nettoeinkommen\n\nWenn Sie von einer Festanstellung in die Freiberuflichkeit wechseln, können die Zahlen täuschen. Ein Stundensatz von 50 pro Stunde mag deutlich besser aussehen als ein Jahresgehalt von 60.000, doch die beiden lassen sich nicht direkt vergleichen. Freiberufler tragen Kosten, die Arbeitgeber normalerweise übernehmen. Bevor Sie einen höheren Bruttosatz feiern, hilft es zu verstehen, wohin das Geld tatsächlich fließt.\n\n## Warum ein Freelancer-Satz kein Gehalt ist\n\nEin Angestelltengehalt ist ein Komplettpaket. Ihr Arbeitgeber übernimmt einen Teil Ihrer Steuern, leistet in Ihrem Namen Beiträge zu Sozialprogrammen und gewährt bezahlten Urlaub. Ein Freelancer-Satz ist lediglich ein Preis für Ihre Arbeit, ohne dass etwas eingerechnet ist. Alles, was früher der Arbeitgeber abgedeckt hat, kommt nun aus Ihrer eigenen Tasche.\n\nUm die beiden fair zu vergleichen, sollten Sie über die Bruttozahl hinausschauen. Den Unterschied zwischen [Brutto- und Nettoeinkommen](/guides/gross-income-vs-net-income) zu kennen, ist der erste Schritt, denn Ihr tatsächlicher Verdienst ist das, was nach Steuern und Kosten auf Ihrem Konto landet.\n\n## Sie zahlen beide Hälften der Sozialabgaben\n\nAls Angestellter teilen Sie sich die Sozialabgaben mit Ihrem Arbeitgeber. Wenn Sie selbstständig werden, zahlen Sie in der Regel beide Seiten.\n\n- USA: Angestellte zahlen 7,65 Prozent für Social Security und Medicare, und der Arbeitgeber zahlt denselben Betrag dazu. Selbstständige zahlen die volle Self-Employment Tax von etwa 15,3 Prozent auf den Nettoverdienst.\n- Vereinigtes Königreich: Selbstständige zahlen National Insurance über Class 2 und Class 4, berechnet auf den Gewinn, statt der vom Arbeitgeber einbehaltenen Class-1-Rate für Angestellte.\n- Deutschland: Angestellte teilen sich die gesetzlichen Beiträge zur Kranken-, Renten- und Pflegeversicherung mit ihrem Arbeitgeber. Viele Freiberufler müssen ihre eigene Krankenversicherung organisieren und entscheiden, ob sie freiwillig in die gesetzliche Rentenversicherung einzahlen, wobei sie den vollen Betrag oft selbst tragen.\n\nDiese [Sozialversicherungsbeiträge](/guides/social-security-contributions-guide) werden leicht übersehen, wenn Sie einen Satz festlegen, doch sie können einen großen Teil Ihres Einkommens verschlingen.\n\n## Leistungen, die Sie nicht mehr bekommen\n\nArbeitgeber bieten mehr als nur einen Gehaltsscheck. Als Freiberufler fallen die folgenden Dinge typischerweise weg oder werden zu Ihrer eigenen Verantwortung:\n\n- Bezahlter Urlaub und Feiertagsvergütung\n- Bezahlte Krankheitstage\n- Arbeitgeberbeiträge zur Altersvorsorge oder deren Aufstockung\n- Krankenversicherung in einigen Ländern\n- Kündigungsfristen und Abfindungsschutz\n\nWenn Ihr alter Job 25 Tage bezahlten Urlaub bot, sind das Tage, an denen ein Freiberufler nichts verdient. Diese unbezahlte Zeit muss in Ihren Satz eingepreist werden.\n\n## Angestellter vs. Freiberufler auf einen Blick\n\n| Faktor | Angestellter | Freiberufler |\n| --- | --- | --- |\n| Sozialabgaben | Geteilt mit dem Arbeitgeber | Oft vollständig von Ihnen gezahlt |\n| Bezahlter Urlaub und Krankengeld | Meist enthalten | Keiner, sofern Sie ihn nicht selbst finanzieren |\n| Altersvorsorgebeiträge | Oft aufgestockt | Selbst finanziert |\n| Einkommensstabilität | Regelmäßiger Gehaltsscheck | Unregelmäßig, anfällig für Lücken |\n| Betriebsausgaben | Vom Arbeitgeber getragen | Absetzbar, aber von Ihnen zu zahlen |\n| Steuererklärung | Größtenteils automatisch | Ihre Verantwortung |\n\n## Betriebsausgaben und unregelmäßiges Einkommen\n\nFreiberufler zahlen oft für ihren eigenen Laptop, Software, Versicherungen, Buchhaltungshilfe und Arbeitsraum. Vieles davon ist steuerlich absetzbar, was den steuerpflichtigen Gewinn senkt, doch das Geld müssen Sie trotzdem zuerst aufbringen.\n\nAuch das Einkommen kommt ungleichmäßig herein. Auf einen starken Monat kann ein ruhiger folgen, daher brauchen Sie einen Puffer für magere Zeiten und für Steuerrechnungen, die auf einmal anfallen, statt automatisch abgezogen zu werden.\n\n## Einen Satz festlegen, der wirklich funktioniert\n\nEin nachhaltiger Freelancer-Satz berücksichtigt Zeit, die Sie nicht abrechnen können, und die Steuern, die Sie schulden. Eine grobe Herangehensweise:\n\n- Beginnen Sie mit dem jährlichen Einkommen, das Sie netto erhalten möchten.\n- Addieren Sie Ihre erwarteten Steuern und Sozialabgaben.\n- Addieren Sie Kosten für Leistungen, die Sie selbst finanzieren müssen, wie Altersvorsorge und Versicherung.\n- Teilen Sie durch realistische abrechenbare Stunden, nicht durch alle Arbeitsstunden. Urlaub, Krankheitstage, Verwaltung und die Kundengewinnung sind unbezahlt.\n\n### Ein kurzes Beispiel\n\nAngenommen, Sie möchten 60.000 netto erhalten. Nach rund 30 Prozent für Steuern und Abgaben sowie Ausgaben und nicht finanzierten Leistungen müssten Sie womöglich 90.000 oder mehr in Rechnung stellen. Verteilt auf, sagen wir, 1.400 abrechenbare Stunden im Jahr statt voller 2.080, ergibt das einen Satz, der weit über dem liegt, was die Umrechnung von Gehalt in Stunden vermuten lässt.\n\nDas Verständnis von [Nettoeinkommen](/guides/what-is-take-home-pay) auf beiden Seiten des Vergleichs hält Ihre Erwartungen realistisch.\n\n## Schätzen Sie, bevor Sie sich entscheiden\n\nSteuerregeln unterscheiden sich von Land zu Land und ändern sich jedes Jahr, daher betrachten Sie alle Zahlen hier als beispielhaft. Rechnen Sie Ihre eigenen Zahlen mit einem [Gehaltsrechner](/calculator) durch, um zu sehen, was ein Angestelltengehalt netto ungefähr einbringt, und arbeiten Sie sich dann zurück zu dem Freelancer-Satz, der dem entspricht. Wenn die Entscheidung von Bedeutung ist, ziehen Sie einen qualifizierten Steuerberater hinzu.\n\n## Abschließende Gedanken\n\nFreiberuflichkeit kann sich gut bezahlt machen, doch ein höherer Satz bedeutet nicht automatisch mehr Geld. Sobald Sie doppelte Sozialabgaben, wegfallende Leistungen, unbezahlte Zeit und Betriebskosten berücksichtigen, verschiebt sich der Vergleich. Schätzen Sie zuerst Ihr Nettoeinkommen auf beiden Wegen, und Sie verhandeln aus einer Position der Klarheit statt der Vermutung.",
+    "keywords": [
+      "Freiberufler vs. Angestellter Bezahlung",
+      "Nettoeinkommen Freiberufler",
+      "Sozialabgaben für Selbstständige",
+      "Freelancer-Satz festlegen",
+      "Einkommen Auftragnehmer vs. Angestellter",
+      "Netto-Einkommen Freiberufler"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Self-Employment Tax (Social Security and Medicare Taxes)",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "GOV.UK — Selbstständig arbeiten",
+        "url": "https://www.gov.uk/working-for-yourself"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Ist ein freiberuflicher Stundensatz dasselbe wie ein Stundenlohn als Angestellter?",
+        "answer": "Nein. Ein Angestelltenlohn umfasst arbeitgeberfinanzierte Beiträge, bezahlten Urlaub und Leistungen. Ein Freelancer-Satz muss all das selbst abdecken, daher muss er in der Regel merklich höher sein, um dasselbe Nettoeinkommen zu erreichen."
+      },
+      {
+        "question": "Warum zahlen Selbstständige mehr an Sozialabgaben?",
+        "answer": "Als Angestellter zahlt Ihr Arbeitgeber einen gleich hohen Anteil der Sozialabgaben. Als Selbstständiger tragen Sie in der Regel sowohl den Arbeitnehmer- als auch den Arbeitgeberanteil, etwa die rund 15,3 Prozent US-amerikanische Self-Employment Tax oder die britische National Insurance der Class 2 und Class 4."
+      },
+      {
+        "question": "Wie ermittle ich einen fairen Freelancer-Satz?",
+        "answer": "Beginnen Sie mit Ihrem gewünschten Nettoeinkommen, addieren Sie Steuern, Beiträge und selbst finanzierte Leistungen und teilen Sie dann durch realistische abrechenbare Stunden statt durch die gesamten Arbeitsstunden. Unbezahlte Zeit für Verwaltung, Urlaub und Kundengewinnung sollte einkalkuliert werden."
+      },
+      {
+        "question": "Können Betriebsausgaben meine Steuern als Freiberufler senken?",
+        "answer": "In vielen Ländern sind legitime Betriebskosten wie Ausstattung, Software und Versicherungen absetzbar und mindern Ihren steuerpflichtigen Gewinn. Sie zahlen sie dennoch zunächst selbst, und die Regeln unterscheiden sich von Land zu Land, prüfen Sie also lokale Vorgaben oder einen Steuerberater."
+      }
+    ]
+  }
+}

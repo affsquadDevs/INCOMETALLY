@@ -1,0 +1,14 @@
+{
+  "income-basics": {
+    "title": "Capire il tuo reddito",
+    "description": "Retribuzione lorda e netta, stipendio netto in busta paga e come convertire il reddito tra valori orari, mensili e annuali."
+  },
+  "income-tax": {
+    "title": "Come funziona l'imposta sul reddito",
+    "description": "Scaglioni fiscali, detrazioni, contributi previdenziali e come l'imposta sul reddito influisce sul tuo stipendio netto nei vari Paesi."
+  },
+  "salary-career": {
+    "title": "Stipendio, lavoro e pianificazione finanziaria",
+    "description": "Confronta il tuo stipendio con i parametri di riferimento, valuta le offerte di lavoro, considera il costo della vita e comprendi la differenza tra reddito da libero professionista e da dipendente."
+  }
+}

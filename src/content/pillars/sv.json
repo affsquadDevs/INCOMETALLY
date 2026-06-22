@@ -1,0 +1,14 @@
+{
+  "income-basics": {
+    "title": "Förstå din inkomst",
+    "description": "Bruttolön kontra nettolön, lön efter skatt och hur du räknar om inkomst mellan tim-, månads- och årssiffror."
+  },
+  "income-tax": {
+    "title": "Så fungerar inkomstskatt",
+    "description": "Skatteskikt, avdrag, sociala avgifter och hur inkomstskatten påverkar din lön efter skatt i olika länder."
+  },
+  "salary-career": {
+    "title": "Lön, jobb och ekonomisk planering",
+    "description": "Jämför din lön med marknaden, väg jobberbjudanden mot varandra, ta hänsyn till levnadskostnader och förstå skillnaden mellan inkomst som frilansare och anställd."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "income-basics": {
+    "title": "Compreender o seu rendimento",
+    "description": "Salário bruto versus líquido, rendimento disponível e como converter o rendimento entre valores à hora, mensais e anuais."
+  },
+  "income-tax": {
+    "title": "Como funciona o imposto sobre o rendimento",
+    "description": "Escalões de imposto, deduções, contribuições sociais e como o imposto sobre o rendimento influencia o seu rendimento líquido nos vários países."
+  },
+  "salary-career": {
+    "title": "Salário, emprego e planeamento financeiro",
+    "description": "Compare o seu salário com a referência do mercado, avalie ofertas de emprego, pondere o custo de vida e perceba a diferença entre rendimento como trabalhador independente e por conta de outrem."
+  }
+}

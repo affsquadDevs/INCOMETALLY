@@ -1,0 +1,666 @@
+{
+  "nav": {
+    "salaryCalculator": "Calculadora de salario",
+    "getStarted": "Empezar",
+    "aboutUs": "Acerca de nosotros",
+    "guides": "Guías",
+    "toggleMenu": "Alternar menú",
+    "selectLanguage": "Seleccionar idioma"
+  },
+  "footer": {
+    "productTitle": "Producto",
+    "legalTitle": "Legal",
+    "resourcesTitle": "Recursos",
+    "home": "Inicio",
+    "calculator": "Calculadora",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos del servicio",
+    "salaryCalculatorHub": "Centro de calculadoras de salario",
+    "hourlyToSalary": "De por hora a salario",
+    "guides": "Guías",
+    "disclaimerLabel": "Aviso:",
+    "disclaimer": "IncomeTally ofrece calculadoras de ingresos e impuestos solo con fines informativos. Los resultados son estimaciones y pueden no reflejar las obligaciones fiscales reales ni los resultados financieros. Este sitio web no ofrece asesoramiento financiero, fiscal ni legal. Consulta siempre a un profesional cualificado para obtener orientación personalizada.",
+    "rights": "Todos los derechos reservados."
+  },
+  "home": {
+    "about": {
+      "heading": "Qué hace IncomeTally",
+      "p1": "IncomeTally es una <calc>calculadora de salario neto</calc> gratuita y basada en el navegador que convierte un salario bruto en una estimación de tu salario neto, lo que realmente cobras. Introduces lo que ganas — por hora, al mes o al año —, eliges tu país y aplicamos los tramos del impuesto sobre la renta de 2026 de ese país y las cotizaciones sociales obligatorias para mostrarte lo que realmente llega a tu cuenta. Con JavaScript activado, el cálculo se ejecuta en tu navegador y tus cifras de ingresos no se envían a nuestros servidores; solo solicitamos tu país y el ejercicio fiscal para cargar los tipos correctos. No necesitas crear una cuenta.",
+      "p2": "La diferencia entre tu <gross>salario bruto y tu salario neto</gross> rara vez resulta evidente. Los sistemas tributarios progresivos aplican tipos más altos únicamente a la renta que supera el umbral de cada tramo, de modo que tu tipo marginal — el tipo sobre el último euro o dólar que ganas — es casi siempre superior a tu tipo efectivo, la parte de todo tu salario que se destina a impuestos. Además del impuesto sobre la renta, la mayoría de los países deducen <social>cotizaciones sociales</social> para pensiones, sanidad y desempleo. IncomeTally separa estos conceptos línea por línea, para que veas adónde va tu dinero y no solo el total final.",
+      "whoHeading": "Para quién es",
+      "whoBody": "Está pensada para empleados que quieren comprobar si su nómina cuadra, para quienes buscan trabajo y comparan dos ofertas en términos reales de salario neto, para autónomos que estiman cuánto deben reservar y para cualquiera que valore mudarse de país. Si alguna vez te has preguntado por qué una subida de sueldo se notó menos de lo que prometía la cifra principal, esta es la herramienta que te lo explica."
+    },
+    "calculators": {
+      "heading": "Calculadoras",
+      "intro": "Empieza con una herramienta general o ve directamente a tu país más abajo.",
+      "tools": [
+        {
+          "title": "Calculadora de salario neto",
+          "body": "Convierte cualquier salario bruto en una estimación de salario neto con un desglose completo de impuestos y cotizaciones.",
+          "cta": "Calcular salario neto →"
+        },
+        {
+          "title": "Centro de calculadoras salariales",
+          "body": "Parte de tu país y explora las normas fiscales, los tramos y las cotizaciones sociales de 2026.",
+          "cta": "Ver por país →"
+        },
+        {
+          "title": "De salario por hora a anual",
+          "body": "Convierte una tarifa por hora en ingresos semanales, mensuales y anuales, y después ve cuánto queda tras impuestos.",
+          "cta": "Convertir tarifa por hora →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Calculadoras de salario por país",
+      "subtitle": "Estimaciones para el ejercicio fiscal 2026 utilizando los tramos oficiales del impuesto sobre la renta y las cotizaciones sociales de cada país.",
+      "cardSuffix": "Calculadora de salario",
+      "cardMeta": "{currency} · ejercicio fiscal 2026",
+      "note": "La mayoría de las calculadoras te permiten configurar opciones como la situación de declaración o la región cuando proceden; las opciones disponibles varían según el país. Consulta la página de cada país para ver los datos que solicita y sus fuentes oficiales.",
+      "seeAll": "Ver todas las calculadoras →"
+    },
+    "faqHeading": "Preguntas frecuentes",
+    "faqs": [
+      {
+        "question": "¿Es gratis usar IncomeTally?",
+        "answer": "Sí. Todas las calculadoras y guías de IncomeTally son gratuitas y no necesitas crear una cuenta. Tus datos se procesan en tu navegador y no se almacenan en nuestros servidores."
+      },
+      {
+        "question": "¿Qué países y qué ejercicio fiscal cubre la calculadora?",
+        "answer": "IncomeTally cubre nueve países — Estados Unidos, Alemania, el Reino Unido, Polonia, Francia, España, Italia, Suecia y Portugal — aplicando las normas de 2026 sobre el impuesto sobre la renta y las cotizaciones sociales. El ejercicio fiscal aplicable se muestra en cada calculadora."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre salario bruto y salario neto?",
+        "answer": "El salario bruto es tu retribución total antes de cualquier deducción. El salario neto — lo que realmente cobras — es lo que queda tras restar el impuesto sobre la renta y las cotizaciones sociales obligatorias. IncomeTally muestra el desglose completo para que veas exactamente qué se deduce y por qué."
+      },
+      {
+        "question": "¿Hasta qué punto son precisos los resultados?",
+        "answer": "Las calculadoras utilizan los tramos, las reducciones y los tipos de cotización oficiales de 2026, pero son estimaciones. El salario neto real puede variar según las circunstancias personales, como reducciones adicionales, normas regionales, la situación de declaración, las prestaciones y deducciones puntuales. Toma los resultados como una estimación bien fundamentada, no como una declaración de la renta."
+      },
+      {
+        "question": "¿Puedo convertir entre salario por hora, mensual y anual?",
+        "answer": "Sí. Introduce tu retribución en cualquiera de esos periodos y la calculadora la convierte a todos ellos, y después muestra el equivalente neto. Nuestra herramienta De salario por hora a anual se centra específicamente en la conversión de salarios si es lo único que necesitas."
+      },
+      {
+        "question": "¿De dónde proceden vuestras cifras fiscales y ofrece IncomeTally asesoramiento financiero?",
+        "answer": "Nuestras cifras proceden de las autoridades tributarias y de seguridad social oficiales de cada país, como el IRS y la SSA, HMRC y el Bundesfinanzministerium alemán, y la página de cada país enlaza las fuentes concretas que utilizamos. IncomeTally es únicamente una herramienta informativa: no ofrece asesoramiento financiero, fiscal ni jurídico y no está afiliada a ningún gobierno ni autoridad tributaria. Para tomar decisiones sobre tus impuestos o tus finanzas, consulta a un profesional cualificado."
+      }
+    ],
+    "hero": {
+      "title": "Calculadora de salario neto gratuita",
+      "highlightWords": [
+        "salario",
+        "neto"
+      ],
+      "subtitle": "Introduce tu salario bruto y consulta una estimación de tu salario neto tras el impuesto sobre la renta y las cotizaciones sociales — para el ejercicio fiscal 2026 y en 9 países. Sin registro, y tus datos se quedan en tu navegador.",
+      "getStarted": "Empezar",
+      "browseGuides": "Explorar guías",
+      "trustLine": "Gratis · Sin registro · Tus datos se quedan en tu navegador."
+    },
+    "howItWorks": {
+      "heading": "Cómo funciona",
+      "steps": [
+        {
+          "title": "Elige tu país",
+          "body": "Selecciona uno de los nueve países disponibles para que la calculadora cargue los tramos fiscales, las reducciones y los tipos de cotización social correctos de 2026."
+        },
+        {
+          "title": "Introduce tu retribución",
+          "body": "Escribe tu salario bruto como cifra por hora, mensual o anual. La calculadora convierte entre los distintos periodos por ti, y puedes ajustar opciones como la situación de declaración o la región cuando proceden."
+        },
+        {
+          "title": "Consulta tu desglose",
+          "body": "Obtén la estimación de tu salario neto junto a un desglose línea por línea del impuesto sobre la renta y las cotizaciones sociales, además de tus tipos marginal y efectivo."
+        }
+      ],
+      "cta": "Abrir la calculadora"
+    },
+    "meta": {
+      "title": "Calculadora de salario neto — Salario neto tras impuestos en 9 países | IncomeTally",
+      "description": "Calcula tu salario neto tras el impuesto sobre la renta y las cotizaciones sociales. Gratis, sin registro y con estimaciones por país para el ejercicio fiscal 2026 en EE. UU., Alemania, Reino Unido, Polonia, Francia, España, Italia, Suecia y Portugal."
+    },
+    "pillarsSection": {
+      "heading": "Aprende cómo se calcula tu salario",
+      "intro": "Guías en lenguaje claro sobre ingresos, impuestos y planificación salarial — redactadas y revisadas internamente, con fuentes y fechas de última actualización.",
+      "viewAll": "Ver todas las guías →"
+    },
+    "trust": {
+      "badge": "Datos vigentes para el ejercicio fiscal 2026 · Última revisión en junio de 2026",
+      "heading": "De dónde proceden nuestras cifras",
+      "body": "Las calculadoras y guías de IncomeTally las mantiene el Equipo Editorial de IncomeTally. Construimos la lógica fiscal de cada país a partir de cifras públicas publicadas por las autoridades tributarias y de seguridad social oficiales, explicamos los conceptos en lenguaje claro con ejemplos resueltos y revisamos los datos frente a los tipos oficiales de cada año. La calculadora de cada país muestra sus fuentes concretas y el ejercicio fiscal que cubre.",
+      "standardsHeading": "Nuestros principios",
+      "standards": [
+        "Fuentes oficiales",
+        "Lenguaje claro",
+        "Revisado cada año",
+        "Estimaciones, no asesoramiento"
+      ],
+      "aboutLink": "Conoce quiénes somos y nuestros principios editoriales →",
+      "sourcesHeading": "Fuentes oficiales por país",
+      "sourcesNote": "La página de cada país enlaza las fuentes concretas que utilizamos para sus cifras.",
+      "disclaimerLabel": "Estimaciones, no asesoramiento.",
+      "disclaimer": "IncomeTally ofrece calculadoras de ingresos e impuestos con fines exclusivamente informativos y educativos. Los resultados son estimaciones y pueden no reflejar tus obligaciones fiscales reales ni tus resultados financieros. Este sitio web no está afiliado a ningún gobierno ni autoridad tributaria y no ofrece asesoramiento financiero, fiscal ni jurídico. Consulta siempre a un profesional cualificado para obtener orientación personalizada."
+    }
+  },
+  "common": {
+    "lastUpdated": "Última actualización:",
+    "backToHome": "Volver al inicio"
+  },
+  "country": {
+    "h1Suffix": "Calculadora de Impuestos sobre el Salario",
+    "allCalculators": "← Todas las calculadoras",
+    "hourlyConverter": "Conversor de salario por hora",
+    "otherCountries": "Otros países:",
+    "howItWorksHeading": "{country}: cómo funcionan los impuestos sobre el salario",
+    "faqHeading": "Preguntas frecuentes",
+    "relatedHeading": "Recursos relacionados",
+    "relatedHub": "Centro de calculadoras de salario",
+    "calculatorSuffix": "Calculadora de Salario"
+  },
+  "guides": {
+    "metaTitle": "Guías de salarios e impuestos - Artículos expertos sobre el cálculo de ingresos",
+    "metaDescription": "Guías completas sobre el cálculo de salarios, tramos impositivos, deducciones e ingresos netos. Aprende a calcular tu salario neto y a entender los sistemas fiscales.",
+    "title": "Guías de salarios e impuestos",
+    "intro": "Artículos expertos sobre el cálculo de salarios, sistemas fiscales, deducciones y cómo entender tu salario neto, organizados en tres pilares temáticos.",
+    "startHere": "Empieza aquí · Guía principal",
+    "published": "Publicado",
+    "updated": "Actualizado",
+    "by": "Por",
+    "faqHeading": "Preguntas frecuentes",
+    "sourcesHeading": "Fuentes y lecturas adicionales",
+    "aboutAuthorHeading": "Sobre el autor",
+    "editorialStandards": "Consulta nuestros estándares editoriales →",
+    "moreInPillar": "Más sobre {pillar}",
+    "relatedGeneric": "Guías relacionadas",
+    "tryCalculators": "Prueba las calculadoras",
+    "toc": "Índice de contenidos",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbGuides": "Guías",
+    "linkHub": "Centro de calculadoras de salario",
+    "linkNet": "Calculadora de salario neto",
+    "linkHourly": "Conversor de salario por hora a anual"
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Modo de ingresos",
+      "grossIncome": "Ingresos brutos",
+      "country": "País",
+      "taxYear": "Ejercicio fiscal",
+      "hoursPerWeek": "Horas por semana",
+      "weeksPerYear": "Semanas por año",
+      "calculateNetIncome": "Calcular ingresos netos",
+      "salaryPeriod": "Periodo salarial",
+      "salaryPeriodAria": "Selección de periodo salarial"
+    },
+    "mode": {
+      "hourly": "Por hora",
+      "monthly": "Mensual",
+      "yearly": "Anual"
+    },
+    "period": {
+      "hourly": "por hora",
+      "monthly": "mensual",
+      "annual": "anual"
+    },
+    "yesNo": {
+      "yes": "Sí",
+      "no": "No"
+    },
+    "country": {
+      "US": "Estados Unidos",
+      "USFederalOnly": "Estados Unidos (solo federal)",
+      "DE": "Alemania",
+      "UK": "Reino Unido",
+      "PL": "Polonia",
+      "FR": "Francia",
+      "ES": "España",
+      "IT": "Italia",
+      "SE": "Suecia",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Selecciona el país",
+      "helper": "Elige tu país para calcular los impuestos correspondientes"
+    },
+    "actions": {
+      "copyShareLink": "Copiar enlace para compartir",
+      "copied": "¡Copiado!",
+      "shareLinkPrefix": "Enlace para compartir:"
+    },
+    "status": {
+      "loading": "Cargando datos fiscales...",
+      "empty": "Introduce tus ingresos para ver los cálculos"
+    },
+    "validation": {
+      "incomePositive": "Los ingresos deben ser un número positivo",
+      "incomeMax": "Los ingresos no pueden superar {max} ({mode})",
+      "hoursMin": "Las horas deben ser como mínimo {min}",
+      "hoursMax": "Las horas no pueden superar {max}",
+      "weeksMin": "Las semanas deben ser como mínimo {min}",
+      "weeksMax": "Las semanas no pueden superar {max}"
+    },
+    "de": {
+      "taxClass": "Clase fiscal",
+      "healthInsurance": "Seguro médico",
+      "privateNoteLabel": "Nota:",
+      "privateNoteBody": "El seguro médico privado se paga por separado y no se descuenta de tu salario. Los ingresos netos que se muestran arriba no incluyen los costes del seguro privado, que pagas directamente a tu aseguradora.",
+      "state": "Tu estado",
+      "inChurch": "¿Miembro de la Iglesia?",
+      "churchAria": "Selección de pertenencia a la Iglesia",
+      "haveChildren": "¿Tienes hijos?",
+      "childrenAria": "Selección de hijos",
+      "childrenNote": "Se usa para el seguro de dependencia (Pflegeversicherung). Para 2026 esto significa: con hijos ~1,80 % de la parte del empleado (en la mayoría de los estados), sin hijos ~2,40 % (incluye el recargo por no tener hijos). Sajonia aplica un reparto distinto."
+    },
+    "us": {
+      "filingStatus": "Situación de declaración",
+      "employmentType": "Tipo de empleo",
+      "deductionMethod": "Método de deducción",
+      "itemizedDeductions": "Deducciones detalladas",
+      "childrenUnder17": "Hijos (menores de 17)",
+      "otherDependents": "Otros dependientes",
+      "taxpayerOver65": "Contribuyente de 65+",
+      "taxpayerBlind": "Contribuyente invidente",
+      "spouseOver65": "Cónyuge de 65+",
+      "spouseBlind": "Cónyuge invidente",
+      "preTax401k": "401(k) / jubilación antes de impuestos",
+      "preTaxHSA": "HSA antes de impuestos",
+      "otherPreTax": "Otras deducciones antes de impuestos",
+      "stateTaxRate": "Tipo impositivo estatal (estimación, %)",
+      "localTaxRate": "Tipo impositivo local (estimación, %)"
+    },
+    "uk": {
+      "region": "Región",
+      "preTaxPension": "Aportaciones a pensiones antes de impuestos",
+      "preTaxOther": "Otras deducciones antes de impuestos",
+      "studentLoanPlan": "Plan de préstamo estudiantil",
+      "studentLoanNote": "Nota: el plan depende de dónde y cuándo estudiaste, no de dónde trabajas.",
+      "marriageAllowance": "¿Asignación matrimonial (Marriage Allowance)?",
+      "marriageAllowanceAria": "Selección de asignación matrimonial",
+      "marriageAllowanceNote": "Para un contribuyente de tipo básico cuyo cónyuge/pareja de hecho no tributa (desgravación de hasta 252 £).",
+      "children": "Hijos (para el cargo por Child Benefit)",
+      "childrenNote": "Se usa para el High Income Child Benefit Charge (se aplica a ingresos superiores a 60.000 £)."
+    },
+    "pl": {
+      "filingStatus": "Situación de declaración",
+      "children": "Hijos (para la desgravación por hijos)",
+      "preTax": "Aportaciones deducibles de impuestos (p. ej. IKZE,",
+      "under26": "¿Desgravación para jóvenes (menores de 26)?",
+      "under26Aria": "Selección de desgravación para menores de 26",
+      "under26Note": "Exime del impuesto sobre la renta los ingresos laborales hasta 85.528 PLN (ZUS y sanidad siguen aplicándose)."
+    },
+    "pt": {
+      "region": "Región",
+      "filingStatus": "Situación de declaración",
+      "dependants": "Dependientes"
+    },
+    "se": {
+      "municipality": "Municipio",
+      "customRate": "Tipo impositivo municipal (%)",
+      "churchMember": "¿Miembro de la Iglesia de Suecia?",
+      "churchAria": "Selección de pertenencia a la Iglesia",
+      "churchNote": "Añade la tasa eclesiástica (kyrkoavgift). El impuesto sobre la renta ya refleja la deducción básica y el crédito jobbskatteavdrag (menores de 66)."
+    },
+    "it": {
+      "region": "Región (recargo regional)",
+      "customRegionalRate": "Tipo del recargo regional (%)",
+      "municipalRate": "Tipo del recargo municipal (%)",
+      "dependentChildren": "Hijos a cargo (de 21 a 29 años)",
+      "dependentChildrenNote": "Los hijos menores de 21 años están cubiertos por el Assegno Unico (no por nómina). Los recargos regionales y municipales varían según la localidad.",
+      "dependentSpouse": "¿Cónyuge a cargo (coniuge a carico)?",
+      "dependentSpouseAria": "Selección de cónyuge a cargo",
+      "dependentSpouseNote": "Un cónyuge con pocos ingresos o sin ellos (coniuge a carico) da derecho a un crédito fiscal de hasta 800 €."
+    },
+    "es": {
+      "community": "Comunidad autónoma",
+      "filingStatus": "Situación de declaración",
+      "children": "Hijos (descendientes a cargo)",
+      "childrenNote": "Los tipos autonómicos varían según la comunidad; País Vasco y Navarra utilizan sistemas forales distintos que no se contemplan aquí."
+    },
+    "fr": {
+      "household": "Unidad familiar",
+      "children": "Hijos a cargo",
+      "childrenNote": "Añade partes del cociente familiar (+0,5 por cada uno de los dos primeros hijos, +1 a partir del tercero), con el beneficio limitado (plafonnement). Estimación para una unidad familiar de un solo perceptor."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Soltero/a, sin hijos",
+        "2": "Familia monoparental",
+        "3": "Casado/a (mayor ingreso que la pareja)",
+        "4": "Casado/a (ingresos iguales)",
+        "5": "Casado/a (menor ingreso que la pareja)",
+        "6": "Ingresos secundarios y adicionales"
+      },
+      "deHealthInsurance": {
+        "public": "Público / obligatorio (GKV)",
+        "private-without": "Privado (sin aportación del empleador)",
+        "private-with": "Privado (con aportación del empleador)"
+      },
+      "usFilingStatus": {
+        "single": "Soltero/a",
+        "mfj": "Casados declarando conjuntamente",
+        "mfs": "Casados declarando por separado",
+        "hoh": "Cabeza de familia"
+      },
+      "usEmploymentType": {
+        "employee": "Empleado (W-2)",
+        "selfEmployed": "Autónomo (estimación del impuesto SE)"
+      },
+      "usDeductionMethod": {
+        "auto": "Automático (máximo entre estándar y detallada)",
+        "standard": "Deducción estándar",
+        "itemized": "Deducciones detalladas"
+      },
+      "ukRegion": {
+        "england": "Inglaterra",
+        "wales": "Gales",
+        "ni": "Irlanda del Norte",
+        "scotland": "Escocia (aún no disponible)"
+      },
+      "ukStudentLoan": {
+        "none": "Ninguno",
+        "plan2": "Plan 2 (9 % sobre {threshold} £)",
+        "plan4": "Plan 4 (9 % sobre {threshold} £)",
+        "plan5": "Plan 5 (9 % sobre {threshold} £)"
+      },
+      "plFilingStatus": {
+        "single": "Individual",
+        "joint": "Casado/a — declaración conjunta (único perceptor)"
+      },
+      "ptRegion": {
+        "mainland": "Continente",
+        "azores": "Azores (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Individual",
+        "joint": "Casado/a — tributación conjunta (único perceptor)"
+      },
+      "esFilingStatus": {
+        "single": "Individual",
+        "joint": "Declaración conjunta"
+      },
+      "frFilingStatus": {
+        "single": "Soltero/a (1 parte)",
+        "married": "Casado/a / PACS — conjunta (2 partes)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Seguro médico",
+      "longTermCareInsurance": "Seguro de dependencia",
+      "pensionInsurance": "Seguro de pensiones",
+      "unemploymentInsurance": "Seguro de desempleo",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Impuesto adicional de Medicare",
+      "seTaxSocialSecurity": "Impuesto de autónomos (Social Security)",
+      "seTaxMedicare": "Impuesto de autónomos (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (Clase 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (Clase 1, superior)",
+      "plPension": "Seguro de pensiones (Emerytalne)",
+      "plDisability": "Seguro de invalidez (Rentowe)",
+      "plSickness": "Seguro de enfermedad (Chorobowe)",
+      "plHealth": "Seguro de salud (Zdrowotne)",
+      "ptSocialSecurity": "Seguridad Social (Segurança Social)",
+      "seChurchFee": "Tasa eclesiástica (kyrkoavgift)",
+      "itInps": "Aportación a la pensión INPS",
+      "itRegionalMunicipalSurtax": "Recargo regional y municipal (addizionali)",
+      "esCommonContingencies": "Contingencias comunes (Seguridad Social)",
+      "esMei": "Cotización de solidaridad MEI",
+      "esTraining": "Formación profesional",
+      "esUnemployment": "Desempleo",
+      "esSocialSecurity": "Seguridad Social",
+      "frCsgDeductible": "CSG (deducible)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (no deducible)",
+      "frSocialSecurityPension": "Cotizaciones a la seguridad social y a las pensiones",
+      "frPension": "Pensión (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Resultados del cálculo",
+      "netIncome": "Ingresos netos",
+      "netHourly": "Neto por hora",
+      "netHourlyAfterSacrifice": "Neto por hora (tras el sacrificio salarial)",
+      "netMonthly": "Neto mensual",
+      "netYearly": "Neto anual",
+      "effectiveTaxRate": "Tipo impositivo efectivo",
+      "taxAndNiRate": "Tipo de impuestos y NI",
+      "salarySacrificeRate": "Tasa de sacrificio salarial",
+      "totalNonCashShare": "Parte total no dineraria",
+      "breakdown": "Desglose",
+      "grossIncome": "Ingresos brutos",
+      "preTaxDeductionsEntered": "Deducciones antes de impuestos (introducidas)",
+      "preTaxDeductionsAppliedCapped": "Deducciones antes de impuestos (aplicadas, con límite)",
+      "preTaxDeductions": "Deducciones antes de impuestos",
+      "adjustedGrossIncome": "Ingresos brutos ajustados (AGI)",
+      "salarySacrifice": "Sacrificio salarial (pensión y antes de impuestos)",
+      "adjustedIncomeAfterSacrifice": "Ingresos ajustados (tras el sacrificio salarial)",
+      "preTaxContributions": "Aportaciones antes de impuestos",
+      "standardDeduction": "Deducción estándar",
+      "itemizedDeduction": "Deducción detallada",
+      "allowances": "Desgravaciones",
+      "taxableIncome": "Base imponible",
+      "incomeTax": "Impuesto sobre la renta",
+      "incomeTaxDE": "Impuesto sobre la renta total (ESt + Soli + Iglesia)",
+      "incomeTaxUS": "Impuesto sobre la renta (federal + estatal + local)",
+      "studentLoan": "Préstamo estudiantil",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Asignación matrimonial (desgravación)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Recargo de solidaridad (Soli)",
+      "churchTax": "Impuesto eclesiástico (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Impuesto federal sobre la renta (antes de créditos)",
+      "taxCreditsApplied": "Créditos fiscales (aplicados)",
+      "federalIncomeTaxAfterCredits": "Impuesto federal sobre la renta (tras créditos)",
+      "stateIncomeTax": "Impuesto estatal sobre la renta (estimación)",
+      "localIncomeTax": "Impuesto local sobre la renta (estimación)",
+      "saxonySplit": "(reparto de Sajonia)",
+      "cappedOn": "sobre",
+      "totalSocialContributions": "Total de cotizaciones sociales",
+      "taxesAndNi": "Impuestos y NI",
+      "cashInHand": "Dinero en mano"
+    },
+    "example": {
+      "heading": "Ejemplo de cálculo",
+      "perHour": "por hora",
+      "perMonth": "al mes",
+      "perYear": "al año",
+      "netIncomeAnnual": "Ingresos netos (anuales)",
+      "basedOnPrefix": "Basado en",
+      "hourlyNote": "({hours} horas/semana, {weeks} semanas/año)",
+      "monthlyNote": "(12 meses/año)",
+      "forTaxYear": "para el ejercicio fiscal {year}."
+    },
+    "disclaimer": {
+      "title": "Aviso sobre la estimación fiscal",
+      "noteLabel": "Nota:",
+      "us": "Estos cálculos son estimaciones basadas únicamente en los tipos del impuesto federal. Los impuestos estatales y locales no están incluidos y pueden afectar significativamente a tu carga fiscal total.",
+      "default": "Estos cálculos son estimaciones y pueden no incluir impuestos locales o regionales. Consulta las fuentes oficiales o a un profesional fiscal para obtener cifras exactas."
+    },
+    "dataSources": {
+      "heading": "Fuentes de datos",
+      "intro": "Nuestras estimaciones para {country} se basan en cifras de acceso público procedentes de fuentes oficiales del gobierno y de las autoridades fiscales. Los tipos y umbrales cambian cada ejercicio fiscal, por lo que los revisamos periódicamente. Estos resultados son estimaciones, no liquidaciones fiscales oficiales ni asesoramiento.",
+      "editorialPrefix": "Consulta nuestras",
+      "editorialLink": "normas editoriales",
+      "editorialSuffix": "para saber cómo investigamos y actualizamos estos datos."
+    }
+  },
+  "hub": {
+    "metaTitle": "Centro de calculadoras de impuestos sobre el salario - Calcula tu sueldo neto por país",
+    "metaDescription": "Calculadoras gratuitas de impuestos sobre el salario para varios países. Calcula tu sueldo neto después de impuestos y cotizaciones sociales en EE. UU., Alemania, Reino Unido y más.",
+    "title": "Centro de calculadoras de impuestos sobre el salario",
+    "intro1": "Calcula tu sueldo neto después de impuestos y cotizaciones sociales. Nuestras calculadoras gratuitas te ayudan a entender cuánto te llevarás a casa en distintos países, con desgloses detallados del impuesto sobre la renta, las cotizaciones a la seguridad social y otras deducciones.",
+    "intro2": "Selecciona un país a continuación para empezar, o elige el modo de cálculo que mejor se adapte a tus necesidades.",
+    "byCountryHeading": "Calcular por país",
+    "calculateCta": "Calcular →",
+    "hourlyTitle": "Calculadora de ingresos por hora",
+    "monthlyTitle": "Calculadora de salario mensual",
+    "yearlyTitle": "Calculadora de salario anual",
+    "chooseModeHeading": "Elige el modo de cálculo",
+    "converterTitle": "Conversor de salario por hora a anual",
+    "converterBody": "Convierte tu salario por hora en sueldo anual, mensual y semanal. Ideal para entender tu retribución total al negociar o comparar ofertas de trabajo.",
+    "converterCta": "Convertir tarifa por hora →",
+    "hourlyBody": "Calcula tu sueldo neto cuando conoces tu tarifa por hora. Incluye opciones para personalizar las horas por semana y las semanas por año según tu jornada laboral.",
+    "hourlyCta": "Calcular por hora →",
+    "monthlyBody": "Calcula tu sueldo neto mensual después de impuestos. Ideal para planificar tu presupuesto y entender cuánto te llevas a casa cada mes.",
+    "monthlyCta": "Calcular mensual →",
+    "yearlyBody": "Calcula tu sueldo neto anual a partir de tu salario bruto anual. Consulta el desglose completo de impuestos y deducciones de todo el año.",
+    "yearlyCta": "Calcular anual →",
+    "faqHeading": "Preguntas frecuentes"
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Calculadora de salario e impuestos — Estima tu sueldo neto",
+      "description": "Calculadora gratuita de impuestos sobre el salario. Introduce tu salario bruto para estimar el sueldo neto, el impuesto sobre la renta y las cotizaciones sociales en EE. UU., Alemania y el Reino Unido en 2026.",
+      "ogDescription": "Calculadora gratuita de impuestos sobre el salario. Estima el sueldo neto, el impuesto sobre la renta y las cotizaciones sociales en EE. UU., Alemania y el Reino Unido."
+    },
+    "title": "Calculadora de salario e impuestos",
+    "intro": "Estima tu sueldo neto (lo que te llevas a casa) después del impuesto sobre la renta y las cotizaciones sociales. Introduce tu salario bruto, elige tu país y periodo de pago, y obtén un desglose instantáneo para el ejercicio fiscal de 2026.",
+    "howItWorks": {
+      "heading": "Cómo funciona la calculadora",
+      "p1": "Nuestra calculadora convierte tu salario bruto en una estimación de tu sueldo neto usando los tramos impositivos y las tasas de cotización social actualizados de cada país compatible. Puedes introducir los ingresos como tarifa por hora, salario mensual o cifra anual, y la calculadora los anualiza antes de aplicar las normas fiscales correspondientes.",
+      "p2": "El desglose separa el impuesto sobre la renta de las cotizaciones sociales —como la Social Security y Medicare en Estados Unidos, las cotizaciones obligatorias a los seguros en Alemania y el National Insurance en el Reino Unido— para que veas exactamente adónde va tu dinero y cuál es tu tipo impositivo efectivo.",
+      "p3": "Los resultados son estimaciones con fines meramente informativos y de planificación, y no contemplan todas las circunstancias individuales, como los impuestos estatales y locales, las deducciones fiscales o las retribuciones en especie. Para asesoramiento específico sobre tu situación, consulta a un profesional fiscal cualificado."
+    },
+    "related": {
+      "heading": "Explora calculadoras específicas por país",
+      "hub": "Centro de calculadoras de salario",
+      "us": "Calculadora de salario de Estados Unidos",
+      "de": "Calculadora de salario de Alemania",
+      "uk": "Calculadora de salario del Reino Unido",
+      "hourly": "Conversor de salario por hora a anual",
+      "guides": "Guías de salario e impuestos"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Calculadora de sueldo neto - Calcula lo que te llevas a casa",
+      "description": "Calculadora gratuita de sueldo neto. Calcula lo que te llevas a casa después del impuesto sobre la renta y las cotizaciones sociales en EE. UU., Alemania y el Reino Unido."
+    },
+    "title": "Calculadora de sueldo neto",
+    "intro": "Calcula tu sueldo neto (lo que te llevas a casa) después de impuestos y cotizaciones sociales. Nuestra completa calculadora de salario te ayuda a entender exactamente cuánto recibirás tras todas las deducciones.",
+    "cta": "Ir al centro de calculadoras de salario →",
+    "breakdownIntro": "Nuestra calculadora de salario ofrece desgloses detallados de:",
+    "breakdown": {
+      "gross": "Salario bruto (antes de impuestos)",
+      "incomeTax": "Cálculos del impuesto sobre la renta",
+      "social": "Cotizaciones a la seguridad social",
+      "net": "Sueldo neto (lo que te llevas a casa)",
+      "effectiveRate": "Tipos impositivos efectivos"
+    },
+    "availability": "Disponible para varios países, incluidos Estados Unidos, Alemania y el Reino Unido. Selecciona tu país para empezar con cálculos fiscales precisos y actualizados para 2026.",
+    "specialized": "También puedes acceder a nuestras calculadoras especializadas:",
+    "links": {
+      "hourly": "Conversor de salario por hora a anual",
+      "us": "Calculadora de EE. UU.",
+      "de": "Calculadora de Alemania",
+      "uk": "Calculadora del Reino Unido"
+    },
+    "explainer": {
+      "heading": "¿Qué es el sueldo neto?",
+      "p1": "Tu <b>sueldo neto</b> —a menudo llamado lo que te llevas a casa— es la cantidad que realmente llega a tu cuenta bancaria una vez restadas las deducciones obligatorias de tu salario bruto. El salario bruto es la cifra principal de tu contrato laboral; el sueldo neto es lo que puedes presupuestar y gastar.",
+      "p2": "La diferencia entre ambos la forman el <b>impuesto sobre la renta</b> y las <b>cotizaciones sociales</b>. El impuesto sobre la renta suele ser progresivo, lo que significa que las partes más altas de tus ingresos tributan a tipos más elevados. Las cotizaciones sociales financian programas como las pensiones públicas, la sanidad y el seguro de desempleo, y los tipos exactos dependen de dónde vivas.",
+      "p3": "Como cada país calcula estas deducciones de forma diferente, el mismo salario bruto puede dar lugar a un sueldo neto muy distinto en Estados Unidos, Alemania o el Reino Unido. Elige tu país arriba para ver un desglose detallado y específico de cada país para el ejercicio fiscal de 2026."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Conversor de salario por hora a anual - Calcula ingresos anuales, mensuales y semanales",
+      "description": "Convierte el salario por hora en sueldo anual, mensual y semanal. Calculadora gratuita con fórmulas y ejemplos. Ideal para negociaciones salariales y comparaciones de sueldos.",
+      "ogDescription": "Convierte el salario por hora en sueldo anual, mensual y semanal. Calculadora gratuita con fórmulas y ejemplos."
+    },
+    "title": "Conversor de salario por hora a anual",
+    "intro": "Convierte tu salario por hora en sueldo anual, mensual, semanal y diario. Entiende tu retribución total al negociar ofertas de trabajo o comparar puestos.",
+    "calc": {
+      "heading": "Calcula tu sueldo neto",
+      "intro": "Introduce tu tarifa por hora a continuación para calcular tu salario bruto y neto. La calculadora está configurada en modo por hora y mostrará lo que te llevas a casa después de impuestos."
+    },
+    "formulas": {
+      "heading": "Fórmulas de conversión",
+      "annual": {
+        "title": "Salario anual a partir de la tarifa por hora",
+        "code": "Salario anual = Tarifa por hora × Horas por semana × Semanas por año",
+        "note": "Cálculo estándar: multiplica tu tarifa por hora por 40 horas a la semana y 52 semanas al año."
+      },
+      "monthly": {
+        "title": "Salario mensual",
+        "code": "Salario mensual = Salario anual ÷ 12",
+        "note": "Divide el salario anual entre 12 meses. Nota: esto da una cantidad mensual media; el pago mensual real puede variar si se cobra cada dos semanas o quincenalmente."
+      },
+      "weekly": {
+        "title": "Salario semanal",
+        "code": "Salario semanal = Tarifa por hora × Horas por semana",
+        "note": "Simplemente multiplica tu tarifa por hora por el número de horas que trabajas a la semana."
+      },
+      "daily": {
+        "title": "Salario diario",
+        "code": "Salario diario = Tarifa por hora × Horas por día",
+        "note": "Para una jornada laboral de 8 horas, multiplica tu tarifa por hora por 8."
+      },
+      "grossNote": "<b>Nota:</b> estas fórmulas calculan el salario bruto (antes de impuestos). Usa la calculadora de abajo para ver tu sueldo neto (lo que te llevas a casa) después de impuestos y deducciones."
+    },
+    "examples": {
+      "heading": "Ejemplos",
+      "annualGross": "Bruto anual:",
+      "monthlyGross": "Bruto mensual:",
+      "weeklyGross": "Bruto semanal:",
+      "dailyGross": "Bruto diario",
+      "ex1": {
+        "title": "Ejemplo 1: 25 $ por hora, 40 horas/semana, 52 semanas/año",
+        "annual": "<b>Bruto anual:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Bruto mensual:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Bruto semanal:</b> $25 × 40 = $1,000",
+        "daily": "<b>Bruto diario (8 horas):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Ejemplo 2: 30 $ por hora, 35 horas/semana, 50 semanas/año",
+        "annual": "<b>Bruto anual:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Bruto mensual:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Bruto semanal:</b> $30 × 35 = $1,050",
+        "daily": "<b>Bruto diario (7 horas):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Ejemplo 3: 20 $ por hora, 40 horas/semana, 48 semanas/año (con 4 semanas de permiso no retribuido)",
+        "annual": "<b>Bruto anual:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Bruto mensual:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Bruto semanal:</b> $20 × 40 = $800",
+        "note": "Nota: ajustar las semanas por año tiene en cuenta el permiso no retribuido, las vacaciones o el trabajo de temporada."
+      }
+    },
+    "faq": {
+      "heading": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Cuál es la diferencia entre el salario bruto y el neto?",
+          "answer": "El salario bruto son tus ingresos totales antes de impuestos y deducciones. El sueldo neto (lo que te llevas a casa) es lo que recibes una vez restados el impuesto sobre la renta, la seguridad social y otras deducciones obligatorias. La calculadora de arriba muestra tanto el importe bruto como el neto."
+        },
+        {
+          "question": "¿Cuántas semanas debo usar en el cálculo?",
+          "answer": "Lo estándar son 52 semanas al año para los empleados a tiempo completo. Sin embargo, si tienes permisos no retribuidos, trabajas por temporadas o disfrutas de una excedencia prolongada, ajústalo en consecuencia. Por ejemplo, 2 semanas de vacaciones no retribuidas supondrían 50 semanas al año."
+        },
+        {
+          "question": "¿Debo incluir las horas extra en mi tarifa por hora?",
+          "answer": "Para calcular el salario anual con precisión, usa tu tarifa por hora base y tus horas estándar. Si haces horas extra con regularidad, puedes: (1) calcular el salario base por separado y sumar las horas extra estimadas, o (2) usar una tarifa por hora media que tenga en cuenta las horas extra. La calculadora te permite ajustar las horas por semana para reflejar tu jornada real."
+        },
+        {
+          "question": "¿Cómo convierto el salario de nuevo en tarifa por hora?",
+          "answer": "Para convertir el salario anual en tarifa por hora: Tarifa por hora = Salario anual ÷ (Horas por semana × Semanas por año). Por ejemplo, $52,000 ÷ (40 × 52) = $25 por hora. Usa nuestra calculadora a la inversa introduciendo tu salario anual y seleccionando el modo anual."
+        }
+      ],
+      "countriesQuestion": "¿Son precisos estos cálculos para todos los países?",
+      "countriesAnswer": "Las fórmulas de conversión (de por hora a anual, mensual, etc.) son universales. Sin embargo, los cálculos del sueldo neto varían según el país debido a los distintos sistemas fiscales. Usa las calculadoras específicas por país de nuestro <link>Centro de calculadoras de salario</link> para obtener estimaciones precisas del sueldo neto.",
+      "partTimeQuestion": "¿Y si trabajo a tiempo parcial o tengo un horario irregular?",
+      "partTimeAnswer": "Para el trabajo a tiempo parcial, introduce tus horas reales por semana. Para horarios irregulares, calcula una media de horas semanales a lo largo de un periodo más largo (por ejemplo, de 3 a 6 meses) y úsala. La calculadora permite personalizar las horas por semana y las semanas por año para adaptarse a cualquier jornada laboral."
+    },
+    "related": {
+      "heading": "Recursos relacionados",
+      "hub": "Centro de calculadoras de salario",
+      "us": "Calculadora de salario de EE. UU.",
+      "de": "Calculadora de salario de Alemania",
+      "uk": "Calculadora de salario del Reino Unido"
+    }
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "how-to-calculate-net-salary": {
+    "title": "Cómo calcular el salario neto: una guía completa",
+    "description": "Aprende a calcular tu salario neto a partir de los ingresos brutos. Comprende las deducciones, los impuestos y el cálculo del sueldo neto para presupuestar con precisión.",
+    "content": "# Cómo calcular el salario neto: una guía completa\n\nCalcular tu salario neto es esencial para entender cuál es tu sueldo neto real. Esta guía explica el proceso paso a paso.\n\n## Diferencia entre salario bruto y salario neto\n\nEl **salario bruto** son tus ingresos totales antes de cualquier deducción. Es la cantidad acordada en tu contrato de trabajo.\n\nEl **salario neto** (también llamado sueldo neto) es lo que recibes después de todas las deducciones, entre ellas:\n- El impuesto sobre la renta\n- Las cotizaciones a la seguridad social\n- El seguro médico\n- Otras deducciones obligatorias\n\n## Cálculo paso a paso\n\n### Paso 1: determina tus ingresos brutos\n\nEmpieza por tus ingresos brutos anuales, mensuales o por hora. Este es tu punto de partida.\n\n### Paso 2: calcula la base imponible\n\nResta cualquier reducción o deducción de tus ingresos brutos:\n- La reducción estándar o el mínimo personal\n- Las aportaciones antes de impuestos (401(k), primas del seguro médico)\n\n### Paso 3: aplica el impuesto sobre la renta\n\nCalcula el impuesto sobre la renta según los tramos impositivos progresivos. Las distintas porciones de tus ingresos tributan a tipos diferentes.\n\n### Paso 4: resta las cotizaciones a la seguridad social\n\nDeduce las cotizaciones a la seguridad social, que varían según el país:\n- **EE. UU.**: Social Security (6,2 %) y Medicare (1,45 %)\n- **Alemania**: seguros de salud, pensiones, desempleo y dependencia de larga duración\n- **Reino Unido**: cotizaciones a National Insurance\n\n### Paso 5: calcula los ingresos netos\n\nIngresos netos = Ingresos brutos − Impuesto sobre la renta − Cotizaciones a la seguridad social\n\n## Cómo usar nuestra calculadora\n\nNuestra calculadora de salario automatiza este proceso. Solo tienes que introducir tus ingresos brutos, seleccionar tu país y obtener al instante una estimación de tus ingresos netos.\n\n## Notas importantes\n\n- Estos cálculos son estimaciones basadas en escenarios estándar\n- El sueldo neto real puede variar según las circunstancias individuales\n- Consulta a un asesor fiscal para recibir asesoramiento personalizado",
+    "keywords": [
+      "salario neto",
+      "sueldo neto",
+      "cálculo del salario",
+      "bruto frente a neto",
+      "deducciones fiscales"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "¿Cuál es la diferencia entre salario bruto y salario neto?",
+        "answer": "El salario bruto son tus ingresos totales antes de las deducciones. El salario neto es tu sueldo neto después de restar el impuesto sobre la renta, la seguridad social y otras deducciones obligatorias."
+      },
+      {
+        "question": "¿Hasta qué punto son precisos los cálculos del salario neto?",
+        "answer": "Nuestros cálculos son estimaciones basadas en los tipos impositivos y tramos estándar. El sueldo neto real puede variar según las circunstancias individuales, las deducciones, los créditos y los impuestos locales."
+      },
+      {
+        "question": "¿Puedo calcular el salario neto para diferentes modalidades de ingresos?",
+        "answer": "Sí, puedes calcular el salario neto a partir de ingresos brutos por hora, mensuales o anuales. La calculadora anualizará tus ingresos y aplicará los cálculos fiscales correspondientes."
+      }
+    ]
+  },
+  "understanding-tax-brackets": {
+    "title": "Cómo entender los tramos fiscales: cómo funciona la fiscalidad progresiva",
+    "description": "Descubre cómo funcionan los tramos del impuesto progresivo y cómo afectan a tu salario neto. Comprende la diferencia entre el tipo impositivo marginal y el efectivo.",
+    "content": "# Cómo entender los tramos fiscales: cómo funciona la fiscalidad progresiva\n\nLos tramos fiscales son una parte fundamental de los sistemas del impuesto sobre la renta en la mayoría de los países. Esta guía explica cómo funcionan.\n\n## ¿Qué son los tramos fiscales?\n\nLos tramos fiscales son rangos de renta que tributan a tipos diferentes. A medida que aumentan tus ingresos, las distintas porciones tributan a tipos progresivamente más altos.\n\n## Cómo funciona la fiscalidad progresiva\n\nEn un sistema fiscal progresivo:\n- La renta más baja tributa a tipos más bajos\n- La renta más alta tributa a tipos más altos\n- Solo la renta dentro de cada tramo tributa al tipo de ese tramo\n\n## Ejemplo de cálculo\n\nSi ganas 75.000 $ y los tramos son:\n- 10 % sobre la renta hasta 10.000 $\n- 20 % sobre la renta de 10.001 $ a 40.000 $\n- 30 % sobre la renta por encima de 40.000 $\n\nTu impuesto sería:\n- 10.000 $ × 10 % = 1.000 $\n- 30.000 $ × 20 % = 6.000 $\n- 35.000 $ × 30 % = 10.500 $\n- Total: 17.500 $\n\n## Tipo impositivo marginal frente al efectivo\n\nEl **tipo impositivo marginal** es el tipo aplicado a tu tramo de renta más alto (30 % en el ejemplo anterior).\n\nEl **tipo impositivo efectivo** es el impuesto total dividido entre la renta total (17.500 $ ÷ 75.000 $ = 23,3 % en el ejemplo).\n\n## Información específica por país\n\nLos tramos fiscales varían según el país:\n- **EE. UU.**: 7 tramos federales, del 10 % al 37 %\n- **Alemania**: tipos progresivos del 14 % al 45 %\n- **Reino Unido**: tipo básico (20 %), tipo superior (40 %), tipo adicional (45 %)\n\nUsa nuestras calculadoras específicas por país para ver cómo se aplican los tramos a tu renta.",
+    "keywords": [
+      "tramos fiscales",
+      "impuesto progresivo",
+      "tipo impositivo marginal",
+      "tipo impositivo efectivo",
+      "impuesto sobre la renta"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "¿Qué es el tipo impositivo marginal?",
+        "answer": "Tu tipo impositivo marginal es el tipo que se aplica a tu tramo de renta más alto. Representa el tipo impositivo sobre tu siguiente dólar de ingresos."
+      },
+      {
+        "question": "¿Qué es el tipo impositivo efectivo?",
+        "answer": "Tu tipo impositivo efectivo es el porcentaje de tu renta total que pagas en impuestos. Se calcula dividiendo el impuesto total entre la renta total y suele ser inferior a tu tipo marginal."
+      },
+      {
+        "question": "¿Pago el tipo impositivo más alto sobre todos mis ingresos?",
+        "answer": "No. En los sistemas fiscales progresivos, solo la renta dentro de cada tramo tributa al tipo de ese tramo. Las porciones más bajas de tus ingresos tributan a tipos más bajos."
+      }
+    ]
+  },
+  "hourly-to-salary-conversion": {
+    "title": "Conversión de Tarifa por Hora a Salario: Guía Completa",
+    "description": "Convierte el salario por hora en salario anual, mensual y semanal. Aprende las fórmulas y utiliza nuestra calculadora gratuita.",
+    "content": "# Conversión de Tarifa por Hora a Salario: Guía Completa\n\nConvertir el salario por hora en salario fijo te ayuda a entender tu remuneración total y a comparar ofertas de trabajo.\n\n## Fórmulas básicas de conversión\n\n### Salario anual a partir de la tarifa por hora\n\n```\nSalario anual = Tarifa por hora × Horas por semana × Semanas por año\n```\n\n**Cálculo estándar**: 25 $/hora × 40 horas/semana × 52 semanas/año = 52.000 $/año\n\n### Salario mensual\n\n```\nSalario mensual = Salario anual ÷ 12\n```\n\n**Ejemplo**: 52.000 $ ÷ 12 = 4.333,33 $/mes\n\n### Salario semanal\n\n```\nSalario semanal = Tarifa por hora × Horas por semana\n```\n\n**Ejemplo**: 25 $/hora × 40 horas = 1.000 $/semana\n\n## Ajuste para el trabajo a tiempo parcial\n\nPara horarios a tiempo parcial o irregulares, ajusta el cálculo:\n\n**Ejemplo**: 30 $/hora × 35 horas/semana × 50 semanas/año = 52.500 $/año\n\nEsto tiene en cuenta:\n- Menos horas por semana\n- Tiempo libre o vacaciones no remuneradas\n\n## Factores a tener en cuenta\n\n### Horas por semana\n- Tiempo completo: Normalmente 40 horas\n- Tiempo parcial: Variable (a menudo entre 20 y 30 horas)\n- Horas extra: Pueden requerir un cálculo aparte\n\n### Semanas por año\n- Estándar: 52 semanas\n- Con vacaciones: 50-51 semanas (tiempo libre no remunerado)\n- Trabajo de temporada: Varía según el sector\n\n### Consideraciones sobre las horas extra\n\nSi trabajas horas extra de forma habitual:\n1. Calcula el salario base por separado\n2. Añade los ingresos estimados por horas extra\n3. O utiliza una tarifa por hora media que incluya las horas extra\n\n## Cómo usar nuestra calculadora\n\nNuestro conversor de tarifa por hora a salario automatiza estos cálculos y muestra tanto los ingresos brutos como los netos después de impuestos.",
+    "keywords": [
+      "de hora a salario",
+      "conversión de salario",
+      "tarifa por hora",
+      "salario anual",
+      "calculadora de salario"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "¿Cómo convierto la tarifa por hora en salario anual?",
+        "answer": "Multiplica tu tarifa por hora por las horas por semana y, a continuación, por las semanas por año. Cálculo estándar: Tarifa por hora × 40 × 52 = Salario anual."
+      },
+      {
+        "question": "¿Debo incluir las horas extra en mi tarifa por hora?",
+        "answer": "Para obtener un salario base preciso, utiliza tu tarifa por hora base. Si trabajas horas extra de forma habitual, calcúlalas por separado o utiliza una tarifa media que tenga en cuenta las horas extra."
+      },
+      {
+        "question": "¿Cuántas semanas debo usar en el cálculo?",
+        "answer": "Utiliza 52 semanas para los empleados a tiempo completo. Ajústalo a 50-51 semanas si tienes vacaciones no remuneradas, o menos semanas para el trabajo de temporada."
+      }
+    ]
+  },
+  "tax-deductions-explained": {
+    "title": "Explicación de las deducciones fiscales: qué reduce tu base imponible",
+    "description": "Comprende las deducciones fiscales, las reducciones y cómo disminuyen tu base imponible. Aprende la diferencia entre la deducción estándar y las deducciones detalladas.",
+    "content": "# Explicación de las deducciones fiscales: qué reduce tu base imponible\n\nLas deducciones fiscales reducen tu base imponible, lo que puede disminuir tu carga tributaria. Esta guía explica cómo funcionan.\n\n## ¿Qué son las deducciones fiscales?\n\nLas deducciones fiscales son gastos o reducciones que disminuyen tu base imponible. Una base imponible más baja significa pagar menos impuestos.\n\n## Tipos de deducciones\n\n### Deducción estándar\n\nUna cantidad fija que reduce la base imponible sin necesidad de detallar los gastos. Está disponible para todos los contribuyentes.\n\n**Ventajas**:\n- Sencilla de aplicar\n- No requiere documentación\n- Reducción fiscal garantizada\n\n### Deducciones detalladas\n\nGastos concretos que puedes deducir si superan el importe de la deducción estándar.\n\n**Deducciones detalladas habituales**:\n- Intereses de la hipoteca\n- Impuestos estatales y locales\n- Donaciones benéficas\n- Gastos médicos (por encima del umbral)\n- Impuestos sobre bienes inmuebles\n\n## Cómo funcionan las deducciones\n\n**Ejemplo**:\n- Ingresos brutos: 75.000 $\n- Deducción estándar: 14.600 $\n- Base imponible: 75.000 $ - 14.600 $ = 60.400 $\n\nPagas impuestos sobre 60.400 $, no sobre 75.000 $.\n\n## Información específica por país\n\n### Estados Unidos\n- La deducción estándar varía según el estado civil a efectos fiscales\n- Puedes elegir entre la deducción estándar o la detallada (la que sea mayor)\n- Muchas deducciones se reducen progresivamente para los contribuyentes con rentas altas\n\n### Alemania\n- Mínimo personal exento (Grundfreibetrag) para todos los contribuyentes\n- Deducciones adicionales por hijos y gastos especiales\n- La clase fiscal afecta a la retención, no a la cuota final\n\n### Reino Unido\n- Mínimo personal exento (personal allowance) para todos los contribuyentes\n- Asignación matrimonial (marriage allowance) para las parejas que cumplan los requisitos\n- Las aportaciones a planes de pensiones reciben desgravación fiscal\n\n## Cómo maximizar tus deducciones\n\n1. **Conoce tus opciones**: entiende la diferencia entre la deducción estándar y la detallada\n2. **Registra los gastos**: guarda los justificantes de los gastos deducibles\n3. **Planifica los gastos**: ten en cuenta el momento en que realizas los pagos deducibles\n4. **Consulta a profesionales**: los asesores fiscales pueden identificar deducciones adicionales\n\n## Notas importantes\n\n- Las deducciones reducen la base imponible, no el impuesto directamente\n- Las deducciones en cuota (distintas de las deducciones de la base) reducen el impuesto euro a euro\n- Las normas varían según el país y cambian cada año\n- Consulta a un profesional fiscal para obtener asesoramiento personalizado",
+    "keywords": [
+      "deducciones fiscales",
+      "deducción estándar",
+      "base imponible",
+      "reducciones fiscales",
+      "ahorro fiscal"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "¿Cuál es la diferencia entre una deducción y una deducción en cuota?",
+        "answer": "Una deducción reduce tu base imponible, mientras que una deducción en cuota reduce directamente tu cuota tributaria. Las deducciones en cuota suelen ser más valiosas que las deducciones de la base."
+      },
+      {
+        "question": "¿Debería aplicar la deducción estándar o detallar las deducciones?",
+        "answer": "Aplica la que sea mayor. Si tus deducciones detalladas superan la deducción estándar, detállalas. En caso contrario, aplica la deducción estándar."
+      },
+      {
+        "question": "¿Las deducciones se aplican en todos los países?",
+        "answer": "Sí, pero las deducciones y reducciones concretas varían según el país. Cada país tiene su propio sistema para reducir la base imponible."
+      }
+    ]
+  },
+  "social-security-contributions-guide": {
+    "title": "Cotizaciones a la Seguridad Social: lo que necesitas saber",
+    "description": "Comprende las cotizaciones a la Seguridad Social en distintos países. Descubre cómo afectan a tu salario neto y qué prestaciones ofrecen.",
+    "content": "# Cotizaciones a la Seguridad Social: lo que necesitas saber\n\nLas cotizaciones a la Seguridad Social financian prestaciones estatales como las pensiones, la sanidad y el seguro de desempleo. Esta guía explica cómo funcionan.\n\n## ¿Qué son las cotizaciones a la Seguridad Social?\n\nLas cotizaciones a la Seguridad Social son pagos obligatorios que financian prestaciones estatales. Son independientes del impuesto sobre la renta y normalmente se reparten entre la empresa y la persona trabajadora.\n\n## Estados Unidos: los impuestos FICA\n\n### Impuesto de la Social Security\n- Tipo: 6,2 % de los salarios\n- Tope: se aplica solo hasta la base salarial de la Social Security\n- Finalidad: financia las prestaciones de jubilación e incapacidad\n\n### Impuesto de Medicare\n- Tipo: 1,45 % de todos los salarios (sin tope)\n- Adicional: recargo del 0,9 % para las rentas altas\n- Finalidad: financia la sanidad de las personas mayores\n\n**Total FICA**: 7,65 % para la mayoría de las personas empleadas (6,2 % + 1,45 %)\n\n## Alemania: el sistema de la Seguridad Social\n\n### Componentes\n1. **Seguro de enfermedad** (Krankenversicherung)\n   - Obligatorio para las personas empleadas por debajo del umbral de ingresos\n   - Repartido al 50/50 con la empresa\n\n2. **Seguro de pensiones** (Rentenversicherung)\n   - Financia el sistema público de pensiones\n   - Repartido al 50/50 con la empresa\n\n3. **Seguro de desempleo** (Arbeitslosenversicherung)\n   - Ofrece prestaciones por desempleo\n   - Repartido al 50/50 con la empresa\n\n4. **Seguro de dependencia** (Pflegeversicherung)\n   - Cubre los servicios de cuidados y atención\n   - Repartido al 50/50 con la empresa\n\n## Reino Unido: National Insurance\n\n### Cotizaciones de Clase 1 (personas empleadas)\n- Se calculan por periodo de pago (semanal/mensual)\n- Tipo principal entre el umbral primario (primary threshold) y el límite superior de ingresos (upper earnings limit)\n- Tipo reducido por encima del límite superior\n- Financia: pensión estatal, NHS, prestaciones por desempleo\n\n## Cómo afectan las cotizaciones al salario neto\n\nLas cotizaciones a la Seguridad Social reducen directamente tu salario neto:\n\n**Ejemplo (EE. UU.)**:\n- Bruto: 75.000 $\n- FICA (7,65 %): -5.737,50 $\n- Neto antes del impuesto sobre la renta: 69.262,50 $\n\n## Prestaciones que financian\n\nLas cotizaciones financian:\n- Pensiones de jubilación\n- Sistemas sanitarios\n- Prestaciones por desempleo\n- Prestaciones por incapacidad\n- Cuidados de larga duración (en algunos países)\n\n## Notas importantes\n\n- Las cotizaciones son obligatorias para las personas empleadas\n- Los tipos y umbrales cambian cada año\n- La empresa suele igualar las cotizaciones de la persona trabajadora\n- El derecho a las prestaciones depende del historial de cotización\n- Las personas autónomas pagan tipos más altos",
+    "keywords": [
+      "seguridad social",
+      "cotizaciones sociales",
+      "FICA",
+      "National Insurance",
+      "cotizaciones a la pensión"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "¿Son las cotizaciones a la Seguridad Social lo mismo que el impuesto sobre la renta?",
+        "answer": "No. Las cotizaciones a la Seguridad Social son independientes del impuesto sobre la renta y financian prestaciones estatales concretas, como las pensiones y la sanidad. Se calculan de forma distinta y tienen tipos diferentes."
+      },
+      {
+        "question": "¿Recupero el dinero de las cotizaciones a la Seguridad Social?",
+        "answer": "No de forma directa. Las cotizaciones financian prestaciones estatales que podrás recibir más adelante, como pensiones de jubilación, sanidad y prestaciones por desempleo. El derecho a ellas depende de tu historial de cotización."
+      },
+      {
+        "question": "¿Cuánto reducen las cotizaciones a la Seguridad Social mi salario neto?",
+        "answer": "Varía según el país. En EE. UU., los impuestos FICA son el 7,65 % de los salarios (hasta el tope de la Social Security). En Alemania y el Reino Unido, los tipos varían según los ingresos y normalmente se reparten con la empresa."
+      }
+    ]
+  },
+  "salary-negotiation-tips": {
+    "title": "Consejos para negociar el salario: cómo usar el cálculo del salario neto",
+    "description": "Aprende a utilizar el cálculo del salario neto en las negociaciones salariales. Conoce tu verdadero sueldo neto antes de aceptar una oferta.",
+    "content": "# Consejos para negociar el salario: cómo usar el cálculo del salario neto\n\nEntender tu salario neto es fundamental para negociar el sueldo de forma eficaz. Esta guía te muestra cómo usar los cálculos a tu favor.\n\n## Por qué importa el salario neto\n\nLas cifras del salario bruto pueden ser engañosas. Una diferencia de 5.000 $ en el salario bruto podría suponer solo 3.500 $ en salario neto después de impuestos.\n\n## Antes de negociar\n\n### 1. Calcula tu salario neto actual\n\nUsa nuestra calculadora para determinar tu sueldo neto actual. Este es tu punto de partida.\n\n### 2. Calcula el salario neto de la oferta\n\nIntroduce el salario bruto ofrecido para ver tu sueldo neto real. Compáralo con tu situación actual.\n\n### 3. Ten en cuenta todos los factores\n\n- Diferencias de impuestos entre ubicaciones\n- Ajustes por coste de vida\n- Valor de los beneficios (seguro médico, jubilación)\n- Costes de desplazamiento\n- Conciliación entre vida laboral y personal\n\n## Estrategias de negociación\n\n### Usa el salario neto en las conversaciones\n\nEn lugar de: \"Necesito 10.000 $ más\"\nDi: \"Después de impuestos, esta oferta me dejaría un sueldo neto de X $, lo que supone Y $ menos que mi situación actual\"\n\n### Ten en cuenta las diferencias de impuestos\n\nMudarse a otro estado o país puede afectar significativamente al salario neto:\n- Los estados con impuestos altos reducen el salario neto\n- Algunos estados no tienen impuesto sobre la renta\n- Los traslados internacionales implican sistemas fiscales diferentes\n\n### Considera los beneficios\n\nLos beneficios pueden valer miles:\n- Primas del seguro médico\n- Aportaciones a la jubilación\n- Días libres remunerados\n- Desarrollo profesional\n\n## Errores habituales que debes evitar\n\n1. **Fijarte solo en el salario bruto**\n   - Calcula siempre el salario neto\n\n2. **Ignorar las diferencias de ubicación**\n   - Un mismo salario bruto ≠ el mismo salario neto en ubicaciones distintas\n\n3. **No tener en cuenta la retribución total**\n   - Los beneficios y las ventajas tienen un valor real\n\n4. **Aceptar la primera oferta**\n   - La mayoría de los empleadores esperan que se negocie\n\n## Cómo usar nuestras herramientas\n\nNuestras calculadoras te ayudan a:\n- Comparar el salario bruto con el neto\n- Entender las implicaciones fiscales\n- Tomar decisiones informadas\n- Negociar desde una posición de conocimiento\n\n## Después de negociar\n\nUna vez que hayas acordado las condiciones:\n1. Verifica la oferta por escrito\n2. Confirma todos los beneficios y ventajas\n3. Ten en cuenta que tu primera nómina será diferente (prorrateada, con deducciones distintas)\n4. Planifica tu presupuesto en función del salario neto\n\nRecuerda: la información es poder en las negociaciones. Conocer tu verdadero sueldo neto te ayuda a tomar mejores decisiones.",
+    "keywords": [
+      "negociación salarial",
+      "salario neto",
+      "oferta de trabajo",
+      "retribución",
+      "sueldo neto"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "¿Debo negociar en función del salario bruto o del neto?",
+        "answer": "Ten en cuenta ambos, pero céntrate en el salario neto para conocer tu situación financiera real. El salario bruto es lo que comentan los empleadores, pero el salario neto es lo que realmente recibes."
+      },
+      {
+        "question": "¿Cómo tengo en cuenta las diferencias de impuestos al negociar?",
+        "answer": "Usa nuestras calculadoras para comparar el salario neto en distintas ubicaciones. Ten en cuenta los impuestos estatales y locales, el coste de vida y otros costes específicos de cada ubicación."
+      },
+      {
+        "question": "¿Qué hago si el empleador no quiere subir el salario bruto?",
+        "answer": "Plantéate negociar otros beneficios: más días de vacaciones, modalidades de trabajo flexible, oportunidades de desarrollo profesional o primas de contratación que pueden tener implicaciones fiscales diferentes."
+      }
+    ]
+  },
+  "gross-income-vs-net-income": {
+    "title": "Ingresos brutos vs. ingresos netos: ¿cuál es la diferencia?",
+    "description": "Comprende la diferencia entre ingresos brutos e ingresos netos, por qué tu salario neto es inferior a tu salario y cómo los impuestos determinan lo que ganas realmente.",
+    "content": "# Ingresos brutos vs. ingresos netos: ¿cuál es la diferencia?\n\nLos ingresos son uno de los términos financieros más habituales y, a la vez, uno de los peor entendidos. Mucha gente da por hecho que su salario, su sueldo por hora o su tarifa como autónomo es lo que realmente gana. En realidad, la cantidad que llega a tu cuenta bancaria suele ser muy distinta de la cifra que figura en tu contrato.\n\nEsta guía explica qué son los ingresos, la diferencia entre ingresos brutos e ingresos netos, y por qué entender esa diferencia es fundamental a la hora de comparar empleos, planificar gastos o estimar impuestos.\n\n## ¿Qué son los ingresos?\n\nLos ingresos son el dinero que ganas a cambio de tu trabajo, de servicios o de una actividad empresarial durante un periodo de tiempo concreto. Pueden percibirse por horas, semanalmente, mensualmente o anualmente, y pueden proceder de:\n\n- el salario o sueldo de un empleo\n- el trabajo freelance o por contrato\n- el trabajo por cuenta propia o la actividad empresarial\n- primas, comisiones o complementos\n\nSin embargo, no todos los ingresos se tratan igual una vez que se aplican los impuestos y las cotizaciones obligatorias.\n\n## ¿Qué son los ingresos brutos?\n\nLos ingresos brutos son la cantidad total que ganas antes de aplicar cualquier deducción. Es la cifra que normalmente ves en las ofertas de empleo, en los contratos laborales, en las facturas de los autónomos y en las conversaciones sobre el salario anual.\n\nLos ingresos brutos no reflejan lo que realmente te llevas a casa. Por ejemplo:\n\n- Salario bruto anual: 60.000\n- Salario bruto mensual: 5.000\n\nEn esta fase, todavía no se ha descontado ningún impuesto ni cotización.\n\n## ¿Qué son los ingresos netos?\n\nLos ingresos netos —también llamados salario neto— son la cantidad que recibes realmente tras las deducciones. Esas deducciones suelen incluir el impuesto sobre la renta, las cotizaciones a la seguridad social, el seguro de salud y los impuestos locales o regionales, según el país.\n\nLos ingresos netos son el dinero que realmente puedes gastar, ahorrar o invertir. Por ejemplo:\n\n- Ingresos brutos mensuales: 5.000\n- Deducciones totales: 1.600\n- Ingresos netos mensuales: 3.400\n\nPara profundizar en la propia cifra del salario neto, consulta nuestra guía sobre el [salario neto](/guides/what-is-take-home-pay).\n\n## Ingresos brutos vs. netos: cara a cara\n\n| | Ingresos brutos | Ingresos netos |\n|---|---|---|\n| Qué significa | Ganancias antes de impuestos y deducciones | Dinero recibido tras las deducciones |\n| Dónde lo ves | Contratos, ofertas de empleo, comparaciones | Tu cuenta bancaria y tu presupuesto |\n| Para qué se usa mejor | Comparar puestos y la cifra principal del sueldo | Gastos cotidianos, ahorro y planificación |\n\nEsta diferencia explica por qué dos personas con el mismo salario bruto pueden tener un salario neto muy distinto.\n\n## Por qué los ingresos brutos suelen inducir a error\n\nLos ingresos brutos son útiles para las comparaciones estándar, pero pueden inducir a error porque los tipos impositivos varían según el país, las cotizaciones sociales son diferentes, la situación de declaración importa y los beneficios y deducciones modifican el resultado. Por eso los ingresos netos son la cifra más práctica para las decisiones de la vida real.\n\n## Cómo afectan los impuestos a tus ingresos\n\nLos impuestos son la principal razón por la que los ingresos brutos y los netos difieren. La mayoría de los sistemas fiscales aplican tramos impositivos progresivos (los ingresos más altos tributan a tipos más altos), cotizaciones sociales obligatorias y deducciones fijas o limitadas. Por ello, aumentar tus ingresos brutos no siempre incrementa tus ingresos netos en el mismo porcentaje. Nuestra guía sobre [cómo funciona el impuesto sobre la renta](/guides/how-income-tax-works) lo explica con palabras sencillas.\n\n## Cómo calcular los ingresos brutos y netos\n\nPuedes calcular los ingresos manualmente, pero la cosa se complica rápidamente en cuanto entran en juego los impuestos. Un enfoque más sencillo es:\n\n1. Parte de tus ingresos brutos.\n2. Aplica las normas fiscales específicas de cada país.\n3. Resta las cotizaciones y deducciones.\n4. Obtén tus ingresos netos.\n\nEsto es exactamente lo que la [calculadora de salario](/salary-calculator) de IncomeTally está diseñada para hacer: estimar los ingresos en distintos periodos de pago y países utilizando supuestos transparentes. Si cobras por horas o quieres alternar entre periodos de pago, consulta [cómo convertir ingresos por hora, mensuales y anuales](/guides/how-to-convert-income-pay-periods).\n\n## Por qué es importante entender los ingresos\n\nConocer la diferencia entre ingresos brutos y netos te ayuda a comparar ofertas de empleo con precisión, evitar decepciones con el sueldo, planificar tu presupuesto mensual, entender tu poder adquisitivo real y estimar los impuestos de forma más realista. Es especialmente importante para autónomos, trabajadores en remoto y personas que se trasladan de un país a otro.\n\n## Reflexiones finales\n\nLos ingresos son mucho más que una cifra en un contrato. Entender los ingresos brutos frente a los netos te da una imagen más clara de lo que realmente ganas y de lo que puedes permitirte de forma realista. Antes de tomar decisiones financieras, mira siempre más allá del salario principal y céntrate en el salario neto. Los tipos y las normas cambian con el tiempo y varían según el país, así que trata las estimaciones como una orientación y consulta a un profesional cualificado cuando sea importante.",
+    "keywords": [
+      "ingresos brutos",
+      "ingresos netos",
+      "bruto vs. neto",
+      "salario neto",
+      "impuesto sobre la renta",
+      "deducciones"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Income Tax",
+        "url": "https://www.gov.uk/income-tax"
+      },
+      {
+        "label": "IRS — Tax Topic 751 (retención de la Social Security y Medicare)",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "GOV.UK — National Insurance",
+        "url": "https://www.gov.uk/national-insurance"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es la diferencia entre ingresos brutos e ingresos netos?",
+        "answer": "Los ingresos brutos son tus ganancias antes de las deducciones. Los ingresos netos son lo que realmente recibes después de restar los impuestos y las cotizaciones."
+      },
+      {
+        "question": "¿Por qué mis ingresos netos son mucho más bajos que mi salario bruto?",
+        "answer": "Los impuestos, la seguridad social y otras cotizaciones obligatorias reducen los ingresos brutos, a veces de forma significativa, según tu país y tu nivel de ingresos."
+      },
+      {
+        "question": "¿Qué ingresos debo usar para hacer el presupuesto?",
+        "answer": "Los ingresos netos, porque reflejan el dinero del que realmente dispones para gastar, ahorrar o invertir."
+      },
+      {
+        "question": "¿Son iguales los ingresos netos en todos los países?",
+        "answer": "No. Los sistemas fiscales difieren mucho, por eso los ingresos netos varían incluso para un mismo salario bruto."
+      }
+    ]
+  },
+  "how-to-convert-income-pay-periods": {
+    "title": "Traducción al español (España) de la guía \"how-to-convert-income-pay-periods\"",
+    "description": "Objeto estructurado con title, description, content (Markdown), keywords, sources y faqs traducidos al español (España).",
+    "content": "A continuación se incluye el objeto traducido completo. Los campos title, description, content, keywords, sources y faqs están listos para sustituir los valores en inglés.\n\nTITLE:\nCómo convertir correctamente los ingresos por hora, mensuales y anuales\n\nDESCRIPTION:\nAprende a convertir correctamente los ingresos por hora, semanales, mensuales y anuales: las fórmulas estándar, las suposiciones en las que se basan y los errores que debes evitar.\n\nCONTENT (Markdown):\n# Cómo convertir correctamente los ingresos por hora, mensuales y anuales\n\nLos ingresos se presentan de varias formas —por hora, semanales, mensuales y anuales— y, en algún momento, necesitarás convertir unos en otros. Quizá estés comparando un contrato por horas con una oferta de empleo con salario fijo, o calculando a cuánto asciende un sueldo mensual a lo largo de un año. Las matemáticas parecen sencillas, pero algunas suposiciones habituales pueden desajustar tus cifras.\n\nEsta guía explica las fórmulas estándar, las suposiciones en las que se basan y los errores que debes evitar.\n\n## Periodos de pago habituales de los ingresos\n\nLos ingresos suelen expresarse de una de estas cuatro maneras:\n\n- Por hora: una cantidad por cada hora trabajada, habitual en el trabajo a tiempo parcial, por turnos y por contrato.\n- Semanales: un total que se paga cada semana, a menudo en puestos temporales.\n- Mensuales: habitual en los empleados con salario fijo.\n- Anuales: se utiliza en los contratos y en las ofertas de empleo.\n\n## Por qué convertir los ingresos no siempre es sencillo\n\nLa suposición de que la tarifa por hora multiplicada por las horas y por las semanas equivale al salario simplifica demasiado las cosas. En la práctica:\n\n- las horas de trabajo fluctúan\n- el tiempo remunerado y el no remunerado difieren\n- las vacaciones y las bajas por enfermedad varían\n- los autónomos tienen horarios irregulares\n- las convenciones difieren de un país a otro\n\n## Suposiciones estándar utilizadas en la conversión\n\nSalvo que se indique lo contrario, la mayoría de las calculadoras suponen:\n\n- 40 horas de trabajo por semana\n- 5 días laborables por semana\n- 52 semanas al año\n- 12 meses al año\n\nEstas suposiciones hacen que las conversiones sean coherentes, pero tu situación real puede ser distinta.\n\n## Cómo convertir los ingresos por hora en salario anual\n\nMultiplica tu tarifa por hora por las horas semanales y, a continuación, por las semanas al año:\n\n- Tarifa por hora x horas por semana x semanas al año = salario anual\n- Ejemplo: 25 por hora x 40 horas x 52 semanas = 52.000 al año\n\nPara una herramienta lista para usar, prueba nuestro [conversor de salario por hora a anual](/hourly-to-salary) y, para ver más ejemplos resueltos, consulta la [guía de conversión de salario por hora a anual](/guides/hourly-to-salary-conversion).\n\n## Cómo convertir los ingresos mensuales en salario anual\n\nMultiplica tus ingresos mensuales por 12:\n\n- Ingresos mensuales x 12 = ingresos anuales\n- Ejemplo: 4.000 al mes x 12 = 48.000 al año\n\nEsto supone pagos mensuales constantes, sin meses adicionales ni que falten.\n\n## Conversiones de semanal a mensual y anual\n\nEl pago semanal, que a menudo se utiliza en el trabajo temporal, se convierte así:\n\n- Semanal x 52 = anual\n- Anual dividido entre 12 = mensual\n- Ejemplo: 1.000 a la semana = 52.000 al año, o unos 4.333 al mes\n\n## Por hora o con salario fijo: ¿qué es mejor?\n\nNingún formato es mejor de forma universal. El trabajo por horas se adapta a los acuerdos flexibles y puede recompensar las horas extra, mientras que un salario fijo aporta estabilidad y un pago predecible. La elección adecuada depende de tus prioridades.\n\n## Errores habituales al convertir ingresos\n\n- pasar por alto las vacaciones no remuneradas\n- suponer que todo el mundo trabaja exactamente 52 semanas\n- ignorar los horarios a tiempo parcial\n- confundir el pago bruto por hora con el salario neto\n- dejar fuera los impuestos por completo\n\nEste último punto es el más importante: una conversión te da una cifra bruta, no tu [salario neto](/guides/what-is-take-home-pay).\n\n## Cómo comparar ofertas de empleo con distintos periodos de pago\n\nConvierte cada oferta a ingresos brutos anuales utilizando suposiciones idénticas, después estima los ingresos netos siempre que puedas y, por último, valora los beneficios y la estabilidad del puesto. Nuestra guía sobre [cómo comparar ofertas de empleo](/guides/how-to-compare-job-offers) explica todo el proceso.\n\n## Cuándo centrarse en los ingresos netos\n\nLas conversiones brutas son útiles, pero los ingresos netos importan más en la vida real. Los sistemas fiscales, la clasificación laboral y la ubicación influyen en tu salario neto real. Para ver claramente la diferencia, lee [ingresos brutos frente a ingresos netos](/guides/gross-income-vs-net-income) y luego calcula tus cifras con la [calculadora de salario](/salary-calculator).\n\n## Reflexiones finales\n\nConvertir ingresos es algo más que aritmética. Las horas de trabajo, los periodos no remunerados y las diferencias de horario cambian la cifra final, y los impuestos vuelven a cambiarla. Utiliza las suposiciones estándar como punto de partida, ajústalas a tu situación y comprueba siempre el salario neto antes de tomar una decisión.\n\nKEYWORDS:\n1. conversión de ingresos\n2. de por hora a salario\n3. de ingresos mensuales a anuales\n4. periodo de pago\n5. salario anual\n6. ingresos brutos\n\nSOURCES:\n1. label: \"GOV.UK — Impuesto sobre la renta\" | url: https://www.gov.uk/income-tax\n2. label: \"U.S. Bureau of Labor Statistics — Estadísticas de empleo y salarios por ocupación\" | url: https://www.bls.gov/oes/\n\nFAQS:\n1. P: ¿Qué horas debo suponer al convertir el sueldo?\n   R: La mayoría de las calculadoras suponen 40 horas por semana, 52 semanas al año y 12 meses al año. Ajusta estas cifras para que coincidan con tu horario real, sobre todo en el trabajo a tiempo parcial o de temporada.\n2. P: ¿Es mejor el pago por hora o el salario fijo?\n   R: Ninguno es mejor de forma universal. El trabajo por horas ofrece flexibilidad y puede recompensar las horas extra; el trabajo con salario fijo ofrece estabilidad, un pago predecible y, a menudo, más beneficios.\n3. P: ¿Puedo convertir mis ingresos sin conocer mis impuestos?\n   R: Sí, para una estimación bruta. Pero, para conocer tu salario neto real, debes tener en cuenta el impuesto sobre la renta y las cotizaciones sociales, que varían según el país.\n4. P: ¿Por qué mi sueldo mensual multiplicado por 12 no coincide con mi cifra anual?\n   R: Las diferencias se deben a la variación de las horas de trabajo, al tiempo no remunerado, a las primas y a las suposiciones utilizadas. Los horarios irregulares y los pagos puntuales pueden hacer que la fórmula sencilla sea imprecisa.",
+    "keywords": [
+      "conversión de ingresos",
+      "de por hora a salario",
+      "de ingresos mensuales a anuales",
+      "periodo de pago",
+      "salario anual",
+      "ingresos brutos"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Impuesto sobre la renta",
+        "url": "https://www.gov.uk/income-tax"
+      },
+      {
+        "label": "U.S. Bureau of Labor Statistics — Estadísticas de empleo y salarios por ocupación",
+        "url": "https://www.bls.gov/oes/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Qué horas debo suponer al convertir el sueldo?",
+        "answer": "La mayoría de las calculadoras suponen 40 horas por semana, 52 semanas al año y 12 meses al año. Ajusta estas cifras para que coincidan con tu horario real, sobre todo en el trabajo a tiempo parcial o de temporada."
+      },
+      {
+        "question": "¿Es mejor el pago por hora o el salario fijo?",
+        "answer": "Ninguno es mejor de forma universal. El trabajo por horas ofrece flexibilidad y puede recompensar las horas extra; el trabajo con salario fijo ofrece estabilidad, un pago predecible y, a menudo, más beneficios."
+      },
+      {
+        "question": "¿Puedo convertir mis ingresos sin conocer mis impuestos?",
+        "answer": "Sí, para una estimación bruta. Pero, para conocer tu salario neto real, debes tener en cuenta el impuesto sobre la renta y las cotizaciones sociales, que varían según el país."
+      },
+      {
+        "question": "¿Por qué mi sueldo mensual multiplicado por 12 no coincide con mi cifra anual?",
+        "answer": "Las diferencias se deben a la variación de las horas de trabajo, al tiempo no remunerado, a las primas y a las suposiciones utilizadas. Los horarios irregulares y los pagos puntuales pueden hacer que la fórmula sencilla sea imprecisa."
+      }
+    ]
+  },
+  "what-is-take-home-pay": {
+    "title": "¿Qué es el salario neto y cómo se calcula?",
+    "description": "Descubre qué es el salario neto, cómo se calcula a partir de tu sueldo bruto, qué se deduce, y consulta ejemplos sencillos para Estados Unidos, Reino Unido y Alemania.",
+    "content": "El salario neto es el dinero que realmente llega a tu cuenta bancaria una vez restadas todas las deducciones de tu sueldo. Es la cifra que más importa a la hora de hacer un presupuesto y, sin embargo, casi siempre es menor que el importe que figura en tu oferta de trabajo. Entender cómo se calcula te ayuda a planificar, a comparar empleos de forma justa y a evitar sorpresas desagradables el día de cobro.\n\n## Salario bruto frente a salario neto\n\nTu salario bruto es tu sueldo íntegro antes de descontar nada. El salario neto (a menudo llamado sueldo neto) es lo que queda después de impuestos y otras retenciones. La diferencia entre ambos puede ser considerable. Si quieres un desglose más detallado de estas dos cifras, consulta nuestra guía sobre [ingresos brutos frente a ingresos netos](/guides/gross-income-vs-net-income).\n\nEste es el flujo básico:\n\n- Empieza con el salario bruto (tu sueldo declarado o tus ingresos por hora)\n- Resta el impuesto sobre la renta\n- Resta las cotizaciones a la seguridad social\n- Resta cualquier otra deducción (plan de pensiones, seguros médicos, devolución de préstamos estudiantiles)\n- Lo que queda es tu salario neto\n\n## Qué se deduce\n\nLas deducciones exactas dependen de dónde vivas y trabajes, pero la mayoría se agrupan en unas pocas categorías.\n\n### Impuesto sobre la renta\n\nEl impuesto sobre la renta suele ser la mayor deducción individual. La mayoría de los países utilizan un sistema progresivo, lo que significa que las porciones más altas de tus ingresos tributan a tipos más elevados. Para ver cómo se escalonan los tramos, lee [cómo funciona el impuesto sobre la renta](/guides/how-income-tax-works).\n\n### Cotizaciones a la seguridad social\n\nEstas financian programas públicos como las pensiones, la sanidad y las prestaciones por desempleo. En Estados Unidos son la Social Security y Medicare, en el Reino Unido son las National Insurance, y en Alemania cubren las pensiones, la sanidad, los cuidados de larga duración y el seguro de desempleo. Nuestra guía sobre [cotizaciones a la seguridad social](/guides/social-security-contributions-guide) explica cada sistema.\n\n### Otras deducciones\n\nSegún tu situación, también podrías ver aportaciones a un plan de pensiones de empresa, primas de seguros médicos privados, cuotas sindicales o devoluciones de préstamos estudiantiles.\n\n## Un ejemplo sencillo\n\nImagina un salario bruto anual de 50.000 en tres países. Las cifras siguientes son solo ilustrativas y están redondeadas para mayor claridad.\n\n| País | Bruto | Impuesto sobre la renta | Cotizaciones sociales | Neto (aprox.) |\n|---|---|---|---|---|\n| EE. UU. | 50.000 USD | 4.300 USD | 3.825 USD | 41.875 USD |\n| Reino Unido | 50.000 GBP | 7.486 GBP | 2.494 GBP | 40.020 GBP |\n| Alemania | 50.000 EUR | 8.200 EUR | 10.000 EUR | 31.800 EUR |\n\nComo puedes ver, dos personas que ganan la misma cifra nominal pueden quedarse con importes muy distintos. Los impuestos estatales, regionales o locales pueden modificar todavía más estos resultados.\n\n## Cómo calcularlo tú mismo\n\nEl método manual más sencillo es:\n\n1. Averigua tu salario bruto anual.\n2. Estima el impuesto sobre la renta utilizando los tramos y el mínimo personal de tu país.\n3. Suma las cotizaciones a la seguridad social.\n4. Resta ambas cantidades del salario bruto.\n5. Divide entre 12 para obtener una cifra mensual, o entre tu número de periodos de pago.\n\nComo los tramos, los umbrales y los tipos cambian cada ejercicio fiscal, hacerlo a mano es engorroso y fácil de equivocar. Una herramienta lo mantiene preciso. Prueba nuestra [calculadora de salario neto](/net-salary-calculator) o la [calculadora de salario](/calculator) completa para obtener una estimación personalizada en segundos.\n\n## Por qué importa el salario neto\n\n- Presupuesto: el alquiler, las facturas y el ahorro salen del sueldo neto, no del bruto.\n- Comparación de empleos: un salario más alto en un entorno de impuestos elevados puede dejarte con menos.\n- Negociación: conocer tu cifra neta te ayuda a evaluar subidas y beneficios.\n\n## Reflexiones finales\n\nEl salario neto es tu verdadero poder de gasto, condicionado por el impuesto sobre la renta, las cotizaciones sociales y las deducciones personales. El sueldo nominal es solo el punto de partida. Dado que los tipos y los umbrales cambian cada año y varían según la ubicación, utiliza estas cifras como orientación y consulta a un asesor fiscal cualificado para las decisiones que afecten a tus finanzas.",
+    "keywords": [
+      "salario neto",
+      "sueldo neto",
+      "cómo calcular el salario neto",
+      "salario bruto frente a neto",
+      "deducciones del impuesto sobre la renta",
+      "deducciones de nómina"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Tax Topic 751 (retención de Social Security y Medicare)",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "GOV.UK — National Insurance",
+        "url": "https://www.gov.uk/national-insurance"
+      },
+      {
+        "label": "GOV.UK — Tipos y desgravaciones del impuesto sobre la renta",
+        "url": "https://www.gov.uk/income-tax-rates"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Es lo mismo el salario neto que el sueldo neto?",
+        "answer": "Sí. Tanto el salario neto como el sueldo neto se refieren al importe que queda después de restar todos los impuestos y deducciones de tu sueldo bruto. Es el dinero que realmente llega a tu cuenta bancaria."
+      },
+      {
+        "question": "¿Por qué mi salario neto es más bajo de lo que esperaba?",
+        "answer": "Los motivos habituales incluyen el impuesto sobre la renta, las cotizaciones a la seguridad social, la inscripción en un plan de pensiones, las devoluciones de préstamos estudiantiles y las primas de beneficios. Los impuestos locales o regionales y un tramo impositivo más alto también pueden reducirlo más de lo previsto."
+      },
+      {
+        "question": "¿Cambia el salario neto a lo largo del año?",
+        "answer": "Puede cambiar. Alcanzar ciertos umbrales de ingresos, cambiar de código fiscal, las primas puntuales o los ajustes en las aportaciones a pensiones y beneficios pueden modificar tu sueldo neto de un periodo de pago a otro."
+      },
+      {
+        "question": "¿Puedo aumentar mi salario neto?",
+        "answer": "A veces. Las aportaciones a planes de pensiones con ventajas fiscales, solicitar las desgravaciones a las que tengas derecho y asegurarte de que tu código fiscal o tu retención sean correctos pueden ayudar. Un asesor fiscal puede orientarte sobre lo que se aplica a tu situación."
+      }
+    ]
+  },
+  "how-to-read-your-payslip": {
+    "title": "Cómo leer tu nómina línea por línea",
+    "description": "Aprende a leer tu nómina o recibo de salario línea por línea. Entiende el salario bruto, los impuestos, las deducciones y el salario neto en EE. UU., el Reino Unido y Alemania.",
+    "content": "# Cómo leer tu nómina línea por línea\n\nAbrir tu primera nómina puede parecer como leer un idioma extranjero. Las siglas, las deducciones y dos totales distintos para el mismo mes dejan a mucha gente desconcertada. Esta guía repasa las partes habituales de una nómina o recibo de salario, explica qué significa cada línea y señala cómo cambian los términos entre EE. UU., el Reino Unido y Alemania.\n\nTen en cuenta que los tipos impositivos exactos y los umbrales de cotización cambian cada año y varían según la situación personal. Confirma siempre los detalles con tu empresa o con un profesional cualificado.\n\n## Los dos números que más importan\n\nToda nómina gira en torno a dos cifras: el salario bruto y el salario neto.\n\n- El salario bruto son tus ingresos totales antes de descontar nada.\n- El salario neto es lo que realmente llega a tu cuenta bancaria, también llamado tu [salario neto disponible](/guides/what-is-take-home-pay).\n\nLa diferencia entre ambos se compone de impuestos, cotizaciones sociales o a la seguridad social y cualquier otra deducción. Entender esa diferencia es justamente el objetivo de leer tu nómina con atención.\n\n## Componentes habituales, línea por línea\n\nAunque los formatos difieren entre países y empresas, la mayoría de las nóminas incluyen los mismos bloques básicos.\n\n### Devengos\n\nEsta sección detalla tu salario base o tu retribución por horas, más cualquier extra como horas extraordinarias, primas, comisiones o propinas. Si los sumas, obtienes tu salario bruto del periodo.\n\n### Impuestos retenidos\n\nTu empresa suele descontar el impuesto sobre la renta antes de pagarte. En EE. UU. esto incluye el impuesto federal sobre la renta y, en la mayoría de los estados, el impuesto estatal sobre la renta. En el Reino Unido es el impuesto sobre la renta a través del sistema PAYE. En Alemania es el Lohnsteuer, a veces con un impuesto eclesiástico y un recargo de solidaridad.\n\n### Cotizaciones sociales y a la seguridad social\n\nEstas financian las pensiones, la sanidad y otros programas públicos. Suelen ser obligatorias y se reparten entre tú y tu empresa. Consulta nuestra guía sobre las [cotizaciones a la seguridad social](/guides/social-security-contributions-guide) para más detalle.\n\n### Deducciones antes y después de impuestos\n\nAlgunas cantidades se restan antes de calcular el impuesto, lo que puede reducir tu base imponible. Ejemplos habituales son las aportaciones a planes de jubilación y ciertas prestaciones de salud o de transporte. Aprende más en nuestro resumen de las [deducciones fiscales](/guides/tax-deductions-explained). Otras deducciones, como las cuotas sindicales, pueden descontarse después de impuestos.\n\n### Salario neto\n\nDespués de todas las deducciones, lo que queda es tu salario neto. Este es el número que debes comparar con tu presupuesto.\n\n### Totales acumulados del año\n\nLa mayoría de las nóminas muestran totales acumulados, etiquetados como YTD en EE. UU., del año natural o fiscal transcurrido hasta la fecha. Estos te ayudan a controlar los ingresos totales y los impuestos totales pagados, lo cual resulta útil a la hora de presentar la declaración.\n\n## Un desglose de ejemplo\n\nAquí tienes un ejemplo mensual simplificado para una persona empleada que gana 5.000 en su moneda local. Las cifras son meramente ilustrativas.\n\n| Concepto | Importe |\n|---|---|\n| Salario bruto | 5.000 |\n| Aportación a jubilación antes de impuestos | -300 |\n| Impuesto sobre la renta | -750 |\n| Cotizaciones sociales o a la seguridad social | -450 |\n| Deducción después de impuestos (cuotas sindicales) | -25 |\n| Salario neto | 3.475 |\n\nEn este ejemplo, la persona trabajadora gana 5.000 brutos pero se lleva a casa 3.475. La diferencia de aproximadamente 1.525 es exactamente lo que la alfabetización en nóminas te ayuda a entender.\n\n## Terminología por país de un vistazo\n\nLa estructura es similar en todas partes, pero los nombres cambian.\n\n- Estados Unidos: a menudo se le llama pay stub o paycheck. Fíjate en FICA, que cubre la Social Security y Medicare, además de las retenciones federales y estatales.\n- Reino Unido: se le llama payslip. Busca el impuesto sobre la renta PAYE y las cotizaciones National Insurance, junto con tu código fiscal (tax code).\n- Alemania: se le llama Lohnabrechnung o Gehaltsabrechnung. Espera ver el Lohnsteuer más las cotizaciones sociales para pensión, sanidad, desempleo y seguro de dependencia.\n\n## Consejos para revisar tu nómina\n\nUna revisión mensual rápida puede detectar errores costosos.\n\n- Confirma que tu salario bruto coincide con el salario o las horas acordadas.\n- Comprueba que tu código fiscal o tus datos de tributación parecen correctos.\n- Vigila los cambios bruscos en las deducciones de un mes a otro.\n- Conserva las nóminas para la declaración de impuestos, las solicitudes de préstamo y las referencias de alquiler.\n\nPara ver cómo se convierte el bruto en neto en tu propia situación, prueba nuestra [calculadora de salario neto](/net-salary-calculator) gratuita.\n\n## Reflexiones finales\n\nUna nómina es más que un recibo. Es un registro de tus ingresos, de los impuestos que aportas y de las prestaciones que financias. Una vez que reconoces las secciones clave de salario bruto, deducciones y salario neto, el documento deja de resultar intimidante en cualquier país. Revisa la tuya con regularidad, guarda copias y consulta a un profesional siempre que algo no cuadre.",
+    "keywords": [
+      "cómo leer una nómina",
+      "nómina explicada",
+      "desglose del recibo de salario",
+      "salario bruto frente a neto",
+      "deducciones de la nómina",
+      "guía del recibo de salario"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Entender tu salario",
+        "url": "https://www.gov.uk/understanding-your-pay"
+      },
+      {
+        "label": "IRS — Retención de impuestos",
+        "url": "https://www.irs.gov/individuals/employees/tax-withholding"
+      },
+      {
+        "label": "SSA — Tipos de los impuestos de Social Security y Medicare",
+        "url": "https://www.ssa.gov/oact/cola/cbb.html"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Por qué mi salario neto es mucho menor que mi salario bruto?",
+        "answer": "La diferencia procede del impuesto sobre la renta, de las cotizaciones sociales o a la seguridad social obligatorias y de cualquier deducción voluntaria, como el ahorro para la jubilación. El reparto exacto depende de tu país, tu nivel de ingresos y tus circunstancias personales."
+      },
+      {
+        "question": "¿Qué significa el acumulado del año (YTD) en una nómina?",
+        "answer": "Los totales acumulados del año muestran tus ingresos y deducciones acumulados desde el inicio del año natural o fiscal hasta el periodo de pago actual. Te ayudan a controlar los totales para elaborar el presupuesto y presentar la declaración."
+      },
+      {
+        "question": "¿Son iguales las nóminas en EE. UU., el Reino Unido y Alemania?",
+        "answer": "La estructura básica es similar, pero la terminología difiere. En EE. UU. se le llama pay stub, en el Reino Unido payslip y en Alemania Lohnabrechnung. Cada país tiene además sus propias etiquetas fiscales y sus propios sistemas de cotización."
+      },
+      {
+        "question": "¿Qué debo hacer si detecto un error en mi nómina?",
+        "answer": "Ponte en contacto primero con tu empresa o con el departamento de nóminas, ya que la mayoría de los errores son sencillos de corregir. Si el problema afecta a impuestos o cotizaciones, un contable o asesor fiscal cualificado puede ayudarte a aclararlo."
+      }
+    ]
+  },
+  "how-income-tax-works": {
+    "title": "Cómo funciona el impuesto sobre la renta: guía para principiantes",
+    "description": "Una guía accesible para principiantes sobre cómo funciona el impuesto sobre la renta: renta imponible, tramos progresivos, tipo marginal frente a tipo efectivo, deducciones y sueldo neto.",
+    "content": "El impuesto sobre la renta es una de las mayores razones por las que la cifra de tu oferta de trabajo no es la cifra que llega a tu cuenta bancaria. Si alguna vez has mirado una nómina y te has preguntado a dónde fue a parar una parte de tu salario, esta guía es para ti. Repasaremos cómo funciona el impuesto sobre la renta en un lenguaje sencillo, con ejemplos de EE. UU., el Reino Unido y Alemania.\n\nEsta es información educativa de carácter general, no asesoramiento fiscal ni financiero. Los tipos y umbrales cambian cada año, así que consulta siempre fuentes oficiales o habla con un profesional cualificado para tu situación concreta.\n\n## ¿Qué es el impuesto sobre la renta?\n\nEl impuesto sobre la renta es el dinero que pagas al Estado en función de lo que ganas. Financia servicios públicos como la sanidad, los colegios, las carreteras y las pensiones. En la mayoría de los países, cuanto más ganas, mayor es el porcentaje que pagas, al menos sobre la franja superior de tus ingresos.\n\nPara los empleados, el impuesto sobre la renta suele descontarse automáticamente de cada nómina antes de cobrar. Esto se denomina retención (withholding en EE. UU.), PAYE en el Reino Unido o Lohnsteuer en Alemania. Los autónomos y los trabajadores por cuenta propia normalmente lo calculan y lo pagan ellos mismos, a menudo a plazos.\n\n## Renta bruta frente a renta imponible\n\nEstos dos términos confunden a casi todo el mundo, así que vamos a separarlos con claridad.\n\n- La **renta bruta** es tu retribución total antes de descontar nada. Si tu oferta de trabajo dice 50.000 al año, eso es la cifra bruta.\n- La **renta imponible** es lo que queda después de restar los mínimos exentos y las deducciones. Esta cifra menor es sobre la que realmente se calcula tu impuesto.\n\nNo tributas por cada céntimo que ganas. La mayoría de los países te dan primero una franja libre de impuestos. Por ejemplo, el Reino Unido tiene la Personal Allowance y Alemania tiene un mínimo básico exento (Grundfreibetrag). Por debajo de esos umbrales no pagas nada de impuesto sobre la renta. Para una visión más amplia, consulta [renta bruta frente a renta neta](/guides/gross-income-vs-net-income).\n\n## Tramos impositivos progresivos\n\nLa mayoría de los sistemas de impuesto sobre la renta son progresivos. Tus ingresos se dividen en tramos y cada tramo tributa a su propio tipo. Un mito habitual es que ganar más puede empujar la totalidad de tus ingresos a un tipo más alto. No funciona así. Solo la parte de los ingresos que cae dentro de cada tramo tributa al tipo de ese tramo.\n\nAquí tienes una ilustración simplificada (no son tipos reales actuales):\n\n| Tramo de ingresos | Tipo impositivo | Impuesto sobre este tramo |\n|---|---|---|\n| Primeros 12.000 | 0% | 0 |\n| 12.001 a 40.000 | 20% | 5.600 |\n| 40.001 a 50.000 | 40% | 4.000 |\n\nEn este ejemplo, alguien que gana 50.000 paga 9.600 en total, no el 40% de todo. Para entender cómo se apilan los tramos en los sistemas reales, consulta nuestra guía más detallada sobre [tramos impositivos](/guides/understanding-tax-brackets).\n\n### Tipo marginal frente a tipo efectivo\n\nDos definiciones rápidas que se derivan de los tramos:\n\n- El **tipo marginal** es el tipo sobre tu próximo dólar, libra o euro ganado. En la tabla anterior es el 40%.\n- El **tipo efectivo** es el tipo medio sobre la totalidad de tus ingresos. Aquí es 9.600 dividido entre 50.000, o aproximadamente el 19%.\n\nTu tipo efectivo casi siempre es inferior a tu tipo marginal máximo. La gente suele confundir ambos y sobreestima cuánto impuesto paga realmente.\n\n## Mínimos exentos y deducciones\n\nLos mínimos exentos y las deducciones reducen tu renta imponible, lo que rebaja tu cuota. Varían mucho según el país, pero algunos ejemplos comunes son:\n\n- Un mínimo personal exento de impuestos o cantidad básica.\n- Gastos relacionados con el trabajo, como herramientas, desplazamientos o una oficina en casa.\n- Aportaciones a planes de pensiones o jubilación.\n- Determinadas primas de seguro o donaciones benéficas.\n\nSaber qué puedes deducir es una de las formas más sencillas de conservar más dinero. Nuestra guía sobre [deducciones fiscales](/guides/tax-deductions-explained) desglosa las principales categorías.\n\n## Impuesto sobre la renta frente a cotizaciones sociales\n\nAquí hay un punto que sorprende a mucha gente: el impuesto sobre la renta no es lo único que se descuenta de tu salario. Por separado, están las cotizaciones sociales o a la seguridad social.\n\n- En **EE. UU.**, son Social Security y Medicare (a menudo etiquetadas como FICA).\n- En el **Reino Unido**, es National Insurance.\n- En **Alemania**, cubren los seguros de pensiones, sanidad, desempleo y dependencia.\n\nEstas cotizaciones financian las pensiones, la sanidad y las prestaciones por desempleo. Se calculan de forma distinta al impuesto sobre la renta y a menudo tienen sus propios umbrales y topes. Como pueden suponer una parte importante de tu retribución, ignorarlas da una imagen engañosa de tu sueldo neto real. Más información en nuestro resumen sobre [cotizaciones a la seguridad social](/guides/social-security-contributions-guide).\n\n## Cómo todo esto se convierte en sueldo neto\n\nUniendo las piezas, tu sueldo neto (también llamado paga neta) generalmente queda así:\n\n1. Empieza con la **renta bruta**.\n2. Resta los **mínimos exentos y deducciones** para hallar la renta imponible.\n3. Aplica los **tramos progresivos** para calcular el impuesto sobre la renta.\n4. Resta las **cotizaciones sociales**.\n5. Lo que queda es tu **sueldo neto**.\n\nUn trabajador que gana el mismo salario bruto en EE. UU., el Reino Unido y Alemania puede acabar con cantidades netas muy diferentes, porque cada país combina impuestos y cotizaciones de distinta manera. Comparamos los tres lado a lado en nuestra guía sobre [el sueldo neto comparado entre países](/guides/take-home-pay-us-uk-germany).\n\n¿Quieres una cifra para tu propia situación? Prueba nuestra [calculadora de salario](/salary-calculator) gratuita para estimar tu sueldo neto en segundos.\n\n## Reflexiones finales\n\nEl impuesto sobre la renta puede resultar intimidante, pero la idea central es sencilla: tributas por franjas, solo sobre lo que queda tras tu mínimo exento y tus deducciones, y ese impuesto convive con cotizaciones sociales independientes. Una vez que ves cómo la renta bruta se convierte en sueldo neto paso a paso, tu nómina deja de ser un misterio. Como los tipos y umbrales cambian cada año, recurre a fuentes oficiales y a un profesional cualificado para las decisiones importantes.",
+    "keywords": [
+      "cómo funciona el impuesto sobre la renta",
+      "conceptos básicos del impuesto sobre la renta",
+      "renta imponible",
+      "tramos impositivos explicados",
+      "tipo marginal frente a tipo efectivo",
+      "sueldo neto"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Tipos y tramos del impuesto federal sobre la renta",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      },
+      {
+        "label": "GOV.UK — Tipos del impuesto sobre la renta y mínimos personales",
+        "url": "https://www.gov.uk/income-tax-rates"
+      },
+      {
+        "label": "Ministerio Federal de Finanzas de Alemania",
+        "url": "https://www.bundesfinanzministerium.de"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Ganar más dinero puede dejarme alguna vez en peor situación?",
+        "answer": "En un sistema progresivo normal, no. Solo los ingresos que caen dentro de un tramo más alto tributan al tipo más elevado, así que una subida de sueldo siempre incrementa tu sueldo neto. Los llamados precipicios de prestaciones (benefit cliffs) son una cuestión aparte y no forman parte de cómo funcionan los tramos del impuesto sobre la renta."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre el impuesto sobre la renta y las cotizaciones sociales?",
+        "answer": "El impuesto sobre la renta es un impuesto general sobre los ingresos que financia los servicios públicos. Las cotizaciones sociales (como National Insurance, FICA o los seguros sociales alemanes) son pagos independientes que financian las pensiones, la sanidad y las prestaciones por desempleo, y se calculan según sus propias normas."
+      },
+      {
+        "question": "¿Por qué mi sueldo neto es más bajo de lo que esperaba?",
+        "answer": "A tu salario bruto se le descuentan tanto el impuesto sobre la renta como las cotizaciones sociales, y a veces también aportaciones a pensiones u otras retenciones. El efecto combinado puede ser mayor de lo que la gente espera, por eso una estimación de una calculadora ayuda a fijar expectativas realistas."
+      },
+      {
+        "question": "¿Los autónomos pagan el impuesto sobre la renta de forma distinta a los empleados?",
+        "answer": "Los tipos suelen ser los mismos, pero el procedimiento difiere. A los empleados se les retiene el impuesto automáticamente en cada nómina, mientras que los autónomos normalmente lo calculan y lo pagan ellos mismos, a menudo a plazos, y pueden deducir más gastos de su actividad."
+      }
+    ]
+  },
+  "take-home-pay-us-uk-germany": {
+    "title": "Salario neto comparado: EE. UU. vs Alemania vs Reino Unido",
+    "description": "Compara el salario neto en EE. UU., Alemania y el Reino Unido. Descubre cómo el impuesto sobre la renta y las cotizaciones sociales determinan el sueldo neto, con una tabla ilustrativa por países.",
+    "content": "## Por qué el mismo salario se siente distinto en cada país\n\nImagina a tres trabajadores que ganan el equivalente a un buen salario de clase media y que viven en Estados Unidos, Alemania y el Reino Unido. Podrían acordar el mismo salario bruto y, sin embargo, la cantidad que realmente llega a sus cuentas bancarias puede ser sorprendentemente diferente. La razón no es solo el tipo del impuesto sobre la renta. Es el conjunto completo de deducciones, incluidas las cotizaciones sociales, que cada país suma por encima (o junto) al impuesto sobre la renta.\n\nEntender estas diferencias te ayuda a comparar ofertas de trabajo, planificar una mudanza al extranjero o, simplemente, dar sentido a tu propia nómina. Si primero quieres ver cómo encajan las piezas, nuestra guía sobre [cómo funciona el impuesto sobre la renta](/guides/how-income-tax-works) es un buen punto de partida, junto con la diferencia entre [ingreso bruto y neto](/guides/gross-income-vs-net-income).\n\n## Los componentes del salario neto\n\nTodos los países de esta comparación utilizan un impuesto sobre la renta progresivo, lo que significa que los tramos más altos de ingresos tributan a tipos más elevados. Pero cada uno añade su propio matiz.\n\n### Estados Unidos\n\nEn EE. UU., el impuesto federal sobre la renta utiliza tramos graduados, y la mayoría de los estados añaden su propio impuesto sobre la renta por encima (algunos no cobran ninguno). Además, los trabajadores pagan FICA, que financia la Social Security y Medicare. FICA es una cotización salarial de tipo fijo repartida entre el empleado y el empleador, por lo que se aplica incluso a quienes ganan menos y que podrían adeudar poco impuesto federal sobre la renta.\n\n### Alemania\n\nAlemania combina un impuesto sobre la renta progresivo con el Solidaritaetszuschlag (el recargo de solidaridad), que hoy afecta principalmente a quienes tienen ingresos más altos. La cuestión más importante, sin embargo, es la seguridad social obligatoria. Los trabajadores alemanes cotizan al seguro público de salud, al seguro de pensiones, al seguro de dependencia y al seguro de desempleo. Estas cotizaciones son cuantiosas y son una de las principales razones por las que el salario neto alemán suele ser inferior al de EE. UU. o el Reino Unido para una cifra bruta similar.\n\n### Reino Unido\n\nEl Reino Unido aplica un impuesto sobre la renta progresivo con una Personal Allowance exenta de impuestos, una cantidad que puedes ganar antes de que se aplique cualquier impuesto sobre la renta. Junto con el impuesto sobre la renta, los empleados pagan cotizaciones de National Insurance, que financian la pensión estatal y otras prestaciones. La carga combinada se sitúa normalmente entre la de EE. UU. y la de Alemania para muchos trabajadores.\n\n## Una comparación ilustrativa\n\nLa siguiente tabla es una ilustración aproximada y simplificada para un trabajador soltero sin personas a cargo, utilizando un salario bruto aproximado de 60.000 en cada moneda local. Estas cifras son estimaciones solo con fines didácticos. No son exactas, no reflejan todas las circunstancias personales y no deben usarse para una planificación real. Las monedas no están convertidas, así que no las interpretes como una equivalencia directa entre divisas.\n\n| Concepto | Estados Unidos | Alemania | Reino Unido |\n|---|---|---|---|\n| Moneda | USD | EUR | GBP |\n| Bruto aprox. | 60.000 | 60.000 | 60.000 |\n| Impuesto sobre la renta | Moderado | Más alto | Moderado |\n| Cotizaciones sociales | FICA (más bajas) | Salud, pensión, dependencia, desempleo (más altas) | National Insurance (moderadas) |\n| Porcentaje neto aprox. | En torno al 70-78 % | En torno al 58-65 % | En torno al 68-74 % |\n\nConsidera esos porcentajes de salario neto como rangos amplios e ilustrativos, no como promesas. Los impuestos estatales o locales, el estado civil, los hijos, las decisiones sobre la pensión y los detalles del seguro de salud pueden modificarlos de forma significativa.\n\n## Por qué Alemania suele deducir más\n\nLa razón principal es la seguridad social. Alemania financia un sistema integral de salud pública, pensiones, dependencia y desempleo en gran medida mediante cotizaciones salariales obligatorias. En EE. UU., la sanidad suele estar vinculada a planes privados o de empresa más que a una única deducción legal, y en el Reino Unido buena parte de la sanidad se financia a través de los impuestos generales en lugar de una cotización separada de gran tamaño. Así que una nómina alemana agrupa más servicios en deducciones visibles, lo que reduce el salario neto pero también refleja prestaciones que el trabajador recibe a cambio.\n\nPor eso comparar únicamente el tipo del impuesto sobre la renta puede inducir a error. Un país con un tipo más bajo del impuesto sobre la renta puede dejarte aun así con un salario neto menor una vez que se incluyen las cotizaciones sociales, y lo que parece una deducción mayor puede venir acompañado de servicios públicos más amplios.\n\n## Calcula las cifras reales para tu situación\n\nComo los tipos, los umbrales y las reducciones cambian cada año y dependen en gran medida de tus circunstancias personales, la única forma fiable de conocer tu cifra es calcularla. Puedes probar la [calculadora de salario de EE. UU.](/salary-calculator/us), la [calculadora de salario de Alemania](/salary-calculator/de) y la [calculadora de salario del Reino Unido](/salary-calculator/uk) para estimar tu propio salario neto en cada país.\n\n## Reflexiones finales\n\nEl salario neto está determinado por mucho más que un único tipo impositivo. En EE. UU., Alemania y el Reino Unido, la combinación de un impuesto sobre la renta progresivo y las cotizaciones sociales es lo que cuenta la historia real, y las mayores deducciones de Alemania reflejan en buena medida su amplio sistema de seguros obligatorios. Usa los rangos ilustrativos de aquí para construir intuición, pero recurre siempre a las calculadoras para obtener estimaciones actualizadas, y consulta a un profesional fiscal cualificado para las decisiones que afecten a tus finanzas. Los tipos y los umbrales varían según el año y la situación individual.",
+    "keywords": [
+      "comparación de salario neto",
+      "salario EE. UU. vs Alemania vs Reino Unido",
+      "salario neto por país",
+      "cotizaciones sociales",
+      "comparación del impuesto sobre la renta",
+      "deducciones de nómina"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Tipos y tramos del impuesto federal sobre la renta",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      },
+      {
+        "label": "GOV.UK — Tipos del impuesto sobre la renta",
+        "url": "https://www.gov.uk/income-tax-rates"
+      },
+      {
+        "label": "Ministerio Federal de Hacienda de Alemania",
+        "url": "https://www.bundesfinanzministerium.de"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Por qué mi salario neto es más bajo en Alemania que en EE. UU. con el mismo salario bruto?",
+        "answer": "Alemania financia el seguro público de salud, de pensiones, de dependencia y de desempleo mediante cuantiosas cotizaciones salariales obligatorias. Estas deducciones sociales, más que el impuesto sobre la renta por sí solo, son la razón principal de que el salario neto alemán suela ser inferior para una cifra bruta similar."
+      },
+      {
+        "question": "¿Un tipo más bajo del impuesto sobre la renta significa siempre un salario neto más alto?",
+        "answer": "No. Las cotizaciones sociales como FICA en EE. UU., National Insurance en el Reino Unido y la seguridad social obligatoria en Alemania pueden cambiar el panorama de forma significativa. Un país con un tipo más bajo del impuesto sobre la renta puede dejarte aun así con un salario neto menor una vez que se añaden estas cotizaciones."
+      },
+      {
+        "question": "¿Son exactos los porcentajes de la tabla de comparación?",
+        "answer": "No. Son rangos ilustrativos para un trabajador soltero sin personas a cargo, pensados solo para construir intuición. Tu cifra real depende de tu estado o región, del estado civil, de los hijos, de las decisiones sobre la pensión y de los tipos del año en curso. Usa las calculadoras para obtener una estimación."
+      },
+      {
+        "question": "¿Puedo comparar los tres países leyendo la tabla en horizontal?",
+        "answer": "No directamente. Cada columna utiliza su propia moneda local sin conversión por tipo de cambio, por lo que las cifras no son equivalentes entre sí. La tabla está diseñada para mostrar patrones en las deducciones, no para convertir salarios entre países."
+      }
+    ]
+  },
+  "what-is-a-good-salary": {
+    "title": "¿Qué es un buen salario? Cómo comparar tu sueldo con referencias",
+    "description": "¿Qué es un buen salario? Aprende a comparar tu sueldo con referencias usando salarios medianos, percentiles, bruto frente a neto y poder adquisitivo en EE. UU., Reino Unido y Alemania.",
+    "content": "## ¿Qué cuenta como un buen salario?\n\nPregunta a diez personas qué es un buen salario y obtendrás diez respuestas distintas. Eso se debe a que el sueldo es relativo. Una cifra que parece generosa para un recién graduado en un pueblo pequeño puede resultar ajustada para el padre o la madre de tres hijos en una ciudad cara. En lugar de perseguir una cifra mágica, conviene aprender a comparar tu sueldo con datos reales y con tu propia situación.\n\nEsta guía repasa las principales formas de evaluar un salario, qué estadísticas son fiables y por qué la cifra principal es solo la mitad de la historia.\n\n## Por qué no existe una única cifra buena\n\nVarios factores cambian lo que significa \"bueno\" para ti:\n\n- **Ubicación.** Los sueldos y los precios varían según el país, la región e incluso el barrio.\n- **Puesto y sector.** Un oficio cualificado, un docente y un desarrollador de software ocupan puntos muy distintos en la escala salarial.\n- **Experiencia.** El sueldo de nivel inicial y el de un perfil sénior para el mismo puesto pueden diferir mucho.\n- **Tamaño del hogar.** Un solo ingreso que mantiene a cuatro personas rinde de forma distinta que un solo ingreso que mantiene a una.\n- **Coste de la vida.** El alquiler, la comida, el transporte y los impuestos se comen cada nómina antes de que llegue a tus ahorros.\n\nPor todo esto, la pregunta más inteligente no es si un salario es bueno en abstracto, sino si es bueno para tu puesto, en tu zona y en tu etapa. Para profundizar en cómo los precios remodelan tu sueldo, consulta nuestra guía sobre [coste de la vida frente al salario](/guides/cost-of-living-vs-salary).\n\n## Comparar con la mediana, la media y los percentiles\n\nPara comparar tu sueldo de forma justa, necesitas un punto de referencia. Las estadísticas salariales oficiales te ofrecen tres herramientas útiles.\n\n- **Mediana:** el valor central. La mitad de los trabajadores gana más y la otra mitad gana menos. La mediana suele ser la referencia más honesta porque no se distorsiona por un puñado de personas con ingresos muy altos.\n- **Media (promedio):** suma todos los salarios y divídelos entre el número de trabajadores. Unos pocos salarios enormes pueden elevar la media muy por encima de lo que gana una persona típica.\n- **Percentiles:** muestran dónde te sitúas dentro del grupo. Si estás en el percentil 75, ganas más que el 75 por ciento de los trabajadores de ese grupo.\n\nAquí tienes un ejemplo simplificado para un puesto imaginario. Las cifras cambian con el tiempo y varían según la región, así que tómalo solo como ilustración.\n\n| Medida | Cifra anual | Qué te indica |\n|---|---|---|\n| Percentil 25 | 38.000 | Extremo inferior del sueldo típico |\n| Mediana (50) | 52.000 | Un trabajador típico en este puesto |\n| Media (promedio) | 57.000 | Elevada por quienes más ganan |\n| Percentil 75 | 68.000 | Sueldo elevado para el puesto |\n\nSi ganas cerca de la mediana de tu puesto y tu región, estás más o menos en línea con tus iguales. Situarte cerca del percentil 75 sugiere un sueldo elevado, mientras que el percentil 25 puede ser una señal para planear una [negociación salarial](/guides/salary-negotiation-tips).\n\n## Bruto frente a neto: juzga el dinero que conservas\n\nUna oferta de empleo casi siempre cita una cifra bruta, el importe antes de impuestos y deducciones. Lo que llega a tu cuenta bancaria es tu salario neto, y la diferencia entre ambos puede ser grande.\n\n- El impuesto sobre la renta, la seguridad social y las cotizaciones sanitarias salen primero.\n- Dos ofertas con el mismo salario bruto pueden dar un neto muy distinto entre países o situaciones fiscales.\n- Una cifra bruta más alta en un entorno de impuestos elevados puede dejarte menos que una cifra bruta más baja en otro lugar.\n\nPor eso, cuando compares cifras, compara el neto siempre que puedas. Pasa cualquier oferta por nuestra [calculadora de salario](/salary-calculator) gratuita para estimar el sueldo neto en EE. UU., Alemania o el Reino Unido antes de decidir.\n\n## Usar estadísticas salariales oficiales\n\nLos organismos públicos publican datos salariales fiables y actualizados con regularidad. Son gratuitos y mucho más dignos de confianza que las publicaciones anónimas de un foro.\n\n- **Estados Unidos:** la Bureau of Labor Statistics publica los sueldos por ocupación y zona.\n- **Reino Unido:** la Office for National Statistics informa sobre los ingresos y las horas de trabajo.\n- **Unión Europea y Alemania:** Eurostat cubre los salarios y los costes laborales en los Estados miembros.\n\nCuando los consultes, fíjate en la fecha, la región y en si la cifra es bruta o neta. Busca tu ocupación específica en lugar de una media nacional, ya que los nombres de los puestos varían enormemente.\n\n## Por qué el poder adquisitivo supera a la cifra principal\n\nDos personas pueden ganar el mismo salario y llevar vidas muy diferentes. La razón es el poder adquisitivo, es decir, cuánto compra realmente tu dinero allí donde vives.\n\nConsidera esta comparación sencilla. Las cifras son ilustrativas.\n\n| Ciudad | Salario bruto | Alquiler mensual típico | Dinero aproximado que queda tras el alquiler |\n|---|---|---|---|\n| Ciudad de coste más bajo | 50.000 | 900 | Más margen |\n| Ciudad de coste más alto | 60.000 | 1.800 | Menos margen |\n\nEl salario de 60.000 parece mayor, pero tras un alquiler mucho más alto, el trabajador de la ciudad más barata puede ahorrar más cada mes. Por eso, un aumento que viene acompañado de una mudanza a una ciudad cara no siempre es una ganancia real.\n\nUnos pocos hábitos te ayudan a centrarte en el poder adquisitivo:\n\n- Compara el sueldo neto, no el bruto, frente a los precios locales.\n- Ten en cuenta el alquiler, el transporte, los impuestos y el cuidado de los hijos, no solo el salario.\n- Valora prestaciones como las aportaciones a la pensión, las vacaciones pagadas y la cobertura sanitaria.\n\nCuando sopeses dos puestos en paralelo, nuestra guía sobre cómo [comparar ofertas de empleo](/guides/how-to-compare-job-offers) repasa la lista de comprobación completa.\n\n## Reflexiones finales\n\nUn buen salario no es una cifra fija que puedas consultar una sola vez. Es una cifra que encaja con tu puesto, tu ubicación, tu experiencia y tu coste de la vida, y que te deja un sueldo neto saludable. Usa los datos de mediana y percentiles para ver dónde te sitúas, comprueba siempre el neto en lugar del bruto y juzga cualquier oferta por lo que realmente te permite comprar.",
+    "keywords": [
+      "qué es un buen salario",
+      "comparación salarial con referencias",
+      "mediana frente a salario medio",
+      "salario bruto frente a neto",
+      "percentiles salariales",
+      "poder adquisitivo"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Estadísticas de empleo y salarios por ocupación",
+        "url": "https://www.bls.gov/oes/"
+      },
+      {
+        "label": "UK Office for National Statistics — Ingresos y horas de trabajo",
+        "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours"
+      },
+      {
+        "label": "Eurostat — Salarios y costes laborales",
+        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Wages_and_labour_costs"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Al comparar con referencias, ¿debería fijarme en la mediana o en el salario medio?",
+        "answer": "La mediana suele ser más fiable porque muestra al trabajador del medio y no se distorsiona por unas pocas personas con ingresos muy altos. La media puede parecer mayor de lo que gana realmente la mayoría. Siempre que puedas, comprueba ambas, además de los percentiles de tu puesto y región concretos."
+      },
+      {
+        "question": "¿Un salario bruto más alto es siempre mejor?",
+        "answer": "No necesariamente. Tras el impuesto sobre la renta, la seguridad social y otras deducciones, una cifra bruta más alta en una zona de impuestos elevados puede dejarte con un sueldo neto inferior al de una cifra bruta más baja en otro lugar. Compara siempre el sueldo neto y valora el coste de la vida local antes de decidir."
+      },
+      {
+        "question": "¿Dónde puedo encontrar datos salariales fiables?",
+        "answer": "Los organismos oficiales de estadística son un buen punto de partida: la U.S. Bureau of Labor Statistics, la UK Office for National Statistics y Eurostat para la UE y Alemania. Busca tu ocupación y región específicas, y fíjate en la fecha y en si las cifras son brutas o netas."
+      },
+      {
+        "question": "¿Cómo cambia el coste de la vida lo que cuenta como un buen salario?",
+        "answer": "Un salario mayor en una ciudad cara puede dejarte con menos dinero disponible que un salario menor en una zona más barata, una vez pagados el alquiler, los impuestos y los gastos diarios. El poder adquisitivo, es decir, lo que tu sueldo neto compra realmente a nivel local, suele importar más que la cifra principal."
+      }
+    ]
+  },
+  "how-to-compare-job-offers": {
+    "title": "Cómo comparar ofertas de trabajo (más allá del salario)",
+    "description": "Aprende a comparar ofertas de trabajo más allá del salario: convierte a bruto y neto anual, valora los beneficios y ten en cuenta los impuestos, el desplazamiento y las ventajas no económicas.",
+    "content": "Un número más alto en la carta de oferta no siempre significa más dinero en tu bolsillo. Dos empleos con el mismo salario bruto pueden dejarte con cantidades muy distintas una vez que se cuentan los impuestos, los beneficios y los costes de desplazamiento. Comparar bien las ofertas significa mirar el panorama completo, no solo la cifra destacada.\n\n## Empieza por poner todas las ofertas en la misma base\n\nLas ofertas llegan en distintos formatos. Una se cotiza por año, otra por mes y otra por hora. Antes de poder comparar nada, convierte cada una a salario bruto anual.\n\n- De por hora a anual: multiplica la tarifa por hora por las horas a la semana y, después, por 52. Una tarifa de 25 por hora a 40 horas a la semana son unos 52.000 al año.\n- De mensual a anual: multiplica por 12. Un salario de 4.500 EUR al mes son 54.000 EUR al año.\n\nUna vez que todas las ofertas están en bruto anual, da el siguiente paso que la mayoría de la gente se salta: estima el [salario neto](/guides/what-is-take-home-pay). El bruto es lo que te prometen; el neto es lo que realmente llega a tu cuenta bancaria tras el impuesto sobre la renta y las cotizaciones sociales. Puedes pasar cada cifra por nuestra [calculadora de salario](/calculator) o por la [calculadora de salario neto](/net-salary-calculator) para comparar el neto lado a lado.\n\n## Pon un número a los beneficios\n\nLos beneficios son dinero real, aunque nunca aparezcan como salario. Según la U.S. Bureau of Labor Statistics, los beneficios representan una parte significativa de la retribución total del empleado, por lo que ignorarlos puede ocultar una gran diferencia.\n\nCosas que conviene valorar:\n\n- Seguro médico: ¿cuánto cuesta la prima y cuánto cubre el empleador?\n- Aportación a la pensión o al plan de jubilación: una aportación del 5 por ciento sobre un salario de 60.000 son 3.000 al año de dinero prácticamente gratis.\n- Días libres pagados: una semana adicional de vacaciones tiene un valor en efectivo aproximadamente igual a una semana de sueldo.\n- Bonificaciones: confirma si están garantizadas o son discrecionales, y usa una estimación conservadora.\n\n## Ten en cuenta la ubicación y los impuestos\n\nEl lugar donde se ubica un empleo cambia tu salario neto y tus costes. Las normas fiscales difieren según el país y, a veces, según la región, y el mismo salario bruto deja un neto distinto en EE. UU., Alemania y el Reino Unido. Mira cómo se comparan los tres en [salario neto comparado entre países](/guides/take-home-pay-us-uk-germany).\n\nUn salario que parece mayor en una ciudad cara puede dar para menos que uno más pequeño en una zona más barata. Sopesa la oferta frente a los precios locales con nuestra guía sobre el [coste de vida](/guides/cost-of-living-vs-salary) antes de decidir.\n\n## Dos ofertas lado a lado\n\nAquí tienes un ejemplo simplificado que compara dos ofertas con un salario bruto idéntico.\n\n| Factor | Oferta A | Oferta B |\n| --- | --- | --- |\n| Bruto anual | 60.000 | 60.000 |\n| Neto estimado | 45.000 | 44.000 |\n| Aportación a la jubilación | 0 | 3.000 |\n| Días libres pagados | 20 días | 28 días |\n| Coste del desplazamiento (anual) | 2.400 | 0 (remoto) |\n| Valor total aproximado | 42.600 | 47.000 |\n\nSobre el papel empataban. Una vez que se incluyen los beneficios y el desplazamiento, la Oferta B va claramente por delante.\n\n### Desplazamiento y teletrabajo\n\nDesplazarse cuesta dinero y tiempo. Un desplazamiento de 2.400 al año es, en la práctica, un recorte de sueldo. Los puestos remotos o híbridos también pueden ahorrar en comidas, aparcamiento y ropa de trabajo, y devolverte horas cada semana.\n\n## No olvides los factores no económicos\n\nLos números importan, pero también el resto del trabajo:\n\n- Crecimiento: formación, vías de promoción y habilidades que vas a desarrollar.\n- Estabilidad: la salud de la empresa y lo seguro que se siente el puesto.\n- Flexibilidad: control sobre el horario y opciones de trabajo remoto.\n- Cultura y jefe: a menudo el mayor factor de la felicidad del día a día.\n\nSi dos ofertas están parejas en dinero, estos factores deberían decidir. Y si el dinero está cerca pero no es igual, recuerda que a menudo puedes pedir más. Consulta nuestros consejos sobre [negociación salarial](/guides/salary-negotiation-tips) antes de aceptar.\n\n## Reflexiones finales\n\nLa mejor oferta rara vez es la que tiene la cifra bruta más alta. Convierte todo a la misma base, compara el salario neto, suma el valor en efectivo de los beneficios y resta los costes de desplazamiento. Después, añade los factores no económicos que dan forma a tu vida diaria. Las normas fiscales y de beneficios varían según el país y la situación personal, así que toma estos ejemplos como un punto de partida y consulta a un profesional cualificado antes de tomar una decisión final.",
+    "keywords": [
+      "comparar ofertas de trabajo",
+      "retribución total",
+      "comparación de salario neto",
+      "valor de los beneficios para empleados",
+      "evaluar ofertas de trabajo",
+      "salario neto"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Beneficios para empleados",
+        "url": "https://www.bls.gov/ebs/"
+      },
+      {
+        "label": "GOV.UK — Impuesto sobre la renta",
+        "url": "https://www.gov.uk/income-tax"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Debo comparar las ofertas de trabajo por el salario bruto o por el neto?",
+        "answer": "Compara el salario neto, la cantidad que realmente te llevas a casa tras los impuestos y las cotizaciones. Dos ofertas con el mismo bruto pueden dar lugar a importes netos distintos según la ubicación y las deducciones, así que el neto ofrece una imagen más fiel."
+      },
+      {
+        "question": "¿Cómo pongo valor a beneficios como los días de vacaciones adicionales?",
+        "answer": "Estima el equivalente en efectivo. Una semana adicional de permiso pagado vale aproximadamente una semana de tu salario, y una aportación a la jubilación es dinero real; por ejemplo, una aportación del 5 por ciento sobre 60.000 equivale a 3.000 al año."
+      },
+      {
+        "question": "¿Merece la pena un salario más alto en una ciudad cara?",
+        "answer": "No siempre. Un salario mayor puede comprar menos si el alquiler, el transporte y los gastos diarios son mucho más altos. Compara la oferta con los costes de vida locales y con tu salario neto estimado antes de decidir."
+      },
+      {
+        "question": "¿Cuánto afecta realmente el desplazamiento a una oferta de trabajo?",
+        "answer": "Más de lo que la gente espera. Los costes de transporte actúan como un recorte de sueldo, y el tiempo perdido también tiene valor. Un puesto remoto que elimina un desplazamiento de 2.400 al año puede compensar un salario bruto algo más alto."
+      }
+    ]
+  },
+  "cost-of-living-vs-salary": {
+    "title": "Coste de vida frente al salario: entiende tus ingresos reales",
+    "description": "Descubre cómo el coste de vida determina tus ingresos reales. Compara el sueldo nominal frente al real, el poder adquisitivo y el salario neto entre ciudades para saber lo que ganas de verdad.",
+    "content": "## Lo que de verdad vale tu salario\n\nUna oferta de trabajo con una cifra más grande puede parecer una victoria automática. Pero el tamaño de tu nómina solo cuenta la mitad de la historia. Lo que realmente importa es cuánto puede comprar ese dinero allí donde vives. Esta es la diferencia entre los ingresos nominales y los ingresos reales, y entenderla puede cambiar la forma en que valoras cualquier oferta de trabajo.\n\n## Ingresos nominales frente a ingresos reales\n\nLos ingresos nominales son la cantidad bruta que ganas, medida en moneda corriente. Los ingresos reales ajustan esa cifra al coste de las cosas que realmente compras.\n\n- Ingresos nominales: la cifra de tu contrato, por ejemplo 60.000 USD al año.\n- Ingresos reales: lo que esos 60.000 pueden cubrir después de tener en cuenta el alquiler, la comida, el transporte y los impuestos.\n\nDos personas pueden ganar el mismo salario nominal y vivir de forma muy distinta, según los precios locales.\n\n## Poder adquisitivo e inflación\n\nEl poder adquisitivo es cuánto compra una unidad de moneda. Se reduce cuando suben los precios. Si tu sueldo se mantiene plano mientras los precios suben un 4 por ciento en un año, en la práctica te has bajado el sueldo, porque tu dinero compra menos.\n\nLa inflación se mide mediante índices de precios oficiales, como el Índice de Precios al Consumo. Ten en cuenta que los precios y las tasas de inflación cambian constantemente, así que cualquier cifra que veas es una fotografía del momento, no una regla permanente.\n\n## Los gastos que se comen tu salario\n\nUnos pocos gastos importantes determinan tu nivel de vida más que ninguna otra cosa:\n\n- Vivienda: normalmente el mayor gasto, y el que más varía de un lugar a otro.\n- Transporte: tener coche, el combustible o los abonos de transporte público.\n- Alimentación y compra: el gasto diario que se acumula con rapidez.\n- Impuestos y cotizaciones: reducen el salario bruto antes de que gastes un solo céntimo, por lo que [el sueldo bruto frente al neto](/guides/gross-income-vs-net-income) importa tanto.\n\n## El mismo salario, una realidad distinta\n\nImagina a dos personas que ganan ambas 70.000 al año en moneda local. La tabla siguiente utiliza cifras ilustrativas para mostrar cómo el mismo salario puede cundir de forma muy diferente.\n\n| Concepto de gasto (al año) | Ciudad cara | Ciudad más barata |\n| --- | --- | --- |\n| Alquiler | 24.000 | 12.000 |\n| Transporte | 4.000 | 2.500 |\n| Alimentación | 8.000 | 6.000 |\n| Impuestos estimados | 18.000 | 18.000 |\n| Dinero que sobra | 16.000 | 31.500 |\n\nEl mismo salario bruto, casi el doble de dinero sobrante. La ciudad más barata ofrece unos ingresos reales más altos aunque la nómina sea idéntica.\n\n## Por qué un salario bruto más alto puede valer menos\n\nEsta es la trampa que muchos buscadores de empleo pasan por alto. Un puesto que paga 90.000 en una gran área metropolitana cara puede dejarte con menos poder de compra que un puesto de 65.000 en una región más asequible. Un alquiler más alto, un transporte más caro y, a veces, unos impuestos locales más elevados pueden borrar la diferencia sin que te des cuenta, y más todavía.\n\nCuando valores ofertas, mira más allá de la cifra principal y pregúntate cuánto va a costar realmente tu vida. Para saber si una oferta es competitiva de entrada, consulta [qué es un buen salario](/guides/what-is-a-good-salary).\n\n## Comparar entre ciudades y países\n\nLa comparación entre países añade capas adicionales: distintos sistemas fiscales, modelos sanitarios y monedas. Un salario en Alemania, el Reino Unido y Estados Unidos puede traducirse en importes netos y costes de vida muy diferentes. Nuestra guía sobre [el sueldo neto comparado](/guides/take-home-pay-us-uk-germany) repasa estas diferencias.\n\nUn enfoque sencillo y práctico:\n\n1. Empieza por el sueldo neto, no por el bruto. Usa una [calculadora de salario](/salary-calculator) para estimar lo que realmente llega a tu cuenta.\n2. Resta tus principales costes locales, especialmente la vivienda.\n3. Compara el dinero que sobra, no los salarios de portada.\n\nAsí mantienes el foco en los ingresos reales en lugar de en una cifra bruta impresionante pero engañosa.\n\n## Reflexiones finales\n\nUn salario solo es tan bueno como lo que te permite permitirte. Si piensas en términos de ingresos reales, poder adquisitivo y costes locales, podrás comparar oportunidades con mucha más precisión. Parte de tu sueldo neto, ten en cuenta la vivienda y los gastos diarios, y tendrás una imagen clara y honesta de cualquier oferta. Recuerda que los precios y las normas fiscales cambian con el tiempo, así que trata cada comparación como una estimación actual y no como una verdad fija.",
+    "keywords": [
+      "coste de vida frente a salario",
+      "ingresos reales",
+      "poder adquisitivo",
+      "ingresos nominales frente a reales",
+      "comparación de sueldo neto",
+      "salario por ciudad"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Índice de Precios al Consumo",
+        "url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "label": "UK Office for National Statistics — Inflación e índices de precios",
+        "url": "https://www.ons.gov.uk/economy/inflationandpriceindices"
+      },
+      {
+        "label": "Eurostat — Índice Armonizado de Precios de Consumo",
+        "url": "https://ec.europa.eu/eurostat/web/hicp"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es la diferencia entre ingresos nominales e ingresos reales?",
+        "answer": "Los ingresos nominales son la cantidad bruta que ganas en moneda, mientras que los ingresos reales reflejan lo que ese dinero puede comprar realmente una vez tenidos en cuenta los precios y la inflación. Los ingresos reales son la mejor medida de tu nivel de vida."
+      },
+      {
+        "question": "¿Por qué un salario más alto puede dejarme en peor situación?",
+        "answer": "Un salario bruto más alto en una zona cara puede quedar compensado por unos elevados costes de vivienda, transporte e impuestos. Después de esos gastos, puede que te sobre menos dinero que a alguien que gana menos en un lugar más barato."
+      },
+      {
+        "question": "¿Cómo comparo salarios entre dos ciudades o países?",
+        "answer": "Empieza por tu sueldo neto estimado en lugar del bruto, resta los principales costes locales como el alquiler y el transporte, y luego compara el dinero que sobra. Esto refleja el poder adquisitivo real en lugar de las cifras de portada."
+      },
+      {
+        "question": "¿Afecta la inflación a lo que vale mi salario?",
+        "answer": "Sí. Cuando los precios suben más rápido que tu sueldo, tu poder adquisitivo baja, lo que significa que el mismo salario compra menos con el tiempo. Las tasas de inflación cambian con regularidad, así que cualquier cifra es solo una fotografía del momento."
+      }
+    ]
+  },
+  "freelance-vs-employee-income": {
+    "title": "Autónomo vs. asalariado: cómo difiere el salario neto",
+    "description": "El salario neto de un autónomo y el de un asalariado difiere más de lo que sugieren las tarifas. Conoce el impuesto de autónomos, los beneficios perdidos y cómo fijar una tarifa justa.",
+    "content": "Cuando pasas de un empleo asalariado a trabajar como autónomo, los números pueden engañarte. Una tarifa por contrato de 50 por hora puede parecer mucho mejor que un salario anual de 60.000, pero ambas cifras no son directamente comparables. Los autónomos cargan con costes que los empleadores normalmente absorben. Antes de celebrar una tarifa nominal más alta, conviene entender adónde va realmente el dinero.\n\n## Por qué una tarifa de autónomo no es un salario\n\nEl salario de un empleado es un paquete completo. Tu empleador se encarga de una parte de tus impuestos, contribuye a los programas sociales en tu nombre y te proporciona tiempo libre remunerado. Una tarifa de autónomo es simplemente un precio por tu trabajo, sin nada incluido. Todo lo que antes cubría un empleador ahora sale de tu bolsillo.\n\nPara comparar ambas opciones de forma justa, mira más allá de la cifra bruta. Aprender la diferencia entre [ingresos brutos y netos](/guides/gross-income-vs-net-income) es el primer paso, porque tus ganancias reales son las que llegan a tu cuenta bancaria después de impuestos y costes.\n\n## Pagas las dos mitades de las cotizaciones sociales\n\nComo empleado, tú y tu empleador os repartís las cotizaciones sociales. Cuando trabajas por tu cuenta, normalmente pagas ambas partes.\n\n- Estados Unidos: Los empleados pagan el 7,65 por ciento para la Social Security y Medicare, y los empleadores aportan la misma cantidad. Los trabajadores por cuenta propia pagan el impuesto de autónomos (self-employment tax) completo, de en torno al 15,3 por ciento sobre los ingresos netos.\n- Reino Unido: Los autónomos pagan el National Insurance a través de las clases Class 2 y Class 4, calculado sobre los beneficios, en lugar de la cuota de empleado Class 1 que descuenta un empleador.\n- Alemania: Los empleados reparten con su empleador las cotizaciones obligatorias de salud, pensión y dependencia. Muchos autónomos deben contratar su propio seguro de salud y decidir si cotizar voluntariamente a la pensión pública, a menudo pagando ellos mismos el importe completo.\n\nEstas [cotizaciones a la seguridad social](/guides/social-security-contributions-guide) son fáciles de pasar por alto cuando fijas una tarifa, pero pueden absorber una gran parte de tus ingresos.\n\n## Beneficios que ya no recibes\n\nLos empleadores ofrecen más que una nómina. Como autónomo, lo siguiente normalmente desaparece o pasa a ser tu propia responsabilidad:\n\n- Vacaciones pagadas y pago de días festivos\n- Baja por enfermedad remunerada\n- Aportaciones del empleador a la pensión o aportaciones equivalentes\n- Cobertura sanitaria en algunos países\n- Periodos de preaviso y protección por despido\n\nSi tu antiguo trabajo te daba 25 días de vacaciones pagadas, esos son días en los que un autónomo no gana nada. Ese tiempo no remunerado tiene que incluirse en el precio de tu tarifa.\n\n## Empleado frente a autónomo de un vistazo\n\n| Factor | Empleado | Autónomo |\n| --- | --- | --- |\n| Cotizaciones sociales | Repartidas con el empleador | A menudo pagadas en su totalidad por ti |\n| Vacaciones y baja remuneradas | Normalmente incluidas | Ninguna salvo que las financies |\n| Aportaciones a la pensión | A menudo equiparadas | Autofinanciadas |\n| Estabilidad de ingresos | Nómina regular | Irregular, con baches |\n| Gastos del negocio | Cubiertos por el empleador | Deducibles, pero pagados por ti |\n| Declaración de impuestos | Casi siempre automática | Tu responsabilidad |\n\n## Gastos del negocio e ingresos irregulares\n\nLos autónomos suelen pagar su propio portátil, software, seguros, ayuda contable y espacio de trabajo. Muchos de estos gastos son deducibles, lo que reduce el beneficio imponible, pero aun así tienes que adelantar el dinero.\n\nLos ingresos también llegan de forma desigual. Un mes fuerte puede ir seguido de uno flojo, así que necesitas un colchón para las épocas de vacas flacas y para las facturas de impuestos que llegan de golpe en lugar de descontarse automáticamente.\n\n## Fijar una tarifa que realmente funcione\n\nUna tarifa de autónomo sostenible tiene en cuenta el tiempo que no puedes facturar y los impuestos que debes pagar. Una forma aproximada de planteárselo:\n\n- Parte de los ingresos anuales que quieres llevarte a casa.\n- Suma los impuestos y las cotizaciones sociales que esperas pagar.\n- Suma los costes de los beneficios que debes autofinanciar, como la pensión y los seguros.\n- Divide por las horas facturables realistas, no por todas las horas de trabajo. Las vacaciones, los días de enfermedad, la administración y la búsqueda de clientes no se remuneran.\n\n### Un ejemplo rápido\n\nSupongamos que quieres 60.000 de salario neto. Después de aproximadamente un 30 por ciento en impuestos y cotizaciones, más los gastos y los beneficios sin financiar, puede que necesites facturar 90.000 o más. Repartido entre, digamos, 1.400 horas facturables al año en lugar de 2.080 completas, eso apunta a una tarifa muy por encima de lo que sugiere el simple cálculo de salario por hora.\n\nEntender el [salario neto](/guides/what-is-take-home-pay) en ambos lados de la comparación mantiene tus expectativas realistas.\n\n## Haz una estimación antes de decidir\n\nLas normas fiscales varían según el país y cambian cada año, así que trata todas las cifras de aquí como ilustrativas. Haz tus propios cálculos con una [calculadora de salario](/calculator) para ver aproximadamente cuánto te queda neto de un salario de empleado, y luego trabaja hacia atrás hasta la tarifa de autónomo que lo iguale. Cuando la decisión sea importante, consulta a un profesional fiscal cualificado.\n\n## Reflexiones finales\n\nTrabajar como autónomo puede pagar bien, pero una tarifa más alta no significa automáticamente más dinero. Una vez que tienes en cuenta las cotizaciones sociales dobles, los beneficios perdidos, el tiempo no remunerado y los costes del negocio, la comparación cambia. Estima primero tus ingresos netos en ambos caminos y negociarás desde una posición de claridad en lugar de a ciegas.",
+    "keywords": [
+      "autónomo vs asalariado salario",
+      "salario neto del autónomo",
+      "impuesto de autónomos",
+      "fijar tarifa de autónomo",
+      "ingresos de contratista vs empleado",
+      "ingresos netos del autónomo"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Impuesto de autónomos (Social Security y Medicare Taxes)",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "GOV.UK — Trabajar por cuenta propia",
+        "url": "https://www.gov.uk/working-for-yourself"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Es lo mismo una tarifa por hora de autónomo que un salario por hora de empleado?",
+        "answer": "No. El salario de un empleado viene con cotizaciones pagadas por el empleador, vacaciones remuneradas y beneficios. Una tarifa de autónomo debe cubrir todo eso por sí misma, así que normalmente necesita ser notablemente más alta para igualar el mismo salario neto."
+      },
+      {
+        "question": "¿Por qué los trabajadores por cuenta propia pagan más en cotizaciones sociales?",
+        "answer": "Como empleado, tu empleador paga una parte equivalente de las cotizaciones sociales. Cuando trabajas por cuenta propia, normalmente cubres tanto la parte del empleado como la del empleador, como el impuesto de autónomos de aproximadamente el 15,3 por ciento en EE. UU. o el National Insurance Class 2 y Class 4 del Reino Unido."
+      },
+      {
+        "question": "¿Cómo calculo una tarifa de autónomo justa?",
+        "answer": "Parte del salario neto que deseas, suma los impuestos, las cotizaciones y los beneficios autofinanciados, y luego divide por las horas facturables realistas en lugar de por el total de horas de trabajo. El tiempo no remunerado dedicado a la administración, las vacaciones y la búsqueda de clientes debe estar incluido."
+      },
+      {
+        "question": "¿Pueden los gastos del negocio reducir mis impuestos como autónomo?",
+        "answer": "En muchos países, los costes legítimos del negocio, como equipos, software y seguros, son deducibles y reducen tu beneficio imponible. Aun así los pagas por adelantado, y las normas difieren según el país, así que consulta la orientación local o a un profesional fiscal."
+      }
+    ]
+  }
+}

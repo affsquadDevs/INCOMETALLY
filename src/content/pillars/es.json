@@ -1,0 +1,14 @@
+{
+  "income-basics": {
+    "title": "Entender tus ingresos",
+    "description": "Salario bruto y neto, sueldo neto y cómo convertir los ingresos entre cifras por hora, mensuales y anuales."
+  },
+  "income-tax": {
+    "title": "Cómo funciona el impuesto sobre la renta",
+    "description": "Tramos impositivos, deducciones, cotizaciones sociales y cómo el impuesto sobre la renta determina tu sueldo neto en distintos países."
+  },
+  "salary-career": {
+    "title": "Salario, empleo y planificación financiera",
+    "description": "Compara tu salario con el mercado, evalúa ofertas de trabajo, sopesa el coste de vida y entiende la diferencia entre los ingresos como autónomo y como asalariado."
+  }
+}

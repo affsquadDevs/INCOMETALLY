@@ -1,0 +1,602 @@
+{
+  "how-to-calculate-net-salary": {
+    "title": "Come calcolare lo stipendio netto: una guida completa",
+    "description": "Scopri come calcolare il tuo stipendio netto a partire dal reddito lordo. Comprendi trattenute, imposte e il calcolo della retribuzione netta per un budget accurato.",
+    "content": "# Come calcolare lo stipendio netto: una guida completa\n\nCalcolare il tuo stipendio netto è fondamentale per capire qual è la tua effettiva retribuzione netta. Questa guida spiega il processo passo dopo passo.\n\n## Comprendere la differenza tra stipendio lordo e netto\n\nLo **stipendio lordo** è il totale dei tuoi guadagni prima di qualsiasi trattenuta. È l'importo concordato nel tuo contratto di lavoro.\n\nLo **stipendio netto** (chiamato anche retribuzione netta) è ciò che ricevi dopo tutte le trattenute, tra cui:\n- Imposta sul reddito\n- Contributi previdenziali\n- Assicurazione sanitaria\n- Altre trattenute obbligatorie\n\n## Calcolo passo dopo passo\n\n### Passo 1: determina il tuo reddito lordo\n\nParti dal tuo reddito lordo annuo, mensile o orario. Questo è il tuo punto di partenza.\n\n### Passo 2: calcola il reddito imponibile\n\nSottrai eventuali detrazioni o deduzioni dal tuo reddito lordo:\n- Deduzione standard o detrazione personale\n- Contributi al lordo delle imposte (401(k), premi dell'assicurazione sanitaria)\n\n### Passo 3: applica l'imposta sul reddito\n\nCalcola l'imposta sul reddito in base agli scaglioni progressivi. Diverse porzioni del tuo reddito sono tassate ad aliquote differenti.\n\n### Passo 4: sottrai i contributi previdenziali\n\nDetrai i contributi previdenziali, che variano da paese a paese:\n- **USA**: Social Security (6,2%) e Medicare (1,45%)\n- **Germania**: assicurazione sanitaria, pensionistica, contro la disoccupazione e per l'assistenza a lungo termine\n- **Regno Unito**: contributi National Insurance\n\n### Passo 5: calcola il reddito netto\n\nReddito netto = Reddito lordo - Imposta sul reddito - Contributi previdenziali\n\n## Come usare il nostro calcolatore\n\nIl nostro calcolatore di stipendio automatizza questo processo. Inserisci semplicemente il tuo reddito lordo, seleziona il tuo paese e ottieni una stima immediata del tuo reddito netto.\n\n## Note importanti\n\n- Questi calcoli sono stime basate su scenari standard\n- La retribuzione netta effettiva può variare in base alle circostanze individuali\n- Consulta un professionista fiscale per una consulenza personalizzata",
+    "keywords": [
+      "stipendio netto",
+      "retribuzione netta",
+      "calcolo dello stipendio",
+      "lordo e netto",
+      "trattenute fiscali"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Qual è la differenza tra stipendio lordo e netto?",
+        "answer": "Lo stipendio lordo è il totale dei tuoi guadagni prima delle trattenute. Lo stipendio netto è la tua retribuzione netta dopo aver sottratto l'imposta sul reddito, i contributi previdenziali e le altre trattenute obbligatorie."
+      },
+      {
+        "question": "Quanto sono accurati i calcoli dello stipendio netto?",
+        "answer": "I nostri calcoli sono stime basate su aliquote e scaglioni fiscali standard. La retribuzione netta effettiva può variare in base alle circostanze individuali, alle deduzioni, ai crediti d'imposta e alle imposte locali."
+      },
+      {
+        "question": "Posso calcolare lo stipendio netto per diverse modalità di reddito?",
+        "answer": "Sì, puoi calcolare lo stipendio netto a partire dal reddito lordo orario, mensile o annuo. Il calcolatore annualizzerà il tuo reddito e applicherà i calcoli fiscali appropriati."
+      }
+    ]
+  },
+  "understanding-tax-brackets": {
+    "title": "Capire gli Scaglioni Fiscali: Come Funziona la Tassazione Progressiva",
+    "description": "Scopri come funzionano gli scaglioni fiscali progressivi e come influenzano il tuo stipendio netto. Comprendi la differenza tra aliquota marginale ed effettiva.",
+    "content": "# Capire gli Scaglioni Fiscali: Come Funziona la Tassazione Progressiva\n\nGli scaglioni fiscali sono una parte fondamentale dei sistemi di imposta sul reddito nella maggior parte dei paesi. Questa guida spiega come funzionano.\n\n## Cosa Sono gli Scaglioni Fiscali?\n\nGli scaglioni fiscali sono fasce di reddito tassate ad aliquote diverse. Man mano che il tuo reddito aumenta, le diverse porzioni vengono tassate ad aliquote progressivamente più alte.\n\n## Come Funziona la Tassazione Progressiva\n\nIn un sistema fiscale progressivo:\n- I redditi più bassi sono tassati ad aliquote più basse\n- I redditi più alti sono tassati ad aliquote più alte\n- Solo il reddito che rientra in ciascuno scaglione viene tassato all'aliquota di quello scaglione\n\n## Esempio di Calcolo\n\nSe guadagni 75.000 $ e gli scaglioni sono:\n- 10% sul reddito fino a 10.000 $\n- 20% sul reddito da 10.001 $ a 40.000 $\n- 30% sul reddito oltre 40.000 $\n\nLa tua imposta sarebbe:\n- 10.000 $ × 10% = 1.000 $\n- 30.000 $ × 20% = 6.000 $\n- 35.000 $ × 30% = 10.500 $\n- Totale: 17.500 $\n\n## Aliquota Marginale vs Aliquota Effettiva\n\nL'**aliquota marginale** è l'aliquota applicata allo scaglione di reddito più alto (30% nell'esempio precedente).\n\nL'**aliquota effettiva** è l'imposta totale divisa per il reddito totale (17.500 $ ÷ 75.000 $ = 23,3% nell'esempio).\n\n## Informazioni Specifiche per Paese\n\nGli scaglioni fiscali variano da paese a paese:\n- **USA**: 7 scaglioni federali dal 10% al 37%\n- **Germania**: aliquote progressive dal 14% al 45%\n- **Regno Unito**: aliquota base (20%), aliquota maggiore (40%), aliquota addizionale (45%)\n\nUsa i nostri calcolatori specifici per paese per vedere come gli scaglioni si applicano al tuo reddito.",
+    "keywords": [
+      "scaglioni fiscali",
+      "imposta progressiva",
+      "aliquota marginale",
+      "aliquota effettiva",
+      "imposta sul reddito"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Che cos'è l'aliquota marginale?",
+        "answer": "La tua aliquota marginale è l'aliquota applicata al tuo scaglione di reddito più alto. Rappresenta l'aliquota d'imposta sul tuo prossimo dollaro di reddito."
+      },
+      {
+        "question": "Che cos'è l'aliquota effettiva?",
+        "answer": "La tua aliquota effettiva è la percentuale del tuo reddito totale versata in imposte. Si calcola come imposta totale divisa per il reddito totale ed è in genere inferiore alla tua aliquota marginale."
+      },
+      {
+        "question": "Pago l'aliquota più alta su tutto il mio reddito?",
+        "answer": "No. Nei sistemi fiscali progressivi, solo il reddito che rientra in ciascuno scaglione viene tassato all'aliquota di quello scaglione. Le porzioni più basse del tuo reddito sono tassate ad aliquote più basse."
+      }
+    ]
+  },
+  "hourly-to-salary-conversion": {
+    "title": "Da Paga Oraria a Stipendio: Guida Completa",
+    "description": "Converti la paga oraria in stipendio annuale, mensile e settimanale. Scopri le formule e usa il nostro calcolatore gratuito.",
+    "content": "# Da Paga Oraria a Stipendio: Guida Completa\n\nConvertire la paga oraria in stipendio ti aiuta a comprendere la tua retribuzione totale e a confrontare le offerte di lavoro.\n\n## Formule di Conversione di Base\n\n### Stipendio Annuale dalla Paga Oraria\n\n```\nStipendio Annuale = Paga Oraria × Ore a Settimana × Settimane all'Anno\n```\n\n**Calcolo standard**: $25/ora × 40 ore/settimana × 52 settimane/anno = $52.000/anno\n\n### Stipendio Mensile\n\n```\nStipendio Mensile = Stipendio Annuale ÷ 12\n```\n\n**Esempio**: $52.000 ÷ 12 = $4.333,33/mese\n\n### Stipendio Settimanale\n\n```\nStipendio Settimanale = Paga Oraria × Ore a Settimana\n```\n\n**Esempio**: $25/ora × 40 ore = $1.000/settimana\n\n## Adattamento per il Lavoro Part-Time\n\nPer orari part-time o irregolari, adatta il calcolo:\n\n**Esempio**: $30/ora × 35 ore/settimana × 50 settimane/anno = $52.500/anno\n\nQuesto tiene conto di:\n- Meno ore a settimana\n- Ferie o permessi non retribuiti\n\n## Fattori da Considerare\n\n### Ore a Settimana\n- Tempo pieno: Tipicamente 40 ore\n- Part-time: Variabile (spesso 20-30 ore)\n- Straordinari: Potrebbero richiedere un calcolo separato\n\n### Settimane all'Anno\n- Standard: 52 settimane\n- Con ferie: 50-51 settimane (permessi non retribuiti)\n- Lavoro stagionale: Variabile a seconda del settore\n\n### Considerazioni sugli Straordinari\n\nSe lavori regolarmente facendo straordinari:\n1. Calcola separatamente lo stipendio base\n2. Aggiungi i guadagni stimati da straordinari\n3. Oppure usa una paga oraria media che includa gli straordinari\n\n## Come Usare il Nostro Calcolatore\n\nIl nostro convertitore da paga oraria a stipendio automatizza questi calcoli e mostra sia il reddito lordo sia quello netto dopo le tasse.",
+    "keywords": [
+      "da paga oraria a stipendio",
+      "conversione della retribuzione",
+      "paga oraria",
+      "stipendio annuale",
+      "calcolatore dello stipendio"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Come converto la paga oraria in stipendio annuale?",
+        "answer": "Moltiplica la tua paga oraria per le ore a settimana, poi per le settimane all'anno. Calcolo standard: Paga Oraria × 40 × 52 = Stipendio Annuale."
+      },
+      {
+        "question": "Dovrei includere gli straordinari nella mia paga oraria?",
+        "answer": "Per uno stipendio base accurato, usa la tua paga oraria base. Se lavori regolarmente facendo straordinari, calcolali separatamente oppure usa una paga media che tenga conto degli straordinari."
+      },
+      {
+        "question": "Quante settimane dovrei usare nel calcolo?",
+        "answer": "Usa 52 settimane per i dipendenti a tempo pieno. Adatta a 50-51 settimane se hai ferie non retribuite, oppure usa meno settimane per il lavoro stagionale."
+      }
+    ]
+  },
+  "tax-deductions-explained": {
+    "title": "Detrazioni e Deduzioni Fiscali Spiegate: Cosa Riduce il Tuo Reddito Imponibile",
+    "description": "Comprendi le deduzioni fiscali, le detrazioni e come riducono il tuo reddito imponibile. Scopri la differenza tra deduzione standard e deduzioni analitiche.",
+    "content": "# Detrazioni e Deduzioni Fiscali Spiegate: Cosa Riduce il Tuo Reddito Imponibile\n\nLe deduzioni fiscali riducono il tuo reddito imponibile, il che può ridurre il tuo carico fiscale. Questa guida spiega come funzionano.\n\n## Cosa Sono le Deduzioni Fiscali?\n\nLe deduzioni fiscali sono spese o detrazioni che riducono il tuo reddito imponibile. Un reddito imponibile più basso significa imposte più basse.\n\n## Tipi di Deduzioni\n\n### Deduzione Standard\n\nUn importo fisso che riduce il reddito imponibile senza la necessità di indicare analiticamente le spese. Disponibile per tutti i contribuenti.\n\n**Vantaggi**:\n- Semplice da richiedere\n- Nessuna documentazione richiesta\n- Riduzione fiscale garantita\n\n### Deduzioni Analitiche\n\nSpese specifiche che puoi dedurre se superano l'importo della deduzione standard.\n\n**Deduzioni analitiche comuni**:\n- Interessi sul mutuo\n- Imposte statali e locali\n- Donazioni in beneficenza\n- Spese mediche (oltre la soglia)\n- Imposte sugli immobili\n\n## Come Funzionano le Deduzioni\n\n**Esempio**:\n- Reddito Lordo: 75.000 $\n- Deduzione Standard: 14.600 $\n- Reddito Imponibile: 75.000 $ - 14.600 $ = 60.400 $\n\nPaghi le imposte su 60.400 $, non su 75.000 $.\n\n## Informazioni Specifiche per Paese\n\n### Stati Uniti\n- La deduzione standard varia in base allo stato civile ai fini fiscali\n- È possibile scegliere tra deduzione standard o analitica (quella più alta)\n- Molte deduzioni vengono ridotte gradualmente per i redditi alti\n\n### Germania\n- Detrazione personale (Grundfreibetrag) per tutti i contribuenti\n- Deduzioni aggiuntive per figli e spese particolari\n- La classe fiscale influisce sulla ritenuta, non sul carico fiscale finale\n\n### Regno Unito\n- Detrazione personale per tutti i contribuenti\n- Marriage allowance per le coppie idonee\n- I contributi pensionistici beneficiano di agevolazioni fiscali\n\n## Massimizzare le Tue Deduzioni\n\n1. **Conosci le tue opzioni**: Comprendi la differenza tra deduzione standard e analitica\n2. **Tieni traccia delle spese**: Conserva la documentazione delle spese deducibili\n3. **Pianifica le tempistiche delle spese**: Valuta il momento in cui effettuare i pagamenti deducibili\n4. **Consulta i professionisti**: I consulenti fiscali possono individuare ulteriori deduzioni\n\n## Note Importanti\n\n- Le deduzioni riducono il reddito imponibile, non l'imposta direttamente\n- Le detrazioni d'imposta (diverse dalle deduzioni) riducono l'imposta in misura corrispondente, euro per euro\n- Le regole variano da paese a paese e cambiano ogni anno\n- Consulta un professionista fiscale per una consulenza personalizzata",
+    "keywords": [
+      "deduzioni fiscali",
+      "deduzione standard",
+      "reddito imponibile",
+      "detrazioni",
+      "risparmio fiscale"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Qual è la differenza tra una deduzione e una detrazione d'imposta?",
+        "answer": "Una deduzione riduce il tuo reddito imponibile, mentre una detrazione d'imposta riduce direttamente il tuo carico fiscale. Le detrazioni sono generalmente più vantaggiose delle deduzioni."
+      },
+      {
+        "question": "Conviene scegliere la deduzione standard o le deduzioni analitiche?",
+        "answer": "Scegli quella più alta. Se le tue deduzioni analitiche superano la deduzione standard, opta per quelle analitiche. Altrimenti, scegli la deduzione standard."
+      },
+      {
+        "question": "Le deduzioni si applicano a tutti i paesi?",
+        "answer": "Sì, ma le deduzioni e le detrazioni specifiche variano da paese a paese. Ogni paese ha il proprio sistema di riduzione del reddito imponibile."
+      }
+    ]
+  },
+  "social-security-contributions-guide": {
+    "title": "Contributi previdenziali: cosa devi sapere",
+    "description": "Comprendi i contributi previdenziali nei diversi Paesi. Scopri come influiscono sul tuo stipendio netto e quali prestazioni offrono.",
+    "content": "# Contributi previdenziali: cosa devi sapere\n\nI contributi previdenziali finanziano le prestazioni statali come pensioni, assistenza sanitaria e indennità di disoccupazione. Questa guida spiega come funzionano.\n\n## Cosa sono i contributi previdenziali?\n\nI contributi previdenziali sono versamenti obbligatori che finanziano le prestazioni statali. Sono distinti dall'imposta sul reddito e di solito vengono ripartiti tra datore di lavoro e dipendente.\n\n## Stati Uniti: imposte FICA\n\n### Imposta Social Security\n- Aliquota: 6,2% della retribuzione\n- Tetto: si applica solo fino alla base retributiva Social Security (Social Security wage base)\n- Finalità: finanzia le prestazioni pensionistiche e di invalidità\n\n### Imposta Medicare\n- Aliquota: 1,45% dell'intera retribuzione (nessun tetto)\n- Maggiorazione: sovrattassa dello 0,9% per i redditi elevati\n- Finalità: finanzia l'assistenza sanitaria per gli anziani\n\n**Totale FICA**: 7,65% per la maggior parte dei dipendenti (6,2% + 1,45%)\n\n## Germania: sistema previdenziale\n\n### Componenti\n1. **Assicurazione sanitaria** (Krankenversicherung)\n   - Obbligatoria per i dipendenti al di sotto della soglia di reddito\n   - Ripartita 50/50 con il datore di lavoro\n\n2. **Assicurazione pensionistica** (Rentenversicherung)\n   - Finanzia il sistema pensionistico statale\n   - Ripartita 50/50 con il datore di lavoro\n\n3. **Assicurazione contro la disoccupazione** (Arbeitslosenversicherung)\n   - Fornisce le indennità di disoccupazione\n   - Ripartita 50/50 con il datore di lavoro\n\n4. **Assicurazione per l'assistenza a lungo termine** (Pflegeversicherung)\n   - Copre i servizi di assistenza infermieristica e di cura\n   - Ripartita 50/50 con il datore di lavoro\n\n## Regno Unito: National Insurance\n\n### Contributi di Classe 1 (dipendenti)\n- Calcolati per ciascun periodo di paga (settimanale/mensile)\n- Aliquota principale tra la soglia primaria (primary threshold) e il limite superiore di guadagno (upper earnings limit)\n- Aliquota ridotta oltre il limite superiore\n- Finanzia: pensione statale, NHS, indennità di disoccupazione\n\n## Come i contributi influiscono sullo stipendio netto\n\nI contributi previdenziali riducono direttamente il tuo reddito netto:\n\n**Esempio (USA)**:\n- Lordo: $75.000\n- FICA (7,65%): -$5.737,50\n- Netto prima dell'imposta sul reddito: $69.262,50\n\n## Prestazioni fornite\n\nI contributi finanziano:\n- Pensioni di vecchiaia\n- Sistemi sanitari\n- Indennità di disoccupazione\n- Prestazioni di invalidità\n- Assistenza a lungo termine (in alcuni Paesi)\n\n## Note importanti\n\n- I contributi sono obbligatori per i dipendenti\n- Le aliquote e le soglie cambiano ogni anno\n- Il datore di lavoro di solito versa contributi pari a quelli del dipendente\n- Il diritto alle prestazioni dipende dalla storia contributiva\n- I lavoratori autonomi pagano aliquote più elevate",
+    "keywords": [
+      "previdenza sociale",
+      "contributi previdenziali",
+      "FICA",
+      "National Insurance",
+      "contributi pensionistici"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "I contributi previdenziali sono la stessa cosa dell'imposta sul reddito?",
+        "answer": "No. I contributi previdenziali sono distinti dall'imposta sul reddito e finanziano prestazioni statali specifiche come pensioni e assistenza sanitaria. Sono calcolati in modo diverso e hanno aliquote diverse."
+      },
+      {
+        "question": "I soldi dei contributi previdenziali mi vengono restituiti?",
+        "answer": "Non direttamente. I contributi finanziano prestazioni statali che potresti ricevere in seguito, come pensioni di vecchiaia, assistenza sanitaria e indennità di disoccupazione. Il diritto a tali prestazioni dipende dalla tua storia contributiva."
+      },
+      {
+        "question": "Di quanto i contributi previdenziali riducono il mio stipendio netto?",
+        "answer": "Varia da Paese a Paese. Negli USA le imposte FICA sono il 7,65% della retribuzione (fino al tetto Social Security). In Germania e nel Regno Unito le aliquote variano in base al reddito e di solito sono condivise con i datori di lavoro."
+      }
+    ]
+  },
+  "salary-negotiation-tips": {
+    "title": "Consigli per la Negoziazione dello Stipendio: Usare il Calcolo del Reddito Netto",
+    "description": "Scopri come usare il calcolo dello stipendio netto nelle negoziazioni salariali. Comprendi il tuo reale stipendio netto prima di accettare un'offerta.",
+    "content": "# Consigli per la Negoziazione dello Stipendio: Usare il Calcolo del Reddito Netto\n\nComprendere il tuo reddito netto è fondamentale per negoziazioni salariali efficaci. Questa guida ti mostra come usare i calcoli a tuo vantaggio.\n\n## Perché il Reddito Netto è Importante\n\nI numeri dello stipendio lordo possono essere fuorvianti. Una differenza di 5.000 $ nello stipendio lordo potrebbe corrispondere a soli 3.500 $ di reddito netto dopo le tasse.\n\n## Prima di Negoziare\n\n### 1. Calcola il Tuo Reddito Netto Attuale\n\nUsa il nostro calcolatore per determinare il tuo stipendio netto attuale. Questo è il tuo punto di riferimento.\n\n### 2. Calcola il Reddito Netto per l'Offerta\n\nInserisci lo stipendio lordo offerto per vedere il tuo reale stipendio netto. Confrontalo con la tua situazione attuale.\n\n### 3. Considera Tutti i Fattori\n\n- Differenze fiscali tra le località\n- Adeguamenti per il costo della vita\n- Valore dei benefit (assicurazione sanitaria, previdenza)\n- Costi di pendolarismo\n- Equilibrio tra vita privata e lavoro\n\n## Strategie di Negoziazione\n\n### Usa il Reddito Netto nelle Discussioni\n\nInvece di: \"Ho bisogno di 10.000 $ in più\"\nDi': \"Dopo le tasse, questa offerta mi darebbe X $ di stipendio netto, ovvero Y $ in meno rispetto alla mia situazione attuale\"\n\n### Tieni Conto delle Differenze Fiscali\n\nTrasferirsi in un altro stato o paese può influire significativamente sul reddito netto:\n- Gli stati con tassazione elevata riducono lo stipendio netto\n- Alcuni stati non hanno imposte sul reddito\n- I trasferimenti internazionali comportano sistemi fiscali diversi\n\n### Considera i Benefit\n\nI benefit possono valere migliaia:\n- Premi dell'assicurazione sanitaria\n- Contributi previdenziali\n- Ferie retribuite\n- Sviluppo professionale\n\n## Errori Comuni da Evitare\n\n1. **Concentrarsi solo sullo stipendio lordo**\n   - Calcola sempre il reddito netto\n\n2. **Ignorare le differenze tra le località**\n   - Stesso stipendio lordo ≠ stesso reddito netto in località diverse\n\n3. **Non considerare la retribuzione totale**\n   - I benefit e i vantaggi hanno un valore reale\n\n4. **Accettare la prima offerta**\n   - La maggior parte dei datori di lavoro si aspetta una negoziazione\n\n## Usare i Nostri Strumenti\n\nI nostri calcolatori ti aiutano a:\n- Confrontare reddito lordo e netto\n- Comprendere le implicazioni fiscali\n- Prendere decisioni informate\n- Negoziare da una posizione di conoscenza\n\n## Dopo la Negoziazione\n\nUna volta concordati i termini:\n1. Verifica l'offerta per iscritto\n2. Conferma tutti i benefit e i vantaggi\n3. Sappi che il tuo primo stipendio sarà diverso (proporzionato, trattenute differenti)\n4. Pianifica il tuo budget in base al reddito netto\n\nRicorda: la conoscenza è potere nelle negoziazioni. Comprendere il tuo reale stipendio netto ti aiuta a prendere decisioni migliori.",
+    "keywords": [
+      "negoziazione dello stipendio",
+      "reddito netto",
+      "offerta di lavoro",
+      "retribuzione",
+      "stipendio netto"
+    ],
+    "sources": [],
+    "faqs": [
+      {
+        "question": "Dovrei negoziare in base allo stipendio lordo o netto?",
+        "answer": "Considera entrambi, ma concentrati sul reddito netto per la tua reale situazione finanziaria. Lo stipendio lordo è ciò di cui discutono i datori di lavoro, ma il reddito netto è ciò che effettivamente ricevi."
+      },
+      {
+        "question": "Come tengo conto delle differenze fiscali quando negozio?",
+        "answer": "Usa i nostri calcolatori per confrontare il reddito netto in località diverse. Considera le imposte statali/locali, il costo della vita e altri costi specifici della località."
+      },
+      {
+        "question": "E se il datore di lavoro non vuole aumentare lo stipendio lordo?",
+        "answer": "Considera la possibilità di negoziare altri benefit: giorni di ferie aggiuntivi, modalità di lavoro flessibili, opportunità di sviluppo professionale o bonus di assunzione che possono avere implicazioni fiscali diverse."
+      }
+    ]
+  },
+  "gross-income-vs-net-income": {
+    "title": "Reddito lordo e reddito netto: qual è la differenza?",
+    "description": "Comprendi la differenza tra reddito lordo e reddito netto, perché il tuo stipendio netto è inferiore al tuo salario e come le tasse modellano ciò che guadagni.",
+    "content": "Il reddito è uno dei termini finanziari più comuni, e anche uno dei più fraintesi. Molte persone presumono che il loro stipendio, la paga oraria o la tariffa contrattuale corrispondano a ciò che effettivamente guadagnano. In realtà, l'importo che arriva sul tuo conto bancario è solitamente molto diverso dal numero scritto nel contratto.\n\nQuesta guida spiega cos'è il reddito, la differenza tra reddito lordo e reddito netto e perché comprendere questa differenza è essenziale quando confronti lavori, pianifichi le spese o stimi le tasse.\n\n## Cos'è il reddito?\n\nIl reddito è il denaro che guadagni in cambio di lavoro, servizi o attività imprenditoriale in un determinato periodo di tempo. Può essere percepito su base oraria, settimanale, mensile o annuale e può provenire da:\n\n- stipendio o salario da lavoro dipendente\n- lavoro freelance o a contratto\n- lavoro autonomo o attività imprenditoriale\n- bonus, commissioni o indennità\n\nTuttavia, non tutti i redditi vengono trattati allo stesso modo una volta applicate le tasse e i contributi obbligatori.\n\n## Cos'è il reddito lordo?\n\nIl reddito lordo è l'importo totale che guadagni prima dell'applicazione di qualsiasi trattenuta. È il numero che di solito vedi nelle offerte di lavoro, nei contratti di lavoro, nelle fatture dei freelance e nelle discussioni sullo stipendio annuale.\n\nIl reddito lordo non riflette ciò che effettivamente porti a casa. Per esempio:\n\n- Stipendio lordo annuale: 60.000\n- Stipendio lordo mensile: 5.000\n\nIn questa fase, non sono ancora state rimosse tasse o contributi.\n\n## Cos'è il reddito netto?\n\nIl reddito netto, chiamato anche stipendio netto, è l'importo che effettivamente ricevi dopo le trattenute. Tali trattenute di solito includono l'imposta sul reddito, i contributi previdenziali, l'assicurazione sanitaria e le tasse locali o regionali, a seconda del paese.\n\nIl reddito netto è il denaro che puoi effettivamente spendere, risparmiare o investire. Per esempio:\n\n- Reddito lordo mensile: 5.000\n- Trattenute totali: 1.600\n- Reddito netto mensile: 3.400\n\nPer un'analisi più approfondita della cifra netta stessa, consulta la nostra guida sullo [stipendio netto](/guides/what-is-take-home-pay).\n\n## Reddito lordo e netto: un confronto diretto\n\n| | Reddito lordo | Reddito netto |\n|---|---|---|\n| Cosa significa | Guadagni prima di tasse e trattenute | Denaro ricevuto dopo le trattenute |\n| Dove lo vedi | Contratti, offerte di lavoro, confronti | Il tuo conto bancario e il tuo budget |\n| Usato al meglio per | Confrontare ruoli e stipendio dichiarato | Spese di vita, risparmi, pianificazione |\n\nQuesta differenza spiega perché due persone con lo stesso stipendio lordo possono avere uno stipendio netto molto diverso.\n\n## Perché il reddito lordo è spesso fuorviante\n\nIl reddito lordo è utile per i confronti standard, ma può essere fuorviante perché le aliquote fiscali differiscono da paese a paese, i contributi previdenziali variano, lo stato di dichiarazione conta e i benefici e le detrazioni cambiano il risultato. Ecco perché il reddito netto è il numero più pratico per le decisioni della vita reale.\n\n## Come le tasse influenzano il tuo reddito\n\nLe tasse sono la ragione principale per cui reddito lordo e reddito netto differiscono. La maggior parte dei sistemi fiscali applica scaglioni fiscali progressivi (i redditi più alti sono tassati con aliquote più elevate), contributi previdenziali obbligatori e detrazioni fisse o con un tetto massimo. Per questo motivo, aumentare il reddito lordo non sempre fa aumentare il reddito netto della stessa percentuale. La nostra guida su [come funziona l'imposta sul reddito](/guides/how-income-tax-works) lo spiega in parole semplici.\n\n## Come calcolare il reddito lordo e netto\n\nPuoi calcolare il reddito manualmente, ma diventa rapidamente complesso una volta che entrano in gioco le tasse. Un approccio più semplice è:\n\n1. Parti dal tuo reddito lordo.\n2. Applica le regole fiscali specifiche del paese.\n3. Sottrai contributi e detrazioni.\n4. Arriva al tuo reddito netto.\n\nQuesto è esattamente ciò che il [calcolatore di stipendio](/salary-calculator) di IncomeTally è progettato per fare: stimare il reddito tra diversi periodi di paga e paesi utilizzando ipotesi trasparenti. Se sei pagato a ore o desideri passare da un periodo di paga all'altro, consulta [come convertire il reddito orario, mensile e annuale](/guides/how-to-convert-income-pay-periods).\n\n## Perché è importante comprendere il reddito\n\nConoscere la differenza tra reddito lordo e netto ti aiuta a confrontare con precisione le offerte di lavoro, evitare delusioni sullo stipendio, pianificare il tuo budget mensile, comprendere il tuo reale potere d'acquisto e stimare le tasse in modo più realistico. È particolarmente importante per freelance, lavoratori da remoto e persone che si trasferiscono tra paesi diversi.\n\n## Considerazioni finali\n\nIl reddito è più di un numero su un contratto. Comprendere il reddito lordo rispetto al reddito netto ti offre un quadro più chiaro di ciò che guadagni davvero e di ciò che puoi realisticamente permetterti. Prima di prendere decisioni finanziarie, guarda sempre oltre lo stipendio dichiarato e concentrati sullo stipendio netto. Le aliquote e le regole cambiano nel tempo e variano da paese a paese, quindi considera le stime come un'indicazione e consulta un professionista qualificato quando è importante.",
+    "keywords": [
+      "reddito lordo",
+      "reddito netto",
+      "lordo vs netto",
+      "stipendio netto",
+      "imposta sul reddito",
+      "detrazioni"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Income Tax",
+        "url": "https://www.gov.uk/income-tax"
+      },
+      {
+        "label": "IRS — Tax Topic 751 (ritenute Social Security e Medicare)",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "GOV.UK — National Insurance",
+        "url": "https://www.gov.uk/national-insurance"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Qual è la differenza tra reddito lordo e netto?",
+        "answer": "Il reddito lordo è ciò che guadagni prima delle trattenute. Il reddito netto è ciò che effettivamente ricevi dopo aver sottratto tasse e contributi."
+      },
+      {
+        "question": "Perché il mio reddito netto è molto più basso del mio stipendio lordo?",
+        "answer": "Tasse, previdenza sociale e altri contributi obbligatori riducono il reddito lordo, a volte in modo significativo, a seconda del paese e del livello di reddito."
+      },
+      {
+        "question": "Quale reddito dovrei usare per il budget?",
+        "answer": "Il reddito netto, perché riflette il denaro che hai effettivamente a disposizione per spendere, risparmiare o investire."
+      },
+      {
+        "question": "Il reddito netto è uguale in ogni paese?",
+        "answer": "No. I sistemi fiscali differiscono notevolmente, ed è per questo che il reddito netto varia anche a parità di stipendio lordo."
+      }
+    ]
+  },
+  "how-to-convert-income-pay-periods": {
+    "title": "Come convertire correttamente il reddito orario, mensile e annuale",
+    "description": "Scopri come convertire correttamente il reddito orario, settimanale, mensile e annuale: le formule standard, le ipotesi su cui si basano e gli errori da evitare.",
+    "content": "# Come convertire correttamente il reddito orario, mensile e annuale\n\nIl reddito può assumere diverse forme — orario, settimanale, mensile e annuale — e prima o poi avrai bisogno di convertirlo da una all'altra. Magari stai confrontando un contratto orario con un'offerta a stipendio fisso, oppure vuoi capire a quanto ammonta uno stipendio mensile nell'arco di un anno. La matematica sembra semplice, ma alcune ipotesi comuni possono far sballare i tuoi numeri.\n\nQuesta guida spiega le formule standard, le ipotesi su cui si basano e gli errori da evitare.\n\n## Periodi di pagamento del reddito più comuni\n\nIl reddito viene solitamente indicato in uno di quattro modi:\n\n- Orario: un importo per ogni ora lavorata, comune per il lavoro part-time, a turni e a contratto.\n- Settimanale: un totale corrisposto ogni settimana, spesso per ruoli temporanei.\n- Mensile: comune per i lavoratori dipendenti a stipendio fisso.\n- Annuale: utilizzato nei contratti e nelle offerte di lavoro.\n\n## Perché la conversione del reddito non è sempre semplice\n\nL'idea che la tariffa oraria moltiplicata per le ore e per le settimane sia uguale allo stipendio semplifica eccessivamente le cose. Nella pratica:\n\n- le ore di lavoro variano\n- il tempo retribuito e quello non retribuito sono diversi\n- ferie e congedi per malattia variano\n- i liberi professionisti hanno orari irregolari\n- le convenzioni differiscono da un Paese all'altro\n\n## Ipotesi standard utilizzate nella conversione\n\nSalvo diversa indicazione, la maggior parte dei calcolatori presuppone:\n\n- 40 ore lavorative a settimana\n- 5 giorni lavorativi a settimana\n- 52 settimane all'anno\n- 12 mesi all'anno\n\nQueste ipotesi rendono le conversioni coerenti, ma la tua situazione reale può essere diversa.\n\n## Come convertire il reddito orario in stipendio annuale\n\nMoltiplica la tua tariffa oraria per le ore settimanali, poi per le settimane all'anno:\n\n- Tariffa oraria x ore settimanali x settimane all'anno = stipendio annuale\n- Esempio: 25 all'ora x 40 ore x 52 settimane = 52.000 all'anno\n\nPer uno strumento già pronto, usa il nostro [convertitore da reddito orario a stipendio](/hourly-to-salary), e per altri esempi pratici consulta la [guida alla conversione da reddito orario a stipendio](/guides/hourly-to-salary-conversion).\n\n## Come convertire il reddito mensile in stipendio annuale\n\nMoltiplica il tuo reddito mensile per 12:\n\n- Reddito mensile x 12 = reddito annuale\n- Esempio: 4.000 al mese x 12 = 48.000 all'anno\n\nQuesto presuppone pagamenti mensili costanti, senza mesi aggiuntivi o mancanti.\n\n## Conversioni da settimanale a mensile e annuale\n\nLa retribuzione settimanale, spesso utilizzata per il lavoro temporaneo, si converte così:\n\n- Settimanale x 52 = annuale\n- Annuale diviso 12 = mensile\n- Esempio: 1.000 a settimana = 52.000 all'anno, ovvero circa 4.333 al mese\n\n## Reddito orario o stipendio fisso: cosa è meglio?\n\nNessuno dei due formati è universalmente migliore. Il lavoro orario si adatta agli accordi flessibili e può ricompensare le ore extra, mentre uno stipendio fisso offre stabilità e una retribuzione prevedibile. La scelta giusta dipende dalle tue priorità.\n\n## Errori comuni nella conversione del reddito\n\n- trascurare le ferie non retribuite\n- presumere esattamente 52 settimane lavorative per tutti\n- ignorare gli orari part-time\n- confondere la retribuzione oraria lorda con lo stipendio netto\n- tralasciare del tutto le tasse\n\nQuest'ultimo punto è il più importante: una conversione ti dà una cifra lorda, non il tuo [stipendio netto](/guides/what-is-take-home-pay).\n\n## Come confrontare offerte di lavoro con periodi di pagamento diversi\n\nConverti ogni offerta in reddito lordo annuale utilizzando ipotesi identiche, poi stima il reddito netto dove possibile e infine valuta i benefit e la stabilità del lavoro. La nostra guida su [come confrontare le offerte di lavoro](/guides/how-to-compare-job-offers) illustra l'intero procedimento.\n\n## Quando concentrarsi invece sul reddito netto\n\nLe conversioni del lordo sono utili, ma il reddito netto conta di più nella vita reale. I sistemi fiscali, la classificazione del rapporto di lavoro e il luogo influenzano tutti il tuo effettivo stipendio netto. Per vedere chiaramente la differenza, leggi [reddito lordo vs reddito netto](/guides/gross-income-vs-net-income), poi inserisci i tuoi numeri nel [calcolatore dello stipendio](/salary-calculator).\n\n## Considerazioni finali\n\nLa conversione del reddito è più che semplice aritmetica. Le ore di lavoro, i periodi non retribuiti e le differenze di orario modificano tutti la cifra finale, e le tasse la modificano ancora. Usa le ipotesi standard come punto di partenza, adattale alla tua situazione e verifica sempre lo stipendio netto prima di prendere una decisione.",
+    "keywords": [
+      "conversione del reddito",
+      "da orario a stipendio",
+      "da reddito mensile ad annuale",
+      "periodo di pagamento",
+      "stipendio annuale",
+      "reddito lordo"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Income Tax",
+        "url": "https://www.gov.uk/income-tax"
+      },
+      {
+        "label": "U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics",
+        "url": "https://www.bls.gov/oes/"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Quante ore dovrei presumere quando converto la retribuzione?",
+        "answer": "La maggior parte dei calcolatori presuppone 40 ore a settimana, 52 settimane all'anno e 12 mesi all'anno. Adatta questi valori al tuo orario effettivo, soprattutto per il lavoro part-time o stagionale."
+      },
+      {
+        "question": "È meglio la retribuzione oraria o lo stipendio fisso?",
+        "answer": "Nessuno dei due è universalmente migliore. Il lavoro orario offre flessibilità e può ricompensare le ore extra; il lavoro a stipendio fisso offre stabilità, una retribuzione prevedibile e spesso più benefit."
+      },
+      {
+        "question": "Posso convertire il reddito senza conoscere le mie tasse?",
+        "answer": "Sì, per una stima lorda. Ma per conoscere il tuo effettivo stipendio netto devi tenere conto dell'imposta sul reddito e dei contributi previdenziali, che variano da Paese a Paese."
+      },
+      {
+        "question": "Perché il mio reddito mensile moltiplicato per 12 non corrisponde alla mia cifra annuale?",
+        "answer": "Le differenze derivano dalla variabilità delle ore di lavoro, dal tempo non retribuito, dai bonus e dalle ipotesi utilizzate. Orari irregolari e pagamenti una tantum possono rendere imprecisa la formula semplice."
+      }
+    ]
+  },
+  "what-is-take-home-pay": {
+    "title": "Che cos'è lo stipendio netto e come si calcola?",
+    "description": "Scopri che cos'è lo stipendio netto, come si calcola a partire dalla retribuzione lorda, cosa viene trattenuto e vedi esempi semplici per Stati Uniti, Regno Unito e Germania.",
+    "content": "# Che cos'è lo stipendio netto e come si calcola?\n\nLo stipendio netto è il denaro che arriva effettivamente sul tuo conto corrente dopo che ogni trattenuta è stata sottratta dalla tua retribuzione. È il numero che conta di più per la gestione del bilancio, eppure è quasi sempre inferiore alla cifra indicata nella tua offerta di lavoro. Capire come viene calcolato ti aiuta a pianificare, a confrontare i lavori in modo equo e a evitare brutte sorprese il giorno della busta paga.\n\n## Retribuzione lorda e stipendio netto\n\nLa tua retribuzione lorda è lo stipendio completo prima che venga tolto qualsiasi importo. Lo stipendio netto (spesso chiamato retribuzione netta) è ciò che resta dopo le imposte e le altre trattenute. Il divario tra i due può essere consistente. Se desideri un'analisi più approfondita di queste due cifre, consulta la nostra guida su [reddito lordo e reddito netto](/guides/gross-income-vs-net-income).\n\nEcco il flusso di base:\n\n- Parti dalla retribuzione lorda (lo stipendio dichiarato o i guadagni orari)\n- Sottrai l'imposta sul reddito\n- Sottrai i contributi previdenziali e assicurativi\n- Sottrai eventuali altre trattenute (pensione integrativa, piani sanitari, rimborsi di prestiti studenteschi)\n- Ciò che rimane è il tuo stipendio netto\n\n## Cosa viene trattenuto\n\nLe trattenute esatte dipendono da dove vivi e lavori, ma la maggior parte rientra in poche categorie.\n\n### Imposta sul reddito\n\nL'imposta sul reddito è di solito la singola trattenuta più consistente. La maggior parte dei paesi adotta un sistema progressivo, il che significa che le porzioni più alte del tuo reddito vengono tassate ad aliquote più elevate. Per vedere come si sommano gli scaglioni, leggi [come funziona l'imposta sul reddito](/guides/how-income-tax-works).\n\n### Contributi previdenziali e assicurativi\n\nQuesti finanziano programmi pubblici come pensioni, assistenza sanitaria e sostegno alla disoccupazione. Negli Stati Uniti sono la Social Security e Medicare, nel Regno Unito sono i National Insurance, e in Germania coprono l'assicurazione pensionistica, sanitaria, per l'assistenza a lungo termine e per la disoccupazione. La nostra guida sui [contributi previdenziali](/guides/social-security-contributions-guide) spiega ciascun sistema.\n\n### Altre trattenute\n\nA seconda della tua situazione, potresti vedere anche contributi a una pensione integrativa aziendale, premi di assicurazione sanitaria privata, quote sindacali o rimborsi di prestiti studenteschi.\n\n## Un esempio semplice\n\nImmagina una retribuzione lorda annua di 50.000 in tre paesi. I numeri riportati di seguito sono solo a scopo illustrativo e arrotondati per chiarezza.\n\n| Paese | Lordo | Imposta sul reddito | Contributi previdenziali | Netto (circa) |\n|---|---|---|---|---|\n| USA | 50.000 USD | 4.300 USD | 3.825 USD | 41.875 USD |\n| Regno Unito | 50.000 GBP | 7.486 GBP | 2.494 GBP | 40.020 GBP |\n| Germania | 50.000 EUR | 8.200 EUR | 10.000 EUR | 31.800 EUR |\n\nCome puoi vedere, due persone che guadagnano la stessa cifra nominale possono portare a casa importi molto diversi. Le imposte statali, regionali o locali possono modificare ulteriormente questi risultati.\n\n## Calcolarlo da solo\n\nIl metodo manuale più semplice è:\n\n1. Individua la tua retribuzione lorda annua.\n2. Stima l'imposta sul reddito utilizzando gli scaglioni e la detrazione personale del tuo paese.\n3. Somma i contributi previdenziali e assicurativi.\n4. Sottrai entrambi dalla retribuzione lorda.\n5. Dividi per 12 per ottenere una cifra mensile, oppure per il tuo numero di periodi di paga.\n\nPoiché scaglioni, soglie e aliquote cambiano ogni anno fiscale, farlo a mano è laborioso e facile da sbagliare. Uno strumento mantiene tutto accurato. Prova il nostro [calcolatore dello stipendio netto](/net-salary-calculator) o il [calcolatore dello stipendio](/calculator) completo per ottenere una stima personalizzata in pochi secondi.\n\n## Perché lo stipendio netto è importante\n\n- Gestione del bilancio: affitto, bollette e risparmi provengono dal netto, non dal lordo.\n- Confronto tra lavori: uno stipendio più alto in un contesto a tassazione elevata può lasciarti con meno denaro.\n- Negoziazione: conoscere la tua cifra netta ti aiuta a valutare aumenti e benefit.\n\n## Considerazioni finali\n\nLo stipendio netto è il tuo reale reddito disponibile da spendere, determinato dall'imposta sul reddito, dai contributi previdenziali e dalle trattenute personali. Lo stipendio nominale è solo il punto di partenza. Poiché aliquote e soglie cambiano ogni anno e variano a seconda del luogo, usa queste cifre come riferimento e consulta un professionista fiscale qualificato per le decisioni che incidono sulle tue finanze.",
+    "keywords": [
+      "stipendio netto",
+      "retribuzione netta",
+      "come calcolare lo stipendio netto",
+      "lordo e netto",
+      "detrazioni dell'imposta sul reddito",
+      "trattenute in busta paga"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Tax Topic 751 (ritenute su Social Security e Medicare)",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "GOV.UK — National Insurance",
+        "url": "https://www.gov.uk/national-insurance"
+      },
+      {
+        "label": "GOV.UK — Aliquote e detrazioni dell'imposta sul reddito",
+        "url": "https://www.gov.uk/income-tax-rates"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Lo stipendio netto è la stessa cosa della retribuzione netta?",
+        "answer": "Sì. Lo stipendio netto e la retribuzione netta si riferiscono entrambi all'importo che resta dopo che tutte le imposte e le trattenute sono state sottratte dalla retribuzione lorda. È il denaro che arriva effettivamente sul tuo conto corrente."
+      },
+      {
+        "question": "Perché il mio stipendio netto è più basso di quanto mi aspettassi?",
+        "answer": "Tra le cause più comuni ci sono l'imposta sul reddito, i contributi previdenziali e assicurativi, l'iscrizione a una pensione integrativa, i rimborsi di prestiti studenteschi e i premi per i benefit. Anche le imposte locali o regionali e uno scaglione fiscale più alto possono ridurlo più di quanto avevi previsto."
+      },
+      {
+        "question": "Lo stipendio netto cambia durante l'anno?",
+        "answer": "Può succedere. Il raggiungimento di determinate soglie di reddito, la modifica dei codici fiscali, i bonus una tantum o le rettifiche ai contributi pensionistici e ai benefit possono tutti far variare la tua retribuzione netta da un periodo di paga all'altro."
+      },
+      {
+        "question": "Posso aumentare il mio stipendio netto?",
+        "answer": "A volte sì. I contributi a una pensione integrativa con vantaggi fiscali, la richiesta delle detrazioni a cui hai diritto e la verifica che il tuo codice fiscale o le tue ritenute siano corretti possono essere d'aiuto. Un professionista fiscale può consigliarti su ciò che si applica alla tua situazione."
+      }
+    ]
+  },
+  "how-to-read-your-payslip": {
+    "title": "Come leggere la busta paga riga per riga",
+    "description": "Impara a leggere la tua busta paga riga per riga. Comprendi la retribuzione lorda, le tasse, le trattenute e la retribuzione netta in USA, Regno Unito e Germania.",
+    "content": "Aprire la prima busta paga può sembrare come leggere una lingua straniera. Sigle, trattenute e due totali diversi per lo stesso mese lasciano molte persone confuse. Questa guida illustra le parti comuni di una busta paga, spiega cosa significa ogni voce e mette in evidenza come i termini cambino tra USA, Regno Unito e Germania.\n\nTieni presente che le aliquote fiscali esatte e le soglie contributive cambiano ogni anno e variano in base alla situazione personale. Verifica sempre i dettagli con il tuo datore di lavoro o con un professionista qualificato.\n\n## I due numeri che contano di più\n\nOgni busta paga ruota attorno a due cifre: la retribuzione lorda e la retribuzione netta.\n\n- La retribuzione lorda è il totale dei tuoi guadagni prima che venga trattenuto qualsiasi importo.\n- La retribuzione netta è ciò che arriva effettivamente sul tuo conto bancario, chiamata anche [stipendio netto in tasca](/guides/what-is-take-home-pay).\n\nIl divario tra le due è costituito da tasse, contributi sociali o assicurativi e qualsiasi altra trattenuta. Comprendere questo divario è l'intero scopo della lettura attenta della busta paga.\n\n## Componenti comuni, riga per riga\n\nSebbene i formati differiscano tra paesi e datori di lavoro, la maggior parte delle buste paga include gli stessi elementi di base.\n\n### Retribuzioni\n\nQuesta sezione elenca lo stipendio base o la paga oraria, più eventuali extra come straordinari, premi, provvigioni o mance. Sommando questi importi si ottiene la retribuzione lorda del periodo.\n\n### Tasse trattenute\n\nIl tuo datore di lavoro di solito sottrae l'imposta sul reddito prima di pagarti. Negli USA questo include l'imposta federale sul reddito e, nella maggior parte degli stati, l'imposta statale sul reddito. Nel Regno Unito è l'imposta sul reddito tramite PAYE. In Germania è la Lohnsteuer, talvolta con una tassa ecclesiastica e un contributo di solidarietà.\n\n### Contributi sociali e assicurativi\n\nQuesti finanziano pensioni, assistenza sanitaria e altri programmi pubblici. Sono spesso obbligatori e ripartiti tra te e il tuo datore di lavoro. Consulta la nostra guida ai [contributi previdenziali](/guides/social-security-contributions-guide) per maggiori dettagli.\n\n### Trattenute al lordo e al netto delle imposte\n\nAlcuni importi vengono sottratti prima del calcolo delle imposte, il che può ridurre il tuo reddito imponibile. Esempi comuni sono i contributi ai piani pensionistici e alcuni benefici sanitari o per il pendolarismo. Scopri di più nella nostra panoramica sulle [detrazioni fiscali](/guides/tax-deductions-explained). Altre trattenute, come le quote sindacali, possono essere applicate dopo le imposte.\n\n### Retribuzione netta\n\nDopo ogni trattenuta, ciò che rimane è la tua retribuzione netta. Questo è il numero da confrontare con il tuo budget.\n\n### Totali progressivi dall'inizio dell'anno\n\nLa maggior parte delle buste paga mostra i totali progressivi, indicati come YTD negli USA, per l'anno solare o fiscale fino a quel momento. Questi aiutano a tenere traccia dei guadagni totali e delle imposte totali pagate, cosa utile al momento della dichiarazione.\n\n## Un esempio di scomposizione\n\nEcco un esempio mensile semplificato per un dipendente che guadagna 5.000 nella propria valuta locale. Le cifre sono puramente illustrative.\n\n| Voce | Importo |\n|---|---|\n| Retribuzione lorda | 5.000 |\n| Contributo pensionistico al lordo delle imposte | -300 |\n| Imposta sul reddito | -750 |\n| Contributi sociali o assicurativi | -450 |\n| Trattenuta al netto delle imposte (quote sindacali) | -25 |\n| Retribuzione netta | 3.475 |\n\nIn questo esempio il lavoratore guadagna 5.000 lordi ma porta a casa 3.475. La differenza di circa 1.525 è esattamente ciò che la capacità di leggere la busta paga ti aiuta a comprendere.\n\n## Terminologia per paese a colpo d'occhio\n\nLa struttura è simile ovunque, ma i nomi cambiano.\n\n- Stati Uniti: spesso chiamata pay stub o paycheck. Fai attenzione a FICA, che copre Social Security e Medicare, oltre alle ritenute federali e statali.\n- Regno Unito: chiamata payslip. Cerca l'imposta sul reddito PAYE e i contributi National Insurance, insieme al tuo codice fiscale (tax code).\n- Germania: chiamata Lohnabrechnung o Gehaltsabrechnung. Aspettati la Lohnsteuer più i contributi sociali per pensione, assistenza sanitaria, disoccupazione e assicurazione per l'assistenza a lungo termine.\n\n## Consigli per controllare la busta paga\n\nUna rapida revisione mensile può individuare errori costosi.\n\n- Verifica che la retribuzione lorda corrisponda allo stipendio o alle ore concordate.\n- Controlla che il tuo codice fiscale o i dettagli della dichiarazione risultino corretti.\n- Fai attenzione a variazioni improvvise nelle trattenute da un mese all'altro.\n- Conserva le buste paga per la dichiarazione dei redditi, le richieste di prestito e le referenze per gli affitti.\n\nPer vedere come il lordo si converte in netto nella tua situazione specifica, prova il nostro [calcolatore dello stipendio netto](/net-salary-calculator) gratuito.\n\n## Considerazioni finali\n\nUna busta paga è più di una ricevuta. È un registro dei tuoi guadagni, delle tasse che contribuisci e dei benefici che finanzi. Una volta riconosciute le sezioni principali, ovvero retribuzione lorda, trattenute e retribuzione netta, il documento smette di apparire intimidatorio in qualsiasi paese. Esamina la tua regolarmente, conserva le copie e rivolgiti a un professionista ogni volta che qualcosa non torna.",
+    "keywords": [
+      "come leggere una busta paga",
+      "busta paga spiegata",
+      "scomposizione dello stipendio",
+      "retribuzione lorda vs netta",
+      "trattenute in busta paga",
+      "guida al cedolino paga"
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK — Comprendere la tua retribuzione",
+        "url": "https://www.gov.uk/understanding-your-pay"
+      },
+      {
+        "label": "IRS — Ritenuta fiscale",
+        "url": "https://www.irs.gov/individuals/employees/tax-withholding"
+      },
+      {
+        "label": "SSA — Aliquote delle imposte Social Security e Medicare",
+        "url": "https://www.ssa.gov/oact/cola/cbb.html"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Perché la mia retribuzione netta è molto più bassa di quella lorda?",
+        "answer": "La differenza deriva dall'imposta sul reddito, dai contributi sociali o assicurativi obbligatori e da eventuali trattenute volontarie come i risparmi previdenziali. La ripartizione esatta dipende dal tuo paese, dal livello di reddito e dalle circostanze personali."
+      },
+      {
+        "question": "Cosa significa year-to-date (YTD) su una busta paga?",
+        "answer": "I totali progressivi dall'inizio dell'anno mostrano i tuoi guadagni e le trattenute cumulativi dall'inizio dell'anno solare o fiscale fino al periodo di paga corrente. Aiutano a tenere traccia dei totali per la gestione del budget e per la dichiarazione dei redditi."
+      },
+      {
+        "question": "Le buste paga sono uguali in USA, Regno Unito e Germania?",
+        "answer": "La struttura di base è simile, ma la terminologia differisce. Gli USA la chiamano pay stub, il Regno Unito payslip e la Germania Lohnabrechnung. Ogni paese ha inoltre le proprie diciture fiscali e i propri sistemi contributivi."
+      },
+      {
+        "question": "Cosa devo fare se noto un errore sulla mia busta paga?",
+        "answer": "Contatta prima il tuo datore di lavoro o l'ufficio paghe, poiché la maggior parte degli errori è semplice da correggere. Se il problema riguarda tasse o contributi, un commercialista qualificato o un professionista fiscale può aiutarti a chiarirlo."
+      }
+    ]
+  },
+  "how-income-tax-works": {
+    "title": "Come Funziona l'Imposta sul Reddito: Guida per Principianti",
+    "description": "Una guida accessibile ai principianti su come funziona l'imposta sul reddito: reddito imponibile, scaglioni progressivi, aliquota marginale ed effettiva, deduzioni e stipendio netto.",
+    "content": "L'imposta sul reddito è uno dei motivi principali per cui il numero scritto sulla tua offerta di lavoro non è il numero che finisce sul tuo conto in banca. Se hai mai guardato una busta paga chiedendoti dove sia finita una parte del tuo stipendio, questa guida fa per te. Vedremo come funziona l'imposta sul reddito in parole semplici, usando esempi tratti da Stati Uniti, Regno Unito e Germania.\n\nQueste sono informazioni educative di carattere generale, non una consulenza fiscale o finanziaria. Le aliquote e le soglie cambiano ogni anno, quindi controlla sempre le fonti ufficiali o rivolgiti a un professionista qualificato per la tua situazione.\n\n## Che Cos'è l'Imposta sul Reddito?\n\nL'imposta sul reddito è denaro che versi allo Stato in base a quanto guadagni. Finanzia servizi pubblici come sanità, scuole, strade e pensioni. Nella maggior parte dei paesi, più guadagni, più alta è la percentuale che paghi, almeno sulla fascia più alta del tuo reddito.\n\nPer i lavoratori dipendenti, l'imposta sul reddito viene di solito trattenuta automaticamente da ogni busta paga prima che tu venga pagato. Questo si chiama withholding (USA), PAYE nel Regno Unito o Lohnsteuer in Germania. I liberi professionisti e i lavoratori autonomi di norma la calcolano e la versano da soli, spesso a rate.\n\n## Reddito Lordo vs Reddito Imponibile\n\nQuesti due termini mettono in difficoltà quasi tutti, quindi distinguiamoli con chiarezza.\n\n- **Reddito lordo** è la tua paga totale prima che venga trattenuto qualsiasi importo. Se la tua offerta di lavoro indica 50.000 all'anno, quello è il lordo.\n- **Reddito imponibile** è ciò che rimane dopo aver sottratto eventuali franchigie e deduzioni. È su questo numero più piccolo che viene effettivamente calcolata la tua imposta.\n\nNon sei tassato su ogni centesimo che guadagni. La maggior parte dei paesi ti concede prima una fascia esentasse. Per esempio, il Regno Unito ha la Personal Allowance e la Germania ha un importo base esentasse (Grundfreibetrag). Al di sotto di queste soglie, non paghi alcuna imposta sul reddito. Per un quadro più ampio, vedi [reddito lordo vs reddito netto](/guides/gross-income-vs-net-income).\n\n## Scaglioni Progressivi d'Imposta\n\nLa maggior parte dei sistemi di imposta sul reddito è progressiva. Il tuo reddito viene suddiviso in fasce, e ciascuna fascia è tassata con la propria aliquota. Un mito diffuso è che guadagnare di più possa spingere l'intero reddito in un'aliquota più alta. Non funziona così. Solo la parte di reddito che rientra in ciascuna fascia viene tassata con l'aliquota di quella fascia.\n\nEcco un esempio semplificato (non aliquote reali attuali):\n\n| Fascia di reddito | Aliquota | Imposta su questa fascia |\n|---|---|---|\n| Primi 12.000 | 0% | 0 |\n| Da 12.001 a 40.000 | 20% | 5.600 |\n| Da 40.001 a 50.000 | 40% | 4.000 |\n\nIn questo esempio, chi guadagna 50.000 paga 9.600 in totale, non il 40% su tutto. Per capire come si sovrappongono le fasce nei sistemi reali, consulta la nostra guida più approfondita sugli [scaglioni d'imposta](/guides/understanding-tax-brackets).\n\n### Aliquota Marginale vs Effettiva\n\nDue rapide definizioni che derivano dagli scaglioni:\n\n- **Aliquota marginale** è l'aliquota sul tuo prossimo dollaro, sterlina o euro guadagnato. Nella tabella sopra, è il 40%.\n- **Aliquota effettiva** è l'aliquota media sull'intero reddito. Qui è 9.600 diviso 50.000, ovvero circa il 19%.\n\nLa tua aliquota effettiva è quasi sempre inferiore alla tua aliquota marginale massima. Le persone confondono spesso le due cose e sovrastimano quanta imposta pagano in realtà.\n\n## Franchigie e Deduzioni\n\nLe franchigie e le deduzioni riducono il tuo reddito imponibile, abbassando così l'importo dovuto. Variano notevolmente da paese a paese, ma esempi comuni includono:\n\n- Una franchigia personale esentasse o un importo base.\n- Spese legate al lavoro, come attrezzi, trasferte o un ufficio domestico.\n- Contributi pensionistici o previdenziali.\n- Alcuni premi assicurativi o donazioni benefiche.\n\nSapere cosa puoi portare in detrazione è uno dei modi più semplici per trattenere più denaro. La nostra guida alle [deduzioni fiscali](/guides/tax-deductions-explained) analizza le principali categorie.\n\n## Imposta sul Reddito vs Contributi Sociali\n\nEcco un aspetto che sorprende molte persone: l'imposta sul reddito non è l'unica cosa trattenuta dal tuo stipendio. Separatamente, ci sono i contributi sociali o previdenziali.\n\n- Negli **Stati Uniti**, si tratta di Social Security e Medicare (spesso indicati come FICA).\n- Nel **Regno Unito**, si tratta della National Insurance.\n- In **Germania**, questi coprono pensione, sanità, disoccupazione e assicurazione per l'assistenza a lungo termine.\n\nQuesti contributi finanziano pensioni, sanità e sostegno alla disoccupazione. Vengono calcolati in modo diverso dall'imposta sul reddito e spesso hanno soglie e massimali propri. Poiché possono rappresentare una quota significativa della tua paga, ignorarli dà un'immagine fuorviante del tuo reale stipendio netto. Scopri di più nella nostra panoramica sui [contributi previdenziali](/guides/social-security-contributions-guide).\n\n## Come Tutto Diventa Stipendio Netto\n\nMettendo insieme i pezzi, il tuo stipendio netto (chiamato anche paga netta) generalmente si presenta così:\n\n1. Parti dal **reddito lordo**.\n2. Sottrai **franchigie e deduzioni** per trovare il reddito imponibile.\n3. Applica gli **scaglioni progressivi** per calcolare l'imposta sul reddito.\n4. Sottrai i **contributi sociali**.\n5. Ciò che resta è il tuo **stipendio netto**.\n\nUn lavoratore che guadagna lo stesso stipendio lordo negli Stati Uniti, nel Regno Unito e in Germania può ritrovarsi con importi netti molto diversi, perché ogni paese combina tasse e contributi in modo differente. Confrontiamo i tre fianco a fianco nella nostra guida allo [stipendio netto a confronto tra paesi](/guides/take-home-pay-us-uk-germany).\n\nVuoi un numero per la tua situazione personale? Prova il nostro [calcolatore di stipendio](/salary-calculator) gratuito per stimare la tua paga netta in pochi secondi.\n\n## Considerazioni Finali\n\nL'imposta sul reddito può sembrare intimidatoria, ma l'idea di fondo è semplice: vieni tassato a fasce, solo su ciò che rimane dopo la tua franchigia esentasse e le deduzioni, e questa imposta si affianca a contributi sociali separati. Una volta che capisci come il reddito lordo diventa stipendio netto passo dopo passo, la tua busta paga smette di essere un mistero. Poiché le aliquote e le soglie cambiano ogni anno, usa fonti ufficiali e un professionista qualificato per le decisioni che contano.",
+    "keywords": [
+      "come funziona l'imposta sul reddito",
+      "nozioni di base sull'imposta sul reddito",
+      "reddito imponibile",
+      "scaglioni d'imposta spiegati",
+      "aliquota marginale vs effettiva",
+      "stipendio netto"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Aliquote e scaglioni dell'imposta federale sul reddito",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      },
+      {
+        "label": "GOV.UK — Aliquote dell'imposta sul reddito e Personal Allowances",
+        "url": "https://www.gov.uk/income-tax-rates"
+      },
+      {
+        "label": "Ministero federale delle Finanze tedesco",
+        "url": "https://www.bundesfinanzministerium.de"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Guadagnare di più può mai lasciarmi in una situazione peggiore?",
+        "answer": "In un normale sistema progressivo, no. Solo il reddito che rientra in una fascia più alta viene tassato con l'aliquota più elevata, quindi un aumento accresce sempre il tuo stipendio netto. Specifiche soglie di perdita di sussidi (benefit cliff) sono una questione a parte e non fanno parte del modo in cui funzionano gli scaglioni dell'imposta sul reddito."
+      },
+      {
+        "question": "Qual è la differenza tra imposta sul reddito e contributi sociali?",
+        "answer": "L'imposta sul reddito è un'imposta generale sui guadagni che finanzia i servizi pubblici. I contributi sociali (come la National Insurance, la FICA o l'assicurazione sociale tedesca) sono versamenti separati che finanziano pensioni, sanità e sostegno alla disoccupazione, e vengono calcolati secondo regole proprie."
+      },
+      {
+        "question": "Perché il mio stipendio netto è più basso di quanto mi aspettassi?",
+        "answer": "Dal tuo stipendio lordo vengono trattenuti sia l'imposta sul reddito sia i contributi sociali, e talvolta anche contributi pensionistici o altre ritenute. L'effetto combinato può essere maggiore di quanto le persone si aspettino, ed è per questo che una stima da un calcolatore aiuta a impostare aspettative realistiche."
+      },
+      {
+        "question": "I liberi professionisti pagano l'imposta sul reddito in modo diverso dai dipendenti?",
+        "answer": "Le aliquote sono di solito le stesse, ma il procedimento è diverso. Ai dipendenti l'imposta viene trattenuta automaticamente a ogni giorno di paga, mentre i liberi professionisti di norma la calcolano e la versano da soli, spesso a rate, e possono avere la possibilità di portare in detrazione più spese professionali."
+      }
+    ]
+  },
+  "take-home-pay-us-uk-germany": {
+    "title": "Stipendio netto a confronto: USA vs Germania vs Regno Unito",
+    "description": "Confronta lo stipendio netto in USA, Germania e Regno Unito. Scopri come l'imposta sul reddito e i contributi sociali determinano la retribuzione netta, con una tabella illustrativa per Paese.",
+    "content": "## Perché lo stesso stipendio è diverso in ogni Paese\n\nImmagina tre lavoratori, ciascuno con un reddito equivalente a un solido stipendio di fascia media, che vivono negli Stati Uniti, in Germania e nel Regno Unito. Potrebbero concordare sulla stessa retribuzione lorda, eppure l'importo che effettivamente arriva sui loro conti correnti può risultare sorprendentemente diverso. Il motivo non è solo l'aliquota dell'imposta sul reddito. È l'intero insieme di trattenute, compresi i contributi sociali, che ogni Paese aggiunge sopra (o accanto) all'imposta sul reddito.\n\nCapire queste differenze ti aiuta a confrontare offerte di lavoro, a pianificare un trasferimento all'estero o semplicemente a dare un senso alla tua busta paga. Se vuoi prima vedere come si incastrano i vari pezzi, la nostra guida su [come funziona l'imposta sul reddito](/guides/how-income-tax-works) è un utile punto di partenza, insieme alla differenza tra [reddito lordo e reddito netto](/guides/gross-income-vs-net-income).\n\n## Gli elementi costitutivi dello stipendio netto\n\nOgni Paese di questo confronto utilizza un'imposta sul reddito progressiva, il che significa che le quote di reddito più alte vengono tassate ad aliquote più elevate. Ma ognuno aggiunge la propria particolarità.\n\n### Stati Uniti\n\nNegli USA, l'imposta federale sul reddito utilizza scaglioni graduati, e la maggior parte degli Stati aggiunge la propria imposta sul reddito (alcuni non ne applicano alcuna). A ciò si aggiunge il contributo FICA, che finanzia la Social Security e Medicare. Il FICA è un contributo sui salari ad aliquota fissa, ripartito tra lavoratore e datore di lavoro, quindi si applica anche ai redditi più bassi che potrebbero dover versare poca imposta federale sul reddito.\n\n### Germania\n\nLa Germania combina un'imposta sul reddito progressiva con il Solidaritaetszuschlag (il contributo di solidarietà), che oggi riguarda principalmente i redditi più alti. La questione più importante, però, è l'assicurazione sociale obbligatoria. I lavoratori tedeschi versano contributi per l'assicurazione sanitaria pubblica, l'assicurazione pensionistica, l'assicurazione per l'assistenza a lungo termine e l'assicurazione contro la disoccupazione. Questi contributi sono consistenti e sono una delle ragioni principali per cui lo stipendio netto tedesco è spesso più basso rispetto a quello statunitense o britannico a parità di importo lordo.\n\n### Regno Unito\n\nIl Regno Unito applica un'imposta sul reddito progressiva con una Personal Allowance esentasse, ossia un importo che puoi guadagnare prima che si applichi qualsiasi imposta sul reddito. Oltre all'imposta sul reddito, i dipendenti pagano i contributi National Insurance, che finanziano la pensione statale e altre prestazioni. Il carico complessivo si colloca tipicamente tra quello degli USA e quello della Germania per molti lavoratori.\n\n## Un confronto illustrativo\n\nLa tabella seguente è un'illustrazione approssimativa e semplificata per un lavoratore single senza persone a carico, che utilizza uno stipendio lordo approssimativo di 60.000 in ciascuna valuta locale. Queste cifre sono stime a soli fini didattici. Non sono esatte, non riflettono ogni circostanza personale e non dovrebbero essere usate per una pianificazione reale. Le valute non sono convertite, quindi non leggere i dati in orizzontale come se fossero un confronto diretto.\n\n| Voce | Stati Uniti | Germania | Regno Unito |\n|---|---|---|---|\n| Valuta | USD | EUR | GBP |\n| Lordo approssimativo | 60.000 | 60.000 | 60.000 |\n| Imposta sul reddito | Moderata | Più alta | Moderata |\n| Contributi sociali | FICA (più bassi) | Sanità, pensione, assistenza, disoccupazione (più alti) | National Insurance (moderati) |\n| Quota netta approssimativa | Circa 70-78% | Circa 58-65% | Circa 68-74% |\n\nConsidera quelle percentuali di stipendio netto come ampie fasce illustrative, non come promesse. Imposte statali o locali, stato civile, figli, scelte previdenziali e dettagli dell'assicurazione sanitaria possono modificarle in modo significativo.\n\n## Perché la Germania trattiene spesso di più\n\nLa ragione principale è l'assicurazione sociale. La Germania finanzia un sistema completo di sanità pubblica, pensioni, assistenza e copertura contro la disoccupazione in gran parte attraverso contributi obbligatori sui salari. Negli USA, l'assistenza sanitaria è più comunemente legata a piani privati o aziendali piuttosto che a un'unica trattenuta obbligatoria, e nel Regno Unito gran parte dell'assistenza sanitaria è finanziata attraverso la tassazione generale anziché tramite un contributo separato di grande entità. Quindi una busta paga tedesca raggruppa più servizi in trattenute visibili, il che riduce lo stipendio netto ma riflette anche i benefici che il lavoratore riceve in cambio.\n\nEcco perché confrontare solo l'aliquota dell'imposta sul reddito può essere fuorviante. Un Paese con un'aliquota dell'imposta sul reddito più bassa può comunque lasciarti uno stipendio netto inferiore una volta inclusi i contributi sociali, e ciò che sembra una trattenuta più alta può comportare servizi pubblici più ampi.\n\n## Calcola i numeri reali per la tua situazione\n\nPoiché aliquote, soglie e detrazioni cambiano ogni anno e dipendono fortemente dalle tue circostanze personali, l'unico modo affidabile per vedere la tua cifra è calcolarla. Puoi provare il [calcolatore dello stipendio per gli USA](/salary-calculator/us), il [calcolatore dello stipendio per la Germania](/salary-calculator/de) e il [calcolatore dello stipendio per il Regno Unito](/salary-calculator/uk) per stimare il tuo stipendio netto in ciascun Paese.\n\n## Considerazioni finali\n\nLo stipendio netto è determinato da molto più di una singola aliquota fiscale. Tra USA, Germania e Regno Unito, la combinazione di imposta sul reddito progressiva e contributi sociali racconta la vera storia, e le trattenute più elevate della Germania riflettono in gran parte il suo ampio sistema di assicurazione obbligatoria. Usa le fasce illustrative qui riportate per costruire un'intuizione, ma esegui sempre i calcolatori per ottenere stime aggiornate e consulta un professionista fiscale qualificato per le decisioni che riguardano le tue finanze. Aliquote e soglie variano di anno in anno e in base alla situazione individuale.",
+    "keywords": [
+      "confronto stipendio netto",
+      "stipendio USA vs Germania vs Regno Unito",
+      "stipendio netto per Paese",
+      "contributi sociali",
+      "confronto imposta sul reddito",
+      "trattenute in busta paga"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Aliquote e scaglioni dell'imposta federale sul reddito",
+        "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+      },
+      {
+        "label": "GOV.UK — Aliquote dell'imposta sul reddito",
+        "url": "https://www.gov.uk/income-tax-rates"
+      },
+      {
+        "label": "Ministero federale tedesco delle Finanze",
+        "url": "https://www.bundesfinanzministerium.de"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Perché il mio stipendio netto è più basso in Germania che negli USA a parità di stipendio lordo?",
+        "answer": "La Germania finanzia la sanità pubblica, la pensione, l'assistenza a lungo termine e l'assicurazione contro la disoccupazione attraverso consistenti contributi obbligatori sui salari. Queste trattenute sociali, più dell'imposta sul reddito da sola, sono la ragione principale per cui lo stipendio netto tedesco è spesso più basso a parità di importo lordo."
+      },
+      {
+        "question": "Un'aliquota dell'imposta sul reddito più bassa significa sempre uno stipendio netto più alto?",
+        "answer": "No. I contributi sociali come il FICA negli USA, la National Insurance nel Regno Unito e l'assicurazione obbligatoria in Germania possono cambiare il quadro in modo significativo. Un Paese con un'aliquota dell'imposta sul reddito più bassa può comunque lasciarti uno stipendio netto inferiore una volta aggiunti questi contributi."
+      },
+      {
+        "question": "Le percentuali nella tabella di confronto sono esatte?",
+        "answer": "No. Sono fasce illustrative per un lavoratore single senza persone a carico, pensate solo per costruire un'intuizione. La tua cifra effettiva dipende dal tuo Stato o regione, dallo stato civile, dai figli, dalle scelte previdenziali e dalle aliquote dell'anno in corso. Usa i calcolatori per ottenere una stima."
+      },
+      {
+        "question": "Posso confrontare i tre Paesi leggendo la tabella in orizzontale?",
+        "answer": "Non direttamente. Ogni colonna utilizza la propria valuta locale senza conversione del tasso di cambio, quindi i numeri non sono direttamente comparabili. La tabella è concepita per mostrare gli schemi delle trattenute, non per convertire gli stipendi tra Paesi."
+      }
+    ]
+  },
+  "what-is-a-good-salary": {
+    "title": "Cos'è un Buon Stipendio? Come Valutare la Tua Retribuzione",
+    "description": "Cos'è un buon stipendio? Scopri come valutare la tua retribuzione usando salari mediani, percentili, lordo vs netto e potere d'acquisto negli USA, nel Regno Unito e in Germania.",
+    "content": "## Cosa Conta come un Buon Stipendio?\n\nChiedi a dieci persone cos'è un buon stipendio e otterrai dieci risposte diverse. Questo perché la retribuzione è relativa. Una cifra che sembra generosa per un neolaureato in una piccola città potrebbe risultare risicata per un genitore di tre figli in una città costosa. Invece di rincorrere un'unica cifra magica, è utile imparare a valutare la propria retribuzione confrontandola con dati reali e con la propria situazione.\n\nQuesta guida illustra i modi principali per giudicare uno stipendio, quali statistiche considerare affidabili e perché la cifra in evidenza è solo metà della storia.\n\n## Perché Non Esiste un Unico Numero \"Buono\"\n\nDiversi fattori influenzano ciò che \"buono\" significa per te:\n\n- **Luogo.** Salari e prezzi variano in base al paese, alla regione e persino al quartiere.\n- **Ruolo e settore.** Un artigiano qualificato, un insegnante e uno sviluppatore software si collocano in punti molto diversi della scala retributiva.\n- **Esperienza.** La retribuzione per un ruolo entry-level e quella per un ruolo senior con la stessa qualifica possono differire notevolmente.\n- **Dimensione del nucleo familiare.** Un solo reddito che sostiene quattro persone si distribuisce in modo diverso rispetto a un solo reddito che sostiene una persona.\n- **Costo della vita.** Affitto, cibo, trasporti e tasse erodono ogni busta paga prima che arrivi ai tuoi risparmi.\n\nPer questo motivo, la domanda più intelligente non è se uno stipendio sia buono in astratto, ma se sia buono per il tuo ruolo, nella tua zona, nella tua fase di carriera. Per un'analisi più approfondita di come i prezzi rimodellano la tua retribuzione, consulta la nostra guida su [costo della vita vs stipendio](/guides/cost-of-living-vs-salary).\n\n## Valutare con Mediana, Media e Percentili\n\nPer confrontare equamente la tua retribuzione, hai bisogno di un punto di riferimento. Le statistiche salariali ufficiali ti offrono tre strumenti utili.\n\n- **Mediana:** il valore centrale. Metà dei lavoratori guadagna di più, metà di meno. La mediana è di solito il parametro più onesto perché non è distorta da una manciata di persone che guadagnano cifre molto elevate.\n- **Media (media aritmetica):** somma tutti gli stipendi e dividi per il numero di lavoratori. Pochi stipendi enormi possono spingere la media ben al di sopra di quanto guadagna una persona tipica.\n- **Percentili:** indicano dove ti collochi rispetto al gruppo. Se sei al 75° percentile, guadagni più del 75 percento dei lavoratori di quel gruppo.\n\nEcco un esempio semplificato per un lavoro immaginario. Le cifre cambiano nel tempo e variano da regione a regione, quindi considerale solo come illustrative.\n\n| Misura | Cifra annua | Cosa ti dice |\n|---|---|---|\n| 25° percentile | 38.000 | Fascia bassa della retribuzione tipica |\n| Mediana (50°) | 52.000 | Un lavoratore tipico in questo ruolo |\n| Media | 57.000 | Trainata in alto dai più alti guadagni |\n| 75° percentile | 68.000 | Retribuzione solida per il ruolo |\n\nSe guadagni vicino alla mediana per il tuo lavoro e la tua regione, sei più o meno in linea con i colleghi. Collocarsi vicino al 75° percentile indica una retribuzione solida, mentre il 25° percentile può essere un segnale per pianificare una [trattativa salariale](/guides/salary-negotiation-tips).\n\n## Lordo vs Netto: Giudica il Denaro che Trattieni\n\nUn'offerta di lavoro indica quasi sempre una cifra lorda, l'importo prima delle tasse e delle trattenute. Ciò che arriva sul tuo conto bancario è la retribuzione netta, e il divario tra le due può essere notevole.\n\n- L'imposta sul reddito, i contributi previdenziali e quelli sanitari vengono dedotti per primi.\n- Due offerte con lo stesso stipendio lordo possono dare luogo a retribuzioni nette molto diverse a seconda dei paesi o delle situazioni fiscali.\n- Una cifra lorda più alta in un contesto ad alta tassazione può lasciarti con meno di una cifra lorda inferiore altrove.\n\nQuindi, quando confronti i numeri, confronta il netto dove puoi. Esegui qualsiasi offerta attraverso il nostro [calcolatore di stipendio](/salary-calculator) gratuito per stimare la retribuzione netta negli USA, in Germania o nel Regno Unito prima di decidere.\n\n## Usare le Statistiche Salariali Ufficiali\n\nLe agenzie governative pubblicano dati salariali affidabili e aggiornati regolarmente. Sono gratuiti e molto più attendibili di post anonimi sui forum.\n\n- **Stati Uniti:** il Bureau of Labor Statistics pubblica le retribuzioni per professione e area geografica.\n- **Regno Unito:** l'Office for National Statistics riporta retribuzioni e ore lavorate.\n- **Unione Europea e Germania:** Eurostat copre salari e costo del lavoro negli stati membri.\n\nQuando li consulti, fai attenzione alla data, alla regione e se la cifra è lorda o netta. Cerca la tua professione specifica anziché una media nazionale, poiché le qualifiche professionali variano enormemente.\n\n## Perché il Potere d'Acquisto Conta più della Cifra in Evidenza\n\nDue persone possono guadagnare lo stesso stipendio e vivere vite molto diverse. Il motivo è il potere d'acquisto, ovvero quanto il tuo denaro acquista realmente dove vivi.\n\nConsidera questo semplice confronto. Le cifre sono illustrative.\n\n| Città | Stipendio lordo | Affitto mensile tipico | Denaro residuo dopo l'affitto |\n|---|---|---|---|\n| Città a basso costo | 50.000 | 900 | Maggiore respiro |\n| Città ad alto costo | 60.000 | 1.800 | Minore respiro |\n\nLo stipendio di 60.000 sembra più alto, ma dopo un affitto molto più elevato, il lavoratore nella città a basso costo potrebbe risparmiare di più ogni mese. Ecco perché un aumento che comporta un trasferimento in una città costosa non è sempre un guadagno reale.\n\nAlcune abitudini ti aiutano a concentrarti sul potere d'acquisto:\n\n- Confronta la retribuzione netta, non quella lorda, rispetto ai prezzi locali.\n- Tieni conto di affitto, trasporti, tasse e assistenza all'infanzia, non solo dello stipendio.\n- Valuta i benefit come i contributi pensionistici, le ferie retribuite e la copertura sanitaria.\n\nQuando metti a confronto due ruoli fianco a fianco, la nostra guida su come [confrontare le offerte di lavoro](/guides/how-to-compare-job-offers) illustra l'intera checklist.\n\n## Considerazioni Finali\n\nUn buon stipendio non è una cifra fissa che puoi cercare una volta per tutte. È una cifra che si adatta al tuo ruolo, al tuo luogo, alla tua esperienza e al tuo costo della vita, e che ti lascia una retribuzione netta sana. Usa i dati su mediana e percentili per capire dove ti collochi, controlla sempre il netto anziché il lordo, e giudica ogni offerta in base a ciò che acquista realmente.",
+    "keywords": [
+      "cos'è un buon stipendio",
+      "valutazione dello stipendio",
+      "mediana vs stipendio medio",
+      "lordo vs netto",
+      "percentili salariali",
+      "potere d'acquisto"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Occupational Employment and Wage Statistics",
+        "url": "https://www.bls.gov/oes/"
+      },
+      {
+        "label": "UK Office for National Statistics — Retribuzioni e ore lavorate",
+        "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours"
+      },
+      {
+        "label": "Eurostat — Salari e costo del lavoro",
+        "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Wages_and_labour_costs"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Quando valuto la mia retribuzione, dovrei guardare lo stipendio mediano o quello medio?",
+        "answer": "La mediana è di solito più affidabile perché mostra il lavoratore centrale e non viene distorta da poche persone che guadagnano cifre molto elevate. La media può apparire più alta di quanto la maggior parte delle persone guadagna realmente. Quando possibile, controlla entrambe, oltre ai percentili per il tuo ruolo e la tua regione specifici."
+      },
+      {
+        "question": "Uno stipendio lordo più alto è sempre migliore?",
+        "answer": "Non necessariamente. Dopo l'imposta sul reddito, i contributi previdenziali e altre trattenute, una cifra lorda più alta in un'area ad alta tassazione può lasciarti con una retribuzione netta inferiore rispetto a una cifra lorda più bassa altrove. Confronta sempre la retribuzione netta e valuta il costo della vita locale prima di decidere."
+      },
+      {
+        "question": "Dove posso trovare dati salariali affidabili?",
+        "answer": "Le agenzie statistiche governative sono un ottimo punto di partenza: il U.S. Bureau of Labor Statistics, l'UK Office for National Statistics ed Eurostat per l'UE e la Germania. Cerca la tua professione e regione specifiche, e fai attenzione alla data e se le cifre sono lorde o nette."
+      },
+      {
+        "question": "In che modo il costo della vita cambia ciò che conta come un buon stipendio?",
+        "answer": "Uno stipendio più alto in una città costosa può lasciarti con meno denaro disponibile rispetto a uno stipendio più basso in una zona più economica, una volta pagati affitto, tasse e spese quotidiane. Il potere d'acquisto, ovvero ciò che la tua retribuzione netta acquista realmente a livello locale, conta spesso più della cifra in evidenza."
+      }
+    ]
+  },
+  "how-to-compare-job-offers": {
+    "title": "Come confrontare le offerte di lavoro (oltre lo stipendio)",
+    "description": "Scopri come confrontare le offerte di lavoro oltre lo stipendio: converti in lordo e netto annuo, valorizza i benefit e considera tasse, tragitto e vantaggi non economici.",
+    "content": "Un numero più alto sulla lettera di offerta non significa sempre più soldi in tasca. Due lavori con lo stesso stipendio lordo possono lasciarti con importi molto diversi una volta conteggiati tasse, benefit e costi del tragitto casa-lavoro. Confrontare bene le offerte significa guardare il quadro completo, non solo la cifra in evidenza.\n\n## Inizia mettendo ogni offerta sulla stessa base\n\nLe offerte arrivano in forme diverse. Una è indicata all'anno, un'altra al mese, un'altra all'ora. Prima di poter confrontare qualsiasi cosa, converti ciascuna in retribuzione lorda annua.\n\n- Da orario ad annuo: moltiplica la tariffa oraria per le ore settimanali, poi per 52. Una tariffa di 25 all'ora a 40 ore a settimana fa circa 52.000 all'anno.\n- Da mensile ad annuo: moltiplica per 12. Uno stipendio di 4.500 EUR al mese fa 54.000 EUR all'anno.\n\nUna volta che ogni offerta è espressa in lordo annuo, fai il passo successivo che la maggior parte delle persone salta: stima la [retribuzione netta](/guides/what-is-take-home-pay). Il lordo è ciò che ti viene promesso; il netto è ciò che arriva davvero sul tuo conto in banca dopo l'imposta sul reddito e i contributi sociali. Puoi inserire ciascuna cifra nel nostro [calcolatore dello stipendio](/calculator) o nel [calcolatore dello stipendio netto](/net-salary-calculator) per confrontare il netto fianco a fianco.\n\n## Dai un valore numerico ai benefit\n\nI benefit sono denaro reale, anche se non compaiono mai come stipendio. Secondo lo U.S. Bureau of Labor Statistics, i benefit costituiscono una quota significativa della retribuzione complessiva dei dipendenti, quindi ignorarli può nascondere un divario ampio.\n\nCose che vale la pena valorizzare:\n\n- Assicurazione sanitaria: quanto costa il premio e quanto ne copre il datore di lavoro?\n- Pensione o contributo previdenziale integrativo: un contributo del 5 percento su uno stipendio di 60.000 vale 3.000 all'anno di denaro praticamente gratuito.\n- Ferie retribuite: una settimana di ferie in più ha un valore in denaro all'incirca pari a una settimana di stipendio.\n- Bonus: verifica se sono garantiti o discrezionali e usa una stima prudente.\n\n## Tieni conto della località e delle tasse\n\nIl luogo in cui ha sede un lavoro modifica il tuo netto e i tuoi costi. Le regole fiscali variano da paese a paese e talvolta da regione a regione, e lo stesso stipendio lordo dà un netto diverso negli Stati Uniti, in Germania e nel Regno Unito. Guarda come si confrontano i tre paesi in [retribuzione netta a confronto tra paesi](/guides/take-home-pay-us-uk-germany).\n\nUno stipendio che sembra più alto in una città cara può rendere meno di uno più basso in una zona più economica. Soppesa l'offerta rispetto ai prezzi locali usando la nostra guida sul [costo della vita](/guides/cost-of-living-vs-salary) prima di decidere.\n\n## Due offerte a confronto\n\nEcco un esempio semplificato che confronta due offerte con lo stesso stipendio lordo.\n\n| Fattore | Offerta A | Offerta B |\n| --- | --- | --- |\n| Lordo annuo | 60.000 | 60.000 |\n| Netto stimato | 45.000 | 44.000 |\n| Contributo previdenziale | 0 | 3.000 |\n| Ferie retribuite | 20 giorni | 28 giorni |\n| Costo del tragitto (annuo) | 2.400 | 0 (da remoto) |\n| Valore totale approssimativo | 42.600 | 47.000 |\n\nSulla carta erano pari. Una volta inclusi benefit e tragitto, l'Offerta B è chiaramente in vantaggio.\n\n### Tragitto casa-lavoro e lavoro da remoto\n\nIl tragitto costa soldi e tempo. Un tragitto da 2.400 all'anno è di fatto un taglio di stipendio. I ruoli da remoto o ibridi possono anche far risparmiare su pranzi, parcheggio e abbigliamento da lavoro, e restituirti ore ogni settimana.\n\n## Non dimenticare i fattori non economici\n\nI numeri contano, ma conta anche il resto del lavoro:\n\n- Crescita: formazione, percorsi di avanzamento e competenze che svilupperai.\n- Stabilità: salute dell'azienda e quanto si sente sicuro il ruolo.\n- Flessibilità: controllo sugli orari e opzioni di lavoro da remoto.\n- Cultura e responsabile: spesso il fattore più determinante per la felicità quotidiana.\n\nSe due offerte sono vicine sul piano economico, devono essere questi fattori a decidere. E se il denaro è simile ma non uguale, ricorda che spesso puoi chiedere di più. Leggi i nostri consigli sulla [negoziazione dello stipendio](/guides/salary-negotiation-tips) prima di accettare.\n\n## Considerazioni finali\n\nL'offerta migliore raramente è quella con il lordo più alto. Converti tutto sulla stessa base, confronta il netto, aggiungi il valore in denaro dei benefit e sottrai i costi del tragitto. Poi sovrapponi i fattori non economici che plasmano la tua vita quotidiana. Le regole fiscali e sui benefit variano in base al paese e alla situazione personale, quindi tratta questi esempi come un punto di partenza e consulta un professionista qualificato prima di prendere una decisione definitiva.",
+    "keywords": [
+      "confrontare offerte di lavoro",
+      "retribuzione complessiva",
+      "confronto dello stipendio netto",
+      "valore dei benefit per i dipendenti",
+      "valutare le offerte di lavoro",
+      "stipendio netto in tasca"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Benefit per i dipendenti",
+        "url": "https://www.bls.gov/ebs/"
+      },
+      {
+        "label": "GOV.UK — Imposta sul reddito",
+        "url": "https://www.gov.uk/income-tax"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Dovrei confrontare le offerte di lavoro in base allo stipendio lordo o netto?",
+        "answer": "Confronta il netto, cioè l'importo che porti effettivamente a casa dopo tasse e contributi. Due offerte con lo stesso lordo possono produrre importi netti diversi a seconda della località e delle trattenute, quindi il netto dà un quadro più veritiero."
+      },
+      {
+        "question": "Come faccio a dare un valore ai benefit come i giorni di ferie aggiuntivi?",
+        "answer": "Stima l'equivalente in denaro. Una settimana di ferie retribuite in più vale all'incirca una settimana del tuo stipendio, e un contributo previdenziale integrativo è denaro reale: per esempio un contributo del 5 percento su 60.000 equivale a 3.000 all'anno."
+      },
+      {
+        "question": "Vale la pena uno stipendio più alto in una città cara?",
+        "answer": "Non sempre. Uno stipendio più grande può comprare meno se affitto, trasporti e costi quotidiani sono molto più alti. Confronta l'offerta con i costi della vita locali e con il tuo netto stimato prima di decidere."
+      },
+      {
+        "question": "Quanto incide davvero il tragitto casa-lavoro su un'offerta di lavoro?",
+        "answer": "Più di quanto si pensi. I costi di spostamento agiscono come un taglio di stipendio, e anche il tempo perso ha un valore. Un ruolo da remoto che elimina un tragitto da 2.400 all'anno può superare uno stipendio lordo leggermente più alto."
+      }
+    ]
+  },
+  "cost-of-living-vs-salary": {
+    "title": "Costo della vita vs stipendio: capire il tuo reddito reale",
+    "description": "Scopri come il costo della vita determina il tuo reddito reale. Confronta retribuzione nominale e reale, potere d'acquisto e stipendio netto tra città per capire quanto guadagni davvero.",
+    "content": "## Quanto vale davvero il tuo stipendio\n\nUn'offerta di lavoro con un numero più grande può sembrare una vittoria automatica. Ma la dimensione della tua busta paga racconta solo metà della storia. Ciò che conta davvero è quanto quel denaro può comprare dove vivi. Questa è la differenza tra reddito nominale e reddito reale, e comprenderla può cambiare il modo in cui valuti qualsiasi offerta di lavoro.\n\n## Reddito nominale vs reddito reale\n\nIl reddito nominale è l'importo grezzo che guadagni, misurato in semplice valuta. Il reddito reale rettifica quella cifra in base al costo delle cose che effettivamente acquisti.\n\n- Reddito nominale: il numero sul tuo contratto, ad esempio 60.000 USD all'anno.\n- Reddito reale: ciò che quei 60.000 possono coprire dopo aver considerato affitto, cibo, trasporti e tasse.\n\nDue persone possono guadagnare lo stesso stipendio nominale e vivere in modo molto diverso, a seconda dei prezzi locali.\n\n## Potere d'acquisto e inflazione\n\nIl potere d'acquisto è quanto può comprare un'unità di valuta. Si riduce quando i prezzi salgono. Se la tua retribuzione resta invariata mentre i prezzi salgono del 4 percento in un anno, hai di fatto subito un taglio di stipendio, perché il tuo denaro compra meno.\n\nL'inflazione viene misurata da indici ufficiali dei prezzi come l'indice dei prezzi al consumo (Consumer Price Index). Tieni presente che prezzi e tassi di inflazione cambiano continuamente, quindi qualsiasi cifra che vedi è un'istantanea, non una regola permanente.\n\n## I costi che divorano il tuo stipendio\n\nPoche grandi spese determinano il tuo tenore di vita più di ogni altra cosa:\n\n- Casa: di solito il costo maggiore, e quello che varia di più da un luogo all'altro.\n- Trasporti: possesso dell'auto, carburante o abbonamenti ai mezzi pubblici.\n- Cibo e spesa: spese quotidiane che si accumulano rapidamente.\n- Tasse e contributi: riducono la retribuzione lorda prima ancora che tu spenda un centesimo, ed è per questo che [reddito lordo vs reddito netto](/guides/gross-income-vs-net-income) conta così tanto.\n\n## Stesso stipendio, realtà diversa\n\nImmagina due persone che guadagnano entrambe 70.000 all'anno in valuta locale. La tabella seguente usa cifre illustrative per mostrare come lo stesso stipendio possa rendere in modo molto diverso.\n\n| Voce di costo (all'anno) | Città ad alto costo | Città a costo più basso |\n| --- | --- | --- |\n| Affitto | 24.000 | 12.000 |\n| Trasporti | 4.000 | 2.500 |\n| Cibo | 8.000 | 6.000 |\n| Tasse stimate | 18.000 | 18.000 |\n| Denaro che avanza | 16.000 | 31.500 |\n\nStesso stipendio lordo, quasi il doppio del denaro che avanza. La città a costo più basso offre un reddito reale più alto anche se la busta paga è identica.\n\n## Perché uno stipendio lordo più alto può valere di meno\n\nQuesta è la trappola che molti in cerca di lavoro non vedono. Un ruolo che paga 90.000 in una grande area metropolitana costosa può lasciarti meno potere di spesa rispetto a un ruolo da 65.000 in una regione più accessibile. Affitti più alti, trasporti più cari e talvolta tasse locali più ripide possono cancellare silenziosamente la differenza, e anche di più.\n\nQuando valuti le offerte, guarda oltre il numero in evidenza e chiediti quanto costerà davvero la tua vita. Per capire se un'offerta è competitiva in primo luogo, leggi [cos'è un buon stipendio](/guides/what-is-a-good-salary).\n\n## Confrontare tra città e paesi\n\nIl confronto tra paesi aggiunge ulteriori livelli: sistemi fiscali diversi, modelli sanitari e valute differenti. Uno stipendio in Germania, nel Regno Unito e negli Stati Uniti può corrispondere a importi netti e costi di vita molto diversi. La nostra guida sulla [retribuzione netta a confronto](/guides/take-home-pay-us-uk-germany) illustra queste differenze.\n\nUn approccio semplice e pratico:\n\n1. Parti dalla retribuzione netta, non dal lordo. Usa un [calcolatore di stipendio](/salary-calculator) per stimare ciò che arriva davvero sul tuo conto.\n2. Sottrai i tuoi principali costi locali, soprattutto la casa.\n3. Confronta il denaro che avanza, non gli stipendi in evidenza.\n\nQuesto ti mantiene concentrato sul reddito reale anziché su una cifra lorda impressionante ma fuorviante.\n\n## Considerazioni finali\n\nUno stipendio vale solo quanto ti permette di permetterti. Ragionando in termini di reddito reale, potere d'acquisto e costi locali, puoi confrontare le opportunità in modo molto più accurato. Parti dalla tua retribuzione netta, considera la casa e le spese quotidiane, e avrai un quadro chiaro e onesto di qualsiasi offerta. Ricorda che prezzi e regole fiscali cambiano nel tempo, quindi tratta ogni confronto come una stima attuale piuttosto che una verità immutabile.",
+    "keywords": [
+      "costo della vita vs stipendio",
+      "reddito reale",
+      "potere d'acquisto",
+      "reddito nominale vs reale",
+      "confronto retribuzione netta",
+      "stipendio per città"
+    ],
+    "sources": [
+      {
+        "label": "U.S. Bureau of Labor Statistics — Consumer Price Index",
+        "url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "label": "UK Office for National Statistics — Inflazione e indici dei prezzi",
+        "url": "https://www.ons.gov.uk/economy/inflationandpriceindices"
+      },
+      {
+        "label": "Eurostat — Indice armonizzato dei prezzi al consumo",
+        "url": "https://ec.europa.eu/eurostat/web/hicp"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Qual è la differenza tra reddito nominale e reddito reale?",
+        "answer": "Il reddito nominale è l'importo grezzo che guadagni in valuta, mentre il reddito reale riflette ciò che quel denaro può effettivamente comprare dopo aver considerato prezzi e inflazione. Il reddito reale è la misura migliore del tuo tenore di vita."
+      },
+      {
+        "question": "Perché uno stipendio più alto può lasciarmi in una situazione peggiore?",
+        "answer": "Uno stipendio lordo più alto in una zona costosa può essere annullato da costi elevati di casa, trasporti e tasse. Dopo queste spese, potresti ritrovarti con meno denaro che avanza rispetto a chi guadagna meno in un luogo più economico."
+      },
+      {
+        "question": "Come confronto gli stipendi tra due città o paesi?",
+        "answer": "Parti dalla tua retribuzione netta stimata anziché dal lordo, sottrai i principali costi locali come affitto e trasporti, e poi confronta il denaro che avanza. Questo riflette il vero potere d'acquisto invece delle cifre in evidenza."
+      },
+      {
+        "question": "L'inflazione influisce su quanto vale il mio stipendio?",
+        "answer": "Sì. Quando i prezzi salgono più velocemente della tua retribuzione, il tuo potere d'acquisto diminuisce, il che significa che lo stesso stipendio compra meno nel tempo. I tassi di inflazione cambiano regolarmente, quindi qualsiasi cifra è solo un'istantanea attuale."
+      }
+    ]
+  },
+  "freelance-vs-employee-income": {
+    "title": "Freelance o dipendente: come cambia il reddito netto",
+    "description": "Il reddito netto di un freelance e di un dipendente differisce più di quanto suggeriscano le tariffe. Scopri l'imposta sul lavoro autonomo, i benefit persi e come fissare una tariffa freelance equa.",
+    "content": "Quando passi da un lavoro dipendente al lavoro freelance, i numeri possono trarti in inganno. Una tariffa contrattuale di 50 all'ora potrebbe sembrare molto migliore di uno stipendio annuo di 60.000, ma le due cifre non sono direttamente comparabili. I freelance sostengono costi che normalmente vengono assorbiti dai datori di lavoro. Prima di festeggiare una tariffa nominale più alta, è utile capire dove vanno davvero a finire i soldi.\n\n## Perché una tariffa freelance non è uno stipendio\n\nLo stipendio di un dipendente è un pacchetto completo. Il tuo datore di lavoro si occupa di una parte delle tue tasse, contribuisce ai programmi sociali per tuo conto e ti garantisce ferie retribuite. Una tariffa freelance è semplicemente un prezzo per il tuo lavoro, senza nulla incluso. Tutto ciò che un tempo copriva il datore di lavoro ora esce dalle tue tasche.\n\nPer confrontare le due cose in modo equo, guarda oltre la cifra lorda. Imparare la differenza tra [reddito lordo e reddito netto](/guides/gross-income-vs-net-income) è il primo passo, perché i tuoi guadagni reali sono quelli che arrivano sul tuo conto in banca dopo tasse e costi.\n\n## Paghi entrambe le quote dei contributi sociali\n\nCome dipendente, tu e il tuo datore di lavoro vi dividete i contributi sociali. Quando ti metti in proprio, di solito paghi entrambe le parti.\n\n- Stati Uniti: i dipendenti pagano il 7,65 percento per Social Security e Medicare, e il datore di lavoro versa una quota equivalente. I lavoratori autonomi pagano l'intera imposta sul lavoro autonomo, circa il 15,3 percento sui guadagni netti.\n- Regno Unito: i lavoratori autonomi pagano i National Insurance attraverso la Class 2 e la Class 4, calcolati sui profitti, anziché l'aliquota Class 1 dei dipendenti trattenuta dal datore di lavoro.\n- Germania: i dipendenti dividono con il datore di lavoro i contributi obbligatori per sanità, pensione e assistenza. Molti freelance devono organizzarsi da soli l'assicurazione sanitaria e decidere se versare volontariamente alla pensione pubblica, spesso pagando l'intero importo di tasca propria.\n\nQuesti [contributi previdenziali](/guides/social-security-contributions-guide) sono facili da trascurare quando fissi una tariffa, ma possono assorbire una grossa fetta del tuo reddito.\n\n## Benefit che non hai più\n\nI datori di lavoro offrono più di una busta paga. Da freelance, i seguenti elementi tipicamente scompaiono o diventano una tua responsabilità:\n\n- Ferie retribuite e retribuzione per i giorni festivi\n- Congedo per malattia retribuito\n- Contributi pensionistici o quota integrativa del datore di lavoro\n- Copertura sanitaria in alcuni Paesi\n- Periodi di preavviso e tutele in caso di licenziamento\n\nSe il tuo vecchio lavoro ti dava 25 giorni di ferie retribuite, per un freelance quelli sono giorni in cui non guadagna nulla. Quel tempo non retribuito deve essere incluso nel prezzo della tua tariffa.\n\n## Dipendente e freelance a colpo d'occhio\n\n| Fattore | Dipendente | Freelance |\n| --- | --- | --- |\n| Contributi sociali | Divisi con il datore di lavoro | Spesso pagati per intero da te |\n| Ferie e malattia retribuite | Di solito incluse | Nessuna salvo che tu le finanzi |\n| Contributi pensionistici | Spesso con quota integrativa | Autofinanziati |\n| Stabilità del reddito | Stipendio regolare | Irregolare, soggetto a interruzioni |\n| Spese aziendali | Coperte dal datore di lavoro | Deducibili ma a tuo carico |\n| Dichiarazione dei redditi | Per lo più automatica | Responsabilità tua |\n\n## Spese aziendali e reddito irregolare\n\nI freelance spesso pagano di tasca propria laptop, software, assicurazione, supporto contabile e spazio di lavoro. Molte di queste spese sono deducibili dalle tasse, il che riduce il profitto imponibile, ma devi comunque anticipare i soldi.\n\nAnche il reddito arriva in modo irregolare. A un mese forte può seguirne uno tranquillo, quindi hai bisogno di un cuscinetto per i periodi di magra e per le tasse che arrivano tutte insieme anziché essere trattenute automaticamente.\n\n## Fissare una tariffa che funzioni davvero\n\nUna tariffa freelance sostenibile tiene conto del tempo che non puoi fatturare e delle tasse che devi versare. Un modo approssimativo per ragionarci:\n\n- Parti dal reddito netto annuo che vuoi portare a casa.\n- Aggiungi le tasse e i contributi sociali previsti.\n- Aggiungi i costi per i benefit che devi autofinanziare, come pensione e assicurazione.\n- Dividi per le ore fatturabili realistiche, non per tutte le ore lavorate. Ferie, giorni di malattia, attività amministrative e la ricerca di clienti non sono retribuiti.\n\n### Un esempio rapido\n\nSupponiamo che tu voglia 60.000 di reddito netto. Dopo circa il 30 percento per tasse e contributi, più le spese e i benefit non finanziati, potresti dover fatturare 90.000 o più. Distribuiti su, diciamo, 1.400 ore fatturabili all'anno anziché su 2.080 complete, questo indica una tariffa ben superiore a quella suggerita dal semplice calcolo stipendio-ora.\n\nComprendere il [reddito netto](/guides/what-is-take-home-pay) su entrambi i lati del confronto mantiene realistiche le tue aspettative.\n\n## Fai una stima prima di decidere\n\nLe regole fiscali variano da Paese a Paese e cambiano ogni anno, quindi considera tutte le cifre qui riportate come puramente indicative. Calcola i tuoi numeri con un [calcolatore di stipendio](/calculator) per vedere all'incirca quanto ti rende netto uno stipendio da dipendente, poi procedi a ritroso fino alla tariffa freelance che lo eguaglia. Quando la decisione è importante, consulta un professionista fiscale qualificato.\n\n## Considerazioni finali\n\nIl lavoro freelance può essere ben remunerato, ma una tariffa più alta non significa automaticamente più soldi. Una volta che metti in conto i doppi contributi sociali, i benefit persi, il tempo non retribuito e i costi aziendali, il confronto cambia. Stima prima il tuo reddito netto su entrambi i percorsi e potrai negoziare da una posizione di chiarezza anziché tirare a indovinare.",
+    "keywords": [
+      "paga freelance vs dipendente",
+      "reddito netto freelance",
+      "imposta sul lavoro autonomo",
+      "fissare la tariffa freelance",
+      "reddito collaboratore vs dipendente",
+      "reddito netto del freelance"
+    ],
+    "sources": [
+      {
+        "label": "IRS — Imposta sul lavoro autonomo (imposte Social Security e Medicare)",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "GOV.UK — Lavorare in proprio",
+        "url": "https://www.gov.uk/working-for-yourself"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "La tariffa oraria di un freelance è uguale alla retribuzione oraria di un dipendente?",
+        "answer": "No. La retribuzione di un dipendente include i contributi pagati dal datore di lavoro, le ferie retribuite e i benefit. Una tariffa freelance deve coprire da sola tutte queste voci, quindi in genere deve essere sensibilmente più alta per eguagliare lo stesso reddito netto."
+      },
+      {
+        "question": "Perché i lavoratori autonomi pagano di più in contributi sociali?",
+        "answer": "Come dipendente, il tuo datore di lavoro versa una quota equivalente dei contributi sociali. Quando sei un lavoratore autonomo, di solito copri sia la parte del dipendente sia quella del datore di lavoro, come l'imposta sul lavoro autonomo statunitense di circa il 15,3 percento o i National Insurance Class 2 e Class 4 nel Regno Unito."
+      },
+      {
+        "question": "Come faccio a calcolare una tariffa freelance equa?",
+        "answer": "Parti dal reddito netto che desideri, aggiungi tasse, contributi e benefit autofinanziati, poi dividi per le ore fatturabili realistiche anziché per le ore lavorate totali. Va incluso anche il tempo non retribuito per attività amministrative, ferie e ricerca di clienti."
+      },
+      {
+        "question": "Le spese aziendali possono ridurre le mie tasse da freelance?",
+        "answer": "In molti Paesi i costi aziendali legittimi come attrezzature, software e assicurazione sono deducibili e riducono il tuo profitto imponibile. Devi comunque pagarli in anticipo e le regole variano da Paese a Paese, quindi verifica le indicazioni locali o consulta un professionista fiscale."
+      }
+    ]
+  }
+}

@@ -1,0 +1,667 @@
+{
+  "common": {
+    "lastUpdated": "Last updated:",
+    "backToHome": "Back to Home"
+  },
+  "country": {
+    "h1Suffix": "Salary Tax Calculator",
+    "allCalculators": "← All Calculators",
+    "hourlyConverter": "Hourly to Salary Converter",
+    "otherCountries": "Other Countries:",
+    "howItWorksHeading": "How Salary Taxes Work in {country}",
+    "faqHeading": "Frequently Asked Questions",
+    "relatedHeading": "Related Resources",
+    "relatedHub": "Salary Calculator Hub",
+    "calculatorSuffix": "Salary Calculator"
+  },
+  "guides": {
+    "metaTitle": "Salary & Tax Guides - Expert Articles on Income Calculations",
+    "metaDescription": "Comprehensive guides on salary calculations, tax brackets, deductions, and net income. Learn how to calculate take-home pay and understand tax systems.",
+    "title": "Salary & Tax Guides",
+    "intro": "Expert articles on salary calculations, tax systems, deductions, and understanding your take-home pay — organized into three topic pillars.",
+    "startHere": "Start here · Pillar guide",
+    "published": "Published",
+    "updated": "Updated",
+    "by": "By",
+    "faqHeading": "Frequently Asked Questions",
+    "sourcesHeading": "Sources & further reading",
+    "aboutAuthorHeading": "About the author",
+    "editorialStandards": "Read our editorial standards →",
+    "moreInPillar": "More in {pillar}",
+    "relatedGeneric": "Related guides",
+    "tryCalculators": "Try the calculators",
+    "toc": "Table of Contents",
+    "breadcrumbHome": "Home",
+    "breadcrumbGuides": "Guides",
+    "linkHub": "Salary Calculator Hub",
+    "linkNet": "Net Salary Calculator",
+    "linkHourly": "Hourly to Salary Converter"
+  },
+  "hub": {
+    "metaTitle": "Salary Tax Calculator Hub - Calculate Net Income by Country",
+    "metaDescription": "Free salary tax calculators for multiple countries. Calculate your net income after taxes and social contributions in the US, Germany, UK, and more.",
+    "title": "Salary Tax Calculator Hub",
+    "intro1": "Calculate your net income after taxes and social contributions. Our free calculators help you understand how much you'll take home in different countries, with detailed breakdowns of income tax, social security contributions, and other deductions.",
+    "intro2": "Select a country below to get started, or choose a calculation mode that fits your needs.",
+    "byCountryHeading": "Calculate by Country",
+    "calculateCta": "Calculate →",
+    "hourlyTitle": "Hourly Income Calculator",
+    "monthlyTitle": "Monthly Salary Calculator",
+    "yearlyTitle": "Annual Salary Calculator",
+    "chooseModeHeading": "Choose Calculation Mode",
+    "converterTitle": "Hourly to Salary Converter",
+    "converterBody": "Convert your hourly wage to annual, monthly, and weekly salary. Perfect for understanding your total compensation when negotiating or comparing job offers.",
+    "converterCta": "Convert Hourly Rate →",
+    "hourlyBody": "Calculate net income when you know your hourly rate. Includes options for custom hours per week and weeks per year to match your work schedule.",
+    "hourlyCta": "Calculate Hourly →",
+    "monthlyBody": "Calculate your net monthly income after taxes. Ideal for budgeting and understanding your monthly take-home pay.",
+    "monthlyCta": "Calculate Monthly →",
+    "yearlyBody": "Calculate your net annual income from your gross yearly salary. See the full breakdown of taxes and deductions for the entire year.",
+    "yearlyCta": "Calculate Yearly →",
+    "faqHeading": "Frequently Asked Questions"
+  },
+  "nav": {
+    "salaryCalculator": "Salary Calculator",
+    "getStarted": "Get Started",
+    "aboutUs": "About Us",
+    "guides": "Guides",
+    "toggleMenu": "Toggle menu",
+    "selectLanguage": "Select language"
+  },
+  "footer": {
+    "productTitle": "PRODUCT",
+    "legalTitle": "LEGAL",
+    "resourcesTitle": "RESOURCES",
+    "home": "Home",
+    "calculator": "Calculator",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "salaryCalculatorHub": "Salary Calculator Hub",
+    "hourlyToSalary": "Hourly to Salary",
+    "guides": "Guides",
+    "disclaimerLabel": "Disclaimer:",
+    "disclaimer": "IncomeTally provides income and tax calculators for informational purposes only. Results are estimates and may not reflect actual tax obligations or financial outcomes. This website does not provide financial, tax, or legal advice. Always consult a qualified professional for personalized guidance.",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "meta": {
+      "title": "Net Salary Calculator — Take-Home Pay After Tax for 9 Countries | IncomeTally",
+      "description": "Calculate your net salary after income tax and social contributions. Free, no signup, country-specific estimates for the 2026 tax year across the US, Germany, UK, Poland, France, Spain, Italy, Sweden, and Portugal."
+    },
+    "hero": {
+      "title": "Free Net Salary Calculator",
+      "highlightWords": [
+        "Net",
+        "Salary",
+        "Calculator"
+      ],
+      "subtitle": "Enter your gross pay and see your estimated take-home pay after income tax and social contributions — for the 2026 tax year, across 9 countries. No signup, and your inputs stay in your browser.",
+      "getStarted": "Get Started",
+      "browseGuides": "Browse Guides",
+      "trustLine": "Free · No signup · Your inputs stay in your browser."
+    },
+    "about": {
+      "heading": "What IncomeTally Does",
+      "p1": "IncomeTally is a free, browser-based <calc>net salary calculator</calc> that turns a gross salary into an estimate of your net, take-home pay. You enter what you earn — hourly, monthly, or yearly — choose your country, and we apply that country's 2026 income-tax brackets and mandatory social contributions to show what actually lands in your account. With JavaScript enabled, the calculation runs in your browser and your income figures aren't sent to our servers — only your country and the tax year are requested to load the right rates. You don't need to create an account.",
+      "p2": "The gap between your <gross>gross salary and your net pay</gross> is rarely obvious. Progressive tax systems apply higher rates only to income above each bracket threshold, so your marginal rate — the rate on your last euro or dollar earned — is almost always higher than your effective rate, the share of your whole salary that goes to tax. On top of income tax, most countries deduct <social>social contributions</social> for pensions, health, and unemployment cover. IncomeTally separates these line by line, so you see where your money goes, not just the final total.",
+      "whoHeading": "Who it's for",
+      "whoBody": "It's built for employees checking whether a payslip looks right, job-seekers comparing two offers in real take-home terms, freelancers estimating what to set aside, and anyone weighing a move between countries. If you've ever wondered why a raise felt smaller than the headline number, this is the tool that explains it."
+    },
+    "howItWorks": {
+      "heading": "How It Works",
+      "steps": [
+        {
+          "title": "Choose your country",
+          "body": "Pick one of nine supported countries so the calculator loads the correct 2026 tax brackets, allowances, and social contribution rates."
+        },
+        {
+          "title": "Enter your pay",
+          "body": "Type in your gross income as an hourly, monthly, or yearly figure. The calculator converts between pay periods for you, and you can set options like filing status or region where they apply."
+        },
+        {
+          "title": "See your breakdown",
+          "body": "Get your estimated net pay alongside a line-by-line breakdown of income tax and social contributions, plus your marginal and effective rates."
+        }
+      ],
+      "cta": "Open the Calculator"
+    },
+    "calculators": {
+      "heading": "Calculators",
+      "intro": "Start with a general tool, or jump straight to your country below.",
+      "tools": [
+        {
+          "title": "Net Salary Calculator",
+          "body": "Convert any gross salary into estimated take-home pay with a full tax and contributions breakdown.",
+          "cta": "Calculate net pay →"
+        },
+        {
+          "title": "Salary Calculator Hub",
+          "body": "Start from your country and explore 2026 tax rules, brackets, and social contributions.",
+          "cta": "Browse by country →"
+        },
+        {
+          "title": "Hourly to Salary",
+          "body": "Turn an hourly rate into weekly, monthly, and annual income — then see it after tax.",
+          "cta": "Convert hourly rate →"
+        }
+      ]
+    },
+    "countries": {
+      "heading": "Salary Calculators by Country",
+      "subtitle": "2026 tax-year estimates using each country's official income-tax brackets and social contributions.",
+      "cardSuffix": "Salary Calculator",
+      "cardMeta": "{currency} · 2026 tax year",
+      "note": "Most calculators let you set options like filing status or region where they apply; the available options differ by country. See each country page for the inputs it offers and its official sources.",
+      "seeAll": "See all calculators →"
+    },
+    "pillarsSection": {
+      "heading": "Learn How Your Pay Is Calculated",
+      "intro": "Plain-language guides on income, tax, and salary planning — written and reviewed in-house, with sources and last-updated dates.",
+      "viewAll": "View all guides →"
+    },
+    "trust": {
+      "badge": "Data current for the 2026 tax year · Last reviewed June 2026",
+      "heading": "Where Our Numbers Come From",
+      "body": "IncomeTally's calculators and guides are maintained by the IncomeTally Editorial Team. We build each country's tax logic from publicly available figures published by official tax and social-security authorities, explain the concepts in plain language with worked examples, and review the data against each year's official rates. Every country calculator shows its specific sources and the tax year it covers.",
+      "standardsHeading": "Our standards",
+      "standards": [
+        "Official sources",
+        "Plain language",
+        "Reviewed annually",
+        "Estimates, not advice"
+      ],
+      "aboutLink": "Read about us and our editorial standards →",
+      "sourcesHeading": "Official sources by country",
+      "sourcesNote": "Each country page links the specific sources we used for its figures.",
+      "disclaimerLabel": "Estimates, not advice.",
+      "disclaimer": "IncomeTally provides income and tax calculators for informational and educational purposes only. Results are estimates and may not reflect your actual tax obligations or financial outcomes. This website is not affiliated with any government or tax authority and does not provide financial, tax, or legal advice. Always consult a qualified professional for personalized guidance."
+    },
+    "faqHeading": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "Is IncomeTally free to use?",
+        "answer": "Yes. Every calculator and guide on IncomeTally is free, and you don't need to create an account. Your inputs are processed in your browser and are not stored on our servers."
+      },
+      {
+        "question": "Which countries and tax year does the calculator cover?",
+        "answer": "IncomeTally covers nine countries — the United States, Germany, the United Kingdom, Poland, France, Spain, Italy, Sweden, and Portugal — using 2026 income-tax and social-contribution rules. The applicable tax year is shown on each calculator."
+      },
+      {
+        "question": "What's the difference between gross and net salary?",
+        "answer": "Gross salary is your total pay before any deductions. Net salary — your take-home pay — is what remains after income tax and mandatory social contributions are subtracted. IncomeTally shows the full breakdown so you can see exactly what is deducted and why."
+      },
+      {
+        "question": "How accurate are the results?",
+        "answer": "The calculators use official 2026 brackets, allowances, and contribution rates, but they are estimates. Real take-home pay can vary with personal circumstances such as additional allowances, regional rules, filing status, benefits, and one-off deductions. Treat the results as a well-sourced estimate, not a tax filing."
+      },
+      {
+        "question": "Can I convert between hourly, monthly, and yearly pay?",
+        "answer": "Yes. Enter your pay in any of those periods and the calculator converts it across all of them, then shows the take-home equivalent. Our Hourly to Salary tool focuses specifically on wage conversions if that is all you need."
+      },
+      {
+        "question": "Where do your tax figures come from, and does IncomeTally give financial advice?",
+        "answer": "Our figures come from each country's official tax and social-security authorities, such as the IRS and SSA, HMRC, and the German Bundesfinanzministerium, and each country page links the specific sources we used. IncomeTally is an informational tool only: it does not provide financial, tax, or legal advice and is not affiliated with any government or tax authority. For decisions about your taxes or finances, consult a qualified professional."
+      }
+    ]
+  },
+  "calculator": {
+    "form": {
+      "incomeMode": "Income Mode",
+      "grossIncome": "Gross Income",
+      "country": "Country",
+      "taxYear": "Tax Year",
+      "hoursPerWeek": "Hours per Week",
+      "weeksPerYear": "Weeks per Year",
+      "calculateNetIncome": "Calculate Net Income",
+      "salaryPeriod": "Salary Period",
+      "salaryPeriodAria": "Salary period selection"
+    },
+    "mode": {
+      "hourly": "Hourly",
+      "monthly": "Monthly",
+      "yearly": "Yearly"
+    },
+    "period": {
+      "hourly": "hourly",
+      "monthly": "monthly",
+      "annual": "annual"
+    },
+    "yesNo": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "country": {
+      "US": "United States",
+      "USFederalOnly": "United States (Federal Only)",
+      "DE": "Germany",
+      "UK": "United Kingdom",
+      "PL": "Poland",
+      "FR": "France",
+      "ES": "Spain",
+      "IT": "Italy",
+      "SE": "Sweden",
+      "PT": "Portugal"
+    },
+    "countrySelect": {
+      "label": "Select Country",
+      "helper": "Choose your country to calculate taxes accordingly"
+    },
+    "actions": {
+      "copyShareLink": "Copy Share Link",
+      "copied": "Copied!",
+      "shareLinkPrefix": "Share link:"
+    },
+    "status": {
+      "loading": "Loading tax data...",
+      "empty": "Enter your income to see calculations"
+    },
+    "validation": {
+      "incomePositive": "Income must be a positive number",
+      "incomeMax": "Income cannot exceed {max} ({mode})",
+      "hoursMin": "Hours must be at least {min}",
+      "hoursMax": "Hours cannot exceed {max}",
+      "weeksMin": "Weeks must be at least {min}",
+      "weeksMax": "Weeks cannot exceed {max}"
+    },
+    "de": {
+      "taxClass": "Tax Class",
+      "healthInsurance": "Health Insurance",
+      "privateNoteLabel": "Note:",
+      "privateNoteBody": "Private health insurance is paid separately and is not deducted from your salary. The net income shown above does not include private insurance costs, which you pay directly to your insurance provider.",
+      "state": "Your State",
+      "inChurch": "In the Church?",
+      "churchAria": "Church membership selection",
+      "haveChildren": "Have children?",
+      "childrenAria": "Children selection",
+      "childrenNote": "Used for long-term care insurance (Pflegeversicherung). For 2026 this means: with children ~1.80% employee share (most states), without children ~2.40% (includes the childless surcharge). Saxony uses a different split."
+    },
+    "us": {
+      "filingStatus": "Filing Status",
+      "employmentType": "Employment Type",
+      "deductionMethod": "Deduction Method",
+      "itemizedDeductions": "Itemized Deductions",
+      "childrenUnder17": "Children (under 17)",
+      "otherDependents": "Other Dependents",
+      "taxpayerOver65": "Taxpayer 65+",
+      "taxpayerBlind": "Taxpayer blind",
+      "spouseOver65": "Spouse 65+",
+      "spouseBlind": "Spouse blind",
+      "preTax401k": "Pre-tax 401(k) / retirement",
+      "preTaxHSA": "Pre-tax HSA",
+      "otherPreTax": "Other pre-tax deductions",
+      "stateTaxRate": "State tax rate (estimate, %)",
+      "localTaxRate": "Local tax rate (estimate, %)"
+    },
+    "uk": {
+      "region": "Region",
+      "preTaxPension": "Pre-tax Pension Contributions",
+      "preTaxOther": "Other Pre-tax Deductions",
+      "studentLoanPlan": "Student Loan Plan",
+      "studentLoanNote": "Note: Plan depends on where/when you studied, not where you work.",
+      "marriageAllowance": "Marriage Allowance?",
+      "marriageAllowanceAria": "Marriage Allowance selection",
+      "marriageAllowanceNote": "For a basic-rate taxpayer whose spouse/civil partner is a non-taxpayer (relief up to £252).",
+      "children": "Children (for Child Benefit charge)",
+      "childrenNote": "Used for the High Income Child Benefit Charge (applies on incomes over £60,000)."
+    },
+    "pl": {
+      "filingStatus": "Filing Status",
+      "children": "Children (for child relief)",
+      "preTax": "Tax-deductible contributions (e.g. IKZE,",
+      "under26": "Relief for the young (under 26)?",
+      "under26Aria": "Under-26 relief selection",
+      "under26Note": "Exempts employment income up to 85,528 PLN from income tax (ZUS and health still apply)."
+    },
+    "pt": {
+      "region": "Region",
+      "filingStatus": "Filing Status",
+      "dependants": "Dependants"
+    },
+    "se": {
+      "municipality": "Municipality",
+      "customRate": "Municipal tax rate (%)",
+      "churchMember": "Member of the Church of Sweden?",
+      "churchAria": "Church membership selection",
+      "churchNote": "Adds the church fee (kyrkoavgift). Income tax already reflects the basic allowance and the jobbskatteavdrag credit (under 66)."
+    },
+    "it": {
+      "region": "Region (regional surtax)",
+      "customRegionalRate": "Regional surtax rate (%)",
+      "municipalRate": "Municipal surtax rate (%)",
+      "dependentChildren": "Dependent children (aged 21–29)",
+      "dependentChildrenNote": "Children under 21 are covered by the Assegno Unico (not payroll). Regional and municipal surtaxes vary by location.",
+      "dependentSpouse": "Dependent spouse (coniuge a carico)?",
+      "dependentSpouseAria": "Dependent spouse selection",
+      "dependentSpouseNote": "A spouse with little or no income (coniuge a carico) gives a tax credit of up to €800."
+    },
+    "es": {
+      "community": "Autonomous community",
+      "filingStatus": "Filing Status",
+      "children": "Children (dependent descendants)",
+      "childrenNote": "Regional rates vary by community; País Vasco and Navarra use separate foral systems not covered here."
+    },
+    "fr": {
+      "household": "Household",
+      "children": "Dependent children",
+      "childrenNote": "Adds family-quotient parts (+0.5 for each of the first two children, +1 from the third), with the benefit capped (plafonnement). Estimate for a single household/sole earner."
+    },
+    "opt": {
+      "deTaxClass": {
+        "1": "Not married, no children",
+        "2": "Single parent",
+        "3": "Married (higher income than partner)",
+        "4": "Married (equal income earner)",
+        "5": "Married (lower income than partner)",
+        "6": "Secondary and additional income"
+      },
+      "deHealthInsurance": {
+        "public": "Public / Statutory (GKV)",
+        "private-without": "Private (without employer contribution)",
+        "private-with": "Private (with employer contribution)"
+      },
+      "usFilingStatus": {
+        "single": "Single",
+        "mfj": "Married Filing Jointly",
+        "mfs": "Married Filing Separately",
+        "hoh": "Head of Household"
+      },
+      "usEmploymentType": {
+        "employee": "Employee (W-2)",
+        "selfEmployed": "Self-employed (SE tax estimate)"
+      },
+      "usDeductionMethod": {
+        "auto": "Auto (max of standard vs itemized)",
+        "standard": "Standard deduction",
+        "itemized": "Itemized deductions"
+      },
+      "ukRegion": {
+        "england": "England",
+        "wales": "Wales",
+        "ni": "Northern Ireland",
+        "scotland": "Scotland (not yet supported)"
+      },
+      "ukStudentLoan": {
+        "none": "None",
+        "plan2": "Plan 2 (9% over £{threshold})",
+        "plan4": "Plan 4 (9% over £{threshold})",
+        "plan5": "Plan 5 (9% over £{threshold})"
+      },
+      "plFilingStatus": {
+        "single": "Single",
+        "joint": "Married — joint assessment (sole earner)"
+      },
+      "ptRegion": {
+        "mainland": "Mainland (Continente)",
+        "azores": "Azores (Açores)",
+        "madeira": "Madeira"
+      },
+      "ptFilingStatus": {
+        "single": "Single",
+        "joint": "Married — joint taxation (sole earner)"
+      },
+      "esFilingStatus": {
+        "single": "Individual",
+        "joint": "Joint return (declaración conjunta)"
+      },
+      "frFilingStatus": {
+        "single": "Single (1 part)",
+        "married": "Married / PACS — joint (2 parts)"
+      }
+    },
+    "contrib": {
+      "healthInsurance": "Health Insurance",
+      "longTermCareInsurance": "Long-term Care Insurance",
+      "pensionInsurance": "Pension Insurance",
+      "unemploymentInsurance": "Unemployment Insurance",
+      "socialSecurity": "Social Security",
+      "medicare": "Medicare",
+      "additionalMedicareTax": "Additional Medicare Tax",
+      "seTaxSocialSecurity": "Self-Employment Tax (Social Security)",
+      "seTaxMedicare": "Self-Employment Tax (Medicare)",
+      "nationalInsuranceClass1": "National Insurance (Class 1)",
+      "nationalInsuranceClass1Higher": "National Insurance (Class 1, Higher)",
+      "plPension": "Pension insurance (Emerytalne)",
+      "plDisability": "Disability insurance (Rentowe)",
+      "plSickness": "Sickness insurance (Chorobowe)",
+      "plHealth": "Health insurance (Zdrowotne)",
+      "ptSocialSecurity": "Social Security (Seguranca Social)",
+      "seChurchFee": "Church fee (kyrkoavgift)",
+      "itInps": "INPS pension contribution",
+      "itRegionalMunicipalSurtax": "Regional & municipal surtax (addizionali)",
+      "esCommonContingencies": "Common contingencies (Seguridad Social)",
+      "esMei": "MEI solidarity contribution",
+      "esTraining": "Training (Formacion profesional)",
+      "esUnemployment": "Unemployment (Desempleo)",
+      "esSocialSecurity": "Social Security (Seguridad Social)",
+      "frCsgDeductible": "CSG (deductible)",
+      "frCsgCrdsNonDeductible": "CSG/CRDS (non-deductible)",
+      "frSocialSecurityPension": "Social security & pension contributions",
+      "frPension": "Pension (vieillesse + Agirc-Arrco)",
+      "frCsg": "CSG",
+      "frCrds": "CRDS"
+    },
+    "results": {
+      "regionAria": "Calculation results",
+      "netIncome": "Net Income",
+      "netHourly": "Net Hourly",
+      "netHourlyAfterSacrifice": "Net Hourly (after salary sacrifice)",
+      "netMonthly": "Net Monthly",
+      "netYearly": "Net Yearly",
+      "effectiveTaxRate": "Effective Tax Rate",
+      "taxAndNiRate": "Tax & NI Rate",
+      "salarySacrificeRate": "Salary Sacrifice Rate",
+      "totalNonCashShare": "Total Non-Cash Share",
+      "breakdown": "Breakdown",
+      "grossIncome": "Gross Income",
+      "preTaxDeductionsEntered": "Pre-tax Deductions (entered)",
+      "preTaxDeductionsAppliedCapped": "Pre-tax Deductions (applied, capped)",
+      "preTaxDeductions": "Pre-tax Deductions",
+      "adjustedGrossIncome": "Adjusted Gross Income (AGI)",
+      "salarySacrifice": "Salary Sacrifice (Pension & Pre-tax)",
+      "adjustedIncomeAfterSacrifice": "Adjusted Income (after salary sacrifice)",
+      "preTaxContributions": "Pre-tax Contributions",
+      "standardDeduction": "Standard Deduction",
+      "itemizedDeduction": "Itemized Deduction",
+      "allowances": "Allowances",
+      "taxableIncome": "Taxable Income",
+      "incomeTax": "Income Tax",
+      "incomeTaxDE": "Total Income Tax (ESt + Soli + Church)",
+      "incomeTaxUS": "Income Tax (Federal + State + Local)",
+      "studentLoan": "Student Loan",
+      "plan2": "Plan 2",
+      "plan4": "Plan 4",
+      "plan5": "Plan 5",
+      "marriageAllowanceRelief": "Marriage Allowance (relief)",
+      "hicbc": "High Income Child Benefit Charge",
+      "einkommensteuer": "Einkommensteuer (ESt)",
+      "solidaritySurcharge": "Solidarity Surcharge (Soli)",
+      "churchTax": "Church Tax (Kirchensteuer)",
+      "federalIncomeTaxBeforeCredits": "Federal income tax (before credits)",
+      "taxCreditsApplied": "Tax credits (applied)",
+      "federalIncomeTaxAfterCredits": "Federal income tax (after credits)",
+      "stateIncomeTax": "State income tax (estimate)",
+      "localIncomeTax": "Local income tax (estimate)",
+      "saxonySplit": "(Saxony split)",
+      "cappedOn": "on",
+      "totalSocialContributions": "Total Social Contributions",
+      "taxesAndNi": "Taxes & NI",
+      "cashInHand": "Cash in Hand"
+    },
+    "example": {
+      "heading": "Example Calculation",
+      "perHour": "per hour",
+      "perMonth": "per month",
+      "perYear": "per year",
+      "netIncomeAnnual": "Net Income (Annual)",
+      "basedOnPrefix": "Based on",
+      "hourlyNote": "({hours} hours/week, {weeks} weeks/year)",
+      "monthlyNote": "(12 months/year)",
+      "forTaxYear": "for {year} tax year."
+    },
+    "disclaimer": {
+      "title": "Tax Estimate Disclaimer",
+      "noteLabel": "Note:",
+      "us": "These calculations are estimates based on federal tax rates only. State and local taxes are not included and may significantly affect your total tax liability.",
+      "default": "These calculations are estimates and may not include local or regional taxes. Please consult official sources or a tax professional for accurate figures."
+    },
+    "dataSources": {
+      "heading": "Data sources",
+      "intro": "Our {country} estimates are based on publicly available figures from official government and tax-authority sources. Rates and thresholds change each tax year, so we review them periodically. These results are estimates, not official tax assessments or advice.",
+      "editorialPrefix": "See our",
+      "editorialLink": "editorial standards",
+      "editorialSuffix": "for how we research and update this data."
+    }
+  },
+  "calcPage": {
+    "meta": {
+      "title": "Salary & Tax Calculator — Estimate Your Net Income",
+      "description": "Free salary tax calculator. Enter your gross income to estimate net pay, income tax, and social contributions for the US, Germany, and the UK in 2026.",
+      "ogDescription": "Free salary tax calculator. Estimate net pay, income tax, and social contributions for the US, Germany, and the UK."
+    },
+    "title": "Salary & Tax Calculator",
+    "intro": "Estimate your net income (take-home pay) after income tax and social contributions. Enter your gross salary, choose your country and pay period, and get an instant breakdown for the 2026 tax year.",
+    "howItWorks": {
+      "heading": "How the Calculator Works",
+      "p1": "Our calculator converts your gross income into estimated take-home pay using up-to-date tax brackets and social contribution rates for each supported country. You can enter income as an hourly rate, a monthly salary, or an annual figure, and the calculator annualizes it before applying the relevant tax rules.",
+      "p2": "The breakdown separates income tax from social contributions — such as Social Security and Medicare in the United States, statutory insurance contributions in Germany, and National Insurance in the United Kingdom — so you can see exactly where your money goes and what your effective tax rate is.",
+      "p3": "Results are estimates for informational and planning purposes only and do not account for every individual circumstance, such as state and local taxes, tax credits, or benefits in kind. For advice specific to your situation, consult a qualified tax professional."
+    },
+    "related": {
+      "heading": "Explore Country-Specific Calculators",
+      "hub": "Salary Calculator Hub",
+      "us": "United States Salary Calculator",
+      "de": "Germany Salary Calculator",
+      "uk": "United Kingdom Salary Calculator",
+      "hourly": "Hourly to Salary Converter",
+      "guides": "Salary & Tax Guides"
+    }
+  },
+  "netPage": {
+    "meta": {
+      "title": "Net Salary Calculator - Calculate Your Take-Home Pay",
+      "description": "Free net salary calculator. Work out your take-home pay after income tax and social contributions for the US, Germany, and the UK."
+    },
+    "title": "Net Salary Calculator",
+    "intro": "Calculate your net income (take-home pay) after taxes and social contributions. Our comprehensive salary calculator helps you understand exactly how much you'll receive after all deductions.",
+    "cta": "Go to Salary Calculator Hub →",
+    "breakdownIntro": "Our salary calculator provides detailed breakdowns of:",
+    "breakdown": {
+      "gross": "Gross income (before taxes)",
+      "incomeTax": "Income tax calculations",
+      "social": "Social security contributions",
+      "net": "Net income (take-home pay)",
+      "effectiveRate": "Effective tax rates"
+    },
+    "availability": "Available for multiple countries including the United States, Germany, and the United Kingdom. Select your country to get started with accurate, up-to-date tax calculations for 2026.",
+    "specialized": "You can also access our specialized calculators:",
+    "links": {
+      "hourly": "Hourly to Salary Converter",
+      "us": "US Calculator",
+      "de": "Germany Calculator",
+      "uk": "UK Calculator"
+    },
+    "explainer": {
+      "heading": "What Is Net Salary?",
+      "p1": "Your <b>net salary</b> — often called take-home pay — is the amount that actually reaches your bank account after mandatory deductions are removed from your gross salary. Gross salary is the headline figure in your employment contract; net salary is what you can budget and spend.",
+      "p2": "The gap between the two is made up of <b>income tax</b> and <b>social contributions</b>. Income tax is usually progressive, meaning higher portions of your income are taxed at higher rates. Social contributions fund programs such as state pensions, healthcare, and unemployment insurance, and the exact rates depend on where you live.",
+      "p3": "Because every country calculates these deductions differently, the same gross salary can produce very different take-home pay in the United States, Germany, or the United Kingdom. Choose your country above to see a detailed, country-specific breakdown for the 2026 tax year."
+    }
+  },
+  "hourlyPage": {
+    "meta": {
+      "title": "Hourly to Salary Converter - Calculate Annual, Monthly & Weekly Income",
+      "description": "Convert hourly wage to annual, monthly, and weekly salary. Free calculator with formulas and examples. Perfect for job negotiations and salary comparisons.",
+      "ogDescription": "Convert hourly wage to annual, monthly, and weekly salary. Free calculator with formulas and examples."
+    },
+    "title": "Hourly to Salary Converter",
+    "intro": "Convert your hourly wage to annual, monthly, weekly, and daily salary. Understand your total compensation when negotiating job offers or comparing positions.",
+    "calc": {
+      "heading": "Calculate Your Net Income",
+      "intro": "Enter your hourly rate below to calculate your gross and net income. The calculator is pre-set to hourly mode and will show your take-home pay after taxes."
+    },
+    "formulas": {
+      "heading": "Conversion Formulas",
+      "annual": {
+        "title": "Annual Salary from Hourly Rate",
+        "code": "Annual Salary = Hourly Rate × Hours per Week × Weeks per Year",
+        "note": "Standard calculation: Multiply your hourly rate by 40 hours per week and 52 weeks per year."
+      },
+      "monthly": {
+        "title": "Monthly Salary",
+        "code": "Monthly Salary = Annual Salary ÷ 12",
+        "note": "Divide annual salary by 12 months. Note: This gives an average monthly amount; actual monthly pay may vary if paid bi-weekly or semi-monthly."
+      },
+      "weekly": {
+        "title": "Weekly Salary",
+        "code": "Weekly Salary = Hourly Rate × Hours per Week",
+        "note": "Simply multiply your hourly rate by the number of hours you work per week."
+      },
+      "daily": {
+        "title": "Daily Salary",
+        "code": "Daily Salary = Hourly Rate × Hours per Day",
+        "note": "For an 8-hour workday, multiply your hourly rate by 8."
+      },
+      "grossNote": "<b>Note:</b> These formulas calculate gross (pre-tax) income. Use the calculator below to see your net (take-home) pay after taxes and deductions."
+    },
+    "examples": {
+      "heading": "Examples",
+      "annualGross": "Annual Gross:",
+      "monthlyGross": "Monthly Gross:",
+      "weeklyGross": "Weekly Gross:",
+      "dailyGross": "Daily Gross",
+      "ex1": {
+        "title": "Example 1: $25 per hour, 40 hours/week, 52 weeks/year",
+        "annual": "<b>Annual Gross:</b> $25 × 40 × 52 = $52,000",
+        "monthly": "<b>Monthly Gross:</b> $52,000 ÷ 12 = $4,333.33",
+        "weekly": "<b>Weekly Gross:</b> $25 × 40 = $1,000",
+        "daily": "<b>Daily Gross (8 hours):</b> $25 × 8 = $200"
+      },
+      "ex2": {
+        "title": "Example 2: $30 per hour, 35 hours/week, 50 weeks/year",
+        "annual": "<b>Annual Gross:</b> $30 × 35 × 50 = $52,500",
+        "monthly": "<b>Monthly Gross:</b> $52,500 ÷ 12 = $4,375",
+        "weekly": "<b>Weekly Gross:</b> $30 × 35 = $1,050",
+        "daily": "<b>Daily Gross (7 hours):</b> $30 × 7 = $210"
+      },
+      "ex3": {
+        "title": "Example 3: $20 per hour, 40 hours/week, 48 weeks/year (with 4 weeks unpaid time off)",
+        "annual": "<b>Annual Gross:</b> $20 × 40 × 48 = $38,400",
+        "monthly": "<b>Monthly Gross:</b> $38,400 ÷ 12 = $3,200",
+        "weekly": "<b>Weekly Gross:</b> $20 × 40 = $800",
+        "note": "Note: Adjusting weeks per year accounts for unpaid time off, vacation, or seasonal work."
+      }
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What's the difference between gross and net salary?",
+          "answer": "Gross salary is your total earnings before taxes and deductions. Net salary (take-home pay) is what you receive after income tax, social security, and other mandatory deductions are subtracted. The calculator above shows both gross and net amounts."
+        },
+        {
+          "question": "How many weeks should I use in the calculation?",
+          "answer": "The standard is 52 weeks per year for full-time employees. However, if you have unpaid time off, work seasonally, or take extended leave, adjust accordingly. For example, 2 weeks of unpaid vacation would mean 50 weeks per year."
+        },
+        {
+          "question": "Should I include overtime in my hourly rate?",
+          "answer": "For accurate annual salary calculations, use your base hourly rate and standard hours. If you regularly work overtime, you can either: (1) calculate base salary separately and add estimated overtime, or (2) use an average hourly rate that accounts for overtime. The calculator allows you to adjust hours per week to reflect your actual schedule."
+        },
+        {
+          "question": "How do I convert salary back to hourly rate?",
+          "answer": "To convert annual salary to hourly: Hourly Rate = Annual Salary ÷ (Hours per Week × Weeks per Year). For example, $52,000 ÷ (40 × 52) = $25 per hour. Use our calculator in reverse by entering your annual salary and selecting yearly mode."
+        }
+      ],
+      "countriesQuestion": "Are these calculations accurate for all countries?",
+      "countriesAnswer": "The conversion formulas (hourly to annual, monthly, etc.) are universal. However, net income calculations vary by country due to different tax systems. Use the country-specific calculators on our <link>Salary Calculator Hub</link> for accurate net income estimates.",
+      "partTimeQuestion": "What if I work part-time or have irregular hours?",
+      "partTimeAnswer": "For part-time work, enter your actual hours per week. For irregular hours, calculate an average weekly hours over a longer period (e.g., 3-6 months) and use that. The calculator allows custom hours per week and weeks per year to match any work schedule."
+    },
+    "related": {
+      "heading": "Related Resources",
+      "hub": "Salary Calculator Hub",
+      "us": "US Salary Calculator",
+      "de": "Germany Salary Calculator",
+      "uk": "UK Salary Calculator"
+    }
+  }
+}

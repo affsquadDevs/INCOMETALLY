@@ -1,0 +1,254 @@
+{
+  "about": {
+    "title": "O nás",
+    "lastUpdated": "4. ledna 2026",
+    "content": "IncomeTally je nezávislý online nástroj vytvořený s cílem pomáhat jednotlivcům i profesionálům počítat příjmy, mzdy a daňové odhady jasným, přehledným a transparentním způsobem.\n\nPorozumění vaší čisté mzdě a daňovým povinnostem vyžaduje přesné výpočty založené na aktuálních daňových zákonech, daňových pásmech a odpočtech. V praxi jsou výpočty mezd a daní často složité a liší se podle země, takže je obtížné získat přesné odhady. IncomeTally tyto výpočty sdružuje na jednom místě, díky čemuž je finanční plánování konzistentnější a snazší na správu.\n\nPlatforma umožňuje uživatelům vypočítat čistou mzdu z hrubého příjmu, převádět mezi hodinovými a ročními sazbami a odhadovat daně na základě daňových pravidel specifických pro danou zemi. IncomeTally je navržen jako nástroj pro výpočty a odhady – pomáhá uživatelům porozumět jejich skutečné čisté mzdě a odpovídajícím způsobem plánovat své finance.\n\nIncomeTally neposkytuje finanční, daňové ani právní poradenství. Všechny výpočty jsou odhady založené na veřejně dostupných daňových údajích a jsou určeny pouze pro informační a plánovací účely.\n\nNaším cílem je nabídnout jednoduchý a praktický zážitek pro finanční plánování a rozhodování. IncomeTally je nezávislý produkt a není spojen s daňovými úřady, finančními institucemi ani poskytovateli služeb třetích stran.\n\n## Naše redakční standardy\n\nPrůvodce IncomeTally píše a kontroluje redakční tým IncomeTally. Dodržujeme několik jednoduchých zásad, abychom udrželi náš obsah důvěryhodný:\n\n- **Oficiální zdroje.** Naši daňoví a mzdoví průvodci vycházejí z veřejně dostupných údajů od úřadů, jako je americký Internal Revenue Service (IRS), britský HM Revenue & Customs (HMRC) a německé Spolkové ministerstvo financí. Klíčové články uvádějí své zdroje na konci.\n- **Srozumitelný jazyk.** Témata příjmů, daní a mezd vysvětlujeme jasnými výrazy s řešenými příklady, aby byla užitečná i pro lidi bez finančního vzdělání.\n- **Udržujeme aktuálnost.** Daňová pravidla se každoročně mění. Naše průvodce pravidelně kontrolujeme a u každého z nich zobrazujeme datum „Poslední aktualizace“, abyste věděli, jak aktuální informace jsou.\n- **Odhady, nikoli poradenství.** Naše kalkulačky a průvodci poskytují obecné, vzdělávací odhady. Nejedná se o finanční, daňové ani právní poradenství a individuální okolnosti se liší. U rozhodnutí, která ovlivňují vaše peníze, se poraďte s kvalifikovaným odborníkem.\n\nPokud zjistíte něco, co se zdá zastaralé nebo nesprávné, [kontaktujte nás](/contact) — opravy vítáme.",
+    "faq": {
+      "title": "Často kladené otázky",
+      "items": [
+        {
+          "question": "Co je IncomeTally?",
+          "answer": "IncomeTally je online nástroj – kalkulačka příjmů a daní. Pomáhá uživatelům vypočítat čistou mzdu, odhadovat daně a převádět mezi různými formáty příjmů (hodinovým, měsíčním, ročním) na základě daňových pravidel specifických pro danou zemi."
+        },
+        {
+          "question": "Pro koho je IncomeTally určen?",
+          "answer": "IncomeTally je navržen pro zaměstnance, osoby samostatně výdělečně činné, uchazeče o zaměstnání a kohokoli, kdo chce porozumět své čisté mzdě a daňovým povinnostem při vyjednávání o platu nebo při finančním plánování."
+        },
+        {
+          "question": "Musím si pro používání IncomeTally vytvořit účet?",
+          "answer": "Ne. IncomeTally lze používat bez vytvoření účtu. Všechny vstupy poskytuje uživatel dobrovolně."
+        },
+        {
+          "question": "Poskytuje IncomeTally finanční nebo daňové poradenství?",
+          "answer": "Ne. IncomeTally neposkytuje finanční, daňové ani právní poradenství. Jedná se výhradně o nástroj pro výpočty a odhady, určený pouze pro informační účely."
+        },
+        {
+          "question": "Je IncomeTally spojen s daňovými úřady nebo finančními institucemi?",
+          "answer": "Ne. IncomeTally funguje nezávisle a není nijak spojen s daňovými úřady, finančními institucemi ani platformami třetích stran."
+        },
+        {
+          "question": "Je používání IncomeTally zdarma?",
+          "answer": "IncomeTally nabízí bezplatný přístup ke svým základním výpočetním funkcím. V budoucnu mohou být zavedeny další funkce nebo změny."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "subtitle": "Pokud máte dotazy ohledně IncomeTally, našich kalkulaček nebo toho, jak web funguje, můžete se na nás obrátit pomocí níže uvedených kontaktních údajů.",
+    "inquiryTypes": {
+      "title": "Vítáme dotazy týkající se:",
+      "items": [
+        "obecných otázek o platformě",
+        "toho, jak fungují kalkulačky a daňové odhady",
+        "ochrany soukromí a nakládání s údaji",
+        "technických problémů nebo zpětné vazby",
+        "právních záležitostí nebo záležitostí týkajících se zásad"
+      ]
+    },
+    "howToContact": {
+      "title": "Jak nás kontaktovat",
+      "email": {
+        "label": "E-mail:",
+        "note": "Na všechny oprávněné dotazy se snažíme odpovědět v přiměřené lhůtě."
+      }
+    },
+    "aboutCommunication": {
+      "title": "O komunikaci",
+      "description": "IncomeTally je nezávislá online služba, která poskytuje kalkulačky příjmů, mezd a daní na základě informací, které zadáte.",
+      "notes": [
+        "Neposkytujeme zákaznickou podporu prostřednictvím sociálních sítí a v současné době neposkytujeme telefonickou podporu.",
+        "Neposílejte prosím citlivé osobní údaje e-mailem, pokud to není nezbytné k vyřízení vašeho požadavku."
+      ]
+    }
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobních údajů",
+    "lastUpdated": "leden 2026",
+    "intro": "Vítejte na IncomeTally („my“, „náš“, „nás“). Vaše soukromí je pro nás důležité. Tyto Zásady ochrany osobních údajů vysvětlují, jak shromažďujeme, používáme a chráníme informace, když navštívíte https://incometally.com („Webové stránky“).",
+    "sections": [
+      {
+        "title": "1. Informace, které shromažďujeme",
+        "paragraphs": [
+          "Shromažďujeme minimum informací nezbytných k provozu a zlepšování Webových stránek.",
+          "a) Neosobní informace",
+          "Když navštívíte Webové stránky, můžeme automaticky shromažďovat neidentifikující informace, jako jsou:"
+        ],
+        "listItems": [
+          "Typ a verze prohlížeče",
+          "Typ zařízení a operační systém",
+          "Navštívené stránky a strávený čas",
+          "Přibližná poloha (pouze na úrovni země)"
+        ],
+        "paragraphsAfterList": [
+          "Tyto údaje jsou agregované a nelze je použít k vaší osobní identifikaci.",
+          "b) Osobní údaje",
+          "Nevyžadujeme registraci účtu a vědomě neshromažďujeme osobní údaje, jako jsou jména, e-mailové adresy, telefonní čísla nebo platební údaje.",
+          "Pokud nás kontaktujete dobrovolně (například e-mailem), použijeme vaše informace pouze k odpovědi na váš dotaz."
+        ]
+      },
+      {
+        "title": "2. Soubory cookie a podobné technologie",
+        "paragraphs": ["IncomeTally používá soubory cookie a podobné technologie k:"],
+        "listItems": [
+          "Zajištění správné funkčnosti webových stránek",
+          "Měření návštěvnosti a vzorců používání",
+          "Zobrazování relevantních reklam"
+        ],
+        "paragraphsAfterList": [
+          "Soubory cookie nám neumožňují přístup k vašemu počítači ani osobním údajům.",
+          "Soubory cookie můžete kdykoli zakázat v nastavení svého prohlížeče. Upozorňujeme, že některé části Webových stránek nemusí při zakázaných souborech cookie fungovat správně."
+        ]
+      },
+      {
+        "title": "3. Reklama (Google AdSense)",
+        "paragraphs": [
+          "K zobrazování reklam používáme Google AdSense.",
+          "Google a jeho partneři mohou:"
+        ],
+        "listItems": [
+          "Používat soubory cookie (včetně souboru cookie DoubleClick)",
+          "Zobrazovat reklamy na základě vašich návštěv těchto a dalších webových stránek"
+        ],
+        "paragraphsAfterList": [
+          "Jak Google používá údaje ze stránek, které využívají jeho služby, se můžete dozvědět zde:",
+          "👉 https://policies.google.com/technologies/ads",
+          "Z personalizované reklamy se můžete odhlásit na adrese:",
+          "👉 https://adssettings.google.com"
+        ]
+      },
+      {
+        "title": "4. Jak používáme informace",
+        "paragraphs": ["Shromážděné informace používáme k:"],
+        "listItems": [
+          "Provozu a údržbě Webových stránek",
+          "Zlepšování přesnosti a použitelnosti kalkulaček",
+          "Analýze návštěvnosti a výkonu",
+          "Plnění právních povinností"
+        ],
+        "paragraphsAfterList": [
+          "Uživatelské informace neprodáváme, nepronajímáme ani s nimi neobchodujeme."
+        ]
+      },
+      {
+        "title": "5. Zabezpečení dat",
+        "paragraphs": [
+          "Zavádíme přiměřená technická a organizační opatření k ochraně informací před neoprávněným přístupem, změnou nebo zničením.",
+          "Žádná metoda přenosu přes internet však není ze 100 % bezpečná."
+        ]
+      },
+      {
+        "title": "6. Odkazy třetích stran",
+        "paragraphs": [
+          "Webové stránky mohou obsahovat odkazy na webové stránky třetích stran.",
+          "Neneseme odpovědnost za postupy v oblasti ochrany soukromí ani za obsah těchto webových stránek."
+        ]
+      },
+      {
+        "title": "7. Informace o dětech",
+        "paragraphs": [
+          "IncomeTally není určen dětem mladším 13 let.",
+          "Vědomě neshromažďujeme osobní údaje od dětí."
+        ]
+      },
+      {
+        "title": "8. Změny těchto zásad",
+        "paragraphs": [
+          "Tyto Zásady ochrany osobních údajů můžeme čas od času aktualizovat.",
+          "Veškeré změny budou zveřejněny na této stránce s aktualizovaným datem „Poslední aktualizace“."
+        ]
+      },
+      {
+        "title": "9. Kontaktujte nás",
+        "paragraphs": [
+          "Pokud máte dotazy ohledně těchto Zásad ochrany osobních údajů, kontaktujte nás na adrese:",
+          "📧 hello@incometally.com"
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Podmínky služby",
+    "lastUpdated": "leden 2026",
+    "intro": "Přístupem k https://incometally.com („Webové stránky“) nebo jejich používáním souhlasíte s tím, že budete vázáni těmito Podmínkami služby. Pokud nesouhlasíte, Webové stránky prosím nepoužívejte.",
+    "sections": [
+      {
+        "title": "1. Používání Webových stránek",
+        "paragraphs": [
+          "IncomeTally poskytuje kalkulačky příjmů, mezd a daní pouze pro informační a vzdělávací účely.",
+          "Souhlasíte s tím, že budete Webové stránky používat:"
+        ],
+        "listItems": [
+          "V souladu se zákonem",
+          "K osobním, nekomerčním účelům",
+          "Bez pokusů o narušení nebo zneužití jejich funkčnosti"
+        ]
+      },
+      {
+        "title": "2. Žádné odborné poradenství",
+        "paragraphs": [
+          "Informace a kalkulačky poskytované na IncomeTally nepředstavují finanční, daňové, právní ani účetní poradenství.",
+          "Výpočty jsou odhady založené na zjednodušených předpokladech a veřejně dostupných údajích.",
+          "Před přijetím finančních nebo daňových rozhodnutí byste se měli poradit s kvalifikovaným odborníkem."
+        ]
+      },
+      {
+        "title": "3. Přesnost informací",
+        "paragraphs": ["Přestože se snažíme udržovat informace přesné a aktuální:"],
+        "listItems": [
+          "Nezaručujeme úplnost, přesnost ani spolehlivost",
+          "Daňové zákony a předpisy se často mění",
+          "Výsledky se mohou lišit od oficiálních nebo skutečných výsledků"
+        ],
+        "paragraphsAfterList": ["Používání Webových stránek je na vaše vlastní riziko."]
+      },
+      {
+        "title": "4. Duševní vlastnictví",
+        "paragraphs": ["Veškerý obsah na IncomeTally, včetně:"],
+        "listItems": ["Textu", "Designu", "Logiky kalkulaček", "Brandingu"],
+        "paragraphsAfterList": [
+          "je majetkem IncomeTally, pokud není uvedeno jinak, a je chráněn příslušnými zákony o duševním vlastnictví.",
+          "Obsah nesmíte kopírovat, reprodukovat ani dále šířit bez předchozího písemného souhlasu."
+        ]
+      },
+      {
+        "title": "5. Služby třetích stran",
+        "paragraphs": [
+          "Webové stránky mohou využívat služby třetích stran (jako jsou poskytovatelé analytiky a reklamy).",
+          "Neneseme odpovědnost za obsah, zásady ani postupy služeb nebo webových stránek třetích stran."
+        ]
+      },
+      {
+        "title": "6. Omezení odpovědnosti",
+        "paragraphs": ["V maximálním rozsahu povoleném zákonem:"],
+        "listItems": [
+          "IncomeTally nenese odpovědnost za žádné přímé, nepřímé ani následné škody",
+          "Včetně finanční ztráty nebo důsledků rozhodování",
+          "Vyplývající z používání Webových stránek nebo spoléhání se na ně"
+        ]
+      },
+      {
+        "title": "7. Úpravy služby",
+        "paragraphs": ["Vyhrazujeme si právo:"],
+        "listItems": [
+          "Upravit nebo ukončit jakoukoli část Webových stránek",
+          "Tyto Podmínky kdykoli aktualizovat"
+        ],
+        "paragraphsAfterList": ["Změny nabývají účinnosti okamžikem zveřejnění."]
+      },
+      {
+        "title": "8. Rozhodné právo",
+        "paragraphs": [
+          "Tyto Podmínky se řídí a vykládají v souladu s příslušnými zákony, bez ohledu na kolizní normy."
+        ]
+      },
+      {
+        "title": "9. Kontaktní informace",
+        "paragraphs": [
+          "S dotazy ohledně těchto Podmínek nás kontaktujte na adrese:",
+          "📧 hello@incometally.com"
+        ]
+      }
+    ]
+  }
+}
