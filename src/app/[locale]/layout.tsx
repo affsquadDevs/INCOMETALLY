@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import '../globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { siteConfig } from '@/config/site';
+import { routing, type Locale } from '@/i18n/routing';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
@@ -60,9 +64,28 @@ const structuredData = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
+  children,
+  params: { locale },
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  if (!routing.locales.includes(locale as Locale)) {
+    notFound();
+  }
+
+  // Enable static rendering for this locale.
+  setRequestLocale(locale);
+
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         {/* Google Tag Manager - Deferred for better performance */}
         <script
@@ -97,9 +120,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
