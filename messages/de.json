@@ -155,5 +155,28 @@
     "relatedHeading": "Verwandte Ressourcen",
     "relatedHub": "Gehaltsrechner-Übersicht",
     "calculatorSuffix": "Gehaltsrechner"
+  },
+  "guides": {
+    "metaTitle": "Gehalts- & Steuer-Ratgeber - Expertenartikel zur Einkommensberechnung",
+    "metaDescription": "Umfassende Ratgeber zu Gehaltsberechnungen, Steuerklassen, Abzügen und Nettoeinkommen. Erfahren Sie, wie Sie Ihr Nettogehalt berechnen und Steuersysteme verstehen.",
+    "title": "Gehalts- & Steuer-Ratgeber",
+    "intro": "Expertenartikel zu Gehaltsberechnungen, Steuersystemen, Abzügen und dem Verständnis Ihres Nettogehalts – gegliedert in drei thematische Schwerpunkte.",
+    "startHere": "Hier starten · Übersichts-Ratgeber",
+    "published": "Veröffentlicht",
+    "updated": "Aktualisiert",
+    "by": "Von",
+    "faqHeading": "Häufig gestellte Fragen",
+    "sourcesHeading": "Quellen & weiterführende Literatur",
+    "aboutAuthorHeading": "Über den Autor",
+    "editorialStandards": "Lesen Sie unsere redaktionellen Standards →",
+    "moreInPillar": "Mehr zum Thema {pillar}",
+    "relatedGeneric": "Verwandte Ratgeber",
+    "tryCalculators": "Rechner ausprobieren",
+    "toc": "Inhaltsverzeichnis",
+    "breadcrumbHome": "Startseite",
+    "breadcrumbGuides": "Ratgeber",
+    "linkHub": "Gehaltsrechner-Hub",
+    "linkNet": "Nettogehaltsrechner",
+    "linkHourly": "Stundenlohn-zu-Gehalt-Umrechner"
   }
 }

@@ -156,5 +156,28 @@
     "relatedHeading": "Relaterade resurser",
     "relatedHub": "Lönekalkylator-hubb",
     "calculatorSuffix": "lönekalkylator"
+  },
+  "guides": {
+    "metaTitle": "Löne- och skatteguider - Expertartiklar om inkomstberäkningar",
+    "metaDescription": "Heltäckande guider om löneberäkningar, skatteklasser, avdrag och nettoinkomst. Lär dig att beräkna din nettolön och förstå skattesystem.",
+    "title": "Löne- och skatteguider",
+    "intro": "Expertartiklar om löneberäkningar, skattesystem, avdrag och hur du förstår din nettolön — organiserade i tre ämnespelare.",
+    "startHere": "Börja här · Pelarguide",
+    "published": "Publicerad",
+    "updated": "Uppdaterad",
+    "by": "Av",
+    "faqHeading": "Vanliga frågor",
+    "sourcesHeading": "Källor och vidare läsning",
+    "aboutAuthorHeading": "Om författaren",
+    "editorialStandards": "Läs våra redaktionella riktlinjer →",
+    "moreInPillar": "Mer inom {pillar}",
+    "relatedGeneric": "Relaterade guider",
+    "tryCalculators": "Prova kalkylatorerna",
+    "toc": "Innehållsförteckning",
+    "breadcrumbHome": "Hem",
+    "breadcrumbGuides": "Guider",
+    "linkHub": "Lönekalkylator-hubb",
+    "linkNet": "Nettolönekalkylator",
+    "linkHourly": "Omvandlare från timlön till månadslön"
   }
 }

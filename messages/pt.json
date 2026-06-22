@@ -157,5 +157,28 @@
     "relatedHeading": "Recursos relacionados",
     "relatedHub": "Centro de calculadoras de salário",
     "calculatorSuffix": "Calculadora de Salário"
+  },
+  "guides": {
+    "metaTitle": "Guias de Salários e Impostos - Artigos Especializados sobre Cálculos de Rendimentos",
+    "metaDescription": "Guias completos sobre cálculos salariais, escalões de IRS, deduções e rendimento líquido. Saiba como calcular o salário líquido e compreender os sistemas fiscais.",
+    "title": "Guias de Salários e Impostos",
+    "intro": "Artigos especializados sobre cálculos salariais, sistemas fiscais, deduções e a compreensão do seu salário líquido — organizados em três pilares temáticos.",
+    "startHere": "Comece aqui · Guia principal",
+    "published": "Publicado",
+    "updated": "Atualizado",
+    "by": "Por",
+    "faqHeading": "Perguntas Frequentes",
+    "sourcesHeading": "Fontes e leituras complementares",
+    "aboutAuthorHeading": "Sobre o autor",
+    "editorialStandards": "Consulte as nossas normas editoriais →",
+    "moreInPillar": "Mais em {pillar}",
+    "relatedGeneric": "Guias relacionados",
+    "tryCalculators": "Experimente as calculadoras",
+    "toc": "Índice",
+    "breadcrumbHome": "Início",
+    "breadcrumbGuides": "Guias",
+    "linkHub": "Central de Calculadoras de Salário",
+    "linkNet": "Calculadora de Salário Líquido",
+    "linkHourly": "Conversor de Hora para Salário"
   }
 }

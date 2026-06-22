@@ -157,5 +157,28 @@
     "relatedHeading": "Risorse Correlate",
     "relatedHub": "Hub dei Calcolatori di Stipendio",
     "calculatorSuffix": "Calcolatore di Stipendio"
+  },
+  "guides": {
+    "metaTitle": "Guide su Stipendio e Tasse - Articoli di esperti sul calcolo del reddito",
+    "metaDescription": "Guide complete sul calcolo dello stipendio, scaglioni fiscali, detrazioni e reddito netto. Scopri come calcolare lo stipendio netto e comprendere i sistemi fiscali.",
+    "title": "Guide su Stipendio e Tasse",
+    "intro": "Articoli di esperti sul calcolo dello stipendio, sui sistemi fiscali, sulle detrazioni e su come capire il tuo stipendio netto, organizzati in tre pilastri tematici.",
+    "startHere": "Inizia da qui · Guida principale",
+    "published": "Pubblicato",
+    "updated": "Aggiornato",
+    "by": "Di",
+    "faqHeading": "Domande frequenti",
+    "sourcesHeading": "Fonti e approfondimenti",
+    "aboutAuthorHeading": "Informazioni sull'autore",
+    "editorialStandards": "Leggi i nostri standard editoriali →",
+    "moreInPillar": "Altri contenuti in {pillar}",
+    "relatedGeneric": "Guide correlate",
+    "tryCalculators": "Prova i calcolatori",
+    "toc": "Indice",
+    "breadcrumbHome": "Home",
+    "breadcrumbGuides": "Guide",
+    "linkHub": "Hub Calcolatore Stipendio",
+    "linkNet": "Calcolatore Stipendio Netto",
+    "linkHourly": "Convertitore da Orario a Stipendio"
   }
 }

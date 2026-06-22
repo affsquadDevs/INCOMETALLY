@@ -157,5 +157,28 @@
     "relatedHeading": "Ressources connexes",
     "relatedHub": "Centre des calculateurs de salaire",
     "calculatorSuffix": "Calculateur de salaire"
+  },
+  "guides": {
+    "metaTitle": "Guides salaire et impôts - Articles d'experts sur le calcul des revenus",
+    "metaDescription": "Guides complets sur le calcul du salaire, les tranches d'imposition, les déductions et le revenu net. Apprenez à calculer votre salaire net et à comprendre les systèmes fiscaux.",
+    "title": "Guides salaire et impôts",
+    "intro": "Articles d'experts sur le calcul du salaire, les systèmes fiscaux, les déductions et la compréhension de votre salaire net — organisés en trois piliers thématiques.",
+    "startHere": "Commencez ici · Guide pilier",
+    "published": "Publié le",
+    "updated": "Mis à jour le",
+    "by": "Par",
+    "faqHeading": "Foire aux questions",
+    "sourcesHeading": "Sources et lectures complémentaires",
+    "aboutAuthorHeading": "À propos de l'auteur",
+    "editorialStandards": "Consultez notre charte éditoriale →",
+    "moreInPillar": "Plus d'articles dans {pillar}",
+    "relatedGeneric": "Guides associés",
+    "tryCalculators": "Essayez les calculateurs",
+    "toc": "Table des matières",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbGuides": "Guides",
+    "linkHub": "Hub des calculateurs de salaire",
+    "linkNet": "Calculateur de salaire net",
+    "linkHourly": "Convertisseur taux horaire en salaire"
   }
 }

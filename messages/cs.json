@@ -157,5 +157,28 @@
     "relatedHeading": "Související zdroje",
     "relatedHub": "Centrum platových kalkulaček",
     "calculatorSuffix": "platová kalkulačka"
+  },
+  "guides": {
+    "metaTitle": "Průvodci mzdou a daněmi – odborné články o výpočtech příjmů",
+    "metaDescription": "Komplexní průvodci výpočty mezd, daňovými pásmy, odpočty a čistým příjmem. Naučte se počítat čistou mzdu a porozumět daňovým systémům.",
+    "title": "Průvodci mzdou a daněmi",
+    "intro": "Odborné články o výpočtech mezd, daňových systémech, odpočtech a porozumění vaší čisté mzdě – rozdělené do tří tematických pilířů.",
+    "startHere": "Začněte zde · Pilířový průvodce",
+    "published": "Publikováno",
+    "updated": "Aktualizováno",
+    "by": "Autor",
+    "faqHeading": "Často kladené otázky",
+    "sourcesHeading": "Zdroje a další četba",
+    "aboutAuthorHeading": "O autorovi",
+    "editorialStandards": "Přečtěte si naše redakční zásady →",
+    "moreInPillar": "Více v pilíři {pillar}",
+    "relatedGeneric": "Související průvodci",
+    "tryCalculators": "Vyzkoušejte kalkulačky",
+    "toc": "Obsah",
+    "breadcrumbHome": "Domů",
+    "breadcrumbGuides": "Průvodci",
+    "linkHub": "Centrum mzdových kalkulaček",
+    "linkNet": "Kalkulačka čisté mzdy",
+    "linkHourly": "Převodník hodinové mzdy na plat"
   }
 }

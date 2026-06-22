@@ -157,5 +157,28 @@
     "relatedHeading": "Powiązane materiały",
     "relatedHub": "Centrum kalkulatora wynagrodzeń",
     "calculatorSuffix": "Kalkulator wynagrodzeń"
+  },
+  "guides": {
+    "metaTitle": "Poradniki o wynagrodzeniach i podatkach - eksperckie artykuły o obliczaniu dochodów",
+    "metaDescription": "Kompleksowe poradniki o obliczaniu wynagrodzeń, progach podatkowych, odliczeniach i dochodzie netto. Dowiedz się, jak obliczyć pensję na rękę i zrozumieć systemy podatkowe.",
+    "title": "Poradniki o wynagrodzeniach i podatkach",
+    "intro": "Eksperckie artykuły o obliczaniu wynagrodzeń, systemach podatkowych, odliczeniach i zrozumieniu pensji na rękę — uporządkowane w trzy tematyczne filary.",
+    "startHere": "Zacznij tutaj · Poradnik filarowy",
+    "published": "Opublikowano",
+    "updated": "Zaktualizowano",
+    "by": "Autor",
+    "faqHeading": "Najczęściej zadawane pytania",
+    "sourcesHeading": "Źródła i materiały dodatkowe",
+    "aboutAuthorHeading": "O autorze",
+    "editorialStandards": "Poznaj nasze standardy redakcyjne →",
+    "moreInPillar": "Więcej w kategorii {pillar}",
+    "relatedGeneric": "Powiązane poradniki",
+    "tryCalculators": "Wypróbuj kalkulatory",
+    "toc": "Spis treści",
+    "breadcrumbHome": "Strona główna",
+    "breadcrumbGuides": "Poradniki",
+    "linkHub": "Centrum kalkulatorów wynagrodzeń",
+    "linkNet": "Kalkulator wynagrodzenia netto",
+    "linkHourly": "Przelicznik stawki godzinowej na pensję"
   }
 }

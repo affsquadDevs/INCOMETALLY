@@ -156,5 +156,28 @@
     "relatedHeading": "Recursos relacionados",
     "relatedHub": "Centro de calculadoras de salario",
     "calculatorSuffix": "Calculadora de Salario"
+  },
+  "guides": {
+    "metaTitle": "Guías de salarios e impuestos - Artículos expertos sobre el cálculo de ingresos",
+    "metaDescription": "Guías completas sobre el cálculo de salarios, tramos impositivos, deducciones e ingresos netos. Aprende a calcular tu salario neto y a entender los sistemas fiscales.",
+    "title": "Guías de salarios e impuestos",
+    "intro": "Artículos expertos sobre el cálculo de salarios, sistemas fiscales, deducciones y cómo entender tu salario neto, organizados en tres pilares temáticos.",
+    "startHere": "Empieza aquí · Guía principal",
+    "published": "Publicado",
+    "updated": "Actualizado",
+    "by": "Por",
+    "faqHeading": "Preguntas frecuentes",
+    "sourcesHeading": "Fuentes y lecturas adicionales",
+    "aboutAuthorHeading": "Sobre el autor",
+    "editorialStandards": "Consulta nuestros estándares editoriales →",
+    "moreInPillar": "Más sobre {pillar}",
+    "relatedGeneric": "Guías relacionadas",
+    "tryCalculators": "Prueba las calculadoras",
+    "toc": "Índice de contenidos",
+    "breadcrumbHome": "Inicio",
+    "breadcrumbGuides": "Guías",
+    "linkHub": "Centro de calculadoras de salario",
+    "linkNet": "Calculadora de salario neto",
+    "linkHourly": "Conversor de salario por hora a anual"
   }
 }
