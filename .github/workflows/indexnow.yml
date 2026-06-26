@@ -23,8 +23,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment_status.sha || github.sha }}
+          fetch-depth: 0 # full history so the script can diff HEAD~1..HEAD
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Submit live sitemap URLs to IndexNow
-        run: node scripts/indexnow.mjs
+      - name: Submit changed URLs to IndexNow
+        # On a deploy: submit only the URLs affected by this deploy's diff.
+        # On a manual run: submit the full sitemap.
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            node scripts/indexnow.mjs --all
+          else
+            node scripts/indexnow.mjs --diff
+          fi

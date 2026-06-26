@@ -12,11 +12,11 @@ export async function generateMetadata({
   const contactPage = getContact(locale);
   const md = await getTranslations({ locale, namespace: 'metaDesc' });
   return {
-    title: contactPage.title,
+    title: contactPage.metaTitle,
     description: md('contact'),
     alternates: buildAlternates(locale, '/contact'),
     openGraph: {
-      title: contactPage.title,
+      title: contactPage.metaTitle,
       description: md('contact'),
       url: '/contact',
       type: 'website',

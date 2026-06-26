@@ -534,6 +534,17 @@
       "uk": "Kalkulator wynagrodzeń w Wielkiej Brytanii",
       "hourly": "Przelicznik stawki godzinowej na wynagrodzenie",
       "guides": "Poradniki o wynagrodzeniach i podatkach"
+    },
+    "whatsIncluded": {
+      "heading": "Co obejmuje szacunkowe wyliczenie",
+      "p1": "Każde wyliczenie zaczyna się od Twojego wynagrodzenia brutto i stosuje progi podatku dochodowego wybranego kraju na 2026 rok wraz z obowiązkowymi składkami społecznymi lub pracowniczymi, które płacą tam pracownicy. Wynikiem jest przybliżona kwota netto (na rękę) oraz szczegółowe, pozycja po pozycji, zestawienie wszystkich potrąceń.",
+      "items": [
+        "Progresywny podatek dochodowy według najnowszych opublikowanych progów, kwot wolnych i standardowych odliczeń.",
+        "Pracownicze składki społeczne lub pracownicze — na przykład FICA w USA, ubezpieczenia ustawowe w Niemczech oraz National Insurance w Wielkiej Brytanii.",
+        "Twoja krańcowa i efektywna stawka podatkowa, dzięki czemu widzisz zarówno stawkę od kolejnej jednostki dochodu, jak i swoją ogólną średnią.",
+        "Przeliczanie między kwotami godzinowymi, miesięcznymi i rocznymi, abyś mógł porównywać oferty na tych samych zasadach."
+      ],
+      "p2": "Aby wyliczenie było przejrzyste i porównywalne między krajami, nie uwzględnia ono każdej indywidualnej sytuacji — takiej jak podatki regionalne lub lokalne, ulgi podatkowe, świadczenia w naturze czy jednorazowe odliczenia — dlatego traktuj te liczby jako rzetelnie udokumentowaną wskazówkę, a nie jako rozliczenie podatkowe."
     }
   },
   "netPage": {

@@ -68,6 +68,7 @@ export const siteConfig = {
   // Contact Page Content
   contactPage: {
     title: 'Contact Us',
+    metaTitle: 'Contact IncomeTally — Questions, Privacy & Feedback',
     subtitle:
       'If you have questions about IncomeTally, our calculators, or how the website works, you can reach us using the contact information below.',
     inquiryTypes: {

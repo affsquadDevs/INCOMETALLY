@@ -533,6 +533,17 @@
       "uk": "Lönekalkylator för Storbritannien",
       "hourly": "Omvandlare från timlön till lön",
       "guides": "Löne- och skatteguider"
+    },
+    "whatsIncluded": {
+      "heading": "Det här ingår i beräkningen",
+      "p1": "Varje beräkning utgår från din bruttolön och tillämpar det valda landets inkomstskatteskikt för 2026 tillsammans med de obligatoriska sociala avgifter som anställda betalar där. Resultatet är en ungefärlig nettolön (efter skatt) plus en detaljerad post-för-post-redovisning av varje avdrag.",
+      "items": [
+        "Progressiv inkomstskatt baserad på de senast publicerade skatteskikten, grundavdragen och standardavdragen.",
+        "Sociala avgifter för anställda — till exempel FICA i USA, lagstadgade försäkringar i Tyskland och National Insurance (folkförsäkringen) i Storbritannien.",
+        "Din marginalskatt och effektiva skattesats, så att du ser både skatten på din nästa inkomstkrona och ditt totala genomsnitt.",
+        "Omräkning mellan tim-, månads- och årsbelopp så att du kan jämföra erbjudanden på lika villkor."
+      ],
+      "p2": "För att hålla beräkningen tydlig och jämförbar mellan länder tar den inte hänsyn till alla personliga omständigheter — som regionala eller lokala skatter, skattereduktioner, naturaförmåner eller engångsavdrag — så betrakta siffrorna som en väl underbyggd vägledning snarare än en skattedeklaration."
     }
   },
   "netPage": {

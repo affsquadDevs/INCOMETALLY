@@ -534,6 +534,17 @@
       "uk": "Kalkulačka mzdy pro Velkou Británii",
       "hourly": "Převodník z hodinové sazby na mzdu",
       "guides": "Průvodci mzdou a daněmi"
+    },
+    "whatsIncluded": {
+      "heading": "Co všechno odhad zahrnuje",
+      "p1": "Každý odhad vychází z vaší hrubé mzdy a uplatňuje na ni daňová pásma daně z příjmu pro rok 2026 ve zvolené zemi spolu s povinnými sociálními a odvodovými příspěvky, které tamní zaměstnanci platí. Výsledkem je přibližná čistá mzda (částka, která vám zůstane) a podrobný rozpis každého jednotlivého odvodu.",
+      "items": [
+        "Progresivní daň z příjmu podle nejnovějších zveřejněných daňových pásem, slev a standardních odpočtů.",
+        "Sociální a odvodové příspěvky zaměstnanců — například FICA v USA, zákonné pojištění v Německu a National Insurance ve Velké Británii.",
+        "Vaši mezní a efektivní daňovou sazbu, abyste viděli jak sazbu na další jednotku příjmu, tak svůj celkový průměr.",
+        "Převod mezi hodinovou, měsíční a roční částkou, abyste mohli porovnávat nabídky na stejném základě."
+      ],
+      "p2": "Aby zůstal odhad přehledný a srovnatelný napříč zeměmi, nezohledňuje každou individuální okolnost — jako jsou regionální či místní daně, daňové bonusy, nepeněžní benefity nebo jednorázové odpočty — berte proto čísla jako dobře podložené vodítko, nikoli jako daňové přiznání."
     }
   },
   "netPage": {

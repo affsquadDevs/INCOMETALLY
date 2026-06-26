@@ -534,6 +534,17 @@
       "uk": "Calcolatore Stipendio Regno Unito",
       "hourly": "Convertitore da Paga Oraria a Stipendio",
       "guides": "Guide su Stipendio e Tasse"
+    },
+    "whatsIncluded": {
+      "heading": "Cosa include la stima",
+      "p1": "Ogni stima parte dalla tua retribuzione lorda e applica gli scaglioni dell'imposta sul reddito 2026 del Paese selezionato, insieme ai contributi sociali o previdenziali obbligatori che i lavoratori dipendenti versano in quel Paese. Il risultato è un importo netto (lo stipendio che ti resta in tasca) approssimativo, accompagnato da un dettaglio voce per voce di ogni trattenuta.",
+      "items": [
+        "Imposta sul reddito progressiva calcolata in base agli scaglioni, alle detrazioni e alle deduzioni standard più recenti pubblicati.",
+        "Contributi sociali o previdenziali a carico del lavoratore — ad esempio FICA negli Stati Uniti, le assicurazioni obbligatorie in Germania e la National Insurance nel Regno Unito.",
+        "L'aliquota marginale e quella effettiva, così da vedere sia il prelievo sulla prossima unità di reddito sia la media complessiva.",
+        "La conversione tra importi orari, mensili e annuali, così da poter confrontare le offerte su basi omogenee."
+      ],
+      "p2": "Per mantenere la stima chiara e comparabile tra Paesi, non vengono modellate tutte le situazioni personali — come imposte regionali o locali, crediti d'imposta, fringe benefit o trattenute una tantum — quindi considera i numeri come una guida ben documentata e non come una dichiarazione dei redditi."
     }
   },
   "netPage": {
