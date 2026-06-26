@@ -534,6 +534,17 @@
       "uk": "Calculadora de Salário do Reino Unido",
       "hourly": "Conversor de Valor à Hora para Salário",
       "guides": "Guias de Salário e Impostos"
+    },
+    "whatsIncluded": {
+      "heading": "O que está incluído na estimativa",
+      "p1": "Cada estimativa parte do seu salário bruto e aplica os escalões do imposto sobre o rendimento de 2026 do país selecionado, juntamente com as contribuições sociais ou para a segurança social obrigatórias que os trabalhadores aí pagam. O resultado é um valor líquido (a receber) aproximado, acompanhado de uma discriminação detalhada de cada dedução.",
+      "items": [
+        "Imposto progressivo sobre o rendimento, com base nos escalões, abatimentos e deduções padrão mais recentes publicados.",
+        "Contribuições sociais ou para a segurança social a cargo do trabalhador — por exemplo, a FICA nos EUA, os seguros obrigatórios na Alemanha e o National Insurance (contribuições sociais) no Reino Unido.",
+        "As suas taxas de imposto marginal e efetiva, para que veja tanto a taxa aplicada à próxima unidade de rendimento como a sua média global.",
+        "Conversão entre valores à hora, ao mês e ao ano, para que possa comparar propostas em condições equivalentes."
+      ],
+      "p2": "Para manter a estimativa clara e comparável entre países, não modela todas as circunstâncias pessoais — como impostos regionais ou locais, créditos fiscais, benefícios em espécie ou deduções pontuais —, pelo que deve encarar os valores como um guia bem fundamentado e não como uma declaração de impostos."
     }
   },
   "netPage": {

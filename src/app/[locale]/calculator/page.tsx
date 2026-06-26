@@ -67,6 +67,20 @@ export default async function CalculatorPage({
           </div>
         </section>
 
+        {/* What's included */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-normal text-black mb-6">{t('whatsIncluded.heading')}</h2>
+          <div className="space-y-4 text-base text-black opacity-90 leading-relaxed">
+            <p>{t('whatsIncluded.p1')}</p>
+            <ul className="list-disc list-inside space-y-2 opacity-90">
+              {(t.raw('whatsIncluded.items') as string[]).map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+            <p>{t('whatsIncluded.p2')}</p>
+          </div>
+        </section>
+
         {/* Related links */}
         <section className="border-t border-black border-opacity-10 pt-8">
           <h2 className="text-xl font-normal text-black mb-4">{t('related.heading')}</h2>

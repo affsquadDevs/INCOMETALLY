@@ -532,6 +532,17 @@
       "uk": "Gehaltsrechner Grossbritannien",
       "hourly": "Stundenlohn-in-Gehalt-Umrechner",
       "guides": "Gehalts- & Steuer-Ratgeber"
+    },
+    "whatsIncluded": {
+      "heading": "Was in der Schätzung enthalten ist",
+      "p1": "Jede Schätzung geht von deinem Bruttolohn aus und wendet die Einkommensteuertarife 2026 des ausgewählten Landes zusammen mit den dort verpflichtenden Sozial- oder Lohnabgaben an, die Arbeitnehmer zahlen. Das Ergebnis ist ein ungefährer Nettobetrag (Auszahlungsbetrag) sowie eine Posten-für-Posten-Aufschlüsselung jedes Abzugs.",
+      "items": [
+        "Progressive Einkommensteuer auf Basis der aktuell veröffentlichten Steuerstufen, Freibeträge und Pauschalen.",
+        "Sozial- oder Lohnabgaben der Arbeitnehmer — zum Beispiel FICA in den USA, die gesetzlichen Sozialversicherungen in Deutschland und National Insurance (Sozialversicherung) im Vereinigten Königreich.",
+        "Dein Grenz- und Effektivsteuersatz, damit du sowohl den Satz auf deine nächste Einkommenseinheit als auch deinen Gesamtdurchschnitt siehst.",
+        "Umrechnung zwischen Stunden-, Monats- und Jahreswerten, damit du Angebote auf vergleichbarer Basis gegenüberstellen kannst."
+      ],
+      "p2": "Damit die Schätzung übersichtlich und länderübergreifend vergleichbar bleibt, bildet sie nicht jede persönliche Situation ab — etwa regionale oder kommunale Steuern, Steuergutschriften, Sachbezüge oder einmalige Abzüge — betrachte die Zahlen daher als gut belegten Anhaltspunkt und nicht als Steuererklärung."
     }
   },
   "netPage": {

@@ -532,6 +532,17 @@
       "p2": "The breakdown separates income tax from social contributions — such as Social Security and Medicare in the United States, statutory insurance contributions in Germany, and National Insurance in the United Kingdom — so you can see exactly where your money goes and what your effective tax rate is.",
       "p3": "Results are estimates for informational and planning purposes only and do not account for every individual circumstance, such as state and local taxes, tax credits, or benefits in kind. For advice specific to your situation, consult a qualified tax professional."
     },
+    "whatsIncluded": {
+      "heading": "What's included in the estimate",
+      "p1": "Each estimate starts from your gross pay and applies the selected country's 2026 income-tax bands together with the mandatory social or payroll contributions that employees pay there. The result is an approximate net (take-home) figure plus a line-by-line breakdown of every deduction.",
+      "items": [
+        "Progressive income tax using the latest published brackets, allowances, and standard deductions.",
+        "Employee social or payroll contributions — for example FICA in the US, statutory insurance in Germany, and National Insurance in the UK.",
+        "Your marginal and effective tax rates, so you can see both the rate on your next unit of income and your overall average.",
+        "Conversion between hourly, monthly, and yearly figures so you can compare offers on a like-for-like basis."
+      ],
+      "p2": "To keep the estimate clear and comparable across countries, it does not model every personal circumstance — such as regional or local taxes, tax credits, benefits in kind, or one-off deductions — so treat the numbers as a well-sourced guide rather than a tax filing."
+    },
     "related": {
       "heading": "Explore Country-Specific Calculators",
       "hub": "Salary Calculator Hub",
